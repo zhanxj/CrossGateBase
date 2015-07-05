@@ -1,0 +1,126 @@
+BuffAction
+	[TYPE_BUFF]
+	[
+		BUFF_SHOUT_CHANNEL : int // if a creature shout something, must in a channel.
+		
+		BUFF_SHOUT_MESSAGE : String // this is the message what the creature shout.
+		
+		BUFF_ACTION : String // the action's info.
+		( // split(":")
+			ACTION_INFO_ID : byte // the action's index.Please see {Sprite.ACTION_, ...}.
+			
+			ACTION_INFO_WORD_TYPE : byte // if this action will show a damage or a cure or another word, this is the word type.
+			
+			ACTION_INFO_WORD : String // if this action will show a damage or a cure or another word, this is the word.
+			
+			ACTION_INFO_ATTACH_COUNT : byte // this action maybe attach some animation, this is the animations's count.
+			
+			ACTION_INFO_ATTACH... : int // last info is all the attach animation global id.
+		)
+	]
+
+<!--
+	PrepareAction
+		[TYPE_PREPARE]
+		[
+			PREPARE_ACTION : String // the action's info.
+			( // split(":")
+				ACTION_INFO_ID : byte // the action's index.Please see {Sprite.ACTION_, ...}.
+				
+				ACTION_INFO_WORD_TYPE : byte // if this action will show a damage or a cure or another word, this is the word type.Please see {Operation.WORD_TYPE_, ...}.
+				
+				ACTION_INFO_WORD : String // if this action will show a damage or a cure or another word, this is the word.
+				
+				ACTION_INFO_ATTACH_COUNT : byte // this action maybe attach some animation, this is the animations's count.
+				
+				ACTION_INFO_ATTACH... : int // last info is all the attach animation global id.
+			)
+			
+			PREPARE_TARGET : int // the operation's target's instance id.
+			
+			PREPARE_RUN_TYPE : byte // which type of this operation's run state.Please see {Operation.RUN_TYPE_, ...}.
+			
+			PREPARE_BODYGUARD : int // if the target have a protecter to bodyguard him, this is the protecter's instance id.
+		]
+ -->
+
+CostAction
+	[TYPE_COST]
+	[
+		COST_RUN_TYPE : byte // which type of this operation's run state.Please see {Operation.RUN_TYPE_, ...}.
+		
+		COST_BODYGUARD : int // if the target have a protecter to bodyguard him, this is the protecter's instance id.
+	
+		COST_PREPARE : String // if the action have prepare action, this is the info.
+		( // split(",")
+			PREPARE_INFO_ACTION : byte // the action's index.Please see {Sprite.ACTION_, ...}.
+			
+			PREPARE_INFO_DIRECTION : byte // what direction of this action.Please see {Unit.DIR_, ...}.
+			
+			PREPARE_INFO_TARGET_ANIMATION : int // this is the animation's global id that play on target.
+		)... // split(":")
+		
+		COST_PREPARE_TARGETS : String // all targets's instance id
+		()... // split(":")
+		
+		COST_ACTION : String // the action's info.
+		( // split(":")
+			ACTION_INFO_ID : byte // the action's index.Please see {Sprite.ACTION_, ...}.
+			
+			ACTION_INFO_WORD_TYPE : byte // if this action will show a damage or a cure or another word, this is the word type.Please see {Operation.WORD_TYPE_, ...}.
+			
+			ACTION_INFO_WORD : String // if this action will show a damage or a cure or another word, this is the word.
+			
+			ACTION_INFO_ATTACH_COUNT : byte // this action maybe attach some animation, this is the animations's count.
+			
+			ACTION_INFO_ATTACH... : int // last info is all the attach animation global id.
+		)
+		
+		COST_TO_ALL : boolean // the true is cost once and false is cost to each.
+		
+		COST_HIT_TYPE : byte // which kind of hit.Please see {Operation.HIT_TYPE_, ...}.
+		
+		COST_HIT_ANIMATION : int // the hit animation's global id.
+	]
+
+TargetAction
+	[TYPE_TARGET]
+	[
+		TARGET_ACTION : String // the action's info.
+		( // split(":")
+			ACTION_INFO_ID : byte // the action's index.Please see {Sprite.ACTION_, ...}.
+			
+			ACTION_INFO_WORD_TYPE : byte // if this action will show a damage or a cure or another word, this is the word type.Please see {Operation.WORD_TYPE_, ...}.
+			
+			ACTION_INFO_WORD : String // if this action will show a damage or a cure or another word, this is the word.
+			
+			ACTION_INFO_ATTACH_COUNT : byte // this action maybe attach some animation, this is the animations's count.
+			
+			ACTION_INFO_ATTACH... : int // last info is all the attach animation global id.
+		)
+		
+		TARGET_RESULT_TYPE : byte // type of action's result.Please see {Operation.RESULT_TYPE_, ...}.
+		
+		TARGET_RESULT : byte // if the result type is Operation.RESULT_TYPE_ANIMATION result is animation's global id;if the result type is Operation.RESULT_TYPE_DIE the result is die type.
+	]
+	
+BackAction
+	[TYPE_BACK]
+	[
+		TARGET_ACTION : String // the action's info.
+		( // split(":")
+			ACTION_INFO_ID : byte // the action's index.Please see {Sprite.ACTION_, ...}.
+			
+			ACTION_INFO_WORD_TYPE : byte // if this action will show a damage or a cure or another word, this is the word type.Please see {Operation.WORD_TYPE_, ...}.
+			
+			ACTION_INFO_WORD : String // if this action will show a damage or a cure or another word, this is the word.
+			
+			ACTION_INFO_ATTACH_COUNT : byte // this action maybe attach some animation, this is the animations's count.
+			
+			ACTION_INFO_ATTACH... : int // last info is all the attach animation global id.
+		)
+		
+		TARGET_RESULT_TYPE : byte // type of action's result.Please see {Operation.RESULT_TYPE_, ...}.
+		
+		TARGET_RESULT : byte // if the result type is Operation.RESULT_TYPE_ANIMATION result is animation's global id;if the result type is Operation.RESULT_TYPE_DIE the result is die type.
+	]
