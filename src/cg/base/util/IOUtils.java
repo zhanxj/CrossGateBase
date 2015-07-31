@@ -215,5 +215,9 @@ public class IOUtils {
 	public static Object[] getObjects(String key, int size) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		return getObjects(key, "", size);
 	}
+	
+	public static String URIToString(URI uri) {
+		return uri.getHost() == null ? uri.getPath() : uri.toString();
+	}
 
 }

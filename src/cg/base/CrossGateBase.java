@@ -115,7 +115,7 @@ public class CrossGateBase {
 			log = createLog();
 			logStart();
 			try {
-				clientFilePath = loadHostPath();
+				clientFilePath = loadClientFilePath();
 			} catch (Exception e) {
 				log.error(getClass().getName(), e);
 				exit();
@@ -150,7 +150,7 @@ public class CrossGateBase {
 			}
 		}
 		
-		protected abstract URI loadHostPath() throws Exception;
+		protected abstract URI loadClientFilePath() throws Exception;
 		
 		protected abstract PacketFactory createPacketFactory();
 		
