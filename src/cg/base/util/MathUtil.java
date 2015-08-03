@@ -238,12 +238,12 @@ public class MathUtil {
 	}
     
 	public static int charToInt(char c) throws Exception {
-        if (c >= 65 && c <= 90) { // ´óĞ´
+        if (c >= 65 && c <= 90) { // ï¿½ï¿½Ğ´
             return c - 65;
         } else if (c >= 97 && c <= 122) { // Ğ¡Ğ´
             return c - 97;
         } else {
-        	throw new Exception("·Ç·¨char£º" + c);
+        	throw new Exception("ï¿½Ç·ï¿½charï¿½ï¿½" + c);
         }
     }
     
@@ -258,7 +258,7 @@ public class MathUtil {
     }
 	
 	/**
-	 * µ÷ÕûÊı×é³¤¶È
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é³¤ï¿½ï¿½
 	 * @param 	oldArray
 	 * @param 	insertBefore
 	 * @param 	addNum
@@ -311,20 +311,20 @@ public class MathUtil {
 	}
 	
 	/**
-	 * »ñµÃ²¼¶ûÖµ¶ÔÓ¦µÄÊı×Ö
+	 * ï¿½ï¿½Ã²ï¿½ï¿½ï¿½Öµï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @param 	b
-	 * 			²¼¶ûÖµ
-	 * @return	Êı×Ö
+	 * 			ï¿½ï¿½ï¿½ï¿½Öµ
+	 * @return	ï¿½ï¿½ï¿½ï¿½
 	 */
 	public static byte booleanToNumber(boolean b) {
 		return (byte) (b ? 1 : 0);
 	}
 	
 	/**
-	 * »ñµÃÊı×Ö¶ÔÓ¦µÄ²¼¶ûÖµ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½Ó¦ï¿½Ä²ï¿½ï¿½ï¿½Öµ
 	 * @param 	v
-	 * 			Êı×Ö
-	 * @return	²¼¶ûÖµ
+	 * 			ï¿½ï¿½ï¿½ï¿½
+	 * @return	ï¿½ï¿½ï¿½ï¿½Öµ
 	 */
 	public static boolean numberToBoolean(int v) {
 		return v > 0 ? true : false;

@@ -18,13 +18,13 @@ public class ListURLHandler implements URLHandler {
 	}
 	
 	public ListURLHandler() {
-		this(IOUtils.GMSV_ENCODING);
+		this(IOUtils.ENCODING);
 	}
 
 	@Override
 	public void handle(InputStream is, String info) throws Exception {
 		clear();
-        // ¶¨Òå BufferedReaderÊäÈëÁ÷À´¶ÁÈ¡URLµÄÏìÓ¦
+        // ï¿½ï¿½ï¿½ï¿½ BufferedReaderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡URLï¿½ï¿½ï¿½ï¿½Ó¦
         BufferedReader in = new BufferedReader(new InputStreamReader(is, encoding));
         String line;
         while ((line = in.readLine()) != null) {
