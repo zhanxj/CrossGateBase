@@ -4,6 +4,8 @@ import java.net.URI;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 
+import com.google.common.eventbus.EventBus;
+
 import thread.base.ThreadCall;
 import thread.base.ThreadPool;
 import thread.impl.DefaultThreadPool;
@@ -16,21 +18,16 @@ import cg.base.time.CTimer;
 import cg.base.time.Timer;
 import cg.base.util.MemoryCalculator;
 import cg.base.util.Updater;
-import event.base.EventCreator;
-import event.base.EventManager;
-import event.impl.IEventCreator;
 
 public class CrossGateBase {
+	
+	protected static final EventBus EVENT_BUS = new EventBus();
 	
 	protected static Log log;
 	
 	protected static Timer timer;
 	
 	protected static ThreadPool threadPool;
-	
-	protected static EventCreator<Integer> iEventCreator;
-	
-	protected static EventManager<Integer> eventManager;
 	
 	protected static Updater mainThread;
 	
@@ -73,14 +70,6 @@ public class CrossGateBase {
 	public static ThreadPool getThreadPool() {
 		return threadPool;
 	}
-
-	public static EventCreator<Integer> getEventCreator() {
-		return iEventCreator;
-	}
-	
-	public static EventManager<Integer> getEventManager() {
-		return eventManager;
-	}
 	
 	public static Updater getUpdater() {
 		return mainThread;
@@ -102,6 +91,10 @@ public class CrossGateBase {
 		return System.getProperty("os.name");
 	}
 	
+	public static EventBus getEventBus() {
+		return EVENT_BUS;
+	}
+	
 	public abstract static class Loader implements ThreadCall {
 		
 		protected LoadCall call;
@@ -121,10 +114,8 @@ public class CrossGateBase {
 				exit();
 			}
 			threadPool = createThreadPool();
-			iEventCreator = createEventCreator();
 			timer = createTimer();
 			mainThread = createUpdater();
-			eventManager = createEventManager();
 			scheduler = Executors.newScheduledThreadPool(3);
 			imageManager = createImageManager();
 			packetFactory = createPacketFactory();
@@ -164,14 +155,6 @@ public class CrossGateBase {
 		
 		protected ThreadPool createThreadPool() {
 			return new DefaultThreadPool(5, 5);
-		}
-		
-		protected EventCreator<Integer> createEventCreator() {
-			return IEventCreator.getInstance();
-		}
-		
-		protected EventManager<Integer> createEventManager() {
-			return new CEventManager(getUpdater());
 		}
 		
 		protected Updater createUpdater() {

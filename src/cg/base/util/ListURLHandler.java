@@ -24,7 +24,7 @@ public class ListURLHandler implements URLHandler {
 	@Override
 	public void handle(InputStream is, String info) throws Exception {
 		clear();
-        // ���� BufferedReader����������ȡURL����Ӧ
+        // 
         BufferedReader in = new BufferedReader(new InputStreamReader(is, encoding));
         String line;
         while ((line = in.readLine()) != null) {

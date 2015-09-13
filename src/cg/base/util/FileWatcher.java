@@ -9,8 +9,11 @@ import java.util.*;
  * @author lighthu
  */
 public class FileWatcher extends Thread {
+	
     private static HashMap<File, List<IFileModificationListener>> listeners = new HashMap<File, List<IFileModificationListener>>();
+    
     private static HashMap<File, Long> lastModifyTimes = new HashMap<File, Long>(); 
+    
     static {
         new FileWatcher().start();
     }
@@ -88,6 +91,7 @@ public class FileWatcher extends Thread {
     /**
      * ÂÖÑ¯Ïß³Ì¡£
      */
+    @Override
     public void run() {
         while (true) {
             try {
@@ -124,4 +128,5 @@ public class FileWatcher extends Thread {
             }
         }
     }
+    
 }
