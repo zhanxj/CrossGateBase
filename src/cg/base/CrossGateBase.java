@@ -112,9 +112,12 @@ public class CrossGateBase {
 		}
 
 		@Override
-		public void run() {
+		public final void run() {
 			load();
 			mainThread.add(timer);
+			if (call != null) {
+				call.loadFinish();
+			}
 		}
 		
 		protected abstract void load();
@@ -122,14 +125,6 @@ public class CrossGateBase {
 		protected void loadAnimationReader() {
 			animationReader = createAnimationReader();
 		}
-
-//		@Override
-//		public void callFinish() {
-//			log.info(getClass().getName() + " start load finish.");
-//			if (call != null) {
-//				call.loadFinish();
-//			}
-//		}
 		
 		protected abstract URI loadClientFilePath() throws Exception;
 		
