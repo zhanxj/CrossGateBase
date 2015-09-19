@@ -4,11 +4,6 @@ import java.net.URI;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 
-import com.google.common.eventbus.EventBus;
-
-import thread.base.ThreadCall;
-import thread.base.ThreadPool;
-import thread.impl.DefaultThreadPool;
 import cg.base.animation.AnimationReader;
 import cg.base.image.ImageManager;
 import cg.base.io.PacketFactory;
@@ -19,6 +14,8 @@ import cg.base.time.Timer;
 import cg.base.util.MemoryCalculator;
 import cg.base.util.Updater;
 
+import com.google.common.eventbus.EventBus;
+
 public class CrossGateBase {
 	
 	protected static final EventBus EVENT_BUS = new EventBus();
@@ -26,8 +23,6 @@ public class CrossGateBase {
 	protected static Log log;
 	
 	protected static Timer timer;
-	
-	protected static ThreadPool threadPool;
 	
 	protected static Updater mainThread;
 	
@@ -66,10 +61,6 @@ public class CrossGateBase {
 	public static Timer getTimer() {
 		return timer;
 	}
-
-	public static ThreadPool getThreadPool() {
-		return threadPool;
-	}
 	
 	public static Updater getUpdater() {
 		return mainThread;
@@ -95,7 +86,7 @@ public class CrossGateBase {
 		return EVENT_BUS;
 	}
 	
-	public abstract static class Loader implements ThreadCall {
+	public abstract static class Loader implements Runnable {
 		
 		protected LoadCall call;
 		
@@ -113,7 +104,6 @@ public class CrossGateBase {
 				log.error(getClass().getName(), e);
 				exit();
 			}
-			threadPool = createThreadPool();
 			timer = createTimer();
 			mainThread = createUpdater();
 			scheduler = Executors.newScheduledThreadPool(3);
@@ -133,13 +123,13 @@ public class CrossGateBase {
 			animationReader = createAnimationReader();
 		}
 
-		@Override
-		public void callFinish() {
-			log.info(getClass().getName() + " start load finish.");
-			if (call != null) {
-				call.loadFinish();
-			}
-		}
+//		@Override
+//		public void callFinish() {
+//			log.info(getClass().getName() + " start load finish.");
+//			if (call != null) {
+//				call.loadFinish();
+//			}
+//		}
 		
 		protected abstract URI loadClientFilePath() throws Exception;
 		
@@ -151,10 +141,6 @@ public class CrossGateBase {
 		
 		protected Timer createTimer() {
 			return CTimer.getInstance();
-		}
-		
-		protected ThreadPool createThreadPool() {
-			return new DefaultThreadPool(5, 5);
 		}
 		
 		protected Updater createUpdater() {
