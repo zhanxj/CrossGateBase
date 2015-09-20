@@ -1,8 +1,10 @@
 package cg.base.sprite;
 
+import java.io.Serializable;
+
 import cg.base.util.Values;
 
-public interface Unit extends UnitListenerCode {
+public interface Unit extends Serializable, UnitListenerCode {
 	
 	byte UNI_TYPE_BASE = 0;
 	
