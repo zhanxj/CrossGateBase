@@ -7,6 +7,8 @@ import cg.base.util.Values;
 
 public class CUnit implements Unit {
 	
+	private static final long serialVersionUID = 1L;
+
 	protected int instanceId, faceModel, east, south, tempFaceModel;
 	
 	protected byte dir = DIR_SOUTH, sex = SEX_NONE;
