@@ -30,4 +30,11 @@
   	<url>https://github.com/CrossGateBasics</url>
   </organization>
   <url>https://github.com/CrossGateBasics/CrossGateBase.git</url>
+  <dependencies>
+    <dependency>
+		<groupId>com.google.guava</groupId>
+		<artifactId>guava</artifactId>
+		<version>14.0</version>
+	</dependency>
+  </dependencies>
 </project>
