@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>cg</groupId>
   <artifactId>CrossGateBase</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>魔力宝贝基础包</name>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -32,9 +32,14 @@
   <url>https://github.com/CrossGateBasics/CrossGateBase.git</url>
   <dependencies>
     <dependency>
-		<groupId>com.google.guava</groupId>
-		<artifactId>guava</artifactId>
-		<version>14.0</version>
+		<groupId>dataPlatform</groupId>
+		<artifactId>DataPlatform</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+    <dependency>
+		<groupId>net</groupId>
+		<artifactId>NetIO</artifactId>
+		<version>0.0.1</version>
 	</dependency>
   </dependencies>
 </project>
