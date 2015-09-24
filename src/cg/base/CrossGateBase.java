@@ -13,12 +13,12 @@ import cg.base.time.CTimer;
 import cg.base.time.Timer;
 import cg.base.util.MemoryCalculator;
 import cg.base.util.Updater;
-
-import com.google.common.eventbus.EventBus;
+import dataplatform.pubsub.ISimplePubsub;
+import dataplatform.pubsub.impl.SimplePubsub;
 
 public class CrossGateBase {
 	
-	protected static final EventBus EVENT_BUS = new EventBus();
+	protected static ISimplePubsub simplePubsub;
 	
 	protected static Log log;
 	
@@ -82,8 +82,8 @@ public class CrossGateBase {
 		return System.getProperty("os.name");
 	}
 	
-	public static EventBus getEventBus() {
-		return EVENT_BUS;
+	public static ISimplePubsub getSimplePubsub() {
+		return simplePubsub;
 	}
 	
 	public abstract static class Loader implements Runnable {
@@ -109,6 +109,7 @@ public class CrossGateBase {
 			scheduler = Executors.newScheduledThreadPool(3);
 			imageManager = createImageManager();
 			packetFactory = createPacketFactory();
+			simplePubsub = createSimplePubsub();
 		}
 
 		@Override
@@ -149,6 +150,10 @@ public class CrossGateBase {
 		}
 		
 		protected abstract ImageManager createImageManager();
+		
+		protected ISimplePubsub createSimplePubsub() {
+			return new SimplePubsub();
+		}
 		
 	}
 
