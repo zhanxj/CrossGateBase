@@ -1,8 +1,9 @@
 package cg.base.option;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+
+import com.google.common.collect.Maps;
 
 public class Options {
 	
@@ -60,7 +61,7 @@ public class Options {
 	
 	public static final String CHAT_NAME_TEAM = "team";
 	
-	private Map<String, Byte> options = new HashMap<String, Byte>();
+	private Map<String, Byte> options = Maps.newHashMap();
 	
 	public byte getState(String name) {
 		return options.get(name);

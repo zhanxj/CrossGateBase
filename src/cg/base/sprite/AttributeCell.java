@@ -1,8 +1,9 @@
 package cg.base.sprite;
 
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.Map;
+
+import com.google.common.collect.Maps;
 
 public class AttributeCell {
 	
@@ -12,7 +13,7 @@ public class AttributeCell {
 	
 	public AttributeCell(String attributeType) {
 		this.attributeType = attributeType;
-		values = new HashMap<Byte, Double>();
+		values = Maps.newHashMap();
 	}
 
 	public String getAttributeType() {

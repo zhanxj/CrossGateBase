@@ -1,8 +1,9 @@
 package cg.base.util;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+
+import com.google.common.collect.Maps;
 
 public class Values {
 	
@@ -12,11 +13,11 @@ public class Values {
 	
 	public static final String TYPE_SHORT = "short";
 	
-	private Map<String, Byte> bytes = new HashMap<String, Byte>();
+	private Map<String, Byte> bytes = Maps.newHashMap();
 	
-	private Map<String, Integer> ints = new HashMap<String, Integer>();
+	private Map<String, Integer> ints = Maps.newHashMap();
 	
-	private Map<String, Short> shorts = new HashMap<String, Short>();
+	private Map<String, Short> shorts = Maps.newHashMap();
 	
 	public void set(String key, byte value) {
 		bytes.put(key, value);

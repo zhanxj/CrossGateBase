@@ -1,13 +1,12 @@
 package cg.base.sprite;
 
-import java.util.HashMap;
 import java.util.Map;
 
-import cg.base.sprite.Attribute;
+import com.google.common.collect.Maps;
 
 public class SimpleIntAttribute implements Attribute {
 	
-	private static final Map<String, Byte> offsets = new HashMap<String, Byte>();
+	private static final Map<String, Byte> offsets = Maps.newHashMap();
 	
 	private int[] attributes = new int[33];
 	

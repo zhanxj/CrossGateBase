@@ -3,7 +3,6 @@ package cg.base.image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -12,19 +11,23 @@ import cg.base.log.Log;
 import cg.base.reader.CColorPaletteReader;
 import cg.base.util.IOUtils;
 
+import com.google.common.collect.HashBasedTable;
+import com.google.common.collect.LinkedListMultimap;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Multimap;
+import com.google.common.collect.Table;
 
 public abstract class CImageManager implements ImageManager {
 	
-	private Map<Byte, Map<Integer, BufferedImage>> versionCImages;
+	private Table<Byte, Integer, BufferedImage> versionCImages;
 	
-	private Map<String, List<ResourceListener>> listeners;
+	private Multimap<String, ResourceListener> listeners;
 	
 	private Map<String, ColorPalette[]> colorPalettes;
 	
 	private String globalColorPaletteName;
 	
-	protected Map<String, List<ImageResource>> resources;
+	protected Multimap<String, ImageResource> resources;
 	
 	protected ImageReader imageReader;
 	
@@ -32,9 +35,9 @@ public abstract class CImageManager implements ImageManager {
 	
 	public CImageManager(Log log, String clientFilePath) {
 		this.log = log;
-		versionCImages = new HashMap<Byte, Map<Integer, BufferedImage>>();
-		listeners = new HashMap<String, List<ResourceListener>>();
-		resources = new HashMap<String, List<ImageResource>>();
+		versionCImages = HashBasedTable.create();
+		listeners = LinkedListMultimap.create();
+		resources = LinkedListMultimap.create();
 		loadColorPalette(clientFilePath);
 		setGlobalColorPaletteName("palet_00.cgp");
 		imageReader = createImageReader(clientFilePath);
@@ -70,22 +73,16 @@ public abstract class CImageManager implements ImageManager {
 
 	@Override
 	public BufferedImage getCImage(byte version, int imageId, String colorPalette) {
-		Map<Integer, BufferedImage> images = versionCImages.get(version);
-		if (images == null) {
-			images = new HashMap<Integer, BufferedImage>();
-			versionCImages.put(version, images);
-		}
-		
-		BufferedImage image = images.get(imageId);
+		BufferedImage image = versionCImages.get(version, imageId);
 		if (image == null) {
 			try {
 				image = imageReader.read(version, imageId, colorPalette).getBufferedImage();
-				images.put(imageId, image);
+				versionCImages.put(version, imageId, image);
 			} catch (IOException e) {
 				log.error(getClass().getName(), e);
 			}
 //		} else {
-//			CrossGateBase.log.info(getClass() + ".getCImage() find hit! version = " + version + " ; id = " + id);
+//			log.info(getClass() + ".getCImage() find hit! version = " + version + " ; id = " + id);
 		}
 		
 		return image;
@@ -93,22 +90,16 @@ public abstract class CImageManager implements ImageManager {
 
 	@Override
 	public BufferedImage getCImage(byte version, int imageId) {
-		Map<Integer, BufferedImage> images = versionCImages.get(version);
-		if (images == null) {
-			images = new HashMap<Integer, BufferedImage>();
-			versionCImages.put(version, images);
-		}
-		
-		BufferedImage image = images.get(imageId);
+		BufferedImage image = versionCImages.get(version, imageId);
 		if (image == null) {
 			try {
 				image = imageReader.read(version, imageId).getBufferedImage();
-				images.put(imageId, image);
+				versionCImages.put(version, imageId, image);
 			} catch (Exception e) {
 				log.error(getClass().getName(), e);
 			}
 //		} else {
-//			CrossGateBase.log.info(getClass() + ".getCImage() find hit! version = " + version + " ; id = " + id);
+//			log.info(getClass() + ".getCImage() find hit! version = " + version + " ; id = " + id);
 		}
 		
 		return image;
@@ -121,13 +112,7 @@ public abstract class CImageManager implements ImageManager {
 
 	@Override
 	public void release(byte version, int imageId) {
-		Map<Integer, BufferedImage> images = versionCImages.get(version);
-		if (images != null) {
-			images.remove(imageId);
-			if (images.size() == 0) {
-				versionCImages.remove(version);
-			}
-		}
+		versionCImages.remove(version, imageId);
 	}
 
 	@Override
@@ -144,7 +129,7 @@ public abstract class CImageManager implements ImageManager {
 
 	@Override
 	public List<ImageResource> getImageResources(String type) {
-		return resources.get(type);
+		return Lists.newArrayList(resources.get(type));
 	}
 
 	@Override
@@ -181,15 +166,9 @@ public abstract class CImageManager implements ImageManager {
 
 	@Override
 	public void addResource(ImageResource resource) {
-		if (!resources.containsKey(resource.getType())) {
-			resources.put(resource.getType(), Lists.newLinkedList());
-			listeners.put(resource.getType(), Lists.newLinkedList());
-		}
-		resources.get(resource.getType()).add(resource);
-		if (listeners.containsKey(resource.getType())) {
-			for (ResourceListener listener : listeners.get(resource.getType())) {
-				listener.addResource(resource);
-			}
+		resources.put(resource.getType(), resource);
+		for (ResourceListener listener : listeners.get(resource.getType())) {
+			listener.addResource(resource);
 		}
 	}
 

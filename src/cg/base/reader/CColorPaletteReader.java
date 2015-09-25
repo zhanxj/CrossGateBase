@@ -3,16 +3,17 @@ package cg.base.reader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 
 import cg.base.image.ColorPalette;
 import cg.base.util.MathUtil;
 
+import com.google.common.collect.Maps;
+
 public class CColorPaletteReader {
 	
 	public Map<String, ColorPalette[]> read(File file) {
-		Map<String, ColorPalette[]> ret = new HashMap<String, ColorPalette[]>();
+		Map<String, ColorPalette[]> ret = Maps.newHashMap();
 		if (file.isDirectory()) {
 			String[] fileNames = file.list();
 			for (String fileName : fileNames) {

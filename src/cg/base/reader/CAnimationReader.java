@@ -3,7 +3,6 @@ package cg.base.reader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -25,6 +24,8 @@ import cg.base.log.Log;
 import cg.base.time.Timer;
 import cg.base.util.MathUtil;
 import cg.base.util.UnitUtil;
+
+import com.google.common.collect.Maps;
 
 public class CAnimationReader implements AnimationReader, Version {
 	
@@ -51,7 +52,7 @@ public class CAnimationReader implements AnimationReader, Version {
 		int size = list.size();
 		fis = new FileInputStream[size];
 		fis0 = new FileInputStream[size];
-		animationDictionarys = new HashMap<Integer, ResourceInfo>();
+		animationDictionarys = Maps.newHashMap();
 		File dir = new File(clientFilePath);
 		for (byte i = 0;i < size;i++) {
 			ImageResource resource = list.get(i);
@@ -240,7 +241,7 @@ public class CAnimationReader implements AnimationReader, Version {
 			address = MathUtil.bytesToInt(bytes, 4);
 			actionCount = MathUtil.bytesToShort(bytes, 8);
 			
-			animationInfos = new HashMap<Integer, AnimationInfo>();
+			animationInfos = Maps.newHashMap();
 			fis0.getChannel().position(address);
 			for (int i = 0;i < actionCount;i++) {
 				AnimationInfo animationInfo = new SpriteAnimationInfo(fis0, version, imageReader);
