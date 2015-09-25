@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import com.google.common.collect.Range;
+
 public class MathUtil {
 	
 	private static Random random = new Random();
@@ -340,6 +342,18 @@ public class MathUtil {
 	
 	public static double getRange(int sx, int sy, int tx, int ty) {
 		return Math.sqrt((ty - sy) * (ty - sy) + (tx - sx) * (tx - sx));
+	}
+	
+	public static Integer getRandomInRangeInt(Range<Integer> range) {
+		return getRandom(range.lowerEndpoint(), range.upperEndpoint());
+	}
+	
+	public static Short getRandomInRangeShort(Range<Short> range) {
+		return (short) getRandom(range.lowerEndpoint(), range.upperEndpoint());
+	}
+	
+	public static Byte getRandomInRangeByte(Range<Byte> range) {
+		return (byte) getRandom(range.lowerEndpoint(), range.upperEndpoint());
 	}
 
 }
