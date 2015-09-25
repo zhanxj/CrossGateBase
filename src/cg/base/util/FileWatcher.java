@@ -5,6 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.ListMultimap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
@@ -15,7 +17,7 @@ import com.google.common.collect.Maps;
  */
 public class FileWatcher extends Thread {
 	
-    private static Map<File, List<IFileModificationListener>> listeners = Maps.newHashMap();
+    private static ListMultimap<File, IFileModificationListener> listeners = ArrayListMultimap.create();
     
     private static Map<File, Long> lastModifyTimes = Maps.newHashMap(); 
     
@@ -31,9 +33,7 @@ public class FileWatcher extends Thread {
     public static void watch(File f, IFileModificationListener listener) {
         synchronized (listeners) {
             List<IFileModificationListener> list = listeners.get(f);
-            if (list == null) {
-                list = Lists.newArrayList();
-                listeners.put(f, list);
+            if (list.size() == 0) {
                 lastModifyTimes.put(f, f.lastModified());
             }
             for (IFileModificationListener l : list) {
@@ -60,7 +60,6 @@ public class FileWatcher extends Thread {
                 if (list.get(i) == listener) {
                     list.remove(i);
                     if (list.size() == 0) {
-                        listeners.remove(f);
                         lastModifyTimes.remove(f);
                     }
                     return;
