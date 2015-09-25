@@ -1,9 +1,10 @@
 package cg.base.time;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import cg.base.time.TimeOutCallback.TimeListener;
+
+import com.google.common.collect.Lists;
 
 public class CTimer implements Timer {
 	
@@ -25,7 +26,7 @@ public class CTimer implements Timer {
 	
 	protected CTimer() {
 		startTime = System.currentTimeMillis();
-		cellTimers = new ArrayList<TimeListener>();
+		cellTimers = Lists.newArrayList();
 	}
 
 	@Override

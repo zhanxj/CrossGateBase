@@ -1,13 +1,14 @@
 package cg.base.image;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import cg.base.CrossGateBase;
 
+import com.google.common.collect.Lists;
+
 /**
  * 
- * {@link #get(int)} ÑÏÖØÄÚ´æÐ¹Â¶
+ * {@link #get(int)} ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½Ð¹Â¶
  * @author 	Huiyuan.Fu
  */
 @Deprecated
@@ -23,7 +24,7 @@ public class CImageDictionaryLinkedList {
 		versionHeads = new Entry[size];
 		versionTails = new Entry[size];
 		versionLasts = new Entry[size];
-		nullImageId = new ArrayList<Integer>();
+		nullImageId = Lists.newArrayList();
 	}
 	
 	public void add(ImageDictionary object) {

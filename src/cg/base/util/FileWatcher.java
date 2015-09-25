@@ -1,33 +1,38 @@
 package cg.base.util;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 
 /**
- * ¼à¿ØÎÄ¼þ¸Ä±äµÄ¹¤¾ßÀà¡£Òª¼à¿ØÎÄ¼þµÄ¶ÔÏó±ØÐëÊµÏÖIFileModificationListener½Ó¿Ú£¬µ÷ÓÃwatch·½·¨¼à¿ØÒ»¸öÎÄ¼þ¡£
- * ×¢Òâ²»ÓÃ¼à¿ØÊ±±ØÐëµ÷ÓÃunwatchÈ¡Ïû¼à¿Ø¡£
+ * ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä±ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½à¡£Òªï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½IFileModificationListenerï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½ï¿½watchï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+ * ×¢ï¿½â²»ï¿½Ã¼ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½unwatchÈ¡ï¿½ï¿½ï¿½ï¿½Ø¡ï¿½
  * @author lighthu
  */
 public class FileWatcher extends Thread {
 	
-    private static HashMap<File, List<IFileModificationListener>> listeners = new HashMap<File, List<IFileModificationListener>>();
+    private static Map<File, List<IFileModificationListener>> listeners = Maps.newHashMap();
     
-    private static HashMap<File, Long> lastModifyTimes = new HashMap<File, Long>(); 
+    private static Map<File, Long> lastModifyTimes = Maps.newHashMap(); 
     
     static {
         new FileWatcher().start();
     }
     
     /**
-     * ¼à¿ØÒ»¸öÎÄ¼þ¡£µ±ÎÄ¼þ¸Ä±äÊ±µ÷ÓÃ¼àÌýÕßµÄfileModified·½·¨¡£
-     * @param f ±»¼à¿ØÎÄ¼þ 
-     * @param listener ¼àÌýÕß
+     * ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä±ï¿½Ê±ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ßµï¿½fileModifiedï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     * @param f ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ 
+     * @param listener ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public static void watch(File f, IFileModificationListener listener) {
         synchronized (listeners) {
             List<IFileModificationListener> list = listeners.get(f);
             if (list == null) {
-                list = new ArrayList<IFileModificationListener>();
+                list = Lists.newArrayList();
                 listeners.put(f, list);
                 lastModifyTimes.put(f, f.lastModified());
             }
@@ -41,9 +46,9 @@ public class FileWatcher extends Thread {
     }
     
     /**
-     * È¡ÏûÒ»¸ö¼àÌýÕß¶ÔÒ»¸öÎÄ¼þµÄ¼à¿Ø¡£
-     * @param f ±»¼à¿ØÎÄ¼þ
-     * @param listener ¼àÌýÕß
+     * È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¼ï¿½Ø¡ï¿½
+     * @param f ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+     * @param listener ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public static void unwatch(File f, IFileModificationListener listener) {
         synchronized (listeners) {
@@ -65,8 +70,8 @@ public class FileWatcher extends Thread {
     }
     
     /**
-     * È¡ÏûÒ»¸ö¼àÌýÕßµÄËùÓÐ¼àÌýÎÄ¼þ¡£
-     * @param listener ¼àÌýÕß
+     * È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+     * @param listener ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     public static void unwatch(IFileModificationListener listener) {
         synchronized (listeners) {
@@ -89,7 +94,7 @@ public class FileWatcher extends Thread {
     }
     
     /**
-     * ÂÖÑ¯Ïß³Ì¡£
+     * ï¿½ï¿½Ñ¯ï¿½ß³Ì¡ï¿½
      */
     @Override
     public void run() {
@@ -99,10 +104,10 @@ public class FileWatcher extends Thread {
             } catch (Exception e) {
             }
             
-            List<IFileModificationListener> notifyListeners = new ArrayList<IFileModificationListener>();
-            List<File> notifyFiles = new ArrayList<File>();
+            List<IFileModificationListener> notifyListeners = Lists.newArrayList();
+            List<File> notifyFiles = Lists.newArrayList();
             
-            // É¨ÃèËùÓÐ±»¼à¿ØÎÄ¼þµÄÐÞ¸ÄÊ±¼ä
+            // É¨ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½Ê±ï¿½ï¿½
             synchronized (listeners) {
                 Iterator<File> itor = listeners.keySet().iterator();
                 while (itor.hasNext()) {
@@ -118,7 +123,7 @@ public class FileWatcher extends Thread {
                 }
             }
             
-            // ¶ÔÓÚ±»ÐÞ¸ÄµÄÎÄ¼þ£¬Í¨ÖªËùÓÐ¼à¿ØÕâÐ©ÎÄ¼þµÄ¼àÌýÕß
+            // ï¿½ï¿½ï¿½Ú±ï¿½ï¿½Þ¸Äµï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Í¨Öªï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½Ð©ï¿½Ä¼ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
             for (int i = 0; i < notifyListeners.size(); i++) {
                 try {
                     notifyListeners.get(i).fileModified(notifyFiles.get(i));

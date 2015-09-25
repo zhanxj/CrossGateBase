@@ -1,9 +1,10 @@
 package cg.base.sprite;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import cg.base.util.Values;
+
+import com.google.common.collect.Lists;
 
 public class CUnit implements Unit {
 	
@@ -15,7 +16,7 @@ public class CUnit implements Unit {
 	
 	protected String name;
 	
-	protected List<UnitListener> listeners = new ArrayList<UnitListener>();
+	protected List<UnitListener> listeners = Lists.newArrayList();
 	
 	protected Values values = new Values();
 
