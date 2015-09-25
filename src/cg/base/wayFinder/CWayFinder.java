@@ -1,18 +1,19 @@
 package cg.base.wayFinder;
 
-import java.util.LinkedList;
 import java.util.List;
 
 import cg.base.log.Log;
 import cg.base.map.MapCell;
 import cg.base.map.MapCellContainer;
 
+import com.google.common.collect.Lists;
+
 abstract class CWayFinder implements WayFinder {
 	
 	protected MapCellContainer map;
 	
 	protected List<MapCell> createWayList() {
-		return new LinkedList<MapCell>();
+		return Lists.newLinkedList();
 	}
 
 	@Override

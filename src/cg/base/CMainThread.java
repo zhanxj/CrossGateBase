@@ -1,7 +1,5 @@
 package cg.base;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
@@ -9,18 +7,20 @@ import cg.base.log.Log;
 import cg.base.util.Updatable;
 import cg.base.util.Updater;
 
+import com.google.common.collect.Lists;
+
 /**
- * Ä¬ÈÏÖ÷Ïß³Ì
+ * Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½
  * <p>
- * ÓÎÏ·µÄÖ÷ÒªÏß³Ì£¬ÓÃÀ´¸üÐÂÖ÷ÒªµÄÂß¼­¡£ÊµÏÖÁË {@link Runnable} ½Ó¿Ú£¬ÓÃÀ´ÔÚÏß³ÌÖÐÔËÐÐ¡£<br>
- * ½Ó¿Ú {@link Updater} µÄÄ¬ÈÏÊµÏÖÀà¡£
+ * ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½Òªï¿½ß³Ì£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ {@link Runnable} ï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½<br>
+ * ï¿½Ó¿ï¿½ {@link Updater} ï¿½ï¿½Ä¬ï¿½ï¿½Êµï¿½ï¿½ï¿½à¡£
  * </p>
  * @author 	hyfu
  */
 class CMainThread implements Updater, Runnable {
 	
 	/**
-	 * ¸üÐÂ¼¯ºÏ
+	 * ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 	 */
 	private List<Updatable> updatables;
 	
@@ -31,60 +31,60 @@ class CMainThread implements Updater, Runnable {
 	private Log log;
 	
 	/**
-	 * ¹¹Ôì<br>
-	 * Íê³ÉÊ±»áÓÐÏß³ÌÔËÐÐ¡£
+	 * ï¿½ï¿½ï¿½ï¿½<br>
+	 * ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½
 	 */
 	public CMainThread(int sleepTime, Log log) {
 		this.sleepTime = sleepTime;
 		this.log = log;
-		updatables = new ArrayList<Updatable>(); // ´´½¨Ò»¸öÊý×é¼¯ºÏ
-		waitRemove = new LinkedList<Updatable>();
-		waitAdd = new LinkedList<Updatable>();
-		(new Thread(this, "CMainThread")).start(); // ¿ªÆôÏß³ÌÔËÐÐ
+		updatables = Lists.newArrayList(); // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½é¼¯ï¿½ï¿½
+		waitRemove = Lists.newLinkedList();
+		waitAdd = Lists.newLinkedList();
+		(new Thread(this, "CMainThread")).start(); // ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½
 	}
 
 	@Override
 	public void run() {
-		while (true) { // ÎÞÌõ¼þÑ­»·
+		while (true) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½
 			try {
-				long time = System.currentTimeMillis(); // »ñµÃ¸üÐÂÇ°Ê±¼ä£¨ºÁÃë£©
+				long time = System.currentTimeMillis(); // ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½Ç°Ê±ï¿½ä£¨ï¿½ï¿½ï¿½ë£©
 				
-				update(); // ¸üÐÂ
+				update(); // ï¿½ï¿½ï¿½ï¿½
 				
-				time = System.currentTimeMillis() - time; // ¼ÆËã¸üÐÂºÄÊ±£¨ºÁÃë£©
+				time = System.currentTimeMillis() - time; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âºï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ë£©
 				
-				if (time < sleepTime) { // ¸üÐÂºÄÊ±²»×ã¸üÐÂ¼ä¸ôÊ±
+				if (time < sleepTime) { // ï¿½ï¿½ï¿½Âºï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ê±
 					synchronized (this) {
-						wait(sleepTime - time); // µ±Ç°Ñ­»·µÈ´ý£¬Ê±¼äÎª²¹×ã¸üÐÂ¼ä¸ô
+						wait(sleepTime - time); // ï¿½ï¿½Ç°Ñ­ï¿½ï¿½ï¿½È´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½
 					}
-				} else { // ¸üÐÂºÄÊ±´ïµ½»ò³¬¹ý¸üÐÂ¼ä¸ôÊ±
+				} else { // ï¿½ï¿½ï¿½Âºï¿½Ê±ï¿½ïµ½ï¿½ò³¬¹ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ê±
 					Thread.yield();
 				}
 			} catch (Exception e) {
-				log.error("CMainThread::run() : ", e); // Êä³öÒì³£
+				log.error("CMainThread::run() : ", e); // ï¿½ï¿½ï¿½ï¿½ì³£
 			}
 		}
 	}
 
 	@Override
 	public void add(Updatable updatable) {
-		synchronized (waitAdd) { // Ëø×¡¸üÐÂ¼¯ºÏ£¬·ÀÖ¹¶àÏß³Ì²Ù×÷³öÏÖÒì³£
-			waitAdd.add(updatable); // Ìí¼Ó¸üÐÂ¶ÔÏó
+		synchronized (waitAdd) { // ï¿½ï¿½×¡ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ï£ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ß³Ì²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
+			waitAdd.add(updatable); // ï¿½ï¿½Ó¸ï¿½ï¿½Â¶ï¿½ï¿½ï¿½
 		}
 	}
 
 	@Override
 	public void update() {
-		for (Updatable updatable : updatables) { // ±éÀú¸üÐÂ¼¯ºÏ
-			long time = System.currentTimeMillis(); // »ñµÃ¸üÐÂÇ°Ê±¼ä£¨ºÁÃë£©
+		for (Updatable updatable : updatables) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
+			long time = System.currentTimeMillis(); // ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½Ç°Ê±ï¿½ä£¨ï¿½ï¿½ï¿½ë£©
 			
 			if (!waitRemove.contains(updatable)) {
-				updatable.update(); // ¸üÐÂµ±Ç°¸üÐÂ¶ÔÏó
+				updatable.update(); // ï¿½ï¿½ï¿½Âµï¿½Ç°ï¿½ï¿½ï¿½Â¶ï¿½ï¿½ï¿½
 			}
 			
-			time = System.currentTimeMillis() - time; // ¼ÆËã¸üÐÂºÄÊ±£¨ºÁÃë£©
-			if (time >= sleepTime) { // ¸üÐÂÊ±¼ä½Ï³¤
-				log.warning("CMainThread::update() too long : " + updatable.getClass().getName() + " ; time = " + time); // Êä³ö¸üÐÂÐÅÏ¢
+			time = System.currentTimeMillis() - time; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âºï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ë£©
+			if (time >= sleepTime) { // ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ï³ï¿½
+				log.warning("CMainThread::update() too long : " + updatable.getClass().getName() + " ; time = " + time); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 			}
 		}
 		synchronized (waitRemove) {

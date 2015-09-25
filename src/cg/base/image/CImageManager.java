@@ -4,7 +4,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -12,6 +11,8 @@ import cg.base.io.ImageResource;
 import cg.base.log.Log;
 import cg.base.reader.CColorPaletteReader;
 import cg.base.util.IOUtils;
+
+import com.google.common.collect.Lists;
 
 public abstract class CImageManager implements ImageManager {
 	
@@ -181,8 +182,8 @@ public abstract class CImageManager implements ImageManager {
 	@Override
 	public void addResource(ImageResource resource) {
 		if (!resources.containsKey(resource.getType())) {
-			resources.put(resource.getType(), new LinkedList<ImageResource>());
-			listeners.put(resource.getType(), new LinkedList<ResourceListener>());
+			resources.put(resource.getType(), Lists.newLinkedList());
+			listeners.put(resource.getType(), Lists.newLinkedList());
 		}
 		resources.get(resource.getType()).add(resource);
 		if (listeners.containsKey(resource.getType())) {

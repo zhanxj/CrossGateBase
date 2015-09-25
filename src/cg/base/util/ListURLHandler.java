@@ -4,12 +4,13 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
+
+import com.google.common.collect.Lists;
 
 public class ListURLHandler implements URLHandler {
 	
-	private final List<String> list = new LinkedList<String>();
+	private final List<String> list = Lists.newLinkedList();
 	
 	private final String encoding;
 	
