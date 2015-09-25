@@ -128,12 +128,20 @@ public class MathUtil {
 		return ret;
 	}
 	
+	public static double getRandom() {
+		return random.nextDouble();
+	}
+	
+	public static double getRandom(double min, double max) {
+		return min == max ? min : (getRandom() * (max - min) + min);
+	}
+	
 	public static int getRandom(int max) {
 		return max == 0 ? 0 : random.nextInt(max);
 	}
 	
 	public static int getRandom(int min, int max) {
-		return min == max ? min : random.nextInt(max - min) + min;
+		return min == max ? min : getRandom(max - min) + min;
 	}
 	
 	public static int getRandomContainsMax(int min, int max) {
