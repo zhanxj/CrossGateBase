@@ -1065,7 +1065,7 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:VO_UNIT_BATTLE_INFO)
   }
 
-  public interface REPONSE_BATTLE_ENTEROrBuilder
+  public interface RESPONSE_BATTLE_ENTEROrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // repeated .VO_UNIT_BATTLE_INFO teamA = 1;
@@ -1119,24 +1119,24 @@ public final class BattleProtos {
         int index);
   }
   /**
-   * Protobuf type {@code REPONSE_BATTLE_ENTER}
+   * Protobuf type {@code RESPONSE_BATTLE_ENTER}
    */
-  public static final class REPONSE_BATTLE_ENTER extends
+  public static final class RESPONSE_BATTLE_ENTER extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_BATTLE_ENTEROrBuilder {
-    // Use REPONSE_BATTLE_ENTER.newBuilder() to construct.
-    private REPONSE_BATTLE_ENTER(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_BATTLE_ENTEROrBuilder {
+    // Use RESPONSE_BATTLE_ENTER.newBuilder() to construct.
+    private RESPONSE_BATTLE_ENTER(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_BATTLE_ENTER(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_BATTLE_ENTER(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_BATTLE_ENTER defaultInstance;
-    public static REPONSE_BATTLE_ENTER getDefaultInstance() {
+    private static final RESPONSE_BATTLE_ENTER defaultInstance;
+    public static RESPONSE_BATTLE_ENTER getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_BATTLE_ENTER getDefaultInstanceForType() {
+    public RESPONSE_BATTLE_ENTER getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -1146,7 +1146,7 @@ public final class BattleProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_BATTLE_ENTER(
+    private RESPONSE_BATTLE_ENTER(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1205,28 +1205,28 @@ public final class BattleProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ENTER_descriptor;
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ENTER_fieldAccessorTable
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER.class, cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER.Builder.class);
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_BATTLE_ENTER> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_BATTLE_ENTER>() {
-      public REPONSE_BATTLE_ENTER parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_BATTLE_ENTER> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_BATTLE_ENTER>() {
+      public RESPONSE_BATTLE_ENTER parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_BATTLE_ENTER(input, extensionRegistry);
+        return new RESPONSE_BATTLE_ENTER(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_BATTLE_ENTER> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_BATTLE_ENTER> getParserForType() {
       return PARSER;
     }
 
@@ -1365,53 +1365,53 @@ public final class BattleProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseFrom(byte[] data)
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseDelimitedFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1420,7 +1420,7 @@ public final class BattleProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER prototype) {
+    public static Builder newBuilder(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -1432,24 +1432,24 @@ public final class BattleProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_BATTLE_ENTER}
+     * Protobuf type {@code RESPONSE_BATTLE_ENTER}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTEROrBuilder {
+       implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTEROrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ENTER_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ENTER_fieldAccessorTable
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER.class, cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER.Builder.class);
+                cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER.newBuilder()
+      // Construct using cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1492,23 +1492,23 @@ public final class BattleProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ENTER_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_descriptor;
       }
 
-      public cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER getDefaultInstanceForType() {
-        return cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER.getDefaultInstance();
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER getDefaultInstanceForType() {
+        return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.getDefaultInstance();
       }
 
-      public cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER build() {
-        cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER result = buildPartial();
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER build() {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER buildPartial() {
-        cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER result = new cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER(this);
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER buildPartial() {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER result = new cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER(this);
         int from_bitField0_ = bitField0_;
         if (teamABuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1533,16 +1533,16 @@ public final class BattleProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER) {
-          return mergeFrom((cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER)other);
+        if (other instanceof cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER) {
+          return mergeFrom((cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER other) {
-        if (other == cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER other) {
+        if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.getDefaultInstance()) return this;
         if (teamABuilder_ == null) {
           if (!other.teamA_.isEmpty()) {
             if (teamA_.isEmpty()) {
@@ -1619,11 +1619,11 @@ public final class BattleProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER parsedMessage = null;
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ENTER) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -2114,15 +2114,15 @@ public final class BattleProtos {
         return teamBBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_BATTLE_ENTER)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_ENTER)
     }
 
     static {
-      defaultInstance = new REPONSE_BATTLE_ENTER(true);
+      defaultInstance = new RESPONSE_BATTLE_ENTER(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_BATTLE_ENTER)
+    // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_ENTER)
   }
 
   public interface REQUEST_BATTLE_ATTACKOrBuilder
@@ -2529,7 +2529,7 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_BATTLE_ATTACK)
   }
 
-  public interface REPONSE_BATTLE_ACTIONOrBuilder
+  public interface RESPONSE_BATTLE_ACTIONOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required int32 targetId = 1;
@@ -2543,24 +2543,24 @@ public final class BattleProtos {
     int getTargetId();
   }
   /**
-   * Protobuf type {@code REPONSE_BATTLE_ACTION}
+   * Protobuf type {@code RESPONSE_BATTLE_ACTION}
    */
-  public static final class REPONSE_BATTLE_ACTION extends
+  public static final class RESPONSE_BATTLE_ACTION extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_BATTLE_ACTIONOrBuilder {
-    // Use REPONSE_BATTLE_ACTION.newBuilder() to construct.
-    private REPONSE_BATTLE_ACTION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_BATTLE_ACTIONOrBuilder {
+    // Use RESPONSE_BATTLE_ACTION.newBuilder() to construct.
+    private RESPONSE_BATTLE_ACTION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_BATTLE_ACTION(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_BATTLE_ACTION(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_BATTLE_ACTION defaultInstance;
-    public static REPONSE_BATTLE_ACTION getDefaultInstance() {
+    private static final RESPONSE_BATTLE_ACTION defaultInstance;
+    public static RESPONSE_BATTLE_ACTION getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_BATTLE_ACTION getDefaultInstanceForType() {
+    public RESPONSE_BATTLE_ACTION getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -2570,7 +2570,7 @@ public final class BattleProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_BATTLE_ACTION(
+    private RESPONSE_BATTLE_ACTION(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2612,28 +2612,28 @@ public final class BattleProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ACTION_descriptor;
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ACTION_fieldAccessorTable
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION.Builder.class);
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_BATTLE_ACTION> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_BATTLE_ACTION>() {
-      public REPONSE_BATTLE_ACTION parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_BATTLE_ACTION> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_BATTLE_ACTION>() {
+      public RESPONSE_BATTLE_ACTION parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_BATTLE_ACTION(input, extensionRegistry);
+        return new RESPONSE_BATTLE_ACTION(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_BATTLE_ACTION> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_BATTLE_ACTION> getParserForType() {
       return PARSER;
     }
 
@@ -2701,53 +2701,53 @@ public final class BattleProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseFrom(byte[] data)
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseDelimitedFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2756,7 +2756,7 @@ public final class BattleProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION prototype) {
+    public static Builder newBuilder(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -2768,24 +2768,24 @@ public final class BattleProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_BATTLE_ACTION}
+     * Protobuf type {@code RESPONSE_BATTLE_ACTION}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTIONOrBuilder {
+       implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ACTION_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ACTION_fieldAccessorTable
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION.Builder.class);
+                cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION.newBuilder()
+      // Construct using cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2816,23 +2816,23 @@ public final class BattleProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_ACTION_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
       }
 
-      public cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION getDefaultInstanceForType() {
-        return cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION.getDefaultInstance();
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION getDefaultInstanceForType() {
+        return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.getDefaultInstance();
       }
 
-      public cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION build() {
-        cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION result = buildPartial();
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION build() {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION buildPartial() {
-        cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION result = new cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION(this);
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION buildPartial() {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION result = new cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2845,16 +2845,16 @@ public final class BattleProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION) {
-          return mergeFrom((cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION)other);
+        if (other instanceof cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION) {
+          return mergeFrom((cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION other) {
-        if (other == cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION other) {
+        if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.getDefaultInstance()) return this;
         if (other.hasTargetId()) {
           setTargetId(other.getTargetId());
         }
@@ -2874,11 +2874,11 @@ public final class BattleProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION parsedMessage = null;
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.REPONSE_BATTLE_ACTION) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -2922,18 +2922,18 @@ public final class BattleProtos {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_BATTLE_ACTION)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_ACTION)
     }
 
     static {
-      defaultInstance = new REPONSE_BATTLE_ACTION(true);
+      defaultInstance = new RESPONSE_BATTLE_ACTION(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_BATTLE_ACTION)
+    // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_ACTION)
   }
 
-  public interface REPONSE_BATTLE_FINISHOrBuilder
+  public interface RESPONSE_BATTLE_FINISHOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required int32 targetId = 1;
@@ -2947,24 +2947,24 @@ public final class BattleProtos {
     int getTargetId();
   }
   /**
-   * Protobuf type {@code REPONSE_BATTLE_FINISH}
+   * Protobuf type {@code RESPONSE_BATTLE_FINISH}
    */
-  public static final class REPONSE_BATTLE_FINISH extends
+  public static final class RESPONSE_BATTLE_FINISH extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_BATTLE_FINISHOrBuilder {
-    // Use REPONSE_BATTLE_FINISH.newBuilder() to construct.
-    private REPONSE_BATTLE_FINISH(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_BATTLE_FINISHOrBuilder {
+    // Use RESPONSE_BATTLE_FINISH.newBuilder() to construct.
+    private RESPONSE_BATTLE_FINISH(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_BATTLE_FINISH(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_BATTLE_FINISH(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_BATTLE_FINISH defaultInstance;
-    public static REPONSE_BATTLE_FINISH getDefaultInstance() {
+    private static final RESPONSE_BATTLE_FINISH defaultInstance;
+    public static RESPONSE_BATTLE_FINISH getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_BATTLE_FINISH getDefaultInstanceForType() {
+    public RESPONSE_BATTLE_FINISH getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -2974,7 +2974,7 @@ public final class BattleProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_BATTLE_FINISH(
+    private RESPONSE_BATTLE_FINISH(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3016,28 +3016,28 @@ public final class BattleProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_FINISH_descriptor;
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_FINISH_fieldAccessorTable
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH.class, cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH.Builder.class);
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_BATTLE_FINISH> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_BATTLE_FINISH>() {
-      public REPONSE_BATTLE_FINISH parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_BATTLE_FINISH> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_BATTLE_FINISH>() {
+      public RESPONSE_BATTLE_FINISH parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_BATTLE_FINISH(input, extensionRegistry);
+        return new RESPONSE_BATTLE_FINISH(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_BATTLE_FINISH> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_BATTLE_FINISH> getParserForType() {
       return PARSER;
     }
 
@@ -3105,53 +3105,53 @@ public final class BattleProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseFrom(byte[] data)
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseDelimitedFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parseFrom(
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3160,7 +3160,7 @@ public final class BattleProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH prototype) {
+    public static Builder newBuilder(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -3172,24 +3172,24 @@ public final class BattleProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_BATTLE_FINISH}
+     * Protobuf type {@code RESPONSE_BATTLE_FINISH}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISHOrBuilder {
+       implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISHOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_FINISH_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_FINISH_fieldAccessorTable
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH.class, cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH.Builder.class);
+                cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH.newBuilder()
+      // Construct using cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3220,23 +3220,23 @@ public final class BattleProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_REPONSE_BATTLE_FINISH_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_descriptor;
       }
 
-      public cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH getDefaultInstanceForType() {
-        return cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH.getDefaultInstance();
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH getDefaultInstanceForType() {
+        return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.getDefaultInstance();
       }
 
-      public cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH build() {
-        cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH result = buildPartial();
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH build() {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH buildPartial() {
-        cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH result = new cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH(this);
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH buildPartial() {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH result = new cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3249,16 +3249,16 @@ public final class BattleProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH) {
-          return mergeFrom((cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH)other);
+        if (other instanceof cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH) {
+          return mergeFrom((cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH other) {
-        if (other == cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH other) {
+        if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.getDefaultInstance()) return this;
         if (other.hasTargetId()) {
           setTargetId(other.getTargetId());
         }
@@ -3278,11 +3278,11 @@ public final class BattleProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH parsedMessage = null;
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.REPONSE_BATTLE_FINISH) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -3326,15 +3326,15 @@ public final class BattleProtos {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_BATTLE_FINISH)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_FINISH)
     }
 
     static {
-      defaultInstance = new REPONSE_BATTLE_FINISH(true);
+      defaultInstance = new RESPONSE_BATTLE_FINISH(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_BATTLE_FINISH)
+    // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_FINISH)
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
@@ -3343,25 +3343,25 @@ public final class BattleProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_BATTLE_ENTER_descriptor;
+    internal_static_RESPONSE_BATTLE_ENTER_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_BATTLE_ENTER_fieldAccessorTable;
+      internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_BATTLE_ATTACK_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_BATTLE_ACTION_descriptor;
+    internal_static_RESPONSE_BATTLE_ACTION_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_BATTLE_ACTION_fieldAccessorTable;
+      internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_BATTLE_FINISH_descriptor;
+    internal_static_RESPONSE_BATTLE_FINISH_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_BATTLE_FINISH_fieldAccessorTable;
+      internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3375,12 +3375,12 @@ public final class BattleProtos {
       "TLE_INFO\022$\n\010baseInfo\030\001 \002(\0132\022.VO_UNIT_BAS" +
       "E_INFO\022\r\n\005hpMax\030\002 \002(\005\022\n\n\002hp\030\003 \002(\005\022\r\n\005mpM" +
       "ax\030\004 \002(\005\022\n\n\002mp\030\005 \002(\005\022\r\n\005local\030\006 \002(\005\022\024\n\014i" +
-      "sChallenger\030\007 \002(\010\"`\n\024REPONSE_BATTLE_ENTE" +
+      "sChallenger\030\007 \002(\010\"`\n\024RESPONSE_BATTLE_ENTE" +
       "R\022#\n\005teamA\030\001 \003(\0132\024.VO_UNIT_BATTLE_INFO\022#" +
       "\n\005teamB\030\002 \003(\0132\024.VO_UNIT_BATTLE_INFO\")\n\025R" +
       "EQUEST_BATTLE_ATTACK\022\020\n\010targetId\030\001 \002(\005\")" +
-      "\n\025REPONSE_BATTLE_ACTION\022\020\n\010targetId\030\001 \002(" +
-      "\005\")\n\025REPONSE_BATTLE_FINISH\022\020\n\010targetId\030\001",
+      "\n\025RESPONSE_BATTLE_ACTION\022\020\n\010targetId\030\001 \002(" +
+      "\005\")\n\025RESPONSE_BATTLE_FINISH\022\020\n\010targetId\030\001",
       " \002(\005B \n\020cg.base.io.protoB\014BattleProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
@@ -3394,11 +3394,11 @@ public final class BattleProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_UNIT_BATTLE_INFO_descriptor,
               new java.lang.String[] { "BaseInfo", "HpMax", "Hp", "MpMax", "Mp", "Local", "IsChallenger", });
-          internal_static_REPONSE_BATTLE_ENTER_descriptor =
+          internal_static_RESPONSE_BATTLE_ENTER_descriptor =
             getDescriptor().getMessageTypes().get(1);
-          internal_static_REPONSE_BATTLE_ENTER_fieldAccessorTable = new
+          internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_BATTLE_ENTER_descriptor,
+              internal_static_RESPONSE_BATTLE_ENTER_descriptor,
               new java.lang.String[] { "TeamA", "TeamB", });
           internal_static_REQUEST_BATTLE_ATTACK_descriptor =
             getDescriptor().getMessageTypes().get(2);
@@ -3406,17 +3406,17 @@ public final class BattleProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_BATTLE_ATTACK_descriptor,
               new java.lang.String[] { "TargetId", });
-          internal_static_REPONSE_BATTLE_ACTION_descriptor =
+          internal_static_RESPONSE_BATTLE_ACTION_descriptor =
             getDescriptor().getMessageTypes().get(3);
-          internal_static_REPONSE_BATTLE_ACTION_fieldAccessorTable = new
+          internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_BATTLE_ACTION_descriptor,
+              internal_static_RESPONSE_BATTLE_ACTION_descriptor,
               new java.lang.String[] { "TargetId", });
-          internal_static_REPONSE_BATTLE_FINISH_descriptor =
+          internal_static_RESPONSE_BATTLE_FINISH_descriptor =
             getDescriptor().getMessageTypes().get(4);
-          internal_static_REPONSE_BATTLE_FINISH_fieldAccessorTable = new
+          internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_BATTLE_FINISH_descriptor,
+              internal_static_RESPONSE_BATTLE_FINISH_descriptor,
               new java.lang.String[] { "TargetId", });
           return null;
         }

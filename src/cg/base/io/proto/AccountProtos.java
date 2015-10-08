@@ -2785,7 +2785,7 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:VO_ACCOUNT_PLAYER_INFO)
   }
 
-  public interface REPONSE_ACCOUNT_ROLE_LISTOrBuilder
+  public interface RESPONSE_ACCOUNT_ROLE_LISTOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // repeated .VO_ACCOUNT_PLAYER_INFO players = 1;
@@ -2814,24 +2814,24 @@ public final class AccountProtos {
         int index);
   }
   /**
-   * Protobuf type {@code REPONSE_ACCOUNT_ROLE_LIST}
+   * Protobuf type {@code RESPONSE_ACCOUNT_ROLE_LIST}
    */
-  public static final class REPONSE_ACCOUNT_ROLE_LIST extends
+  public static final class RESPONSE_ACCOUNT_ROLE_LIST extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_ACCOUNT_ROLE_LISTOrBuilder {
-    // Use REPONSE_ACCOUNT_ROLE_LIST.newBuilder() to construct.
-    private REPONSE_ACCOUNT_ROLE_LIST(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_ACCOUNT_ROLE_LISTOrBuilder {
+    // Use RESPONSE_ACCOUNT_ROLE_LIST.newBuilder() to construct.
+    private RESPONSE_ACCOUNT_ROLE_LIST(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_ACCOUNT_ROLE_LIST(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_ACCOUNT_ROLE_LIST(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_ACCOUNT_ROLE_LIST defaultInstance;
-    public static REPONSE_ACCOUNT_ROLE_LIST getDefaultInstance() {
+    private static final RESPONSE_ACCOUNT_ROLE_LIST defaultInstance;
+    public static RESPONSE_ACCOUNT_ROLE_LIST getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_ACCOUNT_ROLE_LIST getDefaultInstanceForType() {
+    public RESPONSE_ACCOUNT_ROLE_LIST getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -2841,7 +2841,7 @@ public final class AccountProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_ACCOUNT_ROLE_LIST(
+    private RESPONSE_ACCOUNT_ROLE_LIST(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2889,28 +2889,28 @@ public final class AccountProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.AccountProtos.internal_static_REPONSE_ACCOUNT_ROLE_LIST_descriptor;
+      return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.AccountProtos.internal_static_REPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable
+      return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST.class, cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST.Builder.class);
+              cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST.class, cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_ACCOUNT_ROLE_LIST> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_ACCOUNT_ROLE_LIST>() {
-      public REPONSE_ACCOUNT_ROLE_LIST parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_ACCOUNT_ROLE_LIST> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_ACCOUNT_ROLE_LIST>() {
+      public RESPONSE_ACCOUNT_ROLE_LIST parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_ACCOUNT_ROLE_LIST(input, extensionRegistry);
+        return new RESPONSE_ACCOUNT_ROLE_LIST(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_ACCOUNT_ROLE_LIST> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_ACCOUNT_ROLE_LIST> getParserForType() {
       return PARSER;
     }
 
@@ -2999,53 +2999,53 @@ public final class AccountProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseFrom(byte[] data)
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseDelimitedFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3054,7 +3054,7 @@ public final class AccountProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST prototype) {
+    public static Builder newBuilder(cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -3066,24 +3066,24 @@ public final class AccountProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_ACCOUNT_ROLE_LIST}
+     * Protobuf type {@code RESPONSE_ACCOUNT_ROLE_LIST}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LISTOrBuilder {
+       implements cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LISTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.AccountProtos.internal_static_REPONSE_ACCOUNT_ROLE_LIST_descriptor;
+        return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.AccountProtos.internal_static_REPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable
+        return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST.class, cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST.Builder.class);
+                cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST.class, cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST.newBuilder()
+      // Construct using cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3119,23 +3119,23 @@ public final class AccountProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.AccountProtos.internal_static_REPONSE_ACCOUNT_ROLE_LIST_descriptor;
+        return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor;
       }
 
-      public cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST getDefaultInstanceForType() {
-        return cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST.getDefaultInstance();
+      public cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST getDefaultInstanceForType() {
+        return cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST.getDefaultInstance();
       }
 
-      public cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST build() {
-        cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST result = buildPartial();
+      public cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST build() {
+        cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST buildPartial() {
-        cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST result = new cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST(this);
+      public cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST buildPartial() {
+        cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST result = new cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST(this);
         int from_bitField0_ = bitField0_;
         if (playersBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3151,16 +3151,16 @@ public final class AccountProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST) {
-          return mergeFrom((cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST)other);
+        if (other instanceof cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST) {
+          return mergeFrom((cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST other) {
-        if (other == cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST other) {
+        if (other == cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST.getDefaultInstance()) return this;
         if (playersBuilder_ == null) {
           if (!other.players_.isEmpty()) {
             if (players_.isEmpty()) {
@@ -3205,11 +3205,11 @@ public final class AccountProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST parsedMessage = null;
+        cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.AccountProtos.REPONSE_ACCOUNT_ROLE_LIST) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LIST) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -3460,15 +3460,15 @@ public final class AccountProtos {
         return playersBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_ACCOUNT_ROLE_LIST)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_ACCOUNT_ROLE_LIST)
     }
 
     static {
-      defaultInstance = new REPONSE_ACCOUNT_ROLE_LIST(true);
+      defaultInstance = new RESPONSE_ACCOUNT_ROLE_LIST(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_ACCOUNT_ROLE_LIST)
+    // @@protoc_insertion_point(class_scope:RESPONSE_ACCOUNT_ROLE_LIST)
   }
 
   public interface VO_SERVEROrBuilder
@@ -4128,7 +4128,7 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:VO_SERVER)
   }
 
-  public interface REPONSE_SERVER_LISTOrBuilder
+  public interface RESPONSE_SERVER_LISTOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // repeated .VO_SERVER servers = 1;
@@ -4157,24 +4157,24 @@ public final class AccountProtos {
         int index);
   }
   /**
-   * Protobuf type {@code REPONSE_SERVER_LIST}
+   * Protobuf type {@code RESPONSE_SERVER_LIST}
    */
-  public static final class REPONSE_SERVER_LIST extends
+  public static final class RESPONSE_SERVER_LIST extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_SERVER_LISTOrBuilder {
-    // Use REPONSE_SERVER_LIST.newBuilder() to construct.
-    private REPONSE_SERVER_LIST(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_SERVER_LISTOrBuilder {
+    // Use RESPONSE_SERVER_LIST.newBuilder() to construct.
+    private RESPONSE_SERVER_LIST(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_SERVER_LIST(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_SERVER_LIST(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_SERVER_LIST defaultInstance;
-    public static REPONSE_SERVER_LIST getDefaultInstance() {
+    private static final RESPONSE_SERVER_LIST defaultInstance;
+    public static RESPONSE_SERVER_LIST getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_SERVER_LIST getDefaultInstanceForType() {
+    public RESPONSE_SERVER_LIST getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -4184,7 +4184,7 @@ public final class AccountProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_SERVER_LIST(
+    private RESPONSE_SERVER_LIST(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4232,28 +4232,28 @@ public final class AccountProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_LIST_descriptor;
+      return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_LIST_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_LIST_fieldAccessorTable
+      return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_LIST_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST.class, cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST.Builder.class);
+              cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST.class, cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_SERVER_LIST> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_SERVER_LIST>() {
-      public REPONSE_SERVER_LIST parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_SERVER_LIST> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_SERVER_LIST>() {
+      public RESPONSE_SERVER_LIST parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_SERVER_LIST(input, extensionRegistry);
+        return new RESPONSE_SERVER_LIST(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_SERVER_LIST> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_SERVER_LIST> getParserForType() {
       return PARSER;
     }
 
@@ -4342,53 +4342,53 @@ public final class AccountProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseFrom(byte[] data)
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseDelimitedFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4397,7 +4397,7 @@ public final class AccountProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST prototype) {
+    public static Builder newBuilder(cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -4409,24 +4409,24 @@ public final class AccountProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_SERVER_LIST}
+     * Protobuf type {@code RESPONSE_SERVER_LIST}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.REPONSE_SERVER_LISTOrBuilder {
+       implements cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LISTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_LIST_descriptor;
+        return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_LIST_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_LIST_fieldAccessorTable
+        return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_LIST_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST.class, cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST.Builder.class);
+                cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST.class, cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST.newBuilder()
+      // Construct using cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4462,23 +4462,23 @@ public final class AccountProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_LIST_descriptor;
+        return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_LIST_descriptor;
       }
 
-      public cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST getDefaultInstanceForType() {
-        return cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST.getDefaultInstance();
+      public cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST getDefaultInstanceForType() {
+        return cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST.getDefaultInstance();
       }
 
-      public cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST build() {
-        cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST result = buildPartial();
+      public cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST build() {
+        cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST buildPartial() {
-        cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST result = new cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST(this);
+      public cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST buildPartial() {
+        cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST result = new cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST(this);
         int from_bitField0_ = bitField0_;
         if (serversBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -4494,16 +4494,16 @@ public final class AccountProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST) {
-          return mergeFrom((cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST)other);
+        if (other instanceof cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST) {
+          return mergeFrom((cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST other) {
-        if (other == cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST other) {
+        if (other == cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST.getDefaultInstance()) return this;
         if (serversBuilder_ == null) {
           if (!other.servers_.isEmpty()) {
             if (servers_.isEmpty()) {
@@ -4548,11 +4548,11 @@ public final class AccountProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST parsedMessage = null;
+        cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.AccountProtos.REPONSE_SERVER_LIST) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LIST) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4803,15 +4803,15 @@ public final class AccountProtos {
         return serversBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_SERVER_LIST)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_SERVER_LIST)
     }
 
     static {
-      defaultInstance = new REPONSE_SERVER_LIST(true);
+      defaultInstance = new RESPONSE_SERVER_LIST(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_SERVER_LIST)
+    // @@protoc_insertion_point(class_scope:RESPONSE_SERVER_LIST)
   }
 
   public interface REQUEST_SERVER_SELECTOrBuilder
@@ -5218,7 +5218,7 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_SERVER_SELECT)
   }
 
-  public interface REPONSE_SERVER_SELECTOrBuilder
+  public interface RESPONSE_SERVER_SELECTOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required string url = 1;
@@ -5237,24 +5237,24 @@ public final class AccountProtos {
         getUrlBytes();
   }
   /**
-   * Protobuf type {@code REPONSE_SERVER_SELECT}
+   * Protobuf type {@code RESPONSE_SERVER_SELECT}
    */
-  public static final class REPONSE_SERVER_SELECT extends
+  public static final class RESPONSE_SERVER_SELECT extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_SERVER_SELECTOrBuilder {
-    // Use REPONSE_SERVER_SELECT.newBuilder() to construct.
-    private REPONSE_SERVER_SELECT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_SERVER_SELECTOrBuilder {
+    // Use RESPONSE_SERVER_SELECT.newBuilder() to construct.
+    private RESPONSE_SERVER_SELECT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_SERVER_SELECT(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_SERVER_SELECT(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_SERVER_SELECT defaultInstance;
-    public static REPONSE_SERVER_SELECT getDefaultInstance() {
+    private static final RESPONSE_SERVER_SELECT defaultInstance;
+    public static RESPONSE_SERVER_SELECT getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_SERVER_SELECT getDefaultInstanceForType() {
+    public RESPONSE_SERVER_SELECT getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -5264,7 +5264,7 @@ public final class AccountProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_SERVER_SELECT(
+    private RESPONSE_SERVER_SELECT(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -5306,28 +5306,28 @@ public final class AccountProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_SELECT_descriptor;
+      return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_SELECT_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_SELECT_fieldAccessorTable
+      return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT.class, cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT.Builder.class);
+              cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT.class, cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_SERVER_SELECT> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_SERVER_SELECT>() {
-      public REPONSE_SERVER_SELECT parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_SERVER_SELECT> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_SERVER_SELECT>() {
+      public RESPONSE_SERVER_SELECT parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_SERVER_SELECT(input, extensionRegistry);
+        return new RESPONSE_SERVER_SELECT(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_SERVER_SELECT> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_SERVER_SELECT> getParserForType() {
       return PARSER;
     }
 
@@ -5422,53 +5422,53 @@ public final class AccountProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseFrom(byte[] data)
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseDelimitedFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parseFrom(
+    public static cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5477,7 +5477,7 @@ public final class AccountProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT prototype) {
+    public static Builder newBuilder(cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -5489,24 +5489,24 @@ public final class AccountProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_SERVER_SELECT}
+     * Protobuf type {@code RESPONSE_SERVER_SELECT}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECTOrBuilder {
+       implements cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_SELECT_descriptor;
+        return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_SELECT_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_SELECT_fieldAccessorTable
+        return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT.class, cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT.Builder.class);
+                cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT.class, cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT.newBuilder()
+      // Construct using cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -5537,23 +5537,23 @@ public final class AccountProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.AccountProtos.internal_static_REPONSE_SERVER_SELECT_descriptor;
+        return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_SELECT_descriptor;
       }
 
-      public cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT getDefaultInstanceForType() {
-        return cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT.getDefaultInstance();
+      public cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT getDefaultInstanceForType() {
+        return cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT.getDefaultInstance();
       }
 
-      public cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT build() {
-        cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT result = buildPartial();
+      public cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT build() {
+        cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT buildPartial() {
-        cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT result = new cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT(this);
+      public cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT buildPartial() {
+        cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT result = new cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -5566,16 +5566,16 @@ public final class AccountProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT) {
-          return mergeFrom((cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT)other);
+        if (other instanceof cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT) {
+          return mergeFrom((cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT other) {
-        if (other == cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT other) {
+        if (other == cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT.getDefaultInstance()) return this;
         if (other.hasUrl()) {
           bitField0_ |= 0x00000001;
           url_ = other.url_;
@@ -5597,11 +5597,11 @@ public final class AccountProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT parsedMessage = null;
+        cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.AccountProtos.REPONSE_SERVER_SELECT) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -5686,15 +5686,15 @@ public final class AccountProtos {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_SERVER_SELECT)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_SERVER_SELECT)
     }
 
     static {
-      defaultInstance = new REPONSE_SERVER_SELECT(true);
+      defaultInstance = new RESPONSE_SERVER_SELECT(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_SERVER_SELECT)
+    // @@protoc_insertion_point(class_scope:RESPONSE_SERVER_SELECT)
   }
 
   public interface ACCOUNT_CHANGE_PASSWORD_CLIENTOrBuilder
@@ -6520,30 +6520,30 @@ public final class AccountProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_ACCOUNT_PLAYER_INFO_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_ACCOUNT_ROLE_LIST_descriptor;
+    internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable;
+      internal_static_RESPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_SERVER_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_SERVER_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_SERVER_LIST_descriptor;
+    internal_static_RESPONSE_SERVER_LIST_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_SERVER_LIST_fieldAccessorTable;
+      internal_static_RESPONSE_SERVER_LIST_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_SERVER_SELECT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_SERVER_SELECT_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_SERVER_SELECT_descriptor;
+    internal_static_RESPONSE_SERVER_SELECT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_SERVER_SELECT_fieldAccessorTable;
+      internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_descriptor;
   private static
@@ -6570,9 +6570,9 @@ public final class AccountProtos {
       "EPONSE_ACCOUNT_ROLE_LIST\022(\n\007players\030\001 \003(",
       "\0132\027.VO_ACCOUNT_PLAYER_INFO\":\n\tVO_SERVER\022" +
       "\014\n\004name\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\023\n\013connectTime" +
-      "\030\003 \002(\005\"2\n\023REPONSE_SERVER_LIST\022\033\n\007servers" +
+      "\030\003 \002(\005\"2\n\023RESPONSE_SERVER_LIST\022\033\n\007servers" +
       "\030\001 \003(\0132\n.VO_SERVER\"#\n\025REQUEST_SERVER_SEL" +
-      "ECT\022\n\n\002id\030\001 \002(\005\"$\n\025REPONSE_SERVER_SELECT" +
+      "ECT\022\n\n\002id\030\001 \002(\005\"$\n\025RESPONSE_SERVER_SELECT" +
       "\022\013\n\003url\030\001 \002(\t\"[\n\036ACCOUNT_CHANGE_PASSWORD" +
       "_CLIENT\022\017\n\007account\030\001 \002(\t\022\023\n\013oldPassword\030" +
       "\002 \002(\t\022\023\n\013newPassword\030\003 \002(\tB!\n\020cg.base.io" +
@@ -6601,11 +6601,11 @@ public final class AccountProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_ACCOUNT_PLAYER_INFO_descriptor,
               new java.lang.String[] { "InstanceId", "Name", "RoleVersion", "HeadVersion", "AnimationGloabId", "HeadGloabId", "Level", "LoginTimes", "RoleIndex", "Job", });
-          internal_static_REPONSE_ACCOUNT_ROLE_LIST_descriptor =
+          internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor =
             getDescriptor().getMessageTypes().get(3);
-          internal_static_REPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable = new
+          internal_static_RESPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_ACCOUNT_ROLE_LIST_descriptor,
+              internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor,
               new java.lang.String[] { "Players", });
           internal_static_VO_SERVER_descriptor =
             getDescriptor().getMessageTypes().get(4);
@@ -6613,11 +6613,11 @@ public final class AccountProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_SERVER_descriptor,
               new java.lang.String[] { "Name", "Id", "ConnectTime", });
-          internal_static_REPONSE_SERVER_LIST_descriptor =
+          internal_static_RESPONSE_SERVER_LIST_descriptor =
             getDescriptor().getMessageTypes().get(5);
-          internal_static_REPONSE_SERVER_LIST_fieldAccessorTable = new
+          internal_static_RESPONSE_SERVER_LIST_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_SERVER_LIST_descriptor,
+              internal_static_RESPONSE_SERVER_LIST_descriptor,
               new java.lang.String[] { "Servers", });
           internal_static_REQUEST_SERVER_SELECT_descriptor =
             getDescriptor().getMessageTypes().get(6);
@@ -6625,11 +6625,11 @@ public final class AccountProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_SERVER_SELECT_descriptor,
               new java.lang.String[] { "Id", });
-          internal_static_REPONSE_SERVER_SELECT_descriptor =
+          internal_static_RESPONSE_SERVER_SELECT_descriptor =
             getDescriptor().getMessageTypes().get(7);
-          internal_static_REPONSE_SERVER_SELECT_fieldAccessorTable = new
+          internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_SERVER_SELECT_descriptor,
+              internal_static_RESPONSE_SERVER_SELECT_descriptor,
               new java.lang.String[] { "Url", });
           internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_descriptor =
             getDescriptor().getMessageTypes().get(8);

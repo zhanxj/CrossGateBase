@@ -665,7 +665,7 @@ public final class ChatProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_CHAT)
   }
 
-  public interface REPONSE_CHATOrBuilder
+  public interface RESPONSE_CHATOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required int32 channel = 1;
@@ -719,24 +719,24 @@ public final class ChatProtos {
         getTextBytes();
   }
   /**
-   * Protobuf type {@code REPONSE_CHAT}
+   * Protobuf type {@code RESPONSE_CHAT}
    */
-  public static final class REPONSE_CHAT extends
+  public static final class RESPONSE_CHAT extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_CHATOrBuilder {
-    // Use REPONSE_CHAT.newBuilder() to construct.
-    private REPONSE_CHAT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_CHATOrBuilder {
+    // Use RESPONSE_CHAT.newBuilder() to construct.
+    private RESPONSE_CHAT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_CHAT(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_CHAT(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_CHAT defaultInstance;
-    public static REPONSE_CHAT getDefaultInstance() {
+    private static final RESPONSE_CHAT defaultInstance;
+    public static RESPONSE_CHAT getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_CHAT getDefaultInstanceForType() {
+    public RESPONSE_CHAT getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -746,7 +746,7 @@ public final class ChatProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_CHAT(
+    private RESPONSE_CHAT(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -803,28 +803,28 @@ public final class ChatProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.ChatProtos.internal_static_REPONSE_CHAT_descriptor;
+      return cg.base.io.proto.ChatProtos.internal_static_RESPONSE_CHAT_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.ChatProtos.internal_static_REPONSE_CHAT_fieldAccessorTable
+      return cg.base.io.proto.ChatProtos.internal_static_RESPONSE_CHAT_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.ChatProtos.REPONSE_CHAT.class, cg.base.io.proto.ChatProtos.REPONSE_CHAT.Builder.class);
+              cg.base.io.proto.ChatProtos.RESPONSE_CHAT.class, cg.base.io.proto.ChatProtos.RESPONSE_CHAT.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_CHAT> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_CHAT>() {
-      public REPONSE_CHAT parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_CHAT> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_CHAT>() {
+      public RESPONSE_CHAT parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_CHAT(input, extensionRegistry);
+        return new RESPONSE_CHAT(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_CHAT> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_CHAT> getParserForType() {
       return PARSER;
     }
 
@@ -1030,53 +1030,53 @@ public final class ChatProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseFrom(
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseFrom(
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseFrom(byte[] data)
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseFrom(
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseFrom(
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseDelimitedFrom(
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseFrom(
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.ChatProtos.REPONSE_CHAT parseFrom(
+    public static cg.base.io.proto.ChatProtos.RESPONSE_CHAT parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1085,7 +1085,7 @@ public final class ChatProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.ChatProtos.REPONSE_CHAT prototype) {
+    public static Builder newBuilder(cg.base.io.proto.ChatProtos.RESPONSE_CHAT prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -1097,24 +1097,24 @@ public final class ChatProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_CHAT}
+     * Protobuf type {@code RESPONSE_CHAT}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ChatProtos.REPONSE_CHATOrBuilder {
+       implements cg.base.io.proto.ChatProtos.RESPONSE_CHATOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.ChatProtos.internal_static_REPONSE_CHAT_descriptor;
+        return cg.base.io.proto.ChatProtos.internal_static_RESPONSE_CHAT_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.ChatProtos.internal_static_REPONSE_CHAT_fieldAccessorTable
+        return cg.base.io.proto.ChatProtos.internal_static_RESPONSE_CHAT_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.ChatProtos.REPONSE_CHAT.class, cg.base.io.proto.ChatProtos.REPONSE_CHAT.Builder.class);
+                cg.base.io.proto.ChatProtos.RESPONSE_CHAT.class, cg.base.io.proto.ChatProtos.RESPONSE_CHAT.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.ChatProtos.REPONSE_CHAT.newBuilder()
+      // Construct using cg.base.io.proto.ChatProtos.RESPONSE_CHAT.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1151,23 +1151,23 @@ public final class ChatProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.ChatProtos.internal_static_REPONSE_CHAT_descriptor;
+        return cg.base.io.proto.ChatProtos.internal_static_RESPONSE_CHAT_descriptor;
       }
 
-      public cg.base.io.proto.ChatProtos.REPONSE_CHAT getDefaultInstanceForType() {
-        return cg.base.io.proto.ChatProtos.REPONSE_CHAT.getDefaultInstance();
+      public cg.base.io.proto.ChatProtos.RESPONSE_CHAT getDefaultInstanceForType() {
+        return cg.base.io.proto.ChatProtos.RESPONSE_CHAT.getDefaultInstance();
       }
 
-      public cg.base.io.proto.ChatProtos.REPONSE_CHAT build() {
-        cg.base.io.proto.ChatProtos.REPONSE_CHAT result = buildPartial();
+      public cg.base.io.proto.ChatProtos.RESPONSE_CHAT build() {
+        cg.base.io.proto.ChatProtos.RESPONSE_CHAT result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.ChatProtos.REPONSE_CHAT buildPartial() {
-        cg.base.io.proto.ChatProtos.REPONSE_CHAT result = new cg.base.io.proto.ChatProtos.REPONSE_CHAT(this);
+      public cg.base.io.proto.ChatProtos.RESPONSE_CHAT buildPartial() {
+        cg.base.io.proto.ChatProtos.RESPONSE_CHAT result = new cg.base.io.proto.ChatProtos.RESPONSE_CHAT(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1192,16 +1192,16 @@ public final class ChatProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.ChatProtos.REPONSE_CHAT) {
-          return mergeFrom((cg.base.io.proto.ChatProtos.REPONSE_CHAT)other);
+        if (other instanceof cg.base.io.proto.ChatProtos.RESPONSE_CHAT) {
+          return mergeFrom((cg.base.io.proto.ChatProtos.RESPONSE_CHAT)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.ChatProtos.REPONSE_CHAT other) {
-        if (other == cg.base.io.proto.ChatProtos.REPONSE_CHAT.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.ChatProtos.RESPONSE_CHAT other) {
+        if (other == cg.base.io.proto.ChatProtos.RESPONSE_CHAT.getDefaultInstance()) return this;
         if (other.hasChannel()) {
           setChannel(other.getChannel());
         }
@@ -1246,11 +1246,11 @@ public final class ChatProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.ChatProtos.REPONSE_CHAT parsedMessage = null;
+        cg.base.io.proto.ChatProtos.RESPONSE_CHAT parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.ChatProtos.REPONSE_CHAT) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.ChatProtos.RESPONSE_CHAT) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1475,15 +1475,15 @@ public final class ChatProtos {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_CHAT)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_CHAT)
     }
 
     static {
-      defaultInstance = new REPONSE_CHAT(true);
+      defaultInstance = new RESPONSE_CHAT(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_CHAT)
+    // @@protoc_insertion_point(class_scope:RESPONSE_CHAT)
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
@@ -1492,10 +1492,10 @@ public final class ChatProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_CHAT_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_CHAT_descriptor;
+    internal_static_RESPONSE_CHAT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_CHAT_fieldAccessorTable;
+      internal_static_RESPONSE_CHAT_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1507,7 +1507,7 @@ public final class ChatProtos {
     java.lang.String[] descriptorData = {
       "\n\nChat.proto\"?\n\014REQUEST_CHAT\022\017\n\007channel\030" +
       "\001 \002(\005\022\020\n\010targetId\030\002 \002(\005\022\014\n\004text\030\003 \002(\t\"R\n" +
-      "\014REPONSE_CHAT\022\017\n\007channel\030\001 \002(\005\022\020\n\010source" +
+      "\014RESPONSE_CHAT\022\017\n\007channel\030\001 \002(\005\022\020\n\010source" +
       "Id\030\002 \002(\005\022\021\n\tsouceName\030\003 \002(\t\022\014\n\004text\030\004 \002(" +
       "\tB\036\n\020cg.base.io.protoB\nChatProtos"
     };
@@ -1522,11 +1522,11 @@ public final class ChatProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_CHAT_descriptor,
               new java.lang.String[] { "Channel", "TargetId", "Text", });
-          internal_static_REPONSE_CHAT_descriptor =
+          internal_static_RESPONSE_CHAT_descriptor =
             getDescriptor().getMessageTypes().get(1);
-          internal_static_REPONSE_CHAT_fieldAccessorTable = new
+          internal_static_RESPONSE_CHAT_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_CHAT_descriptor,
+              internal_static_RESPONSE_CHAT_descriptor,
               new java.lang.String[] { "Channel", "SourceId", "SouceName", "Text", });
           return null;
         }

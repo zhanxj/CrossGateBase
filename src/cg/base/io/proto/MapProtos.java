@@ -590,7 +590,7 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_MAP_IN)
   }
 
-  public interface REPONSE_MAP_INOrBuilder
+  public interface RESPONSE_MAP_INOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required int32 mapId = 1;
@@ -669,24 +669,24 @@ public final class MapProtos {
     int getMaxSouth();
   }
   /**
-   * Protobuf type {@code REPONSE_MAP_IN}
+   * Protobuf type {@code RESPONSE_MAP_IN}
    */
-  public static final class REPONSE_MAP_IN extends
+  public static final class RESPONSE_MAP_IN extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_MAP_INOrBuilder {
-    // Use REPONSE_MAP_IN.newBuilder() to construct.
-    private REPONSE_MAP_IN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_MAP_INOrBuilder {
+    // Use RESPONSE_MAP_IN.newBuilder() to construct.
+    private RESPONSE_MAP_IN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_MAP_IN(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_MAP_IN(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_MAP_IN defaultInstance;
-    public static REPONSE_MAP_IN getDefaultInstance() {
+    private static final RESPONSE_MAP_IN defaultInstance;
+    public static RESPONSE_MAP_IN getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_MAP_IN getDefaultInstanceForType() {
+    public RESPONSE_MAP_IN getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -696,7 +696,7 @@ public final class MapProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_MAP_IN(
+    private RESPONSE_MAP_IN(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -768,28 +768,28 @@ public final class MapProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_IN_descriptor;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_IN_fieldAccessorTable
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.MapProtos.REPONSE_MAP_IN.class, cg.base.io.proto.MapProtos.REPONSE_MAP_IN.Builder.class);
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_MAP_IN> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_MAP_IN>() {
-      public REPONSE_MAP_IN parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_MAP_IN> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_IN>() {
+      public RESPONSE_MAP_IN parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_MAP_IN(input, extensionRegistry);
+        return new RESPONSE_MAP_IN(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_MAP_IN> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_MAP_IN> getParserForType() {
       return PARSER;
     }
 
@@ -1052,53 +1052,53 @@ public final class MapProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseFrom(byte[] data)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseDelimitedFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1107,7 +1107,7 @@ public final class MapProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.REPONSE_MAP_IN prototype) {
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_IN prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -1119,24 +1119,24 @@ public final class MapProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_MAP_IN}
+     * Protobuf type {@code RESPONSE_MAP_IN}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.REPONSE_MAP_INOrBuilder {
+       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_INOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_IN_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_IN_fieldAccessorTable
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.MapProtos.REPONSE_MAP_IN.class, cg.base.io.proto.MapProtos.REPONSE_MAP_IN.Builder.class);
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.MapProtos.REPONSE_MAP_IN.newBuilder()
+      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1179,23 +1179,23 @@ public final class MapProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_IN_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_descriptor;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_IN getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.REPONSE_MAP_IN.getDefaultInstance();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_IN getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.getDefaultInstance();
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_IN build() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_IN result = buildPartial();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_IN build() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_IN result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_IN buildPartial() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_IN result = new cg.base.io.proto.MapProtos.REPONSE_MAP_IN(this);
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_IN buildPartial() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_IN result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_IN(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1232,16 +1232,16 @@ public final class MapProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.REPONSE_MAP_IN) {
-          return mergeFrom((cg.base.io.proto.MapProtos.REPONSE_MAP_IN)other);
+        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_IN) {
+          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_IN)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.REPONSE_MAP_IN other) {
-        if (other == cg.base.io.proto.MapProtos.REPONSE_MAP_IN.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_IN other) {
+        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.getDefaultInstance()) return this;
         if (other.hasMapId()) {
           setMapId(other.getMapId());
         }
@@ -1305,11 +1305,11 @@ public final class MapProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_IN parsedMessage = null;
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.MapProtos.REPONSE_MAP_IN) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_IN) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1592,15 +1592,15 @@ public final class MapProtos {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_MAP_IN)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_IN)
     }
 
     static {
-      defaultInstance = new REPONSE_MAP_IN(true);
+      defaultInstance = new RESPONSE_MAP_IN(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_MAP_IN)
+    // @@protoc_insertion_point(class_scope:RESPONSE_MAP_IN)
   }
 
   public interface REQUEST_MAP_MOVEOrBuilder
@@ -2690,7 +2690,7 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_MAP_MOVE)
   }
 
-  public interface REPONSE_MAP_MOVEOrBuilder
+  public interface RESPONSE_MAP_MOVEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // repeated .VO_MAP_CELL mapCells = 1;
@@ -2719,24 +2719,24 @@ public final class MapProtos {
         int index);
   }
   /**
-   * Protobuf type {@code REPONSE_MAP_MOVE}
+   * Protobuf type {@code RESPONSE_MAP_MOVE}
    */
-  public static final class REPONSE_MAP_MOVE extends
+  public static final class RESPONSE_MAP_MOVE extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_MAP_MOVEOrBuilder {
-    // Use REPONSE_MAP_MOVE.newBuilder() to construct.
-    private REPONSE_MAP_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_MAP_MOVEOrBuilder {
+    // Use RESPONSE_MAP_MOVE.newBuilder() to construct.
+    private RESPONSE_MAP_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_MAP_MOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_MAP_MOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_MAP_MOVE defaultInstance;
-    public static REPONSE_MAP_MOVE getDefaultInstance() {
+    private static final RESPONSE_MAP_MOVE defaultInstance;
+    public static RESPONSE_MAP_MOVE getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_MAP_MOVE getDefaultInstanceForType() {
+    public RESPONSE_MAP_MOVE getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -2746,7 +2746,7 @@ public final class MapProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_MAP_MOVE(
+    private RESPONSE_MAP_MOVE(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2794,28 +2794,28 @@ public final class MapProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_MOVE_descriptor;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_MOVE_fieldAccessorTable
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE.class, cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE.Builder.class);
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_MAP_MOVE> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_MAP_MOVE>() {
-      public REPONSE_MAP_MOVE parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_MAP_MOVE> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_MOVE>() {
+      public RESPONSE_MAP_MOVE parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_MAP_MOVE(input, extensionRegistry);
+        return new RESPONSE_MAP_MOVE(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_MAP_MOVE> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_MAP_MOVE> getParserForType() {
       return PARSER;
     }
 
@@ -2904,53 +2904,53 @@ public final class MapProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseFrom(byte[] data)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseDelimitedFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2959,7 +2959,7 @@ public final class MapProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE prototype) {
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -2971,24 +2971,24 @@ public final class MapProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_MAP_MOVE}
+     * Protobuf type {@code RESPONSE_MAP_MOVE}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.REPONSE_MAP_MOVEOrBuilder {
+       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_MOVE_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_MOVE_fieldAccessorTable
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE.class, cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE.Builder.class);
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE.newBuilder()
+      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3024,23 +3024,23 @@ public final class MapProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_MOVE_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_descriptor;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE.getDefaultInstance();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.getDefaultInstance();
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE build() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE result = buildPartial();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE build() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE buildPartial() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE result = new cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE(this);
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE buildPartial() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE(this);
         int from_bitField0_ = bitField0_;
         if (mapCellsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3056,16 +3056,16 @@ public final class MapProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE) {
-          return mergeFrom((cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE)other);
+        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE) {
+          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE other) {
-        if (other == cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE other) {
+        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.getDefaultInstance()) return this;
         if (mapCellsBuilder_ == null) {
           if (!other.mapCells_.isEmpty()) {
             if (mapCells_.isEmpty()) {
@@ -3110,11 +3110,11 @@ public final class MapProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE parsedMessage = null;
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.MapProtos.REPONSE_MAP_MOVE) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -3365,15 +3365,15 @@ public final class MapProtos {
         return mapCellsBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_MAP_MOVE)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_MOVE)
     }
 
     static {
-      defaultInstance = new REPONSE_MAP_MOVE(true);
+      defaultInstance = new RESPONSE_MAP_MOVE(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_MAP_MOVE)
+    // @@protoc_insertion_point(class_scope:RESPONSE_MAP_MOVE)
   }
 
   public interface VO_MAP_UNIT_EXTENDOrBuilder
@@ -4121,7 +4121,7 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:VO_MAP_UNIT_EXTEND)
   }
 
-  public interface REPONSE_MAP_UNIT_CREATEOrBuilder
+  public interface RESPONSE_MAP_UNIT_CREATEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required .VO_UNIT_BASE_INFO baseInfo = 1;
@@ -4167,24 +4167,24 @@ public final class MapProtos {
     cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder getExtendInfoOrBuilder();
   }
   /**
-   * Protobuf type {@code REPONSE_MAP_UNIT_CREATE}
+   * Protobuf type {@code RESPONSE_MAP_UNIT_CREATE}
    */
-  public static final class REPONSE_MAP_UNIT_CREATE extends
+  public static final class RESPONSE_MAP_UNIT_CREATE extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_MAP_UNIT_CREATEOrBuilder {
-    // Use REPONSE_MAP_UNIT_CREATE.newBuilder() to construct.
-    private REPONSE_MAP_UNIT_CREATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_MAP_UNIT_CREATEOrBuilder {
+    // Use RESPONSE_MAP_UNIT_CREATE.newBuilder() to construct.
+    private RESPONSE_MAP_UNIT_CREATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_MAP_UNIT_CREATE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_MAP_UNIT_CREATE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_MAP_UNIT_CREATE defaultInstance;
-    public static REPONSE_MAP_UNIT_CREATE getDefaultInstance() {
+    private static final RESPONSE_MAP_UNIT_CREATE defaultInstance;
+    public static RESPONSE_MAP_UNIT_CREATE getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_MAP_UNIT_CREATE getDefaultInstanceForType() {
+    public RESPONSE_MAP_UNIT_CREATE getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -4194,7 +4194,7 @@ public final class MapProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_MAP_UNIT_CREATE(
+    private RESPONSE_MAP_UNIT_CREATE(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4270,28 +4270,28 @@ public final class MapProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_CREATE_descriptor;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_CREATE_fieldAccessorTable
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE.class, cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE.Builder.class);
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_MAP_UNIT_CREATE> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_MAP_UNIT_CREATE>() {
-      public REPONSE_MAP_UNIT_CREATE parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_MAP_UNIT_CREATE> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_UNIT_CREATE>() {
+      public RESPONSE_MAP_UNIT_CREATE parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_MAP_UNIT_CREATE(input, extensionRegistry);
+        return new RESPONSE_MAP_UNIT_CREATE(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_MAP_UNIT_CREATE> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_MAP_UNIT_CREATE> getParserForType() {
       return PARSER;
     }
 
@@ -4441,53 +4441,53 @@ public final class MapProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseFrom(byte[] data)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseDelimitedFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4496,7 +4496,7 @@ public final class MapProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE prototype) {
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -4508,24 +4508,24 @@ public final class MapProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_MAP_UNIT_CREATE}
+     * Protobuf type {@code RESPONSE_MAP_UNIT_CREATE}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATEOrBuilder {
+       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_CREATE_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_CREATE_fieldAccessorTable
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE.class, cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE.Builder.class);
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE.newBuilder()
+      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4575,23 +4575,23 @@ public final class MapProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_CREATE_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE.getDefaultInstance();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.getDefaultInstance();
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE build() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE result = buildPartial();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE build() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE buildPartial() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE result = new cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE(this);
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE buildPartial() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -4624,16 +4624,16 @@ public final class MapProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE) {
-          return mergeFrom((cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE)other);
+        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE) {
+          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE other) {
-        if (other == cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE other) {
+        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.getDefaultInstance()) return this;
         if (other.hasBaseInfo()) {
           mergeBaseInfo(other.getBaseInfo());
         }
@@ -4675,11 +4675,11 @@ public final class MapProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE parsedMessage = null;
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_CREATE) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -5041,18 +5041,18 @@ public final class MapProtos {
         return extendInfoBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_MAP_UNIT_CREATE)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_UNIT_CREATE)
     }
 
     static {
-      defaultInstance = new REPONSE_MAP_UNIT_CREATE(true);
+      defaultInstance = new RESPONSE_MAP_UNIT_CREATE(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_MAP_UNIT_CREATE)
+    // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_CREATE)
   }
 
-  public interface REPONSE_MAP_UNIT_MOVEOrBuilder
+  public interface RESPONSE_MAP_UNIT_MOVEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required int32 unitType = 1;
@@ -5096,24 +5096,24 @@ public final class MapProtos {
     int getSouth();
   }
   /**
-   * Protobuf type {@code REPONSE_MAP_UNIT_MOVE}
+   * Protobuf type {@code RESPONSE_MAP_UNIT_MOVE}
    */
-  public static final class REPONSE_MAP_UNIT_MOVE extends
+  public static final class RESPONSE_MAP_UNIT_MOVE extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_MAP_UNIT_MOVEOrBuilder {
-    // Use REPONSE_MAP_UNIT_MOVE.newBuilder() to construct.
-    private REPONSE_MAP_UNIT_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_MAP_UNIT_MOVEOrBuilder {
+    // Use RESPONSE_MAP_UNIT_MOVE.newBuilder() to construct.
+    private RESPONSE_MAP_UNIT_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_MAP_UNIT_MOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_MAP_UNIT_MOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_MAP_UNIT_MOVE defaultInstance;
-    public static REPONSE_MAP_UNIT_MOVE getDefaultInstance() {
+    private static final RESPONSE_MAP_UNIT_MOVE defaultInstance;
+    public static RESPONSE_MAP_UNIT_MOVE getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_MAP_UNIT_MOVE getDefaultInstanceForType() {
+    public RESPONSE_MAP_UNIT_MOVE getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -5123,7 +5123,7 @@ public final class MapProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_MAP_UNIT_MOVE(
+    private RESPONSE_MAP_UNIT_MOVE(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -5180,28 +5180,28 @@ public final class MapProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_MOVE_descriptor;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_MOVE_fieldAccessorTable
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE.class, cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE.Builder.class);
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_MAP_UNIT_MOVE> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_MAP_UNIT_MOVE>() {
-      public REPONSE_MAP_UNIT_MOVE parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_MAP_UNIT_MOVE> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_UNIT_MOVE>() {
+      public RESPONSE_MAP_UNIT_MOVE parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_MAP_UNIT_MOVE(input, extensionRegistry);
+        return new RESPONSE_MAP_UNIT_MOVE(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_MAP_UNIT_MOVE> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_MAP_UNIT_MOVE> getParserForType() {
       return PARSER;
     }
 
@@ -5353,53 +5353,53 @@ public final class MapProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseFrom(byte[] data)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseDelimitedFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5408,7 +5408,7 @@ public final class MapProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE prototype) {
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -5420,24 +5420,24 @@ public final class MapProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_MAP_UNIT_MOVE}
+     * Protobuf type {@code RESPONSE_MAP_UNIT_MOVE}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVEOrBuilder {
+       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_MOVE_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_MOVE_fieldAccessorTable
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE.class, cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE.Builder.class);
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE.newBuilder()
+      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -5474,23 +5474,23 @@ public final class MapProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_MOVE_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE.getDefaultInstance();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.getDefaultInstance();
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE build() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE result = buildPartial();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE build() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE buildPartial() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE result = new cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE(this);
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE buildPartial() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -5515,16 +5515,16 @@ public final class MapProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE) {
-          return mergeFrom((cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE)other);
+        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE) {
+          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE other) {
-        if (other == cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE other) {
+        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.getDefaultInstance()) return this;
         if (other.hasUnitType()) {
           setUnitType(other.getUnitType());
         }
@@ -5565,11 +5565,11 @@ public final class MapProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE parsedMessage = null;
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_MOVE) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -5712,18 +5712,18 @@ public final class MapProtos {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_MAP_UNIT_MOVE)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_UNIT_MOVE)
     }
 
     static {
-      defaultInstance = new REPONSE_MAP_UNIT_MOVE(true);
+      defaultInstance = new RESPONSE_MAP_UNIT_MOVE(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_MAP_UNIT_MOVE)
+    // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_MOVE)
   }
 
-  public interface REPONSE_MAP_UNIT_REMOVEOrBuilder
+  public interface RESPONSE_MAP_UNIT_REMOVEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // required int32 instanceId = 1;
@@ -5737,24 +5737,24 @@ public final class MapProtos {
     int getInstanceId();
   }
   /**
-   * Protobuf type {@code REPONSE_MAP_UNIT_REMOVE}
+   * Protobuf type {@code RESPONSE_MAP_UNIT_REMOVE}
    */
-  public static final class REPONSE_MAP_UNIT_REMOVE extends
+  public static final class RESPONSE_MAP_UNIT_REMOVE extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_MAP_UNIT_REMOVEOrBuilder {
-    // Use REPONSE_MAP_UNIT_REMOVE.newBuilder() to construct.
-    private REPONSE_MAP_UNIT_REMOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_MAP_UNIT_REMOVEOrBuilder {
+    // Use RESPONSE_MAP_UNIT_REMOVE.newBuilder() to construct.
+    private RESPONSE_MAP_UNIT_REMOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_MAP_UNIT_REMOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_MAP_UNIT_REMOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_MAP_UNIT_REMOVE defaultInstance;
-    public static REPONSE_MAP_UNIT_REMOVE getDefaultInstance() {
+    private static final RESPONSE_MAP_UNIT_REMOVE defaultInstance;
+    public static RESPONSE_MAP_UNIT_REMOVE getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_MAP_UNIT_REMOVE getDefaultInstanceForType() {
+    public RESPONSE_MAP_UNIT_REMOVE getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -5764,7 +5764,7 @@ public final class MapProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_MAP_UNIT_REMOVE(
+    private RESPONSE_MAP_UNIT_REMOVE(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -5806,28 +5806,28 @@ public final class MapProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_REMOVE_descriptor;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_REMOVE_fieldAccessorTable
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE.class, cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE.Builder.class);
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_MAP_UNIT_REMOVE> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_MAP_UNIT_REMOVE>() {
-      public REPONSE_MAP_UNIT_REMOVE parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_MAP_UNIT_REMOVE> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_UNIT_REMOVE>() {
+      public RESPONSE_MAP_UNIT_REMOVE parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_MAP_UNIT_REMOVE(input, extensionRegistry);
+        return new RESPONSE_MAP_UNIT_REMOVE(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_MAP_UNIT_REMOVE> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_MAP_UNIT_REMOVE> getParserForType() {
       return PARSER;
     }
 
@@ -5895,53 +5895,53 @@ public final class MapProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseFrom(byte[] data)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseDelimitedFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5950,7 +5950,7 @@ public final class MapProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE prototype) {
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -5962,24 +5962,24 @@ public final class MapProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_MAP_UNIT_REMOVE}
+     * Protobuf type {@code RESPONSE_MAP_UNIT_REMOVE}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVEOrBuilder {
+       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_REMOVE_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_REMOVE_fieldAccessorTable
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE.class, cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE.Builder.class);
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE.newBuilder()
+      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6010,23 +6010,23 @@ public final class MapProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_UNIT_REMOVE_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE.getDefaultInstance();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.getDefaultInstance();
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE build() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE result = buildPartial();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE build() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE buildPartial() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE result = new cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE(this);
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE buildPartial() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -6039,16 +6039,16 @@ public final class MapProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE) {
-          return mergeFrom((cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE)other);
+        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE) {
+          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE other) {
-        if (other == cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE other) {
+        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.getDefaultInstance()) return this;
         if (other.hasInstanceId()) {
           setInstanceId(other.getInstanceId());
         }
@@ -6068,11 +6068,11 @@ public final class MapProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE parsedMessage = null;
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.MapProtos.REPONSE_MAP_UNIT_REMOVE) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -6116,18 +6116,18 @@ public final class MapProtos {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_MAP_UNIT_REMOVE)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_UNIT_REMOVE)
     }
 
     static {
-      defaultInstance = new REPONSE_MAP_UNIT_REMOVE(true);
+      defaultInstance = new RESPONSE_MAP_UNIT_REMOVE(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_MAP_UNIT_REMOVE)
+    // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_REMOVE)
   }
 
-  public interface REPONSE_MAP_CELLSOrBuilder
+  public interface RESPONSE_MAP_CELLSOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // repeated .VO_MAP_CELL mapCells = 1;
@@ -6156,24 +6156,24 @@ public final class MapProtos {
         int index);
   }
   /**
-   * Protobuf type {@code REPONSE_MAP_CELLS}
+   * Protobuf type {@code RESPONSE_MAP_CELLS}
    */
-  public static final class REPONSE_MAP_CELLS extends
+  public static final class RESPONSE_MAP_CELLS extends
       com.google.protobuf.GeneratedMessage
-      implements REPONSE_MAP_CELLSOrBuilder {
-    // Use REPONSE_MAP_CELLS.newBuilder() to construct.
-    private REPONSE_MAP_CELLS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements RESPONSE_MAP_CELLSOrBuilder {
+    // Use RESPONSE_MAP_CELLS.newBuilder() to construct.
+    private RESPONSE_MAP_CELLS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private REPONSE_MAP_CELLS(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private RESPONSE_MAP_CELLS(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final REPONSE_MAP_CELLS defaultInstance;
-    public static REPONSE_MAP_CELLS getDefaultInstance() {
+    private static final RESPONSE_MAP_CELLS defaultInstance;
+    public static RESPONSE_MAP_CELLS getDefaultInstance() {
       return defaultInstance;
     }
 
-    public REPONSE_MAP_CELLS getDefaultInstanceForType() {
+    public RESPONSE_MAP_CELLS getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -6183,7 +6183,7 @@ public final class MapProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private REPONSE_MAP_CELLS(
+    private RESPONSE_MAP_CELLS(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -6231,28 +6231,28 @@ public final class MapProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_CELLS_descriptor;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_CELLS_fieldAccessorTable
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS.class, cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS.Builder.class);
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<REPONSE_MAP_CELLS> PARSER =
-        new com.google.protobuf.AbstractParser<REPONSE_MAP_CELLS>() {
-      public REPONSE_MAP_CELLS parsePartialFrom(
+    public static com.google.protobuf.Parser<RESPONSE_MAP_CELLS> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_CELLS>() {
+      public RESPONSE_MAP_CELLS parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REPONSE_MAP_CELLS(input, extensionRegistry);
+        return new RESPONSE_MAP_CELLS(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<REPONSE_MAP_CELLS> getParserForType() {
+    public com.google.protobuf.Parser<RESPONSE_MAP_CELLS> getParserForType() {
       return PARSER;
     }
 
@@ -6341,53 +6341,53 @@ public final class MapProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseFrom(byte[] data)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseDelimitedFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6396,7 +6396,7 @@ public final class MapProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS prototype) {
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -6408,24 +6408,24 @@ public final class MapProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code REPONSE_MAP_CELLS}
+     * Protobuf type {@code RESPONSE_MAP_CELLS}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.REPONSE_MAP_CELLSOrBuilder {
+       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLSOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_CELLS_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_CELLS_fieldAccessorTable
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS.class, cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS.Builder.class);
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS.newBuilder()
+      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6461,23 +6461,23 @@ public final class MapProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.internal_static_REPONSE_MAP_CELLS_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_descriptor;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS.getDefaultInstance();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.getDefaultInstance();
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS build() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS result = buildPartial();
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS build() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS buildPartial() {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS result = new cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS(this);
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS buildPartial() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS(this);
         int from_bitField0_ = bitField0_;
         if (mapCellsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -6493,16 +6493,16 @@ public final class MapProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS) {
-          return mergeFrom((cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS)other);
+        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS) {
+          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS other) {
-        if (other == cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS other) {
+        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.getDefaultInstance()) return this;
         if (mapCellsBuilder_ == null) {
           if (!other.mapCells_.isEmpty()) {
             if (mapCells_.isEmpty()) {
@@ -6547,11 +6547,11 @@ public final class MapProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS parsedMessage = null;
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.MapProtos.REPONSE_MAP_CELLS) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -6802,15 +6802,15 @@ public final class MapProtos {
         return mapCellsBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:REPONSE_MAP_CELLS)
+      // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_CELLS)
     }
 
     static {
-      defaultInstance = new REPONSE_MAP_CELLS(true);
+      defaultInstance = new RESPONSE_MAP_CELLS(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:REPONSE_MAP_CELLS)
+    // @@protoc_insertion_point(class_scope:RESPONSE_MAP_CELLS)
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
@@ -6819,45 +6819,45 @@ public final class MapProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_MAP_IN_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_MAP_IN_descriptor;
+    internal_static_RESPONSE_MAP_IN_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_MAP_IN_fieldAccessorTable;
+      internal_static_RESPONSE_MAP_IN_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_MAP_MOVE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_MAP_MOVE_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_MAP_MOVE_descriptor;
+    internal_static_RESPONSE_MAP_MOVE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_MAP_MOVE_fieldAccessorTable;
+      internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_MAP_UNIT_EXTEND_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_MAP_UNIT_EXTEND_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_MAP_UNIT_CREATE_descriptor;
+    internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_MAP_UNIT_CREATE_fieldAccessorTable;
+      internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_MAP_UNIT_MOVE_descriptor;
+    internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_MAP_UNIT_MOVE_fieldAccessorTable;
+      internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_MAP_UNIT_REMOVE_descriptor;
+    internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_MAP_UNIT_REMOVE_fieldAccessorTable;
+      internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_REPONSE_MAP_CELLS_descriptor;
+    internal_static_RESPONSE_MAP_CELLS_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_REPONSE_MAP_CELLS_fieldAccessorTable;
+      internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -6869,24 +6869,24 @@ public final class MapProtos {
     java.lang.String[] descriptorData = {
       "\n\tMap.proto\032\010VO.proto\"<\n\016REQUEST_MAP_IN\022" +
       "\r\n\005mapId\030\001 \002(\005\022\014\n\004east\030\002 \002(\005\022\r\n\005south\030\003 " +
-      "\002(\005\"\207\001\n\016REPONSE_MAP_IN\022\r\n\005mapId\030\001 \002(\005\022\025\n" +
+      "\002(\005\"\207\001\n\016RESPONSE_MAP_IN\022\r\n\005mapId\030\001 \002(\005\022\025\n" +
       "\rmapInstanceId\030\002 \002(\005\022\017\n\007mapName\030\003 \002(\t\022\014\n" +
       "\004east\030\004 \002(\005\022\r\n\005south\030\005 \002(\005\022\017\n\007maxEast\030\006 " +
       "\002(\005\022\020\n\010maxSouth\030\007 \002(\005\"\225\001\n\020REQUEST_MAP_MO" +
       "VE\022\014\n\004east\030\001 \002(\005\022\r\n\005south\030\002 \002(\005\022\020\n\010needE" +
       "ast\030\003 \002(\010\022\036\n\010eastArea\030\004 \002(\0132\014.VO_MAP_ARE" +
       "A\022\021\n\tneedSouth\030\005 \002(\010\022\037\n\tsouthArea\030\006 \002(\0132" +
-      "\014.VO_MAP_AREA\"2\n\020REPONSE_MAP_MOVE\022\036\n\010map",
+      "\014.VO_MAP_AREA\"2\n\020RESPONSE_MAP_MOVE\022\036\n\010map",
       "Cells\030\001 \003(\0132\014.VO_MAP_CELL\"N\n\022VO_MAP_UNIT" +
       "_EXTEND\022\027\n\017ownerInstanceId\030\001 \001(\005\022\r\n\005stat" +
-      "e\030\002 \001(\005\022\020\n\010talkType\030\003 \001(\t\"\210\001\n\027REPONSE_MA" +
+      "e\030\002 \001(\005\022\020\n\010talkType\030\003 \001(\t\"\210\001\n\027RESPONSE_MA" +
       "P_UNIT_CREATE\022$\n\010baseInfo\030\001 \002(\0132\022.VO_UNI" +
       "T_BASE_INFO\022\036\n\010position\030\002 \002(\0132\014.VO_POSIT" +
       "ION\022\'\n\nextendInfo\030\003 \002(\0132\023.VO_MAP_UNIT_EX" +
-      "TEND\"Z\n\025REPONSE_MAP_UNIT_MOVE\022\020\n\010unitTyp" +
+      "TEND\"Z\n\025RESPONSE_MAP_UNIT_MOVE\022\020\n\010unitTyp" +
       "e\030\001 \002(\005\022\022\n\ninstanceId\030\002 \002(\005\022\014\n\004east\030\003 \002(" +
-      "\005\022\r\n\005south\030\004 \002(\005\"-\n\027REPONSE_MAP_UNIT_REM" +
-      "OVE\022\022\n\ninstanceId\030\001 \002(\005\"3\n\021REPONSE_MAP_C",
+      "\005\022\r\n\005south\030\004 \002(\005\"-\n\027RESPONSE_MAP_UNIT_REM" +
+      "OVE\022\022\n\ninstanceId\030\001 \002(\005\"3\n\021RESPONSE_MAP_C",
       "ELLS\022\036\n\010mapCells\030\001 \003(\0132\014.VO_MAP_CELLB\035\n\020" +
       "cg.base.io.protoB\tMapProtos"
     };
@@ -6901,11 +6901,11 @@ public final class MapProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_MAP_IN_descriptor,
               new java.lang.String[] { "MapId", "East", "South", });
-          internal_static_REPONSE_MAP_IN_descriptor =
+          internal_static_RESPONSE_MAP_IN_descriptor =
             getDescriptor().getMessageTypes().get(1);
-          internal_static_REPONSE_MAP_IN_fieldAccessorTable = new
+          internal_static_RESPONSE_MAP_IN_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_MAP_IN_descriptor,
+              internal_static_RESPONSE_MAP_IN_descriptor,
               new java.lang.String[] { "MapId", "MapInstanceId", "MapName", "East", "South", "MaxEast", "MaxSouth", });
           internal_static_REQUEST_MAP_MOVE_descriptor =
             getDescriptor().getMessageTypes().get(2);
@@ -6913,11 +6913,11 @@ public final class MapProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_MAP_MOVE_descriptor,
               new java.lang.String[] { "East", "South", "NeedEast", "EastArea", "NeedSouth", "SouthArea", });
-          internal_static_REPONSE_MAP_MOVE_descriptor =
+          internal_static_RESPONSE_MAP_MOVE_descriptor =
             getDescriptor().getMessageTypes().get(3);
-          internal_static_REPONSE_MAP_MOVE_fieldAccessorTable = new
+          internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_MAP_MOVE_descriptor,
+              internal_static_RESPONSE_MAP_MOVE_descriptor,
               new java.lang.String[] { "MapCells", });
           internal_static_VO_MAP_UNIT_EXTEND_descriptor =
             getDescriptor().getMessageTypes().get(4);
@@ -6925,29 +6925,29 @@ public final class MapProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_MAP_UNIT_EXTEND_descriptor,
               new java.lang.String[] { "OwnerInstanceId", "State", "TalkType", });
-          internal_static_REPONSE_MAP_UNIT_CREATE_descriptor =
+          internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor =
             getDescriptor().getMessageTypes().get(5);
-          internal_static_REPONSE_MAP_UNIT_CREATE_fieldAccessorTable = new
+          internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_MAP_UNIT_CREATE_descriptor,
+              internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor,
               new java.lang.String[] { "BaseInfo", "Position", "ExtendInfo", });
-          internal_static_REPONSE_MAP_UNIT_MOVE_descriptor =
+          internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor =
             getDescriptor().getMessageTypes().get(6);
-          internal_static_REPONSE_MAP_UNIT_MOVE_fieldAccessorTable = new
+          internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_MAP_UNIT_MOVE_descriptor,
+              internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor,
               new java.lang.String[] { "UnitType", "InstanceId", "East", "South", });
-          internal_static_REPONSE_MAP_UNIT_REMOVE_descriptor =
+          internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor =
             getDescriptor().getMessageTypes().get(7);
-          internal_static_REPONSE_MAP_UNIT_REMOVE_fieldAccessorTable = new
+          internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_MAP_UNIT_REMOVE_descriptor,
+              internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor,
               new java.lang.String[] { "InstanceId", });
-          internal_static_REPONSE_MAP_CELLS_descriptor =
+          internal_static_RESPONSE_MAP_CELLS_descriptor =
             getDescriptor().getMessageTypes().get(8);
-          internal_static_REPONSE_MAP_CELLS_fieldAccessorTable = new
+          internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REPONSE_MAP_CELLS_descriptor,
+              internal_static_RESPONSE_MAP_CELLS_descriptor,
               new java.lang.String[] { "MapCells", });
           return null;
         }
