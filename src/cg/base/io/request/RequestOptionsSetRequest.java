@@ -4,8 +4,8 @@ import java.io.InputStream;
 
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoRequest;
-import cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET;
-import cg.base.io.proto.VOProtos.VO_OPTION;
+import cg.base.io.proto.OptionProtos.*;
+import cg.base.io.proto.VOProtos.*;
 
 /**
  * This is a auto make java file, so do not modify me.

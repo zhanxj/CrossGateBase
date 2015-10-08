@@ -4,8 +4,8 @@ import java.io.InputStream;
 
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoRequest;
-import cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE;
-import cg.base.io.proto.VOProtos.VO_MAP_AREA;
+import cg.base.io.proto.MapProtos.*;
+import cg.base.io.proto.VOProtos.*;
 
 /**
  * This is a auto make java file, so do not modify me.
