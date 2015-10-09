@@ -12,9 +12,11 @@ public class RequestAccountRegister extends ProtoMessage {
 
 	private REQUEST_ACCOUNT_REGISTER.Builder builder;
 
-	public RequestAccountRegister(int messageId, int status, String sessionId, ISender sender, REQUEST_ACCOUNT_REGISTER.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public RequestAccountRegister(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

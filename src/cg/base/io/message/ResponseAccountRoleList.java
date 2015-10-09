@@ -13,9 +13,11 @@ public class ResponseAccountRoleList extends ProtoMessage {
 
 	private RESPONSE_ACCOUNT_ROLE_LIST.Builder builder;
 
-	public ResponseAccountRoleList(int messageId, int status, String sessionId, ISender sender, RESPONSE_ACCOUNT_ROLE_LIST.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public ResponseAccountRoleList(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

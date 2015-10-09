@@ -13,9 +13,11 @@ public class ResponseOptionsSet extends ProtoMessage {
 
 	private RESPONSE_OPTIONS_SET.Builder builder;
 
-	public ResponseOptionsSet(int messageId, int status, String sessionId, ISender sender, RESPONSE_OPTIONS_SET.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public ResponseOptionsSet(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

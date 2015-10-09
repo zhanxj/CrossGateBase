@@ -12,9 +12,11 @@ public class RequestServerSelect extends ProtoMessage {
 
 	private REQUEST_SERVER_SELECT.Builder builder;
 
-	public RequestServerSelect(int messageId, int status, String sessionId, ISender sender, REQUEST_SERVER_SELECT.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public RequestServerSelect(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

@@ -12,9 +12,11 @@ public class ResponseMapUnitRemove extends ProtoMessage {
 
 	private RESPONSE_MAP_UNIT_REMOVE.Builder builder;
 
-	public ResponseMapUnitRemove(int messageId, int status, String sessionId, ISender sender, RESPONSE_MAP_UNIT_REMOVE.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public ResponseMapUnitRemove(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

@@ -13,9 +13,11 @@ public class ResponseBattleEnter extends ProtoMessage {
 
 	private RESPONSE_BATTLE_ENTER.Builder builder;
 
-	public ResponseBattleEnter(int messageId, int status, String sessionId, ISender sender, RESPONSE_BATTLE_ENTER.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public ResponseBattleEnter(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

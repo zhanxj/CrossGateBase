@@ -13,9 +13,11 @@ public class ResponseMapUnitCreate extends ProtoMessage {
 
 	private RESPONSE_MAP_UNIT_CREATE.Builder builder;
 
-	public ResponseMapUnitCreate(int messageId, int status, String sessionId, ISender sender, RESPONSE_MAP_UNIT_CREATE.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public ResponseMapUnitCreate(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

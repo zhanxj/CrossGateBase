@@ -13,9 +13,11 @@ public class ResponsePlayerCreateInfo extends ProtoMessage {
 
 	private RESPONSE_PLAYER_CREATE_INFO.Builder builder;
 
-	public ResponsePlayerCreateInfo(int messageId, int status, String sessionId, ISender sender, RESPONSE_PLAYER_CREATE_INFO.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public ResponsePlayerCreateInfo(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

@@ -12,9 +12,11 @@ public class RequestScriptMutual extends ProtoMessage {
 
 	private REQUEST_SCRIPT_MUTUAL.Builder builder;
 
-	public RequestScriptMutual(int messageId, int status, String sessionId, ISender sender, REQUEST_SCRIPT_MUTUAL.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public RequestScriptMutual(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

@@ -13,9 +13,11 @@ public class RequestPlayerCreate extends ProtoMessage {
 
 	private REQUEST_PLAYER_CREATE.Builder builder;
 
-	public RequestPlayerCreate(int messageId, int status, String sessionId, ISender sender, REQUEST_PLAYER_CREATE.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public RequestPlayerCreate(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

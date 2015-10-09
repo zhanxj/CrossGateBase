@@ -12,9 +12,11 @@ public class RequestPlayerLogin extends ProtoMessage {
 
 	private REQUEST_PLAYER_LOGIN.Builder builder;
 
-	public RequestPlayerLogin(int messageId, int status, String sessionId, ISender sender, REQUEST_PLAYER_LOGIN.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public RequestPlayerLogin(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**

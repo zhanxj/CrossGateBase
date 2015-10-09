@@ -12,9 +12,11 @@ public class ResponseChat extends ProtoMessage {
 
 	private RESPONSE_CHAT.Builder builder;
 
-	public ResponseChat(int messageId, int status, String sessionId, ISender sender, RESPONSE_CHAT.Builder builder) {
-		super(messageId, status, sessionId, sender, null);
-		this.builder = builder;
+	public ResponseChat(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(messageId, status, sessionId, sender, datas);
+		if (datas != null) {
+			builder.mergeFrom(datas);
+		}
 	}
 
 	/**
