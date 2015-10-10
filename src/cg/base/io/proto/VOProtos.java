@@ -2058,9 +2058,9 @@ public final class VOProtos {
     boolean hasType();
     int getType();
     
-    // required string value = 2;
+    // required int32 value = 2;
     boolean hasValue();
-    String getValue();
+    int getValue();
   }
   public static final class VO_ATTRIBUTE extends
       com.google.protobuf.GeneratedMessage
@@ -2101,41 +2101,19 @@ public final class VOProtos {
       return type_;
     }
     
-    // required string value = 2;
+    // required int32 value = 2;
     public static final int VALUE_FIELD_NUMBER = 2;
-    private java.lang.Object value_;
+    private int value_;
     public boolean hasValue() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getValue() {
-      java.lang.Object ref = value_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          value_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getValueBytes() {
-      java.lang.Object ref = value_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        value_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public int getValue() {
+      return value_;
     }
     
     private void initFields() {
       type_ = 0;
-      value_ = "";
+      value_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2161,7 +2139,7 @@ public final class VOProtos {
         output.writeInt32(1, type_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getValueBytes());
+        output.writeInt32(2, value_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2178,7 +2156,7 @@ public final class VOProtos {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getValueBytes());
+          .computeInt32Size(2, value_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2306,7 +2284,7 @@ public final class VOProtos {
         super.clear();
         type_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        value_ = "";
+        value_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -2420,9 +2398,9 @@ public final class VOProtos {
               type_ = input.readInt32();
               break;
             }
-            case 18: {
+            case 16: {
               bitField0_ |= 0x00000002;
-              value_ = input.readBytes();
+              value_ = input.readInt32();
               break;
             }
           }
@@ -2452,40 +2430,25 @@ public final class VOProtos {
         return this;
       }
       
-      // required string value = 2;
-      private java.lang.Object value_ = "";
+      // required int32 value = 2;
+      private int value_ ;
       public boolean hasValue() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getValue() {
-        java.lang.Object ref = value_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          value_ = s;
-          return s;
-        } else {
-          return (String) ref;
-        }
+      public int getValue() {
+        return value_;
       }
-      public Builder setValue(String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
+      public Builder setValue(int value) {
+        bitField0_ |= 0x00000002;
         value_ = value;
         onChanged();
         return this;
       }
       public Builder clearValue() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        value_ = getDefaultInstance().getValue();
+        value_ = 0;
         onChanged();
         return this;
-      }
-      void setValue(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
-        value_ = value;
-        onChanged();
       }
       
       // @@protoc_insertion_point(builder_scope:VO_ATTRIBUTE)
@@ -9768,6 +9731,20 @@ public final class VOProtos {
     // required int32 type = 9;
     boolean hasType();
     int getType();
+    
+    // repeated .VO_SKILL_LEVEL skills = 10;
+    java.util.List<cg.base.io.proto.VOProtos.VO_SKILL_LEVEL> 
+        getSkillsList();
+    cg.base.io.proto.VOProtos.VO_SKILL_LEVEL getSkills(int index);
+    int getSkillsCount();
+    java.util.List<? extends cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder> 
+        getSkillsOrBuilderList();
+    cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder getSkillsOrBuilder(
+        int index);
+    
+    // required int32 index = 11;
+    boolean hasIndex();
+    int getIndex();
   }
   public static final class VO_SKILL extends
       com.google.protobuf.GeneratedMessage
@@ -9932,6 +9909,37 @@ public final class VOProtos {
       return type_;
     }
     
+    // repeated .VO_SKILL_LEVEL skills = 10;
+    public static final int SKILLS_FIELD_NUMBER = 10;
+    private java.util.List<cg.base.io.proto.VOProtos.VO_SKILL_LEVEL> skills_;
+    public java.util.List<cg.base.io.proto.VOProtos.VO_SKILL_LEVEL> getSkillsList() {
+      return skills_;
+    }
+    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder> 
+        getSkillsOrBuilderList() {
+      return skills_;
+    }
+    public int getSkillsCount() {
+      return skills_.size();
+    }
+    public cg.base.io.proto.VOProtos.VO_SKILL_LEVEL getSkills(int index) {
+      return skills_.get(index);
+    }
+    public cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder getSkillsOrBuilder(
+        int index) {
+      return skills_.get(index);
+    }
+    
+    // required int32 index = 11;
+    public static final int INDEX_FIELD_NUMBER = 11;
+    private int index_;
+    public boolean hasIndex() {
+      return ((bitField0_ & 0x00000200) == 0x00000200);
+    }
+    public int getIndex() {
+      return index_;
+    }
+    
     private void initFields() {
       id_ = 0;
       maxLevel_ = 0;
@@ -9942,6 +9950,8 @@ public final class VOProtos {
       nextLevelExp_ = 0;
       useSpace_ = 0;
       type_ = 0;
+      skills_ = java.util.Collections.emptyList();
+      index_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -9976,6 +9986,16 @@ public final class VOProtos {
         memoizedIsInitialized = 0;
         return false;
       }
+      if (!hasIndex()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getSkillsCount(); i++) {
+        if (!getSkills(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -10009,6 +10029,12 @@ public final class VOProtos {
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
         output.writeInt32(9, type_);
+      }
+      for (int i = 0; i < skills_.size(); i++) {
+        output.writeMessage(10, skills_.get(i));
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        output.writeInt32(11, index_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -10054,6 +10080,14 @@ public final class VOProtos {
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(9, type_);
+      }
+      for (int i = 0; i < skills_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, skills_.get(i));
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, index_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -10171,6 +10205,7 @@ public final class VOProtos {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getSkillsFieldBuilder();
         }
       }
       private static Builder create() {
@@ -10197,6 +10232,14 @@ public final class VOProtos {
         bitField0_ = (bitField0_ & ~0x00000080);
         type_ = 0;
         bitField0_ = (bitField0_ & ~0x00000100);
+        if (skillsBuilder_ == null) {
+          skills_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000200);
+        } else {
+          skillsBuilder_.clear();
+        }
+        index_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000400);
         return this;
       }
       
@@ -10271,6 +10314,19 @@ public final class VOProtos {
           to_bitField0_ |= 0x00000100;
         }
         result.type_ = type_;
+        if (skillsBuilder_ == null) {
+          if (((bitField0_ & 0x00000200) == 0x00000200)) {
+            skills_ = java.util.Collections.unmodifiableList(skills_);
+            bitField0_ = (bitField0_ & ~0x00000200);
+          }
+          result.skills_ = skills_;
+        } else {
+          result.skills_ = skillsBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000200;
+        }
+        result.index_ = index_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -10314,6 +10370,35 @@ public final class VOProtos {
         if (other.hasType()) {
           setType(other.getType());
         }
+        if (skillsBuilder_ == null) {
+          if (!other.skills_.isEmpty()) {
+            if (skills_.isEmpty()) {
+              skills_ = other.skills_;
+              bitField0_ = (bitField0_ & ~0x00000200);
+            } else {
+              ensureSkillsIsMutable();
+              skills_.addAll(other.skills_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.skills_.isEmpty()) {
+            if (skillsBuilder_.isEmpty()) {
+              skillsBuilder_.dispose();
+              skillsBuilder_ = null;
+              skills_ = other.skills_;
+              bitField0_ = (bitField0_ & ~0x00000200);
+              skillsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getSkillsFieldBuilder() : null;
+            } else {
+              skillsBuilder_.addAllMessages(other.skills_);
+            }
+          }
+        }
+        if (other.hasIndex()) {
+          setIndex(other.getIndex());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -10346,6 +10431,16 @@ public final class VOProtos {
         if (!hasType()) {
           
           return false;
+        }
+        if (!hasIndex()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getSkillsCount(); i++) {
+          if (!getSkills(i).isInitialized()) {
+            
+            return false;
+          }
         }
         return true;
       }
@@ -10416,6 +10511,17 @@ public final class VOProtos {
             case 72: {
               bitField0_ |= 0x00000100;
               type_ = input.readInt32();
+              break;
+            }
+            case 82: {
+              cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder subBuilder = cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addSkills(subBuilder.buildPartial());
+              break;
+            }
+            case 88: {
+              bitField0_ |= 0x00000400;
+              index_ = input.readInt32();
               break;
             }
           }
@@ -10639,6 +10745,213 @@ public final class VOProtos {
       public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000100);
         type_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // repeated .VO_SKILL_LEVEL skills = 10;
+      private java.util.List<cg.base.io.proto.VOProtos.VO_SKILL_LEVEL> skills_ =
+        java.util.Collections.emptyList();
+      private void ensureSkillsIsMutable() {
+        if (!((bitField0_ & 0x00000200) == 0x00000200)) {
+          skills_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_SKILL_LEVEL>(skills_);
+          bitField0_ |= 0x00000200;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_SKILL_LEVEL, cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder, cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder> skillsBuilder_;
+      
+      public java.util.List<cg.base.io.proto.VOProtos.VO_SKILL_LEVEL> getSkillsList() {
+        if (skillsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(skills_);
+        } else {
+          return skillsBuilder_.getMessageList();
+        }
+      }
+      public int getSkillsCount() {
+        if (skillsBuilder_ == null) {
+          return skills_.size();
+        } else {
+          return skillsBuilder_.getCount();
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_SKILL_LEVEL getSkills(int index) {
+        if (skillsBuilder_ == null) {
+          return skills_.get(index);
+        } else {
+          return skillsBuilder_.getMessage(index);
+        }
+      }
+      public Builder setSkills(
+          int index, cg.base.io.proto.VOProtos.VO_SKILL_LEVEL value) {
+        if (skillsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSkillsIsMutable();
+          skills_.set(index, value);
+          onChanged();
+        } else {
+          skillsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setSkills(
+          int index, cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder builderForValue) {
+        if (skillsBuilder_ == null) {
+          ensureSkillsIsMutable();
+          skills_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          skillsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addSkills(cg.base.io.proto.VOProtos.VO_SKILL_LEVEL value) {
+        if (skillsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSkillsIsMutable();
+          skills_.add(value);
+          onChanged();
+        } else {
+          skillsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addSkills(
+          int index, cg.base.io.proto.VOProtos.VO_SKILL_LEVEL value) {
+        if (skillsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureSkillsIsMutable();
+          skills_.add(index, value);
+          onChanged();
+        } else {
+          skillsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addSkills(
+          cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder builderForValue) {
+        if (skillsBuilder_ == null) {
+          ensureSkillsIsMutable();
+          skills_.add(builderForValue.build());
+          onChanged();
+        } else {
+          skillsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addSkills(
+          int index, cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder builderForValue) {
+        if (skillsBuilder_ == null) {
+          ensureSkillsIsMutable();
+          skills_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          skillsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllSkills(
+          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_SKILL_LEVEL> values) {
+        if (skillsBuilder_ == null) {
+          ensureSkillsIsMutable();
+          super.addAll(values, skills_);
+          onChanged();
+        } else {
+          skillsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearSkills() {
+        if (skillsBuilder_ == null) {
+          skills_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000200);
+          onChanged();
+        } else {
+          skillsBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeSkills(int index) {
+        if (skillsBuilder_ == null) {
+          ensureSkillsIsMutable();
+          skills_.remove(index);
+          onChanged();
+        } else {
+          skillsBuilder_.remove(index);
+        }
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder getSkillsBuilder(
+          int index) {
+        return getSkillsFieldBuilder().getBuilder(index);
+      }
+      public cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder getSkillsOrBuilder(
+          int index) {
+        if (skillsBuilder_ == null) {
+          return skills_.get(index);  } else {
+          return skillsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder> 
+           getSkillsOrBuilderList() {
+        if (skillsBuilder_ != null) {
+          return skillsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(skills_);
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder addSkillsBuilder() {
+        return getSkillsFieldBuilder().addBuilder(
+            cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.getDefaultInstance());
+      }
+      public cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder addSkillsBuilder(
+          int index) {
+        return getSkillsFieldBuilder().addBuilder(
+            index, cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.getDefaultInstance());
+      }
+      public java.util.List<cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder> 
+           getSkillsBuilderList() {
+        return getSkillsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_SKILL_LEVEL, cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder, cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder> 
+          getSkillsFieldBuilder() {
+        if (skillsBuilder_ == null) {
+          skillsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_SKILL_LEVEL, cg.base.io.proto.VOProtos.VO_SKILL_LEVEL.Builder, cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder>(
+                  skills_,
+                  ((bitField0_ & 0x00000200) == 0x00000200),
+                  getParentForChildren(),
+                  isClean());
+          skills_ = null;
+        }
+        return skillsBuilder_;
+      }
+      
+      // required int32 index = 11;
+      private int index_ ;
+      public boolean hasIndex() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      public int getIndex() {
+        return index_;
+      }
+      public Builder setIndex(int value) {
+        bitField0_ |= 0x00000400;
+        index_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearIndex() {
+        bitField0_ = (bitField0_ & ~0x00000400);
+        index_ = 0;
         onChanged();
         return this;
       }
@@ -14563,7 +14876,7 @@ public final class VOProtos {
       "_INFO\022\014\n\004race\030\001 \002(\005\022\r\n\005level\030\002 \002(\005\022\013\n\003ex" +
       "p\030\003 \002(\005\"$\n\010VO_TITLE\022\n\n\002id\030\001 \002(\005\022\014\n\004name\030" +
       "\002 \002(\t\"+\n\014VO_ATTRIBUTE\022\014\n\004type\030\001 \002(\005\022\r\n\005v" +
-      "alue\030\002 \002(\t\"@\n\rVO_ATTRIBUTES\022\014\n\004type\030\001 \002(" +
+      "alue\030\002 \002(\005\"@\n\rVO_ATTRIBUTES\022\014\n\004type\030\001 \002(" +
       "\t\022!\n\nattributes\030\002 \003(\0132\r.VO_ATTRIBUTE\"\245\002\n",
       "\020VO_ITEM_IDENTIFY\022\023\n\013description\030\001 \002(\t\022\036" +
       "\n\026rightButtonDescription\030\002 \002(\t\022\r\n\005level\030" +
@@ -14591,24 +14904,25 @@ public final class VOProtos {
       "escription\030\002 \002(\t\022\016\n\006costMp\030\003 \002(\005\022\020\n\010tech" +
       "Type\030\004 \002(\t\022\022\n\ntargetType\030\005 \002(\005\0220\n\017skillL" +
       "evelDatas\030\006 \003(\0132\027.VO_PRODUCE_SKILL_LEVEL" +
-      "\"\235\001\n\010VO_SKILL\022\n\n\002id\030\001 \002(\005\022\020\n\010maxLevel\030\002 " +
+      "\"\315\001\n\010VO_SKILL\022\n\n\002id\030\001 \002(\005\022\020\n\010maxLevel\030\002 " +
       "\002(\005\022\014\n\004name\030\003 \002(\t\022\023\n\013description\030\004 \002(\t\022\r" +
       "\n\005level\030\005 \002(\005\022\013\n\003exp\030\006 \001(\005\022\024\n\014nextLevelE" +
       "xp\030\007 \001(\005\022\020\n\010useSpace\030\010 \002(\005\022\014\n\004type\030\t \002(\005",
-      "\"U\n\014VO_SKILL_SET\022\035\n\nbaseSkills\030\001 \003(\0132\t.V" +
-      "O_SKILL\022\013\n\003max\030\002 \002(\005\022\031\n\006skills\030\003 \003(\0132\t.V" +
-      "O_SKILL\"\315\001\n\006VO_PET\022$\n\010baseInfo\030\001 \002(\0132\022.V" +
-      "O_UNIT_BASE_INFO\022(\n\nextendInfo\030\002 \002(\0132\024.V" +
-      "O_UNIT_EXTEND_INFO\022\r\n\005state\030\003 \002(\005\022\r\n\005loy" +
-      "al\030\004 \002(\005\022\020\n\010elements\030\005 \003(\005\022\"\n\nattributes" +
-      "\030\006 \003(\0132\016.VO_ATTRIBUTES\022\037\n\010skillSet\030\007 \002(\013" +
-      "2\r.VO_SKILL_SET\"(\n\tVO_OPTION\022\014\n\004name\030\001 \002" +
-      "(\t\022\r\n\005state\030\002 \002(\005\"G\n\013VO_MAP_AREA\022\014\n\004west" +
-      "\030\001 \002(\005\022\014\n\004east\030\002 \002(\005\022\r\n\005south\030\003 \002(\005\022\r\n\005n",
-      "orth\030\004 \002(\005\"`\n\013VO_MAP_CELL\022\014\n\004west\030\001 \002(\005\022" +
-      "\014\n\004east\030\002 \002(\005\022\025\n\rimageGlobalId\030\003 \002(\005\022\020\n\010" +
-      "objectId\030\004 \002(\005\022\014\n\004mark\030\005 \002(\005B\034\n\020cg.base." +
-      "io.protoB\010VOProtos"
+      "\022\037\n\006skills\030\n \003(\0132\017.VO_SKILL_LEVEL\022\r\n\005ind" +
+      "ex\030\013 \002(\005\"U\n\014VO_SKILL_SET\022\035\n\nbaseSkills\030\001" +
+      " \003(\0132\t.VO_SKILL\022\013\n\003max\030\002 \002(\005\022\031\n\006skills\030\003" +
+      " \003(\0132\t.VO_SKILL\"\315\001\n\006VO_PET\022$\n\010baseInfo\030\001" +
+      " \002(\0132\022.VO_UNIT_BASE_INFO\022(\n\nextendInfo\030\002" +
+      " \002(\0132\024.VO_UNIT_EXTEND_INFO\022\r\n\005state\030\003 \002(" +
+      "\005\022\r\n\005loyal\030\004 \002(\005\022\020\n\010elements\030\005 \003(\005\022\"\n\nat" +
+      "tributes\030\006 \003(\0132\016.VO_ATTRIBUTES\022\037\n\010skillS" +
+      "et\030\007 \002(\0132\r.VO_SKILL_SET\"(\n\tVO_OPTION\022\014\n\004" +
+      "name\030\001 \002(\t\022\r\n\005state\030\002 \002(\005\"G\n\013VO_MAP_AREA",
+      "\022\014\n\004west\030\001 \002(\005\022\014\n\004east\030\002 \002(\005\022\r\n\005south\030\003 " +
+      "\002(\005\022\r\n\005north\030\004 \002(\005\"`\n\013VO_MAP_CELL\022\014\n\004wes" +
+      "t\030\001 \002(\005\022\014\n\004east\030\002 \002(\005\022\025\n\rimageGlobalId\030\003" +
+      " \002(\005\022\020\n\010objectId\030\004 \002(\005\022\014\n\004mark\030\005 \002(\005B\034\n\020" +
+      "cg.base.io.protoB\010VOProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -14732,7 +15046,7 @@ public final class VOProtos {
           internal_static_VO_SKILL_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_SKILL_descriptor,
-              new java.lang.String[] { "Id", "MaxLevel", "Name", "Description", "Level", "Exp", "NextLevelExp", "UseSpace", "Type", },
+              new java.lang.String[] { "Id", "MaxLevel", "Name", "Description", "Level", "Exp", "NextLevelExp", "UseSpace", "Type", "Skills", "Index", },
               cg.base.io.proto.VOProtos.VO_SKILL.class,
               cg.base.io.proto.VOProtos.VO_SKILL.Builder.class);
           internal_static_VO_SKILL_SET_descriptor =

@@ -2632,10 +2632,9 @@ public final class PlayerProtos {
     cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder getAttributesOrBuilder(
         int index);
     
-    // repeated int32 money = 10;
-    java.util.List<java.lang.Integer> getMoneyList();
-    int getMoneyCount();
-    int getMoney(int index);
+    // required int32 money = 10;
+    boolean hasMoney();
+    int getMoney();
     
     // repeated .VO_BAG bags = 11;
     java.util.List<cg.base.io.proto.VOProtos.VO_BAG> 
@@ -2823,18 +2822,14 @@ public final class PlayerProtos {
       return attributes_.get(index);
     }
     
-    // repeated int32 money = 10;
+    // required int32 money = 10;
     public static final int MONEY_FIELD_NUMBER = 10;
-    private java.util.List<java.lang.Integer> money_;
-    public java.util.List<java.lang.Integer>
-        getMoneyList() {
+    private int money_;
+    public boolean hasMoney() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    public int getMoney() {
       return money_;
-    }
-    public int getMoneyCount() {
-      return money_.size();
-    }
-    public int getMoney(int index) {
-      return money_.get(index);
     }
     
     // repeated .VO_BAG bags = 11;
@@ -2862,7 +2857,7 @@ public final class PlayerProtos {
     public static final int JOB_FIELD_NUMBER = 12;
     private java.lang.Object job_;
     public boolean hasJob() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
+      return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     public String getJob() {
       java.lang.Object ref = job_;
@@ -2894,7 +2889,7 @@ public final class PlayerProtos {
     public static final int SKILLSET_FIELD_NUMBER = 13;
     private cg.base.io.proto.VOProtos.VO_SKILL_SET skillSet_;
     public boolean hasSkillSet() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
+      return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     public cg.base.io.proto.VOProtos.VO_SKILL_SET getSkillSet() {
       return skillSet_;
@@ -2934,7 +2929,7 @@ public final class PlayerProtos {
       titles_ = java.util.Collections.emptyList();
       elements_ = java.util.Collections.emptyList();;
       attributes_ = java.util.Collections.emptyList();
-      money_ = java.util.Collections.emptyList();;
+      money_ = 0;
       bags_ = java.util.Collections.emptyList();
       job_ = "";
       skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
@@ -2966,6 +2961,10 @@ public final class PlayerProtos {
         return false;
       }
       if (!hasBattleLocal()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMoney()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -3055,16 +3054,16 @@ public final class PlayerProtos {
       for (int i = 0; i < attributes_.size(); i++) {
         output.writeMessage(9, attributes_.get(i));
       }
-      for (int i = 0; i < money_.size(); i++) {
-        output.writeInt32(10, money_.get(i));
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(10, money_);
       }
       for (int i = 0; i < bags_.size(); i++) {
         output.writeMessage(11, bags_.get(i));
       }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
         output.writeBytes(12, getJobBytes());
       }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
         output.writeMessage(13, skillSet_);
       }
       for (int i = 0; i < options_.size(); i++) {
@@ -3120,24 +3119,19 @@ public final class PlayerProtos {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, attributes_.get(i));
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < money_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeInt32SizeNoTag(money_.get(i));
-        }
-        size += dataSize;
-        size += 1 * getMoneyList().size();
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, money_);
       }
       for (int i = 0; i < bags_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(11, bags_.get(i));
       }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(12, getJobBytes());
       }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(13, skillSet_);
       }
@@ -3320,7 +3314,7 @@ public final class PlayerProtos {
         } else {
           attributesBuilder_.clear();
         }
-        money_ = java.util.Collections.emptyList();;
+        money_ = 0;
         bitField0_ = (bitField0_ & ~0x00000200);
         if (bagsBuilder_ == null) {
           bags_ = java.util.Collections.emptyList();
@@ -3443,9 +3437,8 @@ public final class PlayerProtos {
         } else {
           result.attributes_ = attributesBuilder_.build();
         }
-        if (((bitField0_ & 0x00000200) == 0x00000200)) {
-          money_ = java.util.Collections.unmodifiableList(money_);
-          bitField0_ = (bitField0_ & ~0x00000200);
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000040;
         }
         result.money_ = money_;
         if (bagsBuilder_ == null) {
@@ -3458,11 +3451,11 @@ public final class PlayerProtos {
           result.bags_ = bagsBuilder_.build();
         }
         if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
-          to_bitField0_ |= 0x00000040;
+          to_bitField0_ |= 0x00000080;
         }
         result.job_ = job_;
         if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
-          to_bitField0_ |= 0x00000080;
+          to_bitField0_ |= 0x00000100;
         }
         if (skillSetBuilder_ == null) {
           result.skillSet_ = skillSet_;
@@ -3574,15 +3567,8 @@ public final class PlayerProtos {
             }
           }
         }
-        if (!other.money_.isEmpty()) {
-          if (money_.isEmpty()) {
-            money_ = other.money_;
-            bitField0_ = (bitField0_ & ~0x00000200);
-          } else {
-            ensureMoneyIsMutable();
-            money_.addAll(other.money_);
-          }
-          onChanged();
+        if (other.hasMoney()) {
+          setMoney(other.getMoney());
         }
         if (bagsBuilder_ == null) {
           if (!other.bags_.isEmpty()) {
@@ -3668,6 +3654,10 @@ public final class PlayerProtos {
           return false;
         }
         if (!hasBattleLocal()) {
+          
+          return false;
+        }
+        if (!hasMoney()) {
           
           return false;
         }
@@ -3822,17 +3812,8 @@ public final class PlayerProtos {
               break;
             }
             case 80: {
-              ensureMoneyIsMutable();
-              money_.add(input.readInt32());
-              break;
-            }
-            case 82: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              while (input.getBytesUntilLimit() > 0) {
-                addMoney(input.readInt32());
-              }
-              input.popLimit(limit);
+              bitField0_ |= 0x00000200;
+              money_ = input.readInt32();
               break;
             }
             case 90: {
@@ -4686,47 +4667,23 @@ public final class PlayerProtos {
         return attributesBuilder_;
       }
       
-      // repeated int32 money = 10;
-      private java.util.List<java.lang.Integer> money_ = java.util.Collections.emptyList();;
-      private void ensureMoneyIsMutable() {
-        if (!((bitField0_ & 0x00000200) == 0x00000200)) {
-          money_ = new java.util.ArrayList<java.lang.Integer>(money_);
-          bitField0_ |= 0x00000200;
-         }
+      // required int32 money = 10;
+      private int money_ ;
+      public boolean hasMoney() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
       }
-      public java.util.List<java.lang.Integer>
-          getMoneyList() {
-        return java.util.Collections.unmodifiableList(money_);
+      public int getMoney() {
+        return money_;
       }
-      public int getMoneyCount() {
-        return money_.size();
-      }
-      public int getMoney(int index) {
-        return money_.get(index);
-      }
-      public Builder setMoney(
-          int index, int value) {
-        ensureMoneyIsMutable();
-        money_.set(index, value);
-        onChanged();
-        return this;
-      }
-      public Builder addMoney(int value) {
-        ensureMoneyIsMutable();
-        money_.add(value);
-        onChanged();
-        return this;
-      }
-      public Builder addAllMoney(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureMoneyIsMutable();
-        super.addAll(values, money_);
+      public Builder setMoney(int value) {
+        bitField0_ |= 0x00000200;
+        money_ = value;
         onChanged();
         return this;
       }
       public Builder clearMoney() {
-        money_ = java.util.Collections.emptyList();;
         bitField0_ = (bitField0_ & ~0x00000200);
+        money_ = 0;
         onChanged();
         return this;
       }
@@ -8601,7 +8558,7 @@ public final class PlayerProtos {
       "_UNIT_EXTEND_INFO\022\023\n\013battleScore\030\005 \002(\005\022\023" +
       "\n\013battleLocal\030\006 \002(\010\022\031\n\006titles\030\007 \003(\0132\t.VO" +
       "_TITLE\022\020\n\010elements\030\010 \003(\005\022\"\n\nattributes\030\t" +
-      " \003(\0132\016.VO_ATTRIBUTES\022\r\n\005money\030\n \003(\005\022\025\n\004b" +
+      " \003(\0132\016.VO_ATTRIBUTES\022\r\n\005money\030\n \002(\005\022\025\n\004b" +
       "ags\030\013 \003(\0132\007.VO_BAG\022\013\n\003job\030\014 \002(\t\022\037\n\010skill",
       "Set\030\r \002(\0132\r.VO_SKILL_SET\022\033\n\007options\030\016 \003(" +
       "\0132\n.VO_OPTION\"M\n\023VO_PLAYER_ANIMATION\022\016\n\006" +

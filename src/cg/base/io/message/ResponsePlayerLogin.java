@@ -132,16 +132,16 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	money
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setMoney(Iterable<Integer> money) {
-		builder.addAllMoney(money);
+	public void setMoney(Integer money) {
+		builder.setMoney(money);
 	}
 
 	/**
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<Integer> getMoneyList() {
-		return builder.getMoneyList();
+	public int getMoney() {
+		return builder.getMoney();
 	}
 
 	/**
