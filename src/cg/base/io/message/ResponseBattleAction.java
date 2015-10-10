@@ -19,6 +19,10 @@ public class ResponseBattleAction extends ProtoMessage {
 		}
 	}
 
+	public ResponseBattleAction() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	targetId

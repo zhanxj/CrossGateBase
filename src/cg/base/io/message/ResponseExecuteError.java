@@ -19,6 +19,10 @@ public class ResponseExecuteError extends ProtoMessage {
 		}
 	}
 
+	public ResponseExecuteError() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	messageId

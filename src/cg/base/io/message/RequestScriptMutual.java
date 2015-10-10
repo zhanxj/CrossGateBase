@@ -19,6 +19,10 @@ public class RequestScriptMutual extends ProtoMessage {
 		}
 	}
 
+	public RequestScriptMutual() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	op

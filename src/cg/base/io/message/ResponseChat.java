@@ -19,6 +19,10 @@ public class ResponseChat extends ProtoMessage {
 		}
 	}
 
+	public ResponseChat() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	sourceId

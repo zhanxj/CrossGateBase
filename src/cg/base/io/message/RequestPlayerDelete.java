@@ -19,6 +19,10 @@ public class RequestPlayerDelete extends ProtoMessage {
 		}
 	}
 
+	public RequestPlayerDelete() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	roleId

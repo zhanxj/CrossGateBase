@@ -19,6 +19,10 @@ public class RequestPlayerAnimationInfo extends ProtoMessage {
 		}
 	}
 
+	public RequestPlayerAnimationInfo() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	page

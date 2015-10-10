@@ -19,6 +19,10 @@ public class RequestPlayerLogin extends ProtoMessage {
 		}
 	}
 
+	public RequestPlayerLogin() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	roleId

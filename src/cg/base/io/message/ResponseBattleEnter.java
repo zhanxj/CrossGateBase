@@ -20,6 +20,10 @@ public class ResponseBattleEnter extends ProtoMessage {
 		}
 	}
 
+	public ResponseBattleEnter() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	teamA

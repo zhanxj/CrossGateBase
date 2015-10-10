@@ -19,6 +19,10 @@ public class ResponseMapUnitRemove extends ProtoMessage {
 		}
 	}
 
+	public ResponseMapUnitRemove() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	instanceId

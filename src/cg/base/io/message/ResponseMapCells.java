@@ -21,6 +21,10 @@ public class ResponseMapCells extends ProtoMessage {
 		}
 	}
 
+	public ResponseMapCells() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	mapCells

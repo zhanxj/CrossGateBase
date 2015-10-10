@@ -21,6 +21,10 @@ public class ResponsePlayerLogin extends ProtoMessage {
 		}
 	}
 
+	public ResponsePlayerLogin() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	baseInfo

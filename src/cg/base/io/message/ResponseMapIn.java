@@ -19,6 +19,10 @@ public class ResponseMapIn extends ProtoMessage {
 		}
 	}
 
+	public ResponseMapIn() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	mapInstanceId

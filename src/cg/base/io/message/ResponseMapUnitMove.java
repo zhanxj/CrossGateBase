@@ -19,6 +19,10 @@ public class ResponseMapUnitMove extends ProtoMessage {
 		}
 	}
 
+	public ResponseMapUnitMove() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	unitType

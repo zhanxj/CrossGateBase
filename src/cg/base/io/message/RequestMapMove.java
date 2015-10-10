@@ -20,6 +20,10 @@ public class RequestMapMove extends ProtoMessage {
 		}
 	}
 
+	public RequestMapMove() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	needEast

@@ -20,6 +20,10 @@ public class ResponseAccountRoleList extends ProtoMessage {
 		}
 	}
 
+	public ResponseAccountRoleList() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	players

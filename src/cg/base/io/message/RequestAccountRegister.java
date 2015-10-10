@@ -19,6 +19,10 @@ public class RequestAccountRegister extends ProtoMessage {
 		}
 	}
 
+	public RequestAccountRegister() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	password

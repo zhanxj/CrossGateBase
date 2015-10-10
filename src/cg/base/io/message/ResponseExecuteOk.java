@@ -19,6 +19,10 @@ public class ResponseExecuteOk extends ProtoMessage {
 		}
 	}
 
+	public ResponseExecuteOk() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	messageId

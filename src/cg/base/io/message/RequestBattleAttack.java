@@ -19,6 +19,10 @@ public class RequestBattleAttack extends ProtoMessage {
 		}
 	}
 
+	public RequestBattleAttack() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	targetId

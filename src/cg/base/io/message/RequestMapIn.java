@@ -19,6 +19,10 @@ public class RequestMapIn extends ProtoMessage {
 		}
 	}
 
+	public RequestMapIn() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	east

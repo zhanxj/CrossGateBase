@@ -19,6 +19,10 @@ public class RequestChat extends ProtoMessage {
 		}
 	}
 
+	public RequestChat() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	targetId

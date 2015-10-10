@@ -21,6 +21,10 @@ public class ResponseMapMove extends ProtoMessage {
 		}
 	}
 
+	public ResponseMapMove() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	mapCells

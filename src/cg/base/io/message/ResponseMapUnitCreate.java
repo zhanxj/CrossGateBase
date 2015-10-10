@@ -20,6 +20,10 @@ public class ResponseMapUnitCreate extends ProtoMessage {
 		}
 	}
 
+	public ResponseMapUnitCreate() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	baseInfo

@@ -20,6 +20,10 @@ public class ResponseServerList extends ProtoMessage {
 		}
 	}
 
+	public ResponseServerList() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	servers

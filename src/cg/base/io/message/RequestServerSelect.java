@@ -19,6 +19,10 @@ public class RequestServerSelect extends ProtoMessage {
 		}
 	}
 
+	public RequestServerSelect() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	id

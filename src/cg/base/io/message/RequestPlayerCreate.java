@@ -20,6 +20,10 @@ public class RequestPlayerCreate extends ProtoMessage {
 		}
 	}
 
+	public RequestPlayerCreate() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	eyeStyleId

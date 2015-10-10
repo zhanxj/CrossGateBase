@@ -20,6 +20,10 @@ public class RequestOptionsSet extends ProtoMessage {
 		}
 	}
 
+	public RequestOptionsSet() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	option

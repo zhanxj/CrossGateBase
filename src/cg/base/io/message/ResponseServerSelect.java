@@ -19,6 +19,10 @@ public class ResponseServerSelect extends ProtoMessage {
 		}
 	}
 
+	public ResponseServerSelect() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	url

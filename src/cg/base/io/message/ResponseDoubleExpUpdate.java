@@ -19,6 +19,10 @@ public class ResponseDoubleExpUpdate extends ProtoMessage {
 		}
 	}
 
+	public ResponseDoubleExpUpdate() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	time

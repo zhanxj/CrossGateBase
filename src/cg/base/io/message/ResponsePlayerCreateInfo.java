@@ -20,6 +20,10 @@ public class ResponsePlayerCreateInfo extends ProtoMessage {
 		}
 	}
 
+	public ResponsePlayerCreateInfo() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	animations

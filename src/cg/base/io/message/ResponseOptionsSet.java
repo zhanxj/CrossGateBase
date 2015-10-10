@@ -20,6 +20,10 @@ public class ResponseOptionsSet extends ProtoMessage {
 		}
 	}
 
+	public ResponseOptionsSet() {
+		super();
+	}
+
 	/**
 	 * 
 	 * @param	name
