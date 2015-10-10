@@ -34,7 +34,8 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoUnitBaseInfo getBaseInfo() {
-		return new VoUnitBaseInfo(vo.getBaseInfo());
+		VoUnitBaseInfo ret = new VoUnitBaseInfo(vo.getBaseInfo());
+		return ret;
 	}
 
 	/**
@@ -51,7 +52,7 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getHpMax() {
-		return vo.getHpMax();
+		int ret = vo.getHpMax();		return ret;
 	}
 
 	/**
@@ -68,7 +69,7 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMp() {
-		return vo.getMp();
+		int ret = vo.getMp();		return ret;
 	}
 
 	/**
@@ -85,7 +86,7 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMpMax() {
-		return vo.getMpMax();
+		int ret = vo.getMpMax();		return ret;
 	}
 
 	/**
@@ -102,7 +103,7 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getHp() {
-		return vo.getHp();
+		int ret = vo.getHp();		return ret;
 	}
 
 	/**
@@ -119,7 +120,7 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getIsChallenger() {
-		return vo.getIsChallenger();
+		Boolean ret = vo.getIsChallenger();		return ret;
 	}
 
 	/**
@@ -136,7 +137,7 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getLocal() {
-		return vo.getLocal();
+		int ret = vo.getLocal();		return ret;
 	}
 
 	public VO_UNIT_BATTLE_INFO getVO_UNIT_BATTLE_INFO() {

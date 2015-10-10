@@ -34,7 +34,7 @@ public class VoServer {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getConnectTime() {
-		return vo.getConnectTime();
+		int ret = vo.getConnectTime();		return ret;
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class VoServer {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		return vo.getName();
+		String ret = vo.getName();		return ret;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class VoServer {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getId() {
-		return vo.getId();
+		int ret = vo.getId();		return ret;
 	}
 
 	public VO_SERVER getVO_SERVER() {

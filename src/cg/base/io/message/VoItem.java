@@ -34,7 +34,7 @@ public class VoItem {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getIconId() {
-		return vo.getIconId();
+		int ret = vo.getIconId();		return ret;
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class VoItem {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getDropDispear() {
-		return vo.getDropDispear();
+		Boolean ret = vo.getDropDispear();		return ret;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class VoItem {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		return vo.getName();
+		String ret = vo.getName();		return ret;
 	}
 
 	/**
@@ -85,7 +85,7 @@ public class VoItem {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getGroupSize() {
-		return vo.getGroupSize();
+		int ret = vo.getGroupSize();		return ret;
 	}
 
 	/**
@@ -102,7 +102,7 @@ public class VoItem {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTemplateId() {
-		return vo.getTemplateId();
+		int ret = vo.getTemplateId();		return ret;
 	}
 
 	/**
@@ -119,7 +119,7 @@ public class VoItem {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getLogoutDispear() {
-		return vo.getLogoutDispear();
+		Boolean ret = vo.getLogoutDispear();		return ret;
 	}
 
 	/**
@@ -136,7 +136,10 @@ public class VoItem {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoItemIdentify getIdentifyInfo() {
-		return new VoItemIdentify(vo.getIdentifyInfo());
+		VoItemIdentify ret = null;
+		VO_ITEM_IDENTIFY vo = builder.getIdentifyInfo();
+		ret = vo == null ? null : new VoItemIdentify(vo);
+		return ret;
 	}
 
 	public VO_ITEM getVO_ITEM() {

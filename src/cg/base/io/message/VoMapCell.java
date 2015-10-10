@@ -34,7 +34,7 @@ public class VoMapCell {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEast() {
-		return vo.getEast();
+		int ret = vo.getEast();		return ret;
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class VoMapCell {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getWest() {
-		return vo.getWest();
+		int ret = vo.getWest();		return ret;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class VoMapCell {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getObjectId() {
-		return vo.getObjectId();
+		int ret = vo.getObjectId();		return ret;
 	}
 
 	/**
@@ -85,7 +85,7 @@ public class VoMapCell {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMark() {
-		return vo.getMark();
+		int ret = vo.getMark();		return ret;
 	}
 
 	/**
@@ -102,7 +102,7 @@ public class VoMapCell {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getImageGlobalId() {
-		return vo.getImageGlobalId();
+		int ret = vo.getImageGlobalId();		return ret;
 	}
 
 	public VO_MAP_CELL getVO_MAP_CELL() {

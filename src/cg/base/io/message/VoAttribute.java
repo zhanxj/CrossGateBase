@@ -34,7 +34,7 @@ public class VoAttribute {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getType() {
-		return vo.getType();
+		int ret = vo.getType();		return ret;
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class VoAttribute {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getValue() {
-		return vo.getValue();
+		int ret = vo.getValue();		return ret;
 	}
 
 	public VO_ATTRIBUTE getVO_ATTRIBUTE() {

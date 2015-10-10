@@ -62,7 +62,7 @@ public class VoAttributes {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getType() {
-		return vo.getType();
+		String ret = vo.getType();		return ret;
 	}
 
 	public VO_ATTRIBUTES getVO_ATTRIBUTES() {

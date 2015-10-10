@@ -2,17 +2,17 @@ package cg.base.util;
 
 import java.util.List;
 
-import cg.base.io.proto.VOProtos.VO_ATTRIBUTE;
-import cg.base.io.proto.VOProtos.VO_ATTRIBUTES;
+import cg.base.io.message.VoAttribute;
+import cg.base.io.message.VoAttributes;
 import cg.base.sprite.Attribute;
 
 public class VOUtil {
 	
-	public static void readAttributes(Attribute attribute, List<VO_ATTRIBUTES> attributesList) {
-		for (VO_ATTRIBUTES attributes : attributesList) {
+	public static void readAttributes(Attribute attribute, List<VoAttributes> attributesList) {
+		for (VoAttributes attributes : attributesList) {
 			String key = attributes.getType();
-			List<VO_ATTRIBUTE> attributeList = attributes.getAttributesList();
-			for (VO_ATTRIBUTE vo : attributeList) {
+			List<VoAttribute> attributeList = attributes.getAttributesList();
+			for (VoAttribute vo : attributeList) {
 				attribute.setAttributeValue(key, (byte) vo.getType(), vo.getValue());
 			}
 		}

@@ -37,7 +37,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTargetId() {
-		return builder.getTargetId();
+		int ret = builder.getTargetId();		return ret;
 	}
 
 	public RESPONSE_BATTLE_ACTION getResponseBattleAction() {

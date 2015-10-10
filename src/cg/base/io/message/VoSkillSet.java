@@ -62,7 +62,7 @@ public class VoSkillSet {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMax() {
-		return vo.getMax();
+		int ret = vo.getMax();		return ret;
 	}
 
 	/**

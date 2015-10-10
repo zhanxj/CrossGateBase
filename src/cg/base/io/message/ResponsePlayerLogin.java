@@ -40,7 +40,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoUnitBaseInfo getBaseInfo() {
-		return new VoUnitBaseInfo(builder.getBaseInfo());
+		VoUnitBaseInfo ret = new VoUnitBaseInfo(builder.getBaseInfo());
+		return ret;
 	}
 
 	/**
@@ -57,7 +58,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoSkillSet getSkillSet() {
-		return new VoSkillSet(builder.getSkillSet());
+		VoSkillSet ret = new VoSkillSet(builder.getSkillSet());
+		return ret;
 	}
 
 	/**
@@ -126,7 +128,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoUnitExtendInfo getExtendInfo() {
-		return new VoUnitExtendInfo(builder.getExtendInfo());
+		VoUnitExtendInfo ret = new VoUnitExtendInfo(builder.getExtendInfo());
+		return ret;
 	}
 
 	/**
@@ -143,7 +146,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoTitles getHeadTitle() {
-		return new VoTitles(builder.getHeadTitle());
+		VoTitles ret = new VoTitles(builder.getHeadTitle());
+		return ret;
 	}
 
 	/**
@@ -160,7 +164,7 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMoney() {
-		return builder.getMoney();
+		int ret = builder.getMoney();		return ret;
 	}
 
 	/**
@@ -246,7 +250,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoPosition getPosition() {
-		return new VoPosition(builder.getPosition());
+		VoPosition ret = new VoPosition(builder.getPosition());
+		return ret;
 	}
 
 	/**
@@ -263,7 +268,7 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getBattleLocal() {
-		return builder.getBattleLocal();
+		Boolean ret = builder.getBattleLocal();		return ret;
 	}
 
 	/**
@@ -280,7 +285,7 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getJob() {
-		return builder.getJob();
+		String ret = builder.getJob();		return ret;
 	}
 
 	/**
@@ -297,7 +302,7 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getBattleScore() {
-		return builder.getBattleScore();
+		int ret = builder.getBattleScore();		return ret;
 	}
 
 	public RESPONSE_PLAYER_LOGIN getResponsePlayerLogin() {

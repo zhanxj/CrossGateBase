@@ -35,7 +35,7 @@ public class VoPlayerAnimation {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getRoleId() {
-		return vo.getRoleId();
+		int ret = vo.getRoleId();		return ret;
 	}
 
 	/**
@@ -69,7 +69,7 @@ public class VoPlayerAnimation {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getHeadGlobalId() {
-		return vo.getHeadGlobalId();
+		int ret = vo.getHeadGlobalId();		return ret;
 	}
 
 	public VO_PLAYER_ANIMATION getVO_PLAYER_ANIMATION() {

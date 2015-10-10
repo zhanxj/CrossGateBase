@@ -37,7 +37,7 @@ public class ResponseExecuteError extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMessageId() {
-		return builder.getMessageId();
+		int ret = builder.getMessageId();		return ret;
 	}
 
 	/**
@@ -54,7 +54,7 @@ public class ResponseExecuteError extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getErrorCode() {
-		return builder.getErrorCode();
+		int ret = builder.getErrorCode();		return ret;
 	}
 
 	/**
@@ -71,7 +71,7 @@ public class ResponseExecuteError extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getMessage() {
-		return builder.getMessage();
+		String ret = builder.getMessage();		return ret;
 	}
 
 	public RESPONSE_EXECUTE_ERROR getResponseExecuteError() {

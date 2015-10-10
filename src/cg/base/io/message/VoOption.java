@@ -34,7 +34,7 @@ public class VoOption {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		return vo.getName();
+		String ret = vo.getName();		return ret;
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class VoOption {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getState() {
-		return vo.getState();
+		int ret = vo.getState();		return ret;
 	}
 
 	public VO_OPTION getVO_OPTION() {

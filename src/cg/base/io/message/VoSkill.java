@@ -36,7 +36,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMaxLevel() {
-		return vo.getMaxLevel();
+		int ret = vo.getMaxLevel();		return ret;
 	}
 
 	/**
@@ -79,7 +79,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getLevel() {
-		return vo.getLevel();
+		int ret = vo.getLevel();		return ret;
 	}
 
 	/**
@@ -96,7 +96,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getNextLevelExp() {
-		return vo.getNextLevelExp();
+		int ret = vo.getNextLevelExp();		return ret;
 	}
 
 	/**
@@ -113,7 +113,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		return vo.getName();
+		String ret = vo.getName();		return ret;
 	}
 
 	/**
@@ -130,7 +130,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getDescription() {
-		return vo.getDescription();
+		String ret = vo.getDescription();		return ret;
 	}
 
 	/**
@@ -147,7 +147,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getIndex() {
-		return vo.getIndex();
+		int ret = vo.getIndex();		return ret;
 	}
 
 	/**
@@ -164,7 +164,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getUseSpace() {
-		return vo.getUseSpace();
+		int ret = vo.getUseSpace();		return ret;
 	}
 
 	/**
@@ -181,7 +181,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getId() {
-		return vo.getId();
+		int ret = vo.getId();		return ret;
 	}
 
 	/**
@@ -198,7 +198,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getExp() {
-		return vo.getExp();
+		int ret = vo.getExp();		return ret;
 	}
 
 	/**
@@ -215,7 +215,7 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getType() {
-		return vo.getType();
+		int ret = vo.getType();		return ret;
 	}
 
 	public VO_SKILL getVO_SKILL() {

@@ -34,7 +34,7 @@ public class VoTitles {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getSignature() {
-		return vo.getSignature();
+		String ret = vo.getSignature();		return ret;
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class VoTitles {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getGuid() {
-		return vo.getGuid();
+		String ret = vo.getGuid();		return ret;
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class VoTitles {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getGuidTitle() {
-		return vo.getGuidTitle();
+		String ret = vo.getGuidTitle();		return ret;
 	}
 
 	/**
@@ -85,7 +85,7 @@ public class VoTitles {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTitle() {
-		return vo.getTitle();
+		String ret = vo.getTitle();		return ret;
 	}
 
 	public VO_TITLES getVO_TITLES() {

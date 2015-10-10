@@ -37,7 +37,7 @@ public class RequestBattleAttack extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTargetId() {
-		return builder.getTargetId();
+		int ret = builder.getTargetId();		return ret;
 	}
 
 	public REQUEST_BATTLE_ATTACK getRequestBattleAttack() {

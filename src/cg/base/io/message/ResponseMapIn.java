@@ -37,7 +37,7 @@ public class ResponseMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMapInstanceId() {
-		return builder.getMapInstanceId();
+		int ret = builder.getMapInstanceId();		return ret;
 	}
 
 	/**
@@ -54,7 +54,7 @@ public class ResponseMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEast() {
-		return builder.getEast();
+		int ret = builder.getEast();		return ret;
 	}
 
 	/**
@@ -71,7 +71,7 @@ public class ResponseMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSouth() {
-		return builder.getSouth();
+		int ret = builder.getSouth();		return ret;
 	}
 
 	/**
@@ -88,7 +88,7 @@ public class ResponseMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMaxEast() {
-		return builder.getMaxEast();
+		int ret = builder.getMaxEast();		return ret;
 	}
 
 	/**
@@ -105,7 +105,7 @@ public class ResponseMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMapId() {
-		return builder.getMapId();
+		int ret = builder.getMapId();		return ret;
 	}
 
 	/**
@@ -122,7 +122,7 @@ public class ResponseMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getMapName() {
-		return builder.getMapName();
+		String ret = builder.getMapName();		return ret;
 	}
 
 	/**
@@ -139,7 +139,7 @@ public class ResponseMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMaxSouth() {
-		return builder.getMaxSouth();
+		int ret = builder.getMaxSouth();		return ret;
 	}
 
 	public RESPONSE_MAP_IN getResponseMapIn() {

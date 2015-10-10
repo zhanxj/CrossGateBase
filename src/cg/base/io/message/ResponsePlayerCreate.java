@@ -37,7 +37,7 @@ public class ResponsePlayerCreate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getInstanceId() {
-		return builder.getInstanceId();
+		int ret = builder.getInstanceId();		return ret;
 	}
 
 	public RESPONSE_PLAYER_CREATE getResponsePlayerCreate() {

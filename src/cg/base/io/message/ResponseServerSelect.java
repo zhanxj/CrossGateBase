@@ -37,7 +37,7 @@ public class ResponseServerSelect extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getUrl() {
-		return builder.getUrl();
+		String ret = builder.getUrl();		return ret;
 	}
 
 	public RESPONSE_SERVER_SELECT getResponseServerSelect() {

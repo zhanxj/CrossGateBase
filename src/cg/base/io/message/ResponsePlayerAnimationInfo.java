@@ -65,7 +65,7 @@ public class ResponsePlayerAnimationInfo extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTotalPage() {
-		return builder.getTotalPage();
+		int ret = builder.getTotalPage();		return ret;
 	}
 
 	public RESPONSE_PLAYER_ANIMATION_INFO getResponsePlayerAnimationInfo() {

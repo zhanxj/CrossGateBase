@@ -36,7 +36,7 @@ public class VoProduceSkillLevel {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getItemId() {
-		return vo.getItemId();
+		int ret = vo.getItemId();		return ret;
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class VoProduceSkillLevel {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getIdentifyName() {
-		return vo.getIdentifyName();
+		String ret = vo.getIdentifyName();		return ret;
 	}
 
 	/**
@@ -96,7 +96,7 @@ public class VoProduceSkillLevel {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getProducesId() {
-		return vo.getProducesId();
+		int ret = vo.getProducesId();		return ret;
 	}
 
 	/**
@@ -113,7 +113,7 @@ public class VoProduceSkillLevel {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		return vo.getName();
+		String ret = vo.getName();		return ret;
 	}
 
 	public VO_PRODUCE_SKILL_LEVEL getVO_PRODUCE_SKILL_LEVEL() {

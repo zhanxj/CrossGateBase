@@ -37,7 +37,7 @@ public class RequestScriptMutual extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getOp() {
-		return builder.getOp();
+		int ret = builder.getOp();		return ret;
 	}
 
 	/**
@@ -54,7 +54,7 @@ public class RequestScriptMutual extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getDir() {
-		return builder.getDir();
+		int ret = builder.getDir();		return ret;
 	}
 
 	public REQUEST_SCRIPT_MUTUAL getRequestScriptMutual() {

@@ -36,7 +36,7 @@ public class VoBag {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getId() {
-		return vo.getId();
+		int ret = vo.getId();		return ret;
 	}
 
 	/**

@@ -35,7 +35,7 @@ public class VoAccountPlayerInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getRoleVersion() {
-		return vo.getRoleVersion();
+		int ret = vo.getRoleVersion();		return ret;
 	}
 
 	/**
@@ -52,7 +52,7 @@ public class VoAccountPlayerInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getRoleIndex() {
-		return vo.getRoleIndex();
+		int ret = vo.getRoleIndex();		return ret;
 	}
 
 	/**
@@ -69,7 +69,7 @@ public class VoAccountPlayerInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getInstanceId() {
-		return vo.getInstanceId();
+		int ret = vo.getInstanceId();		return ret;
 	}
 
 	/**
@@ -103,7 +103,7 @@ public class VoAccountPlayerInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getLevel() {
-		return vo.getLevel();
+		int ret = vo.getLevel();		return ret;
 	}
 
 	/**
@@ -120,7 +120,7 @@ public class VoAccountPlayerInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		return vo.getName();
+		String ret = vo.getName();		return ret;
 	}
 
 	/**
@@ -137,7 +137,7 @@ public class VoAccountPlayerInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getLoginTimes() {
-		return vo.getLoginTimes();
+		int ret = vo.getLoginTimes();		return ret;
 	}
 
 	/**
@@ -171,7 +171,7 @@ public class VoAccountPlayerInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getHeadVersion() {
-		return vo.getHeadVersion();
+		int ret = vo.getHeadVersion();		return ret;
 	}
 
 	/**
@@ -188,7 +188,7 @@ public class VoAccountPlayerInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getJob() {
-		return vo.getJob();
+		String ret = vo.getJob();		return ret;
 	}
 
 	public VO_ACCOUNT_PLAYER_INFO getVO_ACCOUNT_PLAYER_INFO() {

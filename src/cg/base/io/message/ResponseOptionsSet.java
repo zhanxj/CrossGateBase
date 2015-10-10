@@ -37,7 +37,7 @@ public class ResponseOptionsSet extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		return builder.getName();
+		String ret = builder.getName();		return ret;
 	}
 
 	/**
@@ -54,7 +54,8 @@ public class ResponseOptionsSet extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoOption getOption() {
-		return new VoOption(builder.getOption());
+		VoOption ret = new VoOption(builder.getOption());
+		return ret;
 	}
 
 	public RESPONSE_OPTIONS_SET getResponseOptionsSet() {

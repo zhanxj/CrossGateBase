@@ -38,7 +38,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEyeStyleId() {
-		return builder.getEyeStyleId();
+		int ret = builder.getEyeStyleId();		return ret;
 	}
 
 	/**
@@ -55,7 +55,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getRoleIndex() {
-		return builder.getRoleIndex();
+		int ret = builder.getRoleIndex();		return ret;
 	}
 
 	/**
@@ -72,7 +72,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getRoleId() {
-		return builder.getRoleId();
+		int ret = builder.getRoleId();		return ret;
 	}
 
 	/**
@@ -89,7 +89,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getColorId() {
-		return builder.getColorId();
+		int ret = builder.getColorId();		return ret;
 	}
 
 	/**
@@ -123,7 +123,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMouthStyleId() {
-		return builder.getMouthStyleId();
+		int ret = builder.getMouthStyleId();		return ret;
 	}
 
 	/**
@@ -140,7 +140,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		return builder.getName();
+		String ret = builder.getName();		return ret;
 	}
 
 	/**
@@ -174,7 +174,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getHairStyleId() {
-		return builder.getHairStyleId();
+		int ret = builder.getHairStyleId();		return ret;
 	}
 
 	public REQUEST_PLAYER_CREATE getRequestPlayerCreate() {
