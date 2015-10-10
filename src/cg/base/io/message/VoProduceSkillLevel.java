@@ -73,8 +73,13 @@ public class VoProduceSkillLevel {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_MATERIAL_INFO> getMaterialsList() {
-		return vo.getMaterialsList();
+	public List<VoMaterialInfo> getMaterialsList() {
+		List<VO_MATERIAL_INFO> list = vo.getMaterialsList();
+		List<VoMaterialInfo> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_MATERIAL_INFO vo : list) {
+			ret.add(new VoMaterialInfo(vo));
+		}
+		return ret;
 	}
 
 	/**

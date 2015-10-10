@@ -1,7 +1,6 @@
 package cg.base.io.message;
 
 import cg.base.io.proto.BattleProtos.*;
-import cg.base.io.proto.VOProtos.*;
 
 /**
  * This is a auto make java file, so do not modify me.
@@ -34,8 +33,8 @@ public class VoUnitBattleInfo {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_UNIT_BASE_INFO getBaseInfo() {
-		return vo.getBaseInfo();
+	public VoUnitBaseInfo getBaseInfo() {
+		return new VoUnitBaseInfo(vo.getBaseInfo());
 	}
 
 	/**

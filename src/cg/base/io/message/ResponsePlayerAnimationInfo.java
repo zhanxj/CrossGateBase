@@ -42,8 +42,13 @@ public class ResponsePlayerAnimationInfo extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_PLAYER_ANIMATION_INFO> getAnimationInfosList() {
-		return builder.getAnimationInfosList();
+	public List<VoPlayerAnimationInfo> getAnimationInfosList() {
+		List<VO_PLAYER_ANIMATION_INFO> list = builder.getAnimationInfosList();
+		List<VoPlayerAnimationInfo> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_PLAYER_ANIMATION_INFO vo : list) {
+			ret.add(new VoPlayerAnimationInfo(vo));
+		}
+		return ret;
 	}
 
 	/**

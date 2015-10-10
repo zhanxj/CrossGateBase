@@ -39,8 +39,13 @@ public class VoPlayerAnimations {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_PLAYER_ANIMATION> getAnimationsList() {
-		return vo.getAnimationsList();
+	public List<VoPlayerAnimation> getAnimationsList() {
+		List<VO_PLAYER_ANIMATION> list = vo.getAnimationsList();
+		List<VoPlayerAnimation> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_PLAYER_ANIMATION vo : list) {
+			ret.add(new VoPlayerAnimation(vo));
+		}
+		return ret;
 	}
 
 	public VO_PLAYER_ANIMATIONS getVO_PLAYER_ANIMATIONS() {

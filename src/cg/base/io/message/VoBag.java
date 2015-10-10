@@ -56,8 +56,13 @@ public class VoBag {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_GRID> getGridsList() {
-		return vo.getGridsList();
+	public List<VoGrid> getGridsList() {
+		List<VO_GRID> list = vo.getGridsList();
+		List<VoGrid> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_GRID vo : list) {
+			ret.add(new VoGrid(vo));
+		}
+		return ret;
 	}
 
 	public VO_BAG getVO_BAG() {

@@ -135,8 +135,8 @@ public class VoItem {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_ITEM_IDENTIFY getIdentifyInfo() {
-		return vo.getIdentifyInfo();
+	public VoItemIdentify getIdentifyInfo() {
+		return new VoItemIdentify(vo.getIdentifyInfo());
 	}
 
 	public VO_ITEM getVO_ITEM() {

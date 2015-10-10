@@ -42,8 +42,13 @@ public class ResponseBattleEnter extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_UNIT_BATTLE_INFO> getTeamAList() {
-		return builder.getTeamAList();
+	public List<VoUnitBattleInfo> getTeamAList() {
+		List<VO_UNIT_BATTLE_INFO> list = builder.getTeamAList();
+		List<VoUnitBattleInfo> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_UNIT_BATTLE_INFO vo : list) {
+			ret.add(new VoUnitBattleInfo(vo));
+		}
+		return ret;
 	}
 
 	/**
@@ -63,8 +68,13 @@ public class ResponseBattleEnter extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_UNIT_BATTLE_INFO> getTeamBList() {
-		return builder.getTeamBList();
+	public List<VoUnitBattleInfo> getTeamBList() {
+		List<VO_UNIT_BATTLE_INFO> list = builder.getTeamBList();
+		List<VoUnitBattleInfo> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_UNIT_BATTLE_INFO vo : list) {
+			ret.add(new VoUnitBattleInfo(vo));
+		}
+		return ret;
 	}
 
 	public RESPONSE_BATTLE_ENTER getResponseBattleEnter() {

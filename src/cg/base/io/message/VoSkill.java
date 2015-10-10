@@ -56,8 +56,13 @@ public class VoSkill {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_SKILL_LEVEL> getSkillsList() {
-		return vo.getSkillsList();
+	public List<VoSkillLevel> getSkillsList() {
+		List<VO_SKILL_LEVEL> list = vo.getSkillsList();
+		List<VoSkillLevel> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_SKILL_LEVEL vo : list) {
+			ret.add(new VoSkillLevel(vo));
+		}
+		return ret;
 	}
 
 	/**

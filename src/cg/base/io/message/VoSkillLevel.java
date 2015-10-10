@@ -56,8 +56,13 @@ public class VoSkillLevel {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_PRODUCE_SKILL_LEVEL> getSkillLevelDatasList() {
-		return vo.getSkillLevelDatasList();
+	public List<VoProduceSkillLevel> getSkillLevelDatasList() {
+		List<VO_PRODUCE_SKILL_LEVEL> list = vo.getSkillLevelDatasList();
+		List<VoProduceSkillLevel> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_PRODUCE_SKILL_LEVEL vo : list) {
+			ret.add(new VoProduceSkillLevel(vo));
+		}
+		return ret;
 	}
 
 	/**

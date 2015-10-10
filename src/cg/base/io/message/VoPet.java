@@ -35,8 +35,8 @@ public class VoPet {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_UNIT_BASE_INFO getBaseInfo() {
-		return vo.getBaseInfo();
+	public VoUnitBaseInfo getBaseInfo() {
+		return new VoUnitBaseInfo(vo.getBaseInfo());
 	}
 
 	/**
@@ -52,8 +52,8 @@ public class VoPet {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_SKILL_SET getSkillSet() {
-		return vo.getSkillSet();
+	public VoSkillSet getSkillSet() {
+		return new VoSkillSet(vo.getSkillSet());
 	}
 
 	/**
@@ -107,8 +107,13 @@ public class VoPet {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_ATTRIBUTES> getAttributesList() {
-		return vo.getAttributesList();
+	public List<VoAttributes> getAttributesList() {
+		List<VO_ATTRIBUTES> list = vo.getAttributesList();
+		List<VoAttributes> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_ATTRIBUTES vo : list) {
+			ret.add(new VoAttributes(vo));
+		}
+		return ret;
 	}
 
 	/**
@@ -141,8 +146,8 @@ public class VoPet {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_UNIT_EXTEND_INFO getExtendInfo() {
-		return vo.getExtendInfo();
+	public VoUnitExtendInfo getExtendInfo() {
+		return new VoUnitExtendInfo(vo.getExtendInfo());
 	}
 
 	public VO_PET getVO_PET() {

@@ -3,7 +3,6 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.MapProtos.*;
-import cg.base.io.proto.VOProtos.*;
 
 /**
  * This is a auto make java file, so do not modify me.
@@ -37,8 +36,8 @@ public class ResponseMapUnitCreate extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_UNIT_BASE_INFO getBaseInfo() {
-		return builder.getBaseInfo();
+	public VoUnitBaseInfo getBaseInfo() {
+		return new VoUnitBaseInfo(builder.getBaseInfo());
 	}
 
 	/**
@@ -54,8 +53,8 @@ public class ResponseMapUnitCreate extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_POSITION getPosition() {
-		return builder.getPosition();
+	public VoPosition getPosition() {
+		return new VoPosition(builder.getPosition());
 	}
 
 	/**
@@ -71,8 +70,8 @@ public class ResponseMapUnitCreate extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_MAP_UNIT_EXTEND getExtendInfo() {
-		return builder.getExtendInfo();
+	public VoMapUnitExtend getExtendInfo() {
+		return new VoMapUnitExtend(builder.getExtendInfo());
 	}
 
 	public RESPONSE_MAP_UNIT_CREATE getResponseMapUnitCreate() {

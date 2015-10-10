@@ -175,8 +175,13 @@ public class VoItemIdentify {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_ATTRIBUTES> getAttributesList() {
-		return vo.getAttributesList();
+	public List<VoAttributes> getAttributesList() {
+		List<VO_ATTRIBUTES> list = vo.getAttributesList();
+		List<VoAttributes> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_ATTRIBUTES vo : list) {
+			ret.add(new VoAttributes(vo));
+		}
+		return ret;
 	}
 
 	/**

@@ -3,7 +3,6 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.OptionProtos.*;
-import cg.base.io.proto.VOProtos.*;
 
 /**
  * This is a auto make java file, so do not modify me.
@@ -37,8 +36,8 @@ public class RequestOptionsSet extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_OPTION getOption() {
-		return builder.getOption();
+	public VoOption getOption() {
+		return new VoOption(builder.getOption());
 	}
 
 	public REQUEST_OPTIONS_SET getRequestOptionsSet() {

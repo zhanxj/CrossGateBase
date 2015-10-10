@@ -43,8 +43,13 @@ public class ResponseMapMove extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_MAP_CELL> getMapCellsList() {
-		return builder.getMapCellsList();
+	public List<VoMapCell> getMapCellsList() {
+		List<VO_MAP_CELL> list = builder.getMapCellsList();
+		List<VoMapCell> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_MAP_CELL vo : list) {
+			ret.add(new VoMapCell(vo));
+		}
+		return ret;
 	}
 
 	public RESPONSE_MAP_MOVE getResponseMapMove() {

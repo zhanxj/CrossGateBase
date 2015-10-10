@@ -39,8 +39,13 @@ public class VoAttributes {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_ATTRIBUTE> getAttributesList() {
-		return vo.getAttributesList();
+	public List<VoAttribute> getAttributesList() {
+		List<VO_ATTRIBUTE> list = vo.getAttributesList();
+		List<VoAttribute> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_ATTRIBUTE vo : list) {
+			ret.add(new VoAttribute(vo));
+		}
+		return ret;
 	}
 
 	/**

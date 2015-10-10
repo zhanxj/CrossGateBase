@@ -33,8 +33,8 @@ public class VoGrid {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_ITEM getItem() {
-		return vo.getItem();
+	public VoItem getItem() {
+		return new VoItem(vo.getItem());
 	}
 
 	/**

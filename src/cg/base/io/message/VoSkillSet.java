@@ -39,8 +39,13 @@ public class VoSkillSet {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_SKILL> getSkillsList() {
-		return vo.getSkillsList();
+	public List<VoSkill> getSkillsList() {
+		List<VO_SKILL> list = vo.getSkillsList();
+		List<VoSkill> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_SKILL vo : list) {
+			ret.add(new VoSkill(vo));
+		}
+		return ret;
 	}
 
 	/**
@@ -77,8 +82,13 @@ public class VoSkillSet {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_SKILL> getBaseSkillsList() {
-		return vo.getBaseSkillsList();
+	public List<VoSkill> getBaseSkillsList() {
+		List<VO_SKILL> list = vo.getBaseSkillsList();
+		List<VoSkill> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_SKILL vo : list) {
+			ret.add(new VoSkill(vo));
+		}
+		return ret;
 	}
 
 	public VO_SKILL_SET getVO_SKILL_SET() {

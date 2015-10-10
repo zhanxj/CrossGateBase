@@ -42,8 +42,13 @@ public class ResponseAccountRoleList extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_ACCOUNT_PLAYER_INFO> getPlayersList() {
-		return builder.getPlayersList();
+	public List<VoAccountPlayerInfo> getPlayersList() {
+		List<VO_ACCOUNT_PLAYER_INFO> list = builder.getPlayersList();
+		List<VoAccountPlayerInfo> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_ACCOUNT_PLAYER_INFO vo : list) {
+			ret.add(new VoAccountPlayerInfo(vo));
+		}
+		return ret;
 	}
 
 	public RESPONSE_ACCOUNT_ROLE_LIST getResponseAccountRoleList() {

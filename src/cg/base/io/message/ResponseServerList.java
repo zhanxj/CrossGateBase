@@ -42,8 +42,13 @@ public class ResponseServerList extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_SERVER> getServersList() {
-		return builder.getServersList();
+	public List<VoServer> getServersList() {
+		List<VO_SERVER> list = builder.getServersList();
+		List<VoServer> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_SERVER vo : list) {
+			ret.add(new VoServer(vo));
+		}
+		return ret;
 	}
 
 	public RESPONSE_SERVER_LIST getResponseServerList() {

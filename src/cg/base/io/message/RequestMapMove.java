@@ -3,7 +3,6 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.MapProtos.*;
-import cg.base.io.proto.VOProtos.*;
 
 /**
  * This is a auto make java file, so do not modify me.
@@ -88,8 +87,8 @@ public class RequestMapMove extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_MAP_AREA getEastArea() {
-		return builder.getEastArea();
+	public VoMapArea getEastArea() {
+		return new VoMapArea(builder.getEastArea());
 	}
 
 	/**
@@ -122,8 +121,8 @@ public class RequestMapMove extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_MAP_AREA getSouthArea() {
-		return builder.getSouthArea();
+	public VoMapArea getSouthArea() {
+		return new VoMapArea(builder.getSouthArea());
 	}
 
 	public REQUEST_MAP_MOVE getRequestMapMove() {

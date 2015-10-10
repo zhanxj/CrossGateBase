@@ -39,8 +39,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_UNIT_BASE_INFO getBaseInfo() {
-		return builder.getBaseInfo();
+	public VoUnitBaseInfo getBaseInfo() {
+		return new VoUnitBaseInfo(builder.getBaseInfo());
 	}
 
 	/**
@@ -56,8 +56,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_SKILL_SET getSkillSet() {
-		return builder.getSkillSet();
+	public VoSkillSet getSkillSet() {
+		return new VoSkillSet(builder.getSkillSet());
 	}
 
 	/**
@@ -77,8 +77,13 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_BAG> getBagsList() {
-		return builder.getBagsList();
+	public List<VoBag> getBagsList() {
+		List<VO_BAG> list = builder.getBagsList();
+		List<VoBag> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_BAG vo : list) {
+			ret.add(new VoBag(vo));
+		}
+		return ret;
 	}
 
 	/**
@@ -98,8 +103,13 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_TITLE> getTitlesList() {
-		return builder.getTitlesList();
+	public List<VoTitle> getTitlesList() {
+		List<VO_TITLE> list = builder.getTitlesList();
+		List<VoTitle> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_TITLE vo : list) {
+			ret.add(new VoTitle(vo));
+		}
+		return ret;
 	}
 
 	/**
@@ -115,8 +125,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_UNIT_EXTEND_INFO getExtendInfo() {
-		return builder.getExtendInfo();
+	public VoUnitExtendInfo getExtendInfo() {
+		return new VoUnitExtendInfo(builder.getExtendInfo());
 	}
 
 	/**
@@ -132,8 +142,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_TITLES getHeadTitle() {
-		return builder.getHeadTitle();
+	public VoTitles getHeadTitle() {
+		return new VoTitles(builder.getHeadTitle());
 	}
 
 	/**
@@ -187,8 +197,13 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_OPTION> getOptionsList() {
-		return builder.getOptionsList();
+	public List<VoOption> getOptionsList() {
+		List<VO_OPTION> list = builder.getOptionsList();
+		List<VoOption> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_OPTION vo : list) {
+			ret.add(new VoOption(vo));
+		}
+		return ret;
 	}
 
 	/**
@@ -208,8 +223,13 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VO_ATTRIBUTES> getAttributesList() {
-		return builder.getAttributesList();
+	public List<VoAttributes> getAttributesList() {
+		List<VO_ATTRIBUTES> list = builder.getAttributesList();
+		List<VoAttributes> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_ATTRIBUTES vo : list) {
+			ret.add(new VoAttributes(vo));
+		}
+		return ret;
 	}
 
 	/**
@@ -225,8 +245,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public VO_POSITION getPosition() {
-		return builder.getPosition();
+	public VoPosition getPosition() {
+		return new VoPosition(builder.getPosition());
 	}
 
 	/**
