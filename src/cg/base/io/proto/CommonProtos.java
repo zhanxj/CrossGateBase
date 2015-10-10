@@ -10,192 +10,86 @@ public final class CommonProtos {
   }
   public interface RESPONSE_EXECUTE_OKOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-
+    
     // required int32 messageId = 1;
-    /**
-     * <code>required int32 messageId = 1;</code>
-     */
     boolean hasMessageId();
-    /**
-     * <code>required int32 messageId = 1;</code>
-     */
     int getMessageId();
-
+    
     // required string message = 2;
-    /**
-     * <code>required string message = 2;</code>
-     */
     boolean hasMessage();
-    /**
-     * <code>required string message = 2;</code>
-     */
-    java.lang.String getMessage();
-    /**
-     * <code>required string message = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getMessageBytes();
+    String getMessage();
   }
-  /**
-   * Protobuf type {@code RESPONSE_EXECUTE_OK}
-   */
   public static final class RESPONSE_EXECUTE_OK extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_EXECUTE_OKOrBuilder {
     // Use RESPONSE_EXECUTE_OK.newBuilder() to construct.
-    private RESPONSE_EXECUTE_OK(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+    private RESPONSE_EXECUTE_OK(Builder builder) {
       super(builder);
-      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_EXECUTE_OK(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
+    private RESPONSE_EXECUTE_OK(boolean noInit) {}
+    
     private static final RESPONSE_EXECUTE_OK defaultInstance;
     public static RESPONSE_EXECUTE_OK getDefaultInstance() {
       return defaultInstance;
     }
-
+    
     public RESPONSE_EXECUTE_OK getDefaultInstanceForType() {
       return defaultInstance;
     }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private RESPONSE_EXECUTE_OK(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              messageId_ = input.readInt32();
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              message_ = input.readBytes();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
+    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_OK_descriptor;
     }
-
+    
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_OK_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.class, cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.Builder.class);
+      return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_OK_fieldAccessorTable;
     }
-
-    public static com.google.protobuf.Parser<RESPONSE_EXECUTE_OK> PARSER =
-        new com.google.protobuf.AbstractParser<RESPONSE_EXECUTE_OK>() {
-      public RESPONSE_EXECUTE_OK parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RESPONSE_EXECUTE_OK(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RESPONSE_EXECUTE_OK> getParserForType() {
-      return PARSER;
-    }
-
+    
     private int bitField0_;
     // required int32 messageId = 1;
     public static final int MESSAGEID_FIELD_NUMBER = 1;
     private int messageId_;
-    /**
-     * <code>required int32 messageId = 1;</code>
-     */
     public boolean hasMessageId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    /**
-     * <code>required int32 messageId = 1;</code>
-     */
     public int getMessageId() {
       return messageId_;
     }
-
+    
     // required string message = 2;
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private java.lang.Object message_;
-    /**
-     * <code>required string message = 2;</code>
-     */
     public boolean hasMessage() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    /**
-     * <code>required string message = 2;</code>
-     */
-    public java.lang.String getMessage() {
+    public String getMessage() {
       java.lang.Object ref = message_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
           message_ = s;
         }
         return s;
       }
     }
-    /**
-     * <code>required string message = 2;</code>
-     */
-    public com.google.protobuf.ByteString
-        getMessageBytes() {
+    private com.google.protobuf.ByteString getMessageBytes() {
       java.lang.Object ref = message_;
-      if (ref instanceof java.lang.String) {
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
         message_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-
+    
     private void initFields() {
       messageId_ = 0;
       message_ = "";
@@ -204,7 +98,7 @@ public final class CommonProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-
+      
       if (!hasMessageId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -216,7 +110,7 @@ public final class CommonProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-
+    
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -228,12 +122,12 @@ public final class CommonProtos {
       }
       getUnknownFields().writeTo(output);
     }
-
+    
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-
+    
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -247,83 +141,94 @@ public final class CommonProtos {
       memoizedSerializedSize = size;
       return size;
     }
-
+    
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-
+    
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
-
+    
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-
+    
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
-    /**
-     * Protobuf type {@code RESPONSE_EXECUTE_OK}
-     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OKOrBuilder {
@@ -331,21 +236,18 @@ public final class CommonProtos {
           getDescriptor() {
         return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_OK_descriptor;
       }
-
+      
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_OK_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.class, cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.Builder.class);
+        return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_OK_fieldAccessorTable;
       }
-
+      
       // Construct using cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      
+      private Builder(BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -356,7 +258,7 @@ public final class CommonProtos {
       private static Builder create() {
         return new Builder();
       }
-
+      
       public Builder clear() {
         super.clear();
         messageId_ = 0;
@@ -365,20 +267,20 @@ public final class CommonProtos {
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
-
+      
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-
+      
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_OK_descriptor;
+        return cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.getDescriptor();
       }
-
+      
       public cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK getDefaultInstanceForType() {
         return cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.getDefaultInstance();
       }
-
+      
       public cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK build() {
         cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK result = buildPartial();
         if (!result.isInitialized()) {
@@ -386,7 +288,17 @@ public final class CommonProtos {
         }
         return result;
       }
-
+      
+      private cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
       public cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK buildPartial() {
         cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK result = new cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK(this);
         int from_bitField0_ = bitField0_;
@@ -403,7 +315,7 @@ public final class CommonProtos {
         onBuilt();
         return result;
       }
-
+      
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK) {
           return mergeFrom((cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK)other);
@@ -412,21 +324,19 @@ public final class CommonProtos {
           return this;
         }
       }
-
+      
       public Builder mergeFrom(cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK other) {
         if (other == cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.getDefaultInstance()) return this;
         if (other.hasMessageId()) {
           setMessageId(other.getMessageId());
         }
         if (other.hasMessage()) {
-          bitField0_ |= 0x00000002;
-          message_ = other.message_;
-          onChanged();
+          setMessage(other.getMessage());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-
+      
       public final boolean isInitialized() {
         if (!hasMessageId()) {
           
@@ -438,230 +348,27 @@ public final class CommonProtos {
         }
         return true;
       }
-
+      
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // required int32 messageId = 1;
-      private int messageId_ ;
-      /**
-       * <code>required int32 messageId = 1;</code>
-       */
-      public boolean hasMessageId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required int32 messageId = 1;</code>
-       */
-      public int getMessageId() {
-        return messageId_;
-      }
-      /**
-       * <code>required int32 messageId = 1;</code>
-       */
-      public Builder setMessageId(int value) {
-        bitField0_ |= 0x00000001;
-        messageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required int32 messageId = 1;</code>
-       */
-      public Builder clearMessageId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        messageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // required string message = 2;
-      private java.lang.Object message_ = "";
-      /**
-       * <code>required string message = 2;</code>
-       */
-      public boolean hasMessage() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required string message = 2;</code>
-       */
-      public java.lang.String getMessage() {
-        java.lang.Object ref = message_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          message_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string message = 2;</code>
-       */
-      public com.google.protobuf.ByteString
-          getMessageBytes() {
-        java.lang.Object ref = message_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          message_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string message = 2;</code>
-       */
-      public Builder setMessage(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        message_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string message = 2;</code>
-       */
-      public Builder clearMessage() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        message_ = getDefaultInstance().getMessage();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string message = 2;</code>
-       */
-      public Builder setMessageBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        message_ = value;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:RESPONSE_EXECUTE_OK)
-    }
-
-    static {
-      defaultInstance = new RESPONSE_EXECUTE_OK(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:RESPONSE_EXECUTE_OK)
-  }
-
-  public interface RESPONSE_EXECUTE_ERROROrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // required int32 messageId = 1;
-    /**
-     * <code>required int32 messageId = 1;</code>
-     */
-    boolean hasMessageId();
-    /**
-     * <code>required int32 messageId = 1;</code>
-     */
-    int getMessageId();
-
-    // required int32 errorCode = 2;
-    /**
-     * <code>required int32 errorCode = 2;</code>
-     */
-    boolean hasErrorCode();
-    /**
-     * <code>required int32 errorCode = 2;</code>
-     */
-    int getErrorCode();
-
-    // required string message = 3;
-    /**
-     * <code>required string message = 3;</code>
-     */
-    boolean hasMessage();
-    /**
-     * <code>required string message = 3;</code>
-     */
-    java.lang.String getMessage();
-    /**
-     * <code>required string message = 3;</code>
-     */
-    com.google.protobuf.ByteString
-        getMessageBytes();
-  }
-  /**
-   * Protobuf type {@code RESPONSE_EXECUTE_ERROR}
-   */
-  public static final class RESPONSE_EXECUTE_ERROR extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_EXECUTE_ERROROrBuilder {
-    // Use RESPONSE_EXECUTE_ERROR.newBuilder() to construct.
-    private RESPONSE_EXECUTE_ERROR(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private RESPONSE_EXECUTE_ERROR(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final RESPONSE_EXECUTE_ERROR defaultInstance;
-    public static RESPONSE_EXECUTE_ERROR getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public RESPONSE_EXECUTE_ERROR getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private RESPONSE_EXECUTE_ERROR(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              done = true;
-              break;
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                done = true;
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
               }
               break;
             }
@@ -670,131 +377,181 @@ public final class CommonProtos {
               messageId_ = input.readInt32();
               break;
             }
-            case 16: {
+            case 18: {
               bitField0_ |= 0x00000002;
-              errorCode_ = input.readInt32();
-              break;
-            }
-            case 26: {
-              bitField0_ |= 0x00000004;
               message_ = input.readBytes();
               break;
             }
           }
         }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
       }
+      
+      private int bitField0_;
+      
+      // required int32 messageId = 1;
+      private int messageId_ ;
+      public boolean hasMessageId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getMessageId() {
+        return messageId_;
+      }
+      public Builder setMessageId(int value) {
+        bitField0_ |= 0x00000001;
+        messageId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMessageId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        messageId_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required string message = 2;
+      private java.lang.Object message_ = "";
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setMessage(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      void setMessage(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        message_ = value;
+        onChanged();
+      }
+      
+      // @@protoc_insertion_point(builder_scope:RESPONSE_EXECUTE_OK)
     }
+    
+    static {
+      defaultInstance = new RESPONSE_EXECUTE_OK(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:RESPONSE_EXECUTE_OK)
+  }
+  
+  public interface RESPONSE_EXECUTE_ERROROrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required int32 messageId = 1;
+    boolean hasMessageId();
+    int getMessageId();
+    
+    // required int32 errorCode = 2;
+    boolean hasErrorCode();
+    int getErrorCode();
+    
+    // required string message = 3;
+    boolean hasMessage();
+    String getMessage();
+  }
+  public static final class RESPONSE_EXECUTE_ERROR extends
+      com.google.protobuf.GeneratedMessage
+      implements RESPONSE_EXECUTE_ERROROrBuilder {
+    // Use RESPONSE_EXECUTE_ERROR.newBuilder() to construct.
+    private RESPONSE_EXECUTE_ERROR(Builder builder) {
+      super(builder);
+    }
+    private RESPONSE_EXECUTE_ERROR(boolean noInit) {}
+    
+    private static final RESPONSE_EXECUTE_ERROR defaultInstance;
+    public static RESPONSE_EXECUTE_ERROR getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public RESPONSE_EXECUTE_ERROR getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_ERROR_descriptor;
     }
-
+    
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_ERROR_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.class, cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.Builder.class);
+      return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_ERROR_fieldAccessorTable;
     }
-
-    public static com.google.protobuf.Parser<RESPONSE_EXECUTE_ERROR> PARSER =
-        new com.google.protobuf.AbstractParser<RESPONSE_EXECUTE_ERROR>() {
-      public RESPONSE_EXECUTE_ERROR parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RESPONSE_EXECUTE_ERROR(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RESPONSE_EXECUTE_ERROR> getParserForType() {
-      return PARSER;
-    }
-
+    
     private int bitField0_;
     // required int32 messageId = 1;
     public static final int MESSAGEID_FIELD_NUMBER = 1;
     private int messageId_;
-    /**
-     * <code>required int32 messageId = 1;</code>
-     */
     public boolean hasMessageId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    /**
-     * <code>required int32 messageId = 1;</code>
-     */
     public int getMessageId() {
       return messageId_;
     }
-
+    
     // required int32 errorCode = 2;
     public static final int ERRORCODE_FIELD_NUMBER = 2;
     private int errorCode_;
-    /**
-     * <code>required int32 errorCode = 2;</code>
-     */
     public boolean hasErrorCode() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    /**
-     * <code>required int32 errorCode = 2;</code>
-     */
     public int getErrorCode() {
       return errorCode_;
     }
-
+    
     // required string message = 3;
     public static final int MESSAGE_FIELD_NUMBER = 3;
     private java.lang.Object message_;
-    /**
-     * <code>required string message = 3;</code>
-     */
     public boolean hasMessage() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    /**
-     * <code>required string message = 3;</code>
-     */
-    public java.lang.String getMessage() {
+    public String getMessage() {
       java.lang.Object ref = message_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
           message_ = s;
         }
         return s;
       }
     }
-    /**
-     * <code>required string message = 3;</code>
-     */
-    public com.google.protobuf.ByteString
-        getMessageBytes() {
+    private com.google.protobuf.ByteString getMessageBytes() {
       java.lang.Object ref = message_;
-      if (ref instanceof java.lang.String) {
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
         message_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-
+    
     private void initFields() {
       messageId_ = 0;
       errorCode_ = 0;
@@ -804,7 +561,7 @@ public final class CommonProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-
+      
       if (!hasMessageId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -820,7 +577,7 @@ public final class CommonProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-
+    
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -835,12 +592,12 @@ public final class CommonProtos {
       }
       getUnknownFields().writeTo(output);
     }
-
+    
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-
+    
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -858,83 +615,94 @@ public final class CommonProtos {
       memoizedSerializedSize = size;
       return size;
     }
-
+    
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-
+    
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
-
+    
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-
+    
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
-    /**
-     * Protobuf type {@code RESPONSE_EXECUTE_ERROR}
-     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROROrBuilder {
@@ -942,21 +710,18 @@ public final class CommonProtos {
           getDescriptor() {
         return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_ERROR_descriptor;
       }
-
+      
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_ERROR_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.class, cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.Builder.class);
+        return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_ERROR_fieldAccessorTable;
       }
-
+      
       // Construct using cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      
+      private Builder(BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -967,7 +732,7 @@ public final class CommonProtos {
       private static Builder create() {
         return new Builder();
       }
-
+      
       public Builder clear() {
         super.clear();
         messageId_ = 0;
@@ -978,20 +743,20 @@ public final class CommonProtos {
         bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
-
+      
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-
+      
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.CommonProtos.internal_static_RESPONSE_EXECUTE_ERROR_descriptor;
+        return cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.getDescriptor();
       }
-
+      
       public cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR getDefaultInstanceForType() {
         return cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.getDefaultInstance();
       }
-
+      
       public cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR build() {
         cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR result = buildPartial();
         if (!result.isInitialized()) {
@@ -999,7 +764,17 @@ public final class CommonProtos {
         }
         return result;
       }
-
+      
+      private cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
       public cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR buildPartial() {
         cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR result = new cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR(this);
         int from_bitField0_ = bitField0_;
@@ -1020,7 +795,7 @@ public final class CommonProtos {
         onBuilt();
         return result;
       }
-
+      
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR) {
           return mergeFrom((cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR)other);
@@ -1029,7 +804,7 @@ public final class CommonProtos {
           return this;
         }
       }
-
+      
       public Builder mergeFrom(cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR other) {
         if (other == cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.getDefaultInstance()) return this;
         if (other.hasMessageId()) {
@@ -1039,14 +814,12 @@ public final class CommonProtos {
           setErrorCode(other.getErrorCode());
         }
         if (other.hasMessage()) {
-          bitField0_ |= 0x00000004;
-          message_ = other.message_;
-          onChanged();
+          setMessage(other.getMessage());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-
+      
       public final boolean isInitialized() {
         if (!hasMessageId()) {
           
@@ -1062,135 +835,109 @@ public final class CommonProtos {
         }
         return true;
       }
-
+      
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              messageId_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              errorCode_ = input.readInt32();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              message_ = input.readBytes();
+              break;
+            }
           }
         }
-        return this;
       }
+      
       private int bitField0_;
-
+      
       // required int32 messageId = 1;
       private int messageId_ ;
-      /**
-       * <code>required int32 messageId = 1;</code>
-       */
       public boolean hasMessageId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      /**
-       * <code>required int32 messageId = 1;</code>
-       */
       public int getMessageId() {
         return messageId_;
       }
-      /**
-       * <code>required int32 messageId = 1;</code>
-       */
       public Builder setMessageId(int value) {
         bitField0_ |= 0x00000001;
         messageId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 messageId = 1;</code>
-       */
       public Builder clearMessageId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         messageId_ = 0;
         onChanged();
         return this;
       }
-
+      
       // required int32 errorCode = 2;
       private int errorCode_ ;
-      /**
-       * <code>required int32 errorCode = 2;</code>
-       */
       public boolean hasErrorCode() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      /**
-       * <code>required int32 errorCode = 2;</code>
-       */
       public int getErrorCode() {
         return errorCode_;
       }
-      /**
-       * <code>required int32 errorCode = 2;</code>
-       */
       public Builder setErrorCode(int value) {
         bitField0_ |= 0x00000002;
         errorCode_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 errorCode = 2;</code>
-       */
       public Builder clearErrorCode() {
         bitField0_ = (bitField0_ & ~0x00000002);
         errorCode_ = 0;
         onChanged();
         return this;
       }
-
+      
       // required string message = 3;
       private java.lang.Object message_ = "";
-      /**
-       * <code>required string message = 3;</code>
-       */
       public boolean hasMessage() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      /**
-       * <code>required string message = 3;</code>
-       */
-      public java.lang.String getMessage() {
+      public String getMessage() {
         java.lang.Object ref = message_;
-        if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           message_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
-      /**
-       * <code>required string message = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getMessageBytes() {
-        java.lang.Object ref = message_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          message_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string message = 3;</code>
-       */
-      public Builder setMessage(
-          java.lang.String value) {
+      public Builder setMessage(String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1199,40 +946,29 @@ public final class CommonProtos {
         onChanged();
         return this;
       }
-      /**
-       * <code>required string message = 3;</code>
-       */
       public Builder clearMessage() {
         bitField0_ = (bitField0_ & ~0x00000004);
         message_ = getDefaultInstance().getMessage();
         onChanged();
         return this;
       }
-      /**
-       * <code>required string message = 3;</code>
-       */
-      public Builder setMessageBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
+      void setMessage(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000004;
         message_ = value;
         onChanged();
-        return this;
       }
-
+      
       // @@protoc_insertion_point(builder_scope:RESPONSE_EXECUTE_ERROR)
     }
-
+    
     static {
       defaultInstance = new RESPONSE_EXECUTE_ERROR(true);
       defaultInstance.initFields();
     }
-
+    
     // @@protoc_insertion_point(class_scope:RESPONSE_EXECUTE_ERROR)
   }
-
+  
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_EXECUTE_OK_descriptor;
   private static
@@ -1243,7 +979,7 @@ public final class CommonProtos {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_EXECUTE_ERROR_fieldAccessorTable;
-
+  
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
@@ -1252,11 +988,11 @@ public final class CommonProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014Common.proto\"8\n\022RESPONSE_EXECUTE_OK\022\021\n\t" +
-      "messageId\030\001 \002(\005\022\017\n\007message\030\002 \002(\t\"N\n\025REPO" +
-      "NSE_EXECUTE_ERROR\022\021\n\tmessageId\030\001 \002(\005\022\021\n\t" +
-      "errorCode\030\002 \002(\005\022\017\n\007message\030\003 \002(\tB \n\020cg.b" +
-      "ase.io.protoB\014CommonProtos"
+      "\n\014Common.proto\"9\n\023RESPONSE_EXECUTE_OK\022\021\n" +
+      "\tmessageId\030\001 \002(\005\022\017\n\007message\030\002 \002(\t\"O\n\026RES" +
+      "PONSE_EXECUTE_ERROR\022\021\n\tmessageId\030\001 \002(\005\022\021" +
+      "\n\terrorCode\030\002 \002(\005\022\017\n\007message\030\003 \002(\tB \n\020cg" +
+      ".base.io.protoB\014CommonProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1268,13 +1004,17 @@ public final class CommonProtos {
           internal_static_RESPONSE_EXECUTE_OK_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_EXECUTE_OK_descriptor,
-              new java.lang.String[] { "MessageId", "Message", });
+              new java.lang.String[] { "MessageId", "Message", },
+              cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.class,
+              cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_OK.Builder.class);
           internal_static_RESPONSE_EXECUTE_ERROR_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_RESPONSE_EXECUTE_ERROR_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_EXECUTE_ERROR_descriptor,
-              new java.lang.String[] { "MessageId", "ErrorCode", "Message", });
+              new java.lang.String[] { "MessageId", "ErrorCode", "Message", },
+              cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.class,
+              cg.base.io.proto.CommonProtos.RESPONSE_EXECUTE_ERROR.Builder.class);
           return null;
         }
       };
@@ -1283,6 +1023,6 @@ public final class CommonProtos {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
   }
-
+  
   // @@protoc_insertion_point(outer_class_scope)
 }

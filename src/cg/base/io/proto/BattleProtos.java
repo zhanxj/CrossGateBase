@@ -10,333 +10,138 @@ public final class BattleProtos {
   }
   public interface VO_UNIT_BATTLE_INFOOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-
+    
     // required .VO_UNIT_BASE_INFO baseInfo = 1;
-    /**
-     * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-     */
     boolean hasBaseInfo();
-    /**
-     * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-     */
     cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo();
-    /**
-     * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-     */
     cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder();
-
+    
     // required int32 hpMax = 2;
-    /**
-     * <code>required int32 hpMax = 2;</code>
-     */
     boolean hasHpMax();
-    /**
-     * <code>required int32 hpMax = 2;</code>
-     */
     int getHpMax();
-
+    
     // required int32 hp = 3;
-    /**
-     * <code>required int32 hp = 3;</code>
-     */
     boolean hasHp();
-    /**
-     * <code>required int32 hp = 3;</code>
-     */
     int getHp();
-
+    
     // required int32 mpMax = 4;
-    /**
-     * <code>required int32 mpMax = 4;</code>
-     */
     boolean hasMpMax();
-    /**
-     * <code>required int32 mpMax = 4;</code>
-     */
     int getMpMax();
-
+    
     // required int32 mp = 5;
-    /**
-     * <code>required int32 mp = 5;</code>
-     */
     boolean hasMp();
-    /**
-     * <code>required int32 mp = 5;</code>
-     */
     int getMp();
-
+    
     // required int32 local = 6;
-    /**
-     * <code>required int32 local = 6;</code>
-     */
     boolean hasLocal();
-    /**
-     * <code>required int32 local = 6;</code>
-     */
     int getLocal();
-
+    
     // required bool isChallenger = 7;
-    /**
-     * <code>required bool isChallenger = 7;</code>
-     */
     boolean hasIsChallenger();
-    /**
-     * <code>required bool isChallenger = 7;</code>
-     */
     boolean getIsChallenger();
   }
-  /**
-   * Protobuf type {@code VO_UNIT_BATTLE_INFO}
-   */
   public static final class VO_UNIT_BATTLE_INFO extends
       com.google.protobuf.GeneratedMessage
       implements VO_UNIT_BATTLE_INFOOrBuilder {
     // Use VO_UNIT_BATTLE_INFO.newBuilder() to construct.
-    private VO_UNIT_BATTLE_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+    private VO_UNIT_BATTLE_INFO(Builder builder) {
       super(builder);
-      this.unknownFields = builder.getUnknownFields();
     }
-    private VO_UNIT_BATTLE_INFO(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
+    private VO_UNIT_BATTLE_INFO(boolean noInit) {}
+    
     private static final VO_UNIT_BATTLE_INFO defaultInstance;
     public static VO_UNIT_BATTLE_INFO getDefaultInstance() {
       return defaultInstance;
     }
-
+    
     public VO_UNIT_BATTLE_INFO getDefaultInstanceForType() {
       return defaultInstance;
     }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private VO_UNIT_BATTLE_INFO(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000001) == 0x00000001)) {
-                subBuilder = baseInfo_.toBuilder();
-              }
-              baseInfo_ = input.readMessage(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(baseInfo_);
-                baseInfo_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000001;
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              hpMax_ = input.readInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              hp_ = input.readInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              mpMax_ = input.readInt32();
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              mp_ = input.readInt32();
-              break;
-            }
-            case 48: {
-              bitField0_ |= 0x00000020;
-              local_ = input.readInt32();
-              break;
-            }
-            case 56: {
-              bitField0_ |= 0x00000040;
-              isChallenger_ = input.readBool();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
+    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.BattleProtos.internal_static_VO_UNIT_BATTLE_INFO_descriptor;
     }
-
+    
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.class, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder.class);
+      return cg.base.io.proto.BattleProtos.internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable;
     }
-
-    public static com.google.protobuf.Parser<VO_UNIT_BATTLE_INFO> PARSER =
-        new com.google.protobuf.AbstractParser<VO_UNIT_BATTLE_INFO>() {
-      public VO_UNIT_BATTLE_INFO parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new VO_UNIT_BATTLE_INFO(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<VO_UNIT_BATTLE_INFO> getParserForType() {
-      return PARSER;
-    }
-
+    
     private int bitField0_;
     // required .VO_UNIT_BASE_INFO baseInfo = 1;
     public static final int BASEINFO_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_;
-    /**
-     * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-     */
     public boolean hasBaseInfo() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    /**
-     * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-     */
     public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
       return baseInfo_;
     }
-    /**
-     * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-     */
     public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
       return baseInfo_;
     }
-
+    
     // required int32 hpMax = 2;
     public static final int HPMAX_FIELD_NUMBER = 2;
     private int hpMax_;
-    /**
-     * <code>required int32 hpMax = 2;</code>
-     */
     public boolean hasHpMax() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    /**
-     * <code>required int32 hpMax = 2;</code>
-     */
     public int getHpMax() {
       return hpMax_;
     }
-
+    
     // required int32 hp = 3;
     public static final int HP_FIELD_NUMBER = 3;
     private int hp_;
-    /**
-     * <code>required int32 hp = 3;</code>
-     */
     public boolean hasHp() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    /**
-     * <code>required int32 hp = 3;</code>
-     */
     public int getHp() {
       return hp_;
     }
-
+    
     // required int32 mpMax = 4;
     public static final int MPMAX_FIELD_NUMBER = 4;
     private int mpMax_;
-    /**
-     * <code>required int32 mpMax = 4;</code>
-     */
     public boolean hasMpMax() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
-    /**
-     * <code>required int32 mpMax = 4;</code>
-     */
     public int getMpMax() {
       return mpMax_;
     }
-
+    
     // required int32 mp = 5;
     public static final int MP_FIELD_NUMBER = 5;
     private int mp_;
-    /**
-     * <code>required int32 mp = 5;</code>
-     */
     public boolean hasMp() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
-    /**
-     * <code>required int32 mp = 5;</code>
-     */
     public int getMp() {
       return mp_;
     }
-
+    
     // required int32 local = 6;
     public static final int LOCAL_FIELD_NUMBER = 6;
     private int local_;
-    /**
-     * <code>required int32 local = 6;</code>
-     */
     public boolean hasLocal() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
-    /**
-     * <code>required int32 local = 6;</code>
-     */
     public int getLocal() {
       return local_;
     }
-
+    
     // required bool isChallenger = 7;
     public static final int ISCHALLENGER_FIELD_NUMBER = 7;
     private boolean isChallenger_;
-    /**
-     * <code>required bool isChallenger = 7;</code>
-     */
     public boolean hasIsChallenger() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
-    /**
-     * <code>required bool isChallenger = 7;</code>
-     */
     public boolean getIsChallenger() {
       return isChallenger_;
     }
-
+    
     private void initFields() {
       baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
       hpMax_ = 0;
@@ -350,7 +155,7 @@ public final class BattleProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-
+      
       if (!hasBaseInfo()) {
         memoizedIsInitialized = 0;
         return false;
@@ -386,7 +191,7 @@ public final class BattleProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-
+    
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -413,12 +218,12 @@ public final class BattleProtos {
       }
       getUnknownFields().writeTo(output);
     }
-
+    
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-
+    
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -452,83 +257,94 @@ public final class BattleProtos {
       memoizedSerializedSize = size;
       return size;
     }
-
+    
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-
+    
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
-
+    
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-
+    
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
-    /**
-     * Protobuf type {@code VO_UNIT_BATTLE_INFO}
-     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder {
@@ -536,21 +352,18 @@ public final class BattleProtos {
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_VO_UNIT_BATTLE_INFO_descriptor;
       }
-
+      
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.class, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder.class);
+        return cg.base.io.proto.BattleProtos.internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable;
       }
-
+      
       // Construct using cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      
+      private Builder(BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -562,7 +375,7 @@ public final class BattleProtos {
       private static Builder create() {
         return new Builder();
       }
-
+      
       public Builder clear() {
         super.clear();
         if (baseInfoBuilder_ == null) {
@@ -585,20 +398,20 @@ public final class BattleProtos {
         bitField0_ = (bitField0_ & ~0x00000040);
         return this;
       }
-
+      
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-
+      
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_VO_UNIT_BATTLE_INFO_descriptor;
+        return cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.getDescriptor();
       }
-
+      
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO getDefaultInstanceForType() {
         return cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.getDefaultInstance();
       }
-
+      
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO build() {
         cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO result = buildPartial();
         if (!result.isInitialized()) {
@@ -606,7 +419,17 @@ public final class BattleProtos {
         }
         return result;
       }
-
+      
+      private cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO buildPartial() {
         cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO result = new cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO(this);
         int from_bitField0_ = bitField0_;
@@ -647,7 +470,7 @@ public final class BattleProtos {
         onBuilt();
         return result;
       }
-
+      
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO) {
           return mergeFrom((cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO)other);
@@ -656,7 +479,7 @@ public final class BattleProtos {
           return this;
         }
       }
-
+      
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO other) {
         if (other == cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.getDefaultInstance()) return this;
         if (other.hasBaseInfo()) {
@@ -683,7 +506,7 @@ public final class BattleProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-
+      
       public final boolean isInitialized() {
         if (!hasBaseInfo()) {
           
@@ -719,39 +542,82 @@ public final class BattleProtos {
         }
         return true;
       }
-
+      
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.newBuilder();
+              if (hasBaseInfo()) {
+                subBuilder.mergeFrom(getBaseInfo());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setBaseInfo(subBuilder.buildPartial());
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              hpMax_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              hp_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              mpMax_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              mp_ = input.readInt32();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000020;
+              local_ = input.readInt32();
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000040;
+              isChallenger_ = input.readBool();
+              break;
+            }
           }
         }
-        return this;
       }
+      
       private int bitField0_;
-
+      
       // required .VO_UNIT_BASE_INFO baseInfo = 1;
       private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> baseInfoBuilder_;
-      /**
-       * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-       */
       public boolean hasBaseInfo() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      /**
-       * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-       */
       public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
         if (baseInfoBuilder_ == null) {
           return baseInfo_;
@@ -759,9 +625,6 @@ public final class BattleProtos {
           return baseInfoBuilder_.getMessage();
         }
       }
-      /**
-       * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-       */
       public Builder setBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
         if (baseInfoBuilder_ == null) {
           if (value == null) {
@@ -775,9 +638,6 @@ public final class BattleProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
-      /**
-       * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-       */
       public Builder setBaseInfo(
           cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder builderForValue) {
         if (baseInfoBuilder_ == null) {
@@ -789,9 +649,6 @@ public final class BattleProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
-      /**
-       * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-       */
       public Builder mergeBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
         if (baseInfoBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
@@ -808,9 +665,6 @@ public final class BattleProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
-      /**
-       * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-       */
       public Builder clearBaseInfo() {
         if (baseInfoBuilder_ == null) {
           baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
@@ -821,17 +675,11 @@ public final class BattleProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      /**
-       * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-       */
       public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder getBaseInfoBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getBaseInfoFieldBuilder().getBuilder();
       }
-      /**
-       * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-       */
       public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
         if (baseInfoBuilder_ != null) {
           return baseInfoBuilder_.getMessageOrBuilder();
@@ -839,9 +687,6 @@ public final class BattleProtos {
           return baseInfo_;
         }
       }
-      /**
-       * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
-       */
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> 
           getBaseInfoFieldBuilder() {
@@ -855,453 +700,237 @@ public final class BattleProtos {
         }
         return baseInfoBuilder_;
       }
-
+      
       // required int32 hpMax = 2;
       private int hpMax_ ;
-      /**
-       * <code>required int32 hpMax = 2;</code>
-       */
       public boolean hasHpMax() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      /**
-       * <code>required int32 hpMax = 2;</code>
-       */
       public int getHpMax() {
         return hpMax_;
       }
-      /**
-       * <code>required int32 hpMax = 2;</code>
-       */
       public Builder setHpMax(int value) {
         bitField0_ |= 0x00000002;
         hpMax_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 hpMax = 2;</code>
-       */
       public Builder clearHpMax() {
         bitField0_ = (bitField0_ & ~0x00000002);
         hpMax_ = 0;
         onChanged();
         return this;
       }
-
+      
       // required int32 hp = 3;
       private int hp_ ;
-      /**
-       * <code>required int32 hp = 3;</code>
-       */
       public boolean hasHp() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      /**
-       * <code>required int32 hp = 3;</code>
-       */
       public int getHp() {
         return hp_;
       }
-      /**
-       * <code>required int32 hp = 3;</code>
-       */
       public Builder setHp(int value) {
         bitField0_ |= 0x00000004;
         hp_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 hp = 3;</code>
-       */
       public Builder clearHp() {
         bitField0_ = (bitField0_ & ~0x00000004);
         hp_ = 0;
         onChanged();
         return this;
       }
-
+      
       // required int32 mpMax = 4;
       private int mpMax_ ;
-      /**
-       * <code>required int32 mpMax = 4;</code>
-       */
       public boolean hasMpMax() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
-      /**
-       * <code>required int32 mpMax = 4;</code>
-       */
       public int getMpMax() {
         return mpMax_;
       }
-      /**
-       * <code>required int32 mpMax = 4;</code>
-       */
       public Builder setMpMax(int value) {
         bitField0_ |= 0x00000008;
         mpMax_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 mpMax = 4;</code>
-       */
       public Builder clearMpMax() {
         bitField0_ = (bitField0_ & ~0x00000008);
         mpMax_ = 0;
         onChanged();
         return this;
       }
-
+      
       // required int32 mp = 5;
       private int mp_ ;
-      /**
-       * <code>required int32 mp = 5;</code>
-       */
       public boolean hasMp() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
-      /**
-       * <code>required int32 mp = 5;</code>
-       */
       public int getMp() {
         return mp_;
       }
-      /**
-       * <code>required int32 mp = 5;</code>
-       */
       public Builder setMp(int value) {
         bitField0_ |= 0x00000010;
         mp_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 mp = 5;</code>
-       */
       public Builder clearMp() {
         bitField0_ = (bitField0_ & ~0x00000010);
         mp_ = 0;
         onChanged();
         return this;
       }
-
+      
       // required int32 local = 6;
       private int local_ ;
-      /**
-       * <code>required int32 local = 6;</code>
-       */
       public boolean hasLocal() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
-      /**
-       * <code>required int32 local = 6;</code>
-       */
       public int getLocal() {
         return local_;
       }
-      /**
-       * <code>required int32 local = 6;</code>
-       */
       public Builder setLocal(int value) {
         bitField0_ |= 0x00000020;
         local_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 local = 6;</code>
-       */
       public Builder clearLocal() {
         bitField0_ = (bitField0_ & ~0x00000020);
         local_ = 0;
         onChanged();
         return this;
       }
-
+      
       // required bool isChallenger = 7;
       private boolean isChallenger_ ;
-      /**
-       * <code>required bool isChallenger = 7;</code>
-       */
       public boolean hasIsChallenger() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
-      /**
-       * <code>required bool isChallenger = 7;</code>
-       */
       public boolean getIsChallenger() {
         return isChallenger_;
       }
-      /**
-       * <code>required bool isChallenger = 7;</code>
-       */
       public Builder setIsChallenger(boolean value) {
         bitField0_ |= 0x00000040;
         isChallenger_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required bool isChallenger = 7;</code>
-       */
       public Builder clearIsChallenger() {
         bitField0_ = (bitField0_ & ~0x00000040);
         isChallenger_ = false;
         onChanged();
         return this;
       }
-
+      
       // @@protoc_insertion_point(builder_scope:VO_UNIT_BATTLE_INFO)
     }
-
+    
     static {
       defaultInstance = new VO_UNIT_BATTLE_INFO(true);
       defaultInstance.initFields();
     }
-
+    
     // @@protoc_insertion_point(class_scope:VO_UNIT_BATTLE_INFO)
   }
-
+  
   public interface RESPONSE_BATTLE_ENTEROrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-
+    
     // repeated .VO_UNIT_BATTLE_INFO teamA = 1;
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> 
         getTeamAList();
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO getTeamA(int index);
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     int getTeamACount();
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     java.util.List<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder> 
         getTeamAOrBuilderList();
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder getTeamAOrBuilder(
         int index);
-
+    
     // repeated .VO_UNIT_BATTLE_INFO teamB = 2;
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> 
         getTeamBList();
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO getTeamB(int index);
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     int getTeamBCount();
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     java.util.List<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder> 
         getTeamBOrBuilderList();
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder getTeamBOrBuilder(
         int index);
   }
-  /**
-   * Protobuf type {@code RESPONSE_BATTLE_ENTER}
-   */
   public static final class RESPONSE_BATTLE_ENTER extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_BATTLE_ENTEROrBuilder {
     // Use RESPONSE_BATTLE_ENTER.newBuilder() to construct.
-    private RESPONSE_BATTLE_ENTER(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+    private RESPONSE_BATTLE_ENTER(Builder builder) {
       super(builder);
-      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_BATTLE_ENTER(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
+    private RESPONSE_BATTLE_ENTER(boolean noInit) {}
+    
     private static final RESPONSE_BATTLE_ENTER defaultInstance;
     public static RESPONSE_BATTLE_ENTER getDefaultInstance() {
       return defaultInstance;
     }
-
+    
     public RESPONSE_BATTLE_ENTER getDefaultInstanceForType() {
       return defaultInstance;
     }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private RESPONSE_BATTLE_ENTER(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                teamA_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              teamA_.add(input.readMessage(cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.PARSER, extensionRegistry));
-              break;
-            }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                teamB_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              teamB_.add(input.readMessage(cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.PARSER, extensionRegistry));
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-          teamA_ = java.util.Collections.unmodifiableList(teamA_);
-        }
-        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-          teamB_ = java.util.Collections.unmodifiableList(teamB_);
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
+    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_descriptor;
     }
-
+    
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.Builder.class);
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable;
     }
-
-    public static com.google.protobuf.Parser<RESPONSE_BATTLE_ENTER> PARSER =
-        new com.google.protobuf.AbstractParser<RESPONSE_BATTLE_ENTER>() {
-      public RESPONSE_BATTLE_ENTER parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RESPONSE_BATTLE_ENTER(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RESPONSE_BATTLE_ENTER> getParserForType() {
-      return PARSER;
-    }
-
+    
     // repeated .VO_UNIT_BATTLE_INFO teamA = 1;
     public static final int TEAMA_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamA_;
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     public java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> getTeamAList() {
       return teamA_;
     }
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder> 
         getTeamAOrBuilderList() {
       return teamA_;
     }
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     public int getTeamACount() {
       return teamA_.size();
     }
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO getTeamA(int index) {
       return teamA_.get(index);
     }
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-     */
     public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder getTeamAOrBuilder(
         int index) {
       return teamA_.get(index);
     }
-
+    
     // repeated .VO_UNIT_BATTLE_INFO teamB = 2;
     public static final int TEAMB_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamB_;
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     public java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> getTeamBList() {
       return teamB_;
     }
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder> 
         getTeamBOrBuilderList() {
       return teamB_;
     }
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     public int getTeamBCount() {
       return teamB_.size();
     }
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO getTeamB(int index) {
       return teamB_.get(index);
     }
-    /**
-     * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-     */
     public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder getTeamBOrBuilder(
         int index) {
       return teamB_.get(index);
     }
-
+    
     private void initFields() {
       teamA_ = java.util.Collections.emptyList();
       teamB_ = java.util.Collections.emptyList();
@@ -1310,7 +939,7 @@ public final class BattleProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-
+      
       for (int i = 0; i < getTeamACount(); i++) {
         if (!getTeamA(i).isInitialized()) {
           memoizedIsInitialized = 0;
@@ -1326,7 +955,7 @@ public final class BattleProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-
+    
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -1338,12 +967,12 @@ public final class BattleProtos {
       }
       getUnknownFields().writeTo(output);
     }
-
+    
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-
+    
       size = 0;
       for (int i = 0; i < teamA_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -1357,83 +986,94 @@ public final class BattleProtos {
       memoizedSerializedSize = size;
       return size;
     }
-
+    
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-
+    
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
-
+    
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-
+    
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
-    /**
-     * Protobuf type {@code RESPONSE_BATTLE_ENTER}
-     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTEROrBuilder {
@@ -1441,21 +1081,18 @@ public final class BattleProtos {
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_descriptor;
       }
-
+      
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.Builder.class);
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable;
       }
-
+      
       // Construct using cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      
+      private Builder(BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1468,7 +1105,7 @@ public final class BattleProtos {
       private static Builder create() {
         return new Builder();
       }
-
+      
       public Builder clear() {
         super.clear();
         if (teamABuilder_ == null) {
@@ -1485,20 +1122,20 @@ public final class BattleProtos {
         }
         return this;
       }
-
+      
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-
+      
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_descriptor;
+        return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.getDescriptor();
       }
-
+      
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER getDefaultInstanceForType() {
         return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.getDefaultInstance();
       }
-
+      
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER build() {
         cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER result = buildPartial();
         if (!result.isInitialized()) {
@@ -1506,7 +1143,17 @@ public final class BattleProtos {
         }
         return result;
       }
-
+      
+      private cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER buildPartial() {
         cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER result = new cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER(this);
         int from_bitField0_ = bitField0_;
@@ -1531,7 +1178,7 @@ public final class BattleProtos {
         onBuilt();
         return result;
       }
-
+      
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER) {
           return mergeFrom((cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER)other);
@@ -1540,7 +1187,7 @@ public final class BattleProtos {
           return this;
         }
       }
-
+      
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER other) {
         if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.getDefaultInstance()) return this;
         if (teamABuilder_ == null) {
@@ -1598,7 +1245,7 @@ public final class BattleProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-
+      
       public final boolean isInitialized() {
         for (int i = 0; i < getTeamACount(); i++) {
           if (!getTeamA(i).isInitialized()) {
@@ -1614,26 +1261,48 @@ public final class BattleProtos {
         }
         return true;
       }
-
+      
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder subBuilder = cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addTeamA(subBuilder.buildPartial());
+              break;
+            }
+            case 18: {
+              cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder subBuilder = cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addTeamB(subBuilder.buildPartial());
+              break;
+            }
           }
         }
-        return this;
       }
+      
       private int bitField0_;
-
+      
       // repeated .VO_UNIT_BATTLE_INFO teamA = 1;
       private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamA_ =
         java.util.Collections.emptyList();
@@ -1643,13 +1312,10 @@ public final class BattleProtos {
           bitField0_ |= 0x00000001;
          }
       }
-
+      
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder> teamABuilder_;
-
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
+      
       public java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> getTeamAList() {
         if (teamABuilder_ == null) {
           return java.util.Collections.unmodifiableList(teamA_);
@@ -1657,9 +1323,6 @@ public final class BattleProtos {
           return teamABuilder_.getMessageList();
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public int getTeamACount() {
         if (teamABuilder_ == null) {
           return teamA_.size();
@@ -1667,9 +1330,6 @@ public final class BattleProtos {
           return teamABuilder_.getCount();
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO getTeamA(int index) {
         if (teamABuilder_ == null) {
           return teamA_.get(index);
@@ -1677,9 +1337,6 @@ public final class BattleProtos {
           return teamABuilder_.getMessage(index);
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public Builder setTeamA(
           int index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO value) {
         if (teamABuilder_ == null) {
@@ -1694,9 +1351,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public Builder setTeamA(
           int index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder builderForValue) {
         if (teamABuilder_ == null) {
@@ -1708,9 +1362,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public Builder addTeamA(cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO value) {
         if (teamABuilder_ == null) {
           if (value == null) {
@@ -1724,9 +1375,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public Builder addTeamA(
           int index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO value) {
         if (teamABuilder_ == null) {
@@ -1741,9 +1389,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public Builder addTeamA(
           cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder builderForValue) {
         if (teamABuilder_ == null) {
@@ -1755,9 +1400,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public Builder addTeamA(
           int index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder builderForValue) {
         if (teamABuilder_ == null) {
@@ -1769,9 +1411,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public Builder addAllTeamA(
           java.lang.Iterable<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> values) {
         if (teamABuilder_ == null) {
@@ -1783,9 +1422,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public Builder clearTeamA() {
         if (teamABuilder_ == null) {
           teamA_ = java.util.Collections.emptyList();
@@ -1796,9 +1432,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public Builder removeTeamA(int index) {
         if (teamABuilder_ == null) {
           ensureTeamAIsMutable();
@@ -1809,16 +1442,10 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder getTeamABuilder(
           int index) {
         return getTeamAFieldBuilder().getBuilder(index);
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder getTeamAOrBuilder(
           int index) {
         if (teamABuilder_ == null) {
@@ -1826,9 +1453,6 @@ public final class BattleProtos {
           return teamABuilder_.getMessageOrBuilder(index);
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder> 
            getTeamAOrBuilderList() {
         if (teamABuilder_ != null) {
@@ -1837,24 +1461,15 @@ public final class BattleProtos {
           return java.util.Collections.unmodifiableList(teamA_);
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder addTeamABuilder() {
         return getTeamAFieldBuilder().addBuilder(
             cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.getDefaultInstance());
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder addTeamABuilder(
           int index) {
         return getTeamAFieldBuilder().addBuilder(
             index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.getDefaultInstance());
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 1;</code>
-       */
       public java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder> 
            getTeamABuilderList() {
         return getTeamAFieldBuilder().getBuilderList();
@@ -1873,7 +1488,7 @@ public final class BattleProtos {
         }
         return teamABuilder_;
       }
-
+      
       // repeated .VO_UNIT_BATTLE_INFO teamB = 2;
       private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamB_ =
         java.util.Collections.emptyList();
@@ -1883,13 +1498,10 @@ public final class BattleProtos {
           bitField0_ |= 0x00000002;
          }
       }
-
+      
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder> teamBBuilder_;
-
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
+      
       public java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> getTeamBList() {
         if (teamBBuilder_ == null) {
           return java.util.Collections.unmodifiableList(teamB_);
@@ -1897,9 +1509,6 @@ public final class BattleProtos {
           return teamBBuilder_.getMessageList();
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public int getTeamBCount() {
         if (teamBBuilder_ == null) {
           return teamB_.size();
@@ -1907,9 +1516,6 @@ public final class BattleProtos {
           return teamBBuilder_.getCount();
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO getTeamB(int index) {
         if (teamBBuilder_ == null) {
           return teamB_.get(index);
@@ -1917,9 +1523,6 @@ public final class BattleProtos {
           return teamBBuilder_.getMessage(index);
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public Builder setTeamB(
           int index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO value) {
         if (teamBBuilder_ == null) {
@@ -1934,9 +1537,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public Builder setTeamB(
           int index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder builderForValue) {
         if (teamBBuilder_ == null) {
@@ -1948,9 +1548,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public Builder addTeamB(cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO value) {
         if (teamBBuilder_ == null) {
           if (value == null) {
@@ -1964,9 +1561,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public Builder addTeamB(
           int index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO value) {
         if (teamBBuilder_ == null) {
@@ -1981,9 +1575,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public Builder addTeamB(
           cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder builderForValue) {
         if (teamBBuilder_ == null) {
@@ -1995,9 +1586,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public Builder addTeamB(
           int index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder builderForValue) {
         if (teamBBuilder_ == null) {
@@ -2009,9 +1597,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public Builder addAllTeamB(
           java.lang.Iterable<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> values) {
         if (teamBBuilder_ == null) {
@@ -2023,9 +1608,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public Builder clearTeamB() {
         if (teamBBuilder_ == null) {
           teamB_ = java.util.Collections.emptyList();
@@ -2036,9 +1618,6 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public Builder removeTeamB(int index) {
         if (teamBBuilder_ == null) {
           ensureTeamBIsMutable();
@@ -2049,16 +1628,10 @@ public final class BattleProtos {
         }
         return this;
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder getTeamBBuilder(
           int index) {
         return getTeamBFieldBuilder().getBuilder(index);
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder getTeamBOrBuilder(
           int index) {
         if (teamBBuilder_ == null) {
@@ -2066,9 +1639,6 @@ public final class BattleProtos {
           return teamBBuilder_.getMessageOrBuilder(index);
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder> 
            getTeamBOrBuilderList() {
         if (teamBBuilder_ != null) {
@@ -2077,24 +1647,15 @@ public final class BattleProtos {
           return java.util.Collections.unmodifiableList(teamB_);
         }
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder addTeamBBuilder() {
         return getTeamBFieldBuilder().addBuilder(
             cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.getDefaultInstance());
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder addTeamBBuilder(
           int index) {
         return getTeamBFieldBuilder().addBuilder(
             index, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.getDefaultInstance());
       }
-      /**
-       * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 2;</code>
-       */
       public java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder> 
            getTeamBBuilderList() {
         return getTeamBFieldBuilder().getBuilderList();
@@ -2113,143 +1674,64 @@ public final class BattleProtos {
         }
         return teamBBuilder_;
       }
-
+      
       // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_ENTER)
     }
-
+    
     static {
       defaultInstance = new RESPONSE_BATTLE_ENTER(true);
       defaultInstance.initFields();
     }
-
+    
     // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_ENTER)
   }
-
+  
   public interface REQUEST_BATTLE_ATTACKOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-
+    
     // required int32 targetId = 1;
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
     boolean hasTargetId();
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
     int getTargetId();
   }
-  /**
-   * Protobuf type {@code REQUEST_BATTLE_ATTACK}
-   */
   public static final class REQUEST_BATTLE_ATTACK extends
       com.google.protobuf.GeneratedMessage
       implements REQUEST_BATTLE_ATTACKOrBuilder {
     // Use REQUEST_BATTLE_ATTACK.newBuilder() to construct.
-    private REQUEST_BATTLE_ATTACK(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+    private REQUEST_BATTLE_ATTACK(Builder builder) {
       super(builder);
-      this.unknownFields = builder.getUnknownFields();
     }
-    private REQUEST_BATTLE_ATTACK(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
+    private REQUEST_BATTLE_ATTACK(boolean noInit) {}
+    
     private static final REQUEST_BATTLE_ATTACK defaultInstance;
     public static REQUEST_BATTLE_ATTACK getDefaultInstance() {
       return defaultInstance;
     }
-
+    
     public REQUEST_BATTLE_ATTACK getDefaultInstanceForType() {
       return defaultInstance;
     }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private REQUEST_BATTLE_ATTACK(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              targetId_ = input.readInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
+    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.BattleProtos.internal_static_REQUEST_BATTLE_ATTACK_descriptor;
     }
-
+    
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.class, cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.Builder.class);
+      return cg.base.io.proto.BattleProtos.internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable;
     }
-
-    public static com.google.protobuf.Parser<REQUEST_BATTLE_ATTACK> PARSER =
-        new com.google.protobuf.AbstractParser<REQUEST_BATTLE_ATTACK>() {
-      public REQUEST_BATTLE_ATTACK parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REQUEST_BATTLE_ATTACK(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<REQUEST_BATTLE_ATTACK> getParserForType() {
-      return PARSER;
-    }
-
+    
     private int bitField0_;
     // required int32 targetId = 1;
     public static final int TARGETID_FIELD_NUMBER = 1;
     private int targetId_;
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
     public boolean hasTargetId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
     public int getTargetId() {
       return targetId_;
     }
-
+    
     private void initFields() {
       targetId_ = 0;
     }
@@ -2257,7 +1739,7 @@ public final class BattleProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-
+      
       if (!hasTargetId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -2265,7 +1747,7 @@ public final class BattleProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-
+    
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -2274,12 +1756,12 @@ public final class BattleProtos {
       }
       getUnknownFields().writeTo(output);
     }
-
+    
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-
+    
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2289,83 +1771,94 @@ public final class BattleProtos {
       memoizedSerializedSize = size;
       return size;
     }
-
+    
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-
+    
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
-
+    
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-
+    
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
-    /**
-     * Protobuf type {@code REQUEST_BATTLE_ATTACK}
-     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACKOrBuilder {
@@ -2373,21 +1866,18 @@ public final class BattleProtos {
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_REQUEST_BATTLE_ATTACK_descriptor;
       }
-
+      
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.class, cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.Builder.class);
+        return cg.base.io.proto.BattleProtos.internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable;
       }
-
+      
       // Construct using cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      
+      private Builder(BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2398,27 +1888,27 @@ public final class BattleProtos {
       private static Builder create() {
         return new Builder();
       }
-
+      
       public Builder clear() {
         super.clear();
         targetId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-
+      
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-
+      
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_REQUEST_BATTLE_ATTACK_descriptor;
+        return cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.getDescriptor();
       }
-
+      
       public cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK getDefaultInstanceForType() {
         return cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.getDefaultInstance();
       }
-
+      
       public cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK build() {
         cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK result = buildPartial();
         if (!result.isInitialized()) {
@@ -2426,7 +1916,17 @@ public final class BattleProtos {
         }
         return result;
       }
-
+      
+      private cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
       public cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK buildPartial() {
         cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK result = new cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK(this);
         int from_bitField0_ = bitField0_;
@@ -2439,7 +1939,7 @@ public final class BattleProtos {
         onBuilt();
         return result;
       }
-
+      
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK) {
           return mergeFrom((cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK)other);
@@ -2448,7 +1948,7 @@ public final class BattleProtos {
           return this;
         }
       }
-
+      
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK other) {
         if (other == cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.getDefaultInstance()) return this;
         if (other.hasTargetId()) {
@@ -2457,7 +1957,7 @@ public final class BattleProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-
+      
       public final boolean isInitialized() {
         if (!hasTargetId()) {
           
@@ -2465,131 +1965,27 @@ public final class BattleProtos {
         }
         return true;
       }
-
+      
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // required int32 targetId = 1;
-      private int targetId_ ;
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
-      public boolean hasTargetId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
-      public int getTargetId() {
-        return targetId_;
-      }
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
-      public Builder setTargetId(int value) {
-        bitField0_ |= 0x00000001;
-        targetId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
-      public Builder clearTargetId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        targetId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:REQUEST_BATTLE_ATTACK)
-    }
-
-    static {
-      defaultInstance = new REQUEST_BATTLE_ATTACK(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:REQUEST_BATTLE_ATTACK)
-  }
-
-  public interface RESPONSE_BATTLE_ACTIONOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // required int32 targetId = 1;
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
-    boolean hasTargetId();
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
-    int getTargetId();
-  }
-  /**
-   * Protobuf type {@code RESPONSE_BATTLE_ACTION}
-   */
-  public static final class RESPONSE_BATTLE_ACTION extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_BATTLE_ACTIONOrBuilder {
-    // Use RESPONSE_BATTLE_ACTION.newBuilder() to construct.
-    private RESPONSE_BATTLE_ACTION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private RESPONSE_BATTLE_ACTION(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final RESPONSE_BATTLE_ACTION defaultInstance;
-    public static RESPONSE_BATTLE_ACTION getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public RESPONSE_BATTLE_ACTION getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private RESPONSE_BATTLE_ACTION(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              done = true;
-              break;
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                done = true;
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
               }
               break;
             }
@@ -2600,60 +1996,88 @@ public final class BattleProtos {
             }
           }
         }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
       }
+      
+      private int bitField0_;
+      
+      // required int32 targetId = 1;
+      private int targetId_ ;
+      public boolean hasTargetId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getTargetId() {
+        return targetId_;
+      }
+      public Builder setTargetId(int value) {
+        bitField0_ |= 0x00000001;
+        targetId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearTargetId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        targetId_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:REQUEST_BATTLE_ATTACK)
     }
+    
+    static {
+      defaultInstance = new REQUEST_BATTLE_ATTACK(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:REQUEST_BATTLE_ATTACK)
+  }
+  
+  public interface RESPONSE_BATTLE_ACTIONOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required int32 targetId = 1;
+    boolean hasTargetId();
+    int getTargetId();
+  }
+  public static final class RESPONSE_BATTLE_ACTION extends
+      com.google.protobuf.GeneratedMessage
+      implements RESPONSE_BATTLE_ACTIONOrBuilder {
+    // Use RESPONSE_BATTLE_ACTION.newBuilder() to construct.
+    private RESPONSE_BATTLE_ACTION(Builder builder) {
+      super(builder);
+    }
+    private RESPONSE_BATTLE_ACTION(boolean noInit) {}
+    
+    private static final RESPONSE_BATTLE_ACTION defaultInstance;
+    public static RESPONSE_BATTLE_ACTION getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public RESPONSE_BATTLE_ACTION getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
     }
-
+    
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.Builder.class);
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable;
     }
-
-    public static com.google.protobuf.Parser<RESPONSE_BATTLE_ACTION> PARSER =
-        new com.google.protobuf.AbstractParser<RESPONSE_BATTLE_ACTION>() {
-      public RESPONSE_BATTLE_ACTION parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RESPONSE_BATTLE_ACTION(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RESPONSE_BATTLE_ACTION> getParserForType() {
-      return PARSER;
-    }
-
+    
     private int bitField0_;
     // required int32 targetId = 1;
     public static final int TARGETID_FIELD_NUMBER = 1;
     private int targetId_;
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
     public boolean hasTargetId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
     public int getTargetId() {
       return targetId_;
     }
-
+    
     private void initFields() {
       targetId_ = 0;
     }
@@ -2661,7 +2085,7 @@ public final class BattleProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-
+      
       if (!hasTargetId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -2669,7 +2093,7 @@ public final class BattleProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-
+    
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -2678,12 +2102,12 @@ public final class BattleProtos {
       }
       getUnknownFields().writeTo(output);
     }
-
+    
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-
+    
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2693,83 +2117,94 @@ public final class BattleProtos {
       memoizedSerializedSize = size;
       return size;
     }
-
+    
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-
+    
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
-
+    
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-
+    
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
-    /**
-     * Protobuf type {@code RESPONSE_BATTLE_ACTION}
-     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONOrBuilder {
@@ -2777,21 +2212,18 @@ public final class BattleProtos {
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
       }
-
+      
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.Builder.class);
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable;
       }
-
+      
       // Construct using cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      
+      private Builder(BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2802,27 +2234,27 @@ public final class BattleProtos {
       private static Builder create() {
         return new Builder();
       }
-
+      
       public Builder clear() {
         super.clear();
         targetId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-
+      
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-
+      
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
+        return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.getDescriptor();
       }
-
+      
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION getDefaultInstanceForType() {
         return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.getDefaultInstance();
       }
-
+      
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION build() {
         cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION result = buildPartial();
         if (!result.isInitialized()) {
@@ -2830,7 +2262,17 @@ public final class BattleProtos {
         }
         return result;
       }
-
+      
+      private cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION buildPartial() {
         cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION result = new cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION(this);
         int from_bitField0_ = bitField0_;
@@ -2843,7 +2285,7 @@ public final class BattleProtos {
         onBuilt();
         return result;
       }
-
+      
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION) {
           return mergeFrom((cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION)other);
@@ -2852,7 +2294,7 @@ public final class BattleProtos {
           return this;
         }
       }
-
+      
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION other) {
         if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.getDefaultInstance()) return this;
         if (other.hasTargetId()) {
@@ -2861,7 +2303,7 @@ public final class BattleProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-
+      
       public final boolean isInitialized() {
         if (!hasTargetId()) {
           
@@ -2869,131 +2311,27 @@ public final class BattleProtos {
         }
         return true;
       }
-
+      
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      private int bitField0_;
-
-      // required int32 targetId = 1;
-      private int targetId_ ;
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
-      public boolean hasTargetId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
-      public int getTargetId() {
-        return targetId_;
-      }
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
-      public Builder setTargetId(int value) {
-        bitField0_ |= 0x00000001;
-        targetId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
-      public Builder clearTargetId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        targetId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_ACTION)
-    }
-
-    static {
-      defaultInstance = new RESPONSE_BATTLE_ACTION(true);
-      defaultInstance.initFields();
-    }
-
-    // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_ACTION)
-  }
-
-  public interface RESPONSE_BATTLE_FINISHOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-
-    // required int32 targetId = 1;
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
-    boolean hasTargetId();
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
-    int getTargetId();
-  }
-  /**
-   * Protobuf type {@code RESPONSE_BATTLE_FINISH}
-   */
-  public static final class RESPONSE_BATTLE_FINISH extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_BATTLE_FINISHOrBuilder {
-    // Use RESPONSE_BATTLE_FINISH.newBuilder() to construct.
-    private RESPONSE_BATTLE_FINISH(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
-      super(builder);
-      this.unknownFields = builder.getUnknownFields();
-    }
-    private RESPONSE_BATTLE_FINISH(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-    private static final RESPONSE_BATTLE_FINISH defaultInstance;
-    public static RESPONSE_BATTLE_FINISH getDefaultInstance() {
-      return defaultInstance;
-    }
-
-    public RESPONSE_BATTLE_FINISH getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private RESPONSE_BATTLE_FINISH(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              done = true;
-              break;
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                done = true;
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
               }
               break;
             }
@@ -3004,60 +2342,88 @@ public final class BattleProtos {
             }
           }
         }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
       }
+      
+      private int bitField0_;
+      
+      // required int32 targetId = 1;
+      private int targetId_ ;
+      public boolean hasTargetId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getTargetId() {
+        return targetId_;
+      }
+      public Builder setTargetId(int value) {
+        bitField0_ |= 0x00000001;
+        targetId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearTargetId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        targetId_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_ACTION)
     }
+    
+    static {
+      defaultInstance = new RESPONSE_BATTLE_ACTION(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_ACTION)
+  }
+  
+  public interface RESPONSE_BATTLE_FINISHOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required int32 targetId = 1;
+    boolean hasTargetId();
+    int getTargetId();
+  }
+  public static final class RESPONSE_BATTLE_FINISH extends
+      com.google.protobuf.GeneratedMessage
+      implements RESPONSE_BATTLE_FINISHOrBuilder {
+    // Use RESPONSE_BATTLE_FINISH.newBuilder() to construct.
+    private RESPONSE_BATTLE_FINISH(Builder builder) {
+      super(builder);
+    }
+    private RESPONSE_BATTLE_FINISH(boolean noInit) {}
+    
+    private static final RESPONSE_BATTLE_FINISH defaultInstance;
+    public static RESPONSE_BATTLE_FINISH getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public RESPONSE_BATTLE_FINISH getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_descriptor;
     }
-
+    
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.Builder.class);
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable;
     }
-
-    public static com.google.protobuf.Parser<RESPONSE_BATTLE_FINISH> PARSER =
-        new com.google.protobuf.AbstractParser<RESPONSE_BATTLE_FINISH>() {
-      public RESPONSE_BATTLE_FINISH parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RESPONSE_BATTLE_FINISH(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<RESPONSE_BATTLE_FINISH> getParserForType() {
-      return PARSER;
-    }
-
+    
     private int bitField0_;
     // required int32 targetId = 1;
     public static final int TARGETID_FIELD_NUMBER = 1;
     private int targetId_;
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
     public boolean hasTargetId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    /**
-     * <code>required int32 targetId = 1;</code>
-     */
     public int getTargetId() {
       return targetId_;
     }
-
+    
     private void initFields() {
       targetId_ = 0;
     }
@@ -3065,7 +2431,7 @@ public final class BattleProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-
+      
       if (!hasTargetId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -3073,7 +2439,7 @@ public final class BattleProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-
+    
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -3082,12 +2448,12 @@ public final class BattleProtos {
       }
       getUnknownFields().writeTo(output);
     }
-
+    
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-
+    
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -3097,83 +2463,94 @@ public final class BattleProtos {
       memoizedSerializedSize = size;
       return size;
     }
-
+    
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-
+    
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
-
+    
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-
+    
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
-    /**
-     * Protobuf type {@code RESPONSE_BATTLE_FINISH}
-     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISHOrBuilder {
@@ -3181,21 +2558,18 @@ public final class BattleProtos {
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_descriptor;
       }
-
+      
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.Builder.class);
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable;
       }
-
+      
       // Construct using cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      
+      private Builder(BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3206,27 +2580,27 @@ public final class BattleProtos {
       private static Builder create() {
         return new Builder();
       }
-
+      
       public Builder clear() {
         super.clear();
         targetId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-
+      
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-
+      
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_descriptor;
+        return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.getDescriptor();
       }
-
+      
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH getDefaultInstanceForType() {
         return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.getDefaultInstance();
       }
-
+      
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH build() {
         cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH result = buildPartial();
         if (!result.isInitialized()) {
@@ -3234,7 +2608,17 @@ public final class BattleProtos {
         }
         return result;
       }
-
+      
+      private cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH buildPartial() {
         cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH result = new cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH(this);
         int from_bitField0_ = bitField0_;
@@ -3247,7 +2631,7 @@ public final class BattleProtos {
         onBuilt();
         return result;
       }
-
+      
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH) {
           return mergeFrom((cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH)other);
@@ -3256,7 +2640,7 @@ public final class BattleProtos {
           return this;
         }
       }
-
+      
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH other) {
         if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.getDefaultInstance()) return this;
         if (other.hasTargetId()) {
@@ -3265,7 +2649,7 @@ public final class BattleProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-
+      
       public final boolean isInitialized() {
         if (!hasTargetId()) {
           
@@ -3273,70 +2657,73 @@ public final class BattleProtos {
         }
         return true;
       }
-
+      
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              targetId_ = input.readInt32();
+              break;
+            }
           }
         }
-        return this;
       }
+      
       private int bitField0_;
-
+      
       // required int32 targetId = 1;
       private int targetId_ ;
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
       public boolean hasTargetId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
       public int getTargetId() {
         return targetId_;
       }
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
       public Builder setTargetId(int value) {
         bitField0_ |= 0x00000001;
         targetId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 targetId = 1;</code>
-       */
       public Builder clearTargetId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         targetId_ = 0;
         onChanged();
         return this;
       }
-
+      
       // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_FINISH)
     }
-
+    
     static {
       defaultInstance = new RESPONSE_BATTLE_FINISH(true);
       defaultInstance.initFields();
     }
-
+    
     // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_FINISH)
   }
-
+  
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_UNIT_BATTLE_INFO_descriptor;
   private static
@@ -3362,7 +2749,7 @@ public final class BattleProtos {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable;
-
+  
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
@@ -3375,13 +2762,14 @@ public final class BattleProtos {
       "TLE_INFO\022$\n\010baseInfo\030\001 \002(\0132\022.VO_UNIT_BAS" +
       "E_INFO\022\r\n\005hpMax\030\002 \002(\005\022\n\n\002hp\030\003 \002(\005\022\r\n\005mpM" +
       "ax\030\004 \002(\005\022\n\n\002mp\030\005 \002(\005\022\r\n\005local\030\006 \002(\005\022\024\n\014i" +
-      "sChallenger\030\007 \002(\010\"`\n\024RESPONSE_BATTLE_ENTE" +
-      "R\022#\n\005teamA\030\001 \003(\0132\024.VO_UNIT_BATTLE_INFO\022#" +
-      "\n\005teamB\030\002 \003(\0132\024.VO_UNIT_BATTLE_INFO\")\n\025R" +
-      "EQUEST_BATTLE_ATTACK\022\020\n\010targetId\030\001 \002(\005\")" +
-      "\n\025RESPONSE_BATTLE_ACTION\022\020\n\010targetId\030\001 \002(" +
-      "\005\")\n\025RESPONSE_BATTLE_FINISH\022\020\n\010targetId\030\001",
-      " \002(\005B \n\020cg.base.io.protoB\014BattleProtos"
+      "sChallenger\030\007 \002(\010\"a\n\025RESPONSE_BATTLE_ENT" +
+      "ER\022#\n\005teamA\030\001 \003(\0132\024.VO_UNIT_BATTLE_INFO\022" +
+      "#\n\005teamB\030\002 \003(\0132\024.VO_UNIT_BATTLE_INFO\")\n\025" +
+      "REQUEST_BATTLE_ATTACK\022\020\n\010targetId\030\001 \002(\005\"" +
+      "*\n\026RESPONSE_BATTLE_ACTION\022\020\n\010targetId\030\001 " +
+      "\002(\005\"*\n\026RESPONSE_BATTLE_FINISH\022\020\n\010targetI",
+      "d\030\001 \002(\005B \n\020cg.base.io.protoB\014BattleProto" +
+      "s"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -3393,31 +2781,41 @@ public final class BattleProtos {
           internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_UNIT_BATTLE_INFO_descriptor,
-              new java.lang.String[] { "BaseInfo", "HpMax", "Hp", "MpMax", "Mp", "Local", "IsChallenger", });
+              new java.lang.String[] { "BaseInfo", "HpMax", "Hp", "MpMax", "Mp", "Local", "IsChallenger", },
+              cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.class,
+              cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder.class);
           internal_static_RESPONSE_BATTLE_ENTER_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_BATTLE_ENTER_descriptor,
-              new java.lang.String[] { "TeamA", "TeamB", });
+              new java.lang.String[] { "TeamA", "TeamB", },
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.class,
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.Builder.class);
           internal_static_REQUEST_BATTLE_ATTACK_descriptor =
             getDescriptor().getMessageTypes().get(2);
           internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_BATTLE_ATTACK_descriptor,
-              new java.lang.String[] { "TargetId", });
+              new java.lang.String[] { "TargetId", },
+              cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.class,
+              cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.Builder.class);
           internal_static_RESPONSE_BATTLE_ACTION_descriptor =
             getDescriptor().getMessageTypes().get(3);
           internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_BATTLE_ACTION_descriptor,
-              new java.lang.String[] { "TargetId", });
+              new java.lang.String[] { "TargetId", },
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.class,
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.Builder.class);
           internal_static_RESPONSE_BATTLE_FINISH_descriptor =
             getDescriptor().getMessageTypes().get(4);
           internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_BATTLE_FINISH_descriptor,
-              new java.lang.String[] { "TargetId", });
+              new java.lang.String[] { "TargetId", },
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.class,
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.Builder.class);
           return null;
         }
       };
@@ -3427,6 +2825,6 @@ public final class BattleProtos {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
   }
-
+  
   // @@protoc_insertion_point(outer_class_scope)
 }

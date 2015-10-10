@@ -10,160 +10,64 @@ public final class ScriptProtos {
   }
   public interface REQUEST_SCRIPT_MUTUALOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-
+    
     // required int32 dir = 1;
-    /**
-     * <code>required int32 dir = 1;</code>
-     */
     boolean hasDir();
-    /**
-     * <code>required int32 dir = 1;</code>
-     */
     int getDir();
-
+    
     // required int32 op = 2;
-    /**
-     * <code>required int32 op = 2;</code>
-     */
     boolean hasOp();
-    /**
-     * <code>required int32 op = 2;</code>
-     */
     int getOp();
   }
-  /**
-   * Protobuf type {@code REQUEST_SCRIPT_MUTUAL}
-   */
   public static final class REQUEST_SCRIPT_MUTUAL extends
       com.google.protobuf.GeneratedMessage
       implements REQUEST_SCRIPT_MUTUALOrBuilder {
     // Use REQUEST_SCRIPT_MUTUAL.newBuilder() to construct.
-    private REQUEST_SCRIPT_MUTUAL(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+    private REQUEST_SCRIPT_MUTUAL(Builder builder) {
       super(builder);
-      this.unknownFields = builder.getUnknownFields();
     }
-    private REQUEST_SCRIPT_MUTUAL(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
+    private REQUEST_SCRIPT_MUTUAL(boolean noInit) {}
+    
     private static final REQUEST_SCRIPT_MUTUAL defaultInstance;
     public static REQUEST_SCRIPT_MUTUAL getDefaultInstance() {
       return defaultInstance;
     }
-
+    
     public REQUEST_SCRIPT_MUTUAL getDefaultInstanceForType() {
       return defaultInstance;
     }
-
-    private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-      return this.unknownFields;
-    }
-    private REQUEST_SCRIPT_MUTUAL(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      initFields();
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              dir_ = input.readInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              op_ = input.readInt32();
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e.getMessage()).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
+    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.ScriptProtos.internal_static_REQUEST_SCRIPT_MUTUAL_descriptor;
     }
-
+    
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.ScriptProtos.internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.class, cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.Builder.class);
+      return cg.base.io.proto.ScriptProtos.internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable;
     }
-
-    public static com.google.protobuf.Parser<REQUEST_SCRIPT_MUTUAL> PARSER =
-        new com.google.protobuf.AbstractParser<REQUEST_SCRIPT_MUTUAL>() {
-      public REQUEST_SCRIPT_MUTUAL parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new REQUEST_SCRIPT_MUTUAL(input, extensionRegistry);
-      }
-    };
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<REQUEST_SCRIPT_MUTUAL> getParserForType() {
-      return PARSER;
-    }
-
+    
     private int bitField0_;
     // required int32 dir = 1;
     public static final int DIR_FIELD_NUMBER = 1;
     private int dir_;
-    /**
-     * <code>required int32 dir = 1;</code>
-     */
     public boolean hasDir() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    /**
-     * <code>required int32 dir = 1;</code>
-     */
     public int getDir() {
       return dir_;
     }
-
+    
     // required int32 op = 2;
     public static final int OP_FIELD_NUMBER = 2;
     private int op_;
-    /**
-     * <code>required int32 op = 2;</code>
-     */
     public boolean hasOp() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    /**
-     * <code>required int32 op = 2;</code>
-     */
     public int getOp() {
       return op_;
     }
-
+    
     private void initFields() {
       dir_ = 0;
       op_ = 0;
@@ -172,7 +76,7 @@ public final class ScriptProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-
+      
       if (!hasDir()) {
         memoizedIsInitialized = 0;
         return false;
@@ -184,7 +88,7 @@ public final class ScriptProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-
+    
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -196,12 +100,12 @@ public final class ScriptProtos {
       }
       getUnknownFields().writeTo(output);
     }
-
+    
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-
+    
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -215,83 +119,94 @@ public final class ScriptProtos {
       memoizedSerializedSize = size;
       return size;
     }
-
+    
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-
+    
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+      return newBuilder().mergeFrom(data).buildParsed();
     }
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
     }
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return PARSER.parseFrom(input);
+      return newBuilder().mergeFrom(input).buildParsed();
     }
     public static cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return PARSER.parseFrom(input, extensionRegistry);
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
     }
-
+    
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-
+    
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
-    /**
-     * Protobuf type {@code REQUEST_SCRIPT_MUTUAL}
-     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUALOrBuilder {
@@ -299,21 +214,18 @@ public final class ScriptProtos {
           getDescriptor() {
         return cg.base.io.proto.ScriptProtos.internal_static_REQUEST_SCRIPT_MUTUAL_descriptor;
       }
-
+      
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.ScriptProtos.internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.class, cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.Builder.class);
+        return cg.base.io.proto.ScriptProtos.internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable;
       }
-
+      
       // Construct using cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      
+      private Builder(BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -324,7 +236,7 @@ public final class ScriptProtos {
       private static Builder create() {
         return new Builder();
       }
-
+      
       public Builder clear() {
         super.clear();
         dir_ = 0;
@@ -333,20 +245,20 @@ public final class ScriptProtos {
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
-
+      
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-
+      
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.ScriptProtos.internal_static_REQUEST_SCRIPT_MUTUAL_descriptor;
+        return cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.getDescriptor();
       }
-
+      
       public cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL getDefaultInstanceForType() {
         return cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.getDefaultInstance();
       }
-
+      
       public cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL build() {
         cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL result = buildPartial();
         if (!result.isInitialized()) {
@@ -354,7 +266,17 @@ public final class ScriptProtos {
         }
         return result;
       }
-
+      
+      private cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
       public cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL buildPartial() {
         cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL result = new cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL(this);
         int from_bitField0_ = bitField0_;
@@ -371,7 +293,7 @@ public final class ScriptProtos {
         onBuilt();
         return result;
       }
-
+      
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL) {
           return mergeFrom((cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL)other);
@@ -380,7 +302,7 @@ public final class ScriptProtos {
           return this;
         }
       }
-
+      
       public Builder mergeFrom(cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL other) {
         if (other == cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.getDefaultInstance()) return this;
         if (other.hasDir()) {
@@ -392,7 +314,7 @@ public final class ScriptProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-
+      
       public final boolean isInitialized() {
         if (!hasDir()) {
           
@@ -404,109 +326,105 @@ public final class ScriptProtos {
         }
         return true;
       }
-
+      
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL) e.getUnfinishedMessage();
-          throw e;
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              dir_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              op_ = input.readInt32();
+              break;
+            }
           }
         }
-        return this;
       }
+      
       private int bitField0_;
-
+      
       // required int32 dir = 1;
       private int dir_ ;
-      /**
-       * <code>required int32 dir = 1;</code>
-       */
       public boolean hasDir() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      /**
-       * <code>required int32 dir = 1;</code>
-       */
       public int getDir() {
         return dir_;
       }
-      /**
-       * <code>required int32 dir = 1;</code>
-       */
       public Builder setDir(int value) {
         bitField0_ |= 0x00000001;
         dir_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 dir = 1;</code>
-       */
       public Builder clearDir() {
         bitField0_ = (bitField0_ & ~0x00000001);
         dir_ = 0;
         onChanged();
         return this;
       }
-
+      
       // required int32 op = 2;
       private int op_ ;
-      /**
-       * <code>required int32 op = 2;</code>
-       */
       public boolean hasOp() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      /**
-       * <code>required int32 op = 2;</code>
-       */
       public int getOp() {
         return op_;
       }
-      /**
-       * <code>required int32 op = 2;</code>
-       */
       public Builder setOp(int value) {
         bitField0_ |= 0x00000002;
         op_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>required int32 op = 2;</code>
-       */
       public Builder clearOp() {
         bitField0_ = (bitField0_ & ~0x00000002);
         op_ = 0;
         onChanged();
         return this;
       }
-
+      
       // @@protoc_insertion_point(builder_scope:REQUEST_SCRIPT_MUTUAL)
     }
-
+    
     static {
       defaultInstance = new REQUEST_SCRIPT_MUTUAL(true);
       defaultInstance.initFields();
     }
-
+    
     // @@protoc_insertion_point(class_scope:REQUEST_SCRIPT_MUTUAL)
   }
-
+  
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_SCRIPT_MUTUAL_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable;
-
+  
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
@@ -529,7 +447,9 @@ public final class ScriptProtos {
           internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_SCRIPT_MUTUAL_descriptor,
-              new java.lang.String[] { "Dir", "Op", });
+              new java.lang.String[] { "Dir", "Op", },
+              cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.class,
+              cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUAL.Builder.class);
           return null;
         }
       };
@@ -538,6 +458,6 @@ public final class ScriptProtos {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
   }
-
+  
   // @@protoc_insertion_point(outer_class_scope)
 }

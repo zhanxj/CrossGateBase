@@ -8,905 +8,160 @@ public final class MessageIdProto {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  /**
-   * Protobuf enum {@code MessageId}
-   */
   public enum MessageId
       implements com.google.protobuf.ProtocolMessageEnum {
-    /**
-     * <code>MI_REQUEST_HEART_BEAT = 1;</code>
-     *
-     * <pre>
-     *----------------COMMON----------------
-     * @proto=Common
-     * </pre>
-     */
     MI_REQUEST_HEART_BEAT(0, 1),
-    /**
-     * <code>MI_RESPONSE_HEART_BEAT = 2;</code>
-     *
-     * <pre>
-     * @proto=Common
-     * </pre>
-     */
     MI_RESPONSE_HEART_BEAT(1, 2),
-    /**
-     * <code>MI_REQUEST_DISCONNECTED = 3;</code>
-     *
-     * <pre>
-     * @proto=Common
-     * </pre>
-     */
     MI_REQUEST_DISCONNECTED(2, 3),
-    /**
-     * <code>MI_RESPONSE_EXECUTE_OK = 4;</code>
-     */
     MI_RESPONSE_EXECUTE_OK(3, 4),
-    /**
-     * <code>MI_RESPONSE_EXECUTE_ERROR = 5;</code>
-     */
     MI_RESPONSE_EXECUTE_ERROR(4, 5),
-    /**
-     * <code>MI_REQUEST_ACCOUNT_REGISTER = 61;</code>
-     */
     MI_REQUEST_ACCOUNT_REGISTER(5, 61),
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_REGISTER = 62;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     MI_RESPONSE_ACCOUNT_REGISTER(6, 62),
-    /**
-     * <code>MI_REQUEST_ACCOUNT_LOGIN = 63;</code>
-     */
     MI_REQUEST_ACCOUNT_LOGIN(7, 63),
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_LOGIN = 64;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     MI_RESPONSE_ACCOUNT_LOGIN(8, 64),
-    /**
-     * <code>MI_REQUEST_ACCOUNT_ROLE_LIST = 65;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     MI_REQUEST_ACCOUNT_ROLE_LIST(9, 65),
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_ROLE_LIST = 66;</code>
-     */
     MI_RESPONSE_ACCOUNT_ROLE_LIST(10, 66),
-    /**
-     * <code>MI_REQUEST_SERVER_LIST = 67;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     MI_REQUEST_SERVER_LIST(11, 67),
-    /**
-     * <code>MI_RESPONSE_SERVER_LIST = 68;</code>
-     */
     MI_RESPONSE_SERVER_LIST(12, 68),
-    /**
-     * <code>MI_REQUEST_SERVER_SELECT = 69;</code>
-     */
     MI_REQUEST_SERVER_SELECT(13, 69),
-    /**
-     * <code>MI_RESPONSE_SERVER_SELECT = 70;</code>
-     */
     MI_RESPONSE_SERVER_SELECT(14, 70),
-    /**
-     * <code>MI_REQUEST_ACCOUNT_LOGOUT = 71;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     MI_REQUEST_ACCOUNT_LOGOUT(15, 71),
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_LOGOUT = 72;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     MI_RESPONSE_ACCOUNT_LOGOUT(16, 72),
-    /**
-     * <code>MI_REQUEST_ACCOUNT_CHANGE_PASSWORD = 73;</code>
-     */
     MI_REQUEST_ACCOUNT_CHANGE_PASSWORD(17, 73),
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD = 74;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD(18, 74),
-    /**
-     * <code>MI_REQUEST_PLAYER_CREATE = 101;</code>
-     */
     MI_REQUEST_PLAYER_CREATE(19, 101),
-    /**
-     * <code>MI_REQUEST_PLAYER_DELETE = 103;</code>
-     */
     MI_REQUEST_PLAYER_DELETE(20, 103),
-    /**
-     * <code>MI_REQUEST_PLAYER_QUERY = 105;</code>
-     */
     MI_REQUEST_PLAYER_QUERY(21, 105),
-    /**
-     * <code>MI_RESPONSE_PLAYER_QUERY = 106;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     MI_RESPONSE_PLAYER_QUERY(22, 106),
-    /**
-     * <code>MI_REQUEST_PLAYER_LOGIN = 107;</code>
-     */
     MI_REQUEST_PLAYER_LOGIN(23, 107),
-    /**
-     * <code>MI_RESPONSE_PLAYER_LOGIN = 108;</code>
-     */
     MI_RESPONSE_PLAYER_LOGIN(24, 108),
-    /**
-     * <code>MI_REQUEST_PLAYER_CREATE_INFO = 109;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     MI_REQUEST_PLAYER_CREATE_INFO(25, 109),
-    /**
-     * <code>MI_RESPONSE_PLAYER_CREATE_INFO = 110;</code>
-     */
     MI_RESPONSE_PLAYER_CREATE_INFO(26, 110),
-    /**
-     * <code>MI_REQUEST_PLAYER_ANIMATION_INFO = 111;</code>
-     */
     MI_REQUEST_PLAYER_ANIMATION_INFO(27, 111),
-    /**
-     * <code>MI_RESPONSE_PLAYER_ANIMATION_INFO = 112;</code>
-     */
     MI_RESPONSE_PLAYER_ANIMATION_INFO(28, 112),
-    /**
-     * <code>MI_REQUEST_MAP_IN = 151;</code>
-     */
     MI_REQUEST_MAP_IN(29, 151),
-    /**
-     * <code>MI_RESPONSE_MAP_IN = 152;</code>
-     */
     MI_RESPONSE_MAP_IN(30, 152),
-    /**
-     * <code>MI_REQUEST_MAP_MOVE = 153;</code>
-     */
     MI_REQUEST_MAP_MOVE(31, 153),
-    /**
-     * <code>MI_RESPONSE_MAP_MOVE = 154;</code>
-     */
     MI_RESPONSE_MAP_MOVE(32, 154),
-    /**
-     * <code>MI_REQUEST_MAP_MOVE_FINISH = 155;</code>
-     */
     MI_REQUEST_MAP_MOVE_FINISH(33, 155),
-    /**
-     * <code>MI_RESPONSE_MAP_UNIT_CREATE = 158;</code>
-     */
     MI_RESPONSE_MAP_UNIT_CREATE(34, 158),
-    /**
-     * <code>MI_RESPONSE_MAP_UNIT_MOVE = 160;</code>
-     */
     MI_RESPONSE_MAP_UNIT_MOVE(35, 160),
-    /**
-     * <code>MI_RESPONSE_MAP_UNIT_REMOVE = 162;</code>
-     */
     MI_RESPONSE_MAP_UNIT_REMOVE(36, 162),
-    /**
-     * <code>MI_REQUEST_MAP_CELLS = 163;</code>
-     *
-     * <pre>
-     * @proto=Map
-     * </pre>
-     */
     MI_REQUEST_MAP_CELLS(37, 163),
-    /**
-     * <code>MI_RESPONSE_MAP_CELLS = 164;</code>
-     */
     MI_RESPONSE_MAP_CELLS(38, 164),
-    /**
-     * <code>MI_REQUEST_MAP_LOAD_FINISH = 165;</code>
-     *
-     * <pre>
-     * @proto=Map
-     * </pre>
-     */
     MI_REQUEST_MAP_LOAD_FINISH(39, 165),
-    /**
-     * <code>MI_RESPONSE_MAP_LOAD_FINISH = 166;</code>
-     *
-     * <pre>
-     * @proto=Map
-     * </pre>
-     */
     MI_RESPONSE_MAP_LOAD_FINISH(40, 166),
-    /**
-     * <code>MI_RESPONSE_BATTLE_ENTER = 202;</code>
-     */
     MI_RESPONSE_BATTLE_ENTER(41, 202),
-    /**
-     * <code>MI_REQUEST_BATTLE_ATTACK = 203;</code>
-     */
     MI_REQUEST_BATTLE_ATTACK(42, 203),
-    /**
-     * <code>MI_RESPONSE_BATTLE_ACTION = 206;</code>
-     */
     MI_RESPONSE_BATTLE_ACTION(43, 206),
-    /**
-     * <code>MI_REQUEST_BATTLE_DEFEND = 207;</code>
-     *
-     * <pre>
-     * @proto=Battle
-     * </pre>
-     */
     MI_REQUEST_BATTLE_DEFEND(44, 207),
-    /**
-     * <code>MI_RESPONSE_BATTLE_WAIT_COMMAND = 210;</code>
-     *
-     * <pre>
-     * @proto=Battle
-     * </pre>
-     */
     MI_RESPONSE_BATTLE_WAIT_COMMAND(45, 210),
-    /**
-     * <code>MI_REQUEST_BATTLE_ANIMATION_FINISH = 211;</code>
-     *
-     * <pre>
-     * @proto=Battle
-     * </pre>
-     */
     MI_REQUEST_BATTLE_ANIMATION_FINISH(46, 211),
-    /**
-     * <code>MI_RESPONSE_BATTLE_FINISH = 214;</code>
-     */
     MI_RESPONSE_BATTLE_FINISH(47, 214),
-    /**
-     * <code>MI_RESPONSE_SCRIPT = 302;</code>
-     *
-     * <pre>
-     *----------------SCRIPT----------------
-     * @proto=Script
-     * </pre>
-     */
     MI_RESPONSE_SCRIPT(48, 302),
-    /**
-     * <code>MI_REQUEST_SCRIPT_MUTUAL = 303;</code>
-     */
     MI_REQUEST_SCRIPT_MUTUAL(49, 303),
-    /**
-     * <code>MI_RESPONSE_SCRIPT_MUTUAL = 304;</code>
-     *
-     * <pre>
-     * @proto=Script
-     * </pre>
-     */
     MI_RESPONSE_SCRIPT_MUTUAL(50, 304),
-    /**
-     * <code>MI_RESPONSE_SCRIPT_ERROR = 306;</code>
-     *
-     * <pre>
-     * @proto=Script
-     * </pre>
-     */
     MI_RESPONSE_SCRIPT_ERROR(51, 306),
-    /**
-     * <code>MI_REQUEST_CHAT = 351;</code>
-     */
     MI_REQUEST_CHAT(52, 351),
-    /**
-     * <code>MI_RESPONSE_CHAT = 352;</code>
-     */
     MI_RESPONSE_CHAT(53, 352),
-    /**
-     * <code>MI_REQUEST_CHAT_JOIN = 353;</code>
-     *
-     * <pre>
-     * @proto=Chat
-     * </pre>
-     */
     MI_REQUEST_CHAT_JOIN(54, 353),
-    /**
-     * <code>MI_RESPONSE_CHAT_JOIN = 354;</code>
-     *
-     * <pre>
-     * @proto=Chat
-     * </pre>
-     */
     MI_RESPONSE_CHAT_JOIN(55, 354),
-    /**
-     * <code>MI_REQUEST_CHAT_LEAVE = 355;</code>
-     *
-     * <pre>
-     * @proto=Chat
-     * </pre>
-     */
     MI_REQUEST_CHAT_LEAVE(56, 355),
-    /**
-     * <code>MI_RESPONSE_CHAT_LEAVE = 356;</code>
-     *
-     * <pre>
-     * @proto=Chat
-     * </pre>
-     */
     MI_RESPONSE_CHAT_LEAVE(57, 356),
-    /**
-     * <code>MI_REQUEST_SKILL_USE = 401;</code>
-     *
-     * <pre>
-     *----------------SKILL----------------
-     * @proto=Skill
-     * </pre>
-     */
     MI_REQUEST_SKILL_USE(58, 401),
-    /**
-     * <code>MI_REQUEST_RECIPE = 403;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     MI_REQUEST_RECIPE(59, 403),
-    /**
-     * <code>MI_REQUEST_DOUBLE_EXP_BEGIN = 405;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     MI_REQUEST_DOUBLE_EXP_BEGIN(60, 405),
-    /**
-     * <code>MI_REQUEST_DOUBLE_EXP_END = 407;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     MI_REQUEST_DOUBLE_EXP_END(61, 407),
-    /**
-     * <code>MI_RESPONSE_DOUBLE_EXP_END = 408;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     MI_RESPONSE_DOUBLE_EXP_END(62, 408),
-    /**
-     * <code>MI_REQUEST_DOUBLE_EXP_UPDATE = 409;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     MI_REQUEST_DOUBLE_EXP_UPDATE(63, 409),
-    /**
-     * <code>MI_RESPONSE_DOUBLE_EXP_UPDATE = 410;</code>
-     */
     MI_RESPONSE_DOUBLE_EXP_UPDATE(64, 410),
-    /**
-     * <code>MI_REQUEST_SKILL_LEARN = 411;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     MI_REQUEST_SKILL_LEARN(65, 411),
-    /**
-     * <code>MI_RESPONSE_SKILL_LEARN = 412;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     MI_RESPONSE_SKILL_LEARN(66, 412),
-    /**
-     * <code>MI_REQUEST_SKILL_UNLEARN = 413;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     MI_REQUEST_SKILL_UNLEARN(67, 413),
-    /**
-     * <code>MI_RESPONSE_SKILL_UNLEARN = 414;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     MI_RESPONSE_SKILL_UNLEARN(68, 414),
-    /**
-     * <code>MI_REQUEST_MAIL_SEND = 451;</code>
-     *
-     * <pre>
-     *----------------MAIL----------------
-     * @proto=Mail
-     * </pre>
-     */
     MI_REQUEST_MAIL_SEND(69, 451),
-    /**
-     * <code>MI_RESPONSE_MAIL_SEND = 452;</code>
-     *
-     * <pre>
-     * @proto=Mail
-     * </pre>
-     */
     MI_RESPONSE_MAIL_SEND(70, 452),
-    /**
-     * <code>MI_REQUEST_OPTIONS_SET = 501;</code>
-     */
     MI_REQUEST_OPTIONS_SET(71, 501),
-    /**
-     * <code>MI_RESPONSE_OPTIONS_SET = 502;</code>
-     */
     MI_RESPONSE_OPTIONS_SET(72, 502),
     ;
-
-    /**
-     * <code>MI_REQUEST_HEART_BEAT = 1;</code>
-     *
-     * <pre>
-     *----------------COMMON----------------
-     * @proto=Common
-     * </pre>
-     */
+    
     public static final int MI_REQUEST_HEART_BEAT_VALUE = 1;
-    /**
-     * <code>MI_RESPONSE_HEART_BEAT = 2;</code>
-     *
-     * <pre>
-     * @proto=Common
-     * </pre>
-     */
     public static final int MI_RESPONSE_HEART_BEAT_VALUE = 2;
-    /**
-     * <code>MI_REQUEST_DISCONNECTED = 3;</code>
-     *
-     * <pre>
-     * @proto=Common
-     * </pre>
-     */
     public static final int MI_REQUEST_DISCONNECTED_VALUE = 3;
-    /**
-     * <code>MI_RESPONSE_EXECUTE_OK = 4;</code>
-     */
     public static final int MI_RESPONSE_EXECUTE_OK_VALUE = 4;
-    /**
-     * <code>MI_RESPONSE_EXECUTE_ERROR = 5;</code>
-     */
     public static final int MI_RESPONSE_EXECUTE_ERROR_VALUE = 5;
-    /**
-     * <code>MI_REQUEST_ACCOUNT_REGISTER = 61;</code>
-     */
     public static final int MI_REQUEST_ACCOUNT_REGISTER_VALUE = 61;
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_REGISTER = 62;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     public static final int MI_RESPONSE_ACCOUNT_REGISTER_VALUE = 62;
-    /**
-     * <code>MI_REQUEST_ACCOUNT_LOGIN = 63;</code>
-     */
     public static final int MI_REQUEST_ACCOUNT_LOGIN_VALUE = 63;
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_LOGIN = 64;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     public static final int MI_RESPONSE_ACCOUNT_LOGIN_VALUE = 64;
-    /**
-     * <code>MI_REQUEST_ACCOUNT_ROLE_LIST = 65;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     public static final int MI_REQUEST_ACCOUNT_ROLE_LIST_VALUE = 65;
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_ROLE_LIST = 66;</code>
-     */
     public static final int MI_RESPONSE_ACCOUNT_ROLE_LIST_VALUE = 66;
-    /**
-     * <code>MI_REQUEST_SERVER_LIST = 67;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     public static final int MI_REQUEST_SERVER_LIST_VALUE = 67;
-    /**
-     * <code>MI_RESPONSE_SERVER_LIST = 68;</code>
-     */
     public static final int MI_RESPONSE_SERVER_LIST_VALUE = 68;
-    /**
-     * <code>MI_REQUEST_SERVER_SELECT = 69;</code>
-     */
     public static final int MI_REQUEST_SERVER_SELECT_VALUE = 69;
-    /**
-     * <code>MI_RESPONSE_SERVER_SELECT = 70;</code>
-     */
     public static final int MI_RESPONSE_SERVER_SELECT_VALUE = 70;
-    /**
-     * <code>MI_REQUEST_ACCOUNT_LOGOUT = 71;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     public static final int MI_REQUEST_ACCOUNT_LOGOUT_VALUE = 71;
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_LOGOUT = 72;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     public static final int MI_RESPONSE_ACCOUNT_LOGOUT_VALUE = 72;
-    /**
-     * <code>MI_REQUEST_ACCOUNT_CHANGE_PASSWORD = 73;</code>
-     */
     public static final int MI_REQUEST_ACCOUNT_CHANGE_PASSWORD_VALUE = 73;
-    /**
-     * <code>MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD = 74;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     public static final int MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD_VALUE = 74;
-    /**
-     * <code>MI_REQUEST_PLAYER_CREATE = 101;</code>
-     */
     public static final int MI_REQUEST_PLAYER_CREATE_VALUE = 101;
-    /**
-     * <code>MI_REQUEST_PLAYER_DELETE = 103;</code>
-     */
     public static final int MI_REQUEST_PLAYER_DELETE_VALUE = 103;
-    /**
-     * <code>MI_REQUEST_PLAYER_QUERY = 105;</code>
-     */
     public static final int MI_REQUEST_PLAYER_QUERY_VALUE = 105;
-    /**
-     * <code>MI_RESPONSE_PLAYER_QUERY = 106;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     public static final int MI_RESPONSE_PLAYER_QUERY_VALUE = 106;
-    /**
-     * <code>MI_REQUEST_PLAYER_LOGIN = 107;</code>
-     */
     public static final int MI_REQUEST_PLAYER_LOGIN_VALUE = 107;
-    /**
-     * <code>MI_RESPONSE_PLAYER_LOGIN = 108;</code>
-     */
     public static final int MI_RESPONSE_PLAYER_LOGIN_VALUE = 108;
-    /**
-     * <code>MI_REQUEST_PLAYER_CREATE_INFO = 109;</code>
-     *
-     * <pre>
-     * @proto=Account
-     * </pre>
-     */
     public static final int MI_REQUEST_PLAYER_CREATE_INFO_VALUE = 109;
-    /**
-     * <code>MI_RESPONSE_PLAYER_CREATE_INFO = 110;</code>
-     */
     public static final int MI_RESPONSE_PLAYER_CREATE_INFO_VALUE = 110;
-    /**
-     * <code>MI_REQUEST_PLAYER_ANIMATION_INFO = 111;</code>
-     */
     public static final int MI_REQUEST_PLAYER_ANIMATION_INFO_VALUE = 111;
-    /**
-     * <code>MI_RESPONSE_PLAYER_ANIMATION_INFO = 112;</code>
-     */
     public static final int MI_RESPONSE_PLAYER_ANIMATION_INFO_VALUE = 112;
-    /**
-     * <code>MI_REQUEST_MAP_IN = 151;</code>
-     */
     public static final int MI_REQUEST_MAP_IN_VALUE = 151;
-    /**
-     * <code>MI_RESPONSE_MAP_IN = 152;</code>
-     */
     public static final int MI_RESPONSE_MAP_IN_VALUE = 152;
-    /**
-     * <code>MI_REQUEST_MAP_MOVE = 153;</code>
-     */
     public static final int MI_REQUEST_MAP_MOVE_VALUE = 153;
-    /**
-     * <code>MI_RESPONSE_MAP_MOVE = 154;</code>
-     */
     public static final int MI_RESPONSE_MAP_MOVE_VALUE = 154;
-    /**
-     * <code>MI_REQUEST_MAP_MOVE_FINISH = 155;</code>
-     */
     public static final int MI_REQUEST_MAP_MOVE_FINISH_VALUE = 155;
-    /**
-     * <code>MI_RESPONSE_MAP_UNIT_CREATE = 158;</code>
-     */
     public static final int MI_RESPONSE_MAP_UNIT_CREATE_VALUE = 158;
-    /**
-     * <code>MI_RESPONSE_MAP_UNIT_MOVE = 160;</code>
-     */
     public static final int MI_RESPONSE_MAP_UNIT_MOVE_VALUE = 160;
-    /**
-     * <code>MI_RESPONSE_MAP_UNIT_REMOVE = 162;</code>
-     */
     public static final int MI_RESPONSE_MAP_UNIT_REMOVE_VALUE = 162;
-    /**
-     * <code>MI_REQUEST_MAP_CELLS = 163;</code>
-     *
-     * <pre>
-     * @proto=Map
-     * </pre>
-     */
     public static final int MI_REQUEST_MAP_CELLS_VALUE = 163;
-    /**
-     * <code>MI_RESPONSE_MAP_CELLS = 164;</code>
-     */
     public static final int MI_RESPONSE_MAP_CELLS_VALUE = 164;
-    /**
-     * <code>MI_REQUEST_MAP_LOAD_FINISH = 165;</code>
-     *
-     * <pre>
-     * @proto=Map
-     * </pre>
-     */
     public static final int MI_REQUEST_MAP_LOAD_FINISH_VALUE = 165;
-    /**
-     * <code>MI_RESPONSE_MAP_LOAD_FINISH = 166;</code>
-     *
-     * <pre>
-     * @proto=Map
-     * </pre>
-     */
     public static final int MI_RESPONSE_MAP_LOAD_FINISH_VALUE = 166;
-    /**
-     * <code>MI_RESPONSE_BATTLE_ENTER = 202;</code>
-     */
     public static final int MI_RESPONSE_BATTLE_ENTER_VALUE = 202;
-    /**
-     * <code>MI_REQUEST_BATTLE_ATTACK = 203;</code>
-     */
     public static final int MI_REQUEST_BATTLE_ATTACK_VALUE = 203;
-    /**
-     * <code>MI_RESPONSE_BATTLE_ACTION = 206;</code>
-     */
     public static final int MI_RESPONSE_BATTLE_ACTION_VALUE = 206;
-    /**
-     * <code>MI_REQUEST_BATTLE_DEFEND = 207;</code>
-     *
-     * <pre>
-     * @proto=Battle
-     * </pre>
-     */
     public static final int MI_REQUEST_BATTLE_DEFEND_VALUE = 207;
-    /**
-     * <code>MI_RESPONSE_BATTLE_WAIT_COMMAND = 210;</code>
-     *
-     * <pre>
-     * @proto=Battle
-     * </pre>
-     */
     public static final int MI_RESPONSE_BATTLE_WAIT_COMMAND_VALUE = 210;
-    /**
-     * <code>MI_REQUEST_BATTLE_ANIMATION_FINISH = 211;</code>
-     *
-     * <pre>
-     * @proto=Battle
-     * </pre>
-     */
     public static final int MI_REQUEST_BATTLE_ANIMATION_FINISH_VALUE = 211;
-    /**
-     * <code>MI_RESPONSE_BATTLE_FINISH = 214;</code>
-     */
     public static final int MI_RESPONSE_BATTLE_FINISH_VALUE = 214;
-    /**
-     * <code>MI_RESPONSE_SCRIPT = 302;</code>
-     *
-     * <pre>
-     *----------------SCRIPT----------------
-     * @proto=Script
-     * </pre>
-     */
     public static final int MI_RESPONSE_SCRIPT_VALUE = 302;
-    /**
-     * <code>MI_REQUEST_SCRIPT_MUTUAL = 303;</code>
-     */
     public static final int MI_REQUEST_SCRIPT_MUTUAL_VALUE = 303;
-    /**
-     * <code>MI_RESPONSE_SCRIPT_MUTUAL = 304;</code>
-     *
-     * <pre>
-     * @proto=Script
-     * </pre>
-     */
     public static final int MI_RESPONSE_SCRIPT_MUTUAL_VALUE = 304;
-    /**
-     * <code>MI_RESPONSE_SCRIPT_ERROR = 306;</code>
-     *
-     * <pre>
-     * @proto=Script
-     * </pre>
-     */
     public static final int MI_RESPONSE_SCRIPT_ERROR_VALUE = 306;
-    /**
-     * <code>MI_REQUEST_CHAT = 351;</code>
-     */
     public static final int MI_REQUEST_CHAT_VALUE = 351;
-    /**
-     * <code>MI_RESPONSE_CHAT = 352;</code>
-     */
     public static final int MI_RESPONSE_CHAT_VALUE = 352;
-    /**
-     * <code>MI_REQUEST_CHAT_JOIN = 353;</code>
-     *
-     * <pre>
-     * @proto=Chat
-     * </pre>
-     */
     public static final int MI_REQUEST_CHAT_JOIN_VALUE = 353;
-    /**
-     * <code>MI_RESPONSE_CHAT_JOIN = 354;</code>
-     *
-     * <pre>
-     * @proto=Chat
-     * </pre>
-     */
     public static final int MI_RESPONSE_CHAT_JOIN_VALUE = 354;
-    /**
-     * <code>MI_REQUEST_CHAT_LEAVE = 355;</code>
-     *
-     * <pre>
-     * @proto=Chat
-     * </pre>
-     */
     public static final int MI_REQUEST_CHAT_LEAVE_VALUE = 355;
-    /**
-     * <code>MI_RESPONSE_CHAT_LEAVE = 356;</code>
-     *
-     * <pre>
-     * @proto=Chat
-     * </pre>
-     */
     public static final int MI_RESPONSE_CHAT_LEAVE_VALUE = 356;
-    /**
-     * <code>MI_REQUEST_SKILL_USE = 401;</code>
-     *
-     * <pre>
-     *----------------SKILL----------------
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_REQUEST_SKILL_USE_VALUE = 401;
-    /**
-     * <code>MI_REQUEST_RECIPE = 403;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_REQUEST_RECIPE_VALUE = 403;
-    /**
-     * <code>MI_REQUEST_DOUBLE_EXP_BEGIN = 405;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_REQUEST_DOUBLE_EXP_BEGIN_VALUE = 405;
-    /**
-     * <code>MI_REQUEST_DOUBLE_EXP_END = 407;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_REQUEST_DOUBLE_EXP_END_VALUE = 407;
-    /**
-     * <code>MI_RESPONSE_DOUBLE_EXP_END = 408;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_RESPONSE_DOUBLE_EXP_END_VALUE = 408;
-    /**
-     * <code>MI_REQUEST_DOUBLE_EXP_UPDATE = 409;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_REQUEST_DOUBLE_EXP_UPDATE_VALUE = 409;
-    /**
-     * <code>MI_RESPONSE_DOUBLE_EXP_UPDATE = 410;</code>
-     */
     public static final int MI_RESPONSE_DOUBLE_EXP_UPDATE_VALUE = 410;
-    /**
-     * <code>MI_REQUEST_SKILL_LEARN = 411;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_REQUEST_SKILL_LEARN_VALUE = 411;
-    /**
-     * <code>MI_RESPONSE_SKILL_LEARN = 412;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_RESPONSE_SKILL_LEARN_VALUE = 412;
-    /**
-     * <code>MI_REQUEST_SKILL_UNLEARN = 413;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_REQUEST_SKILL_UNLEARN_VALUE = 413;
-    /**
-     * <code>MI_RESPONSE_SKILL_UNLEARN = 414;</code>
-     *
-     * <pre>
-     * @proto=Skill
-     * </pre>
-     */
     public static final int MI_RESPONSE_SKILL_UNLEARN_VALUE = 414;
-    /**
-     * <code>MI_REQUEST_MAIL_SEND = 451;</code>
-     *
-     * <pre>
-     *----------------MAIL----------------
-     * @proto=Mail
-     * </pre>
-     */
     public static final int MI_REQUEST_MAIL_SEND_VALUE = 451;
-    /**
-     * <code>MI_RESPONSE_MAIL_SEND = 452;</code>
-     *
-     * <pre>
-     * @proto=Mail
-     * </pre>
-     */
     public static final int MI_RESPONSE_MAIL_SEND_VALUE = 452;
-    /**
-     * <code>MI_REQUEST_OPTIONS_SET = 501;</code>
-     */
     public static final int MI_REQUEST_OPTIONS_SET_VALUE = 501;
-    /**
-     * <code>MI_RESPONSE_OPTIONS_SET = 502;</code>
-     */
     public static final int MI_RESPONSE_OPTIONS_SET_VALUE = 502;
-
-
+    
+    
     public final int getNumber() { return value; }
-
+    
     public static MessageId valueOf(int value) {
       switch (value) {
         case 1: return MI_REQUEST_HEART_BEAT;
@@ -985,7 +240,7 @@ public final class MessageIdProto {
         default: return null;
       }
     }
-
+    
     public static com.google.protobuf.Internal.EnumLiteMap<MessageId>
         internalGetValueMap() {
       return internalValueMap;
@@ -997,7 +252,7 @@ public final class MessageIdProto {
               return MessageId.valueOf(number);
             }
           };
-
+    
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
       return getDescriptor().getValues().get(index);
@@ -1010,9 +265,11 @@ public final class MessageIdProto {
         getDescriptor() {
       return cg.base.io.proto.MessageIdProto.getDescriptor().getEnumTypes().get(0);
     }
-
-    private static final MessageId[] VALUES = values();
-
+    
+    private static final MessageId[] VALUES = {
+      MI_REQUEST_HEART_BEAT, MI_RESPONSE_HEART_BEAT, MI_REQUEST_DISCONNECTED, MI_RESPONSE_EXECUTE_OK, MI_RESPONSE_EXECUTE_ERROR, MI_REQUEST_ACCOUNT_REGISTER, MI_RESPONSE_ACCOUNT_REGISTER, MI_REQUEST_ACCOUNT_LOGIN, MI_RESPONSE_ACCOUNT_LOGIN, MI_REQUEST_ACCOUNT_ROLE_LIST, MI_RESPONSE_ACCOUNT_ROLE_LIST, MI_REQUEST_SERVER_LIST, MI_RESPONSE_SERVER_LIST, MI_REQUEST_SERVER_SELECT, MI_RESPONSE_SERVER_SELECT, MI_REQUEST_ACCOUNT_LOGOUT, MI_RESPONSE_ACCOUNT_LOGOUT, MI_REQUEST_ACCOUNT_CHANGE_PASSWORD, MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD, MI_REQUEST_PLAYER_CREATE, MI_REQUEST_PLAYER_DELETE, MI_REQUEST_PLAYER_QUERY, MI_RESPONSE_PLAYER_QUERY, MI_REQUEST_PLAYER_LOGIN, MI_RESPONSE_PLAYER_LOGIN, MI_REQUEST_PLAYER_CREATE_INFO, MI_RESPONSE_PLAYER_CREATE_INFO, MI_REQUEST_PLAYER_ANIMATION_INFO, MI_RESPONSE_PLAYER_ANIMATION_INFO, MI_REQUEST_MAP_IN, MI_RESPONSE_MAP_IN, MI_REQUEST_MAP_MOVE, MI_RESPONSE_MAP_MOVE, MI_REQUEST_MAP_MOVE_FINISH, MI_RESPONSE_MAP_UNIT_CREATE, MI_RESPONSE_MAP_UNIT_MOVE, MI_RESPONSE_MAP_UNIT_REMOVE, MI_REQUEST_MAP_CELLS, MI_RESPONSE_MAP_CELLS, MI_REQUEST_MAP_LOAD_FINISH, MI_RESPONSE_MAP_LOAD_FINISH, MI_RESPONSE_BATTLE_ENTER, MI_REQUEST_BATTLE_ATTACK, MI_RESPONSE_BATTLE_ACTION, MI_REQUEST_BATTLE_DEFEND, MI_RESPONSE_BATTLE_WAIT_COMMAND, MI_REQUEST_BATTLE_ANIMATION_FINISH, MI_RESPONSE_BATTLE_FINISH, MI_RESPONSE_SCRIPT, MI_REQUEST_SCRIPT_MUTUAL, MI_RESPONSE_SCRIPT_MUTUAL, MI_RESPONSE_SCRIPT_ERROR, MI_REQUEST_CHAT, MI_RESPONSE_CHAT, MI_REQUEST_CHAT_JOIN, MI_RESPONSE_CHAT_JOIN, MI_REQUEST_CHAT_LEAVE, MI_RESPONSE_CHAT_LEAVE, MI_REQUEST_SKILL_USE, MI_REQUEST_RECIPE, MI_REQUEST_DOUBLE_EXP_BEGIN, MI_REQUEST_DOUBLE_EXP_END, MI_RESPONSE_DOUBLE_EXP_END, MI_REQUEST_DOUBLE_EXP_UPDATE, MI_RESPONSE_DOUBLE_EXP_UPDATE, MI_REQUEST_SKILL_LEARN, MI_RESPONSE_SKILL_LEARN, MI_REQUEST_SKILL_UNLEARN, MI_RESPONSE_SKILL_UNLEARN, MI_REQUEST_MAIL_SEND, MI_RESPONSE_MAIL_SEND, MI_REQUEST_OPTIONS_SET, MI_RESPONSE_OPTIONS_SET, 
+    };
+    
     public static MessageId valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
@@ -1021,19 +278,19 @@ public final class MessageIdProto {
       }
       return VALUES[desc.getIndex()];
     }
-
+    
     private final int index;
     private final int value;
-
+    
     private MessageId(int index, int value) {
       this.index = index;
       this.value = value;
     }
-
+    
     // @@protoc_insertion_point(enum_scope:MessageId)
   }
-
-
+  
+  
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
@@ -1115,6 +372,6 @@ public final class MessageIdProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
   }
-
+  
   // @@protoc_insertion_point(outer_class_scope)
 }
