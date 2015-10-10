@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.PlayerProtos.*;
+import com.google.common.collect.Lists;
 import java.util.List;
 
 /**
@@ -29,8 +30,12 @@ public class ResponsePlayerAnimationInfo extends ProtoMessage {
 	 * @param	animationInfos
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setAnimationInfos(Iterable<VO_PLAYER_ANIMATION_INFO> animationInfos) {
-		builder.addAllAnimationInfos(animationInfos);
+	public void setAnimationInfos(Iterable<VoPlayerAnimationInfo> animationInfos) {
+		List<VO_PLAYER_ANIMATION_INFO> list = Lists.newLinkedList();
+		for (VoPlayerAnimationInfo vo : animationInfos) {
+			list.add(vo.getVO_PLAYER_ANIMATION_INFO());
+		}
+		builder.addAllAnimationInfos(list);
 	}
 
 	/**

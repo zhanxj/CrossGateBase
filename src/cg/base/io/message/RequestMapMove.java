@@ -80,8 +80,8 @@ public class RequestMapMove extends ProtoMessage {
 	 * @param	eastArea
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setEastArea(VO_MAP_AREA eastArea) {
-		builder.setEastArea(eastArea);
+	public void setEastArea(VoMapArea eastArea) {
+		builder.setEastArea(eastArea.getVO_MAP_AREA());
 	}
 
 	/**
@@ -114,8 +114,8 @@ public class RequestMapMove extends ProtoMessage {
 	 * @param	southArea
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setSouthArea(VO_MAP_AREA southArea) {
-		builder.setSouthArea(southArea);
+	public void setSouthArea(VoMapArea southArea) {
+		builder.setSouthArea(southArea.getVO_MAP_AREA());
 	}
 
 	/**

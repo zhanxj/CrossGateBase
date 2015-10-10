@@ -1,0 +1,118 @@
+package cg.base.io.message;
+
+import cg.base.io.proto.VOProtos.*;
+import com.google.common.collect.Lists;
+import java.util.List;
+
+/**
+ * This is a auto make java file, so do not modify me.
+ * @author fuhuiyuan
+ */
+public class VoProduceSkillLevel {
+
+	private VO_PRODUCE_SKILL_LEVEL vo;
+
+	private VO_PRODUCE_SKILL_LEVEL.Builder builder;
+
+	public VoProduceSkillLevel(VO_PRODUCE_SKILL_LEVEL vo) {
+		this.vo = vo;
+	}
+
+	public VoProduceSkillLevel() {
+		builder = VO_PRODUCE_SKILL_LEVEL.newBuilder();
+	}
+
+	/**
+	 * 
+	 * @param	itemId
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setItemId(Integer itemId) {
+		builder.setItemId(itemId);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public int getItemId() {
+		return vo.getItemId();
+	}
+
+	/**
+	 * 
+	 * @param	identifyName
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setIdentifyName(String identifyName) {
+		builder.setIdentifyName(identifyName);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public String getIdentifyName() {
+		return vo.getIdentifyName();
+	}
+
+	/**
+	 * 
+	 * @param	materials
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setMaterials(Iterable<VoMaterialInfo> materials) {
+		List<VO_MATERIAL_INFO> list = Lists.newLinkedList();
+		for (VoMaterialInfo vo : materials) {
+			list.add(vo.getVO_MATERIAL_INFO());
+		}
+		builder.addAllMaterials(list);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public List<VO_MATERIAL_INFO> getMaterialsList() {
+		return vo.getMaterialsList();
+	}
+
+	/**
+	 * 
+	 * @param	producesId
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setProducesId(Integer producesId) {
+		builder.setProducesId(producesId);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public int getProducesId() {
+		return vo.getProducesId();
+	}
+
+	/**
+	 * 
+	 * @param	name
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setName(String name) {
+		builder.setName(name);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public String getName() {
+		return vo.getName();
+	}
+
+	public VO_PRODUCE_SKILL_LEVEL getVO_PRODUCE_SKILL_LEVEL() {
+		return vo == null ? builder.build() : vo;
+	}
+
+}

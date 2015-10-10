@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.AccountProtos.*;
+import com.google.common.collect.Lists;
 import java.util.List;
 
 /**
@@ -29,8 +30,12 @@ public class ResponseServerList extends ProtoMessage {
 	 * @param	servers
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setServers(Iterable<VO_SERVER> servers) {
-		builder.addAllServers(servers);
+	public void setServers(Iterable<VoServer> servers) {
+		List<VO_SERVER> list = Lists.newLinkedList();
+		for (VoServer vo : servers) {
+			list.add(vo.getVO_SERVER());
+		}
+		builder.addAllServers(list);
 	}
 
 	/**

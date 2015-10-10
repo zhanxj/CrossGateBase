@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.BattleProtos.*;
+import com.google.common.collect.Lists;
 import java.util.List;
 
 /**
@@ -29,8 +30,12 @@ public class ResponseBattleEnter extends ProtoMessage {
 	 * @param	teamA
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setTeamA(Iterable<VO_UNIT_BATTLE_INFO> teamA) {
-		builder.addAllTeamA(teamA);
+	public void setTeamA(Iterable<VoUnitBattleInfo> teamA) {
+		List<VO_UNIT_BATTLE_INFO> list = Lists.newLinkedList();
+		for (VoUnitBattleInfo vo : teamA) {
+			list.add(vo.getVO_UNIT_BATTLE_INFO());
+		}
+		builder.addAllTeamA(list);
 	}
 
 	/**
@@ -46,8 +51,12 @@ public class ResponseBattleEnter extends ProtoMessage {
 	 * @param	teamB
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setTeamB(Iterable<VO_UNIT_BATTLE_INFO> teamB) {
-		builder.addAllTeamB(teamB);
+	public void setTeamB(Iterable<VoUnitBattleInfo> teamB) {
+		List<VO_UNIT_BATTLE_INFO> list = Lists.newLinkedList();
+		for (VoUnitBattleInfo vo : teamB) {
+			list.add(vo.getVO_UNIT_BATTLE_INFO());
+		}
+		builder.addAllTeamB(list);
 	}
 
 	/**

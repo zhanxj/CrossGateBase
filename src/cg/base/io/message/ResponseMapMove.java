@@ -4,6 +4,7 @@ import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.MapProtos.*;
 import cg.base.io.proto.VOProtos.*;
+import com.google.common.collect.Lists;
 import java.util.List;
 
 /**
@@ -30,8 +31,12 @@ public class ResponseMapMove extends ProtoMessage {
 	 * @param	mapCells
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setMapCells(Iterable<VO_MAP_CELL> mapCells) {
-		builder.addAllMapCells(mapCells);
+	public void setMapCells(Iterable<VoMapCell> mapCells) {
+		List<VO_MAP_CELL> list = Lists.newLinkedList();
+		for (VoMapCell vo : mapCells) {
+			list.add(vo.getVO_MAP_CELL());
+		}
+		builder.addAllMapCells(list);
 	}
 
 	/**

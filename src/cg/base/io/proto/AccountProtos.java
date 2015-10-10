@@ -4437,7 +4437,7 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_SERVER_SELECT)
   }
   
-  public interface ACCOUNT_CHANGE_PASSWORD_CLIENTOrBuilder
+  public interface REQUEST_ACCOUNT_CHANGE_PASSWORDOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
     // required string account = 1;
@@ -4452,32 +4452,32 @@ public final class AccountProtos {
     boolean hasNewPassword();
     String getNewPassword();
   }
-  public static final class ACCOUNT_CHANGE_PASSWORD_CLIENT extends
+  public static final class REQUEST_ACCOUNT_CHANGE_PASSWORD extends
       com.google.protobuf.GeneratedMessage
-      implements ACCOUNT_CHANGE_PASSWORD_CLIENTOrBuilder {
-    // Use ACCOUNT_CHANGE_PASSWORD_CLIENT.newBuilder() to construct.
-    private ACCOUNT_CHANGE_PASSWORD_CLIENT(Builder builder) {
+      implements REQUEST_ACCOUNT_CHANGE_PASSWORDOrBuilder {
+    // Use REQUEST_ACCOUNT_CHANGE_PASSWORD.newBuilder() to construct.
+    private REQUEST_ACCOUNT_CHANGE_PASSWORD(Builder builder) {
       super(builder);
     }
-    private ACCOUNT_CHANGE_PASSWORD_CLIENT(boolean noInit) {}
+    private REQUEST_ACCOUNT_CHANGE_PASSWORD(boolean noInit) {}
     
-    private static final ACCOUNT_CHANGE_PASSWORD_CLIENT defaultInstance;
-    public static ACCOUNT_CHANGE_PASSWORD_CLIENT getDefaultInstance() {
+    private static final REQUEST_ACCOUNT_CHANGE_PASSWORD defaultInstance;
+    public static REQUEST_ACCOUNT_CHANGE_PASSWORD getDefaultInstance() {
       return defaultInstance;
     }
     
-    public ACCOUNT_CHANGE_PASSWORD_CLIENT getDefaultInstanceForType() {
+    public REQUEST_ACCOUNT_CHANGE_PASSWORD getDefaultInstanceForType() {
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.AccountProtos.internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_descriptor;
+      return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.AccountProtos.internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_fieldAccessorTable;
+      return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -4648,41 +4648,41 @@ public final class AccountProtos {
       return super.writeReplace();
     }
     
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseFrom(
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseFrom(
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseFrom(byte[] data)
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseFrom(
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseFrom(
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -4691,7 +4691,7 @@ public final class AccountProtos {
         return null;
       }
     }
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseDelimitedFrom(
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4702,12 +4702,12 @@ public final class AccountProtos {
         return null;
       }
     }
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseFrom(
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT parseFrom(
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4717,7 +4717,7 @@ public final class AccountProtos {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT prototype) {
+    public static Builder newBuilder(cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -4730,18 +4730,18 @@ public final class AccountProtos {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENTOrBuilder {
+       implements cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORDOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.AccountProtos.internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_descriptor;
+        return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.AccountProtos.internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_fieldAccessorTable;
+        return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_fieldAccessorTable;
       }
       
-      // Construct using cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT.newBuilder()
+      // Construct using cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4775,24 +4775,24 @@ public final class AccountProtos {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT.getDescriptor();
+        return cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD.getDescriptor();
       }
       
-      public cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT getDefaultInstanceForType() {
-        return cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT.getDefaultInstance();
+      public cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD getDefaultInstanceForType() {
+        return cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD.getDefaultInstance();
       }
       
-      public cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT build() {
-        cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT result = buildPartial();
+      public cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD build() {
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT buildParsed()
+      private cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT result = buildPartial();
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -4800,8 +4800,8 @@ public final class AccountProtos {
         return result;
       }
       
-      public cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT buildPartial() {
-        cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT result = new cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT(this);
+      public cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD buildPartial() {
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD result = new cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -4822,16 +4822,16 @@ public final class AccountProtos {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT) {
-          return mergeFrom((cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT)other);
+        if (other instanceof cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD) {
+          return mergeFrom((cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT other) {
-        if (other == cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD other) {
+        if (other == cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD.getDefaultInstance()) return this;
         if (other.hasAccount()) {
           setAccount(other.getAccount());
         }
@@ -5013,15 +5013,15 @@ public final class AccountProtos {
         onChanged();
       }
       
-      // @@protoc_insertion_point(builder_scope:ACCOUNT_CHANGE_PASSWORD_CLIENT)
+      // @@protoc_insertion_point(builder_scope:REQUEST_ACCOUNT_CHANGE_PASSWORD)
     }
     
     static {
-      defaultInstance = new ACCOUNT_CHANGE_PASSWORD_CLIENT(true);
+      defaultInstance = new REQUEST_ACCOUNT_CHANGE_PASSWORD(true);
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:ACCOUNT_CHANGE_PASSWORD_CLIENT)
+    // @@protoc_insertion_point(class_scope:REQUEST_ACCOUNT_CHANGE_PASSWORD)
   }
   
   private static com.google.protobuf.Descriptors.Descriptor
@@ -5065,10 +5065,10 @@ public final class AccountProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_descriptor;
+    internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_fieldAccessorTable;
+      internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -5093,10 +5093,10 @@ public final class AccountProtos {
       "e\030\003 \002(\005\"3\n\024RESPONSE_SERVER_LIST\022\033\n\007serve" +
       "rs\030\001 \003(\0132\n.VO_SERVER\"#\n\025REQUEST_SERVER_S" +
       "ELECT\022\n\n\002id\030\001 \002(\005\"%\n\026RESPONSE_SERVER_SEL" +
-      "ECT\022\013\n\003url\030\001 \002(\t\"[\n\036ACCOUNT_CHANGE_PASSW" +
-      "ORD_CLIENT\022\017\n\007account\030\001 \002(\t\022\023\n\013oldPasswo" +
-      "rd\030\002 \002(\t\022\023\n\013newPassword\030\003 \002(\tB!\n\020cg.base" +
-      ".io.protoB\rAccountProtos"
+      "ECT\022\013\n\003url\030\001 \002(\t\"\\\n\037REQUEST_ACCOUNT_CHAN" +
+      "GE_PASSWORD\022\017\n\007account\030\001 \002(\t\022\023\n\013oldPassw" +
+      "ord\030\002 \002(\t\022\023\n\013newPassword\030\003 \002(\tB!\n\020cg.bas" +
+      "e.io.protoB\rAccountProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -5167,14 +5167,14 @@ public final class AccountProtos {
               new java.lang.String[] { "Url", },
               cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT.class,
               cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECT.Builder.class);
-          internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_descriptor =
+          internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor =
             getDescriptor().getMessageTypes().get(8);
-          internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_fieldAccessorTable = new
+          internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_ACCOUNT_CHANGE_PASSWORD_CLIENT_descriptor,
+              internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor,
               new java.lang.String[] { "Account", "OldPassword", "NewPassword", },
-              cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT.class,
-              cg.base.io.proto.AccountProtos.ACCOUNT_CHANGE_PASSWORD_CLIENT.Builder.class);
+              cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD.class,
+              cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORD.Builder.class);
           return null;
         }
       };

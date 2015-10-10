@@ -4,6 +4,7 @@ import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.PlayerProtos.*;
 import cg.base.io.proto.VOProtos.*;
+import com.google.common.collect.Lists;
 import java.util.List;
 
 /**
@@ -30,8 +31,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	baseInfo
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setBaseInfo(VO_UNIT_BASE_INFO baseInfo) {
-		builder.setBaseInfo(baseInfo);
+	public void setBaseInfo(VoUnitBaseInfo baseInfo) {
+		builder.setBaseInfo(baseInfo.getVO_UNIT_BASE_INFO());
 	}
 
 	/**
@@ -47,8 +48,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	skillSet
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setSkillSet(VO_SKILL_SET skillSet) {
-		builder.setSkillSet(skillSet);
+	public void setSkillSet(VoSkillSet skillSet) {
+		builder.setSkillSet(skillSet.getVO_SKILL_SET());
 	}
 
 	/**
@@ -64,8 +65,12 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	bags
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setBags(Iterable<VO_BAG> bags) {
-		builder.addAllBags(bags);
+	public void setBags(Iterable<VoBag> bags) {
+		List<VO_BAG> list = Lists.newLinkedList();
+		for (VoBag vo : bags) {
+			list.add(vo.getVO_BAG());
+		}
+		builder.addAllBags(list);
 	}
 
 	/**
@@ -81,8 +86,12 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	titles
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setTitles(Iterable<VO_TITLE> titles) {
-		builder.addAllTitles(titles);
+	public void setTitles(Iterable<VoTitle> titles) {
+		List<VO_TITLE> list = Lists.newLinkedList();
+		for (VoTitle vo : titles) {
+			list.add(vo.getVO_TITLE());
+		}
+		builder.addAllTitles(list);
 	}
 
 	/**
@@ -98,8 +107,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	extendInfo
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setExtendInfo(VO_UNIT_EXTEND_INFO extendInfo) {
-		builder.setExtendInfo(extendInfo);
+	public void setExtendInfo(VoUnitExtendInfo extendInfo) {
+		builder.setExtendInfo(extendInfo.getVO_UNIT_EXTEND_INFO());
 	}
 
 	/**
@@ -115,8 +124,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	headTitle
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setHeadTitle(VO_TITLES headTitle) {
-		builder.setHeadTitle(headTitle);
+	public void setHeadTitle(VoTitles headTitle) {
+		builder.setHeadTitle(headTitle.getVO_TITLES());
 	}
 
 	/**
@@ -166,8 +175,12 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	options
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setOptions(Iterable<VO_OPTION> options) {
-		builder.addAllOptions(options);
+	public void setOptions(Iterable<VoOption> options) {
+		List<VO_OPTION> list = Lists.newLinkedList();
+		for (VoOption vo : options) {
+			list.add(vo.getVO_OPTION());
+		}
+		builder.addAllOptions(list);
 	}
 
 	/**
@@ -183,8 +196,12 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	attributes
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setAttributes(Iterable<VO_ATTRIBUTES> attributes) {
-		builder.addAllAttributes(attributes);
+	public void setAttributes(Iterable<VoAttributes> attributes) {
+		List<VO_ATTRIBUTES> list = Lists.newLinkedList();
+		for (VoAttributes vo : attributes) {
+			list.add(vo.getVO_ATTRIBUTES());
+		}
+		builder.addAllAttributes(list);
 	}
 
 	/**
@@ -200,8 +217,8 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @param	position
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setPosition(VO_POSITION position) {
-		builder.setPosition(position);
+	public void setPosition(VoPosition position) {
+		builder.setPosition(position.getVO_POSITION());
 	}
 
 	/**

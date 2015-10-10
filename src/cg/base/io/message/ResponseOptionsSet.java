@@ -46,8 +46,8 @@ public class ResponseOptionsSet extends ProtoMessage {
 	 * @param	option
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setOption(VO_OPTION option) {
-		builder.setOption(option);
+	public void setOption(VoOption option) {
+		builder.setOption(option.getVO_OPTION());
 	}
 
 	/**

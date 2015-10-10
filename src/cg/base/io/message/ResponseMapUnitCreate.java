@@ -29,8 +29,8 @@ public class ResponseMapUnitCreate extends ProtoMessage {
 	 * @param	baseInfo
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setBaseInfo(VO_UNIT_BASE_INFO baseInfo) {
-		builder.setBaseInfo(baseInfo);
+	public void setBaseInfo(VoUnitBaseInfo baseInfo) {
+		builder.setBaseInfo(baseInfo.getVO_UNIT_BASE_INFO());
 	}
 
 	/**
@@ -46,8 +46,8 @@ public class ResponseMapUnitCreate extends ProtoMessage {
 	 * @param	position
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setPosition(VO_POSITION position) {
-		builder.setPosition(position);
+	public void setPosition(VoPosition position) {
+		builder.setPosition(position.getVO_POSITION());
 	}
 
 	/**
@@ -63,8 +63,8 @@ public class ResponseMapUnitCreate extends ProtoMessage {
 	 * @param	extendInfo
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setExtendInfo(VO_MAP_UNIT_EXTEND extendInfo) {
-		builder.setExtendInfo(extendInfo);
+	public void setExtendInfo(VoMapUnitExtend extendInfo) {
+		builder.setExtendInfo(extendInfo.getVO_MAP_UNIT_EXTEND());
 	}
 
 	/**

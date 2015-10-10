@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.AccountProtos.*;
+import com.google.common.collect.Lists;
 import java.util.List;
 
 /**
@@ -29,8 +30,12 @@ public class ResponseAccountRoleList extends ProtoMessage {
 	 * @param	players
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setPlayers(Iterable<VO_ACCOUNT_PLAYER_INFO> players) {
-		builder.addAllPlayers(players);
+	public void setPlayers(Iterable<VoAccountPlayerInfo> players) {
+		List<VO_ACCOUNT_PLAYER_INFO> list = Lists.newLinkedList();
+		for (VoAccountPlayerInfo vo : players) {
+			list.add(vo.getVO_ACCOUNT_PLAYER_INFO());
+		}
+		builder.addAllPlayers(list);
 	}
 
 	/**
