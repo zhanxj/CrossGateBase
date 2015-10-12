@@ -1,8 +1,8 @@
 package cg.base.io.message;
 
 import cg.base.io.proto.VOProtos.*;
-import java.util.List;
 import com.google.common.collect.Lists;
+import java.util.List;
 
 /**
  * This is a auto make java file, so do not modify me.
@@ -117,16 +117,25 @@ public class VoItemIdentify {
 	 * @param	elements
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setElements(Iterable<Integer> elements) {
-		builder.addAllElements(elements);
+	public void setElements(Iterable<VoItemElement> elements) {
+		List<VO_ITEM_ELEMENT> list = Lists.newLinkedList();
+		for (VoItemElement vo : elements) {
+			list.add(vo.getVO_ITEM_ELEMENT());
+		}
+		builder.addAllElements(list);
 	}
 
 	/**
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<Integer> getElementsList() {
-		return vo.getElementsList();
+	public List<VoItemElement> getElementsList() {
+		List<VO_ITEM_ELEMENT> list = vo.getElementsList();
+		List<VoItemElement> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_ITEM_ELEMENT vo : list) {
+			ret.add(new VoItemElement(vo));
+		}
+		return ret;
 	}
 
 	/**

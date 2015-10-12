@@ -4,6 +4,9 @@ import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.BattleProtos.*;
 import cg.base.io.proto.MessageIdProto.MessageId;
+import cg.base.io.proto.VOProtos.*;
+import com.google.common.collect.Lists;
+import java.util.List;
 
 /**
  * This is a auto make java file, so do not modify me.
@@ -27,19 +30,45 @@ public class ResponseBattleFinish extends ProtoMessage {
 
 	/**
 	 * 
-	 * @param	targetId
+	 * @param	gains
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setTargetId(Integer targetId) {
-		builder.setTargetId(targetId);
+	public void setGains(Iterable<VoGains> gains) {
+		List<VO_GAINS> list = Lists.newLinkedList();
+		for (VoGains vo : gains) {
+			list.add(vo.getVO_GAINS());
+		}
+		builder.addAllGains(list);
 	}
 
 	/**
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public int getTargetId() {
-		int ret = builder.getTargetId();
+	public List<VoGains> getGainsList() {
+		List<VO_GAINS> list = builder.getGainsList();
+		List<VoGains> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_GAINS vo : list) {
+			ret.add(new VoGains(vo));
+		}
+		return ret;
+	}
+
+	/**
+	 * 
+	 * @param	isWin
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setIsWin(Boolean isWin) {
+		builder.setIsWin(isWin);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public Boolean getIsWin() {
+		Boolean ret = builder.getIsWin();
 		return ret;
 	}
 

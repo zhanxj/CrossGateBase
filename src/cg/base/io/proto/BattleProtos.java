@@ -2449,9 +2449,19 @@ public final class BattleProtos {
   public interface RESPONSE_BATTLE_FINISHOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required int32 targetId = 1;
-    boolean hasTargetId();
-    int getTargetId();
+    // required bool isWin = 1;
+    boolean hasIsWin();
+    boolean getIsWin();
+    
+    // repeated .VO_GAINS gains = 2;
+    java.util.List<cg.base.io.proto.VOProtos.VO_GAINS> 
+        getGainsList();
+    cg.base.io.proto.VOProtos.VO_GAINS getGains(int index);
+    int getGainsCount();
+    java.util.List<? extends cg.base.io.proto.VOProtos.VO_GAINSOrBuilder> 
+        getGainsOrBuilderList();
+    cg.base.io.proto.VOProtos.VO_GAINSOrBuilder getGainsOrBuilder(
+        int index);
   }
   public static final class RESPONSE_BATTLE_FINISH extends
       com.google.protobuf.GeneratedMessage
@@ -2482,27 +2492,55 @@ public final class BattleProtos {
     }
     
     private int bitField0_;
-    // required int32 targetId = 1;
-    public static final int TARGETID_FIELD_NUMBER = 1;
-    private int targetId_;
-    public boolean hasTargetId() {
+    // required bool isWin = 1;
+    public static final int ISWIN_FIELD_NUMBER = 1;
+    private boolean isWin_;
+    public boolean hasIsWin() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public int getTargetId() {
-      return targetId_;
+    public boolean getIsWin() {
+      return isWin_;
+    }
+    
+    // repeated .VO_GAINS gains = 2;
+    public static final int GAINS_FIELD_NUMBER = 2;
+    private java.util.List<cg.base.io.proto.VOProtos.VO_GAINS> gains_;
+    public java.util.List<cg.base.io.proto.VOProtos.VO_GAINS> getGainsList() {
+      return gains_;
+    }
+    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_GAINSOrBuilder> 
+        getGainsOrBuilderList() {
+      return gains_;
+    }
+    public int getGainsCount() {
+      return gains_.size();
+    }
+    public cg.base.io.proto.VOProtos.VO_GAINS getGains(int index) {
+      return gains_.get(index);
+    }
+    public cg.base.io.proto.VOProtos.VO_GAINSOrBuilder getGainsOrBuilder(
+        int index) {
+      return gains_.get(index);
     }
     
     private void initFields() {
-      targetId_ = 0;
+      isWin_ = false;
+      gains_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasTargetId()) {
+      if (!hasIsWin()) {
         memoizedIsInitialized = 0;
         return false;
+      }
+      for (int i = 0; i < getGainsCount(); i++) {
+        if (!getGains(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
       }
       memoizedIsInitialized = 1;
       return true;
@@ -2512,7 +2550,10 @@ public final class BattleProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, targetId_);
+        output.writeBool(1, isWin_);
+      }
+      for (int i = 0; i < gains_.size(); i++) {
+        output.writeMessage(2, gains_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -2525,7 +2566,11 @@ public final class BattleProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, targetId_);
+          .computeBoolSize(1, isWin_);
+      }
+      for (int i = 0; i < gains_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, gains_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2643,6 +2688,7 @@ public final class BattleProtos {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getGainsFieldBuilder();
         }
       }
       private static Builder create() {
@@ -2651,8 +2697,14 @@ public final class BattleProtos {
       
       public Builder clear() {
         super.clear();
-        targetId_ = 0;
+        isWin_ = false;
         bitField0_ = (bitField0_ & ~0x00000001);
+        if (gainsBuilder_ == null) {
+          gains_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          gainsBuilder_.clear();
+        }
         return this;
       }
       
@@ -2694,7 +2746,16 @@ public final class BattleProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.targetId_ = targetId_;
+        result.isWin_ = isWin_;
+        if (gainsBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            gains_ = java.util.Collections.unmodifiableList(gains_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.gains_ = gains_;
+        } else {
+          result.gains_ = gainsBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2711,17 +2772,49 @@ public final class BattleProtos {
       
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH other) {
         if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.getDefaultInstance()) return this;
-        if (other.hasTargetId()) {
-          setTargetId(other.getTargetId());
+        if (other.hasIsWin()) {
+          setIsWin(other.getIsWin());
+        }
+        if (gainsBuilder_ == null) {
+          if (!other.gains_.isEmpty()) {
+            if (gains_.isEmpty()) {
+              gains_ = other.gains_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureGainsIsMutable();
+              gains_.addAll(other.gains_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.gains_.isEmpty()) {
+            if (gainsBuilder_.isEmpty()) {
+              gainsBuilder_.dispose();
+              gainsBuilder_ = null;
+              gains_ = other.gains_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              gainsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getGainsFieldBuilder() : null;
+            } else {
+              gainsBuilder_.addAllMessages(other.gains_);
+            }
+          }
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
       
       public final boolean isInitialized() {
-        if (!hasTargetId()) {
+        if (!hasIsWin()) {
           
           return false;
+        }
+        for (int i = 0; i < getGainsCount(); i++) {
+          if (!getGains(i).isInitialized()) {
+            
+            return false;
+          }
         }
         return true;
       }
@@ -2751,7 +2844,13 @@ public final class BattleProtos {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              targetId_ = input.readInt32();
+              isWin_ = input.readBool();
+              break;
+            }
+            case 18: {
+              cg.base.io.proto.VOProtos.VO_GAINS.Builder subBuilder = cg.base.io.proto.VOProtos.VO_GAINS.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addGains(subBuilder.buildPartial());
               break;
             }
           }
@@ -2760,25 +2859,211 @@ public final class BattleProtos {
       
       private int bitField0_;
       
-      // required int32 targetId = 1;
-      private int targetId_ ;
-      public boolean hasTargetId() {
+      // required bool isWin = 1;
+      private boolean isWin_ ;
+      public boolean hasIsWin() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public int getTargetId() {
-        return targetId_;
+      public boolean getIsWin() {
+        return isWin_;
       }
-      public Builder setTargetId(int value) {
+      public Builder setIsWin(boolean value) {
         bitField0_ |= 0x00000001;
-        targetId_ = value;
+        isWin_ = value;
         onChanged();
         return this;
       }
-      public Builder clearTargetId() {
+      public Builder clearIsWin() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        targetId_ = 0;
+        isWin_ = false;
         onChanged();
         return this;
+      }
+      
+      // repeated .VO_GAINS gains = 2;
+      private java.util.List<cg.base.io.proto.VOProtos.VO_GAINS> gains_ =
+        java.util.Collections.emptyList();
+      private void ensureGainsIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          gains_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_GAINS>(gains_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_GAINS, cg.base.io.proto.VOProtos.VO_GAINS.Builder, cg.base.io.proto.VOProtos.VO_GAINSOrBuilder> gainsBuilder_;
+      
+      public java.util.List<cg.base.io.proto.VOProtos.VO_GAINS> getGainsList() {
+        if (gainsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(gains_);
+        } else {
+          return gainsBuilder_.getMessageList();
+        }
+      }
+      public int getGainsCount() {
+        if (gainsBuilder_ == null) {
+          return gains_.size();
+        } else {
+          return gainsBuilder_.getCount();
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_GAINS getGains(int index) {
+        if (gainsBuilder_ == null) {
+          return gains_.get(index);
+        } else {
+          return gainsBuilder_.getMessage(index);
+        }
+      }
+      public Builder setGains(
+          int index, cg.base.io.proto.VOProtos.VO_GAINS value) {
+        if (gainsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGainsIsMutable();
+          gains_.set(index, value);
+          onChanged();
+        } else {
+          gainsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setGains(
+          int index, cg.base.io.proto.VOProtos.VO_GAINS.Builder builderForValue) {
+        if (gainsBuilder_ == null) {
+          ensureGainsIsMutable();
+          gains_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          gainsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addGains(cg.base.io.proto.VOProtos.VO_GAINS value) {
+        if (gainsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGainsIsMutable();
+          gains_.add(value);
+          onChanged();
+        } else {
+          gainsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addGains(
+          int index, cg.base.io.proto.VOProtos.VO_GAINS value) {
+        if (gainsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGainsIsMutable();
+          gains_.add(index, value);
+          onChanged();
+        } else {
+          gainsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addGains(
+          cg.base.io.proto.VOProtos.VO_GAINS.Builder builderForValue) {
+        if (gainsBuilder_ == null) {
+          ensureGainsIsMutable();
+          gains_.add(builderForValue.build());
+          onChanged();
+        } else {
+          gainsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addGains(
+          int index, cg.base.io.proto.VOProtos.VO_GAINS.Builder builderForValue) {
+        if (gainsBuilder_ == null) {
+          ensureGainsIsMutable();
+          gains_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          gainsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllGains(
+          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_GAINS> values) {
+        if (gainsBuilder_ == null) {
+          ensureGainsIsMutable();
+          super.addAll(values, gains_);
+          onChanged();
+        } else {
+          gainsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearGains() {
+        if (gainsBuilder_ == null) {
+          gains_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          gainsBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeGains(int index) {
+        if (gainsBuilder_ == null) {
+          ensureGainsIsMutable();
+          gains_.remove(index);
+          onChanged();
+        } else {
+          gainsBuilder_.remove(index);
+        }
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_GAINS.Builder getGainsBuilder(
+          int index) {
+        return getGainsFieldBuilder().getBuilder(index);
+      }
+      public cg.base.io.proto.VOProtos.VO_GAINSOrBuilder getGainsOrBuilder(
+          int index) {
+        if (gainsBuilder_ == null) {
+          return gains_.get(index);  } else {
+          return gainsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_GAINSOrBuilder> 
+           getGainsOrBuilderList() {
+        if (gainsBuilder_ != null) {
+          return gainsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(gains_);
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_GAINS.Builder addGainsBuilder() {
+        return getGainsFieldBuilder().addBuilder(
+            cg.base.io.proto.VOProtos.VO_GAINS.getDefaultInstance());
+      }
+      public cg.base.io.proto.VOProtos.VO_GAINS.Builder addGainsBuilder(
+          int index) {
+        return getGainsFieldBuilder().addBuilder(
+            index, cg.base.io.proto.VOProtos.VO_GAINS.getDefaultInstance());
+      }
+      public java.util.List<cg.base.io.proto.VOProtos.VO_GAINS.Builder> 
+           getGainsBuilderList() {
+        return getGainsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_GAINS, cg.base.io.proto.VOProtos.VO_GAINS.Builder, cg.base.io.proto.VOProtos.VO_GAINSOrBuilder> 
+          getGainsFieldBuilder() {
+        if (gainsBuilder_ == null) {
+          gainsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_GAINS, cg.base.io.proto.VOProtos.VO_GAINS.Builder, cg.base.io.proto.VOProtos.VO_GAINSOrBuilder>(
+                  gains_,
+                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  getParentForChildren(),
+                  isClean());
+          gains_ = null;
+        }
+        return gainsBuilder_;
       }
       
       // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_FINISH)
@@ -2835,9 +3120,9 @@ public final class BattleProtos {
       "LE_INFO\022#\n\005teamB\030\003 \003(\0132\024.VO_UNIT_BATTLE_" +
       "INFO\")\n\025REQUEST_BATTLE_ATTACK\022\020\n\010targetI" +
       "d\030\001 \002(\005\"*\n\026RESPONSE_BATTLE_ACTION\022\020\n\010tar" +
-      "getId\030\001 \002(\005\"*\n\026RESPONSE_BATTLE_FINISH\022\020\n",
-      "\010targetId\030\001 \002(\005B \n\020cg.base.io.protoB\014Bat" +
-      "tleProtos"
+      "getId\030\001 \002(\005\"A\n\026RESPONSE_BATTLE_FINISH\022\r\n",
+      "\005isWin\030\001 \002(\010\022\030\n\005gains\030\002 \003(\0132\t.VO_GAINSB " +
+      "\n\020cg.base.io.protoB\014BattleProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -2881,7 +3166,7 @@ public final class BattleProtos {
           internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_BATTLE_FINISH_descriptor,
-              new java.lang.String[] { "TargetId", },
+              new java.lang.String[] { "IsWin", "Gains", },
               cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.class,
               cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISH.Builder.class);
           return null;
