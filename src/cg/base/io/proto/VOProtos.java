@@ -11886,43 +11886,10 @@ public final class VOProtos {
   public interface VO_PETOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .VO_UNIT_BASE_INFO baseInfo = 1;
-    boolean hasBaseInfo();
-    cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo();
-    cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder();
-    
-    // required .VO_UNIT_EXTEND_INFO extendInfo = 2;
-    boolean hasExtendInfo();
-    cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO getExtendInfo();
-    cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder getExtendInfoOrBuilder();
-    
-    // required int32 state = 3;
-    boolean hasState();
-    int getState();
-    
-    // required int32 loyal = 4;
-    boolean hasLoyal();
-    int getLoyal();
-    
-    // repeated int32 elements = 5;
-    java.util.List<java.lang.Integer> getElementsList();
-    int getElementsCount();
-    int getElements(int index);
-    
-    // repeated .VO_ATTRIBUTES attributes = 6;
-    java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> 
-        getAttributesList();
-    cg.base.io.proto.VOProtos.VO_ATTRIBUTES getAttributes(int index);
-    int getAttributesCount();
-    java.util.List<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> 
-        getAttributesOrBuilderList();
-    cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder getAttributesOrBuilder(
-        int index);
-    
-    // required .VO_SKILL_SET skillSet = 7;
-    boolean hasSkillSet();
-    cg.base.io.proto.VOProtos.VO_SKILL_SET getSkillSet();
-    cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder getSkillSetOrBuilder();
+    // required .VO_UNIT unitInfo = 1;
+    boolean hasUnitInfo();
+    cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo();
+    cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder();
   }
   public static final class VO_PET extends
       com.google.protobuf.GeneratedMessage
@@ -11953,149 +11920,32 @@ public final class VOProtos {
     }
     
     private int bitField0_;
-    // required .VO_UNIT_BASE_INFO baseInfo = 1;
-    public static final int BASEINFO_FIELD_NUMBER = 1;
-    private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_;
-    public boolean hasBaseInfo() {
+    // required .VO_UNIT unitInfo = 1;
+    public static final int UNITINFO_FIELD_NUMBER = 1;
+    private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_;
+    public boolean hasUnitInfo() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
-      return baseInfo_;
+    public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
+      return unitInfo_;
     }
-    public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
-      return baseInfo_;
-    }
-    
-    // required .VO_UNIT_EXTEND_INFO extendInfo = 2;
-    public static final int EXTENDINFO_FIELD_NUMBER = 2;
-    private cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO extendInfo_;
-    public boolean hasExtendInfo() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO getExtendInfo() {
-      return extendInfo_;
-    }
-    public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder getExtendInfoOrBuilder() {
-      return extendInfo_;
-    }
-    
-    // required int32 state = 3;
-    public static final int STATE_FIELD_NUMBER = 3;
-    private int state_;
-    public boolean hasState() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public int getState() {
-      return state_;
-    }
-    
-    // required int32 loyal = 4;
-    public static final int LOYAL_FIELD_NUMBER = 4;
-    private int loyal_;
-    public boolean hasLoyal() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    public int getLoyal() {
-      return loyal_;
-    }
-    
-    // repeated int32 elements = 5;
-    public static final int ELEMENTS_FIELD_NUMBER = 5;
-    private java.util.List<java.lang.Integer> elements_;
-    public java.util.List<java.lang.Integer>
-        getElementsList() {
-      return elements_;
-    }
-    public int getElementsCount() {
-      return elements_.size();
-    }
-    public int getElements(int index) {
-      return elements_.get(index);
-    }
-    
-    // repeated .VO_ATTRIBUTES attributes = 6;
-    public static final int ATTRIBUTES_FIELD_NUMBER = 6;
-    private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> attributes_;
-    public java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> getAttributesList() {
-      return attributes_;
-    }
-    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> 
-        getAttributesOrBuilderList() {
-      return attributes_;
-    }
-    public int getAttributesCount() {
-      return attributes_.size();
-    }
-    public cg.base.io.proto.VOProtos.VO_ATTRIBUTES getAttributes(int index) {
-      return attributes_.get(index);
-    }
-    public cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder getAttributesOrBuilder(
-        int index) {
-      return attributes_.get(index);
-    }
-    
-    // required .VO_SKILL_SET skillSet = 7;
-    public static final int SKILLSET_FIELD_NUMBER = 7;
-    private cg.base.io.proto.VOProtos.VO_SKILL_SET skillSet_;
-    public boolean hasSkillSet() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    public cg.base.io.proto.VOProtos.VO_SKILL_SET getSkillSet() {
-      return skillSet_;
-    }
-    public cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder getSkillSetOrBuilder() {
-      return skillSet_;
+    public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
+      return unitInfo_;
     }
     
     private void initFields() {
-      baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
-      extendInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance();
-      state_ = 0;
-      loyal_ = 0;
-      elements_ = java.util.Collections.emptyList();;
-      attributes_ = java.util.Collections.emptyList();
-      skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
+      unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasBaseInfo()) {
+      if (!hasUnitInfo()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasExtendInfo()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasState()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasLoyal()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasSkillSet()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getBaseInfo().isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getExtendInfo().isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      for (int i = 0; i < getAttributesCount(); i++) {
-        if (!getAttributes(i).isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
-      if (!getSkillSet().isInitialized()) {
+      if (!getUnitInfo().isInitialized()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -12107,25 +11957,7 @@ public final class VOProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(1, baseInfo_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeMessage(2, extendInfo_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, state_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, loyal_);
-      }
-      for (int i = 0; i < elements_.size(); i++) {
-        output.writeInt32(5, elements_.get(i));
-      }
-      for (int i = 0; i < attributes_.size(); i++) {
-        output.writeMessage(6, attributes_.get(i));
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeMessage(7, skillSet_);
+        output.writeMessage(1, unitInfo_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -12138,36 +11970,7 @@ public final class VOProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, baseInfo_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, extendInfo_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, state_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, loyal_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < elements_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeInt32SizeNoTag(elements_.get(i));
-        }
-        size += dataSize;
-        size += 1 * getElementsList().size();
-      }
-      for (int i = 0; i < attributes_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, attributes_.get(i));
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, skillSet_);
+          .computeMessageSize(1, unitInfo_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -12285,10 +12088,7 @@ public final class VOProtos {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getBaseInfoFieldBuilder();
-          getExtendInfoFieldBuilder();
-          getAttributesFieldBuilder();
-          getSkillSetFieldBuilder();
+          getUnitInfoFieldBuilder();
         }
       }
       private static Builder create() {
@@ -12297,36 +12097,12 @@ public final class VOProtos {
       
       public Builder clear() {
         super.clear();
-        if (baseInfoBuilder_ == null) {
-          baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+        if (unitInfoBuilder_ == null) {
+          unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
         } else {
-          baseInfoBuilder_.clear();
+          unitInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
-        if (extendInfoBuilder_ == null) {
-          extendInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance();
-        } else {
-          extendInfoBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        state_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        loyal_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        elements_ = java.util.Collections.emptyList();;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        if (attributesBuilder_ == null) {
-          attributes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
-        } else {
-          attributesBuilder_.clear();
-        }
-        if (skillSetBuilder_ == null) {
-          skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
-        } else {
-          skillSetBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000040);
         return this;
       }
       
@@ -12368,48 +12144,10 @@ public final class VOProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        if (baseInfoBuilder_ == null) {
-          result.baseInfo_ = baseInfo_;
+        if (unitInfoBuilder_ == null) {
+          result.unitInfo_ = unitInfo_;
         } else {
-          result.baseInfo_ = baseInfoBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        if (extendInfoBuilder_ == null) {
-          result.extendInfo_ = extendInfo_;
-        } else {
-          result.extendInfo_ = extendInfoBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.state_ = state_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.loyal_ = loyal_;
-        if (((bitField0_ & 0x00000010) == 0x00000010)) {
-          elements_ = java.util.Collections.unmodifiableList(elements_);
-          bitField0_ = (bitField0_ & ~0x00000010);
-        }
-        result.elements_ = elements_;
-        if (attributesBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) == 0x00000020)) {
-            attributes_ = java.util.Collections.unmodifiableList(attributes_);
-            bitField0_ = (bitField0_ & ~0x00000020);
-          }
-          result.attributes_ = attributes_;
-        } else {
-          result.attributes_ = attributesBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        if (skillSetBuilder_ == null) {
-          result.skillSet_ = skillSet_;
-        } else {
-          result.skillSet_ = skillSetBuilder_.build();
+          result.unitInfo_ = unitInfoBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -12427,97 +12165,19 @@ public final class VOProtos {
       
       public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_PET other) {
         if (other == cg.base.io.proto.VOProtos.VO_PET.getDefaultInstance()) return this;
-        if (other.hasBaseInfo()) {
-          mergeBaseInfo(other.getBaseInfo());
-        }
-        if (other.hasExtendInfo()) {
-          mergeExtendInfo(other.getExtendInfo());
-        }
-        if (other.hasState()) {
-          setState(other.getState());
-        }
-        if (other.hasLoyal()) {
-          setLoyal(other.getLoyal());
-        }
-        if (!other.elements_.isEmpty()) {
-          if (elements_.isEmpty()) {
-            elements_ = other.elements_;
-            bitField0_ = (bitField0_ & ~0x00000010);
-          } else {
-            ensureElementsIsMutable();
-            elements_.addAll(other.elements_);
-          }
-          onChanged();
-        }
-        if (attributesBuilder_ == null) {
-          if (!other.attributes_.isEmpty()) {
-            if (attributes_.isEmpty()) {
-              attributes_ = other.attributes_;
-              bitField0_ = (bitField0_ & ~0x00000020);
-            } else {
-              ensureAttributesIsMutable();
-              attributes_.addAll(other.attributes_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.attributes_.isEmpty()) {
-            if (attributesBuilder_.isEmpty()) {
-              attributesBuilder_.dispose();
-              attributesBuilder_ = null;
-              attributes_ = other.attributes_;
-              bitField0_ = (bitField0_ & ~0x00000020);
-              attributesBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getAttributesFieldBuilder() : null;
-            } else {
-              attributesBuilder_.addAllMessages(other.attributes_);
-            }
-          }
-        }
-        if (other.hasSkillSet()) {
-          mergeSkillSet(other.getSkillSet());
+        if (other.hasUnitInfo()) {
+          mergeUnitInfo(other.getUnitInfo());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
       
       public final boolean isInitialized() {
-        if (!hasBaseInfo()) {
+        if (!hasUnitInfo()) {
           
           return false;
         }
-        if (!hasExtendInfo()) {
-          
-          return false;
-        }
-        if (!hasState()) {
-          
-          return false;
-        }
-        if (!hasLoyal()) {
-          
-          return false;
-        }
-        if (!hasSkillSet()) {
-          
-          return false;
-        }
-        if (!getBaseInfo().isInitialized()) {
-          
-          return false;
-        }
-        if (!getExtendInfo().isInitialized()) {
-          
-          return false;
-        }
-        for (int i = 0; i < getAttributesCount(); i++) {
-          if (!getAttributes(i).isInitialized()) {
-            
-            return false;
-          }
-        }
-        if (!getSkillSet().isInitialized()) {
+        if (!getUnitInfo().isInitialized()) {
           
           return false;
         }
@@ -12548,60 +12208,12 @@ public final class VOProtos {
               break;
             }
             case 10: {
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.newBuilder();
-              if (hasBaseInfo()) {
-                subBuilder.mergeFrom(getBaseInfo());
+              cg.base.io.proto.VOProtos.VO_UNIT.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT.newBuilder();
+              if (hasUnitInfo()) {
+                subBuilder.mergeFrom(getUnitInfo());
               }
               input.readMessage(subBuilder, extensionRegistry);
-              setBaseInfo(subBuilder.buildPartial());
-              break;
-            }
-            case 18: {
-              cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.newBuilder();
-              if (hasExtendInfo()) {
-                subBuilder.mergeFrom(getExtendInfo());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setExtendInfo(subBuilder.buildPartial());
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              state_ = input.readInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              loyal_ = input.readInt32();
-              break;
-            }
-            case 40: {
-              ensureElementsIsMutable();
-              elements_.add(input.readInt32());
-              break;
-            }
-            case 42: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              while (input.getBytesUntilLimit() > 0) {
-                addElements(input.readInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 50: {
-              cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder subBuilder = cg.base.io.proto.VOProtos.VO_ATTRIBUTES.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addAttributes(subBuilder.buildPartial());
-              break;
-            }
-            case 58: {
-              cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder subBuilder = cg.base.io.proto.VOProtos.VO_SKILL_SET.newBuilder();
-              if (hasSkillSet()) {
-                subBuilder.mergeFrom(getSkillSet());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setSkillSet(subBuilder.buildPartial());
+              setUnitInfo(subBuilder.buildPartial());
               break;
             }
           }
@@ -12610,547 +12222,94 @@ public final class VOProtos {
       
       private int bitField0_;
       
-      // required .VO_UNIT_BASE_INFO baseInfo = 1;
-      private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+      // required .VO_UNIT unitInfo = 1;
+      private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> baseInfoBuilder_;
-      public boolean hasBaseInfo() {
+          cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> unitInfoBuilder_;
+      public boolean hasUnitInfo() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
-        if (baseInfoBuilder_ == null) {
-          return baseInfo_;
+      public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
+        if (unitInfoBuilder_ == null) {
+          return unitInfo_;
         } else {
-          return baseInfoBuilder_.getMessage();
+          return unitInfoBuilder_.getMessage();
         }
       }
-      public Builder setBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
-        if (baseInfoBuilder_ == null) {
+      public Builder setUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
+        if (unitInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          baseInfo_ = value;
+          unitInfo_ = value;
           onChanged();
         } else {
-          baseInfoBuilder_.setMessage(value);
+          unitInfoBuilder_.setMessage(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder setBaseInfo(
-          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder builderForValue) {
-        if (baseInfoBuilder_ == null) {
-          baseInfo_ = builderForValue.build();
+      public Builder setUnitInfo(
+          cg.base.io.proto.VOProtos.VO_UNIT.Builder builderForValue) {
+        if (unitInfoBuilder_ == null) {
+          unitInfo_ = builderForValue.build();
           onChanged();
         } else {
-          baseInfoBuilder_.setMessage(builderForValue.build());
+          unitInfoBuilder_.setMessage(builderForValue.build());
         }
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder mergeBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
-        if (baseInfoBuilder_ == null) {
+      public Builder mergeUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
+        if (unitInfoBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              baseInfo_ != cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance()) {
-            baseInfo_ =
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.newBuilder(baseInfo_).mergeFrom(value).buildPartial();
+              unitInfo_ != cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance()) {
+            unitInfo_ =
+              cg.base.io.proto.VOProtos.VO_UNIT.newBuilder(unitInfo_).mergeFrom(value).buildPartial();
           } else {
-            baseInfo_ = value;
+            unitInfo_ = value;
           }
           onChanged();
         } else {
-          baseInfoBuilder_.mergeFrom(value);
+          unitInfoBuilder_.mergeFrom(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder clearBaseInfo() {
-        if (baseInfoBuilder_ == null) {
-          baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+      public Builder clearUnitInfo() {
+        if (unitInfoBuilder_ == null) {
+          unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
           onChanged();
         } else {
-          baseInfoBuilder_.clear();
+          unitInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder getBaseInfoBuilder() {
+      public cg.base.io.proto.VOProtos.VO_UNIT.Builder getUnitInfoBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
-        return getBaseInfoFieldBuilder().getBuilder();
+        return getUnitInfoFieldBuilder().getBuilder();
       }
-      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
-        if (baseInfoBuilder_ != null) {
-          return baseInfoBuilder_.getMessageOrBuilder();
+      public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
+        if (unitInfoBuilder_ != null) {
+          return unitInfoBuilder_.getMessageOrBuilder();
         } else {
-          return baseInfo_;
+          return unitInfo_;
         }
       }
       private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> 
-          getBaseInfoFieldBuilder() {
-        if (baseInfoBuilder_ == null) {
-          baseInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder>(
-                  baseInfo_,
+          cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> 
+          getUnitInfoFieldBuilder() {
+        if (unitInfoBuilder_ == null) {
+          unitInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder>(
+                  unitInfo_,
                   getParentForChildren(),
                   isClean());
-          baseInfo_ = null;
+          unitInfo_ = null;
         }
-        return baseInfoBuilder_;
-      }
-      
-      // required .VO_UNIT_EXTEND_INFO extendInfo = 2;
-      private cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO extendInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder> extendInfoBuilder_;
-      public boolean hasExtendInfo() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO getExtendInfo() {
-        if (extendInfoBuilder_ == null) {
-          return extendInfo_;
-        } else {
-          return extendInfoBuilder_.getMessage();
-        }
-      }
-      public Builder setExtendInfo(cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO value) {
-        if (extendInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          extendInfo_ = value;
-          onChanged();
-        } else {
-          extendInfoBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      public Builder setExtendInfo(
-          cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder builderForValue) {
-        if (extendInfoBuilder_ == null) {
-          extendInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          extendInfoBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      public Builder mergeExtendInfo(cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO value) {
-        if (extendInfoBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              extendInfo_ != cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance()) {
-            extendInfo_ =
-              cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.newBuilder(extendInfo_).mergeFrom(value).buildPartial();
-          } else {
-            extendInfo_ = value;
-          }
-          onChanged();
-        } else {
-          extendInfoBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      public Builder clearExtendInfo() {
-        if (extendInfoBuilder_ == null) {
-          extendInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance();
-          onChanged();
-        } else {
-          extendInfoBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        return this;
-      }
-      public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder getExtendInfoBuilder() {
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return getExtendInfoFieldBuilder().getBuilder();
-      }
-      public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder getExtendInfoOrBuilder() {
-        if (extendInfoBuilder_ != null) {
-          return extendInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return extendInfo_;
-        }
-      }
-      private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder> 
-          getExtendInfoFieldBuilder() {
-        if (extendInfoBuilder_ == null) {
-          extendInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder>(
-                  extendInfo_,
-                  getParentForChildren(),
-                  isClean());
-          extendInfo_ = null;
-        }
-        return extendInfoBuilder_;
-      }
-      
-      // required int32 state = 3;
-      private int state_ ;
-      public boolean hasState() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      public int getState() {
-        return state_;
-      }
-      public Builder setState(int value) {
-        bitField0_ |= 0x00000004;
-        state_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearState() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        state_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // required int32 loyal = 4;
-      private int loyal_ ;
-      public boolean hasLoyal() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      public int getLoyal() {
-        return loyal_;
-      }
-      public Builder setLoyal(int value) {
-        bitField0_ |= 0x00000008;
-        loyal_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearLoyal() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        loyal_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // repeated int32 elements = 5;
-      private java.util.List<java.lang.Integer> elements_ = java.util.Collections.emptyList();;
-      private void ensureElementsIsMutable() {
-        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
-          elements_ = new java.util.ArrayList<java.lang.Integer>(elements_);
-          bitField0_ |= 0x00000010;
-         }
-      }
-      public java.util.List<java.lang.Integer>
-          getElementsList() {
-        return java.util.Collections.unmodifiableList(elements_);
-      }
-      public int getElementsCount() {
-        return elements_.size();
-      }
-      public int getElements(int index) {
-        return elements_.get(index);
-      }
-      public Builder setElements(
-          int index, int value) {
-        ensureElementsIsMutable();
-        elements_.set(index, value);
-        onChanged();
-        return this;
-      }
-      public Builder addElements(int value) {
-        ensureElementsIsMutable();
-        elements_.add(value);
-        onChanged();
-        return this;
-      }
-      public Builder addAllElements(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureElementsIsMutable();
-        super.addAll(values, elements_);
-        onChanged();
-        return this;
-      }
-      public Builder clearElements() {
-        elements_ = java.util.Collections.emptyList();;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        onChanged();
-        return this;
-      }
-      
-      // repeated .VO_ATTRIBUTES attributes = 6;
-      private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> attributes_ =
-        java.util.Collections.emptyList();
-      private void ensureAttributesIsMutable() {
-        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
-          attributes_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_ATTRIBUTES>(attributes_);
-          bitField0_ |= 0x00000020;
-         }
-      }
-      
-      private com.google.protobuf.RepeatedFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_ATTRIBUTES, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder, cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> attributesBuilder_;
-      
-      public java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> getAttributesList() {
-        if (attributesBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(attributes_);
-        } else {
-          return attributesBuilder_.getMessageList();
-        }
-      }
-      public int getAttributesCount() {
-        if (attributesBuilder_ == null) {
-          return attributes_.size();
-        } else {
-          return attributesBuilder_.getCount();
-        }
-      }
-      public cg.base.io.proto.VOProtos.VO_ATTRIBUTES getAttributes(int index) {
-        if (attributesBuilder_ == null) {
-          return attributes_.get(index);
-        } else {
-          return attributesBuilder_.getMessage(index);
-        }
-      }
-      public Builder setAttributes(
-          int index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES value) {
-        if (attributesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureAttributesIsMutable();
-          attributes_.set(index, value);
-          onChanged();
-        } else {
-          attributesBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      public Builder setAttributes(
-          int index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder builderForValue) {
-        if (attributesBuilder_ == null) {
-          ensureAttributesIsMutable();
-          attributes_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          attributesBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      public Builder addAttributes(cg.base.io.proto.VOProtos.VO_ATTRIBUTES value) {
-        if (attributesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureAttributesIsMutable();
-          attributes_.add(value);
-          onChanged();
-        } else {
-          attributesBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      public Builder addAttributes(
-          int index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES value) {
-        if (attributesBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureAttributesIsMutable();
-          attributes_.add(index, value);
-          onChanged();
-        } else {
-          attributesBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      public Builder addAttributes(
-          cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder builderForValue) {
-        if (attributesBuilder_ == null) {
-          ensureAttributesIsMutable();
-          attributes_.add(builderForValue.build());
-          onChanged();
-        } else {
-          attributesBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      public Builder addAttributes(
-          int index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder builderForValue) {
-        if (attributesBuilder_ == null) {
-          ensureAttributesIsMutable();
-          attributes_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          attributesBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      public Builder addAllAttributes(
-          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTES> values) {
-        if (attributesBuilder_ == null) {
-          ensureAttributesIsMutable();
-          super.addAll(values, attributes_);
-          onChanged();
-        } else {
-          attributesBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      public Builder clearAttributes() {
-        if (attributesBuilder_ == null) {
-          attributes_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
-          onChanged();
-        } else {
-          attributesBuilder_.clear();
-        }
-        return this;
-      }
-      public Builder removeAttributes(int index) {
-        if (attributesBuilder_ == null) {
-          ensureAttributesIsMutable();
-          attributes_.remove(index);
-          onChanged();
-        } else {
-          attributesBuilder_.remove(index);
-        }
-        return this;
-      }
-      public cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder getAttributesBuilder(
-          int index) {
-        return getAttributesFieldBuilder().getBuilder(index);
-      }
-      public cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder getAttributesOrBuilder(
-          int index) {
-        if (attributesBuilder_ == null) {
-          return attributes_.get(index);  } else {
-          return attributesBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> 
-           getAttributesOrBuilderList() {
-        if (attributesBuilder_ != null) {
-          return attributesBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(attributes_);
-        }
-      }
-      public cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder addAttributesBuilder() {
-        return getAttributesFieldBuilder().addBuilder(
-            cg.base.io.proto.VOProtos.VO_ATTRIBUTES.getDefaultInstance());
-      }
-      public cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder addAttributesBuilder(
-          int index) {
-        return getAttributesFieldBuilder().addBuilder(
-            index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.getDefaultInstance());
-      }
-      public java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder> 
-           getAttributesBuilderList() {
-        return getAttributesFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_ATTRIBUTES, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder, cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> 
-          getAttributesFieldBuilder() {
-        if (attributesBuilder_ == null) {
-          attributesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              cg.base.io.proto.VOProtos.VO_ATTRIBUTES, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder, cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder>(
-                  attributes_,
-                  ((bitField0_ & 0x00000020) == 0x00000020),
-                  getParentForChildren(),
-                  isClean());
-          attributes_ = null;
-        }
-        return attributesBuilder_;
-      }
-      
-      // required .VO_SKILL_SET skillSet = 7;
-      private cg.base.io.proto.VOProtos.VO_SKILL_SET skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_SKILL_SET, cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder, cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder> skillSetBuilder_;
-      public boolean hasSkillSet() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
-      }
-      public cg.base.io.proto.VOProtos.VO_SKILL_SET getSkillSet() {
-        if (skillSetBuilder_ == null) {
-          return skillSet_;
-        } else {
-          return skillSetBuilder_.getMessage();
-        }
-      }
-      public Builder setSkillSet(cg.base.io.proto.VOProtos.VO_SKILL_SET value) {
-        if (skillSetBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          skillSet_ = value;
-          onChanged();
-        } else {
-          skillSetBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000040;
-        return this;
-      }
-      public Builder setSkillSet(
-          cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder builderForValue) {
-        if (skillSetBuilder_ == null) {
-          skillSet_ = builderForValue.build();
-          onChanged();
-        } else {
-          skillSetBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000040;
-        return this;
-      }
-      public Builder mergeSkillSet(cg.base.io.proto.VOProtos.VO_SKILL_SET value) {
-        if (skillSetBuilder_ == null) {
-          if (((bitField0_ & 0x00000040) == 0x00000040) &&
-              skillSet_ != cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance()) {
-            skillSet_ =
-              cg.base.io.proto.VOProtos.VO_SKILL_SET.newBuilder(skillSet_).mergeFrom(value).buildPartial();
-          } else {
-            skillSet_ = value;
-          }
-          onChanged();
-        } else {
-          skillSetBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000040;
-        return this;
-      }
-      public Builder clearSkillSet() {
-        if (skillSetBuilder_ == null) {
-          skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
-          onChanged();
-        } else {
-          skillSetBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000040);
-        return this;
-      }
-      public cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder getSkillSetBuilder() {
-        bitField0_ |= 0x00000040;
-        onChanged();
-        return getSkillSetFieldBuilder().getBuilder();
-      }
-      public cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder getSkillSetOrBuilder() {
-        if (skillSetBuilder_ != null) {
-          return skillSetBuilder_.getMessageOrBuilder();
-        } else {
-          return skillSet_;
-        }
-      }
-      private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_SKILL_SET, cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder, cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder> 
-          getSkillSetFieldBuilder() {
-        if (skillSetBuilder_ == null) {
-          skillSetBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              cg.base.io.proto.VOProtos.VO_SKILL_SET, cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder, cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder>(
-                  skillSet_,
-                  getParentForChildren(),
-                  isClean());
-          skillSet_ = null;
-        }
-        return skillSetBuilder_;
+        return unitInfoBuilder_;
       }
       
       // @@protoc_insertion_point(builder_scope:VO_PET)
@@ -14759,6 +13918,3687 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_MAP_CELL)
   }
   
+  public interface VO_UNITOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .VO_UNIT_BASE_INFO baseInfo = 1;
+    boolean hasBaseInfo();
+    cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo();
+    cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder();
+    
+    // optional .VO_POSITION position = 2;
+    boolean hasPosition();
+    cg.base.io.proto.VOProtos.VO_POSITION getPosition();
+    cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder getPositionOrBuilder();
+    
+    // optional .VO_TITLES headTitle = 3;
+    boolean hasHeadTitle();
+    cg.base.io.proto.VOProtos.VO_TITLES getHeadTitle();
+    cg.base.io.proto.VOProtos.VO_TITLESOrBuilder getHeadTitleOrBuilder();
+    
+    // optional .VO_UNIT_EXTEND_INFO extendInfo = 4;
+    boolean hasExtendInfo();
+    cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO getExtendInfo();
+    cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder getExtendInfoOrBuilder();
+    
+    // optional int32 battleScore = 5;
+    boolean hasBattleScore();
+    int getBattleScore();
+    
+    // optional bool battleLocal = 6;
+    boolean hasBattleLocal();
+    boolean getBattleLocal();
+    
+    // repeated .VO_TITLE titles = 7;
+    java.util.List<cg.base.io.proto.VOProtos.VO_TITLE> 
+        getTitlesList();
+    cg.base.io.proto.VOProtos.VO_TITLE getTitles(int index);
+    int getTitlesCount();
+    java.util.List<? extends cg.base.io.proto.VOProtos.VO_TITLEOrBuilder> 
+        getTitlesOrBuilderList();
+    cg.base.io.proto.VOProtos.VO_TITLEOrBuilder getTitlesOrBuilder(
+        int index);
+    
+    // repeated int32 elements = 8;
+    java.util.List<java.lang.Integer> getElementsList();
+    int getElementsCount();
+    int getElements(int index);
+    
+    // repeated .VO_ATTRIBUTES attributes = 9;
+    java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> 
+        getAttributesList();
+    cg.base.io.proto.VOProtos.VO_ATTRIBUTES getAttributes(int index);
+    int getAttributesCount();
+    java.util.List<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> 
+        getAttributesOrBuilderList();
+    cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder getAttributesOrBuilder(
+        int index);
+    
+    // optional int32 money = 10;
+    boolean hasMoney();
+    int getMoney();
+    
+    // repeated .VO_BAG bags = 11;
+    java.util.List<cg.base.io.proto.VOProtos.VO_BAG> 
+        getBagsList();
+    cg.base.io.proto.VOProtos.VO_BAG getBags(int index);
+    int getBagsCount();
+    java.util.List<? extends cg.base.io.proto.VOProtos.VO_BAGOrBuilder> 
+        getBagsOrBuilderList();
+    cg.base.io.proto.VOProtos.VO_BAGOrBuilder getBagsOrBuilder(
+        int index);
+    
+    // optional string job = 12;
+    boolean hasJob();
+    String getJob();
+    
+    // optional .VO_SKILL_SET skillSet = 13;
+    boolean hasSkillSet();
+    cg.base.io.proto.VOProtos.VO_SKILL_SET getSkillSet();
+    cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder getSkillSetOrBuilder();
+    
+    // repeated .VO_OPTION options = 14;
+    java.util.List<cg.base.io.proto.VOProtos.VO_OPTION> 
+        getOptionsList();
+    cg.base.io.proto.VOProtos.VO_OPTION getOptions(int index);
+    int getOptionsCount();
+    java.util.List<? extends cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> 
+        getOptionsOrBuilderList();
+    cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionsOrBuilder(
+        int index);
+    
+    // optional int32 state = 15;
+    boolean hasState();
+    int getState();
+    
+    // optional int32 loyal = 16;
+    boolean hasLoyal();
+    int getLoyal();
+    
+    // optional string talkType = 17;
+    boolean hasTalkType();
+    String getTalkType();
+    
+    // optional int32 index = 18;
+    boolean hasIndex();
+    int getIndex();
+    
+    // optional int32 ownerInstanceId = 19;
+    boolean hasOwnerInstanceId();
+    int getOwnerInstanceId();
+    
+    // optional .VO_PET_SET petSet = 20;
+    boolean hasPetSet();
+    cg.base.io.proto.VOProtos.VO_PET_SET getPetSet();
+    cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder getPetSetOrBuilder();
+  }
+  public static final class VO_UNIT extends
+      com.google.protobuf.GeneratedMessage
+      implements VO_UNITOrBuilder {
+    // Use VO_UNIT.newBuilder() to construct.
+    private VO_UNIT(Builder builder) {
+      super(builder);
+    }
+    private VO_UNIT(boolean noInit) {}
+    
+    private static final VO_UNIT defaultInstance;
+    public static VO_UNIT getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public VO_UNIT getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_UNIT_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_UNIT_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .VO_UNIT_BASE_INFO baseInfo = 1;
+    public static final int BASEINFO_FIELD_NUMBER = 1;
+    private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_;
+    public boolean hasBaseInfo() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
+      return baseInfo_;
+    }
+    public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
+      return baseInfo_;
+    }
+    
+    // optional .VO_POSITION position = 2;
+    public static final int POSITION_FIELD_NUMBER = 2;
+    private cg.base.io.proto.VOProtos.VO_POSITION position_;
+    public boolean hasPosition() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public cg.base.io.proto.VOProtos.VO_POSITION getPosition() {
+      return position_;
+    }
+    public cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder getPositionOrBuilder() {
+      return position_;
+    }
+    
+    // optional .VO_TITLES headTitle = 3;
+    public static final int HEADTITLE_FIELD_NUMBER = 3;
+    private cg.base.io.proto.VOProtos.VO_TITLES headTitle_;
+    public boolean hasHeadTitle() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public cg.base.io.proto.VOProtos.VO_TITLES getHeadTitle() {
+      return headTitle_;
+    }
+    public cg.base.io.proto.VOProtos.VO_TITLESOrBuilder getHeadTitleOrBuilder() {
+      return headTitle_;
+    }
+    
+    // optional .VO_UNIT_EXTEND_INFO extendInfo = 4;
+    public static final int EXTENDINFO_FIELD_NUMBER = 4;
+    private cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO extendInfo_;
+    public boolean hasExtendInfo() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO getExtendInfo() {
+      return extendInfo_;
+    }
+    public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder getExtendInfoOrBuilder() {
+      return extendInfo_;
+    }
+    
+    // optional int32 battleScore = 5;
+    public static final int BATTLESCORE_FIELD_NUMBER = 5;
+    private int battleScore_;
+    public boolean hasBattleScore() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    public int getBattleScore() {
+      return battleScore_;
+    }
+    
+    // optional bool battleLocal = 6;
+    public static final int BATTLELOCAL_FIELD_NUMBER = 6;
+    private boolean battleLocal_;
+    public boolean hasBattleLocal() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    public boolean getBattleLocal() {
+      return battleLocal_;
+    }
+    
+    // repeated .VO_TITLE titles = 7;
+    public static final int TITLES_FIELD_NUMBER = 7;
+    private java.util.List<cg.base.io.proto.VOProtos.VO_TITLE> titles_;
+    public java.util.List<cg.base.io.proto.VOProtos.VO_TITLE> getTitlesList() {
+      return titles_;
+    }
+    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_TITLEOrBuilder> 
+        getTitlesOrBuilderList() {
+      return titles_;
+    }
+    public int getTitlesCount() {
+      return titles_.size();
+    }
+    public cg.base.io.proto.VOProtos.VO_TITLE getTitles(int index) {
+      return titles_.get(index);
+    }
+    public cg.base.io.proto.VOProtos.VO_TITLEOrBuilder getTitlesOrBuilder(
+        int index) {
+      return titles_.get(index);
+    }
+    
+    // repeated int32 elements = 8;
+    public static final int ELEMENTS_FIELD_NUMBER = 8;
+    private java.util.List<java.lang.Integer> elements_;
+    public java.util.List<java.lang.Integer>
+        getElementsList() {
+      return elements_;
+    }
+    public int getElementsCount() {
+      return elements_.size();
+    }
+    public int getElements(int index) {
+      return elements_.get(index);
+    }
+    
+    // repeated .VO_ATTRIBUTES attributes = 9;
+    public static final int ATTRIBUTES_FIELD_NUMBER = 9;
+    private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> attributes_;
+    public java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> getAttributesList() {
+      return attributes_;
+    }
+    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> 
+        getAttributesOrBuilderList() {
+      return attributes_;
+    }
+    public int getAttributesCount() {
+      return attributes_.size();
+    }
+    public cg.base.io.proto.VOProtos.VO_ATTRIBUTES getAttributes(int index) {
+      return attributes_.get(index);
+    }
+    public cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder getAttributesOrBuilder(
+        int index) {
+      return attributes_.get(index);
+    }
+    
+    // optional int32 money = 10;
+    public static final int MONEY_FIELD_NUMBER = 10;
+    private int money_;
+    public boolean hasMoney() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    public int getMoney() {
+      return money_;
+    }
+    
+    // repeated .VO_BAG bags = 11;
+    public static final int BAGS_FIELD_NUMBER = 11;
+    private java.util.List<cg.base.io.proto.VOProtos.VO_BAG> bags_;
+    public java.util.List<cg.base.io.proto.VOProtos.VO_BAG> getBagsList() {
+      return bags_;
+    }
+    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_BAGOrBuilder> 
+        getBagsOrBuilderList() {
+      return bags_;
+    }
+    public int getBagsCount() {
+      return bags_.size();
+    }
+    public cg.base.io.proto.VOProtos.VO_BAG getBags(int index) {
+      return bags_.get(index);
+    }
+    public cg.base.io.proto.VOProtos.VO_BAGOrBuilder getBagsOrBuilder(
+        int index) {
+      return bags_.get(index);
+    }
+    
+    // optional string job = 12;
+    public static final int JOB_FIELD_NUMBER = 12;
+    private java.lang.Object job_;
+    public boolean hasJob() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    public String getJob() {
+      java.lang.Object ref = job_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          job_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getJobBytes() {
+      java.lang.Object ref = job_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        job_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // optional .VO_SKILL_SET skillSet = 13;
+    public static final int SKILLSET_FIELD_NUMBER = 13;
+    private cg.base.io.proto.VOProtos.VO_SKILL_SET skillSet_;
+    public boolean hasSkillSet() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    public cg.base.io.proto.VOProtos.VO_SKILL_SET getSkillSet() {
+      return skillSet_;
+    }
+    public cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder getSkillSetOrBuilder() {
+      return skillSet_;
+    }
+    
+    // repeated .VO_OPTION options = 14;
+    public static final int OPTIONS_FIELD_NUMBER = 14;
+    private java.util.List<cg.base.io.proto.VOProtos.VO_OPTION> options_;
+    public java.util.List<cg.base.io.proto.VOProtos.VO_OPTION> getOptionsList() {
+      return options_;
+    }
+    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> 
+        getOptionsOrBuilderList() {
+      return options_;
+    }
+    public int getOptionsCount() {
+      return options_.size();
+    }
+    public cg.base.io.proto.VOProtos.VO_OPTION getOptions(int index) {
+      return options_.get(index);
+    }
+    public cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionsOrBuilder(
+        int index) {
+      return options_.get(index);
+    }
+    
+    // optional int32 state = 15;
+    public static final int STATE_FIELD_NUMBER = 15;
+    private int state_;
+    public boolean hasState() {
+      return ((bitField0_ & 0x00000200) == 0x00000200);
+    }
+    public int getState() {
+      return state_;
+    }
+    
+    // optional int32 loyal = 16;
+    public static final int LOYAL_FIELD_NUMBER = 16;
+    private int loyal_;
+    public boolean hasLoyal() {
+      return ((bitField0_ & 0x00000400) == 0x00000400);
+    }
+    public int getLoyal() {
+      return loyal_;
+    }
+    
+    // optional string talkType = 17;
+    public static final int TALKTYPE_FIELD_NUMBER = 17;
+    private java.lang.Object talkType_;
+    public boolean hasTalkType() {
+      return ((bitField0_ & 0x00000800) == 0x00000800);
+    }
+    public String getTalkType() {
+      java.lang.Object ref = talkType_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          talkType_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getTalkTypeBytes() {
+      java.lang.Object ref = talkType_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        talkType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // optional int32 index = 18;
+    public static final int INDEX_FIELD_NUMBER = 18;
+    private int index_;
+    public boolean hasIndex() {
+      return ((bitField0_ & 0x00001000) == 0x00001000);
+    }
+    public int getIndex() {
+      return index_;
+    }
+    
+    // optional int32 ownerInstanceId = 19;
+    public static final int OWNERINSTANCEID_FIELD_NUMBER = 19;
+    private int ownerInstanceId_;
+    public boolean hasOwnerInstanceId() {
+      return ((bitField0_ & 0x00002000) == 0x00002000);
+    }
+    public int getOwnerInstanceId() {
+      return ownerInstanceId_;
+    }
+    
+    // optional .VO_PET_SET petSet = 20;
+    public static final int PETSET_FIELD_NUMBER = 20;
+    private cg.base.io.proto.VOProtos.VO_PET_SET petSet_;
+    public boolean hasPetSet() {
+      return ((bitField0_ & 0x00004000) == 0x00004000);
+    }
+    public cg.base.io.proto.VOProtos.VO_PET_SET getPetSet() {
+      return petSet_;
+    }
+    public cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder getPetSetOrBuilder() {
+      return petSet_;
+    }
+    
+    private void initFields() {
+      baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+      position_ = cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance();
+      headTitle_ = cg.base.io.proto.VOProtos.VO_TITLES.getDefaultInstance();
+      extendInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance();
+      battleScore_ = 0;
+      battleLocal_ = false;
+      titles_ = java.util.Collections.emptyList();
+      elements_ = java.util.Collections.emptyList();;
+      attributes_ = java.util.Collections.emptyList();
+      money_ = 0;
+      bags_ = java.util.Collections.emptyList();
+      job_ = "";
+      skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
+      options_ = java.util.Collections.emptyList();
+      state_ = 0;
+      loyal_ = 0;
+      talkType_ = "";
+      index_ = 0;
+      ownerInstanceId_ = 0;
+      petSet_ = cg.base.io.proto.VOProtos.VO_PET_SET.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasBaseInfo()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!getBaseInfo().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (hasPosition()) {
+        if (!getPosition().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasHeadTitle()) {
+        if (!getHeadTitle().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasExtendInfo()) {
+        if (!getExtendInfo().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      for (int i = 0; i < getTitlesCount(); i++) {
+        if (!getTitles(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      for (int i = 0; i < getAttributesCount(); i++) {
+        if (!getAttributes(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      for (int i = 0; i < getBagsCount(); i++) {
+        if (!getBags(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSkillSet()) {
+        if (!getSkillSet().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      for (int i = 0; i < getOptionsCount(); i++) {
+        if (!getOptions(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasPetSet()) {
+        if (!getPetSet().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, baseInfo_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, position_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, headTitle_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(4, extendInfo_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(5, battleScore_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeBool(6, battleLocal_);
+      }
+      for (int i = 0; i < titles_.size(); i++) {
+        output.writeMessage(7, titles_.get(i));
+      }
+      for (int i = 0; i < elements_.size(); i++) {
+        output.writeInt32(8, elements_.get(i));
+      }
+      for (int i = 0; i < attributes_.size(); i++) {
+        output.writeMessage(9, attributes_.get(i));
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(10, money_);
+      }
+      for (int i = 0; i < bags_.size(); i++) {
+        output.writeMessage(11, bags_.get(i));
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeBytes(12, getJobBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeMessage(13, skillSet_);
+      }
+      for (int i = 0; i < options_.size(); i++) {
+        output.writeMessage(14, options_.get(i));
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        output.writeInt32(15, state_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        output.writeInt32(16, loyal_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        output.writeBytes(17, getTalkTypeBytes());
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        output.writeInt32(18, index_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        output.writeInt32(19, ownerInstanceId_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        output.writeMessage(20, petSet_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, baseInfo_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, position_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, headTitle_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, extendInfo_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, battleScore_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, battleLocal_);
+      }
+      for (int i = 0; i < titles_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, titles_.get(i));
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < elements_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt32SizeNoTag(elements_.get(i));
+        }
+        size += dataSize;
+        size += 1 * getElementsList().size();
+      }
+      for (int i = 0; i < attributes_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, attributes_.get(i));
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, money_);
+      }
+      for (int i = 0; i < bags_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, bags_.get(i));
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(12, getJobBytes());
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, skillSet_);
+      }
+      for (int i = 0; i < options_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, options_.get(i));
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, state_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(16, loyal_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(17, getTalkTypeBytes());
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(18, index_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(19, ownerInstanceId_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20, petSet_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_UNIT parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.VOProtos.VO_UNIT prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.VOProtos.VO_UNITOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_UNIT_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_UNIT_fieldAccessorTable;
+      }
+      
+      // Construct using cg.base.io.proto.VOProtos.VO_UNIT.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getBaseInfoFieldBuilder();
+          getPositionFieldBuilder();
+          getHeadTitleFieldBuilder();
+          getExtendInfoFieldBuilder();
+          getTitlesFieldBuilder();
+          getAttributesFieldBuilder();
+          getBagsFieldBuilder();
+          getSkillSetFieldBuilder();
+          getOptionsFieldBuilder();
+          getPetSetFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (baseInfoBuilder_ == null) {
+          baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+        } else {
+          baseInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (positionBuilder_ == null) {
+          position_ = cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance();
+        } else {
+          positionBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (headTitleBuilder_ == null) {
+          headTitle_ = cg.base.io.proto.VOProtos.VO_TITLES.getDefaultInstance();
+        } else {
+          headTitleBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        if (extendInfoBuilder_ == null) {
+          extendInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance();
+        } else {
+          extendInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        battleScore_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        battleLocal_ = false;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        if (titlesBuilder_ == null) {
+          titles_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+        } else {
+          titlesBuilder_.clear();
+        }
+        elements_ = java.util.Collections.emptyList();;
+        bitField0_ = (bitField0_ & ~0x00000080);
+        if (attributesBuilder_ == null) {
+          attributes_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+        } else {
+          attributesBuilder_.clear();
+        }
+        money_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000200);
+        if (bagsBuilder_ == null) {
+          bags_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000400);
+        } else {
+          bagsBuilder_.clear();
+        }
+        job_ = "";
+        bitField0_ = (bitField0_ & ~0x00000800);
+        if (skillSetBuilder_ == null) {
+          skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
+        } else {
+          skillSetBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00001000);
+        if (optionsBuilder_ == null) {
+          options_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00002000);
+        } else {
+          optionsBuilder_.clear();
+        }
+        state_ = 0;
+        bitField0_ = (bitField0_ & ~0x00004000);
+        loyal_ = 0;
+        bitField0_ = (bitField0_ & ~0x00008000);
+        talkType_ = "";
+        bitField0_ = (bitField0_ & ~0x00010000);
+        index_ = 0;
+        bitField0_ = (bitField0_ & ~0x00020000);
+        ownerInstanceId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00040000);
+        if (petSetBuilder_ == null) {
+          petSet_ = cg.base.io.proto.VOProtos.VO_PET_SET.getDefaultInstance();
+        } else {
+          petSetBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00080000);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.VOProtos.VO_UNIT.getDescriptor();
+      }
+      
+      public cg.base.io.proto.VOProtos.VO_UNIT getDefaultInstanceForType() {
+        return cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
+      }
+      
+      public cg.base.io.proto.VOProtos.VO_UNIT build() {
+        cg.base.io.proto.VOProtos.VO_UNIT result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private cg.base.io.proto.VOProtos.VO_UNIT buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.VOProtos.VO_UNIT result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public cg.base.io.proto.VOProtos.VO_UNIT buildPartial() {
+        cg.base.io.proto.VOProtos.VO_UNIT result = new cg.base.io.proto.VOProtos.VO_UNIT(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (baseInfoBuilder_ == null) {
+          result.baseInfo_ = baseInfo_;
+        } else {
+          result.baseInfo_ = baseInfoBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (positionBuilder_ == null) {
+          result.position_ = position_;
+        } else {
+          result.position_ = positionBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (headTitleBuilder_ == null) {
+          result.headTitle_ = headTitle_;
+        } else {
+          result.headTitle_ = headTitleBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        if (extendInfoBuilder_ == null) {
+          result.extendInfo_ = extendInfo_;
+        } else {
+          result.extendInfo_ = extendInfoBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.battleScore_ = battleScore_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.battleLocal_ = battleLocal_;
+        if (titlesBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) == 0x00000040)) {
+            titles_ = java.util.Collections.unmodifiableList(titles_);
+            bitField0_ = (bitField0_ & ~0x00000040);
+          }
+          result.titles_ = titles_;
+        } else {
+          result.titles_ = titlesBuilder_.build();
+        }
+        if (((bitField0_ & 0x00000080) == 0x00000080)) {
+          elements_ = java.util.Collections.unmodifiableList(elements_);
+          bitField0_ = (bitField0_ & ~0x00000080);
+        }
+        result.elements_ = elements_;
+        if (attributesBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) == 0x00000100)) {
+            attributes_ = java.util.Collections.unmodifiableList(attributes_);
+            bitField0_ = (bitField0_ & ~0x00000100);
+          }
+          result.attributes_ = attributes_;
+        } else {
+          result.attributes_ = attributesBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.money_ = money_;
+        if (bagsBuilder_ == null) {
+          if (((bitField0_ & 0x00000400) == 0x00000400)) {
+            bags_ = java.util.Collections.unmodifiableList(bags_);
+            bitField0_ = (bitField0_ & ~0x00000400);
+          }
+          result.bags_ = bags_;
+        } else {
+          result.bags_ = bagsBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.job_ = job_;
+        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        if (skillSetBuilder_ == null) {
+          result.skillSet_ = skillSet_;
+        } else {
+          result.skillSet_ = skillSetBuilder_.build();
+        }
+        if (optionsBuilder_ == null) {
+          if (((bitField0_ & 0x00002000) == 0x00002000)) {
+            options_ = java.util.Collections.unmodifiableList(options_);
+            bitField0_ = (bitField0_ & ~0x00002000);
+          }
+          result.options_ = options_;
+        } else {
+          result.options_ = optionsBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+          to_bitField0_ |= 0x00000200;
+        }
+        result.state_ = state_;
+        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
+          to_bitField0_ |= 0x00000400;
+        }
+        result.loyal_ = loyal_;
+        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
+          to_bitField0_ |= 0x00000800;
+        }
+        result.talkType_ = talkType_;
+        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
+          to_bitField0_ |= 0x00001000;
+        }
+        result.index_ = index_;
+        if (((from_bitField0_ & 0x00040000) == 0x00040000)) {
+          to_bitField0_ |= 0x00002000;
+        }
+        result.ownerInstanceId_ = ownerInstanceId_;
+        if (((from_bitField0_ & 0x00080000) == 0x00080000)) {
+          to_bitField0_ |= 0x00004000;
+        }
+        if (petSetBuilder_ == null) {
+          result.petSet_ = petSet_;
+        } else {
+          result.petSet_ = petSetBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.VOProtos.VO_UNIT) {
+          return mergeFrom((cg.base.io.proto.VOProtos.VO_UNIT)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_UNIT other) {
+        if (other == cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance()) return this;
+        if (other.hasBaseInfo()) {
+          mergeBaseInfo(other.getBaseInfo());
+        }
+        if (other.hasPosition()) {
+          mergePosition(other.getPosition());
+        }
+        if (other.hasHeadTitle()) {
+          mergeHeadTitle(other.getHeadTitle());
+        }
+        if (other.hasExtendInfo()) {
+          mergeExtendInfo(other.getExtendInfo());
+        }
+        if (other.hasBattleScore()) {
+          setBattleScore(other.getBattleScore());
+        }
+        if (other.hasBattleLocal()) {
+          setBattleLocal(other.getBattleLocal());
+        }
+        if (titlesBuilder_ == null) {
+          if (!other.titles_.isEmpty()) {
+            if (titles_.isEmpty()) {
+              titles_ = other.titles_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+            } else {
+              ensureTitlesIsMutable();
+              titles_.addAll(other.titles_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.titles_.isEmpty()) {
+            if (titlesBuilder_.isEmpty()) {
+              titlesBuilder_.dispose();
+              titlesBuilder_ = null;
+              titles_ = other.titles_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+              titlesBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getTitlesFieldBuilder() : null;
+            } else {
+              titlesBuilder_.addAllMessages(other.titles_);
+            }
+          }
+        }
+        if (!other.elements_.isEmpty()) {
+          if (elements_.isEmpty()) {
+            elements_ = other.elements_;
+            bitField0_ = (bitField0_ & ~0x00000080);
+          } else {
+            ensureElementsIsMutable();
+            elements_.addAll(other.elements_);
+          }
+          onChanged();
+        }
+        if (attributesBuilder_ == null) {
+          if (!other.attributes_.isEmpty()) {
+            if (attributes_.isEmpty()) {
+              attributes_ = other.attributes_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+            } else {
+              ensureAttributesIsMutable();
+              attributes_.addAll(other.attributes_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.attributes_.isEmpty()) {
+            if (attributesBuilder_.isEmpty()) {
+              attributesBuilder_.dispose();
+              attributesBuilder_ = null;
+              attributes_ = other.attributes_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+              attributesBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getAttributesFieldBuilder() : null;
+            } else {
+              attributesBuilder_.addAllMessages(other.attributes_);
+            }
+          }
+        }
+        if (other.hasMoney()) {
+          setMoney(other.getMoney());
+        }
+        if (bagsBuilder_ == null) {
+          if (!other.bags_.isEmpty()) {
+            if (bags_.isEmpty()) {
+              bags_ = other.bags_;
+              bitField0_ = (bitField0_ & ~0x00000400);
+            } else {
+              ensureBagsIsMutable();
+              bags_.addAll(other.bags_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.bags_.isEmpty()) {
+            if (bagsBuilder_.isEmpty()) {
+              bagsBuilder_.dispose();
+              bagsBuilder_ = null;
+              bags_ = other.bags_;
+              bitField0_ = (bitField0_ & ~0x00000400);
+              bagsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getBagsFieldBuilder() : null;
+            } else {
+              bagsBuilder_.addAllMessages(other.bags_);
+            }
+          }
+        }
+        if (other.hasJob()) {
+          setJob(other.getJob());
+        }
+        if (other.hasSkillSet()) {
+          mergeSkillSet(other.getSkillSet());
+        }
+        if (optionsBuilder_ == null) {
+          if (!other.options_.isEmpty()) {
+            if (options_.isEmpty()) {
+              options_ = other.options_;
+              bitField0_ = (bitField0_ & ~0x00002000);
+            } else {
+              ensureOptionsIsMutable();
+              options_.addAll(other.options_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.options_.isEmpty()) {
+            if (optionsBuilder_.isEmpty()) {
+              optionsBuilder_.dispose();
+              optionsBuilder_ = null;
+              options_ = other.options_;
+              bitField0_ = (bitField0_ & ~0x00002000);
+              optionsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getOptionsFieldBuilder() : null;
+            } else {
+              optionsBuilder_.addAllMessages(other.options_);
+            }
+          }
+        }
+        if (other.hasState()) {
+          setState(other.getState());
+        }
+        if (other.hasLoyal()) {
+          setLoyal(other.getLoyal());
+        }
+        if (other.hasTalkType()) {
+          setTalkType(other.getTalkType());
+        }
+        if (other.hasIndex()) {
+          setIndex(other.getIndex());
+        }
+        if (other.hasOwnerInstanceId()) {
+          setOwnerInstanceId(other.getOwnerInstanceId());
+        }
+        if (other.hasPetSet()) {
+          mergePetSet(other.getPetSet());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasBaseInfo()) {
+          
+          return false;
+        }
+        if (!getBaseInfo().isInitialized()) {
+          
+          return false;
+        }
+        if (hasPosition()) {
+          if (!getPosition().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasHeadTitle()) {
+          if (!getHeadTitle().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasExtendInfo()) {
+          if (!getExtendInfo().isInitialized()) {
+            
+            return false;
+          }
+        }
+        for (int i = 0; i < getTitlesCount(); i++) {
+          if (!getTitles(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        for (int i = 0; i < getAttributesCount(); i++) {
+          if (!getAttributes(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        for (int i = 0; i < getBagsCount(); i++) {
+          if (!getBags(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasSkillSet()) {
+          if (!getSkillSet().isInitialized()) {
+            
+            return false;
+          }
+        }
+        for (int i = 0; i < getOptionsCount(); i++) {
+          if (!getOptions(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasPetSet()) {
+          if (!getPetSet().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.newBuilder();
+              if (hasBaseInfo()) {
+                subBuilder.mergeFrom(getBaseInfo());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setBaseInfo(subBuilder.buildPartial());
+              break;
+            }
+            case 18: {
+              cg.base.io.proto.VOProtos.VO_POSITION.Builder subBuilder = cg.base.io.proto.VOProtos.VO_POSITION.newBuilder();
+              if (hasPosition()) {
+                subBuilder.mergeFrom(getPosition());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setPosition(subBuilder.buildPartial());
+              break;
+            }
+            case 26: {
+              cg.base.io.proto.VOProtos.VO_TITLES.Builder subBuilder = cg.base.io.proto.VOProtos.VO_TITLES.newBuilder();
+              if (hasHeadTitle()) {
+                subBuilder.mergeFrom(getHeadTitle());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setHeadTitle(subBuilder.buildPartial());
+              break;
+            }
+            case 34: {
+              cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.newBuilder();
+              if (hasExtendInfo()) {
+                subBuilder.mergeFrom(getExtendInfo());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setExtendInfo(subBuilder.buildPartial());
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              battleScore_ = input.readInt32();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000020;
+              battleLocal_ = input.readBool();
+              break;
+            }
+            case 58: {
+              cg.base.io.proto.VOProtos.VO_TITLE.Builder subBuilder = cg.base.io.proto.VOProtos.VO_TITLE.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addTitles(subBuilder.buildPartial());
+              break;
+            }
+            case 64: {
+              ensureElementsIsMutable();
+              elements_.add(input.readInt32());
+              break;
+            }
+            case 66: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              while (input.getBytesUntilLimit() > 0) {
+                addElements(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 74: {
+              cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder subBuilder = cg.base.io.proto.VOProtos.VO_ATTRIBUTES.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addAttributes(subBuilder.buildPartial());
+              break;
+            }
+            case 80: {
+              bitField0_ |= 0x00000200;
+              money_ = input.readInt32();
+              break;
+            }
+            case 90: {
+              cg.base.io.proto.VOProtos.VO_BAG.Builder subBuilder = cg.base.io.proto.VOProtos.VO_BAG.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addBags(subBuilder.buildPartial());
+              break;
+            }
+            case 98: {
+              bitField0_ |= 0x00000800;
+              job_ = input.readBytes();
+              break;
+            }
+            case 106: {
+              cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder subBuilder = cg.base.io.proto.VOProtos.VO_SKILL_SET.newBuilder();
+              if (hasSkillSet()) {
+                subBuilder.mergeFrom(getSkillSet());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setSkillSet(subBuilder.buildPartial());
+              break;
+            }
+            case 114: {
+              cg.base.io.proto.VOProtos.VO_OPTION.Builder subBuilder = cg.base.io.proto.VOProtos.VO_OPTION.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addOptions(subBuilder.buildPartial());
+              break;
+            }
+            case 120: {
+              bitField0_ |= 0x00004000;
+              state_ = input.readInt32();
+              break;
+            }
+            case 128: {
+              bitField0_ |= 0x00008000;
+              loyal_ = input.readInt32();
+              break;
+            }
+            case 138: {
+              bitField0_ |= 0x00010000;
+              talkType_ = input.readBytes();
+              break;
+            }
+            case 144: {
+              bitField0_ |= 0x00020000;
+              index_ = input.readInt32();
+              break;
+            }
+            case 152: {
+              bitField0_ |= 0x00040000;
+              ownerInstanceId_ = input.readInt32();
+              break;
+            }
+            case 162: {
+              cg.base.io.proto.VOProtos.VO_PET_SET.Builder subBuilder = cg.base.io.proto.VOProtos.VO_PET_SET.newBuilder();
+              if (hasPetSet()) {
+                subBuilder.mergeFrom(getPetSet());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setPetSet(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .VO_UNIT_BASE_INFO baseInfo = 1;
+      private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> baseInfoBuilder_;
+      public boolean hasBaseInfo() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
+        if (baseInfoBuilder_ == null) {
+          return baseInfo_;
+        } else {
+          return baseInfoBuilder_.getMessage();
+        }
+      }
+      public Builder setBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
+        if (baseInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          baseInfo_ = value;
+          onChanged();
+        } else {
+          baseInfoBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder setBaseInfo(
+          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder builderForValue) {
+        if (baseInfoBuilder_ == null) {
+          baseInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          baseInfoBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder mergeBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
+        if (baseInfoBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              baseInfo_ != cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance()) {
+            baseInfo_ =
+              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.newBuilder(baseInfo_).mergeFrom(value).buildPartial();
+          } else {
+            baseInfo_ = value;
+          }
+          onChanged();
+        } else {
+          baseInfoBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder clearBaseInfo() {
+        if (baseInfoBuilder_ == null) {
+          baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+          onChanged();
+        } else {
+          baseInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder getBaseInfoBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getBaseInfoFieldBuilder().getBuilder();
+      }
+      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
+        if (baseInfoBuilder_ != null) {
+          return baseInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return baseInfo_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> 
+          getBaseInfoFieldBuilder() {
+        if (baseInfoBuilder_ == null) {
+          baseInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder>(
+                  baseInfo_,
+                  getParentForChildren(),
+                  isClean());
+          baseInfo_ = null;
+        }
+        return baseInfoBuilder_;
+      }
+      
+      // optional .VO_POSITION position = 2;
+      private cg.base.io.proto.VOProtos.VO_POSITION position_ = cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_POSITION, cg.base.io.proto.VOProtos.VO_POSITION.Builder, cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder> positionBuilder_;
+      public boolean hasPosition() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public cg.base.io.proto.VOProtos.VO_POSITION getPosition() {
+        if (positionBuilder_ == null) {
+          return position_;
+        } else {
+          return positionBuilder_.getMessage();
+        }
+      }
+      public Builder setPosition(cg.base.io.proto.VOProtos.VO_POSITION value) {
+        if (positionBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          position_ = value;
+          onChanged();
+        } else {
+          positionBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      public Builder setPosition(
+          cg.base.io.proto.VOProtos.VO_POSITION.Builder builderForValue) {
+        if (positionBuilder_ == null) {
+          position_ = builderForValue.build();
+          onChanged();
+        } else {
+          positionBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      public Builder mergePosition(cg.base.io.proto.VOProtos.VO_POSITION value) {
+        if (positionBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              position_ != cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance()) {
+            position_ =
+              cg.base.io.proto.VOProtos.VO_POSITION.newBuilder(position_).mergeFrom(value).buildPartial();
+          } else {
+            position_ = value;
+          }
+          onChanged();
+        } else {
+          positionBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      public Builder clearPosition() {
+        if (positionBuilder_ == null) {
+          position_ = cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance();
+          onChanged();
+        } else {
+          positionBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_POSITION.Builder getPositionBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getPositionFieldBuilder().getBuilder();
+      }
+      public cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder getPositionOrBuilder() {
+        if (positionBuilder_ != null) {
+          return positionBuilder_.getMessageOrBuilder();
+        } else {
+          return position_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_POSITION, cg.base.io.proto.VOProtos.VO_POSITION.Builder, cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder> 
+          getPositionFieldBuilder() {
+        if (positionBuilder_ == null) {
+          positionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_POSITION, cg.base.io.proto.VOProtos.VO_POSITION.Builder, cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder>(
+                  position_,
+                  getParentForChildren(),
+                  isClean());
+          position_ = null;
+        }
+        return positionBuilder_;
+      }
+      
+      // optional .VO_TITLES headTitle = 3;
+      private cg.base.io.proto.VOProtos.VO_TITLES headTitle_ = cg.base.io.proto.VOProtos.VO_TITLES.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_TITLES, cg.base.io.proto.VOProtos.VO_TITLES.Builder, cg.base.io.proto.VOProtos.VO_TITLESOrBuilder> headTitleBuilder_;
+      public boolean hasHeadTitle() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public cg.base.io.proto.VOProtos.VO_TITLES getHeadTitle() {
+        if (headTitleBuilder_ == null) {
+          return headTitle_;
+        } else {
+          return headTitleBuilder_.getMessage();
+        }
+      }
+      public Builder setHeadTitle(cg.base.io.proto.VOProtos.VO_TITLES value) {
+        if (headTitleBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          headTitle_ = value;
+          onChanged();
+        } else {
+          headTitleBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder setHeadTitle(
+          cg.base.io.proto.VOProtos.VO_TITLES.Builder builderForValue) {
+        if (headTitleBuilder_ == null) {
+          headTitle_ = builderForValue.build();
+          onChanged();
+        } else {
+          headTitleBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder mergeHeadTitle(cg.base.io.proto.VOProtos.VO_TITLES value) {
+        if (headTitleBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              headTitle_ != cg.base.io.proto.VOProtos.VO_TITLES.getDefaultInstance()) {
+            headTitle_ =
+              cg.base.io.proto.VOProtos.VO_TITLES.newBuilder(headTitle_).mergeFrom(value).buildPartial();
+          } else {
+            headTitle_ = value;
+          }
+          onChanged();
+        } else {
+          headTitleBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder clearHeadTitle() {
+        if (headTitleBuilder_ == null) {
+          headTitle_ = cg.base.io.proto.VOProtos.VO_TITLES.getDefaultInstance();
+          onChanged();
+        } else {
+          headTitleBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_TITLES.Builder getHeadTitleBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getHeadTitleFieldBuilder().getBuilder();
+      }
+      public cg.base.io.proto.VOProtos.VO_TITLESOrBuilder getHeadTitleOrBuilder() {
+        if (headTitleBuilder_ != null) {
+          return headTitleBuilder_.getMessageOrBuilder();
+        } else {
+          return headTitle_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_TITLES, cg.base.io.proto.VOProtos.VO_TITLES.Builder, cg.base.io.proto.VOProtos.VO_TITLESOrBuilder> 
+          getHeadTitleFieldBuilder() {
+        if (headTitleBuilder_ == null) {
+          headTitleBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_TITLES, cg.base.io.proto.VOProtos.VO_TITLES.Builder, cg.base.io.proto.VOProtos.VO_TITLESOrBuilder>(
+                  headTitle_,
+                  getParentForChildren(),
+                  isClean());
+          headTitle_ = null;
+        }
+        return headTitleBuilder_;
+      }
+      
+      // optional .VO_UNIT_EXTEND_INFO extendInfo = 4;
+      private cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO extendInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder> extendInfoBuilder_;
+      public boolean hasExtendInfo() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO getExtendInfo() {
+        if (extendInfoBuilder_ == null) {
+          return extendInfo_;
+        } else {
+          return extendInfoBuilder_.getMessage();
+        }
+      }
+      public Builder setExtendInfo(cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO value) {
+        if (extendInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          extendInfo_ = value;
+          onChanged();
+        } else {
+          extendInfoBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder setExtendInfo(
+          cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder builderForValue) {
+        if (extendInfoBuilder_ == null) {
+          extendInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          extendInfoBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder mergeExtendInfo(cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO value) {
+        if (extendInfoBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              extendInfo_ != cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance()) {
+            extendInfo_ =
+              cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.newBuilder(extendInfo_).mergeFrom(value).buildPartial();
+          } else {
+            extendInfo_ = value;
+          }
+          onChanged();
+        } else {
+          extendInfoBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder clearExtendInfo() {
+        if (extendInfoBuilder_ == null) {
+          extendInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance();
+          onChanged();
+        } else {
+          extendInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder getExtendInfoBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getExtendInfoFieldBuilder().getBuilder();
+      }
+      public cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder getExtendInfoOrBuilder() {
+        if (extendInfoBuilder_ != null) {
+          return extendInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return extendInfo_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder> 
+          getExtendInfoFieldBuilder() {
+        if (extendInfoBuilder_ == null) {
+          extendInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder>(
+                  extendInfo_,
+                  getParentForChildren(),
+                  isClean());
+          extendInfo_ = null;
+        }
+        return extendInfoBuilder_;
+      }
+      
+      // optional int32 battleScore = 5;
+      private int battleScore_ ;
+      public boolean hasBattleScore() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      public int getBattleScore() {
+        return battleScore_;
+      }
+      public Builder setBattleScore(int value) {
+        bitField0_ |= 0x00000010;
+        battleScore_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearBattleScore() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        battleScore_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // optional bool battleLocal = 6;
+      private boolean battleLocal_ ;
+      public boolean hasBattleLocal() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      public boolean getBattleLocal() {
+        return battleLocal_;
+      }
+      public Builder setBattleLocal(boolean value) {
+        bitField0_ |= 0x00000020;
+        battleLocal_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearBattleLocal() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        battleLocal_ = false;
+        onChanged();
+        return this;
+      }
+      
+      // repeated .VO_TITLE titles = 7;
+      private java.util.List<cg.base.io.proto.VOProtos.VO_TITLE> titles_ =
+        java.util.Collections.emptyList();
+      private void ensureTitlesIsMutable() {
+        if (!((bitField0_ & 0x00000040) == 0x00000040)) {
+          titles_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_TITLE>(titles_);
+          bitField0_ |= 0x00000040;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_TITLE, cg.base.io.proto.VOProtos.VO_TITLE.Builder, cg.base.io.proto.VOProtos.VO_TITLEOrBuilder> titlesBuilder_;
+      
+      public java.util.List<cg.base.io.proto.VOProtos.VO_TITLE> getTitlesList() {
+        if (titlesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(titles_);
+        } else {
+          return titlesBuilder_.getMessageList();
+        }
+      }
+      public int getTitlesCount() {
+        if (titlesBuilder_ == null) {
+          return titles_.size();
+        } else {
+          return titlesBuilder_.getCount();
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_TITLE getTitles(int index) {
+        if (titlesBuilder_ == null) {
+          return titles_.get(index);
+        } else {
+          return titlesBuilder_.getMessage(index);
+        }
+      }
+      public Builder setTitles(
+          int index, cg.base.io.proto.VOProtos.VO_TITLE value) {
+        if (titlesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureTitlesIsMutable();
+          titles_.set(index, value);
+          onChanged();
+        } else {
+          titlesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setTitles(
+          int index, cg.base.io.proto.VOProtos.VO_TITLE.Builder builderForValue) {
+        if (titlesBuilder_ == null) {
+          ensureTitlesIsMutable();
+          titles_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          titlesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addTitles(cg.base.io.proto.VOProtos.VO_TITLE value) {
+        if (titlesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureTitlesIsMutable();
+          titles_.add(value);
+          onChanged();
+        } else {
+          titlesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addTitles(
+          int index, cg.base.io.proto.VOProtos.VO_TITLE value) {
+        if (titlesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureTitlesIsMutable();
+          titles_.add(index, value);
+          onChanged();
+        } else {
+          titlesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addTitles(
+          cg.base.io.proto.VOProtos.VO_TITLE.Builder builderForValue) {
+        if (titlesBuilder_ == null) {
+          ensureTitlesIsMutable();
+          titles_.add(builderForValue.build());
+          onChanged();
+        } else {
+          titlesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addTitles(
+          int index, cg.base.io.proto.VOProtos.VO_TITLE.Builder builderForValue) {
+        if (titlesBuilder_ == null) {
+          ensureTitlesIsMutable();
+          titles_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          titlesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllTitles(
+          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_TITLE> values) {
+        if (titlesBuilder_ == null) {
+          ensureTitlesIsMutable();
+          super.addAll(values, titles_);
+          onChanged();
+        } else {
+          titlesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearTitles() {
+        if (titlesBuilder_ == null) {
+          titles_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+          onChanged();
+        } else {
+          titlesBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeTitles(int index) {
+        if (titlesBuilder_ == null) {
+          ensureTitlesIsMutable();
+          titles_.remove(index);
+          onChanged();
+        } else {
+          titlesBuilder_.remove(index);
+        }
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_TITLE.Builder getTitlesBuilder(
+          int index) {
+        return getTitlesFieldBuilder().getBuilder(index);
+      }
+      public cg.base.io.proto.VOProtos.VO_TITLEOrBuilder getTitlesOrBuilder(
+          int index) {
+        if (titlesBuilder_ == null) {
+          return titles_.get(index);  } else {
+          return titlesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_TITLEOrBuilder> 
+           getTitlesOrBuilderList() {
+        if (titlesBuilder_ != null) {
+          return titlesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(titles_);
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_TITLE.Builder addTitlesBuilder() {
+        return getTitlesFieldBuilder().addBuilder(
+            cg.base.io.proto.VOProtos.VO_TITLE.getDefaultInstance());
+      }
+      public cg.base.io.proto.VOProtos.VO_TITLE.Builder addTitlesBuilder(
+          int index) {
+        return getTitlesFieldBuilder().addBuilder(
+            index, cg.base.io.proto.VOProtos.VO_TITLE.getDefaultInstance());
+      }
+      public java.util.List<cg.base.io.proto.VOProtos.VO_TITLE.Builder> 
+           getTitlesBuilderList() {
+        return getTitlesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_TITLE, cg.base.io.proto.VOProtos.VO_TITLE.Builder, cg.base.io.proto.VOProtos.VO_TITLEOrBuilder> 
+          getTitlesFieldBuilder() {
+        if (titlesBuilder_ == null) {
+          titlesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_TITLE, cg.base.io.proto.VOProtos.VO_TITLE.Builder, cg.base.io.proto.VOProtos.VO_TITLEOrBuilder>(
+                  titles_,
+                  ((bitField0_ & 0x00000040) == 0x00000040),
+                  getParentForChildren(),
+                  isClean());
+          titles_ = null;
+        }
+        return titlesBuilder_;
+      }
+      
+      // repeated int32 elements = 8;
+      private java.util.List<java.lang.Integer> elements_ = java.util.Collections.emptyList();;
+      private void ensureElementsIsMutable() {
+        if (!((bitField0_ & 0x00000080) == 0x00000080)) {
+          elements_ = new java.util.ArrayList<java.lang.Integer>(elements_);
+          bitField0_ |= 0x00000080;
+         }
+      }
+      public java.util.List<java.lang.Integer>
+          getElementsList() {
+        return java.util.Collections.unmodifiableList(elements_);
+      }
+      public int getElementsCount() {
+        return elements_.size();
+      }
+      public int getElements(int index) {
+        return elements_.get(index);
+      }
+      public Builder setElements(
+          int index, int value) {
+        ensureElementsIsMutable();
+        elements_.set(index, value);
+        onChanged();
+        return this;
+      }
+      public Builder addElements(int value) {
+        ensureElementsIsMutable();
+        elements_.add(value);
+        onChanged();
+        return this;
+      }
+      public Builder addAllElements(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureElementsIsMutable();
+        super.addAll(values, elements_);
+        onChanged();
+        return this;
+      }
+      public Builder clearElements() {
+        elements_ = java.util.Collections.emptyList();;
+        bitField0_ = (bitField0_ & ~0x00000080);
+        onChanged();
+        return this;
+      }
+      
+      // repeated .VO_ATTRIBUTES attributes = 9;
+      private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> attributes_ =
+        java.util.Collections.emptyList();
+      private void ensureAttributesIsMutable() {
+        if (!((bitField0_ & 0x00000100) == 0x00000100)) {
+          attributes_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_ATTRIBUTES>(attributes_);
+          bitField0_ |= 0x00000100;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ATTRIBUTES, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder, cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> attributesBuilder_;
+      
+      public java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> getAttributesList() {
+        if (attributesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(attributes_);
+        } else {
+          return attributesBuilder_.getMessageList();
+        }
+      }
+      public int getAttributesCount() {
+        if (attributesBuilder_ == null) {
+          return attributes_.size();
+        } else {
+          return attributesBuilder_.getCount();
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_ATTRIBUTES getAttributes(int index) {
+        if (attributesBuilder_ == null) {
+          return attributes_.get(index);
+        } else {
+          return attributesBuilder_.getMessage(index);
+        }
+      }
+      public Builder setAttributes(
+          int index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES value) {
+        if (attributesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAttributesIsMutable();
+          attributes_.set(index, value);
+          onChanged();
+        } else {
+          attributesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setAttributes(
+          int index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder builderForValue) {
+        if (attributesBuilder_ == null) {
+          ensureAttributesIsMutable();
+          attributes_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          attributesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAttributes(cg.base.io.proto.VOProtos.VO_ATTRIBUTES value) {
+        if (attributesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAttributesIsMutable();
+          attributes_.add(value);
+          onChanged();
+        } else {
+          attributesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addAttributes(
+          int index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES value) {
+        if (attributesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAttributesIsMutable();
+          attributes_.add(index, value);
+          onChanged();
+        } else {
+          attributesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addAttributes(
+          cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder builderForValue) {
+        if (attributesBuilder_ == null) {
+          ensureAttributesIsMutable();
+          attributes_.add(builderForValue.build());
+          onChanged();
+        } else {
+          attributesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAttributes(
+          int index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder builderForValue) {
+        if (attributesBuilder_ == null) {
+          ensureAttributesIsMutable();
+          attributes_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          attributesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllAttributes(
+          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTES> values) {
+        if (attributesBuilder_ == null) {
+          ensureAttributesIsMutable();
+          super.addAll(values, attributes_);
+          onChanged();
+        } else {
+          attributesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearAttributes() {
+        if (attributesBuilder_ == null) {
+          attributes_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+          onChanged();
+        } else {
+          attributesBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeAttributes(int index) {
+        if (attributesBuilder_ == null) {
+          ensureAttributesIsMutable();
+          attributes_.remove(index);
+          onChanged();
+        } else {
+          attributesBuilder_.remove(index);
+        }
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder getAttributesBuilder(
+          int index) {
+        return getAttributesFieldBuilder().getBuilder(index);
+      }
+      public cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder getAttributesOrBuilder(
+          int index) {
+        if (attributesBuilder_ == null) {
+          return attributes_.get(index);  } else {
+          return attributesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> 
+           getAttributesOrBuilderList() {
+        if (attributesBuilder_ != null) {
+          return attributesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(attributes_);
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder addAttributesBuilder() {
+        return getAttributesFieldBuilder().addBuilder(
+            cg.base.io.proto.VOProtos.VO_ATTRIBUTES.getDefaultInstance());
+      }
+      public cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder addAttributesBuilder(
+          int index) {
+        return getAttributesFieldBuilder().addBuilder(
+            index, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.getDefaultInstance());
+      }
+      public java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder> 
+           getAttributesBuilderList() {
+        return getAttributesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ATTRIBUTES, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder, cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder> 
+          getAttributesFieldBuilder() {
+        if (attributesBuilder_ == null) {
+          attributesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_ATTRIBUTES, cg.base.io.proto.VOProtos.VO_ATTRIBUTES.Builder, cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder>(
+                  attributes_,
+                  ((bitField0_ & 0x00000100) == 0x00000100),
+                  getParentForChildren(),
+                  isClean());
+          attributes_ = null;
+        }
+        return attributesBuilder_;
+      }
+      
+      // optional int32 money = 10;
+      private int money_ ;
+      public boolean hasMoney() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+      public int getMoney() {
+        return money_;
+      }
+      public Builder setMoney(int value) {
+        bitField0_ |= 0x00000200;
+        money_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMoney() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        money_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // repeated .VO_BAG bags = 11;
+      private java.util.List<cg.base.io.proto.VOProtos.VO_BAG> bags_ =
+        java.util.Collections.emptyList();
+      private void ensureBagsIsMutable() {
+        if (!((bitField0_ & 0x00000400) == 0x00000400)) {
+          bags_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_BAG>(bags_);
+          bitField0_ |= 0x00000400;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_BAG, cg.base.io.proto.VOProtos.VO_BAG.Builder, cg.base.io.proto.VOProtos.VO_BAGOrBuilder> bagsBuilder_;
+      
+      public java.util.List<cg.base.io.proto.VOProtos.VO_BAG> getBagsList() {
+        if (bagsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(bags_);
+        } else {
+          return bagsBuilder_.getMessageList();
+        }
+      }
+      public int getBagsCount() {
+        if (bagsBuilder_ == null) {
+          return bags_.size();
+        } else {
+          return bagsBuilder_.getCount();
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_BAG getBags(int index) {
+        if (bagsBuilder_ == null) {
+          return bags_.get(index);
+        } else {
+          return bagsBuilder_.getMessage(index);
+        }
+      }
+      public Builder setBags(
+          int index, cg.base.io.proto.VOProtos.VO_BAG value) {
+        if (bagsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBagsIsMutable();
+          bags_.set(index, value);
+          onChanged();
+        } else {
+          bagsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setBags(
+          int index, cg.base.io.proto.VOProtos.VO_BAG.Builder builderForValue) {
+        if (bagsBuilder_ == null) {
+          ensureBagsIsMutable();
+          bags_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          bagsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addBags(cg.base.io.proto.VOProtos.VO_BAG value) {
+        if (bagsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBagsIsMutable();
+          bags_.add(value);
+          onChanged();
+        } else {
+          bagsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addBags(
+          int index, cg.base.io.proto.VOProtos.VO_BAG value) {
+        if (bagsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBagsIsMutable();
+          bags_.add(index, value);
+          onChanged();
+        } else {
+          bagsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addBags(
+          cg.base.io.proto.VOProtos.VO_BAG.Builder builderForValue) {
+        if (bagsBuilder_ == null) {
+          ensureBagsIsMutable();
+          bags_.add(builderForValue.build());
+          onChanged();
+        } else {
+          bagsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addBags(
+          int index, cg.base.io.proto.VOProtos.VO_BAG.Builder builderForValue) {
+        if (bagsBuilder_ == null) {
+          ensureBagsIsMutable();
+          bags_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          bagsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllBags(
+          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_BAG> values) {
+        if (bagsBuilder_ == null) {
+          ensureBagsIsMutable();
+          super.addAll(values, bags_);
+          onChanged();
+        } else {
+          bagsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearBags() {
+        if (bagsBuilder_ == null) {
+          bags_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000400);
+          onChanged();
+        } else {
+          bagsBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeBags(int index) {
+        if (bagsBuilder_ == null) {
+          ensureBagsIsMutable();
+          bags_.remove(index);
+          onChanged();
+        } else {
+          bagsBuilder_.remove(index);
+        }
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_BAG.Builder getBagsBuilder(
+          int index) {
+        return getBagsFieldBuilder().getBuilder(index);
+      }
+      public cg.base.io.proto.VOProtos.VO_BAGOrBuilder getBagsOrBuilder(
+          int index) {
+        if (bagsBuilder_ == null) {
+          return bags_.get(index);  } else {
+          return bagsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_BAGOrBuilder> 
+           getBagsOrBuilderList() {
+        if (bagsBuilder_ != null) {
+          return bagsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(bags_);
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_BAG.Builder addBagsBuilder() {
+        return getBagsFieldBuilder().addBuilder(
+            cg.base.io.proto.VOProtos.VO_BAG.getDefaultInstance());
+      }
+      public cg.base.io.proto.VOProtos.VO_BAG.Builder addBagsBuilder(
+          int index) {
+        return getBagsFieldBuilder().addBuilder(
+            index, cg.base.io.proto.VOProtos.VO_BAG.getDefaultInstance());
+      }
+      public java.util.List<cg.base.io.proto.VOProtos.VO_BAG.Builder> 
+           getBagsBuilderList() {
+        return getBagsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_BAG, cg.base.io.proto.VOProtos.VO_BAG.Builder, cg.base.io.proto.VOProtos.VO_BAGOrBuilder> 
+          getBagsFieldBuilder() {
+        if (bagsBuilder_ == null) {
+          bagsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_BAG, cg.base.io.proto.VOProtos.VO_BAG.Builder, cg.base.io.proto.VOProtos.VO_BAGOrBuilder>(
+                  bags_,
+                  ((bitField0_ & 0x00000400) == 0x00000400),
+                  getParentForChildren(),
+                  isClean());
+          bags_ = null;
+        }
+        return bagsBuilder_;
+      }
+      
+      // optional string job = 12;
+      private java.lang.Object job_ = "";
+      public boolean hasJob() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      public String getJob() {
+        java.lang.Object ref = job_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          job_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setJob(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000800;
+        job_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearJob() {
+        bitField0_ = (bitField0_ & ~0x00000800);
+        job_ = getDefaultInstance().getJob();
+        onChanged();
+        return this;
+      }
+      void setJob(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000800;
+        job_ = value;
+        onChanged();
+      }
+      
+      // optional .VO_SKILL_SET skillSet = 13;
+      private cg.base.io.proto.VOProtos.VO_SKILL_SET skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_SKILL_SET, cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder, cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder> skillSetBuilder_;
+      public boolean hasSkillSet() {
+        return ((bitField0_ & 0x00001000) == 0x00001000);
+      }
+      public cg.base.io.proto.VOProtos.VO_SKILL_SET getSkillSet() {
+        if (skillSetBuilder_ == null) {
+          return skillSet_;
+        } else {
+          return skillSetBuilder_.getMessage();
+        }
+      }
+      public Builder setSkillSet(cg.base.io.proto.VOProtos.VO_SKILL_SET value) {
+        if (skillSetBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          skillSet_ = value;
+          onChanged();
+        } else {
+          skillSetBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00001000;
+        return this;
+      }
+      public Builder setSkillSet(
+          cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder builderForValue) {
+        if (skillSetBuilder_ == null) {
+          skillSet_ = builderForValue.build();
+          onChanged();
+        } else {
+          skillSetBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00001000;
+        return this;
+      }
+      public Builder mergeSkillSet(cg.base.io.proto.VOProtos.VO_SKILL_SET value) {
+        if (skillSetBuilder_ == null) {
+          if (((bitField0_ & 0x00001000) == 0x00001000) &&
+              skillSet_ != cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance()) {
+            skillSet_ =
+              cg.base.io.proto.VOProtos.VO_SKILL_SET.newBuilder(skillSet_).mergeFrom(value).buildPartial();
+          } else {
+            skillSet_ = value;
+          }
+          onChanged();
+        } else {
+          skillSetBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00001000;
+        return this;
+      }
+      public Builder clearSkillSet() {
+        if (skillSetBuilder_ == null) {
+          skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
+          onChanged();
+        } else {
+          skillSetBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00001000);
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder getSkillSetBuilder() {
+        bitField0_ |= 0x00001000;
+        onChanged();
+        return getSkillSetFieldBuilder().getBuilder();
+      }
+      public cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder getSkillSetOrBuilder() {
+        if (skillSetBuilder_ != null) {
+          return skillSetBuilder_.getMessageOrBuilder();
+        } else {
+          return skillSet_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_SKILL_SET, cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder, cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder> 
+          getSkillSetFieldBuilder() {
+        if (skillSetBuilder_ == null) {
+          skillSetBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_SKILL_SET, cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder, cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder>(
+                  skillSet_,
+                  getParentForChildren(),
+                  isClean());
+          skillSet_ = null;
+        }
+        return skillSetBuilder_;
+      }
+      
+      // repeated .VO_OPTION options = 14;
+      private java.util.List<cg.base.io.proto.VOProtos.VO_OPTION> options_ =
+        java.util.Collections.emptyList();
+      private void ensureOptionsIsMutable() {
+        if (!((bitField0_ & 0x00002000) == 0x00002000)) {
+          options_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_OPTION>(options_);
+          bitField0_ |= 0x00002000;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> optionsBuilder_;
+      
+      public java.util.List<cg.base.io.proto.VOProtos.VO_OPTION> getOptionsList() {
+        if (optionsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(options_);
+        } else {
+          return optionsBuilder_.getMessageList();
+        }
+      }
+      public int getOptionsCount() {
+        if (optionsBuilder_ == null) {
+          return options_.size();
+        } else {
+          return optionsBuilder_.getCount();
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_OPTION getOptions(int index) {
+        if (optionsBuilder_ == null) {
+          return options_.get(index);
+        } else {
+          return optionsBuilder_.getMessage(index);
+        }
+      }
+      public Builder setOptions(
+          int index, cg.base.io.proto.VOProtos.VO_OPTION value) {
+        if (optionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOptionsIsMutable();
+          options_.set(index, value);
+          onChanged();
+        } else {
+          optionsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setOptions(
+          int index, cg.base.io.proto.VOProtos.VO_OPTION.Builder builderForValue) {
+        if (optionsBuilder_ == null) {
+          ensureOptionsIsMutable();
+          options_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          optionsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addOptions(cg.base.io.proto.VOProtos.VO_OPTION value) {
+        if (optionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOptionsIsMutable();
+          options_.add(value);
+          onChanged();
+        } else {
+          optionsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addOptions(
+          int index, cg.base.io.proto.VOProtos.VO_OPTION value) {
+        if (optionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureOptionsIsMutable();
+          options_.add(index, value);
+          onChanged();
+        } else {
+          optionsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addOptions(
+          cg.base.io.proto.VOProtos.VO_OPTION.Builder builderForValue) {
+        if (optionsBuilder_ == null) {
+          ensureOptionsIsMutable();
+          options_.add(builderForValue.build());
+          onChanged();
+        } else {
+          optionsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addOptions(
+          int index, cg.base.io.proto.VOProtos.VO_OPTION.Builder builderForValue) {
+        if (optionsBuilder_ == null) {
+          ensureOptionsIsMutable();
+          options_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          optionsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllOptions(
+          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_OPTION> values) {
+        if (optionsBuilder_ == null) {
+          ensureOptionsIsMutable();
+          super.addAll(values, options_);
+          onChanged();
+        } else {
+          optionsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearOptions() {
+        if (optionsBuilder_ == null) {
+          options_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00002000);
+          onChanged();
+        } else {
+          optionsBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeOptions(int index) {
+        if (optionsBuilder_ == null) {
+          ensureOptionsIsMutable();
+          options_.remove(index);
+          onChanged();
+        } else {
+          optionsBuilder_.remove(index);
+        }
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_OPTION.Builder getOptionsBuilder(
+          int index) {
+        return getOptionsFieldBuilder().getBuilder(index);
+      }
+      public cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionsOrBuilder(
+          int index) {
+        if (optionsBuilder_ == null) {
+          return options_.get(index);  } else {
+          return optionsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> 
+           getOptionsOrBuilderList() {
+        if (optionsBuilder_ != null) {
+          return optionsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(options_);
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_OPTION.Builder addOptionsBuilder() {
+        return getOptionsFieldBuilder().addBuilder(
+            cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance());
+      }
+      public cg.base.io.proto.VOProtos.VO_OPTION.Builder addOptionsBuilder(
+          int index) {
+        return getOptionsFieldBuilder().addBuilder(
+            index, cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance());
+      }
+      public java.util.List<cg.base.io.proto.VOProtos.VO_OPTION.Builder> 
+           getOptionsBuilderList() {
+        return getOptionsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> 
+          getOptionsFieldBuilder() {
+        if (optionsBuilder_ == null) {
+          optionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder>(
+                  options_,
+                  ((bitField0_ & 0x00002000) == 0x00002000),
+                  getParentForChildren(),
+                  isClean());
+          options_ = null;
+        }
+        return optionsBuilder_;
+      }
+      
+      // optional int32 state = 15;
+      private int state_ ;
+      public boolean hasState() {
+        return ((bitField0_ & 0x00004000) == 0x00004000);
+      }
+      public int getState() {
+        return state_;
+      }
+      public Builder setState(int value) {
+        bitField0_ |= 0x00004000;
+        state_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearState() {
+        bitField0_ = (bitField0_ & ~0x00004000);
+        state_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // optional int32 loyal = 16;
+      private int loyal_ ;
+      public boolean hasLoyal() {
+        return ((bitField0_ & 0x00008000) == 0x00008000);
+      }
+      public int getLoyal() {
+        return loyal_;
+      }
+      public Builder setLoyal(int value) {
+        bitField0_ |= 0x00008000;
+        loyal_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearLoyal() {
+        bitField0_ = (bitField0_ & ~0x00008000);
+        loyal_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // optional string talkType = 17;
+      private java.lang.Object talkType_ = "";
+      public boolean hasTalkType() {
+        return ((bitField0_ & 0x00010000) == 0x00010000);
+      }
+      public String getTalkType() {
+        java.lang.Object ref = talkType_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          talkType_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setTalkType(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00010000;
+        talkType_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearTalkType() {
+        bitField0_ = (bitField0_ & ~0x00010000);
+        talkType_ = getDefaultInstance().getTalkType();
+        onChanged();
+        return this;
+      }
+      void setTalkType(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00010000;
+        talkType_ = value;
+        onChanged();
+      }
+      
+      // optional int32 index = 18;
+      private int index_ ;
+      public boolean hasIndex() {
+        return ((bitField0_ & 0x00020000) == 0x00020000);
+      }
+      public int getIndex() {
+        return index_;
+      }
+      public Builder setIndex(int value) {
+        bitField0_ |= 0x00020000;
+        index_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearIndex() {
+        bitField0_ = (bitField0_ & ~0x00020000);
+        index_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // optional int32 ownerInstanceId = 19;
+      private int ownerInstanceId_ ;
+      public boolean hasOwnerInstanceId() {
+        return ((bitField0_ & 0x00040000) == 0x00040000);
+      }
+      public int getOwnerInstanceId() {
+        return ownerInstanceId_;
+      }
+      public Builder setOwnerInstanceId(int value) {
+        bitField0_ |= 0x00040000;
+        ownerInstanceId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearOwnerInstanceId() {
+        bitField0_ = (bitField0_ & ~0x00040000);
+        ownerInstanceId_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // optional .VO_PET_SET petSet = 20;
+      private cg.base.io.proto.VOProtos.VO_PET_SET petSet_ = cg.base.io.proto.VOProtos.VO_PET_SET.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_PET_SET, cg.base.io.proto.VOProtos.VO_PET_SET.Builder, cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder> petSetBuilder_;
+      public boolean hasPetSet() {
+        return ((bitField0_ & 0x00080000) == 0x00080000);
+      }
+      public cg.base.io.proto.VOProtos.VO_PET_SET getPetSet() {
+        if (petSetBuilder_ == null) {
+          return petSet_;
+        } else {
+          return petSetBuilder_.getMessage();
+        }
+      }
+      public Builder setPetSet(cg.base.io.proto.VOProtos.VO_PET_SET value) {
+        if (petSetBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          petSet_ = value;
+          onChanged();
+        } else {
+          petSetBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00080000;
+        return this;
+      }
+      public Builder setPetSet(
+          cg.base.io.proto.VOProtos.VO_PET_SET.Builder builderForValue) {
+        if (petSetBuilder_ == null) {
+          petSet_ = builderForValue.build();
+          onChanged();
+        } else {
+          petSetBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00080000;
+        return this;
+      }
+      public Builder mergePetSet(cg.base.io.proto.VOProtos.VO_PET_SET value) {
+        if (petSetBuilder_ == null) {
+          if (((bitField0_ & 0x00080000) == 0x00080000) &&
+              petSet_ != cg.base.io.proto.VOProtos.VO_PET_SET.getDefaultInstance()) {
+            petSet_ =
+              cg.base.io.proto.VOProtos.VO_PET_SET.newBuilder(petSet_).mergeFrom(value).buildPartial();
+          } else {
+            petSet_ = value;
+          }
+          onChanged();
+        } else {
+          petSetBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00080000;
+        return this;
+      }
+      public Builder clearPetSet() {
+        if (petSetBuilder_ == null) {
+          petSet_ = cg.base.io.proto.VOProtos.VO_PET_SET.getDefaultInstance();
+          onChanged();
+        } else {
+          petSetBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00080000);
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_PET_SET.Builder getPetSetBuilder() {
+        bitField0_ |= 0x00080000;
+        onChanged();
+        return getPetSetFieldBuilder().getBuilder();
+      }
+      public cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder getPetSetOrBuilder() {
+        if (petSetBuilder_ != null) {
+          return petSetBuilder_.getMessageOrBuilder();
+        } else {
+          return petSet_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_PET_SET, cg.base.io.proto.VOProtos.VO_PET_SET.Builder, cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder> 
+          getPetSetFieldBuilder() {
+        if (petSetBuilder_ == null) {
+          petSetBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_PET_SET, cg.base.io.proto.VOProtos.VO_PET_SET.Builder, cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder>(
+                  petSet_,
+                  getParentForChildren(),
+                  isClean());
+          petSet_ = null;
+        }
+        return petSetBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:VO_UNIT)
+    }
+    
+    static {
+      defaultInstance = new VO_UNIT(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:VO_UNIT)
+  }
+  
+  public interface VO_PET_SETOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required int32 max = 1;
+    boolean hasMax();
+    int getMax();
+    
+    // repeated .VO_PET pets = 2;
+    java.util.List<cg.base.io.proto.VOProtos.VO_PET> 
+        getPetsList();
+    cg.base.io.proto.VOProtos.VO_PET getPets(int index);
+    int getPetsCount();
+    java.util.List<? extends cg.base.io.proto.VOProtos.VO_PETOrBuilder> 
+        getPetsOrBuilderList();
+    cg.base.io.proto.VOProtos.VO_PETOrBuilder getPetsOrBuilder(
+        int index);
+  }
+  public static final class VO_PET_SET extends
+      com.google.protobuf.GeneratedMessage
+      implements VO_PET_SETOrBuilder {
+    // Use VO_PET_SET.newBuilder() to construct.
+    private VO_PET_SET(Builder builder) {
+      super(builder);
+    }
+    private VO_PET_SET(boolean noInit) {}
+    
+    private static final VO_PET_SET defaultInstance;
+    public static VO_PET_SET getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public VO_PET_SET getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_PET_SET_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_PET_SET_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required int32 max = 1;
+    public static final int MAX_FIELD_NUMBER = 1;
+    private int max_;
+    public boolean hasMax() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public int getMax() {
+      return max_;
+    }
+    
+    // repeated .VO_PET pets = 2;
+    public static final int PETS_FIELD_NUMBER = 2;
+    private java.util.List<cg.base.io.proto.VOProtos.VO_PET> pets_;
+    public java.util.List<cg.base.io.proto.VOProtos.VO_PET> getPetsList() {
+      return pets_;
+    }
+    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_PETOrBuilder> 
+        getPetsOrBuilderList() {
+      return pets_;
+    }
+    public int getPetsCount() {
+      return pets_.size();
+    }
+    public cg.base.io.proto.VOProtos.VO_PET getPets(int index) {
+      return pets_.get(index);
+    }
+    public cg.base.io.proto.VOProtos.VO_PETOrBuilder getPetsOrBuilder(
+        int index) {
+      return pets_.get(index);
+    }
+    
+    private void initFields() {
+      max_ = 0;
+      pets_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getPetsCount(); i++) {
+        if (!getPets(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, max_);
+      }
+      for (int i = 0; i < pets_.size(); i++) {
+        output.writeMessage(2, pets_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, max_);
+      }
+      for (int i = 0; i < pets_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, pets_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.VOProtos.VO_PET_SET parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.VOProtos.VO_PET_SET prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_PET_SET_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_PET_SET_fieldAccessorTable;
+      }
+      
+      // Construct using cg.base.io.proto.VOProtos.VO_PET_SET.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getPetsFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        max_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (petsBuilder_ == null) {
+          pets_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          petsBuilder_.clear();
+        }
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.VOProtos.VO_PET_SET.getDescriptor();
+      }
+      
+      public cg.base.io.proto.VOProtos.VO_PET_SET getDefaultInstanceForType() {
+        return cg.base.io.proto.VOProtos.VO_PET_SET.getDefaultInstance();
+      }
+      
+      public cg.base.io.proto.VOProtos.VO_PET_SET build() {
+        cg.base.io.proto.VOProtos.VO_PET_SET result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private cg.base.io.proto.VOProtos.VO_PET_SET buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.VOProtos.VO_PET_SET result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public cg.base.io.proto.VOProtos.VO_PET_SET buildPartial() {
+        cg.base.io.proto.VOProtos.VO_PET_SET result = new cg.base.io.proto.VOProtos.VO_PET_SET(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.max_ = max_;
+        if (petsBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            pets_ = java.util.Collections.unmodifiableList(pets_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.pets_ = pets_;
+        } else {
+          result.pets_ = petsBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.VOProtos.VO_PET_SET) {
+          return mergeFrom((cg.base.io.proto.VOProtos.VO_PET_SET)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_PET_SET other) {
+        if (other == cg.base.io.proto.VOProtos.VO_PET_SET.getDefaultInstance()) return this;
+        if (other.hasMax()) {
+          setMax(other.getMax());
+        }
+        if (petsBuilder_ == null) {
+          if (!other.pets_.isEmpty()) {
+            if (pets_.isEmpty()) {
+              pets_ = other.pets_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensurePetsIsMutable();
+              pets_.addAll(other.pets_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.pets_.isEmpty()) {
+            if (petsBuilder_.isEmpty()) {
+              petsBuilder_.dispose();
+              petsBuilder_ = null;
+              pets_ = other.pets_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              petsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getPetsFieldBuilder() : null;
+            } else {
+              petsBuilder_.addAllMessages(other.pets_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasMax()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getPetsCount(); i++) {
+          if (!getPets(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              max_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              cg.base.io.proto.VOProtos.VO_PET.Builder subBuilder = cg.base.io.proto.VOProtos.VO_PET.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addPets(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required int32 max = 1;
+      private int max_ ;
+      public boolean hasMax() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getMax() {
+        return max_;
+      }
+      public Builder setMax(int value) {
+        bitField0_ |= 0x00000001;
+        max_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearMax() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        max_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // repeated .VO_PET pets = 2;
+      private java.util.List<cg.base.io.proto.VOProtos.VO_PET> pets_ =
+        java.util.Collections.emptyList();
+      private void ensurePetsIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          pets_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_PET>(pets_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_PET, cg.base.io.proto.VOProtos.VO_PET.Builder, cg.base.io.proto.VOProtos.VO_PETOrBuilder> petsBuilder_;
+      
+      public java.util.List<cg.base.io.proto.VOProtos.VO_PET> getPetsList() {
+        if (petsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(pets_);
+        } else {
+          return petsBuilder_.getMessageList();
+        }
+      }
+      public int getPetsCount() {
+        if (petsBuilder_ == null) {
+          return pets_.size();
+        } else {
+          return petsBuilder_.getCount();
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_PET getPets(int index) {
+        if (petsBuilder_ == null) {
+          return pets_.get(index);
+        } else {
+          return petsBuilder_.getMessage(index);
+        }
+      }
+      public Builder setPets(
+          int index, cg.base.io.proto.VOProtos.VO_PET value) {
+        if (petsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePetsIsMutable();
+          pets_.set(index, value);
+          onChanged();
+        } else {
+          petsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setPets(
+          int index, cg.base.io.proto.VOProtos.VO_PET.Builder builderForValue) {
+        if (petsBuilder_ == null) {
+          ensurePetsIsMutable();
+          pets_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          petsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addPets(cg.base.io.proto.VOProtos.VO_PET value) {
+        if (petsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePetsIsMutable();
+          pets_.add(value);
+          onChanged();
+        } else {
+          petsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addPets(
+          int index, cg.base.io.proto.VOProtos.VO_PET value) {
+        if (petsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePetsIsMutable();
+          pets_.add(index, value);
+          onChanged();
+        } else {
+          petsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addPets(
+          cg.base.io.proto.VOProtos.VO_PET.Builder builderForValue) {
+        if (petsBuilder_ == null) {
+          ensurePetsIsMutable();
+          pets_.add(builderForValue.build());
+          onChanged();
+        } else {
+          petsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addPets(
+          int index, cg.base.io.proto.VOProtos.VO_PET.Builder builderForValue) {
+        if (petsBuilder_ == null) {
+          ensurePetsIsMutable();
+          pets_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          petsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllPets(
+          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_PET> values) {
+        if (petsBuilder_ == null) {
+          ensurePetsIsMutable();
+          super.addAll(values, pets_);
+          onChanged();
+        } else {
+          petsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearPets() {
+        if (petsBuilder_ == null) {
+          pets_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          petsBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removePets(int index) {
+        if (petsBuilder_ == null) {
+          ensurePetsIsMutable();
+          pets_.remove(index);
+          onChanged();
+        } else {
+          petsBuilder_.remove(index);
+        }
+        return this;
+      }
+      public cg.base.io.proto.VOProtos.VO_PET.Builder getPetsBuilder(
+          int index) {
+        return getPetsFieldBuilder().getBuilder(index);
+      }
+      public cg.base.io.proto.VOProtos.VO_PETOrBuilder getPetsOrBuilder(
+          int index) {
+        if (petsBuilder_ == null) {
+          return pets_.get(index);  } else {
+          return petsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_PETOrBuilder> 
+           getPetsOrBuilderList() {
+        if (petsBuilder_ != null) {
+          return petsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(pets_);
+        }
+      }
+      public cg.base.io.proto.VOProtos.VO_PET.Builder addPetsBuilder() {
+        return getPetsFieldBuilder().addBuilder(
+            cg.base.io.proto.VOProtos.VO_PET.getDefaultInstance());
+      }
+      public cg.base.io.proto.VOProtos.VO_PET.Builder addPetsBuilder(
+          int index) {
+        return getPetsFieldBuilder().addBuilder(
+            index, cg.base.io.proto.VOProtos.VO_PET.getDefaultInstance());
+      }
+      public java.util.List<cg.base.io.proto.VOProtos.VO_PET.Builder> 
+           getPetsBuilderList() {
+        return getPetsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_PET, cg.base.io.proto.VOProtos.VO_PET.Builder, cg.base.io.proto.VOProtos.VO_PETOrBuilder> 
+          getPetsFieldBuilder() {
+        if (petsBuilder_ == null) {
+          petsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_PET, cg.base.io.proto.VOProtos.VO_PET.Builder, cg.base.io.proto.VOProtos.VO_PETOrBuilder>(
+                  pets_,
+                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  getParentForChildren(),
+                  isClean());
+          pets_ = null;
+        }
+        return petsBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:VO_PET_SET)
+    }
+    
+    static {
+      defaultInstance = new VO_PET_SET(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:VO_PET_SET)
+  }
+  
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_UNIT_BASE_INFO_descriptor;
   private static
@@ -14859,6 +17699,16 @@ public final class VOProtos {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_MAP_CELL_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_UNIT_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_UNIT_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_PET_SET_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_PET_SET_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -14911,18 +17761,28 @@ public final class VOProtos {
       "\022\037\n\006skills\030\n \003(\0132\017.VO_SKILL_LEVEL\022\r\n\005ind" +
       "ex\030\013 \002(\005\"U\n\014VO_SKILL_SET\022\035\n\nbaseSkills\030\001" +
       " \003(\0132\t.VO_SKILL\022\013\n\003max\030\002 \002(\005\022\031\n\006skills\030\003" +
-      " \003(\0132\t.VO_SKILL\"\315\001\n\006VO_PET\022$\n\010baseInfo\030\001" +
-      " \002(\0132\022.VO_UNIT_BASE_INFO\022(\n\nextendInfo\030\002" +
-      " \002(\0132\024.VO_UNIT_EXTEND_INFO\022\r\n\005state\030\003 \002(" +
-      "\005\022\r\n\005loyal\030\004 \002(\005\022\020\n\010elements\030\005 \003(\005\022\"\n\nat" +
-      "tributes\030\006 \003(\0132\016.VO_ATTRIBUTES\022\037\n\010skillS" +
-      "et\030\007 \002(\0132\r.VO_SKILL_SET\"(\n\tVO_OPTION\022\014\n\004" +
-      "name\030\001 \002(\t\022\r\n\005state\030\002 \002(\005\"G\n\013VO_MAP_AREA",
-      "\022\014\n\004west\030\001 \002(\005\022\014\n\004east\030\002 \002(\005\022\r\n\005south\030\003 " +
-      "\002(\005\022\r\n\005north\030\004 \002(\005\"`\n\013VO_MAP_CELL\022\014\n\004wes" +
-      "t\030\001 \002(\005\022\014\n\004east\030\002 \002(\005\022\025\n\rimageGlobalId\030\003" +
-      " \002(\005\022\020\n\010objectId\030\004 \002(\005\022\014\n\004mark\030\005 \002(\005B\034\n\020" +
-      "cg.base.io.protoB\010VOProtos"
+      " \003(\0132\t.VO_SKILL\"$\n\006VO_PET\022\032\n\010unitInfo\030\001 " +
+      "\002(\0132\010.VO_UNIT\"(\n\tVO_OPTION\022\014\n\004name\030\001 \002(\t" +
+      "\022\r\n\005state\030\002 \002(\005\"G\n\013VO_MAP_AREA\022\014\n\004west\030\001" +
+      " \002(\005\022\014\n\004east\030\002 \002(\005\022\r\n\005south\030\003 \002(\005\022\r\n\005nor" +
+      "th\030\004 \002(\005\"`\n\013VO_MAP_CELL\022\014\n\004west\030\001 \002(\005\022\014\n" +
+      "\004east\030\002 \002(\005\022\025\n\rimageGlobalId\030\003 \002(\005\022\020\n\010ob" +
+      "jectId\030\004 \002(\005\022\014\n\004mark\030\005 \002(\005\"\371\003\n\007VO_UNIT\022$",
+      "\n\010baseInfo\030\001 \002(\0132\022.VO_UNIT_BASE_INFO\022\036\n\010" +
+      "position\030\002 \001(\0132\014.VO_POSITION\022\035\n\theadTitl" +
+      "e\030\003 \001(\0132\n.VO_TITLES\022(\n\nextendInfo\030\004 \001(\0132" +
+      "\024.VO_UNIT_EXTEND_INFO\022\023\n\013battleScore\030\005 \001" +
+      "(\005\022\023\n\013battleLocal\030\006 \001(\010\022\031\n\006titles\030\007 \003(\0132" +
+      "\t.VO_TITLE\022\020\n\010elements\030\010 \003(\005\022\"\n\nattribut" +
+      "es\030\t \003(\0132\016.VO_ATTRIBUTES\022\r\n\005money\030\n \001(\005\022" +
+      "\025\n\004bags\030\013 \003(\0132\007.VO_BAG\022\013\n\003job\030\014 \001(\t\022\037\n\010s" +
+      "killSet\030\r \001(\0132\r.VO_SKILL_SET\022\033\n\007options\030" +
+      "\016 \003(\0132\n.VO_OPTION\022\r\n\005state\030\017 \001(\005\022\r\n\005loya",
+      "l\030\020 \001(\005\022\020\n\010talkType\030\021 \001(\t\022\r\n\005index\030\022 \001(\005" +
+      "\022\027\n\017ownerInstanceId\030\023 \001(\005\022\033\n\006petSet\030\024 \001(" +
+      "\0132\013.VO_PET_SET\"0\n\nVO_PET_SET\022\013\n\003max\030\001 \002(" +
+      "\005\022\025\n\004pets\030\002 \003(\0132\007.VO_PETB\034\n\020cg.base.io.p" +
+      "rotoB\010VOProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -15062,7 +17922,7 @@ public final class VOProtos {
           internal_static_VO_PET_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_PET_descriptor,
-              new java.lang.String[] { "BaseInfo", "ExtendInfo", "State", "Loyal", "Elements", "Attributes", "SkillSet", },
+              new java.lang.String[] { "UnitInfo", },
               cg.base.io.proto.VOProtos.VO_PET.class,
               cg.base.io.proto.VOProtos.VO_PET.Builder.class);
           internal_static_VO_OPTION_descriptor =
@@ -15089,6 +17949,22 @@ public final class VOProtos {
               new java.lang.String[] { "West", "East", "ImageGlobalId", "ObjectId", "Mark", },
               cg.base.io.proto.VOProtos.VO_MAP_CELL.class,
               cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder.class);
+          internal_static_VO_UNIT_descriptor =
+            getDescriptor().getMessageTypes().get(20);
+          internal_static_VO_UNIT_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_VO_UNIT_descriptor,
+              new java.lang.String[] { "BaseInfo", "Position", "HeadTitle", "ExtendInfo", "BattleScore", "BattleLocal", "Titles", "Elements", "Attributes", "Money", "Bags", "Job", "SkillSet", "Options", "State", "Loyal", "TalkType", "Index", "OwnerInstanceId", "PetSet", },
+              cg.base.io.proto.VOProtos.VO_UNIT.class,
+              cg.base.io.proto.VOProtos.VO_UNIT.Builder.class);
+          internal_static_VO_PET_SET_descriptor =
+            getDescriptor().getMessageTypes().get(21);
+          internal_static_VO_PET_SET_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_VO_PET_SET_descriptor,
+              new java.lang.String[] { "Max", "Pets", },
+              cg.base.io.proto.VOProtos.VO_PET_SET.class,
+              cg.base.io.proto.VOProtos.VO_PET_SET.Builder.class);
           return null;
         }
       };

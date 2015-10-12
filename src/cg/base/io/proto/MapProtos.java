@@ -3171,20 +3171,10 @@ public final class MapProtos {
   public interface RESPONSE_MAP_UNIT_CREATEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .VO_UNIT_BASE_INFO baseInfo = 1;
-    boolean hasBaseInfo();
-    cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo();
-    cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder();
-    
-    // required .VO_POSITION position = 2;
-    boolean hasPosition();
-    cg.base.io.proto.VOProtos.VO_POSITION getPosition();
-    cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder getPositionOrBuilder();
-    
-    // required .VO_MAP_UNIT_EXTEND extendInfo = 3;
-    boolean hasExtendInfo();
-    cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND getExtendInfo();
-    cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder getExtendInfoOrBuilder();
+    // required .VO_UNIT unitInfo = 1;
+    boolean hasUnitInfo();
+    cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo();
+    cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder();
   }
   public static final class RESPONSE_MAP_UNIT_CREATE extends
       com.google.protobuf.GeneratedMessage
@@ -3215,72 +3205,32 @@ public final class MapProtos {
     }
     
     private int bitField0_;
-    // required .VO_UNIT_BASE_INFO baseInfo = 1;
-    public static final int BASEINFO_FIELD_NUMBER = 1;
-    private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_;
-    public boolean hasBaseInfo() {
+    // required .VO_UNIT unitInfo = 1;
+    public static final int UNITINFO_FIELD_NUMBER = 1;
+    private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_;
+    public boolean hasUnitInfo() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
-      return baseInfo_;
+    public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
+      return unitInfo_;
     }
-    public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
-      return baseInfo_;
-    }
-    
-    // required .VO_POSITION position = 2;
-    public static final int POSITION_FIELD_NUMBER = 2;
-    private cg.base.io.proto.VOProtos.VO_POSITION position_;
-    public boolean hasPosition() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public cg.base.io.proto.VOProtos.VO_POSITION getPosition() {
-      return position_;
-    }
-    public cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder getPositionOrBuilder() {
-      return position_;
-    }
-    
-    // required .VO_MAP_UNIT_EXTEND extendInfo = 3;
-    public static final int EXTENDINFO_FIELD_NUMBER = 3;
-    private cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND extendInfo_;
-    public boolean hasExtendInfo() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND getExtendInfo() {
-      return extendInfo_;
-    }
-    public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder getExtendInfoOrBuilder() {
-      return extendInfo_;
+    public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
+      return unitInfo_;
     }
     
     private void initFields() {
-      baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
-      position_ = cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance();
-      extendInfo_ = cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDefaultInstance();
+      unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasBaseInfo()) {
+      if (!hasUnitInfo()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasPosition()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasExtendInfo()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getBaseInfo().isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getPosition().isInitialized()) {
+      if (!getUnitInfo().isInitialized()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -3292,13 +3242,7 @@ public final class MapProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(1, baseInfo_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeMessage(2, position_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeMessage(3, extendInfo_);
+        output.writeMessage(1, unitInfo_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -3311,15 +3255,7 @@ public final class MapProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, baseInfo_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, position_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, extendInfo_);
+          .computeMessageSize(1, unitInfo_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -3437,9 +3373,7 @@ public final class MapProtos {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getBaseInfoFieldBuilder();
-          getPositionFieldBuilder();
-          getExtendInfoFieldBuilder();
+          getUnitInfoFieldBuilder();
         }
       }
       private static Builder create() {
@@ -3448,24 +3382,12 @@ public final class MapProtos {
       
       public Builder clear() {
         super.clear();
-        if (baseInfoBuilder_ == null) {
-          baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+        if (unitInfoBuilder_ == null) {
+          unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
         } else {
-          baseInfoBuilder_.clear();
+          unitInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
-        if (positionBuilder_ == null) {
-          position_ = cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance();
-        } else {
-          positionBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        if (extendInfoBuilder_ == null) {
-          extendInfo_ = cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDefaultInstance();
-        } else {
-          extendInfoBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
       
@@ -3507,26 +3429,10 @@ public final class MapProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        if (baseInfoBuilder_ == null) {
-          result.baseInfo_ = baseInfo_;
+        if (unitInfoBuilder_ == null) {
+          result.unitInfo_ = unitInfo_;
         } else {
-          result.baseInfo_ = baseInfoBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        if (positionBuilder_ == null) {
-          result.position_ = position_;
-        } else {
-          result.position_ = positionBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        if (extendInfoBuilder_ == null) {
-          result.extendInfo_ = extendInfo_;
-        } else {
-          result.extendInfo_ = extendInfoBuilder_.build();
+          result.unitInfo_ = unitInfoBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -3544,37 +3450,19 @@ public final class MapProtos {
       
       public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE other) {
         if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.getDefaultInstance()) return this;
-        if (other.hasBaseInfo()) {
-          mergeBaseInfo(other.getBaseInfo());
-        }
-        if (other.hasPosition()) {
-          mergePosition(other.getPosition());
-        }
-        if (other.hasExtendInfo()) {
-          mergeExtendInfo(other.getExtendInfo());
+        if (other.hasUnitInfo()) {
+          mergeUnitInfo(other.getUnitInfo());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
       
       public final boolean isInitialized() {
-        if (!hasBaseInfo()) {
+        if (!hasUnitInfo()) {
           
           return false;
         }
-        if (!hasPosition()) {
-          
-          return false;
-        }
-        if (!hasExtendInfo()) {
-          
-          return false;
-        }
-        if (!getBaseInfo().isInitialized()) {
-          
-          return false;
-        }
-        if (!getPosition().isInitialized()) {
+        if (!getUnitInfo().isInitialized()) {
           
           return false;
         }
@@ -3605,30 +3493,12 @@ public final class MapProtos {
               break;
             }
             case 10: {
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.newBuilder();
-              if (hasBaseInfo()) {
-                subBuilder.mergeFrom(getBaseInfo());
+              cg.base.io.proto.VOProtos.VO_UNIT.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT.newBuilder();
+              if (hasUnitInfo()) {
+                subBuilder.mergeFrom(getUnitInfo());
               }
               input.readMessage(subBuilder, extensionRegistry);
-              setBaseInfo(subBuilder.buildPartial());
-              break;
-            }
-            case 18: {
-              cg.base.io.proto.VOProtos.VO_POSITION.Builder subBuilder = cg.base.io.proto.VOProtos.VO_POSITION.newBuilder();
-              if (hasPosition()) {
-                subBuilder.mergeFrom(getPosition());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setPosition(subBuilder.buildPartial());
-              break;
-            }
-            case 26: {
-              cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.Builder subBuilder = cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.newBuilder();
-              if (hasExtendInfo()) {
-                subBuilder.mergeFrom(getExtendInfo());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setExtendInfo(subBuilder.buildPartial());
+              setUnitInfo(subBuilder.buildPartial());
               break;
             }
           }
@@ -3637,274 +3507,94 @@ public final class MapProtos {
       
       private int bitField0_;
       
-      // required .VO_UNIT_BASE_INFO baseInfo = 1;
-      private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+      // required .VO_UNIT unitInfo = 1;
+      private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> baseInfoBuilder_;
-      public boolean hasBaseInfo() {
+          cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> unitInfoBuilder_;
+      public boolean hasUnitInfo() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
-        if (baseInfoBuilder_ == null) {
-          return baseInfo_;
+      public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
+        if (unitInfoBuilder_ == null) {
+          return unitInfo_;
         } else {
-          return baseInfoBuilder_.getMessage();
+          return unitInfoBuilder_.getMessage();
         }
       }
-      public Builder setBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
-        if (baseInfoBuilder_ == null) {
+      public Builder setUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
+        if (unitInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          baseInfo_ = value;
+          unitInfo_ = value;
           onChanged();
         } else {
-          baseInfoBuilder_.setMessage(value);
+          unitInfoBuilder_.setMessage(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder setBaseInfo(
-          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder builderForValue) {
-        if (baseInfoBuilder_ == null) {
-          baseInfo_ = builderForValue.build();
+      public Builder setUnitInfo(
+          cg.base.io.proto.VOProtos.VO_UNIT.Builder builderForValue) {
+        if (unitInfoBuilder_ == null) {
+          unitInfo_ = builderForValue.build();
           onChanged();
         } else {
-          baseInfoBuilder_.setMessage(builderForValue.build());
+          unitInfoBuilder_.setMessage(builderForValue.build());
         }
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder mergeBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
-        if (baseInfoBuilder_ == null) {
+      public Builder mergeUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
+        if (unitInfoBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              baseInfo_ != cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance()) {
-            baseInfo_ =
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.newBuilder(baseInfo_).mergeFrom(value).buildPartial();
+              unitInfo_ != cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance()) {
+            unitInfo_ =
+              cg.base.io.proto.VOProtos.VO_UNIT.newBuilder(unitInfo_).mergeFrom(value).buildPartial();
           } else {
-            baseInfo_ = value;
+            unitInfo_ = value;
           }
           onChanged();
         } else {
-          baseInfoBuilder_.mergeFrom(value);
+          unitInfoBuilder_.mergeFrom(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder clearBaseInfo() {
-        if (baseInfoBuilder_ == null) {
-          baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+      public Builder clearUnitInfo() {
+        if (unitInfoBuilder_ == null) {
+          unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
           onChanged();
         } else {
-          baseInfoBuilder_.clear();
+          unitInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder getBaseInfoBuilder() {
+      public cg.base.io.proto.VOProtos.VO_UNIT.Builder getUnitInfoBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
-        return getBaseInfoFieldBuilder().getBuilder();
+        return getUnitInfoFieldBuilder().getBuilder();
       }
-      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
-        if (baseInfoBuilder_ != null) {
-          return baseInfoBuilder_.getMessageOrBuilder();
+      public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
+        if (unitInfoBuilder_ != null) {
+          return unitInfoBuilder_.getMessageOrBuilder();
         } else {
-          return baseInfo_;
+          return unitInfo_;
         }
       }
       private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> 
-          getBaseInfoFieldBuilder() {
-        if (baseInfoBuilder_ == null) {
-          baseInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder>(
-                  baseInfo_,
+          cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> 
+          getUnitInfoFieldBuilder() {
+        if (unitInfoBuilder_ == null) {
+          unitInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder>(
+                  unitInfo_,
                   getParentForChildren(),
                   isClean());
-          baseInfo_ = null;
+          unitInfo_ = null;
         }
-        return baseInfoBuilder_;
-      }
-      
-      // required .VO_POSITION position = 2;
-      private cg.base.io.proto.VOProtos.VO_POSITION position_ = cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_POSITION, cg.base.io.proto.VOProtos.VO_POSITION.Builder, cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder> positionBuilder_;
-      public boolean hasPosition() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      public cg.base.io.proto.VOProtos.VO_POSITION getPosition() {
-        if (positionBuilder_ == null) {
-          return position_;
-        } else {
-          return positionBuilder_.getMessage();
-        }
-      }
-      public Builder setPosition(cg.base.io.proto.VOProtos.VO_POSITION value) {
-        if (positionBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          position_ = value;
-          onChanged();
-        } else {
-          positionBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      public Builder setPosition(
-          cg.base.io.proto.VOProtos.VO_POSITION.Builder builderForValue) {
-        if (positionBuilder_ == null) {
-          position_ = builderForValue.build();
-          onChanged();
-        } else {
-          positionBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      public Builder mergePosition(cg.base.io.proto.VOProtos.VO_POSITION value) {
-        if (positionBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002) &&
-              position_ != cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance()) {
-            position_ =
-              cg.base.io.proto.VOProtos.VO_POSITION.newBuilder(position_).mergeFrom(value).buildPartial();
-          } else {
-            position_ = value;
-          }
-          onChanged();
-        } else {
-          positionBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000002;
-        return this;
-      }
-      public Builder clearPosition() {
-        if (positionBuilder_ == null) {
-          position_ = cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance();
-          onChanged();
-        } else {
-          positionBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000002);
-        return this;
-      }
-      public cg.base.io.proto.VOProtos.VO_POSITION.Builder getPositionBuilder() {
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return getPositionFieldBuilder().getBuilder();
-      }
-      public cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder getPositionOrBuilder() {
-        if (positionBuilder_ != null) {
-          return positionBuilder_.getMessageOrBuilder();
-        } else {
-          return position_;
-        }
-      }
-      private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_POSITION, cg.base.io.proto.VOProtos.VO_POSITION.Builder, cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder> 
-          getPositionFieldBuilder() {
-        if (positionBuilder_ == null) {
-          positionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              cg.base.io.proto.VOProtos.VO_POSITION, cg.base.io.proto.VOProtos.VO_POSITION.Builder, cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder>(
-                  position_,
-                  getParentForChildren(),
-                  isClean());
-          position_ = null;
-        }
-        return positionBuilder_;
-      }
-      
-      // required .VO_MAP_UNIT_EXTEND extendInfo = 3;
-      private cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND extendInfo_ = cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND, cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.Builder, cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder> extendInfoBuilder_;
-      public boolean hasExtendInfo() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND getExtendInfo() {
-        if (extendInfoBuilder_ == null) {
-          return extendInfo_;
-        } else {
-          return extendInfoBuilder_.getMessage();
-        }
-      }
-      public Builder setExtendInfo(cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND value) {
-        if (extendInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          extendInfo_ = value;
-          onChanged();
-        } else {
-          extendInfoBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      public Builder setExtendInfo(
-          cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.Builder builderForValue) {
-        if (extendInfoBuilder_ == null) {
-          extendInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          extendInfoBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      public Builder mergeExtendInfo(cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND value) {
-        if (extendInfoBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) == 0x00000004) &&
-              extendInfo_ != cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDefaultInstance()) {
-            extendInfo_ =
-              cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.newBuilder(extendInfo_).mergeFrom(value).buildPartial();
-          } else {
-            extendInfo_ = value;
-          }
-          onChanged();
-        } else {
-          extendInfoBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      public Builder clearExtendInfo() {
-        if (extendInfoBuilder_ == null) {
-          extendInfo_ = cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDefaultInstance();
-          onChanged();
-        } else {
-          extendInfoBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000004);
-        return this;
-      }
-      public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.Builder getExtendInfoBuilder() {
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return getExtendInfoFieldBuilder().getBuilder();
-      }
-      public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder getExtendInfoOrBuilder() {
-        if (extendInfoBuilder_ != null) {
-          return extendInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return extendInfo_;
-        }
-      }
-      private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND, cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.Builder, cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder> 
-          getExtendInfoFieldBuilder() {
-        if (extendInfoBuilder_ == null) {
-          extendInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND, cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.Builder, cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder>(
-                  extendInfo_,
-                  getParentForChildren(),
-                  isClean());
-          extendInfo_ = null;
-        }
-        return extendInfoBuilder_;
+        return unitInfoBuilder_;
       }
       
       // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_UNIT_CREATE)
@@ -5434,16 +5124,14 @@ public final class MapProtos {
       "2\014.VO_MAP_AREA\"3\n\021RESPONSE_MAP_MOVE\022\036\n\010m",
       "apCells\030\001 \003(\0132\014.VO_MAP_CELL\"N\n\022VO_MAP_UN" +
       "IT_EXTEND\022\027\n\017ownerInstanceId\030\001 \001(\005\022\r\n\005st" +
-      "ate\030\002 \001(\005\022\020\n\010talkType\030\003 \001(\t\"\211\001\n\030RESPONSE" +
-      "_MAP_UNIT_CREATE\022$\n\010baseInfo\030\001 \002(\0132\022.VO_" +
-      "UNIT_BASE_INFO\022\036\n\010position\030\002 \002(\0132\014.VO_PO" +
-      "SITION\022\'\n\nextendInfo\030\003 \002(\0132\023.VO_MAP_UNIT" +
-      "_EXTEND\"[\n\026RESPONSE_MAP_UNIT_MOVE\022\020\n\010uni" +
-      "tType\030\001 \002(\005\022\022\n\ninstanceId\030\002 \002(\005\022\014\n\004east\030" +
-      "\003 \002(\005\022\r\n\005south\030\004 \002(\005\".\n\030RESPONSE_MAP_UNI" +
-      "T_REMOVE\022\022\n\ninstanceId\030\001 \002(\005\"4\n\022RESPONSE",
-      "_MAP_CELLS\022\036\n\010mapCells\030\001 \003(\0132\014.VO_MAP_CE" +
-      "LLB\035\n\020cg.base.io.protoB\tMapProtos"
+      "ate\030\002 \001(\005\022\020\n\010talkType\030\003 \001(\t\"6\n\030RESPONSE_" +
+      "MAP_UNIT_CREATE\022\032\n\010unitInfo\030\001 \002(\0132\010.VO_U" +
+      "NIT\"[\n\026RESPONSE_MAP_UNIT_MOVE\022\020\n\010unitTyp" +
+      "e\030\001 \002(\005\022\022\n\ninstanceId\030\002 \002(\005\022\014\n\004east\030\003 \002(" +
+      "\005\022\r\n\005south\030\004 \002(\005\".\n\030RESPONSE_MAP_UNIT_RE" +
+      "MOVE\022\022\n\ninstanceId\030\001 \002(\005\"4\n\022RESPONSE_MAP" +
+      "_CELLS\022\036\n\010mapCells\030\001 \003(\0132\014.VO_MAP_CELLB\035" +
+      "\n\020cg.base.io.protoB\tMapProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -5495,7 +5183,7 @@ public final class MapProtos {
           internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor,
-              new java.lang.String[] { "BaseInfo", "Position", "ExtendInfo", },
+              new java.lang.String[] { "UnitInfo", },
               cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.class,
               cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.Builder.class);
           internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor =
