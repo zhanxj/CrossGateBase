@@ -34,7 +34,8 @@ public class VoMapArea {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEast() {
-		int ret = vo.getEast();		return ret;
+		int ret = vo.getEast();
+		return ret;
 	}
 
 	/**
@@ -51,7 +52,8 @@ public class VoMapArea {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSouth() {
-		int ret = vo.getSouth();		return ret;
+		int ret = vo.getSouth();
+		return ret;
 	}
 
 	/**
@@ -68,7 +70,8 @@ public class VoMapArea {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getNorth() {
-		int ret = vo.getNorth();		return ret;
+		int ret = vo.getNorth();
+		return ret;
 	}
 
 	/**
@@ -85,7 +88,8 @@ public class VoMapArea {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getWest() {
-		int ret = vo.getWest();		return ret;
+		int ret = vo.getWest();
+		return ret;
 	}
 
 	public VO_MAP_AREA getVO_MAP_AREA() {

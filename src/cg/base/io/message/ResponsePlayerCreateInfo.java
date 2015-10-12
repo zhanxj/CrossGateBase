@@ -65,7 +65,8 @@ public class ResponsePlayerCreateInfo extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getBp() {
-		int ret = builder.getBp();		return ret;
+		int ret = builder.getBp();
+		return ret;
 	}
 
 	/**
@@ -82,7 +83,8 @@ public class ResponsePlayerCreateInfo extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getPageMax() {
-		int ret = builder.getPageMax();		return ret;
+		int ret = builder.getPageMax();
+		return ret;
 	}
 
 	public RESPONSE_PLAYER_CREATE_INFO getResponsePlayerCreateInfo() {

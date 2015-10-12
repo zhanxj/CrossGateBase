@@ -37,7 +37,8 @@ public class ResponseOptionsSet extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		String ret = builder.getName();		return ret;
+		String ret = builder.getName();
+		return ret;
 	}
 
 	/**

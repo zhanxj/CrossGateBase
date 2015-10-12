@@ -22,24 +22,6 @@ public class VoUnitBattleInfo {
 
 	/**
 	 * 
-	 * @param	baseInfo
-	 * 			<u>do not has any annotate.</u>
-	 */
-	public void setBaseInfo(VoUnitBaseInfo baseInfo) {
-		builder.setBaseInfo(baseInfo.getVO_UNIT_BASE_INFO());
-	}
-
-	/**
-	 * 
-	 * @return	<u>do not has any annotate.</u>
-	 */
-	public VoUnitBaseInfo getBaseInfo() {
-		VoUnitBaseInfo ret = new VoUnitBaseInfo(vo.getBaseInfo());
-		return ret;
-	}
-
-	/**
-	 * 
 	 * @param	hpMax
 	 * 			<u>do not has any annotate.</u>
 	 */
@@ -52,7 +34,8 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getHpMax() {
-		int ret = vo.getHpMax();		return ret;
+		int ret = vo.getHpMax();
+		return ret;
 	}
 
 	/**
@@ -69,7 +52,8 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMp() {
-		int ret = vo.getMp();		return ret;
+		int ret = vo.getMp();
+		return ret;
 	}
 
 	/**
@@ -86,7 +70,8 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMpMax() {
-		int ret = vo.getMpMax();		return ret;
+		int ret = vo.getMpMax();
+		return ret;
 	}
 
 	/**
@@ -103,7 +88,8 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getHp() {
-		int ret = vo.getHp();		return ret;
+		int ret = vo.getHp();
+		return ret;
 	}
 
 	/**
@@ -120,7 +106,26 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getIsChallenger() {
-		Boolean ret = vo.getIsChallenger();		return ret;
+		Boolean ret = vo.getIsChallenger();
+		return ret;
+	}
+
+	/**
+	 * 
+	 * @param	unitInfo
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setUnitInfo(VoUnit unitInfo) {
+		builder.setUnitInfo(unitInfo.getVO_UNIT());
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public VoUnit getUnitInfo() {
+		VoUnit ret = new VoUnit(vo.getUnitInfo());
+		return ret;
 	}
 
 	/**
@@ -137,7 +142,8 @@ public class VoUnitBattleInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getLocal() {
-		int ret = vo.getLocal();		return ret;
+		int ret = vo.getLocal();
+		return ret;
 	}
 
 	public VO_UNIT_BATTLE_INFO getVO_UNIT_BATTLE_INFO() {

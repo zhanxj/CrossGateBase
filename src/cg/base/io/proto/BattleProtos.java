@@ -11,10 +11,10 @@ public final class BattleProtos {
   public interface VO_UNIT_BATTLE_INFOOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .VO_UNIT_BASE_INFO baseInfo = 1;
-    boolean hasBaseInfo();
-    cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo();
-    cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder();
+    // required .VO_UNIT unitInfo = 1;
+    boolean hasUnitInfo();
+    cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo();
+    cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder();
     
     // required int32 hpMax = 2;
     boolean hasHpMax();
@@ -69,17 +69,17 @@ public final class BattleProtos {
     }
     
     private int bitField0_;
-    // required .VO_UNIT_BASE_INFO baseInfo = 1;
-    public static final int BASEINFO_FIELD_NUMBER = 1;
-    private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_;
-    public boolean hasBaseInfo() {
+    // required .VO_UNIT unitInfo = 1;
+    public static final int UNITINFO_FIELD_NUMBER = 1;
+    private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_;
+    public boolean hasUnitInfo() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
-      return baseInfo_;
+    public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
+      return unitInfo_;
     }
-    public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
-      return baseInfo_;
+    public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
+      return unitInfo_;
     }
     
     // required int32 hpMax = 2;
@@ -143,7 +143,7 @@ public final class BattleProtos {
     }
     
     private void initFields() {
-      baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+      unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       hpMax_ = 0;
       hp_ = 0;
       mpMax_ = 0;
@@ -156,7 +156,7 @@ public final class BattleProtos {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasBaseInfo()) {
+      if (!hasUnitInfo()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -184,7 +184,7 @@ public final class BattleProtos {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!getBaseInfo().isInitialized()) {
+      if (!getUnitInfo().isInitialized()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -196,7 +196,7 @@ public final class BattleProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(1, baseInfo_);
+        output.writeMessage(1, unitInfo_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeInt32(2, hpMax_);
@@ -227,7 +227,7 @@ public final class BattleProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, baseInfo_);
+          .computeMessageSize(1, unitInfo_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -369,7 +369,7 @@ public final class BattleProtos {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getBaseInfoFieldBuilder();
+          getUnitInfoFieldBuilder();
         }
       }
       private static Builder create() {
@@ -378,10 +378,10 @@ public final class BattleProtos {
       
       public Builder clear() {
         super.clear();
-        if (baseInfoBuilder_ == null) {
-          baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+        if (unitInfoBuilder_ == null) {
+          unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
         } else {
-          baseInfoBuilder_.clear();
+          unitInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         hpMax_ = 0;
@@ -437,10 +437,10 @@ public final class BattleProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        if (baseInfoBuilder_ == null) {
-          result.baseInfo_ = baseInfo_;
+        if (unitInfoBuilder_ == null) {
+          result.unitInfo_ = unitInfo_;
         } else {
-          result.baseInfo_ = baseInfoBuilder_.build();
+          result.unitInfo_ = unitInfoBuilder_.build();
         }
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
@@ -482,8 +482,8 @@ public final class BattleProtos {
       
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO other) {
         if (other == cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.getDefaultInstance()) return this;
-        if (other.hasBaseInfo()) {
-          mergeBaseInfo(other.getBaseInfo());
+        if (other.hasUnitInfo()) {
+          mergeUnitInfo(other.getUnitInfo());
         }
         if (other.hasHpMax()) {
           setHpMax(other.getHpMax());
@@ -508,7 +508,7 @@ public final class BattleProtos {
       }
       
       public final boolean isInitialized() {
-        if (!hasBaseInfo()) {
+        if (!hasUnitInfo()) {
           
           return false;
         }
@@ -536,7 +536,7 @@ public final class BattleProtos {
           
           return false;
         }
-        if (!getBaseInfo().isInitialized()) {
+        if (!getUnitInfo().isInitialized()) {
           
           return false;
         }
@@ -567,12 +567,12 @@ public final class BattleProtos {
               break;
             }
             case 10: {
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.newBuilder();
-              if (hasBaseInfo()) {
-                subBuilder.mergeFrom(getBaseInfo());
+              cg.base.io.proto.VOProtos.VO_UNIT.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT.newBuilder();
+              if (hasUnitInfo()) {
+                subBuilder.mergeFrom(getUnitInfo());
               }
               input.readMessage(subBuilder, extensionRegistry);
-              setBaseInfo(subBuilder.buildPartial());
+              setUnitInfo(subBuilder.buildPartial());
               break;
             }
             case 16: {
@@ -611,94 +611,94 @@ public final class BattleProtos {
       
       private int bitField0_;
       
-      // required .VO_UNIT_BASE_INFO baseInfo = 1;
-      private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+      // required .VO_UNIT unitInfo = 1;
+      private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> baseInfoBuilder_;
-      public boolean hasBaseInfo() {
+          cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> unitInfoBuilder_;
+      public boolean hasUnitInfo() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO getBaseInfo() {
-        if (baseInfoBuilder_ == null) {
-          return baseInfo_;
+      public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
+        if (unitInfoBuilder_ == null) {
+          return unitInfo_;
         } else {
-          return baseInfoBuilder_.getMessage();
+          return unitInfoBuilder_.getMessage();
         }
       }
-      public Builder setBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
-        if (baseInfoBuilder_ == null) {
+      public Builder setUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
+        if (unitInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          baseInfo_ = value;
+          unitInfo_ = value;
           onChanged();
         } else {
-          baseInfoBuilder_.setMessage(value);
+          unitInfoBuilder_.setMessage(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder setBaseInfo(
-          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder builderForValue) {
-        if (baseInfoBuilder_ == null) {
-          baseInfo_ = builderForValue.build();
+      public Builder setUnitInfo(
+          cg.base.io.proto.VOProtos.VO_UNIT.Builder builderForValue) {
+        if (unitInfoBuilder_ == null) {
+          unitInfo_ = builderForValue.build();
           onChanged();
         } else {
-          baseInfoBuilder_.setMessage(builderForValue.build());
+          unitInfoBuilder_.setMessage(builderForValue.build());
         }
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder mergeBaseInfo(cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO value) {
-        if (baseInfoBuilder_ == null) {
+      public Builder mergeUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
+        if (unitInfoBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              baseInfo_ != cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance()) {
-            baseInfo_ =
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.newBuilder(baseInfo_).mergeFrom(value).buildPartial();
+              unitInfo_ != cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance()) {
+            unitInfo_ =
+              cg.base.io.proto.VOProtos.VO_UNIT.newBuilder(unitInfo_).mergeFrom(value).buildPartial();
           } else {
-            baseInfo_ = value;
+            unitInfo_ = value;
           }
           onChanged();
         } else {
-          baseInfoBuilder_.mergeFrom(value);
+          unitInfoBuilder_.mergeFrom(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder clearBaseInfo() {
-        if (baseInfoBuilder_ == null) {
-          baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
+      public Builder clearUnitInfo() {
+        if (unitInfoBuilder_ == null) {
+          unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
           onChanged();
         } else {
-          baseInfoBuilder_.clear();
+          unitInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder getBaseInfoBuilder() {
+      public cg.base.io.proto.VOProtos.VO_UNIT.Builder getUnitInfoBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
-        return getBaseInfoFieldBuilder().getBuilder();
+        return getUnitInfoFieldBuilder().getBuilder();
       }
-      public cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder() {
-        if (baseInfoBuilder_ != null) {
-          return baseInfoBuilder_.getMessageOrBuilder();
+      public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
+        if (unitInfoBuilder_ != null) {
+          return unitInfoBuilder_.getMessageOrBuilder();
         } else {
-          return baseInfo_;
+          return unitInfo_;
         }
       }
       private com.google.protobuf.SingleFieldBuilder<
-          cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> 
-          getBaseInfoFieldBuilder() {
-        if (baseInfoBuilder_ == null) {
-          baseInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder>(
-                  baseInfo_,
+          cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> 
+          getUnitInfoFieldBuilder() {
+        if (unitInfoBuilder_ == null) {
+          unitInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder>(
+                  unitInfo_,
                   getParentForChildren(),
                   isClean());
-          baseInfo_ = null;
+          unitInfo_ = null;
         }
-        return baseInfoBuilder_;
+        return unitInfoBuilder_;
       }
       
       // required int32 hpMax = 2;
@@ -841,7 +841,11 @@ public final class BattleProtos {
   public interface RESPONSE_BATTLE_ENTEROrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // repeated .VO_UNIT_BATTLE_INFO teamA = 1;
+    // required int32 battleId = 1;
+    boolean hasBattleId();
+    int getBattleId();
+    
+    // repeated .VO_UNIT_BATTLE_INFO teamA = 2;
     java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> 
         getTeamAList();
     cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO getTeamA(int index);
@@ -851,7 +855,7 @@ public final class BattleProtos {
     cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder getTeamAOrBuilder(
         int index);
     
-    // repeated .VO_UNIT_BATTLE_INFO teamB = 2;
+    // repeated .VO_UNIT_BATTLE_INFO teamB = 3;
     java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> 
         getTeamBList();
     cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO getTeamB(int index);
@@ -889,8 +893,19 @@ public final class BattleProtos {
       return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable;
     }
     
-    // repeated .VO_UNIT_BATTLE_INFO teamA = 1;
-    public static final int TEAMA_FIELD_NUMBER = 1;
+    private int bitField0_;
+    // required int32 battleId = 1;
+    public static final int BATTLEID_FIELD_NUMBER = 1;
+    private int battleId_;
+    public boolean hasBattleId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public int getBattleId() {
+      return battleId_;
+    }
+    
+    // repeated .VO_UNIT_BATTLE_INFO teamA = 2;
+    public static final int TEAMA_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamA_;
     public java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> getTeamAList() {
       return teamA_;
@@ -910,8 +925,8 @@ public final class BattleProtos {
       return teamA_.get(index);
     }
     
-    // repeated .VO_UNIT_BATTLE_INFO teamB = 2;
-    public static final int TEAMB_FIELD_NUMBER = 2;
+    // repeated .VO_UNIT_BATTLE_INFO teamB = 3;
+    public static final int TEAMB_FIELD_NUMBER = 3;
     private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamB_;
     public java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> getTeamBList() {
       return teamB_;
@@ -932,6 +947,7 @@ public final class BattleProtos {
     }
     
     private void initFields() {
+      battleId_ = 0;
       teamA_ = java.util.Collections.emptyList();
       teamB_ = java.util.Collections.emptyList();
     }
@@ -940,6 +956,10 @@ public final class BattleProtos {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
+      if (!hasBattleId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       for (int i = 0; i < getTeamACount(); i++) {
         if (!getTeamA(i).isInitialized()) {
           memoizedIsInitialized = 0;
@@ -959,11 +979,14 @@ public final class BattleProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, battleId_);
+      }
       for (int i = 0; i < teamA_.size(); i++) {
-        output.writeMessage(1, teamA_.get(i));
+        output.writeMessage(2, teamA_.get(i));
       }
       for (int i = 0; i < teamB_.size(); i++) {
-        output.writeMessage(2, teamB_.get(i));
+        output.writeMessage(3, teamB_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -974,13 +997,17 @@ public final class BattleProtos {
       if (size != -1) return size;
     
       size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, battleId_);
+      }
       for (int i = 0; i < teamA_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, teamA_.get(i));
+          .computeMessageSize(2, teamA_.get(i));
       }
       for (int i = 0; i < teamB_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, teamB_.get(i));
+          .computeMessageSize(3, teamB_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1108,15 +1135,17 @@ public final class BattleProtos {
       
       public Builder clear() {
         super.clear();
+        battleId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (teamABuilder_ == null) {
           teamA_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           teamABuilder_.clear();
         }
         if (teamBBuilder_ == null) {
           teamB_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
         } else {
           teamBBuilder_.clear();
         }
@@ -1157,24 +1186,30 @@ public final class BattleProtos {
       public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER buildPartial() {
         cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER result = new cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.battleId_ = battleId_;
         if (teamABuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
             teamA_ = java.util.Collections.unmodifiableList(teamA_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.teamA_ = teamA_;
         } else {
           result.teamA_ = teamABuilder_.build();
         }
         if (teamBBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          if (((bitField0_ & 0x00000004) == 0x00000004)) {
             teamB_ = java.util.Collections.unmodifiableList(teamB_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.teamB_ = teamB_;
         } else {
           result.teamB_ = teamBBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -1190,11 +1225,14 @@ public final class BattleProtos {
       
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER other) {
         if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.getDefaultInstance()) return this;
+        if (other.hasBattleId()) {
+          setBattleId(other.getBattleId());
+        }
         if (teamABuilder_ == null) {
           if (!other.teamA_.isEmpty()) {
             if (teamA_.isEmpty()) {
               teamA_ = other.teamA_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureTeamAIsMutable();
               teamA_.addAll(other.teamA_);
@@ -1207,7 +1245,7 @@ public final class BattleProtos {
               teamABuilder_.dispose();
               teamABuilder_ = null;
               teamA_ = other.teamA_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               teamABuilder_ = 
                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
                    getTeamAFieldBuilder() : null;
@@ -1220,7 +1258,7 @@ public final class BattleProtos {
           if (!other.teamB_.isEmpty()) {
             if (teamB_.isEmpty()) {
               teamB_ = other.teamB_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensureTeamBIsMutable();
               teamB_.addAll(other.teamB_);
@@ -1233,7 +1271,7 @@ public final class BattleProtos {
               teamBBuilder_.dispose();
               teamBBuilder_ = null;
               teamB_ = other.teamB_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000004);
               teamBBuilder_ = 
                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
                    getTeamBFieldBuilder() : null;
@@ -1247,6 +1285,10 @@ public final class BattleProtos {
       }
       
       public final boolean isInitialized() {
+        if (!hasBattleId()) {
+          
+          return false;
+        }
         for (int i = 0; i < getTeamACount(); i++) {
           if (!getTeamA(i).isInitialized()) {
             
@@ -1285,13 +1327,18 @@ public final class BattleProtos {
               }
               break;
             }
-            case 10: {
+            case 8: {
+              bitField0_ |= 0x00000001;
+              battleId_ = input.readInt32();
+              break;
+            }
+            case 18: {
               cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder subBuilder = cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.newBuilder();
               input.readMessage(subBuilder, extensionRegistry);
               addTeamA(subBuilder.buildPartial());
               break;
             }
-            case 18: {
+            case 26: {
               cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder subBuilder = cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.newBuilder();
               input.readMessage(subBuilder, extensionRegistry);
               addTeamB(subBuilder.buildPartial());
@@ -1303,13 +1350,34 @@ public final class BattleProtos {
       
       private int bitField0_;
       
-      // repeated .VO_UNIT_BATTLE_INFO teamA = 1;
+      // required int32 battleId = 1;
+      private int battleId_ ;
+      public boolean hasBattleId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getBattleId() {
+        return battleId_;
+      }
+      public Builder setBattleId(int value) {
+        bitField0_ |= 0x00000001;
+        battleId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearBattleId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        battleId_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // repeated .VO_UNIT_BATTLE_INFO teamA = 2;
       private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamA_ =
         java.util.Collections.emptyList();
       private void ensureTeamAIsMutable() {
-        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
           teamA_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO>(teamA_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
       
@@ -1425,7 +1493,7 @@ public final class BattleProtos {
       public Builder clearTeamA() {
         if (teamABuilder_ == null) {
           teamA_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           teamABuilder_.clear();
@@ -1481,7 +1549,7 @@ public final class BattleProtos {
           teamABuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
               cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder>(
                   teamA_,
-                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  ((bitField0_ & 0x00000002) == 0x00000002),
                   getParentForChildren(),
                   isClean());
           teamA_ = null;
@@ -1489,13 +1557,13 @@ public final class BattleProtos {
         return teamABuilder_;
       }
       
-      // repeated .VO_UNIT_BATTLE_INFO teamB = 2;
+      // repeated .VO_UNIT_BATTLE_INFO teamB = 3;
       private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamB_ =
         java.util.Collections.emptyList();
       private void ensureTeamBIsMutable() {
-        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
           teamB_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO>(teamB_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000004;
          }
       }
       
@@ -1611,7 +1679,7 @@ public final class BattleProtos {
       public Builder clearTeamB() {
         if (teamBBuilder_ == null) {
           teamB_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
           teamBBuilder_.clear();
@@ -1667,7 +1735,7 @@ public final class BattleProtos {
           teamBBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
               cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder, cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder>(
                   teamB_,
-                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
                   isClean());
           teamB_ = null;
@@ -2758,18 +2826,18 @@ public final class BattleProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014Battle.proto\032\010VO.proto\"\226\001\n\023VO_UNIT_BAT" +
-      "TLE_INFO\022$\n\010baseInfo\030\001 \002(\0132\022.VO_UNIT_BAS" +
-      "E_INFO\022\r\n\005hpMax\030\002 \002(\005\022\n\n\002hp\030\003 \002(\005\022\r\n\005mpM" +
-      "ax\030\004 \002(\005\022\n\n\002mp\030\005 \002(\005\022\r\n\005local\030\006 \002(\005\022\024\n\014i" +
-      "sChallenger\030\007 \002(\010\"a\n\025RESPONSE_BATTLE_ENT" +
-      "ER\022#\n\005teamA\030\001 \003(\0132\024.VO_UNIT_BATTLE_INFO\022" +
-      "#\n\005teamB\030\002 \003(\0132\024.VO_UNIT_BATTLE_INFO\")\n\025" +
-      "REQUEST_BATTLE_ATTACK\022\020\n\010targetId\030\001 \002(\005\"" +
-      "*\n\026RESPONSE_BATTLE_ACTION\022\020\n\010targetId\030\001 " +
-      "\002(\005\"*\n\026RESPONSE_BATTLE_FINISH\022\020\n\010targetI",
-      "d\030\001 \002(\005B \n\020cg.base.io.protoB\014BattleProto" +
-      "s"
+      "\n\014Battle.proto\032\010VO.proto\"\214\001\n\023VO_UNIT_BAT" +
+      "TLE_INFO\022\032\n\010unitInfo\030\001 \002(\0132\010.VO_UNIT\022\r\n\005" +
+      "hpMax\030\002 \002(\005\022\n\n\002hp\030\003 \002(\005\022\r\n\005mpMax\030\004 \002(\005\022\n" +
+      "\n\002mp\030\005 \002(\005\022\r\n\005local\030\006 \002(\005\022\024\n\014isChallenge" +
+      "r\030\007 \002(\010\"s\n\025RESPONSE_BATTLE_ENTER\022\020\n\010batt" +
+      "leId\030\001 \002(\005\022#\n\005teamA\030\002 \003(\0132\024.VO_UNIT_BATT" +
+      "LE_INFO\022#\n\005teamB\030\003 \003(\0132\024.VO_UNIT_BATTLE_" +
+      "INFO\")\n\025REQUEST_BATTLE_ATTACK\022\020\n\010targetI" +
+      "d\030\001 \002(\005\"*\n\026RESPONSE_BATTLE_ACTION\022\020\n\010tar" +
+      "getId\030\001 \002(\005\"*\n\026RESPONSE_BATTLE_FINISH\022\020\n",
+      "\010targetId\030\001 \002(\005B \n\020cg.base.io.protoB\014Bat" +
+      "tleProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -2781,7 +2849,7 @@ public final class BattleProtos {
           internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_UNIT_BATTLE_INFO_descriptor,
-              new java.lang.String[] { "BaseInfo", "HpMax", "Hp", "MpMax", "Mp", "Local", "IsChallenger", },
+              new java.lang.String[] { "UnitInfo", "HpMax", "Hp", "MpMax", "Mp", "Local", "IsChallenger", },
               cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.class,
               cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO.Builder.class);
           internal_static_RESPONSE_BATTLE_ENTER_descriptor =
@@ -2789,7 +2857,7 @@ public final class BattleProtos {
           internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_BATTLE_ENTER_descriptor,
-              new java.lang.String[] { "TeamA", "TeamB", },
+              new java.lang.String[] { "BattleId", "TeamA", "TeamB", },
               cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.class,
               cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTER.Builder.class);
           internal_static_REQUEST_BATTLE_ATTACK_descriptor =

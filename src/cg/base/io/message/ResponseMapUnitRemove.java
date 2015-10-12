@@ -37,7 +37,8 @@ public class ResponseMapUnitRemove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getInstanceId() {
-		int ret = builder.getInstanceId();		return ret;
+		int ret = builder.getInstanceId();
+		return ret;
 	}
 
 	public RESPONSE_MAP_UNIT_REMOVE getResponseMapUnitRemove() {

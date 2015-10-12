@@ -34,7 +34,8 @@ public class VoUnitExtendInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getRace() {
-		int ret = vo.getRace();		return ret;
+		int ret = vo.getRace();
+		return ret;
 	}
 
 	/**
@@ -51,7 +52,8 @@ public class VoUnitExtendInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getLevel() {
-		int ret = vo.getLevel();		return ret;
+		int ret = vo.getLevel();
+		return ret;
 	}
 
 	/**
@@ -68,7 +70,8 @@ public class VoUnitExtendInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getExp() {
-		int ret = vo.getExp();		return ret;
+		int ret = vo.getExp();
+		return ret;
 	}
 
 	public VO_UNIT_EXTEND_INFO getVO_UNIT_EXTEND_INFO() {

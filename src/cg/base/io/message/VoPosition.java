@@ -34,7 +34,8 @@ public class VoPosition {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEast() {
-		int ret = vo.getEast();		return ret;
+		int ret = vo.getEast();
+		return ret;
 	}
 
 	/**
@@ -51,7 +52,8 @@ public class VoPosition {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSouth() {
-		int ret = vo.getSouth();		return ret;
+		int ret = vo.getSouth();
+		return ret;
 	}
 
 	/**
@@ -68,7 +70,8 @@ public class VoPosition {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getDir() {
-		int ret = vo.getDir();		return ret;
+		int ret = vo.getDir();
+		return ret;
 	}
 
 	public VO_POSITION getVO_POSITION() {

@@ -30,10 +30,10 @@ public class ResponsePlayerAnimationInfo extends ProtoMessage {
 	 * @param	animationInfos
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setAnimationInfos(Iterable<VoPlayerAnimationInfo> animationInfos) {
-		List<VO_PLAYER_ANIMATION_INFO> list = Lists.newLinkedList();
-		for (VoPlayerAnimationInfo vo : animationInfos) {
-			list.add(vo.getVO_PLAYER_ANIMATION_INFO());
+	public void setAnimationInfos(Iterable<VoPlayerAnimationInfos> animationInfos) {
+		List<VO_PLAYER_ANIMATION_INFOS> list = Lists.newLinkedList();
+		for (VoPlayerAnimationInfos vo : animationInfos) {
+			list.add(vo.getVO_PLAYER_ANIMATION_INFOS());
 		}
 		builder.addAllAnimationInfos(list);
 	}
@@ -42,30 +42,13 @@ public class ResponsePlayerAnimationInfo extends ProtoMessage {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VoPlayerAnimationInfo> getAnimationInfosList() {
-		List<VO_PLAYER_ANIMATION_INFO> list = builder.getAnimationInfosList();
-		List<VoPlayerAnimationInfo> ret = Lists.newArrayListWithCapacity(list.size());
-		for (VO_PLAYER_ANIMATION_INFO vo : list) {
-			ret.add(new VoPlayerAnimationInfo(vo));
+	public List<VoPlayerAnimationInfos> getAnimationInfosList() {
+		List<VO_PLAYER_ANIMATION_INFOS> list = builder.getAnimationInfosList();
+		List<VoPlayerAnimationInfos> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_PLAYER_ANIMATION_INFOS vo : list) {
+			ret.add(new VoPlayerAnimationInfos(vo));
 		}
 		return ret;
-	}
-
-	/**
-	 * 
-	 * @param	totalPage
-	 * 			<u>do not has any annotate.</u>
-	 */
-	public void setTotalPage(Integer totalPage) {
-		builder.setTotalPage(totalPage);
-	}
-
-	/**
-	 * 
-	 * @return	<u>do not has any annotate.</u>
-	 */
-	public int getTotalPage() {
-		int ret = builder.getTotalPage();		return ret;
 	}
 
 	public RESPONSE_PLAYER_ANIMATION_INFO getResponsePlayerAnimationInfo() {

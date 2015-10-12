@@ -36,7 +36,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMaxLevel() {
-		int ret = vo.getMaxLevel();		return ret;
+		int ret = vo.getMaxLevel();
+		return ret;
 	}
 
 	/**
@@ -79,7 +80,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getLevel() {
-		int ret = vo.getLevel();		return ret;
+		int ret = vo.getLevel();
+		return ret;
 	}
 
 	/**
@@ -96,7 +98,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getNextLevelExp() {
-		int ret = vo.getNextLevelExp();		return ret;
+		int ret = vo.getNextLevelExp();
+		return ret;
 	}
 
 	/**
@@ -113,7 +116,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		String ret = vo.getName();		return ret;
+		String ret = vo.getName();
+		return ret;
 	}
 
 	/**
@@ -130,7 +134,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getDescription() {
-		String ret = vo.getDescription();		return ret;
+		String ret = vo.getDescription();
+		return ret;
 	}
 
 	/**
@@ -147,7 +152,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getIndex() {
-		int ret = vo.getIndex();		return ret;
+		int ret = vo.getIndex();
+		return ret;
 	}
 
 	/**
@@ -164,7 +170,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getUseSpace() {
-		int ret = vo.getUseSpace();		return ret;
+		int ret = vo.getUseSpace();
+		return ret;
 	}
 
 	/**
@@ -181,7 +188,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getId() {
-		int ret = vo.getId();		return ret;
+		int ret = vo.getId();
+		return ret;
 	}
 
 	/**
@@ -198,7 +206,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getExp() {
-		int ret = vo.getExp();		return ret;
+		int ret = vo.getExp();
+		return ret;
 	}
 
 	/**
@@ -215,7 +224,8 @@ public class VoSkill {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getType() {
-		int ret = vo.getType();		return ret;
+		int ret = vo.getType();
+		return ret;
 	}
 
 	public VO_SKILL getVO_SKILL() {

@@ -34,7 +34,8 @@ public class VoOption {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		String ret = vo.getName();		return ret;
+		String ret = vo.getName();
+		return ret;
 	}
 
 	/**
@@ -51,7 +52,26 @@ public class VoOption {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getState() {
-		int ret = vo.getState();		return ret;
+		int ret = vo.getState();
+		return ret;
+	}
+
+	/**
+	 * 
+	 * @param	value
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setValue(String value) {
+		builder.setValue(value);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public String getValue() {
+		String ret = vo.getValue();
+		return ret;
 	}
 
 	public VO_OPTION getVO_OPTION() {

@@ -37,7 +37,8 @@ public class ResponseChat extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSourceId() {
-		int ret = builder.getSourceId();		return ret;
+		int ret = builder.getSourceId();
+		return ret;
 	}
 
 	/**
@@ -54,7 +55,8 @@ public class ResponseChat extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getChannel() {
-		int ret = builder.getChannel();		return ret;
+		int ret = builder.getChannel();
+		return ret;
 	}
 
 	/**
@@ -71,7 +73,8 @@ public class ResponseChat extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getSouceName() {
-		String ret = builder.getSouceName();		return ret;
+		String ret = builder.getSouceName();
+		return ret;
 	}
 
 	/**
@@ -88,7 +91,8 @@ public class ResponseChat extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getText() {
-		String ret = builder.getText();		return ret;
+		String ret = builder.getText();
+		return ret;
 	}
 
 	public RESPONSE_CHAT getResponseChat() {

@@ -100,7 +100,8 @@ public class VoUnit {
 	 * @return	忠诚[玩家自己的宠物专有]
 	 */
 	public int getLoyal() {
-		int ret = vo.getLoyal();		return ret;
+		int ret = vo.getLoyal();
+		return ret;
 	}
 
 	/**
@@ -137,7 +138,8 @@ public class VoUnit {
 	 * @return	宠物在宠物栏的位置索引[宠物专有]
 	 */
 	public int getIndex() {
-		int ret = vo.getIndex();		return ret;
+		int ret = vo.getIndex();
+		return ret;
 	}
 
 	/**
@@ -220,7 +222,8 @@ public class VoUnit {
 	 * @return	主人实例id[宠物专有]
 	 */
 	public int getOwnerInstanceId() {
-		int ret = vo.getOwnerInstanceId();		return ret;
+		int ret = vo.getOwnerInstanceId();
+		return ret;
 	}
 
 	/**
@@ -237,7 +240,8 @@ public class VoUnit {
 	 * @return	游戏币[玩家自己专有]
 	 */
 	public int getMoney() {
-		int ret = vo.getMoney();		return ret;
+		int ret = vo.getMoney();
+		return ret;
 	}
 
 	/**
@@ -323,7 +327,8 @@ public class VoUnit {
 	 * @return	对话类型[NPC专有]
 	 */
 	public String getTalkType() {
-		String ret = vo.getTalkType();		return ret;
+		String ret = vo.getTalkType();
+		return ret;
 	}
 
 	/**
@@ -349,7 +354,7 @@ public class VoUnit {
 	/**
 	 * 
 	 * @param	battleLocal
-	 * 			战斗时位置[战斗场景/玩家自己专有]
+	 * 			战斗时位置[玩家自己专有]
 	 */
 	public void setBattleLocal(Boolean battleLocal) {
 		builder.setBattleLocal(battleLocal);
@@ -357,10 +362,11 @@ public class VoUnit {
 
 	/**
 	 * 
-	 * @return	战斗时位置[战斗场景/玩家自己专有]
+	 * @return	战斗时位置[玩家自己专有]
 	 */
 	public Boolean getBattleLocal() {
-		Boolean ret = vo.getBattleLocal();		return ret;
+		Boolean ret = vo.getBattleLocal();
+		return ret;
 	}
 
 	/**
@@ -377,7 +383,8 @@ public class VoUnit {
 	 * @return	状态[玩家自己的宠物专有]
 	 */
 	public int getState() {
-		int ret = vo.getState();		return ret;
+		int ret = vo.getState();
+		return ret;
 	}
 
 	/**
@@ -394,7 +401,8 @@ public class VoUnit {
 	 * @return	职业[玩家自己专有]
 	 */
 	public String getJob() {
-		String ret = vo.getJob();		return ret;
+		String ret = vo.getJob();
+		return ret;
 	}
 
 	/**
@@ -411,7 +419,8 @@ public class VoUnit {
 	 * @return	战绩[玩家角色专有]
 	 */
 	public int getBattleScore() {
-		int ret = vo.getBattleScore();		return ret;
+		int ret = vo.getBattleScore();
+		return ret;
 	}
 
 	public VO_UNIT getVO_UNIT() {

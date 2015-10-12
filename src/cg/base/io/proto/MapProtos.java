@@ -1285,6 +1285,10 @@ public final class MapProtos {
     boolean hasSouthArea();
     cg.base.io.proto.VOProtos.VO_MAP_AREA getSouthArea();
     cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder getSouthAreaOrBuilder();
+    
+    // required int32 serial = 7;
+    boolean hasSerial();
+    int getSerial();
   }
   public static final class REQUEST_MAP_MOVE extends
       com.google.protobuf.GeneratedMessage
@@ -1381,6 +1385,16 @@ public final class MapProtos {
       return southArea_;
     }
     
+    // required int32 serial = 7;
+    public static final int SERIAL_FIELD_NUMBER = 7;
+    private int serial_;
+    public boolean hasSerial() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    public int getSerial() {
+      return serial_;
+    }
+    
     private void initFields() {
       east_ = 0;
       south_ = 0;
@@ -1388,6 +1402,7 @@ public final class MapProtos {
       eastArea_ = cg.base.io.proto.VOProtos.VO_MAP_AREA.getDefaultInstance();
       needSouth_ = false;
       southArea_ = cg.base.io.proto.VOProtos.VO_MAP_AREA.getDefaultInstance();
+      serial_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1415,6 +1430,10 @@ public final class MapProtos {
         return false;
       }
       if (!hasSouthArea()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasSerial()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -1451,6 +1470,9 @@ public final class MapProtos {
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         output.writeMessage(6, southArea_);
       }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(7, serial_);
+      }
       getUnknownFields().writeTo(output);
     }
     
@@ -1483,6 +1505,10 @@ public final class MapProtos {
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, southArea_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, serial_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1630,6 +1656,8 @@ public final class MapProtos {
           southAreaBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000020);
+        serial_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000040);
         return this;
       }
       
@@ -1700,6 +1728,10 @@ public final class MapProtos {
         } else {
           result.southArea_ = southAreaBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.serial_ = serial_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1734,6 +1766,9 @@ public final class MapProtos {
         if (other.hasSouthArea()) {
           mergeSouthArea(other.getSouthArea());
         }
+        if (other.hasSerial()) {
+          setSerial(other.getSerial());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -1760,6 +1795,10 @@ public final class MapProtos {
           return false;
         }
         if (!hasSouthArea()) {
+          
+          return false;
+        }
+        if (!hasSerial()) {
           
           return false;
         }
@@ -1833,6 +1872,11 @@ public final class MapProtos {
               }
               input.readMessage(subBuilder, extensionRegistry);
               setSouthArea(subBuilder.buildPartial());
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000040;
+              serial_ = input.readInt32();
               break;
             }
           }
@@ -2105,6 +2149,27 @@ public final class MapProtos {
         return southAreaBuilder_;
       }
       
+      // required int32 serial = 7;
+      private int serial_ ;
+      public boolean hasSerial() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      public int getSerial() {
+        return serial_;
+      }
+      public Builder setSerial(int value) {
+        bitField0_ |= 0x00000040;
+        serial_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearSerial() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        serial_ = 0;
+        onChanged();
+        return this;
+      }
+      
       // @@protoc_insertion_point(builder_scope:REQUEST_MAP_MOVE)
     }
     
@@ -2119,7 +2184,11 @@ public final class MapProtos {
   public interface RESPONSE_MAP_MOVEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // repeated .VO_MAP_CELL mapCells = 1;
+    // required int32 serial = 1;
+    boolean hasSerial();
+    int getSerial();
+    
+    // repeated .VO_MAP_CELL mapCells = 2;
     java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> 
         getMapCellsList();
     cg.base.io.proto.VOProtos.VO_MAP_CELL getMapCells(int index);
@@ -2157,8 +2226,19 @@ public final class MapProtos {
       return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable;
     }
     
-    // repeated .VO_MAP_CELL mapCells = 1;
-    public static final int MAPCELLS_FIELD_NUMBER = 1;
+    private int bitField0_;
+    // required int32 serial = 1;
+    public static final int SERIAL_FIELD_NUMBER = 1;
+    private int serial_;
+    public boolean hasSerial() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public int getSerial() {
+      return serial_;
+    }
+    
+    // repeated .VO_MAP_CELL mapCells = 2;
+    public static final int MAPCELLS_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_;
     public java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> getMapCellsList() {
       return mapCells_;
@@ -2179,6 +2259,7 @@ public final class MapProtos {
     }
     
     private void initFields() {
+      serial_ = 0;
       mapCells_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
@@ -2186,6 +2267,10 @@ public final class MapProtos {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
+      if (!hasSerial()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       for (int i = 0; i < getMapCellsCount(); i++) {
         if (!getMapCells(i).isInitialized()) {
           memoizedIsInitialized = 0;
@@ -2199,8 +2284,11 @@ public final class MapProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, serial_);
+      }
       for (int i = 0; i < mapCells_.size(); i++) {
-        output.writeMessage(1, mapCells_.get(i));
+        output.writeMessage(2, mapCells_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -2211,9 +2299,13 @@ public final class MapProtos {
       if (size != -1) return size;
     
       size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, serial_);
+      }
       for (int i = 0; i < mapCells_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, mapCells_.get(i));
+          .computeMessageSize(2, mapCells_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2340,9 +2432,11 @@ public final class MapProtos {
       
       public Builder clear() {
         super.clear();
+        serial_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (mapCellsBuilder_ == null) {
           mapCells_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           mapCellsBuilder_.clear();
         }
@@ -2383,15 +2477,21 @@ public final class MapProtos {
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE buildPartial() {
         cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.serial_ = serial_;
         if (mapCellsBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
             mapCells_ = java.util.Collections.unmodifiableList(mapCells_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.mapCells_ = mapCells_;
         } else {
           result.mapCells_ = mapCellsBuilder_.build();
         }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -2407,11 +2507,14 @@ public final class MapProtos {
       
       public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE other) {
         if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.getDefaultInstance()) return this;
+        if (other.hasSerial()) {
+          setSerial(other.getSerial());
+        }
         if (mapCellsBuilder_ == null) {
           if (!other.mapCells_.isEmpty()) {
             if (mapCells_.isEmpty()) {
               mapCells_ = other.mapCells_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureMapCellsIsMutable();
               mapCells_.addAll(other.mapCells_);
@@ -2424,7 +2527,7 @@ public final class MapProtos {
               mapCellsBuilder_.dispose();
               mapCellsBuilder_ = null;
               mapCells_ = other.mapCells_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               mapCellsBuilder_ = 
                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
                    getMapCellsFieldBuilder() : null;
@@ -2438,6 +2541,10 @@ public final class MapProtos {
       }
       
       public final boolean isInitialized() {
+        if (!hasSerial()) {
+          
+          return false;
+        }
         for (int i = 0; i < getMapCellsCount(); i++) {
           if (!getMapCells(i).isInitialized()) {
             
@@ -2470,7 +2577,12 @@ public final class MapProtos {
               }
               break;
             }
-            case 10: {
+            case 8: {
+              bitField0_ |= 0x00000001;
+              serial_ = input.readInt32();
+              break;
+            }
+            case 18: {
               cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder subBuilder = cg.base.io.proto.VOProtos.VO_MAP_CELL.newBuilder();
               input.readMessage(subBuilder, extensionRegistry);
               addMapCells(subBuilder.buildPartial());
@@ -2482,13 +2594,34 @@ public final class MapProtos {
       
       private int bitField0_;
       
-      // repeated .VO_MAP_CELL mapCells = 1;
+      // required int32 serial = 1;
+      private int serial_ ;
+      public boolean hasSerial() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getSerial() {
+        return serial_;
+      }
+      public Builder setSerial(int value) {
+        bitField0_ |= 0x00000001;
+        serial_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearSerial() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        serial_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // repeated .VO_MAP_CELL mapCells = 2;
       private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_ =
         java.util.Collections.emptyList();
       private void ensureMapCellsIsMutable() {
-        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
           mapCells_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_MAP_CELL>(mapCells_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
       
@@ -2604,7 +2737,7 @@ public final class MapProtos {
       public Builder clearMapCells() {
         if (mapCellsBuilder_ == null) {
           mapCells_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           mapCellsBuilder_.clear();
@@ -2660,7 +2793,7 @@ public final class MapProtos {
           mapCellsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
               cg.base.io.proto.VOProtos.VO_MAP_CELL, cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder, cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder>(
                   mapCells_,
-                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  ((bitField0_ & 0x00000002) == 0x00000002),
                   getParentForChildren(),
                   isClean());
           mapCells_ = null;
@@ -5117,21 +5250,22 @@ public final class MapProtos {
       "\002(\005\"\210\001\n\017RESPONSE_MAP_IN\022\r\n\005mapId\030\001 \002(\005\022\025" +
       "\n\rmapInstanceId\030\002 \002(\005\022\017\n\007mapName\030\003 \002(\t\022\014" +
       "\n\004east\030\004 \002(\005\022\r\n\005south\030\005 \002(\005\022\017\n\007maxEast\030\006" +
-      " \002(\005\022\020\n\010maxSouth\030\007 \002(\005\"\225\001\n\020REQUEST_MAP_M" +
+      " \002(\005\022\020\n\010maxSouth\030\007 \002(\005\"\245\001\n\020REQUEST_MAP_M" +
       "OVE\022\014\n\004east\030\001 \002(\005\022\r\n\005south\030\002 \002(\005\022\020\n\010need" +
       "East\030\003 \002(\010\022\036\n\010eastArea\030\004 \002(\0132\014.VO_MAP_AR" +
       "EA\022\021\n\tneedSouth\030\005 \002(\010\022\037\n\tsouthArea\030\006 \002(\013" +
-      "2\014.VO_MAP_AREA\"3\n\021RESPONSE_MAP_MOVE\022\036\n\010m",
-      "apCells\030\001 \003(\0132\014.VO_MAP_CELL\"N\n\022VO_MAP_UN" +
-      "IT_EXTEND\022\027\n\017ownerInstanceId\030\001 \001(\005\022\r\n\005st" +
-      "ate\030\002 \001(\005\022\020\n\010talkType\030\003 \001(\t\"6\n\030RESPONSE_" +
-      "MAP_UNIT_CREATE\022\032\n\010unitInfo\030\001 \002(\0132\010.VO_U" +
-      "NIT\"[\n\026RESPONSE_MAP_UNIT_MOVE\022\020\n\010unitTyp" +
-      "e\030\001 \002(\005\022\022\n\ninstanceId\030\002 \002(\005\022\014\n\004east\030\003 \002(" +
-      "\005\022\r\n\005south\030\004 \002(\005\".\n\030RESPONSE_MAP_UNIT_RE" +
-      "MOVE\022\022\n\ninstanceId\030\001 \002(\005\"4\n\022RESPONSE_MAP" +
-      "_CELLS\022\036\n\010mapCells\030\001 \003(\0132\014.VO_MAP_CELLB\035" +
-      "\n\020cg.base.io.protoB\tMapProtos"
+      "2\014.VO_MAP_AREA\022\016\n\006serial\030\007 \002(\005\"C\n\021RESPON",
+      "SE_MAP_MOVE\022\016\n\006serial\030\001 \002(\005\022\036\n\010mapCells\030" +
+      "\002 \003(\0132\014.VO_MAP_CELL\"N\n\022VO_MAP_UNIT_EXTEN" +
+      "D\022\027\n\017ownerInstanceId\030\001 \001(\005\022\r\n\005state\030\002 \001(" +
+      "\005\022\020\n\010talkType\030\003 \001(\t\"6\n\030RESPONSE_MAP_UNIT" +
+      "_CREATE\022\032\n\010unitInfo\030\001 \002(\0132\010.VO_UNIT\"[\n\026R" +
+      "ESPONSE_MAP_UNIT_MOVE\022\020\n\010unitType\030\001 \002(\005\022" +
+      "\022\n\ninstanceId\030\002 \002(\005\022\014\n\004east\030\003 \002(\005\022\r\n\005sou" +
+      "th\030\004 \002(\005\".\n\030RESPONSE_MAP_UNIT_REMOVE\022\022\n\n" +
+      "instanceId\030\001 \002(\005\"4\n\022RESPONSE_MAP_CELLS\022\036" +
+      "\n\010mapCells\030\001 \003(\0132\014.VO_MAP_CELLB\035\n\020cg.bas",
+      "e.io.protoB\tMapProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -5159,7 +5293,7 @@ public final class MapProtos {
           internal_static_REQUEST_MAP_MOVE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_MAP_MOVE_descriptor,
-              new java.lang.String[] { "East", "South", "NeedEast", "EastArea", "NeedSouth", "SouthArea", },
+              new java.lang.String[] { "East", "South", "NeedEast", "EastArea", "NeedSouth", "SouthArea", "Serial", },
               cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.class,
               cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.Builder.class);
           internal_static_RESPONSE_MAP_MOVE_descriptor =
@@ -5167,7 +5301,7 @@ public final class MapProtos {
           internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_MAP_MOVE_descriptor,
-              new java.lang.String[] { "MapCells", },
+              new java.lang.String[] { "Serial", "MapCells", },
               cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.class,
               cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.Builder.class);
           internal_static_VO_MAP_UNIT_EXTEND_descriptor =

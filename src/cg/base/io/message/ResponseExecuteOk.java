@@ -37,7 +37,8 @@ public class ResponseExecuteOk extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMessageId() {
-		int ret = builder.getMessageId();		return ret;
+		int ret = builder.getMessageId();
+		return ret;
 	}
 
 	/**
@@ -54,7 +55,8 @@ public class ResponseExecuteOk extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getMessage() {
-		String ret = builder.getMessage();		return ret;
+		String ret = builder.getMessage();
+		return ret;
 	}
 
 	public RESPONSE_EXECUTE_OK getResponseExecuteOk() {

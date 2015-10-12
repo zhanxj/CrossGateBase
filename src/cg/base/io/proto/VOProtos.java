@@ -1130,7 +1130,7 @@ public final class VOProtos {
   public interface VO_UNIT_EXTEND_INFOOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required int32 race = 1;
+    // optional int32 race = 1;
     boolean hasRace();
     int getRace();
     
@@ -1138,7 +1138,7 @@ public final class VOProtos {
     boolean hasLevel();
     int getLevel();
     
-    // required int32 exp = 3;
+    // optional int32 exp = 3;
     boolean hasExp();
     int getExp();
   }
@@ -1171,7 +1171,7 @@ public final class VOProtos {
     }
     
     private int bitField0_;
-    // required int32 race = 1;
+    // optional int32 race = 1;
     public static final int RACE_FIELD_NUMBER = 1;
     private int race_;
     public boolean hasRace() {
@@ -1191,7 +1191,7 @@ public final class VOProtos {
       return level_;
     }
     
-    // required int32 exp = 3;
+    // optional int32 exp = 3;
     public static final int EXP_FIELD_NUMBER = 3;
     private int exp_;
     public boolean hasExp() {
@@ -1211,15 +1211,7 @@ public final class VOProtos {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasRace()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       if (!hasLevel()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasExp()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -1470,15 +1462,7 @@ public final class VOProtos {
       }
       
       public final boolean isInitialized() {
-        if (!hasRace()) {
-          
-          return false;
-        }
         if (!hasLevel()) {
-          
-          return false;
-        }
-        if (!hasExp()) {
           
           return false;
         }
@@ -1529,7 +1513,7 @@ public final class VOProtos {
       
       private int bitField0_;
       
-      // required int32 race = 1;
+      // optional int32 race = 1;
       private int race_ ;
       public boolean hasRace() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -1571,7 +1555,7 @@ public final class VOProtos {
         return this;
       }
       
-      // required int32 exp = 3;
+      // optional int32 exp = 3;
       private int exp_ ;
       public boolean hasExp() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
@@ -12333,6 +12317,10 @@ public final class VOProtos {
     // required int32 state = 2;
     boolean hasState();
     int getState();
+    
+    // optional string value = 3;
+    boolean hasValue();
+    String getValue();
   }
   public static final class VO_OPTION extends
       com.google.protobuf.GeneratedMessage
@@ -12405,9 +12393,42 @@ public final class VOProtos {
       return state_;
     }
     
+    // optional string value = 3;
+    public static final int VALUE_FIELD_NUMBER = 3;
+    private java.lang.Object value_;
+    public boolean hasValue() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public String getValue() {
+      java.lang.Object ref = value_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          value_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getValueBytes() {
+      java.lang.Object ref = value_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        value_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
     private void initFields() {
       name_ = "";
       state_ = 0;
+      value_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -12435,6 +12456,9 @@ public final class VOProtos {
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeInt32(2, state_);
       }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getValueBytes());
+      }
       getUnknownFields().writeTo(output);
     }
     
@@ -12451,6 +12475,10 @@ public final class VOProtos {
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, state_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getValueBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -12580,6 +12608,8 @@ public final class VOProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         state_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
+        value_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
       
@@ -12626,6 +12656,10 @@ public final class VOProtos {
           to_bitField0_ |= 0x00000002;
         }
         result.state_ = state_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.value_ = value_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -12647,6 +12681,9 @@ public final class VOProtos {
         }
         if (other.hasState()) {
           setState(other.getState());
+        }
+        if (other.hasValue()) {
+          setValue(other.getValue());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -12695,6 +12732,11 @@ public final class VOProtos {
             case 16: {
               bitField0_ |= 0x00000002;
               state_ = input.readInt32();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              value_ = input.readBytes();
               break;
             }
           }
@@ -12758,6 +12800,42 @@ public final class VOProtos {
         state_ = 0;
         onChanged();
         return this;
+      }
+      
+      // optional string value = 3;
+      private java.lang.Object value_ = "";
+      public boolean hasValue() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public String getValue() {
+        java.lang.Object ref = value_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          value_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setValue(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearValue() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        value_ = getDefaultInstance().getValue();
+        onChanged();
+        return this;
+      }
+      void setValue(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000004;
+        value_ = value;
+        onChanged();
       }
       
       // @@protoc_insertion_point(builder_scope:VO_OPTION)
@@ -13315,13 +13393,13 @@ public final class VOProtos {
   public interface VO_MAP_CELLOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required int32 west = 1;
-    boolean hasWest();
-    int getWest();
-    
-    // required int32 east = 2;
+    // required int32 east = 1;
     boolean hasEast();
     int getEast();
+    
+    // required int32 south = 2;
+    boolean hasSouth();
+    int getSouth();
     
     // required int32 imageGlobalId = 3;
     boolean hasImageGlobalId();
@@ -13364,24 +13442,24 @@ public final class VOProtos {
     }
     
     private int bitField0_;
-    // required int32 west = 1;
-    public static final int WEST_FIELD_NUMBER = 1;
-    private int west_;
-    public boolean hasWest() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public int getWest() {
-      return west_;
-    }
-    
-    // required int32 east = 2;
-    public static final int EAST_FIELD_NUMBER = 2;
+    // required int32 east = 1;
+    public static final int EAST_FIELD_NUMBER = 1;
     private int east_;
     public boolean hasEast() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+      return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public int getEast() {
       return east_;
+    }
+    
+    // required int32 south = 2;
+    public static final int SOUTH_FIELD_NUMBER = 2;
+    private int south_;
+    public boolean hasSouth() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public int getSouth() {
+      return south_;
     }
     
     // required int32 imageGlobalId = 3;
@@ -13415,8 +13493,8 @@ public final class VOProtos {
     }
     
     private void initFields() {
-      west_ = 0;
       east_ = 0;
+      south_ = 0;
       imageGlobalId_ = 0;
       objectId_ = 0;
       mark_ = 0;
@@ -13426,11 +13504,11 @@ public final class VOProtos {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasWest()) {
+      if (!hasEast()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasEast()) {
+      if (!hasSouth()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -13454,10 +13532,10 @@ public final class VOProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, west_);
+        output.writeInt32(1, east_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, east_);
+        output.writeInt32(2, south_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         output.writeInt32(3, imageGlobalId_);
@@ -13479,11 +13557,11 @@ public final class VOProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, west_);
+          .computeInt32Size(1, east_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, east_);
+          .computeInt32Size(2, south_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
@@ -13621,9 +13699,9 @@ public final class VOProtos {
       
       public Builder clear() {
         super.clear();
-        west_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
         east_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        south_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
         imageGlobalId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -13672,11 +13750,11 @@ public final class VOProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.west_ = west_;
+        result.east_ = east_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.east_ = east_;
+        result.south_ = south_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
@@ -13705,11 +13783,11 @@ public final class VOProtos {
       
       public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_MAP_CELL other) {
         if (other == cg.base.io.proto.VOProtos.VO_MAP_CELL.getDefaultInstance()) return this;
-        if (other.hasWest()) {
-          setWest(other.getWest());
-        }
         if (other.hasEast()) {
           setEast(other.getEast());
+        }
+        if (other.hasSouth()) {
+          setSouth(other.getSouth());
         }
         if (other.hasImageGlobalId()) {
           setImageGlobalId(other.getImageGlobalId());
@@ -13725,11 +13803,11 @@ public final class VOProtos {
       }
       
       public final boolean isInitialized() {
-        if (!hasWest()) {
+        if (!hasEast()) {
           
           return false;
         }
-        if (!hasEast()) {
+        if (!hasSouth()) {
           
           return false;
         }
@@ -13773,12 +13851,12 @@ public final class VOProtos {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              west_ = input.readInt32();
+              east_ = input.readInt32();
               break;
             }
             case 16: {
               bitField0_ |= 0x00000002;
-              east_ = input.readInt32();
+              south_ = input.readInt32();
               break;
             }
             case 24: {
@@ -13802,44 +13880,44 @@ public final class VOProtos {
       
       private int bitField0_;
       
-      // required int32 west = 1;
-      private int west_ ;
-      public boolean hasWest() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      public int getWest() {
-        return west_;
-      }
-      public Builder setWest(int value) {
-        bitField0_ |= 0x00000001;
-        west_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearWest() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        west_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // required int32 east = 2;
+      // required int32 east = 1;
       private int east_ ;
       public boolean hasEast() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public int getEast() {
         return east_;
       }
       public Builder setEast(int value) {
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         east_ = value;
         onChanged();
         return this;
       }
       public Builder clearEast() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         east_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required int32 south = 2;
+      private int south_ ;
+      public boolean hasSouth() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public int getSouth() {
+        return south_;
+      }
+      public Builder setSouth(int value) {
+        bitField0_ |= 0x00000002;
+        south_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearSouth() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        south_ = 0;
         onChanged();
         return this;
       }
@@ -17723,8 +17801,8 @@ public final class VOProtos {
       "\002(\t\022\021\n\tfaceModel\030\004 \002(\005\022\025\n\rtempFaceModel\030" +
       "\005 \002(\005\"7\n\013VO_POSITION\022\014\n\004east\030\001 \002(\005\022\r\n\005so" +
       "uth\030\002 \002(\005\022\013\n\003dir\030\003 \002(\005\"?\n\023VO_UNIT_EXTEND" +
-      "_INFO\022\014\n\004race\030\001 \002(\005\022\r\n\005level\030\002 \002(\005\022\013\n\003ex" +
-      "p\030\003 \002(\005\"$\n\010VO_TITLE\022\n\n\002id\030\001 \002(\005\022\014\n\004name\030" +
+      "_INFO\022\014\n\004race\030\001 \001(\005\022\r\n\005level\030\002 \002(\005\022\013\n\003ex" +
+      "p\030\003 \001(\005\"$\n\010VO_TITLE\022\n\n\002id\030\001 \002(\005\022\014\n\004name\030" +
       "\002 \002(\t\"+\n\014VO_ATTRIBUTE\022\014\n\004type\030\001 \002(\005\022\r\n\005v" +
       "alue\030\002 \002(\005\"@\n\rVO_ATTRIBUTES\022\014\n\004type\030\001 \002(" +
       "\t\022!\n\nattributes\030\002 \003(\0132\r.VO_ATTRIBUTE\"\245\002\n",
@@ -17762,27 +17840,27 @@ public final class VOProtos {
       "ex\030\013 \002(\005\"U\n\014VO_SKILL_SET\022\035\n\nbaseSkills\030\001" +
       " \003(\0132\t.VO_SKILL\022\013\n\003max\030\002 \002(\005\022\031\n\006skills\030\003" +
       " \003(\0132\t.VO_SKILL\"$\n\006VO_PET\022\032\n\010unitInfo\030\001 " +
-      "\002(\0132\010.VO_UNIT\"(\n\tVO_OPTION\022\014\n\004name\030\001 \002(\t" +
-      "\022\r\n\005state\030\002 \002(\005\"G\n\013VO_MAP_AREA\022\014\n\004west\030\001" +
-      " \002(\005\022\014\n\004east\030\002 \002(\005\022\r\n\005south\030\003 \002(\005\022\r\n\005nor" +
-      "th\030\004 \002(\005\"`\n\013VO_MAP_CELL\022\014\n\004west\030\001 \002(\005\022\014\n" +
-      "\004east\030\002 \002(\005\022\025\n\rimageGlobalId\030\003 \002(\005\022\020\n\010ob" +
-      "jectId\030\004 \002(\005\022\014\n\004mark\030\005 \002(\005\"\371\003\n\007VO_UNIT\022$",
-      "\n\010baseInfo\030\001 \002(\0132\022.VO_UNIT_BASE_INFO\022\036\n\010" +
-      "position\030\002 \001(\0132\014.VO_POSITION\022\035\n\theadTitl" +
-      "e\030\003 \001(\0132\n.VO_TITLES\022(\n\nextendInfo\030\004 \001(\0132" +
-      "\024.VO_UNIT_EXTEND_INFO\022\023\n\013battleScore\030\005 \001" +
-      "(\005\022\023\n\013battleLocal\030\006 \001(\010\022\031\n\006titles\030\007 \003(\0132" +
-      "\t.VO_TITLE\022\020\n\010elements\030\010 \003(\005\022\"\n\nattribut" +
-      "es\030\t \003(\0132\016.VO_ATTRIBUTES\022\r\n\005money\030\n \001(\005\022" +
-      "\025\n\004bags\030\013 \003(\0132\007.VO_BAG\022\013\n\003job\030\014 \001(\t\022\037\n\010s" +
-      "killSet\030\r \001(\0132\r.VO_SKILL_SET\022\033\n\007options\030" +
-      "\016 \003(\0132\n.VO_OPTION\022\r\n\005state\030\017 \001(\005\022\r\n\005loya",
-      "l\030\020 \001(\005\022\020\n\010talkType\030\021 \001(\t\022\r\n\005index\030\022 \001(\005" +
-      "\022\027\n\017ownerInstanceId\030\023 \001(\005\022\033\n\006petSet\030\024 \001(" +
-      "\0132\013.VO_PET_SET\"0\n\nVO_PET_SET\022\013\n\003max\030\001 \002(" +
-      "\005\022\025\n\004pets\030\002 \003(\0132\007.VO_PETB\034\n\020cg.base.io.p" +
-      "rotoB\010VOProtos"
+      "\002(\0132\010.VO_UNIT\"7\n\tVO_OPTION\022\014\n\004name\030\001 \002(\t" +
+      "\022\r\n\005state\030\002 \002(\005\022\r\n\005value\030\003 \001(\t\"G\n\013VO_MAP" +
+      "_AREA\022\014\n\004west\030\001 \002(\005\022\014\n\004east\030\002 \002(\005\022\r\n\005sou" +
+      "th\030\003 \002(\005\022\r\n\005north\030\004 \002(\005\"a\n\013VO_MAP_CELL\022\014" +
+      "\n\004east\030\001 \002(\005\022\r\n\005south\030\002 \002(\005\022\025\n\rimageGlob" +
+      "alId\030\003 \002(\005\022\020\n\010objectId\030\004 \002(\005\022\014\n\004mark\030\005 \002",
+      "(\005\"\371\003\n\007VO_UNIT\022$\n\010baseInfo\030\001 \002(\0132\022.VO_UN" +
+      "IT_BASE_INFO\022\036\n\010position\030\002 \001(\0132\014.VO_POSI" +
+      "TION\022\035\n\theadTitle\030\003 \001(\0132\n.VO_TITLES\022(\n\ne" +
+      "xtendInfo\030\004 \001(\0132\024.VO_UNIT_EXTEND_INFO\022\023\n" +
+      "\013battleScore\030\005 \001(\005\022\023\n\013battleLocal\030\006 \001(\010\022" +
+      "\031\n\006titles\030\007 \003(\0132\t.VO_TITLE\022\020\n\010elements\030\010" +
+      " \003(\005\022\"\n\nattributes\030\t \003(\0132\016.VO_ATTRIBUTES" +
+      "\022\r\n\005money\030\n \001(\005\022\025\n\004bags\030\013 \003(\0132\007.VO_BAG\022\013" +
+      "\n\003job\030\014 \001(\t\022\037\n\010skillSet\030\r \001(\0132\r.VO_SKILL" +
+      "_SET\022\033\n\007options\030\016 \003(\0132\n.VO_OPTION\022\r\n\005sta",
+      "te\030\017 \001(\005\022\r\n\005loyal\030\020 \001(\005\022\020\n\010talkType\030\021 \001(" +
+      "\t\022\r\n\005index\030\022 \001(\005\022\027\n\017ownerInstanceId\030\023 \001(" +
+      "\005\022\033\n\006petSet\030\024 \001(\0132\013.VO_PET_SET\"0\n\nVO_PET" +
+      "_SET\022\013\n\003max\030\001 \002(\005\022\025\n\004pets\030\002 \003(\0132\007.VO_PET" +
+      "B\034\n\020cg.base.io.protoB\010VOProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -17930,7 +18008,7 @@ public final class VOProtos {
           internal_static_VO_OPTION_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_OPTION_descriptor,
-              new java.lang.String[] { "Name", "State", },
+              new java.lang.String[] { "Name", "State", "Value", },
               cg.base.io.proto.VOProtos.VO_OPTION.class,
               cg.base.io.proto.VOProtos.VO_OPTION.Builder.class);
           internal_static_VO_MAP_AREA_descriptor =
@@ -17946,7 +18024,7 @@ public final class VOProtos {
           internal_static_VO_MAP_CELL_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_MAP_CELL_descriptor,
-              new java.lang.String[] { "West", "East", "ImageGlobalId", "ObjectId", "Mark", },
+              new java.lang.String[] { "East", "South", "ImageGlobalId", "ObjectId", "Mark", },
               cg.base.io.proto.VOProtos.VO_MAP_CELL.class,
               cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder.class);
           internal_static_VO_UNIT_descriptor =

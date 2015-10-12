@@ -37,7 +37,8 @@ public class ResponseMapUnitMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getUnitType() {
-		int ret = builder.getUnitType();		return ret;
+		int ret = builder.getUnitType();
+		return ret;
 	}
 
 	/**
@@ -54,7 +55,8 @@ public class ResponseMapUnitMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEast() {
-		int ret = builder.getEast();		return ret;
+		int ret = builder.getEast();
+		return ret;
 	}
 
 	/**
@@ -71,7 +73,8 @@ public class ResponseMapUnitMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getInstanceId() {
-		int ret = builder.getInstanceId();		return ret;
+		int ret = builder.getInstanceId();
+		return ret;
 	}
 
 	/**
@@ -88,7 +91,8 @@ public class ResponseMapUnitMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSouth() {
-		int ret = builder.getSouth();		return ret;
+		int ret = builder.getSouth();
+		return ret;
 	}
 
 	public RESPONSE_MAP_UNIT_MOVE getResponseMapUnitMove() {

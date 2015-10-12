@@ -28,6 +28,24 @@ public class ResponseMapMove extends ProtoMessage {
 
 	/**
 	 * 
+	 * @param	serial
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setSerial(Integer serial) {
+		builder.setSerial(serial);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public int getSerial() {
+		int ret = builder.getSerial();
+		return ret;
+	}
+
+	/**
+	 * 
 	 * @param	mapCells
 	 * 			<u>do not has any annotate.</u>
 	 */

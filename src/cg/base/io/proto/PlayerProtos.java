@@ -5659,14 +5659,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATION_INFO)
   }
   
-  public interface RESPONSE_PLAYER_ANIMATION_INFOOrBuilder
+  public interface VO_PLAYER_ANIMATION_INFOSOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required int32 totalPage = 1;
-    boolean hasTotalPage();
-    int getTotalPage();
-    
-    // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 2;
+    // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;
     java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> 
         getAnimationInfosList();
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO getAnimationInfos(int index);
@@ -5674,6 +5670,569 @@ public final class PlayerProtos {
     java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
         getAnimationInfosOrBuilderList();
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder getAnimationInfosOrBuilder(
+        int index);
+  }
+  public static final class VO_PLAYER_ANIMATION_INFOS extends
+      com.google.protobuf.GeneratedMessage
+      implements VO_PLAYER_ANIMATION_INFOSOrBuilder {
+    // Use VO_PLAYER_ANIMATION_INFOS.newBuilder() to construct.
+    private VO_PLAYER_ANIMATION_INFOS(Builder builder) {
+      super(builder);
+    }
+    private VO_PLAYER_ANIMATION_INFOS(boolean noInit) {}
+    
+    private static final VO_PLAYER_ANIMATION_INFOS defaultInstance;
+    public static VO_PLAYER_ANIMATION_INFOS getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public VO_PLAYER_ANIMATION_INFOS getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable;
+    }
+    
+    // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;
+    public static final int ANIMATIONINFOS_FIELD_NUMBER = 1;
+    private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> animationInfos_;
+    public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> getAnimationInfosList() {
+      return animationInfos_;
+    }
+    public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
+        getAnimationInfosOrBuilderList() {
+      return animationInfos_;
+    }
+    public int getAnimationInfosCount() {
+      return animationInfos_.size();
+    }
+    public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO getAnimationInfos(int index) {
+      return animationInfos_.get(index);
+    }
+    public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder getAnimationInfosOrBuilder(
+        int index) {
+      return animationInfos_.get(index);
+    }
+    
+    private void initFields() {
+      animationInfos_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      for (int i = 0; i < getAnimationInfosCount(); i++) {
+        if (!getAnimationInfos(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < animationInfos_.size(); i++) {
+        output.writeMessage(1, animationInfos_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      for (int i = 0; i < animationInfos_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, animationInfos_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable;
+      }
+      
+      // Construct using cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getAnimationInfosFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (animationInfosBuilder_ == null) {
+          animationInfos_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          animationInfosBuilder_.clear();
+        }
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDescriptor();
+      }
+      
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS getDefaultInstanceForType() {
+        return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDefaultInstance();
+      }
+      
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS build() {
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS buildPartial() {
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS result = new cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS(this);
+        int from_bitField0_ = bitField0_;
+        if (animationInfosBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            animationInfos_ = java.util.Collections.unmodifiableList(animationInfos_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.animationInfos_ = animationInfos_;
+        } else {
+          result.animationInfos_ = animationInfosBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS) {
+          return mergeFrom((cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS other) {
+        if (other == cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDefaultInstance()) return this;
+        if (animationInfosBuilder_ == null) {
+          if (!other.animationInfos_.isEmpty()) {
+            if (animationInfos_.isEmpty()) {
+              animationInfos_ = other.animationInfos_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureAnimationInfosIsMutable();
+              animationInfos_.addAll(other.animationInfos_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.animationInfos_.isEmpty()) {
+            if (animationInfosBuilder_.isEmpty()) {
+              animationInfosBuilder_.dispose();
+              animationInfosBuilder_ = null;
+              animationInfos_ = other.animationInfos_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              animationInfosBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getAnimationInfosFieldBuilder() : null;
+            } else {
+              animationInfosBuilder_.addAllMessages(other.animationInfos_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        for (int i = 0; i < getAnimationInfosCount(); i++) {
+          if (!getAnimationInfos(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder subBuilder = cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addAnimationInfos(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;
+      private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> animationInfos_ =
+        java.util.Collections.emptyList();
+      private void ensureAnimationInfosIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          animationInfos_ = new java.util.ArrayList<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO>(animationInfos_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> animationInfosBuilder_;
+      
+      public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> getAnimationInfosList() {
+        if (animationInfosBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(animationInfos_);
+        } else {
+          return animationInfosBuilder_.getMessageList();
+        }
+      }
+      public int getAnimationInfosCount() {
+        if (animationInfosBuilder_ == null) {
+          return animationInfos_.size();
+        } else {
+          return animationInfosBuilder_.getCount();
+        }
+      }
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO getAnimationInfos(int index) {
+        if (animationInfosBuilder_ == null) {
+          return animationInfos_.get(index);
+        } else {
+          return animationInfosBuilder_.getMessage(index);
+        }
+      }
+      public Builder setAnimationInfos(
+          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO value) {
+        if (animationInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAnimationInfosIsMutable();
+          animationInfos_.set(index, value);
+          onChanged();
+        } else {
+          animationInfosBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      public Builder setAnimationInfos(
+          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder builderForValue) {
+        if (animationInfosBuilder_ == null) {
+          ensureAnimationInfosIsMutable();
+          animationInfos_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          animationInfosBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAnimationInfos(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO value) {
+        if (animationInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAnimationInfosIsMutable();
+          animationInfos_.add(value);
+          onChanged();
+        } else {
+          animationInfosBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      public Builder addAnimationInfos(
+          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO value) {
+        if (animationInfosBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAnimationInfosIsMutable();
+          animationInfos_.add(index, value);
+          onChanged();
+        } else {
+          animationInfosBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      public Builder addAnimationInfos(
+          cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder builderForValue) {
+        if (animationInfosBuilder_ == null) {
+          ensureAnimationInfosIsMutable();
+          animationInfos_.add(builderForValue.build());
+          onChanged();
+        } else {
+          animationInfosBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAnimationInfos(
+          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder builderForValue) {
+        if (animationInfosBuilder_ == null) {
+          ensureAnimationInfosIsMutable();
+          animationInfos_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          animationInfosBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      public Builder addAllAnimationInfos(
+          java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> values) {
+        if (animationInfosBuilder_ == null) {
+          ensureAnimationInfosIsMutable();
+          super.addAll(values, animationInfos_);
+          onChanged();
+        } else {
+          animationInfosBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      public Builder clearAnimationInfos() {
+        if (animationInfosBuilder_ == null) {
+          animationInfos_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          animationInfosBuilder_.clear();
+        }
+        return this;
+      }
+      public Builder removeAnimationInfos(int index) {
+        if (animationInfosBuilder_ == null) {
+          ensureAnimationInfosIsMutable();
+          animationInfos_.remove(index);
+          onChanged();
+        } else {
+          animationInfosBuilder_.remove(index);
+        }
+        return this;
+      }
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder getAnimationInfosBuilder(
+          int index) {
+        return getAnimationInfosFieldBuilder().getBuilder(index);
+      }
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder getAnimationInfosOrBuilder(
+          int index) {
+        if (animationInfosBuilder_ == null) {
+          return animationInfos_.get(index);  } else {
+          return animationInfosBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
+           getAnimationInfosOrBuilderList() {
+        if (animationInfosBuilder_ != null) {
+          return animationInfosBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(animationInfos_);
+        }
+      }
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder addAnimationInfosBuilder() {
+        return getAnimationInfosFieldBuilder().addBuilder(
+            cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.getDefaultInstance());
+      }
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder addAnimationInfosBuilder(
+          int index) {
+        return getAnimationInfosFieldBuilder().addBuilder(
+            index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.getDefaultInstance());
+      }
+      public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder> 
+           getAnimationInfosBuilderList() {
+        return getAnimationInfosFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
+          getAnimationInfosFieldBuilder() {
+        if (animationInfosBuilder_ == null) {
+          animationInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder>(
+                  animationInfos_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  getParentForChildren(),
+                  isClean());
+          animationInfos_ = null;
+        }
+        return animationInfosBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:VO_PLAYER_ANIMATION_INFOS)
+    }
+    
+    static {
+      defaultInstance = new VO_PLAYER_ANIMATION_INFOS(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATION_INFOS)
+  }
+  
+  public interface RESPONSE_PLAYER_ANIMATION_INFOOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;
+    java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> 
+        getAnimationInfosList();
+    cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS getAnimationInfos(int index);
+    int getAnimationInfosCount();
+    java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder> 
+        getAnimationInfosOrBuilderList();
+    cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder getAnimationInfosOrBuilder(
         int index);
   }
   public static final class RESPONSE_PLAYER_ANIMATION_INFO extends
@@ -5704,40 +6263,28 @@ public final class PlayerProtos {
       return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable;
     }
     
-    private int bitField0_;
-    // required int32 totalPage = 1;
-    public static final int TOTALPAGE_FIELD_NUMBER = 1;
-    private int totalPage_;
-    public boolean hasTotalPage() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public int getTotalPage() {
-      return totalPage_;
-    }
-    
-    // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 2;
-    public static final int ANIMATIONINFOS_FIELD_NUMBER = 2;
-    private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> animationInfos_;
-    public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> getAnimationInfosList() {
+    // repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;
+    public static final int ANIMATIONINFOS_FIELD_NUMBER = 1;
+    private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> animationInfos_;
+    public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> getAnimationInfosList() {
       return animationInfos_;
     }
-    public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
+    public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder> 
         getAnimationInfosOrBuilderList() {
       return animationInfos_;
     }
     public int getAnimationInfosCount() {
       return animationInfos_.size();
     }
-    public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO getAnimationInfos(int index) {
+    public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS getAnimationInfos(int index) {
       return animationInfos_.get(index);
     }
-    public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder getAnimationInfosOrBuilder(
+    public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder getAnimationInfosOrBuilder(
         int index) {
       return animationInfos_.get(index);
     }
     
     private void initFields() {
-      totalPage_ = 0;
       animationInfos_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
@@ -5745,10 +6292,6 @@ public final class PlayerProtos {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasTotalPage()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       for (int i = 0; i < getAnimationInfosCount(); i++) {
         if (!getAnimationInfos(i).isInitialized()) {
           memoizedIsInitialized = 0;
@@ -5762,11 +6305,8 @@ public final class PlayerProtos {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, totalPage_);
-      }
       for (int i = 0; i < animationInfos_.size(); i++) {
-        output.writeMessage(2, animationInfos_.get(i));
+        output.writeMessage(1, animationInfos_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -5777,13 +6317,9 @@ public final class PlayerProtos {
       if (size != -1) return size;
     
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, totalPage_);
-      }
       for (int i = 0; i < animationInfos_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, animationInfos_.get(i));
+          .computeMessageSize(1, animationInfos_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -5910,11 +6446,9 @@ public final class PlayerProtos {
       
       public Builder clear() {
         super.clear();
-        totalPage_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
         if (animationInfosBuilder_ == null) {
           animationInfos_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           animationInfosBuilder_.clear();
         }
@@ -5955,21 +6489,15 @@ public final class PlayerProtos {
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO buildPartial() {
         cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO result = new cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO(this);
         int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.totalPage_ = totalPage_;
         if (animationInfosBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
             animationInfos_ = java.util.Collections.unmodifiableList(animationInfos_);
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.animationInfos_ = animationInfos_;
         } else {
           result.animationInfos_ = animationInfosBuilder_.build();
         }
-        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -5985,14 +6513,11 @@ public final class PlayerProtos {
       
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO other) {
         if (other == cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.getDefaultInstance()) return this;
-        if (other.hasTotalPage()) {
-          setTotalPage(other.getTotalPage());
-        }
         if (animationInfosBuilder_ == null) {
           if (!other.animationInfos_.isEmpty()) {
             if (animationInfos_.isEmpty()) {
               animationInfos_ = other.animationInfos_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureAnimationInfosIsMutable();
               animationInfos_.addAll(other.animationInfos_);
@@ -6005,7 +6530,7 @@ public final class PlayerProtos {
               animationInfosBuilder_.dispose();
               animationInfosBuilder_ = null;
               animationInfos_ = other.animationInfos_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
               animationInfosBuilder_ = 
                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
                    getAnimationInfosFieldBuilder() : null;
@@ -6019,10 +6544,6 @@ public final class PlayerProtos {
       }
       
       public final boolean isInitialized() {
-        if (!hasTotalPage()) {
-          
-          return false;
-        }
         for (int i = 0; i < getAnimationInfosCount(); i++) {
           if (!getAnimationInfos(i).isInitialized()) {
             
@@ -6055,13 +6576,8 @@ public final class PlayerProtos {
               }
               break;
             }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              totalPage_ = input.readInt32();
-              break;
-            }
-            case 18: {
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder subBuilder = cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.newBuilder();
+            case 10: {
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder subBuilder = cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.newBuilder();
               input.readMessage(subBuilder, extensionRegistry);
               addAnimationInfos(subBuilder.buildPartial());
               break;
@@ -6072,41 +6588,20 @@ public final class PlayerProtos {
       
       private int bitField0_;
       
-      // required int32 totalPage = 1;
-      private int totalPage_ ;
-      public boolean hasTotalPage() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      public int getTotalPage() {
-        return totalPage_;
-      }
-      public Builder setTotalPage(int value) {
-        bitField0_ |= 0x00000001;
-        totalPage_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearTotalPage() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        totalPage_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 2;
-      private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> animationInfos_ =
+      // repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;
+      private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> animationInfos_ =
         java.util.Collections.emptyList();
       private void ensureAnimationInfosIsMutable() {
-        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          animationInfos_ = new java.util.ArrayList<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO>(animationInfos_);
-          bitField0_ |= 0x00000002;
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          animationInfos_ = new java.util.ArrayList<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS>(animationInfos_);
+          bitField0_ |= 0x00000001;
          }
       }
       
       private com.google.protobuf.RepeatedFieldBuilder<
-          cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> animationInfosBuilder_;
+          cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder> animationInfosBuilder_;
       
-      public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> getAnimationInfosList() {
+      public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> getAnimationInfosList() {
         if (animationInfosBuilder_ == null) {
           return java.util.Collections.unmodifiableList(animationInfos_);
         } else {
@@ -6120,7 +6615,7 @@ public final class PlayerProtos {
           return animationInfosBuilder_.getCount();
         }
       }
-      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO getAnimationInfos(int index) {
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS getAnimationInfos(int index) {
         if (animationInfosBuilder_ == null) {
           return animationInfos_.get(index);
         } else {
@@ -6128,7 +6623,7 @@ public final class PlayerProtos {
         }
       }
       public Builder setAnimationInfos(
-          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO value) {
+          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS value) {
         if (animationInfosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6142,7 +6637,7 @@ public final class PlayerProtos {
         return this;
       }
       public Builder setAnimationInfos(
-          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder builderForValue) {
+          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder builderForValue) {
         if (animationInfosBuilder_ == null) {
           ensureAnimationInfosIsMutable();
           animationInfos_.set(index, builderForValue.build());
@@ -6152,7 +6647,7 @@ public final class PlayerProtos {
         }
         return this;
       }
-      public Builder addAnimationInfos(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO value) {
+      public Builder addAnimationInfos(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS value) {
         if (animationInfosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6166,7 +6661,7 @@ public final class PlayerProtos {
         return this;
       }
       public Builder addAnimationInfos(
-          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO value) {
+          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS value) {
         if (animationInfosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6180,7 +6675,7 @@ public final class PlayerProtos {
         return this;
       }
       public Builder addAnimationInfos(
-          cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder builderForValue) {
+          cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder builderForValue) {
         if (animationInfosBuilder_ == null) {
           ensureAnimationInfosIsMutable();
           animationInfos_.add(builderForValue.build());
@@ -6191,7 +6686,7 @@ public final class PlayerProtos {
         return this;
       }
       public Builder addAnimationInfos(
-          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder builderForValue) {
+          int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder builderForValue) {
         if (animationInfosBuilder_ == null) {
           ensureAnimationInfosIsMutable();
           animationInfos_.add(index, builderForValue.build());
@@ -6202,7 +6697,7 @@ public final class PlayerProtos {
         return this;
       }
       public Builder addAllAnimationInfos(
-          java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> values) {
+          java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> values) {
         if (animationInfosBuilder_ == null) {
           ensureAnimationInfosIsMutable();
           super.addAll(values, animationInfos_);
@@ -6215,7 +6710,7 @@ public final class PlayerProtos {
       public Builder clearAnimationInfos() {
         if (animationInfosBuilder_ == null) {
           animationInfos_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           animationInfosBuilder_.clear();
@@ -6232,18 +6727,18 @@ public final class PlayerProtos {
         }
         return this;
       }
-      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder getAnimationInfosBuilder(
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder getAnimationInfosBuilder(
           int index) {
         return getAnimationInfosFieldBuilder().getBuilder(index);
       }
-      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder getAnimationInfosOrBuilder(
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder getAnimationInfosOrBuilder(
           int index) {
         if (animationInfosBuilder_ == null) {
           return animationInfos_.get(index);  } else {
           return animationInfosBuilder_.getMessageOrBuilder(index);
         }
       }
-      public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
+      public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder> 
            getAnimationInfosOrBuilderList() {
         if (animationInfosBuilder_ != null) {
           return animationInfosBuilder_.getMessageOrBuilderList();
@@ -6251,27 +6746,27 @@ public final class PlayerProtos {
           return java.util.Collections.unmodifiableList(animationInfos_);
         }
       }
-      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder addAnimationInfosBuilder() {
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder addAnimationInfosBuilder() {
         return getAnimationInfosFieldBuilder().addBuilder(
-            cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.getDefaultInstance());
+            cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDefaultInstance());
       }
-      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder addAnimationInfosBuilder(
+      public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder addAnimationInfosBuilder(
           int index) {
         return getAnimationInfosFieldBuilder().addBuilder(
-            index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.getDefaultInstance());
+            index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDefaultInstance());
       }
-      public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder> 
+      public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder> 
            getAnimationInfosBuilderList() {
         return getAnimationInfosFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
+          cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder> 
           getAnimationInfosFieldBuilder() {
         if (animationInfosBuilder_ == null) {
           animationInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder>(
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder>(
                   animationInfos_,
-                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
                   isClean());
           animationInfos_ = null;
@@ -6346,6 +6841,11 @@ public final class PlayerProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_PLAYER_ANIMATION_INFO_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -6380,11 +6880,12 @@ public final class PlayerProtos {
       "\030\003 \003(\0132\025.VO_PLAYER_ANIMATIONS\"-\n\035REQUEST" +
       "_PLAYER_ANIMATION_INFO\022\014\n\004page\030\001 \002(\005\"P\n\030",
       "VO_PLAYER_ANIMATION_INFO\022\016\n\006roleId\030\001 \002(\005" +
-      "\022\024\n\014animationId2\030\002 \003(\005\022\016\n\006headId\030\003 \002(\005\"f" +
-      "\n\036RESPONSE_PLAYER_ANIMATION_INFO\022\021\n\ttota" +
-      "lPage\030\001 \002(\005\0221\n\016animationInfos\030\002 \003(\0132\031.VO" +
-      "_PLAYER_ANIMATION_INFOB \n\020cg.base.io.pro" +
-      "toB\014PlayerProtos"
+      "\022\024\n\014animationId2\030\002 \003(\005\022\016\n\006headId\030\003 \002(\005\"N" +
+      "\n\031VO_PLAYER_ANIMATION_INFOS\0221\n\016animation" +
+      "Infos\030\001 \003(\0132\031.VO_PLAYER_ANIMATION_INFO\"T" +
+      "\n\036RESPONSE_PLAYER_ANIMATION_INFO\0222\n\016anim" +
+      "ationInfos\030\001 \003(\0132\032.VO_PLAYER_ANIMATION_I" +
+      "NFOSB \n\020cg.base.io.protoB\014PlayerProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -6479,12 +6980,20 @@ public final class PlayerProtos {
               new java.lang.String[] { "RoleId", "AnimationId2", "HeadId", },
               cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.class,
               cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder.class);
-          internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor =
+          internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor =
             getDescriptor().getMessageTypes().get(11);
+          internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor,
+              new java.lang.String[] { "AnimationInfos", },
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.class,
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder.class);
+          internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor =
+            getDescriptor().getMessageTypes().get(12);
           internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor,
-              new java.lang.String[] { "TotalPage", "AnimationInfos", },
+              new java.lang.String[] { "AnimationInfos", },
               cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.class,
               cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.Builder.class);
           return null;

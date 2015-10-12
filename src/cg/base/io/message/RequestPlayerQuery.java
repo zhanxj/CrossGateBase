@@ -37,7 +37,8 @@ public class RequestPlayerQuery extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getRoleId() {
-		int ret = builder.getRoleId();		return ret;
+		int ret = builder.getRoleId();
+		return ret;
 	}
 
 	public REQUEST_PLAYER_QUERY getRequestPlayerQuery() {

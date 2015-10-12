@@ -27,6 +27,24 @@ public class ResponseBattleEnter extends ProtoMessage {
 
 	/**
 	 * 
+	 * @param	battleId
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setBattleId(Integer battleId) {
+		builder.setBattleId(battleId);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public int getBattleId() {
+		int ret = builder.getBattleId();
+		return ret;
+	}
+
+	/**
+	 * 
 	 * @param	teamA
 	 * 			<u>do not has any annotate.</u>
 	 */
