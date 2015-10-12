@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.MapProtos.*;
+import cg.base.io.proto.MessageIdProto.MessageId;
 import cg.base.io.proto.VOProtos.*;
 import com.google.common.collect.Lists;
 import java.util.List;
@@ -15,8 +16,8 @@ public class ResponseMapMove extends ProtoMessage {
 
 	private RESPONSE_MAP_MOVE.Builder builder;
 
-	public ResponseMapMove(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
-		super(messageId, status, sessionId, sender, datas);
+	public ResponseMapMove(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(MessageId.MI_RESPONSE_MAP_MOVE_VALUE, status, sessionId, sender, datas);
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -24,6 +25,7 @@ public class ResponseMapMove extends ProtoMessage {
 
 	public ResponseMapMove() {
 		super();
+		messageId = MessageId.MI_RESPONSE_MAP_MOVE_VALUE;
 	}
 
 	/**

@@ -20,7 +20,7 @@ public class ProtoMessageFactory implements IMessageFactory {
 		@SuppressWarnings("unchecked")
 		Class<ProtoMessage> clz = (Class<ProtoMessage>) Class.forName(msgId.name());
 		clz = clz == null ? ProtoMessage.class : clz;
-		return clz.getConstructor(Integer.class, Integer.class, String.class, ISender.class, byte[].class).newInstance(messageId, status, sessionId, sender, datas);
+		return clz.getConstructor(Integer.class, String.class, ISender.class, byte[].class).newInstance(status, sessionId, sender, datas);
 	}
 
 	@Override

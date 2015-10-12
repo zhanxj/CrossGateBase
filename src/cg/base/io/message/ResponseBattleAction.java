@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.BattleProtos.*;
+import cg.base.io.proto.MessageIdProto.MessageId;
 
 /**
  * This is a auto make java file, so do not modify me.
@@ -12,8 +13,8 @@ public class ResponseBattleAction extends ProtoMessage {
 
 	private RESPONSE_BATTLE_ACTION.Builder builder;
 
-	public ResponseBattleAction(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
-		super(messageId, status, sessionId, sender, datas);
+	public ResponseBattleAction(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(MessageId.MI_RESPONSE_BATTLE_ACTION_VALUE, status, sessionId, sender, datas);
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -21,6 +22,7 @@ public class ResponseBattleAction extends ProtoMessage {
 
 	public ResponseBattleAction() {
 		super();
+		messageId = MessageId.MI_RESPONSE_BATTLE_ACTION_VALUE;
 	}
 
 	/**

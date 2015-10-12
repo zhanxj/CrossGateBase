@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.PlayerProtos.*;
+import cg.base.io.proto.MessageIdProto.MessageId;
 import com.google.common.collect.Lists;
 import java.util.List;
 
@@ -14,8 +15,8 @@ public class ResponsePlayerAnimationInfo extends ProtoMessage {
 
 	private RESPONSE_PLAYER_ANIMATION_INFO.Builder builder;
 
-	public ResponsePlayerAnimationInfo(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
-		super(messageId, status, sessionId, sender, datas);
+	public ResponsePlayerAnimationInfo(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(MessageId.MI_RESPONSE_PLAYER_ANIMATION_INFO_VALUE, status, sessionId, sender, datas);
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -23,6 +24,7 @@ public class ResponsePlayerAnimationInfo extends ProtoMessage {
 
 	public ResponsePlayerAnimationInfo() {
 		super();
+		messageId = MessageId.MI_RESPONSE_PLAYER_ANIMATION_INFO_VALUE;
 	}
 
 	/**

@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.ChatProtos.*;
+import cg.base.io.proto.MessageIdProto.MessageId;
 
 /**
  * This is a auto make java file, so do not modify me.
@@ -12,8 +13,8 @@ public class ResponseChat extends ProtoMessage {
 
 	private RESPONSE_CHAT.Builder builder;
 
-	public ResponseChat(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
-		super(messageId, status, sessionId, sender, datas);
+	public ResponseChat(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(MessageId.MI_RESPONSE_CHAT_VALUE, status, sessionId, sender, datas);
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -21,6 +22,7 @@ public class ResponseChat extends ProtoMessage {
 
 	public ResponseChat() {
 		super();
+		messageId = MessageId.MI_RESPONSE_CHAT_VALUE;
 	}
 
 	/**

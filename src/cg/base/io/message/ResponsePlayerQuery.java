@@ -2,6 +2,7 @@ package cg.base.io.message;
 
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
+import cg.base.io.proto.MessageIdProto.MessageId;
 
 /**
  * This is a auto make java file, so do not modify me.
@@ -9,12 +10,13 @@ import net.io.protocal.proto.ProtoMessage;
  */
 public class ResponsePlayerQuery extends ProtoMessage {
 
-	public ResponsePlayerQuery(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
-		super(messageId, status, sessionId, sender, datas);
+	public ResponsePlayerQuery(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(MessageId.MI_RESPONSE_PLAYER_QUERY_VALUE, status, sessionId, sender, datas);
 	}
 
 	public ResponsePlayerQuery() {
 		super();
+		messageId = MessageId.MI_RESPONSE_PLAYER_QUERY_VALUE;
 	}
 
 }

@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.PlayerProtos.*;
+import cg.base.io.proto.MessageIdProto.MessageId;
 import java.util.List;
 
 /**
@@ -13,8 +14,8 @@ public class RequestPlayerCreate extends ProtoMessage {
 
 	private REQUEST_PLAYER_CREATE.Builder builder;
 
-	public RequestPlayerCreate(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
-		super(messageId, status, sessionId, sender, datas);
+	public RequestPlayerCreate(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(MessageId.MI_REQUEST_PLAYER_CREATE_VALUE, status, sessionId, sender, datas);
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 
 	public RequestPlayerCreate() {
 		super();
+		messageId = MessageId.MI_REQUEST_PLAYER_CREATE_VALUE;
 	}
 
 	/**

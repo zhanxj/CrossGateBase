@@ -3,6 +3,7 @@ package cg.base.io.message;
 import net.dipatch.ISender;
 import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.BattleProtos.*;
+import cg.base.io.proto.MessageIdProto.MessageId;
 import com.google.common.collect.Lists;
 import java.util.List;
 
@@ -14,8 +15,8 @@ public class ResponseBattleEnter extends ProtoMessage {
 
 	private RESPONSE_BATTLE_ENTER.Builder builder;
 
-	public ResponseBattleEnter(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
-		super(messageId, status, sessionId, sender, datas);
+	public ResponseBattleEnter(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
+		super(MessageId.MI_RESPONSE_BATTLE_ENTER_VALUE, status, sessionId, sender, datas);
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -23,6 +24,7 @@ public class ResponseBattleEnter extends ProtoMessage {
 
 	public ResponseBattleEnter() {
 		super();
+		messageId = MessageId.MI_RESPONSE_BATTLE_ENTER_VALUE;
 	}
 
 	/**
