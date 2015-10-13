@@ -419,11 +419,943 @@ public final class SkillProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_DOUBLE_EXP_UPDATE)
   }
   
+  public interface REQUEST_SKILL_USEOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required int32 skillCode = 1;
+    boolean hasSkillCode();
+    int getSkillCode();
+    
+    // optional int32 targetId = 2;
+    boolean hasTargetId();
+    int getTargetId();
+  }
+  public static final class REQUEST_SKILL_USE extends
+      com.google.protobuf.GeneratedMessage
+      implements REQUEST_SKILL_USEOrBuilder {
+    // Use REQUEST_SKILL_USE.newBuilder() to construct.
+    private REQUEST_SKILL_USE(Builder builder) {
+      super(builder);
+    }
+    private REQUEST_SKILL_USE(boolean noInit) {}
+    
+    private static final REQUEST_SKILL_USE defaultInstance;
+    public static REQUEST_SKILL_USE getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public REQUEST_SKILL_USE getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.SkillProtos.internal_static_REQUEST_SKILL_USE_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.SkillProtos.internal_static_REQUEST_SKILL_USE_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required int32 skillCode = 1;
+    public static final int SKILLCODE_FIELD_NUMBER = 1;
+    private int skillCode_;
+    public boolean hasSkillCode() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public int getSkillCode() {
+      return skillCode_;
+    }
+    
+    // optional int32 targetId = 2;
+    public static final int TARGETID_FIELD_NUMBER = 2;
+    private int targetId_;
+    public boolean hasTargetId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public int getTargetId() {
+      return targetId_;
+    }
+    
+    private void initFields() {
+      skillCode_ = 0;
+      targetId_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasSkillCode()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, skillCode_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, targetId_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, skillCode_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, targetId_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.SkillProtos.REQUEST_SKILL_USEOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.SkillProtos.internal_static_REQUEST_SKILL_USE_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.SkillProtos.internal_static_REQUEST_SKILL_USE_fieldAccessorTable;
+      }
+      
+      // Construct using cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        skillCode_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        targetId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE.getDescriptor();
+      }
+      
+      public cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE getDefaultInstanceForType() {
+        return cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE.getDefaultInstance();
+      }
+      
+      public cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE build() {
+        cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE buildPartial() {
+        cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE result = new cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.skillCode_ = skillCode_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.targetId_ = targetId_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE) {
+          return mergeFrom((cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE other) {
+        if (other == cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE.getDefaultInstance()) return this;
+        if (other.hasSkillCode()) {
+          setSkillCode(other.getSkillCode());
+        }
+        if (other.hasTargetId()) {
+          setTargetId(other.getTargetId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasSkillCode()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              skillCode_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              targetId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required int32 skillCode = 1;
+      private int skillCode_ ;
+      public boolean hasSkillCode() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getSkillCode() {
+        return skillCode_;
+      }
+      public Builder setSkillCode(int value) {
+        bitField0_ |= 0x00000001;
+        skillCode_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearSkillCode() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        skillCode_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // optional int32 targetId = 2;
+      private int targetId_ ;
+      public boolean hasTargetId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public int getTargetId() {
+        return targetId_;
+      }
+      public Builder setTargetId(int value) {
+        bitField0_ |= 0x00000002;
+        targetId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearTargetId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        targetId_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:REQUEST_SKILL_USE)
+    }
+    
+    static {
+      defaultInstance = new REQUEST_SKILL_USE(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:REQUEST_SKILL_USE)
+  }
+  
+  public interface REQUEST_RECIPEOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required int32 recipeId = 1;
+    boolean hasRecipeId();
+    int getRecipeId();
+    
+    // required int32 bagId = 2;
+    boolean hasBagId();
+    int getBagId();
+    
+    // repeated int32 gridIds = 3;
+    java.util.List<java.lang.Integer> getGridIdsList();
+    int getGridIdsCount();
+    int getGridIds(int index);
+  }
+  public static final class REQUEST_RECIPE extends
+      com.google.protobuf.GeneratedMessage
+      implements REQUEST_RECIPEOrBuilder {
+    // Use REQUEST_RECIPE.newBuilder() to construct.
+    private REQUEST_RECIPE(Builder builder) {
+      super(builder);
+    }
+    private REQUEST_RECIPE(boolean noInit) {}
+    
+    private static final REQUEST_RECIPE defaultInstance;
+    public static REQUEST_RECIPE getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public REQUEST_RECIPE getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.SkillProtos.internal_static_REQUEST_RECIPE_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.SkillProtos.internal_static_REQUEST_RECIPE_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required int32 recipeId = 1;
+    public static final int RECIPEID_FIELD_NUMBER = 1;
+    private int recipeId_;
+    public boolean hasRecipeId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public int getRecipeId() {
+      return recipeId_;
+    }
+    
+    // required int32 bagId = 2;
+    public static final int BAGID_FIELD_NUMBER = 2;
+    private int bagId_;
+    public boolean hasBagId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public int getBagId() {
+      return bagId_;
+    }
+    
+    // repeated int32 gridIds = 3;
+    public static final int GRIDIDS_FIELD_NUMBER = 3;
+    private java.util.List<java.lang.Integer> gridIds_;
+    public java.util.List<java.lang.Integer>
+        getGridIdsList() {
+      return gridIds_;
+    }
+    public int getGridIdsCount() {
+      return gridIds_.size();
+    }
+    public int getGridIds(int index) {
+      return gridIds_.get(index);
+    }
+    
+    private void initFields() {
+      recipeId_ = 0;
+      bagId_ = 0;
+      gridIds_ = java.util.Collections.emptyList();;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasRecipeId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasBagId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, recipeId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, bagId_);
+      }
+      for (int i = 0; i < gridIds_.size(); i++) {
+        output.writeInt32(3, gridIds_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, recipeId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, bagId_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < gridIds_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt32SizeNoTag(gridIds_.get(i));
+        }
+        size += dataSize;
+        size += 1 * getGridIdsList().size();
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static cg.base.io.proto.SkillProtos.REQUEST_RECIPE parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.SkillProtos.REQUEST_RECIPE prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.SkillProtos.REQUEST_RECIPEOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.SkillProtos.internal_static_REQUEST_RECIPE_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.SkillProtos.internal_static_REQUEST_RECIPE_fieldAccessorTable;
+      }
+      
+      // Construct using cg.base.io.proto.SkillProtos.REQUEST_RECIPE.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        recipeId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        bagId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        gridIds_ = java.util.Collections.emptyList();;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.SkillProtos.REQUEST_RECIPE.getDescriptor();
+      }
+      
+      public cg.base.io.proto.SkillProtos.REQUEST_RECIPE getDefaultInstanceForType() {
+        return cg.base.io.proto.SkillProtos.REQUEST_RECIPE.getDefaultInstance();
+      }
+      
+      public cg.base.io.proto.SkillProtos.REQUEST_RECIPE build() {
+        cg.base.io.proto.SkillProtos.REQUEST_RECIPE result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private cg.base.io.proto.SkillProtos.REQUEST_RECIPE buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        cg.base.io.proto.SkillProtos.REQUEST_RECIPE result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public cg.base.io.proto.SkillProtos.REQUEST_RECIPE buildPartial() {
+        cg.base.io.proto.SkillProtos.REQUEST_RECIPE result = new cg.base.io.proto.SkillProtos.REQUEST_RECIPE(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.recipeId_ = recipeId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.bagId_ = bagId_;
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          gridIds_ = java.util.Collections.unmodifiableList(gridIds_);
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.gridIds_ = gridIds_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.SkillProtos.REQUEST_RECIPE) {
+          return mergeFrom((cg.base.io.proto.SkillProtos.REQUEST_RECIPE)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(cg.base.io.proto.SkillProtos.REQUEST_RECIPE other) {
+        if (other == cg.base.io.proto.SkillProtos.REQUEST_RECIPE.getDefaultInstance()) return this;
+        if (other.hasRecipeId()) {
+          setRecipeId(other.getRecipeId());
+        }
+        if (other.hasBagId()) {
+          setBagId(other.getBagId());
+        }
+        if (!other.gridIds_.isEmpty()) {
+          if (gridIds_.isEmpty()) {
+            gridIds_ = other.gridIds_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureGridIdsIsMutable();
+            gridIds_.addAll(other.gridIds_);
+          }
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasRecipeId()) {
+          
+          return false;
+        }
+        if (!hasBagId()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              recipeId_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              bagId_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              ensureGridIdsIsMutable();
+              gridIds_.add(input.readInt32());
+              break;
+            }
+            case 26: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              while (input.getBytesUntilLimit() > 0) {
+                addGridIds(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required int32 recipeId = 1;
+      private int recipeId_ ;
+      public boolean hasRecipeId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getRecipeId() {
+        return recipeId_;
+      }
+      public Builder setRecipeId(int value) {
+        bitField0_ |= 0x00000001;
+        recipeId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearRecipeId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        recipeId_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required int32 bagId = 2;
+      private int bagId_ ;
+      public boolean hasBagId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public int getBagId() {
+        return bagId_;
+      }
+      public Builder setBagId(int value) {
+        bitField0_ |= 0x00000002;
+        bagId_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearBagId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        bagId_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // repeated int32 gridIds = 3;
+      private java.util.List<java.lang.Integer> gridIds_ = java.util.Collections.emptyList();;
+      private void ensureGridIdsIsMutable() {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+          gridIds_ = new java.util.ArrayList<java.lang.Integer>(gridIds_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+      public java.util.List<java.lang.Integer>
+          getGridIdsList() {
+        return java.util.Collections.unmodifiableList(gridIds_);
+      }
+      public int getGridIdsCount() {
+        return gridIds_.size();
+      }
+      public int getGridIds(int index) {
+        return gridIds_.get(index);
+      }
+      public Builder setGridIds(
+          int index, int value) {
+        ensureGridIdsIsMutable();
+        gridIds_.set(index, value);
+        onChanged();
+        return this;
+      }
+      public Builder addGridIds(int value) {
+        ensureGridIdsIsMutable();
+        gridIds_.add(value);
+        onChanged();
+        return this;
+      }
+      public Builder addAllGridIds(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureGridIdsIsMutable();
+        super.addAll(values, gridIds_);
+        onChanged();
+        return this;
+      }
+      public Builder clearGridIds() {
+        gridIds_ = java.util.Collections.emptyList();;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:REQUEST_RECIPE)
+    }
+    
+    static {
+      defaultInstance = new REQUEST_RECIPE(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:REQUEST_RECIPE)
+  }
+  
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_DOUBLE_EXP_UPDATE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_DOUBLE_EXP_UPDATE_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_REQUEST_SKILL_USE_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_REQUEST_SKILL_USE_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_REQUEST_RECIPE_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_REQUEST_RECIPE_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -434,8 +1366,11 @@ public final class SkillProtos {
   static {
     java.lang.String[] descriptorData = {
       "\n\013Skill.proto\"<\n\032RESPONSE_DOUBLE_EXP_UPD" +
-      "ATE\022\020\n\010isDouble\030\001 \002(\010\022\014\n\004time\030\002 \002(\005B\037\n\020c" +
-      "g.base.io.protoB\013SkillProtos"
+      "ATE\022\020\n\010isDouble\030\001 \002(\010\022\014\n\004time\030\002 \002(\005\"8\n\021R" +
+      "EQUEST_SKILL_USE\022\021\n\tskillCode\030\001 \002(\005\022\020\n\010t" +
+      "argetId\030\002 \001(\005\"B\n\016REQUEST_RECIPE\022\020\n\010recip" +
+      "eId\030\001 \002(\005\022\r\n\005bagId\030\002 \002(\005\022\017\n\007gridIds\030\003 \003(" +
+      "\005B\037\n\020cg.base.io.protoB\013SkillProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -450,6 +1385,22 @@ public final class SkillProtos {
               new java.lang.String[] { "IsDouble", "Time", },
               cg.base.io.proto.SkillProtos.RESPONSE_DOUBLE_EXP_UPDATE.class,
               cg.base.io.proto.SkillProtos.RESPONSE_DOUBLE_EXP_UPDATE.Builder.class);
+          internal_static_REQUEST_SKILL_USE_descriptor =
+            getDescriptor().getMessageTypes().get(1);
+          internal_static_REQUEST_SKILL_USE_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_REQUEST_SKILL_USE_descriptor,
+              new java.lang.String[] { "SkillCode", "TargetId", },
+              cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE.class,
+              cg.base.io.proto.SkillProtos.REQUEST_SKILL_USE.Builder.class);
+          internal_static_REQUEST_RECIPE_descriptor =
+            getDescriptor().getMessageTypes().get(2);
+          internal_static_REQUEST_RECIPE_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_REQUEST_RECIPE_descriptor,
+              new java.lang.String[] { "RecipeId", "BagId", "GridIds", },
+              cg.base.io.proto.SkillProtos.REQUEST_RECIPE.class,
+              cg.base.io.proto.SkillProtos.REQUEST_RECIPE.Builder.class);
           return null;
         }
       };
