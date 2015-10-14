@@ -6,7 +6,6 @@ import java.util.concurrent.ScheduledExecutorService;
 
 import cg.base.animation.AnimationReader;
 import cg.base.image.ImageManager;
-import cg.base.io.PacketFactory;
 import cg.base.log.Log;
 import cg.base.reader.CAnimationReader;
 import cg.base.time.CTimer;
@@ -28,8 +27,6 @@ public class CrossGateBase {
 	
 	protected static int version;
 	
-	protected static PacketFactory packetFactory;
-	
 	protected static URI clientFilePath = null;
 	
 	protected static AnimationReader animationReader;
@@ -48,10 +45,6 @@ public class CrossGateBase {
 	
 	public static void exit() {
 		System.exit(0);
-	}
-
-	public static PacketFactory getPacketFactory() {
-		return packetFactory;
 	}
 
 	public static Log getLog() {
@@ -108,7 +101,6 @@ public class CrossGateBase {
 			mainThread = createUpdater();
 			scheduler = Executors.newScheduledThreadPool(3);
 			imageManager = createImageManager();
-			packetFactory = createPacketFactory();
 			simplePubsub = createSimplePubsub();
 		}
 
@@ -128,8 +120,6 @@ public class CrossGateBase {
 		}
 		
 		protected abstract URI loadClientFilePath() throws Exception;
-		
-		protected abstract PacketFactory createPacketFactory();
 		
 		protected Log createLog() {
 			return new CLog();

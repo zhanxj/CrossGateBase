@@ -13,7 +13,6 @@ import java.net.URLEncoder;
 import java.util.List;
 import java.util.Map;
 
-import cg.base.io.InputPacket;
 import cg.base.io.OutputPacket;
 
 public class IOUtils {
@@ -64,38 +63,6 @@ public class IOUtils {
 		for (String value : array) {
 			packet.writeUTF(value);
 		}
-	}
-	
-	public static int[] readInts(InputPacket packet) {
-		int[] array = new int[packet.readInt()];
-		for (int i = 0;i < array.length;i++) {
-			array[i] = packet.readInt();
-		}
-		return array;
-	}
-	
-	public static short[] readShorts(InputPacket packet) {
-		short[] array = new short[packet.readInt()];
-		for (int i = 0;i < array.length;i++) {
-			array[i] = packet.readShort();
-		}
-		return array;
-	}
-	
-	public static byte[] readBytes(InputPacket packet) {
-		byte[] array = new byte[packet.readInt()];
-		for (int i = 0;i < array.length;i++) {
-			array[i] = packet.readByte();
-		}
-		return array;
-	}
-	
-	public static String[] readStrings(InputPacket packet) {
-		String[] array = new String[packet.readInt()];
-		for (int i = 0;i < array.length;i++) {
-			array[i] = packet.readUTF();
-		}
-		return array;
 	}
 	
 	public static void requestHttpToStream(URL url, URLHandler handler) throws Exception {
