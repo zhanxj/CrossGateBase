@@ -13,8 +13,6 @@ import java.net.URLEncoder;
 import java.util.List;
 import java.util.Map;
 
-import cg.base.io.OutputPacket;
-
 public class IOUtils {
 	
 	public static final String OS = System.getProperty("os.name").toLowerCase();
@@ -32,38 +30,6 @@ public class IOUtils {
 	public static final String URI_LOCAL_HEAD = OS.contains("win") ? "file:/" : "file:";
 	
 	public static final String NET_ENCODING = "iso-8859-1";
-	
-	public static void writeArray(OutputPacket packet, int[] array) {
-		int length = array.length;
-		packet.writeInt(length);
-		for (int value : array) {
-			packet.writeInt(value);
-		}
-	}
-	
-	public static void writeArray(OutputPacket packet, short[] array) {
-		int length = array.length;
-		packet.writeInt(length);
-		for (short value : array) {
-			packet.writeShort(value);
-		}
-	}
-	
-	public static void writeArray(OutputPacket packet, byte[] array) {
-		int length = array.length;
-		packet.writeInt(length);
-		for (byte value : array) {
-			packet.writeByte(value);
-		}
-	}
-	
-	public static void writeArray(OutputPacket packet, String[] array) {
-		int length = array.length;
-		packet.writeInt(length);
-		for (String value : array) {
-			packet.writeUTF(value);
-		}
-	}
 	
 	public static void requestHttpToStream(URL url, URLHandler handler) throws Exception {
 		// 
