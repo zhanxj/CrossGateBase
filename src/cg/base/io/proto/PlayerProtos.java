@@ -10,194 +10,469 @@ public final class PlayerProtos {
   }
   public interface REQUEST_PLAYER_CREATEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 roleId = 1;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     boolean hasRoleId();
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     int getRoleId();
-    
+
     // required int32 colorId = 2;
+    /**
+     * <code>required int32 colorId = 2;</code>
+     */
     boolean hasColorId();
+    /**
+     * <code>required int32 colorId = 2;</code>
+     */
     int getColorId();
-    
+
     // required int32 eyeStyleId = 3;
+    /**
+     * <code>required int32 eyeStyleId = 3;</code>
+     */
     boolean hasEyeStyleId();
+    /**
+     * <code>required int32 eyeStyleId = 3;</code>
+     */
     int getEyeStyleId();
-    
+
     // required int32 mouthStyleId = 4;
+    /**
+     * <code>required int32 mouthStyleId = 4;</code>
+     */
     boolean hasMouthStyleId();
+    /**
+     * <code>required int32 mouthStyleId = 4;</code>
+     */
     int getMouthStyleId();
-    
+
     // required int32 hairStyleId = 5;
+    /**
+     * <code>required int32 hairStyleId = 5;</code>
+     */
     boolean hasHairStyleId();
+    /**
+     * <code>required int32 hairStyleId = 5;</code>
+     */
     int getHairStyleId();
-    
+
     // required int32 roleIndex = 6;
+    /**
+     * <code>required int32 roleIndex = 6;</code>
+     */
     boolean hasRoleIndex();
+    /**
+     * <code>required int32 roleIndex = 6;</code>
+     */
     int getRoleIndex();
-    
+
     // required string name = 7;
+    /**
+     * <code>required string name = 7;</code>
+     */
     boolean hasName();
-    String getName();
-    
+    /**
+     * <code>required string name = 7;</code>
+     */
+    java.lang.String getName();
+    /**
+     * <code>required string name = 7;</code>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
     // repeated int32 attributes = 8;
+    /**
+     * <code>repeated int32 attributes = 8;</code>
+     */
     java.util.List<java.lang.Integer> getAttributesList();
+    /**
+     * <code>repeated int32 attributes = 8;</code>
+     */
     int getAttributesCount();
+    /**
+     * <code>repeated int32 attributes = 8;</code>
+     */
     int getAttributes(int index);
-    
+
     // repeated int32 elements = 9;
+    /**
+     * <code>repeated int32 elements = 9;</code>
+     */
     java.util.List<java.lang.Integer> getElementsList();
+    /**
+     * <code>repeated int32 elements = 9;</code>
+     */
     int getElementsCount();
+    /**
+     * <code>repeated int32 elements = 9;</code>
+     */
     int getElements(int index);
   }
+  /**
+   * Protobuf type {@code REQUEST_PLAYER_CREATE}
+   */
   public static final class REQUEST_PLAYER_CREATE extends
       com.google.protobuf.GeneratedMessage
       implements REQUEST_PLAYER_CREATEOrBuilder {
     // Use REQUEST_PLAYER_CREATE.newBuilder() to construct.
-    private REQUEST_PLAYER_CREATE(Builder builder) {
+    private REQUEST_PLAYER_CREATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private REQUEST_PLAYER_CREATE(boolean noInit) {}
-    
+    private REQUEST_PLAYER_CREATE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final REQUEST_PLAYER_CREATE defaultInstance;
     public static REQUEST_PLAYER_CREATE getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public REQUEST_PLAYER_CREATE getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private REQUEST_PLAYER_CREATE(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              roleId_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              colorId_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              eyeStyleId_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              mouthStyleId_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              hairStyleId_ = input.readInt32();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000020;
+              roleIndex_ = input.readInt32();
+              break;
+            }
+            case 58: {
+              bitField0_ |= 0x00000040;
+              name_ = input.readBytes();
+              break;
+            }
+            case 64: {
+              if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+                attributes_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000080;
+              }
+              attributes_.add(input.readInt32());
+              break;
+            }
+            case 66: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000080) == 0x00000080) && input.getBytesUntilLimit() > 0) {
+                attributes_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000080;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                attributes_.add(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 72: {
+              if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+                elements_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              elements_.add(input.readInt32());
+              break;
+            }
+            case 74: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000100) == 0x00000100) && input.getBytesUntilLimit() > 0) {
+                elements_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                elements_.add(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+          attributes_ = java.util.Collections.unmodifiableList(attributes_);
+        }
+        if (((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+          elements_ = java.util.Collections.unmodifiableList(elements_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_CREATE_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_CREATE_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_CREATE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<REQUEST_PLAYER_CREATE> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_PLAYER_CREATE>() {
+      public REQUEST_PLAYER_CREATE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_PLAYER_CREATE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_PLAYER_CREATE> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public boolean hasRoleId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public int getRoleId() {
       return roleId_;
     }
-    
+
     // required int32 colorId = 2;
     public static final int COLORID_FIELD_NUMBER = 2;
     private int colorId_;
+    /**
+     * <code>required int32 colorId = 2;</code>
+     */
     public boolean hasColorId() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
+    /**
+     * <code>required int32 colorId = 2;</code>
+     */
     public int getColorId() {
       return colorId_;
     }
-    
+
     // required int32 eyeStyleId = 3;
     public static final int EYESTYLEID_FIELD_NUMBER = 3;
     private int eyeStyleId_;
+    /**
+     * <code>required int32 eyeStyleId = 3;</code>
+     */
     public boolean hasEyeStyleId() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
+    /**
+     * <code>required int32 eyeStyleId = 3;</code>
+     */
     public int getEyeStyleId() {
       return eyeStyleId_;
     }
-    
+
     // required int32 mouthStyleId = 4;
     public static final int MOUTHSTYLEID_FIELD_NUMBER = 4;
     private int mouthStyleId_;
+    /**
+     * <code>required int32 mouthStyleId = 4;</code>
+     */
     public boolean hasMouthStyleId() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
+    /**
+     * <code>required int32 mouthStyleId = 4;</code>
+     */
     public int getMouthStyleId() {
       return mouthStyleId_;
     }
-    
+
     // required int32 hairStyleId = 5;
     public static final int HAIRSTYLEID_FIELD_NUMBER = 5;
     private int hairStyleId_;
+    /**
+     * <code>required int32 hairStyleId = 5;</code>
+     */
     public boolean hasHairStyleId() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
+    /**
+     * <code>required int32 hairStyleId = 5;</code>
+     */
     public int getHairStyleId() {
       return hairStyleId_;
     }
-    
+
     // required int32 roleIndex = 6;
     public static final int ROLEINDEX_FIELD_NUMBER = 6;
     private int roleIndex_;
+    /**
+     * <code>required int32 roleIndex = 6;</code>
+     */
     public boolean hasRoleIndex() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
+    /**
+     * <code>required int32 roleIndex = 6;</code>
+     */
     public int getRoleIndex() {
       return roleIndex_;
     }
-    
+
     // required string name = 7;
     public static final int NAME_FIELD_NUMBER = 7;
     private java.lang.Object name_;
+    /**
+     * <code>required string name = 7;</code>
+     */
     public boolean hasName() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
-    public String getName() {
+    /**
+     * <code>required string name = 7;</code>
+     */
+    public java.lang.String getName() {
       java.lang.Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           name_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getNameBytes() {
+    /**
+     * <code>required string name = 7;</code>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
       java.lang.Object ref = name_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // repeated int32 attributes = 8;
     public static final int ATTRIBUTES_FIELD_NUMBER = 8;
     private java.util.List<java.lang.Integer> attributes_;
+    /**
+     * <code>repeated int32 attributes = 8;</code>
+     */
     public java.util.List<java.lang.Integer>
         getAttributesList() {
       return attributes_;
     }
+    /**
+     * <code>repeated int32 attributes = 8;</code>
+     */
     public int getAttributesCount() {
       return attributes_.size();
     }
+    /**
+     * <code>repeated int32 attributes = 8;</code>
+     */
     public int getAttributes(int index) {
       return attributes_.get(index);
     }
-    
+
     // repeated int32 elements = 9;
     public static final int ELEMENTS_FIELD_NUMBER = 9;
     private java.util.List<java.lang.Integer> elements_;
+    /**
+     * <code>repeated int32 elements = 9;</code>
+     */
     public java.util.List<java.lang.Integer>
         getElementsList() {
       return elements_;
     }
+    /**
+     * <code>repeated int32 elements = 9;</code>
+     */
     public int getElementsCount() {
       return elements_.size();
     }
+    /**
+     * <code>repeated int32 elements = 9;</code>
+     */
     public int getElements(int index) {
       return elements_.get(index);
     }
-    
+
     private void initFields() {
       roleId_ = 0;
       colorId_ = 0;
@@ -206,14 +481,14 @@ public final class PlayerProtos {
       hairStyleId_ = 0;
       roleIndex_ = 0;
       name_ = "";
-      attributes_ = java.util.Collections.emptyList();;
-      elements_ = java.util.Collections.emptyList();;
+      attributes_ = java.util.Collections.emptyList();
+      elements_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -245,7 +520,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -278,12 +553,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -335,94 +610,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code REQUEST_PLAYER_CREATE}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATEOrBuilder {
@@ -430,18 +694,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_CREATE_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_CREATE_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_CREATE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -452,7 +719,7 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         roleId_ = 0;
@@ -469,26 +736,26 @@ public final class PlayerProtos {
         bitField0_ = (bitField0_ & ~0x00000020);
         name_ = "";
         bitField0_ = (bitField0_ & ~0x00000040);
-        attributes_ = java.util.Collections.emptyList();;
+        attributes_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000080);
-        elements_ = java.util.Collections.emptyList();;
+        elements_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000100);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_CREATE_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE build() {
         cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE result = buildPartial();
         if (!result.isInitialized()) {
@@ -496,17 +763,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE buildPartial() {
         cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE result = new cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE(this);
         int from_bitField0_ = bitField0_;
@@ -553,7 +810,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE)other);
@@ -562,7 +819,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE other) {
         if (other == cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.getDefaultInstance()) return this;
         if (other.hasRoleId()) {
@@ -584,7 +841,9 @@ public final class PlayerProtos {
           setRoleIndex(other.getRoleIndex());
         }
         if (other.hasName()) {
-          setName(other.getName());
+          bitField0_ |= 0x00000040;
+          name_ = other.name_;
+          onChanged();
         }
         if (!other.attributes_.isEmpty()) {
           if (attributes_.isEmpty()) {
@@ -609,7 +868,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasRoleId()) {
           
@@ -641,241 +900,267 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              roleId_ = input.readInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              colorId_ = input.readInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              eyeStyleId_ = input.readInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              mouthStyleId_ = input.readInt32();
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              hairStyleId_ = input.readInt32();
-              break;
-            }
-            case 48: {
-              bitField0_ |= 0x00000020;
-              roleIndex_ = input.readInt32();
-              break;
-            }
-            case 58: {
-              bitField0_ |= 0x00000040;
-              name_ = input.readBytes();
-              break;
-            }
-            case 64: {
-              ensureAttributesIsMutable();
-              attributes_.add(input.readInt32());
-              break;
-            }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              while (input.getBytesUntilLimit() > 0) {
-                addAttributes(input.readInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 72: {
-              ensureElementsIsMutable();
-              elements_.add(input.readInt32());
-              break;
-            }
-            case 74: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              while (input.getBytesUntilLimit() > 0) {
-                addElements(input.readInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 roleId = 1;
       private int roleId_ ;
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public boolean hasRoleId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public int getRoleId() {
         return roleId_;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder setRoleId(int value) {
         bitField0_ |= 0x00000001;
         roleId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder clearRoleId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         roleId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 colorId = 2;
       private int colorId_ ;
+      /**
+       * <code>required int32 colorId = 2;</code>
+       */
       public boolean hasColorId() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>required int32 colorId = 2;</code>
+       */
       public int getColorId() {
         return colorId_;
       }
+      /**
+       * <code>required int32 colorId = 2;</code>
+       */
       public Builder setColorId(int value) {
         bitField0_ |= 0x00000002;
         colorId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 colorId = 2;</code>
+       */
       public Builder clearColorId() {
         bitField0_ = (bitField0_ & ~0x00000002);
         colorId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 eyeStyleId = 3;
       private int eyeStyleId_ ;
+      /**
+       * <code>required int32 eyeStyleId = 3;</code>
+       */
       public boolean hasEyeStyleId() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>required int32 eyeStyleId = 3;</code>
+       */
       public int getEyeStyleId() {
         return eyeStyleId_;
       }
+      /**
+       * <code>required int32 eyeStyleId = 3;</code>
+       */
       public Builder setEyeStyleId(int value) {
         bitField0_ |= 0x00000004;
         eyeStyleId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 eyeStyleId = 3;</code>
+       */
       public Builder clearEyeStyleId() {
         bitField0_ = (bitField0_ & ~0x00000004);
         eyeStyleId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 mouthStyleId = 4;
       private int mouthStyleId_ ;
+      /**
+       * <code>required int32 mouthStyleId = 4;</code>
+       */
       public boolean hasMouthStyleId() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
+      /**
+       * <code>required int32 mouthStyleId = 4;</code>
+       */
       public int getMouthStyleId() {
         return mouthStyleId_;
       }
+      /**
+       * <code>required int32 mouthStyleId = 4;</code>
+       */
       public Builder setMouthStyleId(int value) {
         bitField0_ |= 0x00000008;
         mouthStyleId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 mouthStyleId = 4;</code>
+       */
       public Builder clearMouthStyleId() {
         bitField0_ = (bitField0_ & ~0x00000008);
         mouthStyleId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 hairStyleId = 5;
       private int hairStyleId_ ;
+      /**
+       * <code>required int32 hairStyleId = 5;</code>
+       */
       public boolean hasHairStyleId() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
+      /**
+       * <code>required int32 hairStyleId = 5;</code>
+       */
       public int getHairStyleId() {
         return hairStyleId_;
       }
+      /**
+       * <code>required int32 hairStyleId = 5;</code>
+       */
       public Builder setHairStyleId(int value) {
         bitField0_ |= 0x00000010;
         hairStyleId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 hairStyleId = 5;</code>
+       */
       public Builder clearHairStyleId() {
         bitField0_ = (bitField0_ & ~0x00000010);
         hairStyleId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 roleIndex = 6;
       private int roleIndex_ ;
+      /**
+       * <code>required int32 roleIndex = 6;</code>
+       */
       public boolean hasRoleIndex() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
+      /**
+       * <code>required int32 roleIndex = 6;</code>
+       */
       public int getRoleIndex() {
         return roleIndex_;
       }
+      /**
+       * <code>required int32 roleIndex = 6;</code>
+       */
       public Builder setRoleIndex(int value) {
         bitField0_ |= 0x00000020;
         roleIndex_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 roleIndex = 6;</code>
+       */
       public Builder clearRoleIndex() {
         bitField0_ = (bitField0_ & ~0x00000020);
         roleIndex_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required string name = 7;
       private java.lang.Object name_ = "";
+      /**
+       * <code>required string name = 7;</code>
+       */
       public boolean hasName() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
-      public String getName() {
+      /**
+       * <code>required string name = 7;</code>
+       */
+      public java.lang.String getName() {
         java.lang.Object ref = name_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           name_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setName(String value) {
+      /**
+       * <code>required string name = 7;</code>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string name = 7;</code>
+       */
+      public Builder setName(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -884,36 +1169,59 @@ public final class PlayerProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>required string name = 7;</code>
+       */
       public Builder clearName() {
         bitField0_ = (bitField0_ & ~0x00000040);
         name_ = getDefaultInstance().getName();
         onChanged();
         return this;
       }
-      void setName(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000040;
+      /**
+       * <code>required string name = 7;</code>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
         name_ = value;
         onChanged();
+        return this;
       }
-      
+
       // repeated int32 attributes = 8;
-      private java.util.List<java.lang.Integer> attributes_ = java.util.Collections.emptyList();;
+      private java.util.List<java.lang.Integer> attributes_ = java.util.Collections.emptyList();
       private void ensureAttributesIsMutable() {
         if (!((bitField0_ & 0x00000080) == 0x00000080)) {
           attributes_ = new java.util.ArrayList<java.lang.Integer>(attributes_);
           bitField0_ |= 0x00000080;
          }
       }
+      /**
+       * <code>repeated int32 attributes = 8;</code>
+       */
       public java.util.List<java.lang.Integer>
           getAttributesList() {
         return java.util.Collections.unmodifiableList(attributes_);
       }
+      /**
+       * <code>repeated int32 attributes = 8;</code>
+       */
       public int getAttributesCount() {
         return attributes_.size();
       }
+      /**
+       * <code>repeated int32 attributes = 8;</code>
+       */
       public int getAttributes(int index) {
         return attributes_.get(index);
       }
+      /**
+       * <code>repeated int32 attributes = 8;</code>
+       */
       public Builder setAttributes(
           int index, int value) {
         ensureAttributesIsMutable();
@@ -921,12 +1229,18 @@ public final class PlayerProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 attributes = 8;</code>
+       */
       public Builder addAttributes(int value) {
         ensureAttributesIsMutable();
         attributes_.add(value);
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 attributes = 8;</code>
+       */
       public Builder addAllAttributes(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureAttributesIsMutable();
@@ -934,31 +1248,46 @@ public final class PlayerProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 attributes = 8;</code>
+       */
       public Builder clearAttributes() {
-        attributes_ = java.util.Collections.emptyList();;
+        attributes_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000080);
         onChanged();
         return this;
       }
-      
+
       // repeated int32 elements = 9;
-      private java.util.List<java.lang.Integer> elements_ = java.util.Collections.emptyList();;
+      private java.util.List<java.lang.Integer> elements_ = java.util.Collections.emptyList();
       private void ensureElementsIsMutable() {
         if (!((bitField0_ & 0x00000100) == 0x00000100)) {
           elements_ = new java.util.ArrayList<java.lang.Integer>(elements_);
           bitField0_ |= 0x00000100;
          }
       }
+      /**
+       * <code>repeated int32 elements = 9;</code>
+       */
       public java.util.List<java.lang.Integer>
           getElementsList() {
         return java.util.Collections.unmodifiableList(elements_);
       }
+      /**
+       * <code>repeated int32 elements = 9;</code>
+       */
       public int getElementsCount() {
         return elements_.size();
       }
+      /**
+       * <code>repeated int32 elements = 9;</code>
+       */
       public int getElements(int index) {
         return elements_.get(index);
       }
+      /**
+       * <code>repeated int32 elements = 9;</code>
+       */
       public Builder setElements(
           int index, int value) {
         ensureElementsIsMutable();
@@ -966,12 +1295,18 @@ public final class PlayerProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 elements = 9;</code>
+       */
       public Builder addElements(int value) {
         ensureElementsIsMutable();
         elements_.add(value);
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 elements = 9;</code>
+       */
       public Builder addAllElements(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureElementsIsMutable();
@@ -979,70 +1314,152 @@ public final class PlayerProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 elements = 9;</code>
+       */
       public Builder clearElements() {
-        elements_ = java.util.Collections.emptyList();;
+        elements_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000100);
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:REQUEST_PLAYER_CREATE)
     }
-    
+
     static {
       defaultInstance = new REQUEST_PLAYER_CREATE(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_CREATE)
   }
-  
+
   public interface RESPONSE_PLAYER_CREATEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 instanceId = 1;
+    /**
+     * <code>required int32 instanceId = 1;</code>
+     */
     boolean hasInstanceId();
+    /**
+     * <code>required int32 instanceId = 1;</code>
+     */
     int getInstanceId();
   }
+  /**
+   * Protobuf type {@code RESPONSE_PLAYER_CREATE}
+   */
   public static final class RESPONSE_PLAYER_CREATE extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_PLAYER_CREATEOrBuilder {
     // Use RESPONSE_PLAYER_CREATE.newBuilder() to construct.
-    private RESPONSE_PLAYER_CREATE(Builder builder) {
+    private RESPONSE_PLAYER_CREATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_PLAYER_CREATE(boolean noInit) {}
-    
+    private RESPONSE_PLAYER_CREATE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_PLAYER_CREATE defaultInstance;
     public static RESPONSE_PLAYER_CREATE getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_PLAYER_CREATE getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_PLAYER_CREATE(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              instanceId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.class, cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_PLAYER_CREATE> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_PLAYER_CREATE>() {
+      public RESPONSE_PLAYER_CREATE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_PLAYER_CREATE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_PLAYER_CREATE> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 instanceId = 1;
     public static final int INSTANCEID_FIELD_NUMBER = 1;
     private int instanceId_;
+    /**
+     * <code>required int32 instanceId = 1;</code>
+     */
     public boolean hasInstanceId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 instanceId = 1;</code>
+     */
     public int getInstanceId() {
       return instanceId_;
     }
-    
+
     private void initFields() {
       instanceId_ = 0;
     }
@@ -1050,7 +1467,7 @@ public final class PlayerProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasInstanceId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -1058,7 +1475,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -1067,12 +1484,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -1082,94 +1499,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_PLAYER_CREATE}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATEOrBuilder {
@@ -1177,18 +1583,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.class, cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1199,27 +1608,27 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         instanceId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE build() {
         cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE result = buildPartial();
         if (!result.isInitialized()) {
@@ -1227,17 +1636,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE buildPartial() {
         cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE result = new cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE(this);
         int from_bitField0_ = bitField0_;
@@ -1250,7 +1649,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE)other);
@@ -1259,7 +1658,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE other) {
         if (other == cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.getDefaultInstance()) return this;
         if (other.hasInstanceId()) {
@@ -1268,7 +1667,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasInstanceId()) {
           
@@ -1276,119 +1675,195 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              instanceId_ = input.readInt32();
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 instanceId = 1;
       private int instanceId_ ;
+      /**
+       * <code>required int32 instanceId = 1;</code>
+       */
       public boolean hasInstanceId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 instanceId = 1;</code>
+       */
       public int getInstanceId() {
         return instanceId_;
       }
+      /**
+       * <code>required int32 instanceId = 1;</code>
+       */
       public Builder setInstanceId(int value) {
         bitField0_ |= 0x00000001;
         instanceId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 instanceId = 1;</code>
+       */
       public Builder clearInstanceId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         instanceId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_PLAYER_CREATE)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_PLAYER_CREATE(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_PLAYER_CREATE)
   }
-  
+
   public interface REQUEST_PLAYER_DELETEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 roleId = 1;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     boolean hasRoleId();
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     int getRoleId();
   }
+  /**
+   * Protobuf type {@code REQUEST_PLAYER_DELETE}
+   */
   public static final class REQUEST_PLAYER_DELETE extends
       com.google.protobuf.GeneratedMessage
       implements REQUEST_PLAYER_DELETEOrBuilder {
     // Use REQUEST_PLAYER_DELETE.newBuilder() to construct.
-    private REQUEST_PLAYER_DELETE(Builder builder) {
+    private REQUEST_PLAYER_DELETE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private REQUEST_PLAYER_DELETE(boolean noInit) {}
-    
+    private REQUEST_PLAYER_DELETE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final REQUEST_PLAYER_DELETE defaultInstance;
     public static REQUEST_PLAYER_DELETE getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public REQUEST_PLAYER_DELETE getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private REQUEST_PLAYER_DELETE(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              roleId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_DELETE_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_DELETE_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_DELETE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<REQUEST_PLAYER_DELETE> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_PLAYER_DELETE>() {
+      public REQUEST_PLAYER_DELETE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_PLAYER_DELETE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_PLAYER_DELETE> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public boolean hasRoleId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public int getRoleId() {
       return roleId_;
     }
-    
+
     private void initFields() {
       roleId_ = 0;
     }
@@ -1396,7 +1871,7 @@ public final class PlayerProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -1404,7 +1879,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -1413,12 +1888,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -1428,94 +1903,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code REQUEST_PLAYER_DELETE}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETEOrBuilder {
@@ -1523,18 +1987,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_DELETE_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_DELETE_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_DELETE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1545,27 +2012,27 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         roleId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_DELETE_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE build() {
         cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE result = buildPartial();
         if (!result.isInitialized()) {
@@ -1573,17 +2040,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE buildPartial() {
         cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE result = new cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE(this);
         int from_bitField0_ = bitField0_;
@@ -1596,7 +2053,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE)other);
@@ -1605,7 +2062,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE other) {
         if (other == cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.getDefaultInstance()) return this;
         if (other.hasRoleId()) {
@@ -1614,7 +2071,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasRoleId()) {
           
@@ -1622,27 +2079,131 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 roleId = 1;
+      private int roleId_ ;
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
+      public boolean hasRoleId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
+      public int getRoleId() {
+        return roleId_;
+      }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
+      public Builder setRoleId(int value) {
+        bitField0_ |= 0x00000001;
+        roleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
+      public Builder clearRoleId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        roleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:REQUEST_PLAYER_DELETE)
+    }
+
+    static {
+      defaultInstance = new REQUEST_PLAYER_DELETE(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_DELETE)
+  }
+
+  public interface REQUEST_PLAYER_QUERYOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 roleId = 1;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
+    boolean hasRoleId();
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
+    int getRoleId();
+  }
+  /**
+   * Protobuf type {@code REQUEST_PLAYER_QUERY}
+   */
+  public static final class REQUEST_PLAYER_QUERY extends
+      com.google.protobuf.GeneratedMessage
+      implements REQUEST_PLAYER_QUERYOrBuilder {
+    // Use REQUEST_PLAYER_QUERY.newBuilder() to construct.
+    private REQUEST_PLAYER_QUERY(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private REQUEST_PLAYER_QUERY(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final REQUEST_PLAYER_QUERY defaultInstance;
+    public static REQUEST_PLAYER_QUERY getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public REQUEST_PLAYER_QUERY getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private REQUEST_PLAYER_QUERY(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -1653,88 +2214,60 @@ public final class PlayerProtos {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
-      private int bitField0_;
-      
-      // required int32 roleId = 1;
-      private int roleId_ ;
-      public boolean hasRoleId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      public int getRoleId() {
-        return roleId_;
-      }
-      public Builder setRoleId(int value) {
-        bitField0_ |= 0x00000001;
-        roleId_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearRoleId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        roleId_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // @@protoc_insertion_point(builder_scope:REQUEST_PLAYER_DELETE)
     }
-    
-    static {
-      defaultInstance = new REQUEST_PLAYER_DELETE(true);
-      defaultInstance.initFields();
-    }
-    
-    // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_DELETE)
-  }
-  
-  public interface REQUEST_PLAYER_QUERYOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-    
-    // required int32 roleId = 1;
-    boolean hasRoleId();
-    int getRoleId();
-  }
-  public static final class REQUEST_PLAYER_QUERY extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_PLAYER_QUERYOrBuilder {
-    // Use REQUEST_PLAYER_QUERY.newBuilder() to construct.
-    private REQUEST_PLAYER_QUERY(Builder builder) {
-      super(builder);
-    }
-    private REQUEST_PLAYER_QUERY(boolean noInit) {}
-    
-    private static final REQUEST_PLAYER_QUERY defaultInstance;
-    public static REQUEST_PLAYER_QUERY getDefaultInstance() {
-      return defaultInstance;
-    }
-    
-    public REQUEST_PLAYER_QUERY getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_QUERY_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_QUERY_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_QUERY_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<REQUEST_PLAYER_QUERY> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_PLAYER_QUERY>() {
+      public REQUEST_PLAYER_QUERY parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_PLAYER_QUERY(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_PLAYER_QUERY> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public boolean hasRoleId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public int getRoleId() {
       return roleId_;
     }
-    
+
     private void initFields() {
       roleId_ = 0;
     }
@@ -1742,7 +2275,7 @@ public final class PlayerProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -1750,7 +2283,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -1759,12 +2292,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -1774,94 +2307,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code REQUEST_PLAYER_QUERY}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERYOrBuilder {
@@ -1869,18 +2391,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_QUERY_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_QUERY_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_QUERY_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1891,27 +2416,27 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         roleId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_QUERY_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY build() {
         cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY result = buildPartial();
         if (!result.isInitialized()) {
@@ -1919,17 +2444,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY buildPartial() {
         cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY result = new cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY(this);
         int from_bitField0_ = bitField0_;
@@ -1942,7 +2457,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY)other);
@@ -1951,7 +2466,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY other) {
         if (other == cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.getDefaultInstance()) return this;
         if (other.hasRoleId()) {
@@ -1960,7 +2475,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasRoleId()) {
           
@@ -1968,490 +2483,161 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              roleId_ = input.readInt32();
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 roleId = 1;
       private int roleId_ ;
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public boolean hasRoleId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public int getRoleId() {
         return roleId_;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder setRoleId(int value) {
         bitField0_ |= 0x00000001;
         roleId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder clearRoleId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         roleId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:REQUEST_PLAYER_QUERY)
     }
-    
+
     static {
       defaultInstance = new REQUEST_PLAYER_QUERY(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_QUERY)
   }
-  
+
   public interface REQUEST_PLAYER_LOGINOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 roleId = 1;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     boolean hasRoleId();
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     int getRoleId();
-    
+
     // required int32 eyeShot = 2;
+    /**
+     * <code>required int32 eyeShot = 2;</code>
+     */
     boolean hasEyeShot();
+    /**
+     * <code>required int32 eyeShot = 2;</code>
+     */
     int getEyeShot();
-    
+
     // required int32 animationVersion = 3;
+    /**
+     * <code>required int32 animationVersion = 3;</code>
+     */
     boolean hasAnimationVersion();
+    /**
+     * <code>required int32 animationVersion = 3;</code>
+     */
     int getAnimationVersion();
-    
+
     // required int32 headVersion = 4;
+    /**
+     * <code>required int32 headVersion = 4;</code>
+     */
     boolean hasHeadVersion();
+    /**
+     * <code>required int32 headVersion = 4;</code>
+     */
     int getHeadVersion();
   }
+  /**
+   * Protobuf type {@code REQUEST_PLAYER_LOGIN}
+   */
   public static final class REQUEST_PLAYER_LOGIN extends
       com.google.protobuf.GeneratedMessage
       implements REQUEST_PLAYER_LOGINOrBuilder {
     // Use REQUEST_PLAYER_LOGIN.newBuilder() to construct.
-    private REQUEST_PLAYER_LOGIN(Builder builder) {
+    private REQUEST_PLAYER_LOGIN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private REQUEST_PLAYER_LOGIN(boolean noInit) {}
-    
+    private REQUEST_PLAYER_LOGIN(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final REQUEST_PLAYER_LOGIN defaultInstance;
     public static REQUEST_PLAYER_LOGIN getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public REQUEST_PLAYER_LOGIN getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_descriptor;
-    }
-    
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // required int32 roleId = 1;
-    public static final int ROLEID_FIELD_NUMBER = 1;
-    private int roleId_;
-    public boolean hasRoleId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public int getRoleId() {
-      return roleId_;
-    }
-    
-    // required int32 eyeShot = 2;
-    public static final int EYESHOT_FIELD_NUMBER = 2;
-    private int eyeShot_;
-    public boolean hasEyeShot() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public int getEyeShot() {
-      return eyeShot_;
-    }
-    
-    // required int32 animationVersion = 3;
-    public static final int ANIMATIONVERSION_FIELD_NUMBER = 3;
-    private int animationVersion_;
-    public boolean hasAnimationVersion() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public int getAnimationVersion() {
-      return animationVersion_;
-    }
-    
-    // required int32 headVersion = 4;
-    public static final int HEADVERSION_FIELD_NUMBER = 4;
-    private int headVersion_;
-    public boolean hasHeadVersion() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    public int getHeadVersion() {
-      return headVersion_;
-    }
-    
-    private void initFields() {
-      roleId_ = 0;
-      eyeShot_ = 0;
-      animationVersion_ = 0;
-      headVersion_ = 0;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-      
-      if (!hasRoleId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasEyeShot()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasAnimationVersion()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasHeadVersion()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-    
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, roleId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, eyeShot_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, animationVersion_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, headVersion_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-    
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-    
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, roleId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, eyeShot_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, animationVersion_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, headVersion_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-    
-    private static final long serialVersionUID = 0L;
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
     @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
     }
-    
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
+    private REQUEST_PLAYER_LOGIN(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-    
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGINOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_descriptor;
-      }
-      
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_fieldAccessorTable;
-      }
-      
-      // Construct using cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      
-      private Builder(BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-      
-      public Builder clear() {
-        super.clear();
-        roleId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        eyeShot_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        animationVersion_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        headVersion_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        return this;
-      }
-      
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-      
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.getDescriptor();
-      }
-      
-      public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN getDefaultInstanceForType() {
-        return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.getDefaultInstance();
-      }
-      
-      public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN build() {
-        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-      
-      private cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
-      public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN buildPartial() {
-        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN result = new cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.roleId_ = roleId_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.eyeShot_ = eyeShot_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.animationVersion_ = animationVersion_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.headVersion_ = headVersion_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-      
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN) {
-          return mergeFrom((cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-      
-      public Builder mergeFrom(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN other) {
-        if (other == cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.getDefaultInstance()) return this;
-        if (other.hasRoleId()) {
-          setRoleId(other.getRoleId());
-        }
-        if (other.hasEyeShot()) {
-          setEyeShot(other.getEyeShot());
-        }
-        if (other.hasAnimationVersion()) {
-          setAnimationVersion(other.getAnimationVersion());
-        }
-        if (other.hasHeadVersion()) {
-          setHeadVersion(other.getHeadVersion());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-      
-      public final boolean isInitialized() {
-        if (!hasRoleId()) {
-          
-          return false;
-        }
-        if (!hasEyeShot()) {
-          
-          return false;
-        }
-        if (!hasAnimationVersion()) {
-          
-          return false;
-        }
-        if (!hasHeadVersion()) {
-          
-          return false;
-        }
-        return true;
-      }
-      
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -2477,155 +2663,704 @@ public final class PlayerProtos {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<REQUEST_PLAYER_LOGIN> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_PLAYER_LOGIN>() {
+      public REQUEST_PLAYER_LOGIN parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_PLAYER_LOGIN(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_PLAYER_LOGIN> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 roleId = 1;
+    public static final int ROLEID_FIELD_NUMBER = 1;
+    private int roleId_;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
+    public boolean hasRoleId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
+    public int getRoleId() {
+      return roleId_;
+    }
+
+    // required int32 eyeShot = 2;
+    public static final int EYESHOT_FIELD_NUMBER = 2;
+    private int eyeShot_;
+    /**
+     * <code>required int32 eyeShot = 2;</code>
+     */
+    public boolean hasEyeShot() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 eyeShot = 2;</code>
+     */
+    public int getEyeShot() {
+      return eyeShot_;
+    }
+
+    // required int32 animationVersion = 3;
+    public static final int ANIMATIONVERSION_FIELD_NUMBER = 3;
+    private int animationVersion_;
+    /**
+     * <code>required int32 animationVersion = 3;</code>
+     */
+    public boolean hasAnimationVersion() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required int32 animationVersion = 3;</code>
+     */
+    public int getAnimationVersion() {
+      return animationVersion_;
+    }
+
+    // required int32 headVersion = 4;
+    public static final int HEADVERSION_FIELD_NUMBER = 4;
+    private int headVersion_;
+    /**
+     * <code>required int32 headVersion = 4;</code>
+     */
+    public boolean hasHeadVersion() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required int32 headVersion = 4;</code>
+     */
+    public int getHeadVersion() {
+      return headVersion_;
+    }
+
+    private void initFields() {
+      roleId_ = 0;
+      eyeShot_ = 0;
+      animationVersion_ = 0;
+      headVersion_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasRoleId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasEyeShot()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasAnimationVersion()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasHeadVersion()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, roleId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, eyeShot_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, animationVersion_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, headVersion_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, roleId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, eyeShot_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, animationVersion_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, headVersion_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code REQUEST_PLAYER_LOGIN}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGINOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        roleId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        eyeShot_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        animationVersion_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        headVersion_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_descriptor;
+      }
+
+      public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN getDefaultInstanceForType() {
+        return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN build() {
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN buildPartial() {
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN result = new cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.roleId_ = roleId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.eyeShot_ = eyeShot_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.animationVersion_ = animationVersion_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.headVersion_ = headVersion_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN) {
+          return mergeFrom((cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN other) {
+        if (other == cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.getDefaultInstance()) return this;
+        if (other.hasRoleId()) {
+          setRoleId(other.getRoleId());
+        }
+        if (other.hasEyeShot()) {
+          setEyeShot(other.getEyeShot());
+        }
+        if (other.hasAnimationVersion()) {
+          setAnimationVersion(other.getAnimationVersion());
+        }
+        if (other.hasHeadVersion()) {
+          setHeadVersion(other.getHeadVersion());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasRoleId()) {
+          
+          return false;
+        }
+        if (!hasEyeShot()) {
+          
+          return false;
+        }
+        if (!hasAnimationVersion()) {
+          
+          return false;
+        }
+        if (!hasHeadVersion()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
       private int bitField0_;
-      
+
       // required int32 roleId = 1;
       private int roleId_ ;
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public boolean hasRoleId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public int getRoleId() {
         return roleId_;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder setRoleId(int value) {
         bitField0_ |= 0x00000001;
         roleId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder clearRoleId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         roleId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 eyeShot = 2;
       private int eyeShot_ ;
+      /**
+       * <code>required int32 eyeShot = 2;</code>
+       */
       public boolean hasEyeShot() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>required int32 eyeShot = 2;</code>
+       */
       public int getEyeShot() {
         return eyeShot_;
       }
+      /**
+       * <code>required int32 eyeShot = 2;</code>
+       */
       public Builder setEyeShot(int value) {
         bitField0_ |= 0x00000002;
         eyeShot_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 eyeShot = 2;</code>
+       */
       public Builder clearEyeShot() {
         bitField0_ = (bitField0_ & ~0x00000002);
         eyeShot_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 animationVersion = 3;
       private int animationVersion_ ;
+      /**
+       * <code>required int32 animationVersion = 3;</code>
+       */
       public boolean hasAnimationVersion() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>required int32 animationVersion = 3;</code>
+       */
       public int getAnimationVersion() {
         return animationVersion_;
       }
+      /**
+       * <code>required int32 animationVersion = 3;</code>
+       */
       public Builder setAnimationVersion(int value) {
         bitField0_ |= 0x00000004;
         animationVersion_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 animationVersion = 3;</code>
+       */
       public Builder clearAnimationVersion() {
         bitField0_ = (bitField0_ & ~0x00000004);
         animationVersion_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 headVersion = 4;
       private int headVersion_ ;
+      /**
+       * <code>required int32 headVersion = 4;</code>
+       */
       public boolean hasHeadVersion() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
+      /**
+       * <code>required int32 headVersion = 4;</code>
+       */
       public int getHeadVersion() {
         return headVersion_;
       }
+      /**
+       * <code>required int32 headVersion = 4;</code>
+       */
       public Builder setHeadVersion(int value) {
         bitField0_ |= 0x00000008;
         headVersion_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 headVersion = 4;</code>
+       */
       public Builder clearHeadVersion() {
         bitField0_ = (bitField0_ & ~0x00000008);
         headVersion_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:REQUEST_PLAYER_LOGIN)
     }
-    
+
     static {
       defaultInstance = new REQUEST_PLAYER_LOGIN(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_LOGIN)
   }
-  
+
   public interface RESPONSE_PLAYER_LOGINOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required .VO_UNIT unitInfo = 1;
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     boolean hasUnitInfo();
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo();
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder();
   }
+  /**
+   * Protobuf type {@code RESPONSE_PLAYER_LOGIN}
+   */
   public static final class RESPONSE_PLAYER_LOGIN extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_PLAYER_LOGINOrBuilder {
     // Use RESPONSE_PLAYER_LOGIN.newBuilder() to construct.
-    private RESPONSE_PLAYER_LOGIN(Builder builder) {
+    private RESPONSE_PLAYER_LOGIN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_PLAYER_LOGIN(boolean noInit) {}
-    
+    private RESPONSE_PLAYER_LOGIN(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_PLAYER_LOGIN defaultInstance;
     public static RESPONSE_PLAYER_LOGIN getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_PLAYER_LOGIN getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_PLAYER_LOGIN(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              cg.base.io.proto.VOProtos.VO_UNIT.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = unitInfo_.toBuilder();
+              }
+              unitInfo_ = input.readMessage(cg.base.io.proto.VOProtos.VO_UNIT.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(unitInfo_);
+                unitInfo_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_LOGIN_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_LOGIN_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_LOGIN_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.class, cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_PLAYER_LOGIN> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_PLAYER_LOGIN>() {
+      public RESPONSE_PLAYER_LOGIN parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_PLAYER_LOGIN(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_PLAYER_LOGIN> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required .VO_UNIT unitInfo = 1;
     public static final int UNITINFO_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_;
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     public boolean hasUnitInfo() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
       return unitInfo_;
     }
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
       return unitInfo_;
     }
-    
+
     private void initFields() {
       unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
     }
@@ -2633,7 +3368,7 @@ public final class PlayerProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasUnitInfo()) {
         memoizedIsInitialized = 0;
         return false;
@@ -2645,7 +3380,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -2654,12 +3389,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2669,94 +3404,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_PLAYER_LOGIN}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGINOrBuilder {
@@ -2764,18 +3488,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_LOGIN_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_LOGIN_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_LOGIN_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.class, cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2787,7 +3514,7 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         if (unitInfoBuilder_ == null) {
@@ -2798,20 +3525,20 @@ public final class PlayerProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_LOGIN_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN build() {
         cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN result = buildPartial();
         if (!result.isInitialized()) {
@@ -2819,17 +3546,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN buildPartial() {
         cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN result = new cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN(this);
         int from_bitField0_ = bitField0_;
@@ -2846,7 +3563,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN)other);
@@ -2855,7 +3572,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN other) {
         if (other == cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.getDefaultInstance()) return this;
         if (other.hasUnitInfo()) {
@@ -2864,7 +3581,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasUnitInfo()) {
           
@@ -2876,52 +3593,39 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              cg.base.io.proto.VOProtos.VO_UNIT.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT.newBuilder();
-              if (hasUnitInfo()) {
-                subBuilder.mergeFrom(getUnitInfo());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setUnitInfo(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required .VO_UNIT unitInfo = 1;
       private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> unitInfoBuilder_;
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public boolean hasUnitInfo() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
         if (unitInfoBuilder_ == null) {
           return unitInfo_;
@@ -2929,6 +3633,9 @@ public final class PlayerProtos {
           return unitInfoBuilder_.getMessage();
         }
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public Builder setUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
         if (unitInfoBuilder_ == null) {
           if (value == null) {
@@ -2942,6 +3649,9 @@ public final class PlayerProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public Builder setUnitInfo(
           cg.base.io.proto.VOProtos.VO_UNIT.Builder builderForValue) {
         if (unitInfoBuilder_ == null) {
@@ -2953,6 +3663,9 @@ public final class PlayerProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public Builder mergeUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
         if (unitInfoBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
@@ -2969,6 +3682,9 @@ public final class PlayerProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public Builder clearUnitInfo() {
         if (unitInfoBuilder_ == null) {
           unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
@@ -2979,11 +3695,17 @@ public final class PlayerProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_UNIT.Builder getUnitInfoBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getUnitInfoFieldBuilder().getBuilder();
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
         if (unitInfoBuilder_ != null) {
           return unitInfoBuilder_.getMessageOrBuilder();
@@ -2991,6 +3713,9 @@ public final class PlayerProtos {
           return unitInfo_;
         }
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> 
           getUnitInfoFieldBuilder() {
@@ -3004,107 +3729,245 @@ public final class PlayerProtos {
         }
         return unitInfoBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_PLAYER_LOGIN)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_PLAYER_LOGIN(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_PLAYER_LOGIN)
   }
-  
+
   public interface VO_PLAYER_ANIMATIONOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 roleId = 1;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     boolean hasRoleId();
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     int getRoleId();
-    
+
     // repeated int32 globalId = 2;
+    /**
+     * <code>repeated int32 globalId = 2;</code>
+     */
     java.util.List<java.lang.Integer> getGlobalIdList();
+    /**
+     * <code>repeated int32 globalId = 2;</code>
+     */
     int getGlobalIdCount();
+    /**
+     * <code>repeated int32 globalId = 2;</code>
+     */
     int getGlobalId(int index);
-    
+
     // required int32 headGlobalId = 3;
+    /**
+     * <code>required int32 headGlobalId = 3;</code>
+     */
     boolean hasHeadGlobalId();
+    /**
+     * <code>required int32 headGlobalId = 3;</code>
+     */
     int getHeadGlobalId();
   }
+  /**
+   * Protobuf type {@code VO_PLAYER_ANIMATION}
+   */
   public static final class VO_PLAYER_ANIMATION extends
       com.google.protobuf.GeneratedMessage
       implements VO_PLAYER_ANIMATIONOrBuilder {
     // Use VO_PLAYER_ANIMATION.newBuilder() to construct.
-    private VO_PLAYER_ANIMATION(Builder builder) {
+    private VO_PLAYER_ANIMATION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private VO_PLAYER_ANIMATION(boolean noInit) {}
-    
+    private VO_PLAYER_ANIMATION(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final VO_PLAYER_ANIMATION defaultInstance;
     public static VO_PLAYER_ANIMATION getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public VO_PLAYER_ANIMATION getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_PLAYER_ANIMATION(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              roleId_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                globalId_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              globalId_.add(input.readInt32());
+              break;
+            }
+            case 18: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002) && input.getBytesUntilLimit() > 0) {
+                globalId_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                globalId_.add(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000002;
+              headGlobalId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          globalId_ = java.util.Collections.unmodifiableList(globalId_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.class, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<VO_PLAYER_ANIMATION> PARSER =
+        new com.google.protobuf.AbstractParser<VO_PLAYER_ANIMATION>() {
+      public VO_PLAYER_ANIMATION parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_PLAYER_ANIMATION(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_PLAYER_ANIMATION> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public boolean hasRoleId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public int getRoleId() {
       return roleId_;
     }
-    
+
     // repeated int32 globalId = 2;
     public static final int GLOBALID_FIELD_NUMBER = 2;
     private java.util.List<java.lang.Integer> globalId_;
+    /**
+     * <code>repeated int32 globalId = 2;</code>
+     */
     public java.util.List<java.lang.Integer>
         getGlobalIdList() {
       return globalId_;
     }
+    /**
+     * <code>repeated int32 globalId = 2;</code>
+     */
     public int getGlobalIdCount() {
       return globalId_.size();
     }
+    /**
+     * <code>repeated int32 globalId = 2;</code>
+     */
     public int getGlobalId(int index) {
       return globalId_.get(index);
     }
-    
+
     // required int32 headGlobalId = 3;
     public static final int HEADGLOBALID_FIELD_NUMBER = 3;
     private int headGlobalId_;
+    /**
+     * <code>required int32 headGlobalId = 3;</code>
+     */
     public boolean hasHeadGlobalId() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
+    /**
+     * <code>required int32 headGlobalId = 3;</code>
+     */
     public int getHeadGlobalId() {
       return headGlobalId_;
     }
-    
+
     private void initFields() {
       roleId_ = 0;
-      globalId_ = java.util.Collections.emptyList();;
+      globalId_ = java.util.Collections.emptyList();
       headGlobalId_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -3116,7 +3979,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -3131,12 +3994,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -3159,94 +4022,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code VO_PLAYER_ANIMATION}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder {
@@ -3254,18 +4106,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.class, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3276,31 +4131,31 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         roleId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        globalId_ = java.util.Collections.emptyList();;
+        globalId_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000002);
         headGlobalId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION build() {
         cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION result = buildPartial();
         if (!result.isInitialized()) {
@@ -3308,17 +4163,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION buildPartial() {
         cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION result = new cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION(this);
         int from_bitField0_ = bitField0_;
@@ -3340,7 +4185,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION)other);
@@ -3349,7 +4194,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION other) {
         if (other == cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.getDefaultInstance()) return this;
         if (other.hasRoleId()) {
@@ -3371,7 +4216,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasRoleId()) {
           
@@ -3383,99 +4228,89 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              roleId_ = input.readInt32();
-              break;
-            }
-            case 16: {
-              ensureGlobalIdIsMutable();
-              globalId_.add(input.readInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              while (input.getBytesUntilLimit() > 0) {
-                addGlobalId(input.readInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              headGlobalId_ = input.readInt32();
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 roleId = 1;
       private int roleId_ ;
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public boolean hasRoleId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public int getRoleId() {
         return roleId_;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder setRoleId(int value) {
         bitField0_ |= 0x00000001;
         roleId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder clearRoleId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         roleId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // repeated int32 globalId = 2;
-      private java.util.List<java.lang.Integer> globalId_ = java.util.Collections.emptyList();;
+      private java.util.List<java.lang.Integer> globalId_ = java.util.Collections.emptyList();
       private void ensureGlobalIdIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
           globalId_ = new java.util.ArrayList<java.lang.Integer>(globalId_);
           bitField0_ |= 0x00000002;
          }
       }
+      /**
+       * <code>repeated int32 globalId = 2;</code>
+       */
       public java.util.List<java.lang.Integer>
           getGlobalIdList() {
         return java.util.Collections.unmodifiableList(globalId_);
       }
+      /**
+       * <code>repeated int32 globalId = 2;</code>
+       */
       public int getGlobalIdCount() {
         return globalId_.size();
       }
+      /**
+       * <code>repeated int32 globalId = 2;</code>
+       */
       public int getGlobalId(int index) {
         return globalId_.get(index);
       }
+      /**
+       * <code>repeated int32 globalId = 2;</code>
+       */
       public Builder setGlobalId(
           int index, int value) {
         ensureGlobalIdIsMutable();
@@ -3483,12 +4318,18 @@ public final class PlayerProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 globalId = 2;</code>
+       */
       public Builder addGlobalId(int value) {
         ensureGlobalIdIsMutable();
         globalId_.add(value);
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 globalId = 2;</code>
+       */
       public Builder addAllGlobalId(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureGlobalIdIsMutable();
@@ -3496,107 +4337,225 @@ public final class PlayerProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 globalId = 2;</code>
+       */
       public Builder clearGlobalId() {
-        globalId_ = java.util.Collections.emptyList();;
+        globalId_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
-      
+
       // required int32 headGlobalId = 3;
       private int headGlobalId_ ;
+      /**
+       * <code>required int32 headGlobalId = 3;</code>
+       */
       public boolean hasHeadGlobalId() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>required int32 headGlobalId = 3;</code>
+       */
       public int getHeadGlobalId() {
         return headGlobalId_;
       }
+      /**
+       * <code>required int32 headGlobalId = 3;</code>
+       */
       public Builder setHeadGlobalId(int value) {
         bitField0_ |= 0x00000004;
         headGlobalId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 headGlobalId = 3;</code>
+       */
       public Builder clearHeadGlobalId() {
         bitField0_ = (bitField0_ & ~0x00000004);
         headGlobalId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:VO_PLAYER_ANIMATION)
     }
-    
+
     static {
       defaultInstance = new VO_PLAYER_ANIMATION(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATION)
   }
-  
+
   public interface VO_PLAYER_ANIMATIONSOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // repeated .VO_PLAYER_ANIMATION animations = 1;
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION> 
         getAnimationsList();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION getAnimations(int index);
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     int getAnimationsCount();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder> 
         getAnimationsOrBuilderList();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder getAnimationsOrBuilder(
         int index);
   }
+  /**
+   * Protobuf type {@code VO_PLAYER_ANIMATIONS}
+   */
   public static final class VO_PLAYER_ANIMATIONS extends
       com.google.protobuf.GeneratedMessage
       implements VO_PLAYER_ANIMATIONSOrBuilder {
     // Use VO_PLAYER_ANIMATIONS.newBuilder() to construct.
-    private VO_PLAYER_ANIMATIONS(Builder builder) {
+    private VO_PLAYER_ANIMATIONS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private VO_PLAYER_ANIMATIONS(boolean noInit) {}
-    
+    private VO_PLAYER_ANIMATIONS(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final VO_PLAYER_ANIMATIONS defaultInstance;
     public static VO_PLAYER_ANIMATIONS getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public VO_PLAYER_ANIMATIONS getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_PLAYER_ANIMATIONS(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                animations_ = new java.util.ArrayList<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              animations_.add(input.readMessage(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          animations_ = java.util.Collections.unmodifiableList(animations_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATIONS_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATIONS_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATIONS_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.class, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<VO_PLAYER_ANIMATIONS> PARSER =
+        new com.google.protobuf.AbstractParser<VO_PLAYER_ANIMATIONS>() {
+      public VO_PLAYER_ANIMATIONS parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_PLAYER_ANIMATIONS(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_PLAYER_ANIMATIONS> getParserForType() {
+      return PARSER;
+    }
+
     // repeated .VO_PLAYER_ANIMATION animations = 1;
     public static final int ANIMATIONS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION> animations_;
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION> getAnimationsList() {
       return animations_;
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder> 
         getAnimationsOrBuilderList() {
       return animations_;
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     public int getAnimationsCount() {
       return animations_.size();
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION getAnimations(int index) {
       return animations_.get(index);
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+     */
     public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder getAnimationsOrBuilder(
         int index) {
       return animations_.get(index);
     }
-    
+
     private void initFields() {
       animations_ = java.util.Collections.emptyList();
     }
@@ -3604,7 +4563,7 @@ public final class PlayerProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       for (int i = 0; i < getAnimationsCount(); i++) {
         if (!getAnimations(i).isInitialized()) {
           memoizedIsInitialized = 0;
@@ -3614,7 +4573,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -3623,12 +4582,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       for (int i = 0; i < animations_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -3638,94 +4597,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code VO_PLAYER_ANIMATIONS}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder {
@@ -3733,18 +4681,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATIONS_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATIONS_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATIONS_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.class, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3756,7 +4707,7 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         if (animationsBuilder_ == null) {
@@ -3767,20 +4718,20 @@ public final class PlayerProtos {
         }
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATIONS_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS build() {
         cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS result = buildPartial();
         if (!result.isInitialized()) {
@@ -3788,17 +4739,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS buildPartial() {
         cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS result = new cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS(this);
         int from_bitField0_ = bitField0_;
@@ -3814,7 +4755,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS)other);
@@ -3823,7 +4764,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS other) {
         if (other == cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.getDefaultInstance()) return this;
         if (animationsBuilder_ == null) {
@@ -3855,7 +4796,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         for (int i = 0; i < getAnimationsCount(); i++) {
           if (!getAnimations(i).isInitialized()) {
@@ -3865,42 +4806,26 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder subBuilder = cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addAnimations(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // repeated .VO_PLAYER_ANIMATION animations = 1;
       private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION> animations_ =
         java.util.Collections.emptyList();
@@ -3910,10 +4835,13 @@ public final class PlayerProtos {
           bitField0_ |= 0x00000001;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder> animationsBuilder_;
-      
+
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION> getAnimationsList() {
         if (animationsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(animations_);
@@ -3921,6 +4849,9 @@ public final class PlayerProtos {
           return animationsBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public int getAnimationsCount() {
         if (animationsBuilder_ == null) {
           return animations_.size();
@@ -3928,6 +4859,9 @@ public final class PlayerProtos {
           return animationsBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION getAnimations(int index) {
         if (animationsBuilder_ == null) {
           return animations_.get(index);
@@ -3935,6 +4869,9 @@ public final class PlayerProtos {
           return animationsBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public Builder setAnimations(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION value) {
         if (animationsBuilder_ == null) {
@@ -3949,6 +4886,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public Builder setAnimations(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder builderForValue) {
         if (animationsBuilder_ == null) {
@@ -3960,6 +4900,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public Builder addAnimations(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION value) {
         if (animationsBuilder_ == null) {
           if (value == null) {
@@ -3973,6 +4916,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public Builder addAnimations(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION value) {
         if (animationsBuilder_ == null) {
@@ -3987,6 +4933,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public Builder addAnimations(
           cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder builderForValue) {
         if (animationsBuilder_ == null) {
@@ -3998,6 +4947,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public Builder addAnimations(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder builderForValue) {
         if (animationsBuilder_ == null) {
@@ -4009,6 +4961,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public Builder addAllAnimations(
           java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION> values) {
         if (animationsBuilder_ == null) {
@@ -4020,6 +4975,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public Builder clearAnimations() {
         if (animationsBuilder_ == null) {
           animations_ = java.util.Collections.emptyList();
@@ -4030,6 +4988,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public Builder removeAnimations(int index) {
         if (animationsBuilder_ == null) {
           ensureAnimationsIsMutable();
@@ -4040,10 +5001,16 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder getAnimationsBuilder(
           int index) {
         return getAnimationsFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder getAnimationsOrBuilder(
           int index) {
         if (animationsBuilder_ == null) {
@@ -4051,6 +5018,9 @@ public final class PlayerProtos {
           return animationsBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder> 
            getAnimationsOrBuilderList() {
         if (animationsBuilder_ != null) {
@@ -4059,15 +5029,24 @@ public final class PlayerProtos {
           return java.util.Collections.unmodifiableList(animations_);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder addAnimationsBuilder() {
         return getAnimationsFieldBuilder().addBuilder(
             cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder addAnimationsBuilder(
           int index) {
         return getAnimationsFieldBuilder().addBuilder(
             index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
+       */
       public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder> 
            getAnimationsBuilderList() {
         return getAnimationsFieldBuilder().getBuilderList();
@@ -4086,109 +5065,246 @@ public final class PlayerProtos {
         }
         return animationsBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:VO_PLAYER_ANIMATIONS)
     }
-    
+
     static {
       defaultInstance = new VO_PLAYER_ANIMATIONS(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATIONS)
   }
-  
+
   public interface RESPONSE_PLAYER_CREATE_INFOOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 bp = 1;
+    /**
+     * <code>required int32 bp = 1;</code>
+     */
     boolean hasBp();
+    /**
+     * <code>required int32 bp = 1;</code>
+     */
     int getBp();
-    
+
     // required int32 pageMax = 2;
+    /**
+     * <code>required int32 pageMax = 2;</code>
+     */
     boolean hasPageMax();
+    /**
+     * <code>required int32 pageMax = 2;</code>
+     */
     int getPageMax();
-    
+
     // repeated .VO_PLAYER_ANIMATIONS animations = 3;
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS> 
         getAnimationsList();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS getAnimations(int index);
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     int getAnimationsCount();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder> 
         getAnimationsOrBuilderList();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder getAnimationsOrBuilder(
         int index);
   }
+  /**
+   * Protobuf type {@code RESPONSE_PLAYER_CREATE_INFO}
+   */
   public static final class RESPONSE_PLAYER_CREATE_INFO extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_PLAYER_CREATE_INFOOrBuilder {
     // Use RESPONSE_PLAYER_CREATE_INFO.newBuilder() to construct.
-    private RESPONSE_PLAYER_CREATE_INFO(Builder builder) {
+    private RESPONSE_PLAYER_CREATE_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_PLAYER_CREATE_INFO(boolean noInit) {}
-    
+    private RESPONSE_PLAYER_CREATE_INFO(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_PLAYER_CREATE_INFO defaultInstance;
     public static RESPONSE_PLAYER_CREATE_INFO getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_PLAYER_CREATE_INFO getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_PLAYER_CREATE_INFO(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              bp_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              pageMax_ = input.readInt32();
+              break;
+            }
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                animations_ = new java.util.ArrayList<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              animations_.add(input.readMessage(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+          animations_ = java.util.Collections.unmodifiableList(animations_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_INFO_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_INFO_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.class, cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_PLAYER_CREATE_INFO> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_PLAYER_CREATE_INFO>() {
+      public RESPONSE_PLAYER_CREATE_INFO parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_PLAYER_CREATE_INFO(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_PLAYER_CREATE_INFO> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 bp = 1;
     public static final int BP_FIELD_NUMBER = 1;
     private int bp_;
+    /**
+     * <code>required int32 bp = 1;</code>
+     */
     public boolean hasBp() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 bp = 1;</code>
+     */
     public int getBp() {
       return bp_;
     }
-    
+
     // required int32 pageMax = 2;
     public static final int PAGEMAX_FIELD_NUMBER = 2;
     private int pageMax_;
+    /**
+     * <code>required int32 pageMax = 2;</code>
+     */
     public boolean hasPageMax() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
+    /**
+     * <code>required int32 pageMax = 2;</code>
+     */
     public int getPageMax() {
       return pageMax_;
     }
-    
+
     // repeated .VO_PLAYER_ANIMATIONS animations = 3;
     public static final int ANIMATIONS_FIELD_NUMBER = 3;
     private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS> animations_;
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS> getAnimationsList() {
       return animations_;
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder> 
         getAnimationsOrBuilderList() {
       return animations_;
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     public int getAnimationsCount() {
       return animations_.size();
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS getAnimations(int index) {
       return animations_.get(index);
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+     */
     public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder getAnimationsOrBuilder(
         int index) {
       return animations_.get(index);
     }
-    
+
     private void initFields() {
       bp_ = 0;
       pageMax_ = 0;
@@ -4198,7 +5314,7 @@ public final class PlayerProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasBp()) {
         memoizedIsInitialized = 0;
         return false;
@@ -4216,7 +5332,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -4231,12 +5347,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -4254,94 +5370,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_PLAYER_CREATE_INFO}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFOOrBuilder {
@@ -4349,18 +5454,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_INFO_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_INFO_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.class, cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4372,7 +5480,7 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         bp_ = 0;
@@ -4387,20 +5495,20 @@ public final class PlayerProtos {
         }
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO build() {
         cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO result = buildPartial();
         if (!result.isInitialized()) {
@@ -4408,17 +5516,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO buildPartial() {
         cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO result = new cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO(this);
         int from_bitField0_ = bitField0_;
@@ -4444,7 +5542,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO)other);
@@ -4453,7 +5551,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO other) {
         if (other == cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.getDefaultInstance()) return this;
         if (other.hasBp()) {
@@ -4491,7 +5589,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasBp()) {
           
@@ -4509,94 +5607,92 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              bp_ = input.readInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              pageMax_ = input.readInt32();
-              break;
-            }
-            case 26: {
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder subBuilder = cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addAnimations(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 bp = 1;
       private int bp_ ;
+      /**
+       * <code>required int32 bp = 1;</code>
+       */
       public boolean hasBp() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 bp = 1;</code>
+       */
       public int getBp() {
         return bp_;
       }
+      /**
+       * <code>required int32 bp = 1;</code>
+       */
       public Builder setBp(int value) {
         bitField0_ |= 0x00000001;
         bp_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 bp = 1;</code>
+       */
       public Builder clearBp() {
         bitField0_ = (bitField0_ & ~0x00000001);
         bp_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 pageMax = 2;
       private int pageMax_ ;
+      /**
+       * <code>required int32 pageMax = 2;</code>
+       */
       public boolean hasPageMax() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>required int32 pageMax = 2;</code>
+       */
       public int getPageMax() {
         return pageMax_;
       }
+      /**
+       * <code>required int32 pageMax = 2;</code>
+       */
       public Builder setPageMax(int value) {
         bitField0_ |= 0x00000002;
         pageMax_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 pageMax = 2;</code>
+       */
       public Builder clearPageMax() {
         bitField0_ = (bitField0_ & ~0x00000002);
         pageMax_ = 0;
         onChanged();
         return this;
       }
-      
+
       // repeated .VO_PLAYER_ANIMATIONS animations = 3;
       private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS> animations_ =
         java.util.Collections.emptyList();
@@ -4606,10 +5702,13 @@ public final class PlayerProtos {
           bitField0_ |= 0x00000004;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder> animationsBuilder_;
-      
+
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS> getAnimationsList() {
         if (animationsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(animations_);
@@ -4617,6 +5716,9 @@ public final class PlayerProtos {
           return animationsBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public int getAnimationsCount() {
         if (animationsBuilder_ == null) {
           return animations_.size();
@@ -4624,6 +5726,9 @@ public final class PlayerProtos {
           return animationsBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS getAnimations(int index) {
         if (animationsBuilder_ == null) {
           return animations_.get(index);
@@ -4631,6 +5736,9 @@ public final class PlayerProtos {
           return animationsBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public Builder setAnimations(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS value) {
         if (animationsBuilder_ == null) {
@@ -4645,6 +5753,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public Builder setAnimations(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder builderForValue) {
         if (animationsBuilder_ == null) {
@@ -4656,6 +5767,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public Builder addAnimations(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS value) {
         if (animationsBuilder_ == null) {
           if (value == null) {
@@ -4669,6 +5783,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public Builder addAnimations(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS value) {
         if (animationsBuilder_ == null) {
@@ -4683,6 +5800,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public Builder addAnimations(
           cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder builderForValue) {
         if (animationsBuilder_ == null) {
@@ -4694,6 +5814,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public Builder addAnimations(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder builderForValue) {
         if (animationsBuilder_ == null) {
@@ -4705,6 +5828,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public Builder addAllAnimations(
           java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS> values) {
         if (animationsBuilder_ == null) {
@@ -4716,6 +5842,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public Builder clearAnimations() {
         if (animationsBuilder_ == null) {
           animations_ = java.util.Collections.emptyList();
@@ -4726,6 +5855,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public Builder removeAnimations(int index) {
         if (animationsBuilder_ == null) {
           ensureAnimationsIsMutable();
@@ -4736,10 +5868,16 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder getAnimationsBuilder(
           int index) {
         return getAnimationsFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder getAnimationsOrBuilder(
           int index) {
         if (animationsBuilder_ == null) {
@@ -4747,6 +5885,9 @@ public final class PlayerProtos {
           return animationsBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder> 
            getAnimationsOrBuilderList() {
         if (animationsBuilder_ != null) {
@@ -4755,15 +5896,24 @@ public final class PlayerProtos {
           return java.util.Collections.unmodifiableList(animations_);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder addAnimationsBuilder() {
         return getAnimationsFieldBuilder().addBuilder(
             cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder addAnimationsBuilder(
           int index) {
         return getAnimationsFieldBuilder().addBuilder(
             index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
+       */
       public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder> 
            getAnimationsBuilderList() {
         return getAnimationsFieldBuilder().getBuilderList();
@@ -4782,64 +5932,143 @@ public final class PlayerProtos {
         }
         return animationsBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_PLAYER_CREATE_INFO)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_PLAYER_CREATE_INFO(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_PLAYER_CREATE_INFO)
   }
-  
+
   public interface REQUEST_PLAYER_ANIMATION_INFOOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 page = 1;
+    /**
+     * <code>required int32 page = 1;</code>
+     */
     boolean hasPage();
+    /**
+     * <code>required int32 page = 1;</code>
+     */
     int getPage();
   }
+  /**
+   * Protobuf type {@code REQUEST_PLAYER_ANIMATION_INFO}
+   */
   public static final class REQUEST_PLAYER_ANIMATION_INFO extends
       com.google.protobuf.GeneratedMessage
       implements REQUEST_PLAYER_ANIMATION_INFOOrBuilder {
     // Use REQUEST_PLAYER_ANIMATION_INFO.newBuilder() to construct.
-    private REQUEST_PLAYER_ANIMATION_INFO(Builder builder) {
+    private REQUEST_PLAYER_ANIMATION_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private REQUEST_PLAYER_ANIMATION_INFO(boolean noInit) {}
-    
+    private REQUEST_PLAYER_ANIMATION_INFO(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final REQUEST_PLAYER_ANIMATION_INFO defaultInstance;
     public static REQUEST_PLAYER_ANIMATION_INFO getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public REQUEST_PLAYER_ANIMATION_INFO getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private REQUEST_PLAYER_ANIMATION_INFO(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              page_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_ANIMATION_INFO_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_ANIMATION_INFO_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<REQUEST_PLAYER_ANIMATION_INFO> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_PLAYER_ANIMATION_INFO>() {
+      public REQUEST_PLAYER_ANIMATION_INFO parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_PLAYER_ANIMATION_INFO(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_PLAYER_ANIMATION_INFO> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 page = 1;
     public static final int PAGE_FIELD_NUMBER = 1;
     private int page_;
+    /**
+     * <code>required int32 page = 1;</code>
+     */
     public boolean hasPage() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 page = 1;</code>
+     */
     public int getPage() {
       return page_;
     }
-    
+
     private void initFields() {
       page_ = 0;
     }
@@ -4847,7 +6076,7 @@ public final class PlayerProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasPage()) {
         memoizedIsInitialized = 0;
         return false;
@@ -4855,7 +6084,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -4864,12 +6093,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -4879,94 +6108,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code REQUEST_PLAYER_ANIMATION_INFO}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFOOrBuilder {
@@ -4974,18 +6192,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_ANIMATION_INFO_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_ANIMATION_INFO_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.class, cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4996,27 +6217,27 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         page_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO build() {
         cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO result = buildPartial();
         if (!result.isInitialized()) {
@@ -5024,17 +6245,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO buildPartial() {
         cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO result = new cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO(this);
         int from_bitField0_ = bitField0_;
@@ -5047,7 +6258,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO)other);
@@ -5056,7 +6267,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO other) {
         if (other == cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.getDefaultInstance()) return this;
         if (other.hasPage()) {
@@ -5065,7 +6276,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasPage()) {
           
@@ -5073,162 +6284,297 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              page_ = input.readInt32();
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 page = 1;
       private int page_ ;
+      /**
+       * <code>required int32 page = 1;</code>
+       */
       public boolean hasPage() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 page = 1;</code>
+       */
       public int getPage() {
         return page_;
       }
+      /**
+       * <code>required int32 page = 1;</code>
+       */
       public Builder setPage(int value) {
         bitField0_ |= 0x00000001;
         page_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 page = 1;</code>
+       */
       public Builder clearPage() {
         bitField0_ = (bitField0_ & ~0x00000001);
         page_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:REQUEST_PLAYER_ANIMATION_INFO)
     }
-    
+
     static {
       defaultInstance = new REQUEST_PLAYER_ANIMATION_INFO(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_ANIMATION_INFO)
   }
-  
+
   public interface VO_PLAYER_ANIMATION_INFOOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 roleId = 1;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     boolean hasRoleId();
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     int getRoleId();
-    
+
     // repeated int32 animationId2 = 2;
+    /**
+     * <code>repeated int32 animationId2 = 2;</code>
+     */
     java.util.List<java.lang.Integer> getAnimationId2List();
+    /**
+     * <code>repeated int32 animationId2 = 2;</code>
+     */
     int getAnimationId2Count();
+    /**
+     * <code>repeated int32 animationId2 = 2;</code>
+     */
     int getAnimationId2(int index);
-    
+
     // required int32 headId = 3;
+    /**
+     * <code>required int32 headId = 3;</code>
+     */
     boolean hasHeadId();
+    /**
+     * <code>required int32 headId = 3;</code>
+     */
     int getHeadId();
   }
+  /**
+   * Protobuf type {@code VO_PLAYER_ANIMATION_INFO}
+   */
   public static final class VO_PLAYER_ANIMATION_INFO extends
       com.google.protobuf.GeneratedMessage
       implements VO_PLAYER_ANIMATION_INFOOrBuilder {
     // Use VO_PLAYER_ANIMATION_INFO.newBuilder() to construct.
-    private VO_PLAYER_ANIMATION_INFO(Builder builder) {
+    private VO_PLAYER_ANIMATION_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private VO_PLAYER_ANIMATION_INFO(boolean noInit) {}
-    
+    private VO_PLAYER_ANIMATION_INFO(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final VO_PLAYER_ANIMATION_INFO defaultInstance;
     public static VO_PLAYER_ANIMATION_INFO getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public VO_PLAYER_ANIMATION_INFO getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_PLAYER_ANIMATION_INFO(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              roleId_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                animationId2_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              animationId2_.add(input.readInt32());
+              break;
+            }
+            case 18: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002) && input.getBytesUntilLimit() > 0) {
+                animationId2_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                animationId2_.add(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000002;
+              headId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          animationId2_ = java.util.Collections.unmodifiableList(animationId2_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFO_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFO_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFO_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.class, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<VO_PLAYER_ANIMATION_INFO> PARSER =
+        new com.google.protobuf.AbstractParser<VO_PLAYER_ANIMATION_INFO>() {
+      public VO_PLAYER_ANIMATION_INFO parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_PLAYER_ANIMATION_INFO(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_PLAYER_ANIMATION_INFO> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public boolean hasRoleId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 roleId = 1;</code>
+     */
     public int getRoleId() {
       return roleId_;
     }
-    
+
     // repeated int32 animationId2 = 2;
     public static final int ANIMATIONID2_FIELD_NUMBER = 2;
     private java.util.List<java.lang.Integer> animationId2_;
+    /**
+     * <code>repeated int32 animationId2 = 2;</code>
+     */
     public java.util.List<java.lang.Integer>
         getAnimationId2List() {
       return animationId2_;
     }
+    /**
+     * <code>repeated int32 animationId2 = 2;</code>
+     */
     public int getAnimationId2Count() {
       return animationId2_.size();
     }
+    /**
+     * <code>repeated int32 animationId2 = 2;</code>
+     */
     public int getAnimationId2(int index) {
       return animationId2_.get(index);
     }
-    
+
     // required int32 headId = 3;
     public static final int HEADID_FIELD_NUMBER = 3;
     private int headId_;
+    /**
+     * <code>required int32 headId = 3;</code>
+     */
     public boolean hasHeadId() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
+    /**
+     * <code>required int32 headId = 3;</code>
+     */
     public int getHeadId() {
       return headId_;
     }
-    
+
     private void initFields() {
       roleId_ = 0;
-      animationId2_ = java.util.Collections.emptyList();;
+      animationId2_ = java.util.Collections.emptyList();
       headId_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
         return false;
@@ -5240,7 +6586,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -5255,12 +6601,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -5283,94 +6629,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code VO_PLAYER_ANIMATION_INFO}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder {
@@ -5378,18 +6713,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFO_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFO_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFO_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.class, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5400,31 +6738,31 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         roleId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        animationId2_ = java.util.Collections.emptyList();;
+        animationId2_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000002);
         headId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFO_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO build() {
         cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO result = buildPartial();
         if (!result.isInitialized()) {
@@ -5432,17 +6770,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO buildPartial() {
         cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO result = new cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO(this);
         int from_bitField0_ = bitField0_;
@@ -5464,7 +6792,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO)other);
@@ -5473,7 +6801,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO other) {
         if (other == cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.getDefaultInstance()) return this;
         if (other.hasRoleId()) {
@@ -5495,7 +6823,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasRoleId()) {
           
@@ -5507,99 +6835,89 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              roleId_ = input.readInt32();
-              break;
-            }
-            case 16: {
-              ensureAnimationId2IsMutable();
-              animationId2_.add(input.readInt32());
-              break;
-            }
-            case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              while (input.getBytesUntilLimit() > 0) {
-                addAnimationId2(input.readInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              headId_ = input.readInt32();
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 roleId = 1;
       private int roleId_ ;
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public boolean hasRoleId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public int getRoleId() {
         return roleId_;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder setRoleId(int value) {
         bitField0_ |= 0x00000001;
         roleId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 roleId = 1;</code>
+       */
       public Builder clearRoleId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         roleId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // repeated int32 animationId2 = 2;
-      private java.util.List<java.lang.Integer> animationId2_ = java.util.Collections.emptyList();;
+      private java.util.List<java.lang.Integer> animationId2_ = java.util.Collections.emptyList();
       private void ensureAnimationId2IsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
           animationId2_ = new java.util.ArrayList<java.lang.Integer>(animationId2_);
           bitField0_ |= 0x00000002;
          }
       }
+      /**
+       * <code>repeated int32 animationId2 = 2;</code>
+       */
       public java.util.List<java.lang.Integer>
           getAnimationId2List() {
         return java.util.Collections.unmodifiableList(animationId2_);
       }
+      /**
+       * <code>repeated int32 animationId2 = 2;</code>
+       */
       public int getAnimationId2Count() {
         return animationId2_.size();
       }
+      /**
+       * <code>repeated int32 animationId2 = 2;</code>
+       */
       public int getAnimationId2(int index) {
         return animationId2_.get(index);
       }
+      /**
+       * <code>repeated int32 animationId2 = 2;</code>
+       */
       public Builder setAnimationId2(
           int index, int value) {
         ensureAnimationId2IsMutable();
@@ -5607,12 +6925,18 @@ public final class PlayerProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 animationId2 = 2;</code>
+       */
       public Builder addAnimationId2(int value) {
         ensureAnimationId2IsMutable();
         animationId2_.add(value);
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 animationId2 = 2;</code>
+       */
       public Builder addAllAnimationId2(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureAnimationId2IsMutable();
@@ -5620,107 +6944,225 @@ public final class PlayerProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>repeated int32 animationId2 = 2;</code>
+       */
       public Builder clearAnimationId2() {
-        animationId2_ = java.util.Collections.emptyList();;
+        animationId2_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
-      
+
       // required int32 headId = 3;
       private int headId_ ;
+      /**
+       * <code>required int32 headId = 3;</code>
+       */
       public boolean hasHeadId() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>required int32 headId = 3;</code>
+       */
       public int getHeadId() {
         return headId_;
       }
+      /**
+       * <code>required int32 headId = 3;</code>
+       */
       public Builder setHeadId(int value) {
         bitField0_ |= 0x00000004;
         headId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 headId = 3;</code>
+       */
       public Builder clearHeadId() {
         bitField0_ = (bitField0_ & ~0x00000004);
         headId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:VO_PLAYER_ANIMATION_INFO)
     }
-    
+
     static {
       defaultInstance = new VO_PLAYER_ANIMATION_INFO(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATION_INFO)
   }
-  
+
   public interface VO_PLAYER_ANIMATION_INFOSOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> 
         getAnimationInfosList();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO getAnimationInfos(int index);
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     int getAnimationInfosCount();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
         getAnimationInfosOrBuilderList();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder getAnimationInfosOrBuilder(
         int index);
   }
+  /**
+   * Protobuf type {@code VO_PLAYER_ANIMATION_INFOS}
+   */
   public static final class VO_PLAYER_ANIMATION_INFOS extends
       com.google.protobuf.GeneratedMessage
       implements VO_PLAYER_ANIMATION_INFOSOrBuilder {
     // Use VO_PLAYER_ANIMATION_INFOS.newBuilder() to construct.
-    private VO_PLAYER_ANIMATION_INFOS(Builder builder) {
+    private VO_PLAYER_ANIMATION_INFOS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private VO_PLAYER_ANIMATION_INFOS(boolean noInit) {}
-    
+    private VO_PLAYER_ANIMATION_INFOS(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final VO_PLAYER_ANIMATION_INFOS defaultInstance;
     public static VO_PLAYER_ANIMATION_INFOS getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public VO_PLAYER_ANIMATION_INFOS getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_PLAYER_ANIMATION_INFOS(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                animationInfos_ = new java.util.ArrayList<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              animationInfos_.add(input.readMessage(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          animationInfos_ = java.util.Collections.unmodifiableList(animationInfos_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.class, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<VO_PLAYER_ANIMATION_INFOS> PARSER =
+        new com.google.protobuf.AbstractParser<VO_PLAYER_ANIMATION_INFOS>() {
+      public VO_PLAYER_ANIMATION_INFOS parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_PLAYER_ANIMATION_INFOS(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_PLAYER_ANIMATION_INFOS> getParserForType() {
+      return PARSER;
+    }
+
     // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;
     public static final int ANIMATIONINFOS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> animationInfos_;
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> getAnimationInfosList() {
       return animationInfos_;
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
         getAnimationInfosOrBuilderList() {
       return animationInfos_;
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     public int getAnimationInfosCount() {
       return animationInfos_.size();
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO getAnimationInfos(int index) {
       return animationInfos_.get(index);
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+     */
     public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder getAnimationInfosOrBuilder(
         int index) {
       return animationInfos_.get(index);
     }
-    
+
     private void initFields() {
       animationInfos_ = java.util.Collections.emptyList();
     }
@@ -5728,7 +7170,7 @@ public final class PlayerProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       for (int i = 0; i < getAnimationInfosCount(); i++) {
         if (!getAnimationInfos(i).isInitialized()) {
           memoizedIsInitialized = 0;
@@ -5738,7 +7180,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -5747,12 +7189,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       for (int i = 0; i < animationInfos_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -5762,94 +7204,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code VO_PLAYER_ANIMATION_INFOS}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder {
@@ -5857,18 +7288,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.class, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -5880,7 +7314,7 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         if (animationInfosBuilder_ == null) {
@@ -5891,20 +7325,20 @@ public final class PlayerProtos {
         }
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS build() {
         cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS result = buildPartial();
         if (!result.isInitialized()) {
@@ -5912,17 +7346,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS buildPartial() {
         cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS result = new cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS(this);
         int from_bitField0_ = bitField0_;
@@ -5938,7 +7362,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS)other);
@@ -5947,7 +7371,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS other) {
         if (other == cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDefaultInstance()) return this;
         if (animationInfosBuilder_ == null) {
@@ -5979,7 +7403,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         for (int i = 0; i < getAnimationInfosCount(); i++) {
           if (!getAnimationInfos(i).isInitialized()) {
@@ -5989,42 +7413,26 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder subBuilder = cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addAnimationInfos(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;
       private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> animationInfos_ =
         java.util.Collections.emptyList();
@@ -6034,10 +7442,13 @@ public final class PlayerProtos {
           bitField0_ |= 0x00000001;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> animationInfosBuilder_;
-      
+
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> getAnimationInfosList() {
         if (animationInfosBuilder_ == null) {
           return java.util.Collections.unmodifiableList(animationInfos_);
@@ -6045,6 +7456,9 @@ public final class PlayerProtos {
           return animationInfosBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public int getAnimationInfosCount() {
         if (animationInfosBuilder_ == null) {
           return animationInfos_.size();
@@ -6052,6 +7466,9 @@ public final class PlayerProtos {
           return animationInfosBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO getAnimationInfos(int index) {
         if (animationInfosBuilder_ == null) {
           return animationInfos_.get(index);
@@ -6059,6 +7476,9 @@ public final class PlayerProtos {
           return animationInfosBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public Builder setAnimationInfos(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO value) {
         if (animationInfosBuilder_ == null) {
@@ -6073,6 +7493,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public Builder setAnimationInfos(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder builderForValue) {
         if (animationInfosBuilder_ == null) {
@@ -6084,6 +7507,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public Builder addAnimationInfos(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO value) {
         if (animationInfosBuilder_ == null) {
           if (value == null) {
@@ -6097,6 +7523,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public Builder addAnimationInfos(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO value) {
         if (animationInfosBuilder_ == null) {
@@ -6111,6 +7540,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public Builder addAnimationInfos(
           cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder builderForValue) {
         if (animationInfosBuilder_ == null) {
@@ -6122,6 +7554,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public Builder addAnimationInfos(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder builderForValue) {
         if (animationInfosBuilder_ == null) {
@@ -6133,6 +7568,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public Builder addAllAnimationInfos(
           java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> values) {
         if (animationInfosBuilder_ == null) {
@@ -6144,6 +7582,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public Builder clearAnimationInfos() {
         if (animationInfosBuilder_ == null) {
           animationInfos_ = java.util.Collections.emptyList();
@@ -6154,6 +7595,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public Builder removeAnimationInfos(int index) {
         if (animationInfosBuilder_ == null) {
           ensureAnimationInfosIsMutable();
@@ -6164,10 +7608,16 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder getAnimationInfosBuilder(
           int index) {
         return getAnimationInfosFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder getAnimationInfosOrBuilder(
           int index) {
         if (animationInfosBuilder_ == null) {
@@ -6175,6 +7625,9 @@ public final class PlayerProtos {
           return animationInfosBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder> 
            getAnimationInfosOrBuilderList() {
         if (animationInfosBuilder_ != null) {
@@ -6183,15 +7636,24 @@ public final class PlayerProtos {
           return java.util.Collections.unmodifiableList(animationInfos_);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder addAnimationInfosBuilder() {
         return getAnimationInfosFieldBuilder().addBuilder(
             cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder addAnimationInfosBuilder(
           int index) {
         return getAnimationInfosFieldBuilder().addBuilder(
             index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
+       */
       public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder> 
            getAnimationInfosBuilderList() {
         return getAnimationInfosFieldBuilder().getBuilderList();
@@ -6210,80 +7672,183 @@ public final class PlayerProtos {
         }
         return animationInfosBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:VO_PLAYER_ANIMATION_INFOS)
     }
-    
+
     static {
       defaultInstance = new VO_PLAYER_ANIMATION_INFOS(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATION_INFOS)
   }
-  
+
   public interface RESPONSE_PLAYER_ANIMATION_INFOOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> 
         getAnimationInfosList();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS getAnimationInfos(int index);
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     int getAnimationInfosCount();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder> 
         getAnimationInfosOrBuilderList();
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder getAnimationInfosOrBuilder(
         int index);
   }
+  /**
+   * Protobuf type {@code RESPONSE_PLAYER_ANIMATION_INFO}
+   */
   public static final class RESPONSE_PLAYER_ANIMATION_INFO extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_PLAYER_ANIMATION_INFOOrBuilder {
     // Use RESPONSE_PLAYER_ANIMATION_INFO.newBuilder() to construct.
-    private RESPONSE_PLAYER_ANIMATION_INFO(Builder builder) {
+    private RESPONSE_PLAYER_ANIMATION_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_PLAYER_ANIMATION_INFO(boolean noInit) {}
-    
+    private RESPONSE_PLAYER_ANIMATION_INFO(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_PLAYER_ANIMATION_INFO defaultInstance;
     public static RESPONSE_PLAYER_ANIMATION_INFO getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_PLAYER_ANIMATION_INFO getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_PLAYER_ANIMATION_INFO(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                animationInfos_ = new java.util.ArrayList<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              animationInfos_.add(input.readMessage(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          animationInfos_ = java.util.Collections.unmodifiableList(animationInfos_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable;
+      return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.class, cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_PLAYER_ANIMATION_INFO> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_PLAYER_ANIMATION_INFO>() {
+      public RESPONSE_PLAYER_ANIMATION_INFO parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_PLAYER_ANIMATION_INFO(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_PLAYER_ANIMATION_INFO> getParserForType() {
+      return PARSER;
+    }
+
     // repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;
     public static final int ANIMATIONINFOS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> animationInfos_;
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> getAnimationInfosList() {
       return animationInfos_;
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder> 
         getAnimationInfosOrBuilderList() {
       return animationInfos_;
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     public int getAnimationInfosCount() {
       return animationInfos_.size();
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS getAnimationInfos(int index) {
       return animationInfos_.get(index);
     }
+    /**
+     * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+     */
     public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder getAnimationInfosOrBuilder(
         int index) {
       return animationInfos_.get(index);
     }
-    
+
     private void initFields() {
       animationInfos_ = java.util.Collections.emptyList();
     }
@@ -6291,7 +7856,7 @@ public final class PlayerProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       for (int i = 0; i < getAnimationInfosCount(); i++) {
         if (!getAnimationInfos(i).isInitialized()) {
           memoizedIsInitialized = 0;
@@ -6301,7 +7866,7 @@ public final class PlayerProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -6310,12 +7875,12 @@ public final class PlayerProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       for (int i = 0; i < animationInfos_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -6325,94 +7890,83 @@ public final class PlayerProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_PLAYER_ANIMATION_INFO}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFOOrBuilder {
@@ -6420,18 +7974,21 @@ public final class PlayerProtos {
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable;
+        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.class, cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -6443,7 +8000,7 @@ public final class PlayerProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         if (animationInfosBuilder_ == null) {
@@ -6454,20 +8011,20 @@ public final class PlayerProtos {
         }
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.getDescriptor();
+        return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor;
       }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO getDefaultInstanceForType() {
         return cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO build() {
         cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO result = buildPartial();
         if (!result.isInitialized()) {
@@ -6475,17 +8032,7 @@ public final class PlayerProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO buildPartial() {
         cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO result = new cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO(this);
         int from_bitField0_ = bitField0_;
@@ -6501,7 +8048,7 @@ public final class PlayerProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO) {
           return mergeFrom((cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO)other);
@@ -6510,7 +8057,7 @@ public final class PlayerProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO other) {
         if (other == cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.getDefaultInstance()) return this;
         if (animationInfosBuilder_ == null) {
@@ -6542,7 +8089,7 @@ public final class PlayerProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         for (int i = 0; i < getAnimationInfosCount(); i++) {
           if (!getAnimationInfos(i).isInitialized()) {
@@ -6552,42 +8099,26 @@ public final class PlayerProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder subBuilder = cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addAnimationInfos(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;
       private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> animationInfos_ =
         java.util.Collections.emptyList();
@@ -6597,10 +8128,13 @@ public final class PlayerProtos {
           bitField0_ |= 0x00000001;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder> animationInfosBuilder_;
-      
+
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> getAnimationInfosList() {
         if (animationInfosBuilder_ == null) {
           return java.util.Collections.unmodifiableList(animationInfos_);
@@ -6608,6 +8142,9 @@ public final class PlayerProtos {
           return animationInfosBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public int getAnimationInfosCount() {
         if (animationInfosBuilder_ == null) {
           return animationInfos_.size();
@@ -6615,6 +8152,9 @@ public final class PlayerProtos {
           return animationInfosBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS getAnimationInfos(int index) {
         if (animationInfosBuilder_ == null) {
           return animationInfos_.get(index);
@@ -6622,6 +8162,9 @@ public final class PlayerProtos {
           return animationInfosBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public Builder setAnimationInfos(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS value) {
         if (animationInfosBuilder_ == null) {
@@ -6636,6 +8179,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public Builder setAnimationInfos(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder builderForValue) {
         if (animationInfosBuilder_ == null) {
@@ -6647,6 +8193,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public Builder addAnimationInfos(cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS value) {
         if (animationInfosBuilder_ == null) {
           if (value == null) {
@@ -6660,6 +8209,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public Builder addAnimationInfos(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS value) {
         if (animationInfosBuilder_ == null) {
@@ -6674,6 +8226,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public Builder addAnimationInfos(
           cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder builderForValue) {
         if (animationInfosBuilder_ == null) {
@@ -6685,6 +8240,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public Builder addAnimationInfos(
           int index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder builderForValue) {
         if (animationInfosBuilder_ == null) {
@@ -6696,6 +8254,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public Builder addAllAnimationInfos(
           java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> values) {
         if (animationInfosBuilder_ == null) {
@@ -6707,6 +8268,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public Builder clearAnimationInfos() {
         if (animationInfosBuilder_ == null) {
           animationInfos_ = java.util.Collections.emptyList();
@@ -6717,6 +8281,9 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public Builder removeAnimationInfos(int index) {
         if (animationInfosBuilder_ == null) {
           ensureAnimationInfosIsMutable();
@@ -6727,10 +8294,16 @@ public final class PlayerProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder getAnimationInfosBuilder(
           int index) {
         return getAnimationInfosFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder getAnimationInfosOrBuilder(
           int index) {
         if (animationInfosBuilder_ == null) {
@@ -6738,6 +8311,9 @@ public final class PlayerProtos {
           return animationInfosBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public java.util.List<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder> 
            getAnimationInfosOrBuilderList() {
         if (animationInfosBuilder_ != null) {
@@ -6746,15 +8322,24 @@ public final class PlayerProtos {
           return java.util.Collections.unmodifiableList(animationInfos_);
         }
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder addAnimationInfosBuilder() {
         return getAnimationInfosFieldBuilder().addBuilder(
             cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder addAnimationInfosBuilder(
           int index) {
         return getAnimationInfosFieldBuilder().addBuilder(
             index, cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
+       */
       public java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder> 
            getAnimationInfosBuilderList() {
         return getAnimationInfosFieldBuilder().getBuilderList();
@@ -6773,18 +8358,18 @@ public final class PlayerProtos {
         }
         return animationInfosBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_PLAYER_ANIMATION_INFO)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_PLAYER_ANIMATION_INFO(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_PLAYER_ANIMATION_INFO)
   }
-  
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_PLAYER_CREATE_descriptor;
   private static
@@ -6850,7 +8435,7 @@ public final class PlayerProtos {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable;
-  
+
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
@@ -6897,105 +8482,79 @@ public final class PlayerProtos {
           internal_static_REQUEST_PLAYER_CREATE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_PLAYER_CREATE_descriptor,
-              new java.lang.String[] { "RoleId", "ColorId", "EyeStyleId", "MouthStyleId", "HairStyleId", "RoleIndex", "Name", "Attributes", "Elements", },
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.class,
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATE.Builder.class);
+              new java.lang.String[] { "RoleId", "ColorId", "EyeStyleId", "MouthStyleId", "HairStyleId", "RoleIndex", "Name", "Attributes", "Elements", });
           internal_static_RESPONSE_PLAYER_CREATE_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_RESPONSE_PLAYER_CREATE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_PLAYER_CREATE_descriptor,
-              new java.lang.String[] { "InstanceId", },
-              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.class,
-              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE.Builder.class);
+              new java.lang.String[] { "InstanceId", });
           internal_static_REQUEST_PLAYER_DELETE_descriptor =
             getDescriptor().getMessageTypes().get(2);
           internal_static_REQUEST_PLAYER_DELETE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_PLAYER_DELETE_descriptor,
-              new java.lang.String[] { "RoleId", },
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.class,
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETE.Builder.class);
+              new java.lang.String[] { "RoleId", });
           internal_static_REQUEST_PLAYER_QUERY_descriptor =
             getDescriptor().getMessageTypes().get(3);
           internal_static_REQUEST_PLAYER_QUERY_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_PLAYER_QUERY_descriptor,
-              new java.lang.String[] { "RoleId", },
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.class,
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERY.Builder.class);
+              new java.lang.String[] { "RoleId", });
           internal_static_REQUEST_PLAYER_LOGIN_descriptor =
             getDescriptor().getMessageTypes().get(4);
           internal_static_REQUEST_PLAYER_LOGIN_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_PLAYER_LOGIN_descriptor,
-              new java.lang.String[] { "RoleId", "EyeShot", "AnimationVersion", "HeadVersion", },
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.class,
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGIN.Builder.class);
+              new java.lang.String[] { "RoleId", "EyeShot", "AnimationVersion", "HeadVersion", });
           internal_static_RESPONSE_PLAYER_LOGIN_descriptor =
             getDescriptor().getMessageTypes().get(5);
           internal_static_RESPONSE_PLAYER_LOGIN_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_PLAYER_LOGIN_descriptor,
-              new java.lang.String[] { "UnitInfo", },
-              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.class,
-              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGIN.Builder.class);
+              new java.lang.String[] { "UnitInfo", });
           internal_static_VO_PLAYER_ANIMATION_descriptor =
             getDescriptor().getMessageTypes().get(6);
           internal_static_VO_PLAYER_ANIMATION_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_PLAYER_ANIMATION_descriptor,
-              new java.lang.String[] { "RoleId", "GlobalId", "HeadGlobalId", },
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.class,
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION.Builder.class);
+              new java.lang.String[] { "RoleId", "GlobalId", "HeadGlobalId", });
           internal_static_VO_PLAYER_ANIMATIONS_descriptor =
             getDescriptor().getMessageTypes().get(7);
           internal_static_VO_PLAYER_ANIMATIONS_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_PLAYER_ANIMATIONS_descriptor,
-              new java.lang.String[] { "Animations", },
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.class,
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS.Builder.class);
+              new java.lang.String[] { "Animations", });
           internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor =
             getDescriptor().getMessageTypes().get(8);
           internal_static_RESPONSE_PLAYER_CREATE_INFO_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor,
-              new java.lang.String[] { "Bp", "PageMax", "Animations", },
-              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.class,
-              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFO.Builder.class);
+              new java.lang.String[] { "Bp", "PageMax", "Animations", });
           internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor =
             getDescriptor().getMessageTypes().get(9);
           internal_static_REQUEST_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor,
-              new java.lang.String[] { "Page", },
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.class,
-              cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFO.Builder.class);
+              new java.lang.String[] { "Page", });
           internal_static_VO_PLAYER_ANIMATION_INFO_descriptor =
             getDescriptor().getMessageTypes().get(10);
           internal_static_VO_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_PLAYER_ANIMATION_INFO_descriptor,
-              new java.lang.String[] { "RoleId", "AnimationId2", "HeadId", },
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.class,
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO.Builder.class);
+              new java.lang.String[] { "RoleId", "AnimationId2", "HeadId", });
           internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor =
             getDescriptor().getMessageTypes().get(11);
           internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor,
-              new java.lang.String[] { "AnimationInfos", },
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.class,
-              cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS.Builder.class);
+              new java.lang.String[] { "AnimationInfos", });
           internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor =
             getDescriptor().getMessageTypes().get(12);
           internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor,
-              new java.lang.String[] { "AnimationInfos", },
-              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.class,
-              cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFO.Builder.class);
+              new java.lang.String[] { "AnimationInfos", });
           return null;
         }
       };
@@ -7005,6 +8564,6 @@ public final class PlayerProtos {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
   }
-  
+
   // @@protoc_insertion_point(outer_class_scope)
 }

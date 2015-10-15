@@ -1,5 +1,6 @@
 package cg.base.io;
 
+import cg.base.event.EventDisconnect;
 import cg.base.io.ProtoMessageFactory;
 import dataplatform.pubsub.ISimplePubsub;
 import net.dipatch.IContent;
@@ -22,6 +23,11 @@ public class SimpleContentHandler implements IContentHandler {
 	public void handle(IContent content) throws Exception {
 		IMessage message = messageFactory.createMessage(content.getMessageId(), 0, content.getSessionId(), content.getSender(), content.getDatas());
 		pubsub.publish(message);
+	}
+
+	@Override
+	public void disconnect(String sessionId, String address) {
+		pubsub.publish(new EventDisconnect(sessionId, address));
 	}
 
 }

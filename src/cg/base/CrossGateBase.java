@@ -36,8 +36,7 @@ public class CrossGateBase {
 	protected static ImageManager imageManager;
 	
 	public static String getClientFilePath() {
-//		return (clientFilePath.getHost() == null ? clientFilePath.getPath() : clientFilePath.toString());
-		return clientFilePath.toString();
+		return (clientFilePath.getHost() == null ? clientFilePath.getPath() : clientFilePath.toString());
 	}
 
 	public static AnimationReader getAnimationReader() {
@@ -91,7 +90,7 @@ public class CrossGateBase {
 		
 		protected void createSimpleObject() {
 			log = createLog();
-			logStart();
+			logStart(log);
 			try {
 				clientFilePath = loadClientFilePath();
 			} catch (Exception e) {
@@ -101,7 +100,7 @@ public class CrossGateBase {
 			timer = createTimer();
 			mainThread = createUpdater();
 			scheduler = Executors.newScheduledThreadPool(3);
-			imageManager = createImageManager();
+			imageManager = createImageManager(log);
 			simplePubsub = createSimplePubsub();
 		}
 
@@ -134,13 +133,13 @@ public class CrossGateBase {
 			return new CMainThread(timer.getSleepTime(), log);
 		}
 		
-		protected abstract void logStart();
+		protected abstract void logStart(Log log);
 		
 		protected AnimationReader createAnimationReader() {
 			return new CAnimationReader(log, getClientFilePath(), getImageManager(), getTimer());
 		}
 		
-		protected abstract ImageManager createImageManager();
+		protected abstract ImageManager createImageManager(Log log);
 		
 		protected ISimplePubsub createSimplePubsub() {
 			return new SimplePubsub();

@@ -10,54 +10,147 @@ public final class OptionProtos {
   }
   public interface REQUEST_OPTIONS_SETOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required .VO_OPTION option = 1;
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     boolean hasOption();
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_OPTION getOption();
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionOrBuilder();
   }
+  /**
+   * Protobuf type {@code REQUEST_OPTIONS_SET}
+   */
   public static final class REQUEST_OPTIONS_SET extends
       com.google.protobuf.GeneratedMessage
       implements REQUEST_OPTIONS_SETOrBuilder {
     // Use REQUEST_OPTIONS_SET.newBuilder() to construct.
-    private REQUEST_OPTIONS_SET(Builder builder) {
+    private REQUEST_OPTIONS_SET(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private REQUEST_OPTIONS_SET(boolean noInit) {}
-    
+    private REQUEST_OPTIONS_SET(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final REQUEST_OPTIONS_SET defaultInstance;
     public static REQUEST_OPTIONS_SET getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public REQUEST_OPTIONS_SET getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private REQUEST_OPTIONS_SET(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              cg.base.io.proto.VOProtos.VO_OPTION.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = option_.toBuilder();
+              }
+              option_ = input.readMessage(cg.base.io.proto.VOProtos.VO_OPTION.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(option_);
+                option_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.OptionProtos.internal_static_REQUEST_OPTIONS_SET_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.OptionProtos.internal_static_REQUEST_OPTIONS_SET_fieldAccessorTable;
+      return cg.base.io.proto.OptionProtos.internal_static_REQUEST_OPTIONS_SET_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.class, cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<REQUEST_OPTIONS_SET> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_OPTIONS_SET>() {
+      public REQUEST_OPTIONS_SET parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_OPTIONS_SET(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_OPTIONS_SET> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required .VO_OPTION option = 1;
     public static final int OPTION_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_OPTION option_;
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     public boolean hasOption() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_OPTION getOption() {
       return option_;
     }
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionOrBuilder() {
       return option_;
     }
-    
+
     private void initFields() {
       option_ = cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance();
     }
@@ -65,7 +158,7 @@ public final class OptionProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasOption()) {
         memoizedIsInitialized = 0;
         return false;
@@ -77,7 +170,7 @@ public final class OptionProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -86,12 +179,12 @@ public final class OptionProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -101,94 +194,83 @@ public final class OptionProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code REQUEST_OPTIONS_SET}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SETOrBuilder {
@@ -196,18 +278,21 @@ public final class OptionProtos {
           getDescriptor() {
         return cg.base.io.proto.OptionProtos.internal_static_REQUEST_OPTIONS_SET_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.OptionProtos.internal_static_REQUEST_OPTIONS_SET_fieldAccessorTable;
+        return cg.base.io.proto.OptionProtos.internal_static_REQUEST_OPTIONS_SET_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.class, cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -219,7 +304,7 @@ public final class OptionProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         if (optionBuilder_ == null) {
@@ -230,20 +315,20 @@ public final class OptionProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.getDescriptor();
+        return cg.base.io.proto.OptionProtos.internal_static_REQUEST_OPTIONS_SET_descriptor;
       }
-      
+
       public cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET getDefaultInstanceForType() {
         return cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET build() {
         cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET result = buildPartial();
         if (!result.isInitialized()) {
@@ -251,17 +336,7 @@ public final class OptionProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET buildPartial() {
         cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET result = new cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET(this);
         int from_bitField0_ = bitField0_;
@@ -278,7 +353,7 @@ public final class OptionProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET) {
           return mergeFrom((cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET)other);
@@ -287,7 +362,7 @@ public final class OptionProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET other) {
         if (other == cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.getDefaultInstance()) return this;
         if (other.hasOption()) {
@@ -296,7 +371,7 @@ public final class OptionProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasOption()) {
           
@@ -308,52 +383,39 @@ public final class OptionProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              cg.base.io.proto.VOProtos.VO_OPTION.Builder subBuilder = cg.base.io.proto.VOProtos.VO_OPTION.newBuilder();
-              if (hasOption()) {
-                subBuilder.mergeFrom(getOption());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setOption(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required .VO_OPTION option = 1;
       private cg.base.io.proto.VOProtos.VO_OPTION option_ = cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> optionBuilder_;
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public boolean hasOption() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_OPTION getOption() {
         if (optionBuilder_ == null) {
           return option_;
@@ -361,6 +423,9 @@ public final class OptionProtos {
           return optionBuilder_.getMessage();
         }
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public Builder setOption(cg.base.io.proto.VOProtos.VO_OPTION value) {
         if (optionBuilder_ == null) {
           if (value == null) {
@@ -374,6 +439,9 @@ public final class OptionProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public Builder setOption(
           cg.base.io.proto.VOProtos.VO_OPTION.Builder builderForValue) {
         if (optionBuilder_ == null) {
@@ -385,6 +453,9 @@ public final class OptionProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public Builder mergeOption(cg.base.io.proto.VOProtos.VO_OPTION value) {
         if (optionBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
@@ -401,6 +472,9 @@ public final class OptionProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public Builder clearOption() {
         if (optionBuilder_ == null) {
           option_ = cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance();
@@ -411,11 +485,17 @@ public final class OptionProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_OPTION.Builder getOptionBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getOptionFieldBuilder().getBuilder();
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionOrBuilder() {
         if (optionBuilder_ != null) {
           return optionBuilder_.getMessageOrBuilder();
@@ -423,6 +503,9 @@ public final class OptionProtos {
           return option_;
         }
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> 
           getOptionFieldBuilder() {
@@ -436,104 +519,224 @@ public final class OptionProtos {
         }
         return optionBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:REQUEST_OPTIONS_SET)
     }
-    
+
     static {
       defaultInstance = new REQUEST_OPTIONS_SET(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:REQUEST_OPTIONS_SET)
   }
-  
+
   public interface RESPONSE_OPTIONS_SETOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required .VO_OPTION option = 1;
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     boolean hasOption();
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_OPTION getOption();
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionOrBuilder();
-    
+
     // required string name = 2;
+    /**
+     * <code>required string name = 2;</code>
+     */
     boolean hasName();
-    String getName();
+    /**
+     * <code>required string name = 2;</code>
+     */
+    java.lang.String getName();
+    /**
+     * <code>required string name = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
   }
+  /**
+   * Protobuf type {@code RESPONSE_OPTIONS_SET}
+   */
   public static final class RESPONSE_OPTIONS_SET extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_OPTIONS_SETOrBuilder {
     // Use RESPONSE_OPTIONS_SET.newBuilder() to construct.
-    private RESPONSE_OPTIONS_SET(Builder builder) {
+    private RESPONSE_OPTIONS_SET(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_OPTIONS_SET(boolean noInit) {}
-    
+    private RESPONSE_OPTIONS_SET(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_OPTIONS_SET defaultInstance;
     public static RESPONSE_OPTIONS_SET getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_OPTIONS_SET getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_OPTIONS_SET(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              cg.base.io.proto.VOProtos.VO_OPTION.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = option_.toBuilder();
+              }
+              option_ = input.readMessage(cg.base.io.proto.VOProtos.VO_OPTION.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(option_);
+                option_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              name_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.OptionProtos.internal_static_RESPONSE_OPTIONS_SET_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.OptionProtos.internal_static_RESPONSE_OPTIONS_SET_fieldAccessorTable;
+      return cg.base.io.proto.OptionProtos.internal_static_RESPONSE_OPTIONS_SET_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.class, cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_OPTIONS_SET> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_OPTIONS_SET>() {
+      public RESPONSE_OPTIONS_SET parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_OPTIONS_SET(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_OPTIONS_SET> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required .VO_OPTION option = 1;
     public static final int OPTION_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_OPTION option_;
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     public boolean hasOption() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_OPTION getOption() {
       return option_;
     }
+    /**
+     * <code>required .VO_OPTION option = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionOrBuilder() {
       return option_;
     }
-    
+
     // required string name = 2;
     public static final int NAME_FIELD_NUMBER = 2;
     private java.lang.Object name_;
+    /**
+     * <code>required string name = 2;</code>
+     */
     public boolean hasName() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getName() {
+    /**
+     * <code>required string name = 2;</code>
+     */
+    public java.lang.String getName() {
       java.lang.Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           name_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getNameBytes() {
+    /**
+     * <code>required string name = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
       java.lang.Object ref = name_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     private void initFields() {
       option_ = cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance();
       name_ = "";
@@ -542,7 +745,7 @@ public final class OptionProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasOption()) {
         memoizedIsInitialized = 0;
         return false;
@@ -558,7 +761,7 @@ public final class OptionProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -570,12 +773,12 @@ public final class OptionProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -589,94 +792,83 @@ public final class OptionProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_OPTIONS_SET}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SETOrBuilder {
@@ -684,18 +876,21 @@ public final class OptionProtos {
           getDescriptor() {
         return cg.base.io.proto.OptionProtos.internal_static_RESPONSE_OPTIONS_SET_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.OptionProtos.internal_static_RESPONSE_OPTIONS_SET_fieldAccessorTable;
+        return cg.base.io.proto.OptionProtos.internal_static_RESPONSE_OPTIONS_SET_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.class, cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -707,7 +902,7 @@ public final class OptionProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         if (optionBuilder_ == null) {
@@ -720,20 +915,20 @@ public final class OptionProtos {
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.getDescriptor();
+        return cg.base.io.proto.OptionProtos.internal_static_RESPONSE_OPTIONS_SET_descriptor;
       }
-      
+
       public cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET getDefaultInstanceForType() {
         return cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET build() {
         cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET result = buildPartial();
         if (!result.isInitialized()) {
@@ -741,17 +936,7 @@ public final class OptionProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET buildPartial() {
         cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET result = new cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET(this);
         int from_bitField0_ = bitField0_;
@@ -772,7 +957,7 @@ public final class OptionProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET) {
           return mergeFrom((cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET)other);
@@ -781,19 +966,21 @@ public final class OptionProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET other) {
         if (other == cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.getDefaultInstance()) return this;
         if (other.hasOption()) {
           mergeOption(other.getOption());
         }
         if (other.hasName()) {
-          setName(other.getName());
+          bitField0_ |= 0x00000002;
+          name_ = other.name_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasOption()) {
           
@@ -809,57 +996,39 @@ public final class OptionProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              cg.base.io.proto.VOProtos.VO_OPTION.Builder subBuilder = cg.base.io.proto.VOProtos.VO_OPTION.newBuilder();
-              if (hasOption()) {
-                subBuilder.mergeFrom(getOption());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setOption(subBuilder.buildPartial());
-              break;
-            }
-            case 18: {
-              bitField0_ |= 0x00000002;
-              name_ = input.readBytes();
-              break;
-            }
+        cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required .VO_OPTION option = 1;
       private cg.base.io.proto.VOProtos.VO_OPTION option_ = cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> optionBuilder_;
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public boolean hasOption() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_OPTION getOption() {
         if (optionBuilder_ == null) {
           return option_;
@@ -867,6 +1036,9 @@ public final class OptionProtos {
           return optionBuilder_.getMessage();
         }
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public Builder setOption(cg.base.io.proto.VOProtos.VO_OPTION value) {
         if (optionBuilder_ == null) {
           if (value == null) {
@@ -880,6 +1052,9 @@ public final class OptionProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public Builder setOption(
           cg.base.io.proto.VOProtos.VO_OPTION.Builder builderForValue) {
         if (optionBuilder_ == null) {
@@ -891,6 +1066,9 @@ public final class OptionProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public Builder mergeOption(cg.base.io.proto.VOProtos.VO_OPTION value) {
         if (optionBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
@@ -907,6 +1085,9 @@ public final class OptionProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public Builder clearOption() {
         if (optionBuilder_ == null) {
           option_ = cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance();
@@ -917,11 +1098,17 @@ public final class OptionProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_OPTION.Builder getOptionBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getOptionFieldBuilder().getBuilder();
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionOrBuilder() {
         if (optionBuilder_ != null) {
           return optionBuilder_.getMessageOrBuilder();
@@ -929,6 +1116,9 @@ public final class OptionProtos {
           return option_;
         }
       }
+      /**
+       * <code>required .VO_OPTION option = 1;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> 
           getOptionFieldBuilder() {
@@ -942,23 +1132,50 @@ public final class OptionProtos {
         }
         return optionBuilder_;
       }
-      
+
       // required string name = 2;
       private java.lang.Object name_ = "";
+      /**
+       * <code>required string name = 2;</code>
+       */
       public boolean hasName() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getName() {
+      /**
+       * <code>required string name = 2;</code>
+       */
+      public java.lang.String getName() {
         java.lang.Object ref = name_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           name_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setName(String value) {
+      /**
+       * <code>required string name = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string name = 2;</code>
+       */
+      public Builder setName(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -967,29 +1184,40 @@ public final class OptionProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>required string name = 2;</code>
+       */
       public Builder clearName() {
         bitField0_ = (bitField0_ & ~0x00000002);
         name_ = getDefaultInstance().getName();
         onChanged();
         return this;
       }
-      void setName(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000002;
+      /**
+       * <code>required string name = 2;</code>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
         name_ = value;
         onChanged();
+        return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_OPTIONS_SET)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_OPTIONS_SET(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_OPTIONS_SET)
   }
-  
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_OPTIONS_SET_descriptor;
   private static
@@ -1000,7 +1228,7 @@ public final class OptionProtos {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_OPTIONS_SET_fieldAccessorTable;
-  
+
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
@@ -1025,17 +1253,13 @@ public final class OptionProtos {
           internal_static_REQUEST_OPTIONS_SET_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_OPTIONS_SET_descriptor,
-              new java.lang.String[] { "Option", },
-              cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.class,
-              cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SET.Builder.class);
+              new java.lang.String[] { "Option", });
           internal_static_RESPONSE_OPTIONS_SET_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_RESPONSE_OPTIONS_SET_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_OPTIONS_SET_descriptor,
-              new java.lang.String[] { "Option", "Name", },
-              cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.class,
-              cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SET.Builder.class);
+              new java.lang.String[] { "Option", "Name", });
           return null;
         }
       };
@@ -1045,6 +1269,6 @@ public final class OptionProtos {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
   }
-  
+
   // @@protoc_insertion_point(outer_class_scope)
 }

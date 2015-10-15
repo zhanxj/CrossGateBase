@@ -10,382 +10,85 @@ public final class MapProtos {
   }
   public interface REQUEST_MAP_INOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 mapId = 1;
+    /**
+     * <code>required int32 mapId = 1;</code>
+     */
     boolean hasMapId();
+    /**
+     * <code>required int32 mapId = 1;</code>
+     */
     int getMapId();
-    
+
     // required int32 east = 2;
+    /**
+     * <code>required int32 east = 2;</code>
+     */
     boolean hasEast();
+    /**
+     * <code>required int32 east = 2;</code>
+     */
     int getEast();
-    
+
     // required int32 south = 3;
+    /**
+     * <code>required int32 south = 3;</code>
+     */
     boolean hasSouth();
+    /**
+     * <code>required int32 south = 3;</code>
+     */
     int getSouth();
   }
+  /**
+   * Protobuf type {@code REQUEST_MAP_IN}
+   */
   public static final class REQUEST_MAP_IN extends
       com.google.protobuf.GeneratedMessage
       implements REQUEST_MAP_INOrBuilder {
     // Use REQUEST_MAP_IN.newBuilder() to construct.
-    private REQUEST_MAP_IN(Builder builder) {
+    private REQUEST_MAP_IN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private REQUEST_MAP_IN(boolean noInit) {}
-    
+    private REQUEST_MAP_IN(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final REQUEST_MAP_IN defaultInstance;
     public static REQUEST_MAP_IN getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public REQUEST_MAP_IN getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_descriptor;
-    }
-    
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // required int32 mapId = 1;
-    public static final int MAPID_FIELD_NUMBER = 1;
-    private int mapId_;
-    public boolean hasMapId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public int getMapId() {
-      return mapId_;
-    }
-    
-    // required int32 east = 2;
-    public static final int EAST_FIELD_NUMBER = 2;
-    private int east_;
-    public boolean hasEast() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public int getEast() {
-      return east_;
-    }
-    
-    // required int32 south = 3;
-    public static final int SOUTH_FIELD_NUMBER = 3;
-    private int south_;
-    public boolean hasSouth() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public int getSouth() {
-      return south_;
-    }
-    
-    private void initFields() {
-      mapId_ = 0;
-      east_ = 0;
-      south_ = 0;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-      
-      if (!hasMapId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasEast()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasSouth()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-    
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, mapId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, east_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, south_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-    
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-    
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, mapId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, east_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, south_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-    
-    private static final long serialVersionUID = 0L;
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
     @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
     }
-    
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
+    private REQUEST_MAP_IN(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.REQUEST_MAP_IN prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-    
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.REQUEST_MAP_INOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_descriptor;
-      }
-      
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_fieldAccessorTable;
-      }
-      
-      // Construct using cg.base.io.proto.MapProtos.REQUEST_MAP_IN.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      
-      private Builder(BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-      
-      public Builder clear() {
-        super.clear();
-        mapId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        east_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        south_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        return this;
-      }
-      
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-      
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.REQUEST_MAP_IN.getDescriptor();
-      }
-      
-      public cg.base.io.proto.MapProtos.REQUEST_MAP_IN getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.REQUEST_MAP_IN.getDefaultInstance();
-      }
-      
-      public cg.base.io.proto.MapProtos.REQUEST_MAP_IN build() {
-        cg.base.io.proto.MapProtos.REQUEST_MAP_IN result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-      
-      private cg.base.io.proto.MapProtos.REQUEST_MAP_IN buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MapProtos.REQUEST_MAP_IN result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
-      public cg.base.io.proto.MapProtos.REQUEST_MAP_IN buildPartial() {
-        cg.base.io.proto.MapProtos.REQUEST_MAP_IN result = new cg.base.io.proto.MapProtos.REQUEST_MAP_IN(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.mapId_ = mapId_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.east_ = east_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.south_ = south_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-      
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.REQUEST_MAP_IN) {
-          return mergeFrom((cg.base.io.proto.MapProtos.REQUEST_MAP_IN)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-      
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.REQUEST_MAP_IN other) {
-        if (other == cg.base.io.proto.MapProtos.REQUEST_MAP_IN.getDefaultInstance()) return this;
-        if (other.hasMapId()) {
-          setMapId(other.getMapId());
-        }
-        if (other.hasEast()) {
-          setEast(other.getEast());
-        }
-        if (other.hasSouth()) {
-          setSouth(other.getSouth());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-      
-      public final boolean isInitialized() {
-        if (!hasMapId()) {
-          
-          return false;
-        }
-        if (!hasEast()) {
-          
-          return false;
-        }
-        if (!hasSouth()) {
-          
-          return false;
-        }
-        return true;
-      }
-      
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -406,259 +109,103 @@ public final class MapProtos {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
-      private int bitField0_;
-      
-      // required int32 mapId = 1;
-      private int mapId_ ;
-      public boolean hasMapId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      public int getMapId() {
-        return mapId_;
-      }
-      public Builder setMapId(int value) {
-        bitField0_ |= 0x00000001;
-        mapId_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearMapId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        mapId_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // required int32 east = 2;
-      private int east_ ;
-      public boolean hasEast() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      public int getEast() {
-        return east_;
-      }
-      public Builder setEast(int value) {
-        bitField0_ |= 0x00000002;
-        east_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearEast() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        east_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // required int32 south = 3;
-      private int south_ ;
-      public boolean hasSouth() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      public int getSouth() {
-        return south_;
-      }
-      public Builder setSouth(int value) {
-        bitField0_ |= 0x00000004;
-        south_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearSouth() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        south_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // @@protoc_insertion_point(builder_scope:REQUEST_MAP_IN)
     }
-    
-    static {
-      defaultInstance = new REQUEST_MAP_IN(true);
-      defaultInstance.initFields();
-    }
-    
-    // @@protoc_insertion_point(class_scope:REQUEST_MAP_IN)
-  }
-  
-  public interface RESPONSE_MAP_INOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-    
-    // required int32 mapId = 1;
-    boolean hasMapId();
-    int getMapId();
-    
-    // required int32 mapInstanceId = 2;
-    boolean hasMapInstanceId();
-    int getMapInstanceId();
-    
-    // required string mapName = 3;
-    boolean hasMapName();
-    String getMapName();
-    
-    // required int32 east = 4;
-    boolean hasEast();
-    int getEast();
-    
-    // required int32 south = 5;
-    boolean hasSouth();
-    int getSouth();
-    
-    // required int32 maxEast = 6;
-    boolean hasMaxEast();
-    int getMaxEast();
-    
-    // required int32 maxSouth = 7;
-    boolean hasMaxSouth();
-    int getMaxSouth();
-  }
-  public static final class RESPONSE_MAP_IN extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_MAP_INOrBuilder {
-    // Use RESPONSE_MAP_IN.newBuilder() to construct.
-    private RESPONSE_MAP_IN(Builder builder) {
-      super(builder);
-    }
-    private RESPONSE_MAP_IN(boolean noInit) {}
-    
-    private static final RESPONSE_MAP_IN defaultInstance;
-    public static RESPONSE_MAP_IN getDefaultInstance() {
-      return defaultInstance;
-    }
-    
-    public RESPONSE_MAP_IN getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_descriptor;
+      return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_fieldAccessorTable;
+      return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MapProtos.REQUEST_MAP_IN.class, cg.base.io.proto.MapProtos.REQUEST_MAP_IN.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<REQUEST_MAP_IN> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_MAP_IN>() {
+      public REQUEST_MAP_IN parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_MAP_IN(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_MAP_IN> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 mapId = 1;
     public static final int MAPID_FIELD_NUMBER = 1;
     private int mapId_;
+    /**
+     * <code>required int32 mapId = 1;</code>
+     */
     public boolean hasMapId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 mapId = 1;</code>
+     */
     public int getMapId() {
       return mapId_;
     }
-    
-    // required int32 mapInstanceId = 2;
-    public static final int MAPINSTANCEID_FIELD_NUMBER = 2;
-    private int mapInstanceId_;
-    public boolean hasMapInstanceId() {
+
+    // required int32 east = 2;
+    public static final int EAST_FIELD_NUMBER = 2;
+    private int east_;
+    /**
+     * <code>required int32 east = 2;</code>
+     */
+    public boolean hasEast() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public int getMapInstanceId() {
-      return mapInstanceId_;
-    }
-    
-    // required string mapName = 3;
-    public static final int MAPNAME_FIELD_NUMBER = 3;
-    private java.lang.Object mapName_;
-    public boolean hasMapName() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public String getMapName() {
-      java.lang.Object ref = mapName_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          mapName_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getMapNameBytes() {
-      java.lang.Object ref = mapName_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        mapName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    // required int32 east = 4;
-    public static final int EAST_FIELD_NUMBER = 4;
-    private int east_;
-    public boolean hasEast() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
+    /**
+     * <code>required int32 east = 2;</code>
+     */
     public int getEast() {
       return east_;
     }
-    
-    // required int32 south = 5;
-    public static final int SOUTH_FIELD_NUMBER = 5;
+
+    // required int32 south = 3;
+    public static final int SOUTH_FIELD_NUMBER = 3;
     private int south_;
+    /**
+     * <code>required int32 south = 3;</code>
+     */
     public boolean hasSouth() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
+      return ((bitField0_ & 0x00000004) == 0x00000004);
     }
+    /**
+     * <code>required int32 south = 3;</code>
+     */
     public int getSouth() {
       return south_;
     }
-    
-    // required int32 maxEast = 6;
-    public static final int MAXEAST_FIELD_NUMBER = 6;
-    private int maxEast_;
-    public boolean hasMaxEast() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    public int getMaxEast() {
-      return maxEast_;
-    }
-    
-    // required int32 maxSouth = 7;
-    public static final int MAXSOUTH_FIELD_NUMBER = 7;
-    private int maxSouth_;
-    public boolean hasMaxSouth() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-    public int getMaxSouth() {
-      return maxSouth_;
-    }
-    
+
     private void initFields() {
       mapId_ = 0;
-      mapInstanceId_ = 0;
-      mapName_ = "";
       east_ = 0;
       south_ = 0;
-      maxEast_ = 0;
-      maxSouth_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasMapId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasMapInstanceId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasMapName()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -670,18 +217,10 @@ public final class MapProtos {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasMaxEast()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasMaxSouth()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -689,31 +228,19 @@ public final class MapProtos {
         output.writeInt32(1, mapId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, mapInstanceId_);
+        output.writeInt32(2, east_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getMapNameBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, east_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt32(5, south_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeInt32(6, maxEast_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeInt32(7, maxSouth_);
+        output.writeInt32(3, south_);
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -721,139 +248,115 @@ public final class MapProtos {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, mapInstanceId_);
+          .computeInt32Size(2, east_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getMapNameBytes());
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, east_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, south_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, maxEast_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, maxSouth_);
+          .computeInt32Size(3, south_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(byte[] data)
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseDelimitedFrom(
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+    public static cg.base.io.proto.MapProtos.REQUEST_MAP_IN parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_IN prototype) {
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.REQUEST_MAP_IN prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code REQUEST_MAP_IN}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_INOrBuilder {
+       implements cg.base.io.proto.MapProtos.REQUEST_MAP_INOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_fieldAccessorTable;
+        return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MapProtos.REQUEST_MAP_IN.class, cg.base.io.proto.MapProtos.REQUEST_MAP_IN.Builder.class);
       }
-      
-      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.newBuilder()
+
+      // Construct using cg.base.io.proto.MapProtos.REQUEST_MAP_IN.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -864,59 +367,41 @@ public final class MapProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         mapId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        mapInstanceId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        mapName_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
         east_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000002);
         south_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        maxEast_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000020);
-        maxSouth_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.getDescriptor();
+        return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_descriptor;
       }
-      
-      public cg.base.io.proto.MapProtos.RESPONSE_MAP_IN getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.getDefaultInstance();
+
+      public cg.base.io.proto.MapProtos.REQUEST_MAP_IN getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.REQUEST_MAP_IN.getDefaultInstance();
       }
-      
-      public cg.base.io.proto.MapProtos.RESPONSE_MAP_IN build() {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_IN result = buildPartial();
+
+      public cg.base.io.proto.MapProtos.REQUEST_MAP_IN build() {
+        cg.base.io.proto.MapProtos.REQUEST_MAP_IN result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
-      
-      private cg.base.io.proto.MapProtos.RESPONSE_MAP_IN buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_IN result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
-      public cg.base.io.proto.MapProtos.RESPONSE_MAP_IN buildPartial() {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_IN result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_IN(this);
+
+      public cg.base.io.proto.MapProtos.REQUEST_MAP_IN buildPartial() {
+        cg.base.io.proto.MapProtos.REQUEST_MAP_IN result = new cg.base.io.proto.MapProtos.REQUEST_MAP_IN(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -926,51 +411,29 @@ public final class MapProtos {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.mapInstanceId_ = mapInstanceId_;
+        result.east_ = east_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.mapName_ = mapName_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.east_ = east_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
         result.south_ = south_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.maxEast_ = maxEast_;
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
-        }
-        result.maxSouth_ = maxSouth_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_IN) {
-          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_IN)other);
+        if (other instanceof cg.base.io.proto.MapProtos.REQUEST_MAP_IN) {
+          return mergeFrom((cg.base.io.proto.MapProtos.REQUEST_MAP_IN)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
-      
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_IN other) {
-        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.getDefaultInstance()) return this;
+
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.REQUEST_MAP_IN other) {
+        if (other == cg.base.io.proto.MapProtos.REQUEST_MAP_IN.getDefaultInstance()) return this;
         if (other.hasMapId()) {
           setMapId(other.getMapId());
-        }
-        if (other.hasMapInstanceId()) {
-          setMapInstanceId(other.getMapInstanceId());
-        }
-        if (other.hasMapName()) {
-          setMapName(other.getMapName());
         }
         if (other.hasEast()) {
           setEast(other.getEast());
@@ -978,26 +441,12 @@ public final class MapProtos {
         if (other.hasSouth()) {
           setSouth(other.getSouth());
         }
-        if (other.hasMaxEast()) {
-          setMaxEast(other.getMaxEast());
-        }
-        if (other.hasMaxSouth()) {
-          setMaxSouth(other.getMaxSouth());
-        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasMapId()) {
-          
-          return false;
-        }
-        if (!hasMapInstanceId()) {
-          
-          return false;
-        }
-        if (!hasMapName()) {
           
           return false;
         }
@@ -1009,37 +458,264 @@ public final class MapProtos {
           
           return false;
         }
-        if (!hasMaxEast()) {
-          
-          return false;
-        }
-        if (!hasMaxSouth()) {
-          
-          return false;
-        }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        cg.base.io.proto.MapProtos.REQUEST_MAP_IN parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MapProtos.REQUEST_MAP_IN) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 mapId = 1;
+      private int mapId_ ;
+      /**
+       * <code>required int32 mapId = 1;</code>
+       */
+      public boolean hasMapId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 mapId = 1;</code>
+       */
+      public int getMapId() {
+        return mapId_;
+      }
+      /**
+       * <code>required int32 mapId = 1;</code>
+       */
+      public Builder setMapId(int value) {
+        bitField0_ |= 0x00000001;
+        mapId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 mapId = 1;</code>
+       */
+      public Builder clearMapId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        mapId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 east = 2;
+      private int east_ ;
+      /**
+       * <code>required int32 east = 2;</code>
+       */
+      public boolean hasEast() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 east = 2;</code>
+       */
+      public int getEast() {
+        return east_;
+      }
+      /**
+       * <code>required int32 east = 2;</code>
+       */
+      public Builder setEast(int value) {
+        bitField0_ |= 0x00000002;
+        east_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 east = 2;</code>
+       */
+      public Builder clearEast() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        east_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 south = 3;
+      private int south_ ;
+      /**
+       * <code>required int32 south = 3;</code>
+       */
+      public boolean hasSouth() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required int32 south = 3;</code>
+       */
+      public int getSouth() {
+        return south_;
+      }
+      /**
+       * <code>required int32 south = 3;</code>
+       */
+      public Builder setSouth(int value) {
+        bitField0_ |= 0x00000004;
+        south_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 south = 3;</code>
+       */
+      public Builder clearSouth() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        south_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:REQUEST_MAP_IN)
+    }
+
+    static {
+      defaultInstance = new REQUEST_MAP_IN(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:REQUEST_MAP_IN)
+  }
+
+  public interface RESPONSE_MAP_INOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 mapId = 1;
+    /**
+     * <code>required int32 mapId = 1;</code>
+     */
+    boolean hasMapId();
+    /**
+     * <code>required int32 mapId = 1;</code>
+     */
+    int getMapId();
+
+    // required int32 mapInstanceId = 2;
+    /**
+     * <code>required int32 mapInstanceId = 2;</code>
+     */
+    boolean hasMapInstanceId();
+    /**
+     * <code>required int32 mapInstanceId = 2;</code>
+     */
+    int getMapInstanceId();
+
+    // required string mapName = 3;
+    /**
+     * <code>required string mapName = 3;</code>
+     */
+    boolean hasMapName();
+    /**
+     * <code>required string mapName = 3;</code>
+     */
+    java.lang.String getMapName();
+    /**
+     * <code>required string mapName = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getMapNameBytes();
+
+    // required int32 east = 4;
+    /**
+     * <code>required int32 east = 4;</code>
+     */
+    boolean hasEast();
+    /**
+     * <code>required int32 east = 4;</code>
+     */
+    int getEast();
+
+    // required int32 south = 5;
+    /**
+     * <code>required int32 south = 5;</code>
+     */
+    boolean hasSouth();
+    /**
+     * <code>required int32 south = 5;</code>
+     */
+    int getSouth();
+
+    // required int32 maxEast = 6;
+    /**
+     * <code>required int32 maxEast = 6;</code>
+     */
+    boolean hasMaxEast();
+    /**
+     * <code>required int32 maxEast = 6;</code>
+     */
+    int getMaxEast();
+
+    // required int32 maxSouth = 7;
+    /**
+     * <code>required int32 maxSouth = 7;</code>
+     */
+    boolean hasMaxSouth();
+    /**
+     * <code>required int32 maxSouth = 7;</code>
+     */
+    int getMaxSouth();
+  }
+  /**
+   * Protobuf type {@code RESPONSE_MAP_IN}
+   */
+  public static final class RESPONSE_MAP_IN extends
+      com.google.protobuf.GeneratedMessage
+      implements RESPONSE_MAP_INOrBuilder {
+    // Use RESPONSE_MAP_IN.newBuilder() to construct.
+    private RESPONSE_MAP_IN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private RESPONSE_MAP_IN(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final RESPONSE_MAP_IN defaultInstance;
+    public static RESPONSE_MAP_IN getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public RESPONSE_MAP_IN getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_MAP_IN(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -1080,68 +756,679 @@ public final class MapProtos {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<RESPONSE_MAP_IN> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_IN>() {
+      public RESPONSE_MAP_IN parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_MAP_IN(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_MAP_IN> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 mapId = 1;
+    public static final int MAPID_FIELD_NUMBER = 1;
+    private int mapId_;
+    /**
+     * <code>required int32 mapId = 1;</code>
+     */
+    public boolean hasMapId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 mapId = 1;</code>
+     */
+    public int getMapId() {
+      return mapId_;
+    }
+
+    // required int32 mapInstanceId = 2;
+    public static final int MAPINSTANCEID_FIELD_NUMBER = 2;
+    private int mapInstanceId_;
+    /**
+     * <code>required int32 mapInstanceId = 2;</code>
+     */
+    public boolean hasMapInstanceId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 mapInstanceId = 2;</code>
+     */
+    public int getMapInstanceId() {
+      return mapInstanceId_;
+    }
+
+    // required string mapName = 3;
+    public static final int MAPNAME_FIELD_NUMBER = 3;
+    private java.lang.Object mapName_;
+    /**
+     * <code>required string mapName = 3;</code>
+     */
+    public boolean hasMapName() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required string mapName = 3;</code>
+     */
+    public java.lang.String getMapName() {
+      java.lang.Object ref = mapName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          mapName_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string mapName = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMapNameBytes() {
+      java.lang.Object ref = mapName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        mapName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required int32 east = 4;
+    public static final int EAST_FIELD_NUMBER = 4;
+    private int east_;
+    /**
+     * <code>required int32 east = 4;</code>
+     */
+    public boolean hasEast() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required int32 east = 4;</code>
+     */
+    public int getEast() {
+      return east_;
+    }
+
+    // required int32 south = 5;
+    public static final int SOUTH_FIELD_NUMBER = 5;
+    private int south_;
+    /**
+     * <code>required int32 south = 5;</code>
+     */
+    public boolean hasSouth() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>required int32 south = 5;</code>
+     */
+    public int getSouth() {
+      return south_;
+    }
+
+    // required int32 maxEast = 6;
+    public static final int MAXEAST_FIELD_NUMBER = 6;
+    private int maxEast_;
+    /**
+     * <code>required int32 maxEast = 6;</code>
+     */
+    public boolean hasMaxEast() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>required int32 maxEast = 6;</code>
+     */
+    public int getMaxEast() {
+      return maxEast_;
+    }
+
+    // required int32 maxSouth = 7;
+    public static final int MAXSOUTH_FIELD_NUMBER = 7;
+    private int maxSouth_;
+    /**
+     * <code>required int32 maxSouth = 7;</code>
+     */
+    public boolean hasMaxSouth() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>required int32 maxSouth = 7;</code>
+     */
+    public int getMaxSouth() {
+      return maxSouth_;
+    }
+
+    private void initFields() {
+      mapId_ = 0;
+      mapInstanceId_ = 0;
+      mapName_ = "";
+      east_ = 0;
+      south_ = 0;
+      maxEast_ = 0;
+      maxSouth_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasMapId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMapInstanceId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMapName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasEast()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasSouth()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMaxEast()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMaxSouth()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, mapId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, mapInstanceId_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getMapNameBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, east_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(5, south_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeInt32(6, maxEast_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(7, maxSouth_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, mapId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, mapInstanceId_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getMapNameBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, east_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, south_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, maxEast_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, maxSouth_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_IN prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code RESPONSE_MAP_IN}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_INOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        mapId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        mapInstanceId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        mapName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        east_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        south_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        maxEast_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        maxSouth_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000040);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_descriptor;
+      }
+
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_IN getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_IN build() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_IN result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_IN buildPartial() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_IN result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_IN(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.mapId_ = mapId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.mapInstanceId_ = mapInstanceId_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.mapName_ = mapName_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.east_ = east_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.south_ = south_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.maxEast_ = maxEast_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.maxSouth_ = maxSouth_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_IN) {
+          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_IN)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_IN other) {
+        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.getDefaultInstance()) return this;
+        if (other.hasMapId()) {
+          setMapId(other.getMapId());
+        }
+        if (other.hasMapInstanceId()) {
+          setMapInstanceId(other.getMapInstanceId());
+        }
+        if (other.hasMapName()) {
+          bitField0_ |= 0x00000004;
+          mapName_ = other.mapName_;
+          onChanged();
+        }
+        if (other.hasEast()) {
+          setEast(other.getEast());
+        }
+        if (other.hasSouth()) {
+          setSouth(other.getSouth());
+        }
+        if (other.hasMaxEast()) {
+          setMaxEast(other.getMaxEast());
+        }
+        if (other.hasMaxSouth()) {
+          setMaxSouth(other.getMaxSouth());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasMapId()) {
+          
+          return false;
+        }
+        if (!hasMapInstanceId()) {
+          
+          return false;
+        }
+        if (!hasMapName()) {
+          
+          return false;
+        }
+        if (!hasEast()) {
+          
+          return false;
+        }
+        if (!hasSouth()) {
+          
+          return false;
+        }
+        if (!hasMaxEast()) {
+          
+          return false;
+        }
+        if (!hasMaxSouth()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_IN parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_IN) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
       private int bitField0_;
-      
+
       // required int32 mapId = 1;
       private int mapId_ ;
+      /**
+       * <code>required int32 mapId = 1;</code>
+       */
       public boolean hasMapId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 mapId = 1;</code>
+       */
       public int getMapId() {
         return mapId_;
       }
+      /**
+       * <code>required int32 mapId = 1;</code>
+       */
       public Builder setMapId(int value) {
         bitField0_ |= 0x00000001;
         mapId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 mapId = 1;</code>
+       */
       public Builder clearMapId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         mapId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 mapInstanceId = 2;
       private int mapInstanceId_ ;
+      /**
+       * <code>required int32 mapInstanceId = 2;</code>
+       */
       public boolean hasMapInstanceId() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>required int32 mapInstanceId = 2;</code>
+       */
       public int getMapInstanceId() {
         return mapInstanceId_;
       }
+      /**
+       * <code>required int32 mapInstanceId = 2;</code>
+       */
       public Builder setMapInstanceId(int value) {
         bitField0_ |= 0x00000002;
         mapInstanceId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 mapInstanceId = 2;</code>
+       */
       public Builder clearMapInstanceId() {
         bitField0_ = (bitField0_ & ~0x00000002);
         mapInstanceId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required string mapName = 3;
       private java.lang.Object mapName_ = "";
+      /**
+       * <code>required string mapName = 3;</code>
+       */
       public boolean hasMapName() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public String getMapName() {
+      /**
+       * <code>required string mapName = 3;</code>
+       */
+      public java.lang.String getMapName() {
         java.lang.Object ref = mapName_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           mapName_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setMapName(String value) {
+      /**
+       * <code>required string mapName = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMapNameBytes() {
+        java.lang.Object ref = mapName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          mapName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string mapName = 3;</code>
+       */
+      public Builder setMapName(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1150,251 +1437,519 @@ public final class MapProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>required string mapName = 3;</code>
+       */
       public Builder clearMapName() {
         bitField0_ = (bitField0_ & ~0x00000004);
         mapName_ = getDefaultInstance().getMapName();
         onChanged();
         return this;
       }
-      void setMapName(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
+      /**
+       * <code>required string mapName = 3;</code>
+       */
+      public Builder setMapNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
         mapName_ = value;
         onChanged();
+        return this;
       }
-      
+
       // required int32 east = 4;
       private int east_ ;
+      /**
+       * <code>required int32 east = 4;</code>
+       */
       public boolean hasEast() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
+      /**
+       * <code>required int32 east = 4;</code>
+       */
       public int getEast() {
         return east_;
       }
+      /**
+       * <code>required int32 east = 4;</code>
+       */
       public Builder setEast(int value) {
         bitField0_ |= 0x00000008;
         east_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 east = 4;</code>
+       */
       public Builder clearEast() {
         bitField0_ = (bitField0_ & ~0x00000008);
         east_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 south = 5;
       private int south_ ;
+      /**
+       * <code>required int32 south = 5;</code>
+       */
       public boolean hasSouth() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
+      /**
+       * <code>required int32 south = 5;</code>
+       */
       public int getSouth() {
         return south_;
       }
+      /**
+       * <code>required int32 south = 5;</code>
+       */
       public Builder setSouth(int value) {
         bitField0_ |= 0x00000010;
         south_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 south = 5;</code>
+       */
       public Builder clearSouth() {
         bitField0_ = (bitField0_ & ~0x00000010);
         south_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 maxEast = 6;
       private int maxEast_ ;
+      /**
+       * <code>required int32 maxEast = 6;</code>
+       */
       public boolean hasMaxEast() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
+      /**
+       * <code>required int32 maxEast = 6;</code>
+       */
       public int getMaxEast() {
         return maxEast_;
       }
+      /**
+       * <code>required int32 maxEast = 6;</code>
+       */
       public Builder setMaxEast(int value) {
         bitField0_ |= 0x00000020;
         maxEast_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 maxEast = 6;</code>
+       */
       public Builder clearMaxEast() {
         bitField0_ = (bitField0_ & ~0x00000020);
         maxEast_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 maxSouth = 7;
       private int maxSouth_ ;
+      /**
+       * <code>required int32 maxSouth = 7;</code>
+       */
       public boolean hasMaxSouth() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
+      /**
+       * <code>required int32 maxSouth = 7;</code>
+       */
       public int getMaxSouth() {
         return maxSouth_;
       }
+      /**
+       * <code>required int32 maxSouth = 7;</code>
+       */
       public Builder setMaxSouth(int value) {
         bitField0_ |= 0x00000040;
         maxSouth_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 maxSouth = 7;</code>
+       */
       public Builder clearMaxSouth() {
         bitField0_ = (bitField0_ & ~0x00000040);
         maxSouth_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_IN)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_MAP_IN(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_IN)
   }
-  
+
   public interface REQUEST_MAP_MOVEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 east = 1;
+    /**
+     * <code>required int32 east = 1;</code>
+     */
     boolean hasEast();
+    /**
+     * <code>required int32 east = 1;</code>
+     */
     int getEast();
-    
+
     // required int32 south = 2;
+    /**
+     * <code>required int32 south = 2;</code>
+     */
     boolean hasSouth();
+    /**
+     * <code>required int32 south = 2;</code>
+     */
     int getSouth();
-    
+
     // required bool needEast = 3;
+    /**
+     * <code>required bool needEast = 3;</code>
+     */
     boolean hasNeedEast();
+    /**
+     * <code>required bool needEast = 3;</code>
+     */
     boolean getNeedEast();
-    
+
     // required .VO_MAP_AREA eastArea = 4;
+    /**
+     * <code>required .VO_MAP_AREA eastArea = 4;</code>
+     */
     boolean hasEastArea();
+    /**
+     * <code>required .VO_MAP_AREA eastArea = 4;</code>
+     */
     cg.base.io.proto.VOProtos.VO_MAP_AREA getEastArea();
+    /**
+     * <code>required .VO_MAP_AREA eastArea = 4;</code>
+     */
     cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder getEastAreaOrBuilder();
-    
+
     // required bool needSouth = 5;
+    /**
+     * <code>required bool needSouth = 5;</code>
+     */
     boolean hasNeedSouth();
+    /**
+     * <code>required bool needSouth = 5;</code>
+     */
     boolean getNeedSouth();
-    
+
     // required .VO_MAP_AREA southArea = 6;
+    /**
+     * <code>required .VO_MAP_AREA southArea = 6;</code>
+     */
     boolean hasSouthArea();
+    /**
+     * <code>required .VO_MAP_AREA southArea = 6;</code>
+     */
     cg.base.io.proto.VOProtos.VO_MAP_AREA getSouthArea();
+    /**
+     * <code>required .VO_MAP_AREA southArea = 6;</code>
+     */
     cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder getSouthAreaOrBuilder();
-    
+
     // required int32 serial = 7;
+    /**
+     * <code>required int32 serial = 7;</code>
+     */
     boolean hasSerial();
+    /**
+     * <code>required int32 serial = 7;</code>
+     */
     int getSerial();
   }
+  /**
+   * Protobuf type {@code REQUEST_MAP_MOVE}
+   */
   public static final class REQUEST_MAP_MOVE extends
       com.google.protobuf.GeneratedMessage
       implements REQUEST_MAP_MOVEOrBuilder {
     // Use REQUEST_MAP_MOVE.newBuilder() to construct.
-    private REQUEST_MAP_MOVE(Builder builder) {
+    private REQUEST_MAP_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private REQUEST_MAP_MOVE(boolean noInit) {}
-    
+    private REQUEST_MAP_MOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final REQUEST_MAP_MOVE defaultInstance;
     public static REQUEST_MAP_MOVE getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public REQUEST_MAP_MOVE getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private REQUEST_MAP_MOVE(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              east_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              south_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              needEast_ = input.readBool();
+              break;
+            }
+            case 34: {
+              cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                subBuilder = eastArea_.toBuilder();
+              }
+              eastArea_ = input.readMessage(cg.base.io.proto.VOProtos.VO_MAP_AREA.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(eastArea_);
+                eastArea_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000008;
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              needSouth_ = input.readBool();
+              break;
+            }
+            case 50: {
+              cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000020) == 0x00000020)) {
+                subBuilder = southArea_.toBuilder();
+              }
+              southArea_ = input.readMessage(cg.base.io.proto.VOProtos.VO_MAP_AREA.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(southArea_);
+                southArea_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000020;
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000040;
+              serial_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_MOVE_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_MOVE_fieldAccessorTable;
+      return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_MOVE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.class, cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<REQUEST_MAP_MOVE> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_MAP_MOVE>() {
+      public REQUEST_MAP_MOVE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_MAP_MOVE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_MAP_MOVE> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 east = 1;
     public static final int EAST_FIELD_NUMBER = 1;
     private int east_;
+    /**
+     * <code>required int32 east = 1;</code>
+     */
     public boolean hasEast() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 east = 1;</code>
+     */
     public int getEast() {
       return east_;
     }
-    
+
     // required int32 south = 2;
     public static final int SOUTH_FIELD_NUMBER = 2;
     private int south_;
+    /**
+     * <code>required int32 south = 2;</code>
+     */
     public boolean hasSouth() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
+    /**
+     * <code>required int32 south = 2;</code>
+     */
     public int getSouth() {
       return south_;
     }
-    
+
     // required bool needEast = 3;
     public static final int NEEDEAST_FIELD_NUMBER = 3;
     private boolean needEast_;
+    /**
+     * <code>required bool needEast = 3;</code>
+     */
     public boolean hasNeedEast() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
+    /**
+     * <code>required bool needEast = 3;</code>
+     */
     public boolean getNeedEast() {
       return needEast_;
     }
-    
+
     // required .VO_MAP_AREA eastArea = 4;
     public static final int EASTAREA_FIELD_NUMBER = 4;
     private cg.base.io.proto.VOProtos.VO_MAP_AREA eastArea_;
+    /**
+     * <code>required .VO_MAP_AREA eastArea = 4;</code>
+     */
     public boolean hasEastArea() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
+    /**
+     * <code>required .VO_MAP_AREA eastArea = 4;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_MAP_AREA getEastArea() {
       return eastArea_;
     }
+    /**
+     * <code>required .VO_MAP_AREA eastArea = 4;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder getEastAreaOrBuilder() {
       return eastArea_;
     }
-    
+
     // required bool needSouth = 5;
     public static final int NEEDSOUTH_FIELD_NUMBER = 5;
     private boolean needSouth_;
+    /**
+     * <code>required bool needSouth = 5;</code>
+     */
     public boolean hasNeedSouth() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
+    /**
+     * <code>required bool needSouth = 5;</code>
+     */
     public boolean getNeedSouth() {
       return needSouth_;
     }
-    
+
     // required .VO_MAP_AREA southArea = 6;
     public static final int SOUTHAREA_FIELD_NUMBER = 6;
     private cg.base.io.proto.VOProtos.VO_MAP_AREA southArea_;
+    /**
+     * <code>required .VO_MAP_AREA southArea = 6;</code>
+     */
     public boolean hasSouthArea() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
+    /**
+     * <code>required .VO_MAP_AREA southArea = 6;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_MAP_AREA getSouthArea() {
       return southArea_;
     }
+    /**
+     * <code>required .VO_MAP_AREA southArea = 6;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder getSouthAreaOrBuilder() {
       return southArea_;
     }
-    
+
     // required int32 serial = 7;
     public static final int SERIAL_FIELD_NUMBER = 7;
     private int serial_;
+    /**
+     * <code>required int32 serial = 7;</code>
+     */
     public boolean hasSerial() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
+    /**
+     * <code>required int32 serial = 7;</code>
+     */
     public int getSerial() {
       return serial_;
     }
-    
+
     private void initFields() {
       east_ = 0;
       south_ = 0;
@@ -1408,7 +1963,7 @@ public final class MapProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasEast()) {
         memoizedIsInitialized = 0;
         return false;
@@ -1448,7 +2003,7 @@ public final class MapProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -1475,12 +2030,12 @@ public final class MapProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -1514,94 +2069,83 @@ public final class MapProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code REQUEST_MAP_MOVE}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.MapProtos.REQUEST_MAP_MOVEOrBuilder {
@@ -1609,18 +2153,21 @@ public final class MapProtos {
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_MOVE_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_MOVE_fieldAccessorTable;
+        return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_MOVE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.class, cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1633,7 +2180,7 @@ public final class MapProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         east_ = 0;
@@ -1660,20 +2207,20 @@ public final class MapProtos {
         bitField0_ = (bitField0_ & ~0x00000040);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.getDescriptor();
+        return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_MOVE_descriptor;
       }
-      
+
       public cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE getDefaultInstanceForType() {
         return cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE build() {
         cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE result = buildPartial();
         if (!result.isInitialized()) {
@@ -1681,17 +2228,7 @@ public final class MapProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE buildPartial() {
         cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE result = new cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE(this);
         int from_bitField0_ = bitField0_;
@@ -1736,7 +2273,7 @@ public final class MapProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE) {
           return mergeFrom((cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE)other);
@@ -1745,7 +2282,7 @@ public final class MapProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE other) {
         if (other == cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.getDefaultInstance()) return this;
         if (other.hasEast()) {
@@ -1772,7 +2309,7 @@ public final class MapProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasEast()) {
           
@@ -1812,149 +2349,138 @@ public final class MapProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              east_ = input.readInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              south_ = input.readInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              needEast_ = input.readBool();
-              break;
-            }
-            case 34: {
-              cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder subBuilder = cg.base.io.proto.VOProtos.VO_MAP_AREA.newBuilder();
-              if (hasEastArea()) {
-                subBuilder.mergeFrom(getEastArea());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setEastArea(subBuilder.buildPartial());
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              needSouth_ = input.readBool();
-              break;
-            }
-            case 50: {
-              cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder subBuilder = cg.base.io.proto.VOProtos.VO_MAP_AREA.newBuilder();
-              if (hasSouthArea()) {
-                subBuilder.mergeFrom(getSouthArea());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setSouthArea(subBuilder.buildPartial());
-              break;
-            }
-            case 56: {
-              bitField0_ |= 0x00000040;
-              serial_ = input.readInt32();
-              break;
-            }
+        cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 east = 1;
       private int east_ ;
+      /**
+       * <code>required int32 east = 1;</code>
+       */
       public boolean hasEast() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 east = 1;</code>
+       */
       public int getEast() {
         return east_;
       }
+      /**
+       * <code>required int32 east = 1;</code>
+       */
       public Builder setEast(int value) {
         bitField0_ |= 0x00000001;
         east_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 east = 1;</code>
+       */
       public Builder clearEast() {
         bitField0_ = (bitField0_ & ~0x00000001);
         east_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 south = 2;
       private int south_ ;
+      /**
+       * <code>required int32 south = 2;</code>
+       */
       public boolean hasSouth() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>required int32 south = 2;</code>
+       */
       public int getSouth() {
         return south_;
       }
+      /**
+       * <code>required int32 south = 2;</code>
+       */
       public Builder setSouth(int value) {
         bitField0_ |= 0x00000002;
         south_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 south = 2;</code>
+       */
       public Builder clearSouth() {
         bitField0_ = (bitField0_ & ~0x00000002);
         south_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required bool needEast = 3;
       private boolean needEast_ ;
+      /**
+       * <code>required bool needEast = 3;</code>
+       */
       public boolean hasNeedEast() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>required bool needEast = 3;</code>
+       */
       public boolean getNeedEast() {
         return needEast_;
       }
+      /**
+       * <code>required bool needEast = 3;</code>
+       */
       public Builder setNeedEast(boolean value) {
         bitField0_ |= 0x00000004;
         needEast_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required bool needEast = 3;</code>
+       */
       public Builder clearNeedEast() {
         bitField0_ = (bitField0_ & ~0x00000004);
         needEast_ = false;
         onChanged();
         return this;
       }
-      
+
       // required .VO_MAP_AREA eastArea = 4;
       private cg.base.io.proto.VOProtos.VO_MAP_AREA eastArea_ = cg.base.io.proto.VOProtos.VO_MAP_AREA.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_MAP_AREA, cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder, cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder> eastAreaBuilder_;
+      /**
+       * <code>required .VO_MAP_AREA eastArea = 4;</code>
+       */
       public boolean hasEastArea() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
+      /**
+       * <code>required .VO_MAP_AREA eastArea = 4;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_AREA getEastArea() {
         if (eastAreaBuilder_ == null) {
           return eastArea_;
@@ -1962,6 +2488,9 @@ public final class MapProtos {
           return eastAreaBuilder_.getMessage();
         }
       }
+      /**
+       * <code>required .VO_MAP_AREA eastArea = 4;</code>
+       */
       public Builder setEastArea(cg.base.io.proto.VOProtos.VO_MAP_AREA value) {
         if (eastAreaBuilder_ == null) {
           if (value == null) {
@@ -1975,6 +2504,9 @@ public final class MapProtos {
         bitField0_ |= 0x00000008;
         return this;
       }
+      /**
+       * <code>required .VO_MAP_AREA eastArea = 4;</code>
+       */
       public Builder setEastArea(
           cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder builderForValue) {
         if (eastAreaBuilder_ == null) {
@@ -1986,6 +2518,9 @@ public final class MapProtos {
         bitField0_ |= 0x00000008;
         return this;
       }
+      /**
+       * <code>required .VO_MAP_AREA eastArea = 4;</code>
+       */
       public Builder mergeEastArea(cg.base.io.proto.VOProtos.VO_MAP_AREA value) {
         if (eastAreaBuilder_ == null) {
           if (((bitField0_ & 0x00000008) == 0x00000008) &&
@@ -2002,6 +2537,9 @@ public final class MapProtos {
         bitField0_ |= 0x00000008;
         return this;
       }
+      /**
+       * <code>required .VO_MAP_AREA eastArea = 4;</code>
+       */
       public Builder clearEastArea() {
         if (eastAreaBuilder_ == null) {
           eastArea_ = cg.base.io.proto.VOProtos.VO_MAP_AREA.getDefaultInstance();
@@ -2012,11 +2550,17 @@ public final class MapProtos {
         bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
+      /**
+       * <code>required .VO_MAP_AREA eastArea = 4;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder getEastAreaBuilder() {
         bitField0_ |= 0x00000008;
         onChanged();
         return getEastAreaFieldBuilder().getBuilder();
       }
+      /**
+       * <code>required .VO_MAP_AREA eastArea = 4;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder getEastAreaOrBuilder() {
         if (eastAreaBuilder_ != null) {
           return eastAreaBuilder_.getMessageOrBuilder();
@@ -2024,6 +2568,9 @@ public final class MapProtos {
           return eastArea_;
         }
       }
+      /**
+       * <code>required .VO_MAP_AREA eastArea = 4;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_MAP_AREA, cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder, cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder> 
           getEastAreaFieldBuilder() {
@@ -2037,35 +2584,53 @@ public final class MapProtos {
         }
         return eastAreaBuilder_;
       }
-      
+
       // required bool needSouth = 5;
       private boolean needSouth_ ;
+      /**
+       * <code>required bool needSouth = 5;</code>
+       */
       public boolean hasNeedSouth() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
+      /**
+       * <code>required bool needSouth = 5;</code>
+       */
       public boolean getNeedSouth() {
         return needSouth_;
       }
+      /**
+       * <code>required bool needSouth = 5;</code>
+       */
       public Builder setNeedSouth(boolean value) {
         bitField0_ |= 0x00000010;
         needSouth_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required bool needSouth = 5;</code>
+       */
       public Builder clearNeedSouth() {
         bitField0_ = (bitField0_ & ~0x00000010);
         needSouth_ = false;
         onChanged();
         return this;
       }
-      
+
       // required .VO_MAP_AREA southArea = 6;
       private cg.base.io.proto.VOProtos.VO_MAP_AREA southArea_ = cg.base.io.proto.VOProtos.VO_MAP_AREA.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_MAP_AREA, cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder, cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder> southAreaBuilder_;
+      /**
+       * <code>required .VO_MAP_AREA southArea = 6;</code>
+       */
       public boolean hasSouthArea() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
+      /**
+       * <code>required .VO_MAP_AREA southArea = 6;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_AREA getSouthArea() {
         if (southAreaBuilder_ == null) {
           return southArea_;
@@ -2073,6 +2638,9 @@ public final class MapProtos {
           return southAreaBuilder_.getMessage();
         }
       }
+      /**
+       * <code>required .VO_MAP_AREA southArea = 6;</code>
+       */
       public Builder setSouthArea(cg.base.io.proto.VOProtos.VO_MAP_AREA value) {
         if (southAreaBuilder_ == null) {
           if (value == null) {
@@ -2086,6 +2654,9 @@ public final class MapProtos {
         bitField0_ |= 0x00000020;
         return this;
       }
+      /**
+       * <code>required .VO_MAP_AREA southArea = 6;</code>
+       */
       public Builder setSouthArea(
           cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder builderForValue) {
         if (southAreaBuilder_ == null) {
@@ -2097,6 +2668,9 @@ public final class MapProtos {
         bitField0_ |= 0x00000020;
         return this;
       }
+      /**
+       * <code>required .VO_MAP_AREA southArea = 6;</code>
+       */
       public Builder mergeSouthArea(cg.base.io.proto.VOProtos.VO_MAP_AREA value) {
         if (southAreaBuilder_ == null) {
           if (((bitField0_ & 0x00000020) == 0x00000020) &&
@@ -2113,6 +2687,9 @@ public final class MapProtos {
         bitField0_ |= 0x00000020;
         return this;
       }
+      /**
+       * <code>required .VO_MAP_AREA southArea = 6;</code>
+       */
       public Builder clearSouthArea() {
         if (southAreaBuilder_ == null) {
           southArea_ = cg.base.io.proto.VOProtos.VO_MAP_AREA.getDefaultInstance();
@@ -2123,11 +2700,17 @@ public final class MapProtos {
         bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
+      /**
+       * <code>required .VO_MAP_AREA southArea = 6;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder getSouthAreaBuilder() {
         bitField0_ |= 0x00000020;
         onChanged();
         return getSouthAreaFieldBuilder().getBuilder();
       }
+      /**
+       * <code>required .VO_MAP_AREA southArea = 6;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder getSouthAreaOrBuilder() {
         if (southAreaBuilder_ != null) {
           return southAreaBuilder_.getMessageOrBuilder();
@@ -2135,6 +2718,9 @@ public final class MapProtos {
           return southArea_;
         }
       }
+      /**
+       * <code>required .VO_MAP_AREA southArea = 6;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_MAP_AREA, cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder, cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder> 
           getSouthAreaFieldBuilder() {
@@ -2148,116 +2734,248 @@ public final class MapProtos {
         }
         return southAreaBuilder_;
       }
-      
+
       // required int32 serial = 7;
       private int serial_ ;
+      /**
+       * <code>required int32 serial = 7;</code>
+       */
       public boolean hasSerial() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
+      /**
+       * <code>required int32 serial = 7;</code>
+       */
       public int getSerial() {
         return serial_;
       }
+      /**
+       * <code>required int32 serial = 7;</code>
+       */
       public Builder setSerial(int value) {
         bitField0_ |= 0x00000040;
         serial_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 serial = 7;</code>
+       */
       public Builder clearSerial() {
         bitField0_ = (bitField0_ & ~0x00000040);
         serial_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:REQUEST_MAP_MOVE)
     }
-    
+
     static {
       defaultInstance = new REQUEST_MAP_MOVE(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:REQUEST_MAP_MOVE)
   }
-  
+
   public interface RESPONSE_MAP_MOVEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 serial = 1;
+    /**
+     * <code>required int32 serial = 1;</code>
+     */
     boolean hasSerial();
+    /**
+     * <code>required int32 serial = 1;</code>
+     */
     int getSerial();
-    
+
     // repeated .VO_MAP_CELL mapCells = 2;
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> 
         getMapCellsList();
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     cg.base.io.proto.VOProtos.VO_MAP_CELL getMapCells(int index);
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     int getMapCellsCount();
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     java.util.List<? extends cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder> 
         getMapCellsOrBuilderList();
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder getMapCellsOrBuilder(
         int index);
   }
+  /**
+   * Protobuf type {@code RESPONSE_MAP_MOVE}
+   */
   public static final class RESPONSE_MAP_MOVE extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_MAP_MOVEOrBuilder {
     // Use RESPONSE_MAP_MOVE.newBuilder() to construct.
-    private RESPONSE_MAP_MOVE(Builder builder) {
+    private RESPONSE_MAP_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_MAP_MOVE(boolean noInit) {}
-    
+    private RESPONSE_MAP_MOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_MAP_MOVE defaultInstance;
     public static RESPONSE_MAP_MOVE getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_MAP_MOVE getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_MAP_MOVE(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              serial_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                mapCells_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_MAP_CELL>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              mapCells_.add(input.readMessage(cg.base.io.proto.VOProtos.VO_MAP_CELL.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          mapCells_ = java.util.Collections.unmodifiableList(mapCells_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_MAP_MOVE> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_MOVE>() {
+      public RESPONSE_MAP_MOVE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_MAP_MOVE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_MAP_MOVE> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 serial = 1;
     public static final int SERIAL_FIELD_NUMBER = 1;
     private int serial_;
+    /**
+     * <code>required int32 serial = 1;</code>
+     */
     public boolean hasSerial() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 serial = 1;</code>
+     */
     public int getSerial() {
       return serial_;
     }
-    
+
     // repeated .VO_MAP_CELL mapCells = 2;
     public static final int MAPCELLS_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_;
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     public java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> getMapCellsList() {
       return mapCells_;
     }
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     public java.util.List<? extends cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder> 
         getMapCellsOrBuilderList() {
       return mapCells_;
     }
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     public int getMapCellsCount() {
       return mapCells_.size();
     }
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_MAP_CELL getMapCells(int index) {
       return mapCells_.get(index);
     }
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder getMapCellsOrBuilder(
         int index) {
       return mapCells_.get(index);
     }
-    
+
     private void initFields() {
       serial_ = 0;
       mapCells_ = java.util.Collections.emptyList();
@@ -2266,7 +2984,7 @@ public final class MapProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasSerial()) {
         memoizedIsInitialized = 0;
         return false;
@@ -2280,7 +2998,7 @@ public final class MapProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -2292,12 +3010,12 @@ public final class MapProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2311,94 +3029,83 @@ public final class MapProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_MAP_MOVE}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVEOrBuilder {
@@ -2406,18 +3113,21 @@ public final class MapProtos {
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2429,7 +3139,7 @@ public final class MapProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         serial_ = 0;
@@ -2442,20 +3152,20 @@ public final class MapProtos {
         }
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.getDescriptor();
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_descriptor;
       }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE getDefaultInstanceForType() {
         return cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE build() {
         cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE result = buildPartial();
         if (!result.isInitialized()) {
@@ -2463,17 +3173,7 @@ public final class MapProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE buildPartial() {
         cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE(this);
         int from_bitField0_ = bitField0_;
@@ -2495,7 +3195,7 @@ public final class MapProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE) {
           return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE)other);
@@ -2504,7 +3204,7 @@ public final class MapProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE other) {
         if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.getDefaultInstance()) return this;
         if (other.hasSerial()) {
@@ -2539,7 +3239,7 @@ public final class MapProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasSerial()) {
           
@@ -2553,68 +3253,59 @@ public final class MapProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              serial_ = input.readInt32();
-              break;
-            }
-            case 18: {
-              cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder subBuilder = cg.base.io.proto.VOProtos.VO_MAP_CELL.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addMapCells(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 serial = 1;
       private int serial_ ;
+      /**
+       * <code>required int32 serial = 1;</code>
+       */
       public boolean hasSerial() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 serial = 1;</code>
+       */
       public int getSerial() {
         return serial_;
       }
+      /**
+       * <code>required int32 serial = 1;</code>
+       */
       public Builder setSerial(int value) {
         bitField0_ |= 0x00000001;
         serial_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 serial = 1;</code>
+       */
       public Builder clearSerial() {
         bitField0_ = (bitField0_ & ~0x00000001);
         serial_ = 0;
         onChanged();
         return this;
       }
-      
+
       // repeated .VO_MAP_CELL mapCells = 2;
       private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_ =
         java.util.Collections.emptyList();
@@ -2624,10 +3315,13 @@ public final class MapProtos {
           bitField0_ |= 0x00000002;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.VOProtos.VO_MAP_CELL, cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder, cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder> mapCellsBuilder_;
-      
+
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> getMapCellsList() {
         if (mapCellsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(mapCells_);
@@ -2635,6 +3329,9 @@ public final class MapProtos {
           return mapCellsBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public int getMapCellsCount() {
         if (mapCellsBuilder_ == null) {
           return mapCells_.size();
@@ -2642,6 +3339,9 @@ public final class MapProtos {
           return mapCellsBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELL getMapCells(int index) {
         if (mapCellsBuilder_ == null) {
           return mapCells_.get(index);
@@ -2649,6 +3349,9 @@ public final class MapProtos {
           return mapCellsBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public Builder setMapCells(
           int index, cg.base.io.proto.VOProtos.VO_MAP_CELL value) {
         if (mapCellsBuilder_ == null) {
@@ -2663,6 +3366,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public Builder setMapCells(
           int index, cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder builderForValue) {
         if (mapCellsBuilder_ == null) {
@@ -2674,6 +3380,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public Builder addMapCells(cg.base.io.proto.VOProtos.VO_MAP_CELL value) {
         if (mapCellsBuilder_ == null) {
           if (value == null) {
@@ -2687,6 +3396,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public Builder addMapCells(
           int index, cg.base.io.proto.VOProtos.VO_MAP_CELL value) {
         if (mapCellsBuilder_ == null) {
@@ -2701,6 +3413,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public Builder addMapCells(
           cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder builderForValue) {
         if (mapCellsBuilder_ == null) {
@@ -2712,6 +3427,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public Builder addMapCells(
           int index, cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder builderForValue) {
         if (mapCellsBuilder_ == null) {
@@ -2723,6 +3441,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public Builder addAllMapCells(
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_MAP_CELL> values) {
         if (mapCellsBuilder_ == null) {
@@ -2734,6 +3455,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public Builder clearMapCells() {
         if (mapCellsBuilder_ == null) {
           mapCells_ = java.util.Collections.emptyList();
@@ -2744,6 +3468,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public Builder removeMapCells(int index) {
         if (mapCellsBuilder_ == null) {
           ensureMapCellsIsMutable();
@@ -2754,10 +3481,16 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder getMapCellsBuilder(
           int index) {
         return getMapCellsFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder getMapCellsOrBuilder(
           int index) {
         if (mapCellsBuilder_ == null) {
@@ -2765,6 +3498,9 @@ public final class MapProtos {
           return mapCellsBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public java.util.List<? extends cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder> 
            getMapCellsOrBuilderList() {
         if (mapCellsBuilder_ != null) {
@@ -2773,15 +3509,24 @@ public final class MapProtos {
           return java.util.Collections.unmodifiableList(mapCells_);
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder addMapCellsBuilder() {
         return getMapCellsFieldBuilder().addBuilder(
             cg.base.io.proto.VOProtos.VO_MAP_CELL.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder addMapCellsBuilder(
           int index) {
         return getMapCellsFieldBuilder().addBuilder(
             index, cg.base.io.proto.VOProtos.VO_MAP_CELL.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
+       */
       public java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder> 
            getMapCellsBuilderList() {
         return getMapCellsFieldBuilder().getBuilderList();
@@ -2800,394 +3545,132 @@ public final class MapProtos {
         }
         return mapCellsBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_MOVE)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_MAP_MOVE(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_MOVE)
   }
-  
+
   public interface VO_MAP_UNIT_EXTENDOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // optional int32 ownerInstanceId = 1;
+    /**
+     * <code>optional int32 ownerInstanceId = 1;</code>
+     *
+     * <pre>
+     * pet
+     * </pre>
+     */
     boolean hasOwnerInstanceId();
+    /**
+     * <code>optional int32 ownerInstanceId = 1;</code>
+     *
+     * <pre>
+     * pet
+     * </pre>
+     */
     int getOwnerInstanceId();
-    
+
     // optional int32 state = 2;
+    /**
+     * <code>optional int32 state = 2;</code>
+     *
+     * <pre>
+     * pet
+     * </pre>
+     */
     boolean hasState();
+    /**
+     * <code>optional int32 state = 2;</code>
+     *
+     * <pre>
+     * pet
+     * </pre>
+     */
     int getState();
-    
+
     // optional string talkType = 3;
+    /**
+     * <code>optional string talkType = 3;</code>
+     *
+     * <pre>
+     * npc
+     * </pre>
+     */
     boolean hasTalkType();
-    String getTalkType();
+    /**
+     * <code>optional string talkType = 3;</code>
+     *
+     * <pre>
+     * npc
+     * </pre>
+     */
+    java.lang.String getTalkType();
+    /**
+     * <code>optional string talkType = 3;</code>
+     *
+     * <pre>
+     * npc
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getTalkTypeBytes();
   }
+  /**
+   * Protobuf type {@code VO_MAP_UNIT_EXTEND}
+   */
   public static final class VO_MAP_UNIT_EXTEND extends
       com.google.protobuf.GeneratedMessage
       implements VO_MAP_UNIT_EXTENDOrBuilder {
     // Use VO_MAP_UNIT_EXTEND.newBuilder() to construct.
-    private VO_MAP_UNIT_EXTEND(Builder builder) {
+    private VO_MAP_UNIT_EXTEND(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private VO_MAP_UNIT_EXTEND(boolean noInit) {}
-    
+    private VO_MAP_UNIT_EXTEND(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final VO_MAP_UNIT_EXTEND defaultInstance;
     public static VO_MAP_UNIT_EXTEND getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public VO_MAP_UNIT_EXTEND getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_descriptor;
-    }
-    
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // optional int32 ownerInstanceId = 1;
-    public static final int OWNERINSTANCEID_FIELD_NUMBER = 1;
-    private int ownerInstanceId_;
-    public boolean hasOwnerInstanceId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public int getOwnerInstanceId() {
-      return ownerInstanceId_;
-    }
-    
-    // optional int32 state = 2;
-    public static final int STATE_FIELD_NUMBER = 2;
-    private int state_;
-    public boolean hasState() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public int getState() {
-      return state_;
-    }
-    
-    // optional string talkType = 3;
-    public static final int TALKTYPE_FIELD_NUMBER = 3;
-    private java.lang.Object talkType_;
-    public boolean hasTalkType() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public String getTalkType() {
-      java.lang.Object ref = talkType_;
-      if (ref instanceof String) {
-        return (String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          talkType_ = s;
-        }
-        return s;
-      }
-    }
-    private com.google.protobuf.ByteString getTalkTypeBytes() {
-      java.lang.Object ref = talkType_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        talkType_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    
-    private void initFields() {
-      ownerInstanceId_ = 0;
-      state_ = 0;
-      talkType_ = "";
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-      
-      memoizedIsInitialized = 1;
-      return true;
-    }
-    
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, ownerInstanceId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, state_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, getTalkTypeBytes());
-      }
-      getUnknownFields().writeTo(output);
-    }
-    
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-    
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, ownerInstanceId_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, state_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(3, getTalkTypeBytes());
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-    
-    private static final long serialVersionUID = 0L;
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
     @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
     }
-    
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
+    private VO_MAP_UNIT_EXTEND(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-    
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_descriptor;
-      }
-      
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_fieldAccessorTable;
-      }
-      
-      // Construct using cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      
-      private Builder(BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-      
-      public Builder clear() {
-        super.clear();
-        ownerInstanceId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        state_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        talkType_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
-        return this;
-      }
-      
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-      
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDescriptor();
-      }
-      
-      public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDefaultInstance();
-      }
-      
-      public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND build() {
-        cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-      
-      private cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
-      public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND buildPartial() {
-        cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND result = new cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.ownerInstanceId_ = ownerInstanceId_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.state_ = state_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.talkType_ = talkType_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-      
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND) {
-          return mergeFrom((cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-      
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND other) {
-        if (other == cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDefaultInstance()) return this;
-        if (other.hasOwnerInstanceId()) {
-          setOwnerInstanceId(other.getOwnerInstanceId());
-        }
-        if (other.hasState()) {
-          setState(other.getState());
-        }
-        if (other.hasTalkType()) {
-          setTalkType(other.getTalkType());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-      
-      public final boolean isInitialized() {
-        return true;
-      }
-      
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -3208,68 +3691,567 @@ public final class MapProtos {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.class, cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<VO_MAP_UNIT_EXTEND> PARSER =
+        new com.google.protobuf.AbstractParser<VO_MAP_UNIT_EXTEND>() {
+      public VO_MAP_UNIT_EXTEND parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_MAP_UNIT_EXTEND(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_MAP_UNIT_EXTEND> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // optional int32 ownerInstanceId = 1;
+    public static final int OWNERINSTANCEID_FIELD_NUMBER = 1;
+    private int ownerInstanceId_;
+    /**
+     * <code>optional int32 ownerInstanceId = 1;</code>
+     *
+     * <pre>
+     * pet
+     * </pre>
+     */
+    public boolean hasOwnerInstanceId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional int32 ownerInstanceId = 1;</code>
+     *
+     * <pre>
+     * pet
+     * </pre>
+     */
+    public int getOwnerInstanceId() {
+      return ownerInstanceId_;
+    }
+
+    // optional int32 state = 2;
+    public static final int STATE_FIELD_NUMBER = 2;
+    private int state_;
+    /**
+     * <code>optional int32 state = 2;</code>
+     *
+     * <pre>
+     * pet
+     * </pre>
+     */
+    public boolean hasState() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional int32 state = 2;</code>
+     *
+     * <pre>
+     * pet
+     * </pre>
+     */
+    public int getState() {
+      return state_;
+    }
+
+    // optional string talkType = 3;
+    public static final int TALKTYPE_FIELD_NUMBER = 3;
+    private java.lang.Object talkType_;
+    /**
+     * <code>optional string talkType = 3;</code>
+     *
+     * <pre>
+     * npc
+     * </pre>
+     */
+    public boolean hasTalkType() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional string talkType = 3;</code>
+     *
+     * <pre>
+     * npc
+     * </pre>
+     */
+    public java.lang.String getTalkType() {
+      java.lang.Object ref = talkType_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          talkType_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string talkType = 3;</code>
+     *
+     * <pre>
+     * npc
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getTalkTypeBytes() {
+      java.lang.Object ref = talkType_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        talkType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      ownerInstanceId_ = 0;
+      state_ = 0;
+      talkType_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, ownerInstanceId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, state_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getTalkTypeBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, ownerInstanceId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, state_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getTalkTypeBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code VO_MAP_UNIT_EXTEND}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.class, cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        ownerInstanceId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        state_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        talkType_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_descriptor;
+      }
+
+      public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND build() {
+        cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND buildPartial() {
+        cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND result = new cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.ownerInstanceId_ = ownerInstanceId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.state_ = state_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.talkType_ = talkType_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND) {
+          return mergeFrom((cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND other) {
+        if (other == cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.getDefaultInstance()) return this;
+        if (other.hasOwnerInstanceId()) {
+          setOwnerInstanceId(other.getOwnerInstanceId());
+        }
+        if (other.hasState()) {
+          setState(other.getState());
+        }
+        if (other.hasTalkType()) {
+          bitField0_ |= 0x00000004;
+          talkType_ = other.talkType_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
       private int bitField0_;
-      
+
       // optional int32 ownerInstanceId = 1;
       private int ownerInstanceId_ ;
+      /**
+       * <code>optional int32 ownerInstanceId = 1;</code>
+       *
+       * <pre>
+       * pet
+       * </pre>
+       */
       public boolean hasOwnerInstanceId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>optional int32 ownerInstanceId = 1;</code>
+       *
+       * <pre>
+       * pet
+       * </pre>
+       */
       public int getOwnerInstanceId() {
         return ownerInstanceId_;
       }
+      /**
+       * <code>optional int32 ownerInstanceId = 1;</code>
+       *
+       * <pre>
+       * pet
+       * </pre>
+       */
       public Builder setOwnerInstanceId(int value) {
         bitField0_ |= 0x00000001;
         ownerInstanceId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 ownerInstanceId = 1;</code>
+       *
+       * <pre>
+       * pet
+       * </pre>
+       */
       public Builder clearOwnerInstanceId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         ownerInstanceId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional int32 state = 2;
       private int state_ ;
+      /**
+       * <code>optional int32 state = 2;</code>
+       *
+       * <pre>
+       * pet
+       * </pre>
+       */
       public boolean hasState() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>optional int32 state = 2;</code>
+       *
+       * <pre>
+       * pet
+       * </pre>
+       */
       public int getState() {
         return state_;
       }
+      /**
+       * <code>optional int32 state = 2;</code>
+       *
+       * <pre>
+       * pet
+       * </pre>
+       */
       public Builder setState(int value) {
         bitField0_ |= 0x00000002;
         state_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>optional int32 state = 2;</code>
+       *
+       * <pre>
+       * pet
+       * </pre>
+       */
       public Builder clearState() {
         bitField0_ = (bitField0_ & ~0x00000002);
         state_ = 0;
         onChanged();
         return this;
       }
-      
+
       // optional string talkType = 3;
       private java.lang.Object talkType_ = "";
+      /**
+       * <code>optional string talkType = 3;</code>
+       *
+       * <pre>
+       * npc
+       * </pre>
+       */
       public boolean hasTalkType() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public String getTalkType() {
+      /**
+       * <code>optional string talkType = 3;</code>
+       *
+       * <pre>
+       * npc
+       * </pre>
+       */
+      public java.lang.String getTalkType() {
         java.lang.Object ref = talkType_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           talkType_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setTalkType(String value) {
+      /**
+       * <code>optional string talkType = 3;</code>
+       *
+       * <pre>
+       * npc
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getTalkTypeBytes() {
+        java.lang.Object ref = talkType_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          talkType_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string talkType = 3;</code>
+       *
+       * <pre>
+       * npc
+       * </pre>
+       */
+      public Builder setTalkType(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3278,79 +4260,191 @@ public final class MapProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>optional string talkType = 3;</code>
+       *
+       * <pre>
+       * npc
+       * </pre>
+       */
       public Builder clearTalkType() {
         bitField0_ = (bitField0_ & ~0x00000004);
         talkType_ = getDefaultInstance().getTalkType();
         onChanged();
         return this;
       }
-      void setTalkType(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000004;
+      /**
+       * <code>optional string talkType = 3;</code>
+       *
+       * <pre>
+       * npc
+       * </pre>
+       */
+      public Builder setTalkTypeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
         talkType_ = value;
         onChanged();
+        return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:VO_MAP_UNIT_EXTEND)
     }
-    
+
     static {
       defaultInstance = new VO_MAP_UNIT_EXTEND(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:VO_MAP_UNIT_EXTEND)
   }
-  
+
   public interface RESPONSE_MAP_UNIT_CREATEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required .VO_UNIT unitInfo = 1;
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     boolean hasUnitInfo();
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo();
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder();
   }
+  /**
+   * Protobuf type {@code RESPONSE_MAP_UNIT_CREATE}
+   */
   public static final class RESPONSE_MAP_UNIT_CREATE extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_MAP_UNIT_CREATEOrBuilder {
     // Use RESPONSE_MAP_UNIT_CREATE.newBuilder() to construct.
-    private RESPONSE_MAP_UNIT_CREATE(Builder builder) {
+    private RESPONSE_MAP_UNIT_CREATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_MAP_UNIT_CREATE(boolean noInit) {}
-    
+    private RESPONSE_MAP_UNIT_CREATE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_MAP_UNIT_CREATE defaultInstance;
     public static RESPONSE_MAP_UNIT_CREATE getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_MAP_UNIT_CREATE getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_MAP_UNIT_CREATE(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              cg.base.io.proto.VOProtos.VO_UNIT.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = unitInfo_.toBuilder();
+              }
+              unitInfo_ = input.readMessage(cg.base.io.proto.VOProtos.VO_UNIT.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(unitInfo_);
+                unitInfo_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_MAP_UNIT_CREATE> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_UNIT_CREATE>() {
+      public RESPONSE_MAP_UNIT_CREATE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_MAP_UNIT_CREATE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_MAP_UNIT_CREATE> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required .VO_UNIT unitInfo = 1;
     public static final int UNITINFO_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_;
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     public boolean hasUnitInfo() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
       return unitInfo_;
     }
+    /**
+     * <code>required .VO_UNIT unitInfo = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
       return unitInfo_;
     }
-    
+
     private void initFields() {
       unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
     }
@@ -3358,7 +4452,7 @@ public final class MapProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasUnitInfo()) {
         memoizedIsInitialized = 0;
         return false;
@@ -3370,7 +4464,7 @@ public final class MapProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -3379,12 +4473,12 @@ public final class MapProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -3394,94 +4488,83 @@ public final class MapProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_MAP_UNIT_CREATE}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATEOrBuilder {
@@ -3489,18 +4572,21 @@ public final class MapProtos {
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3512,7 +4598,7 @@ public final class MapProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         if (unitInfoBuilder_ == null) {
@@ -3523,20 +4609,20 @@ public final class MapProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.getDescriptor();
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor;
       }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE getDefaultInstanceForType() {
         return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE build() {
         cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE result = buildPartial();
         if (!result.isInitialized()) {
@@ -3544,17 +4630,7 @@ public final class MapProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE buildPartial() {
         cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE(this);
         int from_bitField0_ = bitField0_;
@@ -3571,7 +4647,7 @@ public final class MapProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE) {
           return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE)other);
@@ -3580,7 +4656,7 @@ public final class MapProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE other) {
         if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.getDefaultInstance()) return this;
         if (other.hasUnitInfo()) {
@@ -3589,7 +4665,7 @@ public final class MapProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasUnitInfo()) {
           
@@ -3601,52 +4677,39 @@ public final class MapProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              cg.base.io.proto.VOProtos.VO_UNIT.Builder subBuilder = cg.base.io.proto.VOProtos.VO_UNIT.newBuilder();
-              if (hasUnitInfo()) {
-                subBuilder.mergeFrom(getUnitInfo());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setUnitInfo(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required .VO_UNIT unitInfo = 1;
       private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> unitInfoBuilder_;
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public boolean hasUnitInfo() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_UNIT getUnitInfo() {
         if (unitInfoBuilder_ == null) {
           return unitInfo_;
@@ -3654,6 +4717,9 @@ public final class MapProtos {
           return unitInfoBuilder_.getMessage();
         }
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public Builder setUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
         if (unitInfoBuilder_ == null) {
           if (value == null) {
@@ -3667,6 +4733,9 @@ public final class MapProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public Builder setUnitInfo(
           cg.base.io.proto.VOProtos.VO_UNIT.Builder builderForValue) {
         if (unitInfoBuilder_ == null) {
@@ -3678,6 +4747,9 @@ public final class MapProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public Builder mergeUnitInfo(cg.base.io.proto.VOProtos.VO_UNIT value) {
         if (unitInfoBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
@@ -3694,6 +4766,9 @@ public final class MapProtos {
         bitField0_ |= 0x00000001;
         return this;
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public Builder clearUnitInfo() {
         if (unitInfoBuilder_ == null) {
           unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
@@ -3704,11 +4779,17 @@ public final class MapProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_UNIT.Builder getUnitInfoBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getUnitInfoFieldBuilder().getBuilder();
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder() {
         if (unitInfoBuilder_ != null) {
           return unitInfoBuilder_.getMessageOrBuilder();
@@ -3716,6 +4797,9 @@ public final class MapProtos {
           return unitInfo_;
         }
       }
+      /**
+       * <code>required .VO_UNIT unitInfo = 1;</code>
+       */
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> 
           getUnitInfoFieldBuilder() {
@@ -3729,435 +4813,109 @@ public final class MapProtos {
         }
         return unitInfoBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_UNIT_CREATE)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_MAP_UNIT_CREATE(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_CREATE)
   }
-  
+
   public interface RESPONSE_MAP_UNIT_MOVEOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 unitType = 1;
+    /**
+     * <code>required int32 unitType = 1;</code>
+     */
     boolean hasUnitType();
+    /**
+     * <code>required int32 unitType = 1;</code>
+     */
     int getUnitType();
-    
+
     // required int32 instanceId = 2;
+    /**
+     * <code>required int32 instanceId = 2;</code>
+     */
     boolean hasInstanceId();
+    /**
+     * <code>required int32 instanceId = 2;</code>
+     */
     int getInstanceId();
-    
+
     // required int32 east = 3;
+    /**
+     * <code>required int32 east = 3;</code>
+     */
     boolean hasEast();
+    /**
+     * <code>required int32 east = 3;</code>
+     */
     int getEast();
-    
+
     // required int32 south = 4;
+    /**
+     * <code>required int32 south = 4;</code>
+     */
     boolean hasSouth();
+    /**
+     * <code>required int32 south = 4;</code>
+     */
     int getSouth();
   }
+  /**
+   * Protobuf type {@code RESPONSE_MAP_UNIT_MOVE}
+   */
   public static final class RESPONSE_MAP_UNIT_MOVE extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_MAP_UNIT_MOVEOrBuilder {
     // Use RESPONSE_MAP_UNIT_MOVE.newBuilder() to construct.
-    private RESPONSE_MAP_UNIT_MOVE(Builder builder) {
+    private RESPONSE_MAP_UNIT_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_MAP_UNIT_MOVE(boolean noInit) {}
-    
+    private RESPONSE_MAP_UNIT_MOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_MAP_UNIT_MOVE defaultInstance;
     public static RESPONSE_MAP_UNIT_MOVE getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_MAP_UNIT_MOVE getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
-    }
-    
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable;
-    }
-    
-    private int bitField0_;
-    // required int32 unitType = 1;
-    public static final int UNITTYPE_FIELD_NUMBER = 1;
-    private int unitType_;
-    public boolean hasUnitType() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    public int getUnitType() {
-      return unitType_;
-    }
-    
-    // required int32 instanceId = 2;
-    public static final int INSTANCEID_FIELD_NUMBER = 2;
-    private int instanceId_;
-    public boolean hasInstanceId() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    public int getInstanceId() {
-      return instanceId_;
-    }
-    
-    // required int32 east = 3;
-    public static final int EAST_FIELD_NUMBER = 3;
-    private int east_;
-    public boolean hasEast() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public int getEast() {
-      return east_;
-    }
-    
-    // required int32 south = 4;
-    public static final int SOUTH_FIELD_NUMBER = 4;
-    private int south_;
-    public boolean hasSouth() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    public int getSouth() {
-      return south_;
-    }
-    
-    private void initFields() {
-      unitType_ = 0;
-      instanceId_ = 0;
-      east_ = 0;
-      south_ = 0;
-    }
-    private byte memoizedIsInitialized = -1;
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
-      
-      if (!hasUnitType()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasInstanceId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasEast()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasSouth()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      memoizedIsInitialized = 1;
-      return true;
-    }
-    
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      getSerializedSize();
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, unitType_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, instanceId_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, east_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, south_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-    
-    private int memoizedSerializedSize = -1;
-    public int getSerializedSize() {
-      int size = memoizedSerializedSize;
-      if (size != -1) return size;
-    
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, unitType_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, instanceId_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, east_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, south_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSerializedSize = size;
-      return size;
-    }
-    
-    private static final long serialVersionUID = 0L;
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
     @java.lang.Override
-    protected java.lang.Object writeReplace()
-        throws java.io.ObjectStreamException {
-      return super.writeReplace();
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
     }
-    
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
-    }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
-    }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
+    private RESPONSE_MAP_UNIT_MOVE(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
-    }
-    
-    public static Builder newBuilder() { return Builder.create(); }
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE prototype) {
-      return newBuilder().mergeFrom(prototype);
-    }
-    public Builder toBuilder() { return newBuilder(this); }
-    
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVEOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
-      }
-      
-      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable;
-      }
-      
-      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      
-      private Builder(BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-        }
-      }
-      private static Builder create() {
-        return new Builder();
-      }
-      
-      public Builder clear() {
-        super.clear();
-        unitType_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        instanceId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        east_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        south_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        return this;
-      }
-      
-      public Builder clone() {
-        return create().mergeFrom(buildPartial());
-      }
-      
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.getDescriptor();
-      }
-      
-      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE getDefaultInstanceForType() {
-        return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.getDefaultInstance();
-      }
-      
-      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE build() {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-      
-      private cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
-      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE buildPartial() {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.unitType_ = unitType_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.instanceId_ = instanceId_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.east_ = east_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.south_ = south_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
-      }
-      
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE) {
-          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-      
-      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE other) {
-        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.getDefaultInstance()) return this;
-        if (other.hasUnitType()) {
-          setUnitType(other.getUnitType());
-        }
-        if (other.hasInstanceId()) {
-          setInstanceId(other.getInstanceId());
-        }
-        if (other.hasEast()) {
-          setEast(other.getEast());
-        }
-        if (other.hasSouth()) {
-          setSouth(other.getSouth());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        return this;
-      }
-      
-      public final boolean isInitialized() {
-        if (!hasUnitType()) {
-          
-          return false;
-        }
-        if (!hasInstanceId()) {
-          
-          return false;
-        }
-        if (!hasEast()) {
-          
-          return false;
-        }
-        if (!hasSouth()) {
-          
-          return false;
-        }
-        return true;
-      }
-      
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
           int tag = input.readTag();
           switch (tag) {
             case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
+              done = true;
+              break;
             default: {
               if (!parseUnknownField(input, unknownFields,
                                      extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
+                done = true;
               }
               break;
             }
@@ -4183,297 +4941,282 @@ public final class MapProtos {
             }
           }
         }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
       }
-      
-      private int bitField0_;
-      
-      // required int32 unitType = 1;
-      private int unitType_ ;
-      public boolean hasUnitType() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      public int getUnitType() {
-        return unitType_;
-      }
-      public Builder setUnitType(int value) {
-        bitField0_ |= 0x00000001;
-        unitType_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearUnitType() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        unitType_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // required int32 instanceId = 2;
-      private int instanceId_ ;
-      public boolean hasInstanceId() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      public int getInstanceId() {
-        return instanceId_;
-      }
-      public Builder setInstanceId(int value) {
-        bitField0_ |= 0x00000002;
-        instanceId_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearInstanceId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        instanceId_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // required int32 east = 3;
-      private int east_ ;
-      public boolean hasEast() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      public int getEast() {
-        return east_;
-      }
-      public Builder setEast(int value) {
-        bitField0_ |= 0x00000004;
-        east_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearEast() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        east_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // required int32 south = 4;
-      private int south_ ;
-      public boolean hasSouth() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      public int getSouth() {
-        return south_;
-      }
-      public Builder setSouth(int value) {
-        bitField0_ |= 0x00000008;
-        south_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearSouth() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        south_ = 0;
-        onChanged();
-        return this;
-      }
-      
-      // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_UNIT_MOVE)
     }
-    
-    static {
-      defaultInstance = new RESPONSE_MAP_UNIT_MOVE(true);
-      defaultInstance.initFields();
-    }
-    
-    // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_MOVE)
-  }
-  
-  public interface RESPONSE_MAP_UNIT_REMOVEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
-    
-    // required int32 instanceId = 1;
-    boolean hasInstanceId();
-    int getInstanceId();
-  }
-  public static final class RESPONSE_MAP_UNIT_REMOVE extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_MAP_UNIT_REMOVEOrBuilder {
-    // Use RESPONSE_MAP_UNIT_REMOVE.newBuilder() to construct.
-    private RESPONSE_MAP_UNIT_REMOVE(Builder builder) {
-      super(builder);
-    }
-    private RESPONSE_MAP_UNIT_REMOVE(boolean noInit) {}
-    
-    private static final RESPONSE_MAP_UNIT_REMOVE defaultInstance;
-    public static RESPONSE_MAP_UNIT_REMOVE getDefaultInstance() {
-      return defaultInstance;
-    }
-    
-    public RESPONSE_MAP_UNIT_REMOVE getDefaultInstanceForType() {
-      return defaultInstance;
-    }
-    
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_MAP_UNIT_MOVE> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_UNIT_MOVE>() {
+      public RESPONSE_MAP_UNIT_MOVE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_MAP_UNIT_MOVE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_MAP_UNIT_MOVE> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
-    // required int32 instanceId = 1;
-    public static final int INSTANCEID_FIELD_NUMBER = 1;
-    private int instanceId_;
-    public boolean hasInstanceId() {
+    // required int32 unitType = 1;
+    public static final int UNITTYPE_FIELD_NUMBER = 1;
+    private int unitType_;
+    /**
+     * <code>required int32 unitType = 1;</code>
+     */
+    public boolean hasUnitType() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 unitType = 1;</code>
+     */
+    public int getUnitType() {
+      return unitType_;
+    }
+
+    // required int32 instanceId = 2;
+    public static final int INSTANCEID_FIELD_NUMBER = 2;
+    private int instanceId_;
+    /**
+     * <code>required int32 instanceId = 2;</code>
+     */
+    public boolean hasInstanceId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 instanceId = 2;</code>
+     */
     public int getInstanceId() {
       return instanceId_;
     }
-    
+
+    // required int32 east = 3;
+    public static final int EAST_FIELD_NUMBER = 3;
+    private int east_;
+    /**
+     * <code>required int32 east = 3;</code>
+     */
+    public boolean hasEast() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required int32 east = 3;</code>
+     */
+    public int getEast() {
+      return east_;
+    }
+
+    // required int32 south = 4;
+    public static final int SOUTH_FIELD_NUMBER = 4;
+    private int south_;
+    /**
+     * <code>required int32 south = 4;</code>
+     */
+    public boolean hasSouth() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required int32 south = 4;</code>
+     */
+    public int getSouth() {
+      return south_;
+    }
+
     private void initFields() {
+      unitType_ = 0;
       instanceId_ = 0;
+      east_ = 0;
+      south_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
+      if (!hasUnitType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       if (!hasInstanceId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasEast()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasSouth()) {
         memoizedIsInitialized = 0;
         return false;
       }
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, instanceId_);
+        output.writeInt32(1, unitType_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, instanceId_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, east_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, south_);
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, instanceId_);
+          .computeInt32Size(1, unitType_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, instanceId_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, east_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, south_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(byte[] data)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseDelimitedFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE prototype) {
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_MAP_UNIT_MOVE}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVEOrBuilder {
+       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.Builder.class);
       }
-      
-      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.newBuilder()
+
+      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4484,27 +5227,569 @@ public final class MapProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
+      public Builder clear() {
+        super.clear();
+        unitType_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        instanceId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        east_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        south_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
+      }
+
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE getDefaultInstanceForType() {
+        return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE build() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE buildPartial() {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.unitType_ = unitType_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.instanceId_ = instanceId_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.east_ = east_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.south_ = south_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE) {
+          return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE other) {
+        if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.getDefaultInstance()) return this;
+        if (other.hasUnitType()) {
+          setUnitType(other.getUnitType());
+        }
+        if (other.hasInstanceId()) {
+          setInstanceId(other.getInstanceId());
+        }
+        if (other.hasEast()) {
+          setEast(other.getEast());
+        }
+        if (other.hasSouth()) {
+          setSouth(other.getSouth());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasUnitType()) {
+          
+          return false;
+        }
+        if (!hasInstanceId()) {
+          
+          return false;
+        }
+        if (!hasEast()) {
+          
+          return false;
+        }
+        if (!hasSouth()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required int32 unitType = 1;
+      private int unitType_ ;
+      /**
+       * <code>required int32 unitType = 1;</code>
+       */
+      public boolean hasUnitType() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 unitType = 1;</code>
+       */
+      public int getUnitType() {
+        return unitType_;
+      }
+      /**
+       * <code>required int32 unitType = 1;</code>
+       */
+      public Builder setUnitType(int value) {
+        bitField0_ |= 0x00000001;
+        unitType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 unitType = 1;</code>
+       */
+      public Builder clearUnitType() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        unitType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 instanceId = 2;
+      private int instanceId_ ;
+      /**
+       * <code>required int32 instanceId = 2;</code>
+       */
+      public boolean hasInstanceId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 instanceId = 2;</code>
+       */
+      public int getInstanceId() {
+        return instanceId_;
+      }
+      /**
+       * <code>required int32 instanceId = 2;</code>
+       */
+      public Builder setInstanceId(int value) {
+        bitField0_ |= 0x00000002;
+        instanceId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 instanceId = 2;</code>
+       */
+      public Builder clearInstanceId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        instanceId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 east = 3;
+      private int east_ ;
+      /**
+       * <code>required int32 east = 3;</code>
+       */
+      public boolean hasEast() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required int32 east = 3;</code>
+       */
+      public int getEast() {
+        return east_;
+      }
+      /**
+       * <code>required int32 east = 3;</code>
+       */
+      public Builder setEast(int value) {
+        bitField0_ |= 0x00000004;
+        east_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 east = 3;</code>
+       */
+      public Builder clearEast() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        east_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required int32 south = 4;
+      private int south_ ;
+      /**
+       * <code>required int32 south = 4;</code>
+       */
+      public boolean hasSouth() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required int32 south = 4;</code>
+       */
+      public int getSouth() {
+        return south_;
+      }
+      /**
+       * <code>required int32 south = 4;</code>
+       */
+      public Builder setSouth(int value) {
+        bitField0_ |= 0x00000008;
+        south_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 south = 4;</code>
+       */
+      public Builder clearSouth() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        south_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_UNIT_MOVE)
+    }
+
+    static {
+      defaultInstance = new RESPONSE_MAP_UNIT_MOVE(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_MOVE)
+  }
+
+  public interface RESPONSE_MAP_UNIT_REMOVEOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required int32 instanceId = 1;
+    /**
+     * <code>required int32 instanceId = 1;</code>
+     */
+    boolean hasInstanceId();
+    /**
+     * <code>required int32 instanceId = 1;</code>
+     */
+    int getInstanceId();
+  }
+  /**
+   * Protobuf type {@code RESPONSE_MAP_UNIT_REMOVE}
+   */
+  public static final class RESPONSE_MAP_UNIT_REMOVE extends
+      com.google.protobuf.GeneratedMessage
+      implements RESPONSE_MAP_UNIT_REMOVEOrBuilder {
+    // Use RESPONSE_MAP_UNIT_REMOVE.newBuilder() to construct.
+    private RESPONSE_MAP_UNIT_REMOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private RESPONSE_MAP_UNIT_REMOVE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final RESPONSE_MAP_UNIT_REMOVE defaultInstance;
+    public static RESPONSE_MAP_UNIT_REMOVE getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public RESPONSE_MAP_UNIT_REMOVE getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_MAP_UNIT_REMOVE(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              instanceId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<RESPONSE_MAP_UNIT_REMOVE> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_UNIT_REMOVE>() {
+      public RESPONSE_MAP_UNIT_REMOVE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_MAP_UNIT_REMOVE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_MAP_UNIT_REMOVE> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required int32 instanceId = 1;
+    public static final int INSTANCEID_FIELD_NUMBER = 1;
+    private int instanceId_;
+    /**
+     * <code>required int32 instanceId = 1;</code>
+     */
+    public boolean hasInstanceId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 instanceId = 1;</code>
+     */
+    public int getInstanceId() {
+      return instanceId_;
+    }
+
+    private void initFields() {
+      instanceId_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasInstanceId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, instanceId_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, instanceId_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code RESPONSE_MAP_UNIT_REMOVE}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVEOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
       public Builder clear() {
         super.clear();
         instanceId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.getDescriptor();
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
       }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE getDefaultInstanceForType() {
         return cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE build() {
         cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE result = buildPartial();
         if (!result.isInitialized()) {
@@ -4512,17 +5797,7 @@ public final class MapProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE buildPartial() {
         cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE(this);
         int from_bitField0_ = bitField0_;
@@ -4535,7 +5810,7 @@ public final class MapProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE) {
           return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE)other);
@@ -4544,7 +5819,7 @@ public final class MapProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE other) {
         if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.getDefaultInstance()) return this;
         if (other.hasInstanceId()) {
@@ -4553,7 +5828,7 @@ public final class MapProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasInstanceId()) {
           
@@ -4561,135 +5836,235 @@ public final class MapProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              instanceId_ = input.readInt32();
-              break;
-            }
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 instanceId = 1;
       private int instanceId_ ;
+      /**
+       * <code>required int32 instanceId = 1;</code>
+       */
       public boolean hasInstanceId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 instanceId = 1;</code>
+       */
       public int getInstanceId() {
         return instanceId_;
       }
+      /**
+       * <code>required int32 instanceId = 1;</code>
+       */
       public Builder setInstanceId(int value) {
         bitField0_ |= 0x00000001;
         instanceId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 instanceId = 1;</code>
+       */
       public Builder clearInstanceId() {
         bitField0_ = (bitField0_ & ~0x00000001);
         instanceId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_UNIT_REMOVE)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_MAP_UNIT_REMOVE(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_REMOVE)
   }
-  
+
   public interface RESPONSE_MAP_CELLSOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // repeated .VO_MAP_CELL mapCells = 1;
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> 
         getMapCellsList();
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_MAP_CELL getMapCells(int index);
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     int getMapCellsCount();
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     java.util.List<? extends cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder> 
         getMapCellsOrBuilderList();
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder getMapCellsOrBuilder(
         int index);
   }
+  /**
+   * Protobuf type {@code RESPONSE_MAP_CELLS}
+   */
   public static final class RESPONSE_MAP_CELLS extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_MAP_CELLSOrBuilder {
     // Use RESPONSE_MAP_CELLS.newBuilder() to construct.
-    private RESPONSE_MAP_CELLS(Builder builder) {
+    private RESPONSE_MAP_CELLS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_MAP_CELLS(boolean noInit) {}
-    
+    private RESPONSE_MAP_CELLS(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_MAP_CELLS defaultInstance;
     public static RESPONSE_MAP_CELLS getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_MAP_CELLS getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_MAP_CELLS(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                mapCells_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_MAP_CELL>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              mapCells_.add(input.readMessage(cg.base.io.proto.VOProtos.VO_MAP_CELL.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          mapCells_ = java.util.Collections.unmodifiableList(mapCells_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable;
+      return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_MAP_CELLS> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAP_CELLS>() {
+      public RESPONSE_MAP_CELLS parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_MAP_CELLS(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_MAP_CELLS> getParserForType() {
+      return PARSER;
+    }
+
     // repeated .VO_MAP_CELL mapCells = 1;
     public static final int MAPCELLS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_;
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     public java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> getMapCellsList() {
       return mapCells_;
     }
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     public java.util.List<? extends cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder> 
         getMapCellsOrBuilderList() {
       return mapCells_;
     }
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     public int getMapCellsCount() {
       return mapCells_.size();
     }
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_MAP_CELL getMapCells(int index) {
       return mapCells_.get(index);
     }
+    /**
+     * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder getMapCellsOrBuilder(
         int index) {
       return mapCells_.get(index);
     }
-    
+
     private void initFields() {
       mapCells_ = java.util.Collections.emptyList();
     }
@@ -4697,7 +6072,7 @@ public final class MapProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       for (int i = 0; i < getMapCellsCount(); i++) {
         if (!getMapCells(i).isInitialized()) {
           memoizedIsInitialized = 0;
@@ -4707,7 +6082,7 @@ public final class MapProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -4716,12 +6091,12 @@ public final class MapProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       for (int i = 0; i < mapCells_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -4731,94 +6106,83 @@ public final class MapProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_MAP_CELLS}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLSOrBuilder {
@@ -4826,18 +6190,21 @@ public final class MapProtos {
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable;
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.class, cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4849,7 +6216,7 @@ public final class MapProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         if (mapCellsBuilder_ == null) {
@@ -4860,20 +6227,20 @@ public final class MapProtos {
         }
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.getDescriptor();
+        return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_descriptor;
       }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS getDefaultInstanceForType() {
         return cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS build() {
         cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS result = buildPartial();
         if (!result.isInitialized()) {
@@ -4881,17 +6248,7 @@ public final class MapProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS buildPartial() {
         cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS result = new cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS(this);
         int from_bitField0_ = bitField0_;
@@ -4907,7 +6264,7 @@ public final class MapProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS) {
           return mergeFrom((cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS)other);
@@ -4916,7 +6273,7 @@ public final class MapProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS other) {
         if (other == cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.getDefaultInstance()) return this;
         if (mapCellsBuilder_ == null) {
@@ -4948,7 +6305,7 @@ public final class MapProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         for (int i = 0; i < getMapCellsCount(); i++) {
           if (!getMapCells(i).isInitialized()) {
@@ -4958,42 +6315,26 @@ public final class MapProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 10: {
-              cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder subBuilder = cg.base.io.proto.VOProtos.VO_MAP_CELL.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addMapCells(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // repeated .VO_MAP_CELL mapCells = 1;
       private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_ =
         java.util.Collections.emptyList();
@@ -5003,10 +6344,13 @@ public final class MapProtos {
           bitField0_ |= 0x00000001;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.VOProtos.VO_MAP_CELL, cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder, cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder> mapCellsBuilder_;
-      
+
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> getMapCellsList() {
         if (mapCellsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(mapCells_);
@@ -5014,6 +6358,9 @@ public final class MapProtos {
           return mapCellsBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public int getMapCellsCount() {
         if (mapCellsBuilder_ == null) {
           return mapCells_.size();
@@ -5021,6 +6368,9 @@ public final class MapProtos {
           return mapCellsBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELL getMapCells(int index) {
         if (mapCellsBuilder_ == null) {
           return mapCells_.get(index);
@@ -5028,6 +6378,9 @@ public final class MapProtos {
           return mapCellsBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public Builder setMapCells(
           int index, cg.base.io.proto.VOProtos.VO_MAP_CELL value) {
         if (mapCellsBuilder_ == null) {
@@ -5042,6 +6395,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public Builder setMapCells(
           int index, cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder builderForValue) {
         if (mapCellsBuilder_ == null) {
@@ -5053,6 +6409,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public Builder addMapCells(cg.base.io.proto.VOProtos.VO_MAP_CELL value) {
         if (mapCellsBuilder_ == null) {
           if (value == null) {
@@ -5066,6 +6425,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public Builder addMapCells(
           int index, cg.base.io.proto.VOProtos.VO_MAP_CELL value) {
         if (mapCellsBuilder_ == null) {
@@ -5080,6 +6442,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public Builder addMapCells(
           cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder builderForValue) {
         if (mapCellsBuilder_ == null) {
@@ -5091,6 +6456,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public Builder addMapCells(
           int index, cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder builderForValue) {
         if (mapCellsBuilder_ == null) {
@@ -5102,6 +6470,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public Builder addAllMapCells(
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_MAP_CELL> values) {
         if (mapCellsBuilder_ == null) {
@@ -5113,6 +6484,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public Builder clearMapCells() {
         if (mapCellsBuilder_ == null) {
           mapCells_ = java.util.Collections.emptyList();
@@ -5123,6 +6497,9 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public Builder removeMapCells(int index) {
         if (mapCellsBuilder_ == null) {
           ensureMapCellsIsMutable();
@@ -5133,10 +6510,16 @@ public final class MapProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder getMapCellsBuilder(
           int index) {
         return getMapCellsFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder getMapCellsOrBuilder(
           int index) {
         if (mapCellsBuilder_ == null) {
@@ -5144,6 +6527,9 @@ public final class MapProtos {
           return mapCellsBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public java.util.List<? extends cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder> 
            getMapCellsOrBuilderList() {
         if (mapCellsBuilder_ != null) {
@@ -5152,15 +6538,24 @@ public final class MapProtos {
           return java.util.Collections.unmodifiableList(mapCells_);
         }
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder addMapCellsBuilder() {
         return getMapCellsFieldBuilder().addBuilder(
             cg.base.io.proto.VOProtos.VO_MAP_CELL.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder addMapCellsBuilder(
           int index) {
         return getMapCellsFieldBuilder().addBuilder(
             index, cg.base.io.proto.VOProtos.VO_MAP_CELL.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
+       */
       public java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL.Builder> 
            getMapCellsBuilderList() {
         return getMapCellsFieldBuilder().getBuilderList();
@@ -5179,18 +6574,18 @@ public final class MapProtos {
         }
         return mapCellsBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_MAP_CELLS)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_MAP_CELLS(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_CELLS)
   }
-  
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_MAP_IN_descriptor;
   private static
@@ -5236,7 +6631,7 @@ public final class MapProtos {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable;
-  
+
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
@@ -5277,73 +6672,55 @@ public final class MapProtos {
           internal_static_REQUEST_MAP_IN_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_MAP_IN_descriptor,
-              new java.lang.String[] { "MapId", "East", "South", },
-              cg.base.io.proto.MapProtos.REQUEST_MAP_IN.class,
-              cg.base.io.proto.MapProtos.REQUEST_MAP_IN.Builder.class);
+              new java.lang.String[] { "MapId", "East", "South", });
           internal_static_RESPONSE_MAP_IN_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_RESPONSE_MAP_IN_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_MAP_IN_descriptor,
-              new java.lang.String[] { "MapId", "MapInstanceId", "MapName", "East", "South", "MaxEast", "MaxSouth", },
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.class,
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_IN.Builder.class);
+              new java.lang.String[] { "MapId", "MapInstanceId", "MapName", "East", "South", "MaxEast", "MaxSouth", });
           internal_static_REQUEST_MAP_MOVE_descriptor =
             getDescriptor().getMessageTypes().get(2);
           internal_static_REQUEST_MAP_MOVE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_MAP_MOVE_descriptor,
-              new java.lang.String[] { "East", "South", "NeedEast", "EastArea", "NeedSouth", "SouthArea", "Serial", },
-              cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.class,
-              cg.base.io.proto.MapProtos.REQUEST_MAP_MOVE.Builder.class);
+              new java.lang.String[] { "East", "South", "NeedEast", "EastArea", "NeedSouth", "SouthArea", "Serial", });
           internal_static_RESPONSE_MAP_MOVE_descriptor =
             getDescriptor().getMessageTypes().get(3);
           internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_MAP_MOVE_descriptor,
-              new java.lang.String[] { "Serial", "MapCells", },
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.class,
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVE.Builder.class);
+              new java.lang.String[] { "Serial", "MapCells", });
           internal_static_VO_MAP_UNIT_EXTEND_descriptor =
             getDescriptor().getMessageTypes().get(4);
           internal_static_VO_MAP_UNIT_EXTEND_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_MAP_UNIT_EXTEND_descriptor,
-              new java.lang.String[] { "OwnerInstanceId", "State", "TalkType", },
-              cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.class,
-              cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTEND.Builder.class);
+              new java.lang.String[] { "OwnerInstanceId", "State", "TalkType", });
           internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor =
             getDescriptor().getMessageTypes().get(5);
           internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor,
-              new java.lang.String[] { "UnitInfo", },
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.class,
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATE.Builder.class);
+              new java.lang.String[] { "UnitInfo", });
           internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor =
             getDescriptor().getMessageTypes().get(6);
           internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor,
-              new java.lang.String[] { "UnitType", "InstanceId", "East", "South", },
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.class,
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVE.Builder.class);
+              new java.lang.String[] { "UnitType", "InstanceId", "East", "South", });
           internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor =
             getDescriptor().getMessageTypes().get(7);
           internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor,
-              new java.lang.String[] { "InstanceId", },
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.class,
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVE.Builder.class);
+              new java.lang.String[] { "InstanceId", });
           internal_static_RESPONSE_MAP_CELLS_descriptor =
             getDescriptor().getMessageTypes().get(8);
           internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_MAP_CELLS_descriptor,
-              new java.lang.String[] { "MapCells", },
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.class,
-              cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLS.Builder.class);
+              new java.lang.String[] { "MapCells", });
           return null;
         }
       };
@@ -5353,6 +6730,6 @@ public final class MapProtos {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
   }
-  
+
   // @@protoc_insertion_point(outer_class_scope)
 }

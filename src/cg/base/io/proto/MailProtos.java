@@ -10,276 +10,586 @@ public final class MailProtos {
   }
   public interface RESPONSE_MAIL_SENDOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
-    
+
     // required int32 type = 1;
+    /**
+     * <code>required int32 type = 1;</code>
+     */
     boolean hasType();
+    /**
+     * <code>required int32 type = 1;</code>
+     */
     int getType();
-    
+
     // required int32 status = 2;
+    /**
+     * <code>required int32 status = 2;</code>
+     */
     boolean hasStatus();
+    /**
+     * <code>required int32 status = 2;</code>
+     */
     int getStatus();
-    
+
     // required int32 sourceId = 3;
+    /**
+     * <code>required int32 sourceId = 3;</code>
+     */
     boolean hasSourceId();
+    /**
+     * <code>required int32 sourceId = 3;</code>
+     */
     int getSourceId();
-    
+
     // required int32 destId = 4;
+    /**
+     * <code>required int32 destId = 4;</code>
+     */
     boolean hasDestId();
+    /**
+     * <code>required int32 destId = 4;</code>
+     */
     int getDestId();
-    
+
     // required int32 lastTime = 5;
+    /**
+     * <code>required int32 lastTime = 5;</code>
+     */
     boolean hasLastTime();
+    /**
+     * <code>required int32 lastTime = 5;</code>
+     */
     int getLastTime();
-    
+
     // required string sourceName = 6;
+    /**
+     * <code>required string sourceName = 6;</code>
+     */
     boolean hasSourceName();
-    String getSourceName();
-    
+    /**
+     * <code>required string sourceName = 6;</code>
+     */
+    java.lang.String getSourceName();
+    /**
+     * <code>required string sourceName = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getSourceNameBytes();
+
     // required string title = 7;
+    /**
+     * <code>required string title = 7;</code>
+     */
     boolean hasTitle();
-    String getTitle();
-    
+    /**
+     * <code>required string title = 7;</code>
+     */
+    java.lang.String getTitle();
+    /**
+     * <code>required string title = 7;</code>
+     */
+    com.google.protobuf.ByteString
+        getTitleBytes();
+
     // required string content = 8;
+    /**
+     * <code>required string content = 8;</code>
+     */
     boolean hasContent();
-    String getContent();
-    
+    /**
+     * <code>required string content = 8;</code>
+     */
+    java.lang.String getContent();
+    /**
+     * <code>required string content = 8;</code>
+     */
+    com.google.protobuf.ByteString
+        getContentBytes();
+
     // repeated .VO_ATTACHMENT attachments = 9;
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     java.util.List<cg.base.io.proto.VOProtos.VO_ATTACHMENT> 
         getAttachmentsList();
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     cg.base.io.proto.VOProtos.VO_ATTACHMENT getAttachments(int index);
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     int getAttachmentsCount();
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     java.util.List<? extends cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder> 
         getAttachmentsOrBuilderList();
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder getAttachmentsOrBuilder(
         int index);
-    
+
     // repeated .VO_PRICE prices = 10;
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     java.util.List<cg.base.io.proto.VOProtos.VO_PRICE> 
         getPricesList();
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     cg.base.io.proto.VOProtos.VO_PRICE getPrices(int index);
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     int getPricesCount();
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     java.util.List<? extends cg.base.io.proto.VOProtos.VO_PRICEOrBuilder> 
         getPricesOrBuilderList();
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     cg.base.io.proto.VOProtos.VO_PRICEOrBuilder getPricesOrBuilder(
         int index);
   }
+  /**
+   * Protobuf type {@code RESPONSE_MAIL_SEND}
+   */
   public static final class RESPONSE_MAIL_SEND extends
       com.google.protobuf.GeneratedMessage
       implements RESPONSE_MAIL_SENDOrBuilder {
     // Use RESPONSE_MAIL_SEND.newBuilder() to construct.
-    private RESPONSE_MAIL_SEND(Builder builder) {
+    private RESPONSE_MAIL_SEND(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
+      this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_MAIL_SEND(boolean noInit) {}
-    
+    private RESPONSE_MAIL_SEND(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
     private static final RESPONSE_MAIL_SEND defaultInstance;
     public static RESPONSE_MAIL_SEND getDefaultInstance() {
       return defaultInstance;
     }
-    
+
     public RESPONSE_MAIL_SEND getDefaultInstanceForType() {
       return defaultInstance;
     }
-    
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_MAIL_SEND(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              type_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              status_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              sourceId_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              destId_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              lastTime_ = input.readInt32();
+              break;
+            }
+            case 50: {
+              bitField0_ |= 0x00000020;
+              sourceName_ = input.readBytes();
+              break;
+            }
+            case 58: {
+              bitField0_ |= 0x00000040;
+              title_ = input.readBytes();
+              break;
+            }
+            case 66: {
+              bitField0_ |= 0x00000080;
+              content_ = input.readBytes();
+              break;
+            }
+            case 74: {
+              if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+                attachments_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_ATTACHMENT>();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              attachments_.add(input.readMessage(cg.base.io.proto.VOProtos.VO_ATTACHMENT.PARSER, extensionRegistry));
+              break;
+            }
+            case 82: {
+              if (!((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
+                prices_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_PRICE>();
+                mutable_bitField0_ |= 0x00000200;
+              }
+              prices_.add(input.readMessage(cg.base.io.proto.VOProtos.VO_PRICE.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+          attachments_ = java.util.Collections.unmodifiableList(attachments_);
+        }
+        if (((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
+          prices_ = java.util.Collections.unmodifiableList(prices_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return cg.base.io.proto.MailProtos.internal_static_RESPONSE_MAIL_SEND_descriptor;
     }
-    
+
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.MailProtos.internal_static_RESPONSE_MAIL_SEND_fieldAccessorTable;
+      return cg.base.io.proto.MailProtos.internal_static_RESPONSE_MAIL_SEND_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.class, cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.Builder.class);
     }
-    
+
+    public static com.google.protobuf.Parser<RESPONSE_MAIL_SEND> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_MAIL_SEND>() {
+      public RESPONSE_MAIL_SEND parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_MAIL_SEND(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_MAIL_SEND> getParserForType() {
+      return PARSER;
+    }
+
     private int bitField0_;
     // required int32 type = 1;
     public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
+    /**
+     * <code>required int32 type = 1;</code>
+     */
     public boolean hasType() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
+    /**
+     * <code>required int32 type = 1;</code>
+     */
     public int getType() {
       return type_;
     }
-    
+
     // required int32 status = 2;
     public static final int STATUS_FIELD_NUMBER = 2;
     private int status_;
+    /**
+     * <code>required int32 status = 2;</code>
+     */
     public boolean hasStatus() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
+    /**
+     * <code>required int32 status = 2;</code>
+     */
     public int getStatus() {
       return status_;
     }
-    
+
     // required int32 sourceId = 3;
     public static final int SOURCEID_FIELD_NUMBER = 3;
     private int sourceId_;
+    /**
+     * <code>required int32 sourceId = 3;</code>
+     */
     public boolean hasSourceId() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
+    /**
+     * <code>required int32 sourceId = 3;</code>
+     */
     public int getSourceId() {
       return sourceId_;
     }
-    
+
     // required int32 destId = 4;
     public static final int DESTID_FIELD_NUMBER = 4;
     private int destId_;
+    /**
+     * <code>required int32 destId = 4;</code>
+     */
     public boolean hasDestId() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
+    /**
+     * <code>required int32 destId = 4;</code>
+     */
     public int getDestId() {
       return destId_;
     }
-    
+
     // required int32 lastTime = 5;
     public static final int LASTTIME_FIELD_NUMBER = 5;
     private int lastTime_;
+    /**
+     * <code>required int32 lastTime = 5;</code>
+     */
     public boolean hasLastTime() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
+    /**
+     * <code>required int32 lastTime = 5;</code>
+     */
     public int getLastTime() {
       return lastTime_;
     }
-    
+
     // required string sourceName = 6;
     public static final int SOURCENAME_FIELD_NUMBER = 6;
     private java.lang.Object sourceName_;
+    /**
+     * <code>required string sourceName = 6;</code>
+     */
     public boolean hasSourceName() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
-    public String getSourceName() {
+    /**
+     * <code>required string sourceName = 6;</code>
+     */
+    public java.lang.String getSourceName() {
       java.lang.Object ref = sourceName_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           sourceName_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getSourceNameBytes() {
+    /**
+     * <code>required string sourceName = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getSourceNameBytes() {
       java.lang.Object ref = sourceName_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         sourceName_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // required string title = 7;
     public static final int TITLE_FIELD_NUMBER = 7;
     private java.lang.Object title_;
+    /**
+     * <code>required string title = 7;</code>
+     */
     public boolean hasTitle() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
-    public String getTitle() {
+    /**
+     * <code>required string title = 7;</code>
+     */
+    public java.lang.String getTitle() {
       java.lang.Object ref = title_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           title_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getTitleBytes() {
+    /**
+     * <code>required string title = 7;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTitleBytes() {
       java.lang.Object ref = title_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         title_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // required string content = 8;
     public static final int CONTENT_FIELD_NUMBER = 8;
     private java.lang.Object content_;
+    /**
+     * <code>required string content = 8;</code>
+     */
     public boolean hasContent() {
       return ((bitField0_ & 0x00000080) == 0x00000080);
     }
-    public String getContent() {
+    /**
+     * <code>required string content = 8;</code>
+     */
+    public java.lang.String getContent() {
       java.lang.Object ref = content_;
-      if (ref instanceof String) {
-        return (String) ref;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
-        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
           content_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getContentBytes() {
+    /**
+     * <code>required string content = 8;</code>
+     */
+    public com.google.protobuf.ByteString
+        getContentBytes() {
       java.lang.Object ref = content_;
-      if (ref instanceof String) {
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         content_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
-    
+
     // repeated .VO_ATTACHMENT attachments = 9;
     public static final int ATTACHMENTS_FIELD_NUMBER = 9;
     private java.util.List<cg.base.io.proto.VOProtos.VO_ATTACHMENT> attachments_;
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     public java.util.List<cg.base.io.proto.VOProtos.VO_ATTACHMENT> getAttachmentsList() {
       return attachments_;
     }
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     public java.util.List<? extends cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder> 
         getAttachmentsOrBuilderList() {
       return attachments_;
     }
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     public int getAttachmentsCount() {
       return attachments_.size();
     }
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_ATTACHMENT getAttachments(int index) {
       return attachments_.get(index);
     }
+    /**
+     * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder getAttachmentsOrBuilder(
         int index) {
       return attachments_.get(index);
     }
-    
+
     // repeated .VO_PRICE prices = 10;
     public static final int PRICES_FIELD_NUMBER = 10;
     private java.util.List<cg.base.io.proto.VOProtos.VO_PRICE> prices_;
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     public java.util.List<cg.base.io.proto.VOProtos.VO_PRICE> getPricesList() {
       return prices_;
     }
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     public java.util.List<? extends cg.base.io.proto.VOProtos.VO_PRICEOrBuilder> 
         getPricesOrBuilderList() {
       return prices_;
     }
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     public int getPricesCount() {
       return prices_.size();
     }
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_PRICE getPrices(int index) {
       return prices_.get(index);
     }
+    /**
+     * <code>repeated .VO_PRICE prices = 10;</code>
+     */
     public cg.base.io.proto.VOProtos.VO_PRICEOrBuilder getPricesOrBuilder(
         int index) {
       return prices_.get(index);
     }
-    
+
     private void initFields() {
       type_ = 0;
       status_ = 0;
@@ -296,7 +606,7 @@ public final class MailProtos {
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
-      
+
       if (!hasType()) {
         memoizedIsInitialized = 0;
         return false;
@@ -344,7 +654,7 @@ public final class MailProtos {
       memoizedIsInitialized = 1;
       return true;
     }
-    
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
@@ -380,12 +690,12 @@ public final class MailProtos {
       }
       getUnknownFields().writeTo(output);
     }
-    
+
     private int memoizedSerializedSize = -1;
     public int getSerializedSize() {
       int size = memoizedSerializedSize;
       if (size != -1) return size;
-    
+
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
@@ -431,94 +741,83 @@ public final class MailProtos {
       memoizedSerializedSize = size;
       return size;
     }
-    
+
     private static final long serialVersionUID = 0L;
     @java.lang.Override
     protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
-    
+
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data).buildParsed();
+      return PARSER.parseFrom(data);
     }
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return newBuilder().mergeFrom(data, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(data, extensionRegistry);
     }
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input);
     }
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      Builder builder = newBuilder();
-      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
-        return builder.buildParsed();
-      } else {
-        return null;
-      }
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input).buildParsed();
+      return PARSER.parseFrom(input);
     }
     public static cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return newBuilder().mergeFrom(input, extensionRegistry)
-               .buildParsed();
+      return PARSER.parseFrom(input, extensionRegistry);
     }
-    
+
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder(cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
-    
+
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
+    /**
+     * Protobuf type {@code RESPONSE_MAIL_SEND}
+     */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
        implements cg.base.io.proto.MailProtos.RESPONSE_MAIL_SENDOrBuilder {
@@ -526,18 +825,21 @@ public final class MailProtos {
           getDescriptor() {
         return cg.base.io.proto.MailProtos.internal_static_RESPONSE_MAIL_SEND_descriptor;
       }
-      
+
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.MailProtos.internal_static_RESPONSE_MAIL_SEND_fieldAccessorTable;
+        return cg.base.io.proto.MailProtos.internal_static_RESPONSE_MAIL_SEND_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.class, cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.Builder.class);
       }
-      
+
       // Construct using cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
-      
-      private Builder(BuilderParent parent) {
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -550,7 +852,7 @@ public final class MailProtos {
       private static Builder create() {
         return new Builder();
       }
-      
+
       public Builder clear() {
         super.clear();
         type_ = 0;
@@ -583,20 +885,20 @@ public final class MailProtos {
         }
         return this;
       }
-      
+
       public Builder clone() {
         return create().mergeFrom(buildPartial());
       }
-      
+
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.getDescriptor();
+        return cg.base.io.proto.MailProtos.internal_static_RESPONSE_MAIL_SEND_descriptor;
       }
-      
+
       public cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND getDefaultInstanceForType() {
         return cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.getDefaultInstance();
       }
-      
+
       public cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND build() {
         cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND result = buildPartial();
         if (!result.isInitialized()) {
@@ -604,17 +906,7 @@ public final class MailProtos {
         }
         return result;
       }
-      
-      private cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND buildParsed()
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(
-            result).asInvalidProtocolBufferException();
-        }
-        return result;
-      }
-      
+
       public cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND buildPartial() {
         cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND result = new cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND(this);
         int from_bitField0_ = bitField0_;
@@ -673,7 +965,7 @@ public final class MailProtos {
         onBuilt();
         return result;
       }
-      
+
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND) {
           return mergeFrom((cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND)other);
@@ -682,7 +974,7 @@ public final class MailProtos {
           return this;
         }
       }
-      
+
       public Builder mergeFrom(cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND other) {
         if (other == cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.getDefaultInstance()) return this;
         if (other.hasType()) {
@@ -701,13 +993,19 @@ public final class MailProtos {
           setLastTime(other.getLastTime());
         }
         if (other.hasSourceName()) {
-          setSourceName(other.getSourceName());
+          bitField0_ |= 0x00000020;
+          sourceName_ = other.sourceName_;
+          onChanged();
         }
         if (other.hasTitle()) {
-          setTitle(other.getTitle());
+          bitField0_ |= 0x00000040;
+          title_ = other.title_;
+          onChanged();
         }
         if (other.hasContent()) {
-          setContent(other.getContent());
+          bitField0_ |= 0x00000080;
+          content_ = other.content_;
+          onChanged();
         }
         if (attachmentsBuilder_ == null) {
           if (!other.attachments_.isEmpty()) {
@@ -764,7 +1062,7 @@ public final class MailProtos {
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
-      
+
       public final boolean isInitialized() {
         if (!hasType()) {
           
@@ -812,209 +1110,234 @@ public final class MailProtos {
         }
         return true;
       }
-      
+
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder(
-            this.getUnknownFields());
-        while (true) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              this.setUnknownFields(unknownFields.build());
-              onChanged();
-              return this;
-            default: {
-              if (!parseUnknownField(input, unknownFields,
-                                     extensionRegistry, tag)) {
-                this.setUnknownFields(unknownFields.build());
-                onChanged();
-                return this;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              type_ = input.readInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              status_ = input.readInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              sourceId_ = input.readInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              destId_ = input.readInt32();
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              lastTime_ = input.readInt32();
-              break;
-            }
-            case 50: {
-              bitField0_ |= 0x00000020;
-              sourceName_ = input.readBytes();
-              break;
-            }
-            case 58: {
-              bitField0_ |= 0x00000040;
-              title_ = input.readBytes();
-              break;
-            }
-            case 66: {
-              bitField0_ |= 0x00000080;
-              content_ = input.readBytes();
-              break;
-            }
-            case 74: {
-              cg.base.io.proto.VOProtos.VO_ATTACHMENT.Builder subBuilder = cg.base.io.proto.VOProtos.VO_ATTACHMENT.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addAttachments(subBuilder.buildPartial());
-              break;
-            }
-            case 82: {
-              cg.base.io.proto.VOProtos.VO_PRICE.Builder subBuilder = cg.base.io.proto.VOProtos.VO_PRICE.newBuilder();
-              input.readMessage(subBuilder, extensionRegistry);
-              addPrices(subBuilder.buildPartial());
-              break;
-            }
+        cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
           }
         }
+        return this;
       }
-      
       private int bitField0_;
-      
+
       // required int32 type = 1;
       private int type_ ;
+      /**
+       * <code>required int32 type = 1;</code>
+       */
       public boolean hasType() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
+      /**
+       * <code>required int32 type = 1;</code>
+       */
       public int getType() {
         return type_;
       }
+      /**
+       * <code>required int32 type = 1;</code>
+       */
       public Builder setType(int value) {
         bitField0_ |= 0x00000001;
         type_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 type = 1;</code>
+       */
       public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000001);
         type_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 status = 2;
       private int status_ ;
+      /**
+       * <code>required int32 status = 2;</code>
+       */
       public boolean hasStatus() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
+      /**
+       * <code>required int32 status = 2;</code>
+       */
       public int getStatus() {
         return status_;
       }
+      /**
+       * <code>required int32 status = 2;</code>
+       */
       public Builder setStatus(int value) {
         bitField0_ |= 0x00000002;
         status_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 status = 2;</code>
+       */
       public Builder clearStatus() {
         bitField0_ = (bitField0_ & ~0x00000002);
         status_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 sourceId = 3;
       private int sourceId_ ;
+      /**
+       * <code>required int32 sourceId = 3;</code>
+       */
       public boolean hasSourceId() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
+      /**
+       * <code>required int32 sourceId = 3;</code>
+       */
       public int getSourceId() {
         return sourceId_;
       }
+      /**
+       * <code>required int32 sourceId = 3;</code>
+       */
       public Builder setSourceId(int value) {
         bitField0_ |= 0x00000004;
         sourceId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 sourceId = 3;</code>
+       */
       public Builder clearSourceId() {
         bitField0_ = (bitField0_ & ~0x00000004);
         sourceId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 destId = 4;
       private int destId_ ;
+      /**
+       * <code>required int32 destId = 4;</code>
+       */
       public boolean hasDestId() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
+      /**
+       * <code>required int32 destId = 4;</code>
+       */
       public int getDestId() {
         return destId_;
       }
+      /**
+       * <code>required int32 destId = 4;</code>
+       */
       public Builder setDestId(int value) {
         bitField0_ |= 0x00000008;
         destId_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 destId = 4;</code>
+       */
       public Builder clearDestId() {
         bitField0_ = (bitField0_ & ~0x00000008);
         destId_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required int32 lastTime = 5;
       private int lastTime_ ;
+      /**
+       * <code>required int32 lastTime = 5;</code>
+       */
       public boolean hasLastTime() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
+      /**
+       * <code>required int32 lastTime = 5;</code>
+       */
       public int getLastTime() {
         return lastTime_;
       }
+      /**
+       * <code>required int32 lastTime = 5;</code>
+       */
       public Builder setLastTime(int value) {
         bitField0_ |= 0x00000010;
         lastTime_ = value;
         onChanged();
         return this;
       }
+      /**
+       * <code>required int32 lastTime = 5;</code>
+       */
       public Builder clearLastTime() {
         bitField0_ = (bitField0_ & ~0x00000010);
         lastTime_ = 0;
         onChanged();
         return this;
       }
-      
+
       // required string sourceName = 6;
       private java.lang.Object sourceName_ = "";
+      /**
+       * <code>required string sourceName = 6;</code>
+       */
       public boolean hasSourceName() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
-      public String getSourceName() {
+      /**
+       * <code>required string sourceName = 6;</code>
+       */
+      public java.lang.String getSourceName() {
         java.lang.Object ref = sourceName_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           sourceName_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setSourceName(String value) {
+      /**
+       * <code>required string sourceName = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getSourceNameBytes() {
+        java.lang.Object ref = sourceName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          sourceName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string sourceName = 6;</code>
+       */
+      public Builder setSourceName(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1023,34 +1346,72 @@ public final class MailProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>required string sourceName = 6;</code>
+       */
       public Builder clearSourceName() {
         bitField0_ = (bitField0_ & ~0x00000020);
         sourceName_ = getDefaultInstance().getSourceName();
         onChanged();
         return this;
       }
-      void setSourceName(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000020;
+      /**
+       * <code>required string sourceName = 6;</code>
+       */
+      public Builder setSourceNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
         sourceName_ = value;
         onChanged();
+        return this;
       }
-      
+
       // required string title = 7;
       private java.lang.Object title_ = "";
+      /**
+       * <code>required string title = 7;</code>
+       */
       public boolean hasTitle() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
-      public String getTitle() {
+      /**
+       * <code>required string title = 7;</code>
+       */
+      public java.lang.String getTitle() {
         java.lang.Object ref = title_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           title_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setTitle(String value) {
+      /**
+       * <code>required string title = 7;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTitleBytes() {
+        java.lang.Object ref = title_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          title_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string title = 7;</code>
+       */
+      public Builder setTitle(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1059,34 +1420,72 @@ public final class MailProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>required string title = 7;</code>
+       */
       public Builder clearTitle() {
         bitField0_ = (bitField0_ & ~0x00000040);
         title_ = getDefaultInstance().getTitle();
         onChanged();
         return this;
       }
-      void setTitle(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000040;
+      /**
+       * <code>required string title = 7;</code>
+       */
+      public Builder setTitleBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
         title_ = value;
         onChanged();
+        return this;
       }
-      
+
       // required string content = 8;
       private java.lang.Object content_ = "";
+      /**
+       * <code>required string content = 8;</code>
+       */
       public boolean hasContent() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
-      public String getContent() {
+      /**
+       * <code>required string content = 8;</code>
+       */
+      public java.lang.String getContent() {
         java.lang.Object ref = content_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
           content_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
-      public Builder setContent(String value) {
+      /**
+       * <code>required string content = 8;</code>
+       */
+      public com.google.protobuf.ByteString
+          getContentBytes() {
+        java.lang.Object ref = content_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          content_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string content = 8;</code>
+       */
+      public Builder setContent(
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1095,18 +1494,29 @@ public final class MailProtos {
         onChanged();
         return this;
       }
+      /**
+       * <code>required string content = 8;</code>
+       */
       public Builder clearContent() {
         bitField0_ = (bitField0_ & ~0x00000080);
         content_ = getDefaultInstance().getContent();
         onChanged();
         return this;
       }
-      void setContent(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000080;
+      /**
+       * <code>required string content = 8;</code>
+       */
+      public Builder setContentBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000080;
         content_ = value;
         onChanged();
+        return this;
       }
-      
+
       // repeated .VO_ATTACHMENT attachments = 9;
       private java.util.List<cg.base.io.proto.VOProtos.VO_ATTACHMENT> attachments_ =
         java.util.Collections.emptyList();
@@ -1116,10 +1526,13 @@ public final class MailProtos {
           bitField0_ |= 0x00000100;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.VOProtos.VO_ATTACHMENT, cg.base.io.proto.VOProtos.VO_ATTACHMENT.Builder, cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder> attachmentsBuilder_;
-      
+
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public java.util.List<cg.base.io.proto.VOProtos.VO_ATTACHMENT> getAttachmentsList() {
         if (attachmentsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(attachments_);
@@ -1127,6 +1540,9 @@ public final class MailProtos {
           return attachmentsBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public int getAttachmentsCount() {
         if (attachmentsBuilder_ == null) {
           return attachments_.size();
@@ -1134,6 +1550,9 @@ public final class MailProtos {
           return attachmentsBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_ATTACHMENT getAttachments(int index) {
         if (attachmentsBuilder_ == null) {
           return attachments_.get(index);
@@ -1141,6 +1560,9 @@ public final class MailProtos {
           return attachmentsBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public Builder setAttachments(
           int index, cg.base.io.proto.VOProtos.VO_ATTACHMENT value) {
         if (attachmentsBuilder_ == null) {
@@ -1155,6 +1577,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public Builder setAttachments(
           int index, cg.base.io.proto.VOProtos.VO_ATTACHMENT.Builder builderForValue) {
         if (attachmentsBuilder_ == null) {
@@ -1166,6 +1591,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public Builder addAttachments(cg.base.io.proto.VOProtos.VO_ATTACHMENT value) {
         if (attachmentsBuilder_ == null) {
           if (value == null) {
@@ -1179,6 +1607,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public Builder addAttachments(
           int index, cg.base.io.proto.VOProtos.VO_ATTACHMENT value) {
         if (attachmentsBuilder_ == null) {
@@ -1193,6 +1624,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public Builder addAttachments(
           cg.base.io.proto.VOProtos.VO_ATTACHMENT.Builder builderForValue) {
         if (attachmentsBuilder_ == null) {
@@ -1204,6 +1638,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public Builder addAttachments(
           int index, cg.base.io.proto.VOProtos.VO_ATTACHMENT.Builder builderForValue) {
         if (attachmentsBuilder_ == null) {
@@ -1215,6 +1652,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public Builder addAllAttachments(
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_ATTACHMENT> values) {
         if (attachmentsBuilder_ == null) {
@@ -1226,6 +1666,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public Builder clearAttachments() {
         if (attachmentsBuilder_ == null) {
           attachments_ = java.util.Collections.emptyList();
@@ -1236,6 +1679,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public Builder removeAttachments(int index) {
         if (attachmentsBuilder_ == null) {
           ensureAttachmentsIsMutable();
@@ -1246,10 +1692,16 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_ATTACHMENT.Builder getAttachmentsBuilder(
           int index) {
         return getAttachmentsFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder getAttachmentsOrBuilder(
           int index) {
         if (attachmentsBuilder_ == null) {
@@ -1257,6 +1709,9 @@ public final class MailProtos {
           return attachmentsBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public java.util.List<? extends cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder> 
            getAttachmentsOrBuilderList() {
         if (attachmentsBuilder_ != null) {
@@ -1265,15 +1720,24 @@ public final class MailProtos {
           return java.util.Collections.unmodifiableList(attachments_);
         }
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_ATTACHMENT.Builder addAttachmentsBuilder() {
         return getAttachmentsFieldBuilder().addBuilder(
             cg.base.io.proto.VOProtos.VO_ATTACHMENT.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_ATTACHMENT.Builder addAttachmentsBuilder(
           int index) {
         return getAttachmentsFieldBuilder().addBuilder(
             index, cg.base.io.proto.VOProtos.VO_ATTACHMENT.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
+       */
       public java.util.List<cg.base.io.proto.VOProtos.VO_ATTACHMENT.Builder> 
            getAttachmentsBuilderList() {
         return getAttachmentsFieldBuilder().getBuilderList();
@@ -1292,7 +1756,7 @@ public final class MailProtos {
         }
         return attachmentsBuilder_;
       }
-      
+
       // repeated .VO_PRICE prices = 10;
       private java.util.List<cg.base.io.proto.VOProtos.VO_PRICE> prices_ =
         java.util.Collections.emptyList();
@@ -1302,10 +1766,13 @@ public final class MailProtos {
           bitField0_ |= 0x00000200;
          }
       }
-      
+
       private com.google.protobuf.RepeatedFieldBuilder<
           cg.base.io.proto.VOProtos.VO_PRICE, cg.base.io.proto.VOProtos.VO_PRICE.Builder, cg.base.io.proto.VOProtos.VO_PRICEOrBuilder> pricesBuilder_;
-      
+
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public java.util.List<cg.base.io.proto.VOProtos.VO_PRICE> getPricesList() {
         if (pricesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(prices_);
@@ -1313,6 +1780,9 @@ public final class MailProtos {
           return pricesBuilder_.getMessageList();
         }
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public int getPricesCount() {
         if (pricesBuilder_ == null) {
           return prices_.size();
@@ -1320,6 +1790,9 @@ public final class MailProtos {
           return pricesBuilder_.getCount();
         }
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_PRICE getPrices(int index) {
         if (pricesBuilder_ == null) {
           return prices_.get(index);
@@ -1327,6 +1800,9 @@ public final class MailProtos {
           return pricesBuilder_.getMessage(index);
         }
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public Builder setPrices(
           int index, cg.base.io.proto.VOProtos.VO_PRICE value) {
         if (pricesBuilder_ == null) {
@@ -1341,6 +1817,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public Builder setPrices(
           int index, cg.base.io.proto.VOProtos.VO_PRICE.Builder builderForValue) {
         if (pricesBuilder_ == null) {
@@ -1352,6 +1831,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public Builder addPrices(cg.base.io.proto.VOProtos.VO_PRICE value) {
         if (pricesBuilder_ == null) {
           if (value == null) {
@@ -1365,6 +1847,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public Builder addPrices(
           int index, cg.base.io.proto.VOProtos.VO_PRICE value) {
         if (pricesBuilder_ == null) {
@@ -1379,6 +1864,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public Builder addPrices(
           cg.base.io.proto.VOProtos.VO_PRICE.Builder builderForValue) {
         if (pricesBuilder_ == null) {
@@ -1390,6 +1878,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public Builder addPrices(
           int index, cg.base.io.proto.VOProtos.VO_PRICE.Builder builderForValue) {
         if (pricesBuilder_ == null) {
@@ -1401,6 +1892,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public Builder addAllPrices(
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_PRICE> values) {
         if (pricesBuilder_ == null) {
@@ -1412,6 +1906,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public Builder clearPrices() {
         if (pricesBuilder_ == null) {
           prices_ = java.util.Collections.emptyList();
@@ -1422,6 +1919,9 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public Builder removePrices(int index) {
         if (pricesBuilder_ == null) {
           ensurePricesIsMutable();
@@ -1432,10 +1932,16 @@ public final class MailProtos {
         }
         return this;
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_PRICE.Builder getPricesBuilder(
           int index) {
         return getPricesFieldBuilder().getBuilder(index);
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_PRICEOrBuilder getPricesOrBuilder(
           int index) {
         if (pricesBuilder_ == null) {
@@ -1443,6 +1949,9 @@ public final class MailProtos {
           return pricesBuilder_.getMessageOrBuilder(index);
         }
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public java.util.List<? extends cg.base.io.proto.VOProtos.VO_PRICEOrBuilder> 
            getPricesOrBuilderList() {
         if (pricesBuilder_ != null) {
@@ -1451,15 +1960,24 @@ public final class MailProtos {
           return java.util.Collections.unmodifiableList(prices_);
         }
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_PRICE.Builder addPricesBuilder() {
         return getPricesFieldBuilder().addBuilder(
             cg.base.io.proto.VOProtos.VO_PRICE.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public cg.base.io.proto.VOProtos.VO_PRICE.Builder addPricesBuilder(
           int index) {
         return getPricesFieldBuilder().addBuilder(
             index, cg.base.io.proto.VOProtos.VO_PRICE.getDefaultInstance());
       }
+      /**
+       * <code>repeated .VO_PRICE prices = 10;</code>
+       */
       public java.util.List<cg.base.io.proto.VOProtos.VO_PRICE.Builder> 
            getPricesBuilderList() {
         return getPricesFieldBuilder().getBuilderList();
@@ -1478,24 +1996,24 @@ public final class MailProtos {
         }
         return pricesBuilder_;
       }
-      
+
       // @@protoc_insertion_point(builder_scope:RESPONSE_MAIL_SEND)
     }
-    
+
     static {
       defaultInstance = new RESPONSE_MAIL_SEND(true);
       defaultInstance.initFields();
     }
-    
+
     // @@protoc_insertion_point(class_scope:RESPONSE_MAIL_SEND)
   }
-  
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_MAIL_SEND_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_MAIL_SEND_fieldAccessorTable;
-  
+
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
@@ -1522,9 +2040,7 @@ public final class MailProtos {
           internal_static_RESPONSE_MAIL_SEND_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_MAIL_SEND_descriptor,
-              new java.lang.String[] { "Type", "Status", "SourceId", "DestId", "LastTime", "SourceName", "Title", "Content", "Attachments", "Prices", },
-              cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.class,
-              cg.base.io.proto.MailProtos.RESPONSE_MAIL_SEND.Builder.class);
+              new java.lang.String[] { "Type", "Status", "SourceId", "DestId", "LastTime", "SourceName", "Title", "Content", "Attachments", "Prices", });
           return null;
         }
       };
@@ -1534,6 +2050,6 @@ public final class MailProtos {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
   }
-  
+
   // @@protoc_insertion_point(outer_class_scope)
 }

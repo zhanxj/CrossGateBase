@@ -4,6 +4,7 @@ import java.io.BufferedInputStream;
 import java.io.InputStream;
 
 import cg.base.io.proto.MessageIdProto.MessageId;
+import cg.base.util.StringUtils;
 import net.dipatch.ISender;
 import net.io.IMessage;
 import net.io.IMessageFactory;
@@ -18,9 +19,9 @@ public class ProtoMessageFactory implements IMessageFactory {
 	public IMessage createMessage(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		MessageId msgId = MessageId.valueOf(messageId);
 		@SuppressWarnings("unchecked")
-		Class<ProtoMessage> clz = (Class<ProtoMessage>) Class.forName(msgId.name());
+		Class<ProtoMessage> clz = (Class<ProtoMessage>) Class.forName("cg.base.io.message." + StringUtils.makeJavaClassName(msgId.name().replaceFirst("MI_", "")));
 		clz = clz == null ? ProtoMessage.class : clz;
-		return clz.getConstructor(Integer.class, String.class, ISender.class, byte[].class).newInstance(status, sessionId, sender, datas);
+		return clz.getConstructor(int.class, String.class, ISender.class, byte[].class).newInstance(status, sessionId, sender, datas);
 	}
 
 	@Override
