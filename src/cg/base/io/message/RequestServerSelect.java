@@ -29,19 +29,19 @@ public class RequestServerSelect extends ProtoMessage {
 
 	/**
 	 * 
-	 * @param	id
+	 * @param	key
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setId(Integer id) {
-		builder.setId(id);
+	public void setKey(String key) {
+		builder.setKey(key);
 	}
 
 	/**
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public int getId() {
-		int ret = builder.getId();
+	public String getKey() {
+		String ret = builder.getKey();
 		return ret;
 	}
 

@@ -3474,40 +3474,35 @@ public final class AccountProtos {
   public interface VO_SERVEROrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required string name = 1;
+    // required string key = 1;
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string key = 1;</code>
+     */
+    boolean hasKey();
+    /**
+     * <code>required string key = 1;</code>
+     */
+    java.lang.String getKey();
+    /**
+     * <code>required string key = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
+
+    // required string name = 2;
+    /**
+     * <code>required string name = 2;</code>
      */
     boolean hasName();
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string name = 2;</code>
      */
     java.lang.String getName();
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string name = 2;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
-
-    // required int32 id = 2;
-    /**
-     * <code>required int32 id = 2;</code>
-     */
-    boolean hasId();
-    /**
-     * <code>required int32 id = 2;</code>
-     */
-    int getId();
-
-    // required int32 connectTime = 3;
-    /**
-     * <code>required int32 connectTime = 3;</code>
-     */
-    boolean hasConnectTime();
-    /**
-     * <code>required int32 connectTime = 3;</code>
-     */
-    int getConnectTime();
   }
   /**
    * Protobuf type {@code VO_SERVER}
@@ -3562,17 +3557,12 @@ public final class AccountProtos {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              name_ = input.readBytes();
+              key_ = input.readBytes();
               break;
             }
-            case 16: {
+            case 18: {
               bitField0_ |= 0x00000002;
-              id_ = input.readInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              connectTime_ = input.readInt32();
+              name_ = input.readBytes();
               break;
             }
           }
@@ -3615,17 +3605,60 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required string name = 1;
-    public static final int NAME_FIELD_NUMBER = 1;
-    private java.lang.Object name_;
+    // required string key = 1;
+    public static final int KEY_FIELD_NUMBER = 1;
+    private java.lang.Object key_;
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string key = 1;</code>
      */
-    public boolean hasName() {
+    public boolean hasKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string key = 1;</code>
+     */
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          key_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string key = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        key_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required string name = 2;
+    public static final int NAME_FIELD_NUMBER = 2;
+    private java.lang.Object name_;
+    /**
+     * <code>required string name = 2;</code>
+     */
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -3642,7 +3675,7 @@ public final class AccountProtos {
       }
     }
     /**
-     * <code>required string name = 1;</code>
+     * <code>required string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -3658,57 +3691,20 @@ public final class AccountProtos {
       }
     }
 
-    // required int32 id = 2;
-    public static final int ID_FIELD_NUMBER = 2;
-    private int id_;
-    /**
-     * <code>required int32 id = 2;</code>
-     */
-    public boolean hasId() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>required int32 id = 2;</code>
-     */
-    public int getId() {
-      return id_;
-    }
-
-    // required int32 connectTime = 3;
-    public static final int CONNECTTIME_FIELD_NUMBER = 3;
-    private int connectTime_;
-    /**
-     * <code>required int32 connectTime = 3;</code>
-     */
-    public boolean hasConnectTime() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>required int32 connectTime = 3;</code>
-     */
-    public int getConnectTime() {
-      return connectTime_;
-    }
-
     private void initFields() {
+      key_ = "";
       name_ = "";
-      id_ = 0;
-      connectTime_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
+      if (!hasKey()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       if (!hasName()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasConnectTime()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -3720,13 +3716,10 @@ public final class AccountProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getNameBytes());
+        output.writeBytes(1, getKeyBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, id_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, connectTime_);
+        output.writeBytes(2, getNameBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -3739,15 +3732,11 @@ public final class AccountProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getNameBytes());
+          .computeBytesSize(1, getKeyBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, id_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, connectTime_);
+          .computeBytesSize(2, getNameBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -3865,12 +3854,10 @@ public final class AccountProtos {
 
       public Builder clear() {
         super.clear();
-        name_ = "";
+        key_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        id_ = 0;
+        name_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        connectTime_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -3902,15 +3889,11 @@ public final class AccountProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.name_ = name_;
+        result.key_ = key_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.id_ = id_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.connectTime_ = connectTime_;
+        result.name_ = name_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -3927,31 +3910,26 @@ public final class AccountProtos {
 
       public Builder mergeFrom(cg.base.io.proto.AccountProtos.VO_SERVER other) {
         if (other == cg.base.io.proto.AccountProtos.VO_SERVER.getDefaultInstance()) return this;
-        if (other.hasName()) {
+        if (other.hasKey()) {
           bitField0_ |= 0x00000001;
-          name_ = other.name_;
+          key_ = other.key_;
           onChanged();
         }
-        if (other.hasId()) {
-          setId(other.getId());
-        }
-        if (other.hasConnectTime()) {
-          setConnectTime(other.getConnectTime());
+        if (other.hasName()) {
+          bitField0_ |= 0x00000002;
+          name_ = other.name_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
+        if (!hasKey()) {
+          
+          return false;
+        }
         if (!hasName()) {
-          
-          return false;
-        }
-        if (!hasId()) {
-          
-          return false;
-        }
-        if (!hasConnectTime()) {
           
           return false;
         }
@@ -3977,16 +3955,90 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required string name = 1;
-      private java.lang.Object name_ = "";
+      // required string key = 1;
+      private java.lang.Object key_ = "";
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string key = 1;</code>
        */
-      public boolean hasName() {
+      public boolean hasKey() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string key = 1;</code>
+       */
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder setKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder clearKey() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        key_ = getDefaultInstance().getKey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required string name = 2;
+      private java.lang.Object name_ = "";
+      /**
+       * <code>required string name = 2;</code>
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string name = 2;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -4000,7 +4052,7 @@ public final class AccountProtos {
         }
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string name = 2;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -4016,103 +4068,37 @@ public final class AccountProtos {
         }
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string name = 2;</code>
        */
       public Builder setName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000001;
+  bitField0_ |= 0x00000002;
         name_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string name = 2;</code>
        */
       public Builder clearName() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         name_ = getDefaultInstance().getName();
         onChanged();
         return this;
       }
       /**
-       * <code>required string name = 1;</code>
+       * <code>required string name = 2;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000001;
+  bitField0_ |= 0x00000002;
         name_ = value;
-        onChanged();
-        return this;
-      }
-
-      // required int32 id = 2;
-      private int id_ ;
-      /**
-       * <code>required int32 id = 2;</code>
-       */
-      public boolean hasId() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required int32 id = 2;</code>
-       */
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>required int32 id = 2;</code>
-       */
-      public Builder setId(int value) {
-        bitField0_ |= 0x00000002;
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required int32 id = 2;</code>
-       */
-      public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // required int32 connectTime = 3;
-      private int connectTime_ ;
-      /**
-       * <code>required int32 connectTime = 3;</code>
-       */
-      public boolean hasConnectTime() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>required int32 connectTime = 3;</code>
-       */
-      public int getConnectTime() {
-        return connectTime_;
-      }
-      /**
-       * <code>required int32 connectTime = 3;</code>
-       */
-      public Builder setConnectTime(int value) {
-        bitField0_ |= 0x00000004;
-        connectTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required int32 connectTime = 3;</code>
-       */
-      public Builder clearConnectTime() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        connectTime_ = 0;
         onChanged();
         return this;
       }
@@ -4817,15 +4803,20 @@ public final class AccountProtos {
   public interface REQUEST_SERVER_SELECTOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required int32 id = 1;
+    // required string key = 1;
     /**
-     * <code>required int32 id = 1;</code>
+     * <code>required string key = 1;</code>
      */
-    boolean hasId();
+    boolean hasKey();
     /**
-     * <code>required int32 id = 1;</code>
+     * <code>required string key = 1;</code>
      */
-    int getId();
+    java.lang.String getKey();
+    /**
+     * <code>required string key = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
   }
   /**
    * Protobuf type {@code REQUEST_SERVER_SELECT}
@@ -4878,9 +4869,9 @@ public final class AccountProtos {
               }
               break;
             }
-            case 8: {
+            case 10: {
               bitField0_ |= 0x00000001;
-              id_ = input.readInt32();
+              key_ = input.readBytes();
               break;
             }
           }
@@ -4923,31 +4914,58 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required int32 id = 1;
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
+    // required string key = 1;
+    public static final int KEY_FIELD_NUMBER = 1;
+    private java.lang.Object key_;
     /**
-     * <code>required int32 id = 1;</code>
+     * <code>required string key = 1;</code>
      */
-    public boolean hasId() {
+    public boolean hasKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 id = 1;</code>
+     * <code>required string key = 1;</code>
      */
-    public int getId() {
-      return id_;
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          key_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string key = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        key_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private void initFields() {
-      id_ = 0;
+      key_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
 
-      if (!hasId()) {
+      if (!hasKey()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -4959,7 +4977,7 @@ public final class AccountProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, id_);
+        output.writeBytes(1, getKeyBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -4972,7 +4990,7 @@ public final class AccountProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, id_);
+          .computeBytesSize(1, getKeyBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -5090,7 +5108,7 @@ public final class AccountProtos {
 
       public Builder clear() {
         super.clear();
-        id_ = 0;
+        key_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -5123,7 +5141,7 @@ public final class AccountProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.id_ = id_;
+        result.key_ = key_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -5140,15 +5158,17 @@ public final class AccountProtos {
 
       public Builder mergeFrom(cg.base.io.proto.AccountProtos.REQUEST_SERVER_SELECT other) {
         if (other == cg.base.io.proto.AccountProtos.REQUEST_SERVER_SELECT.getDefaultInstance()) return this;
-        if (other.hasId()) {
-          setId(other.getId());
+        if (other.hasKey()) {
+          bitField0_ |= 0x00000001;
+          key_ = other.key_;
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasId()) {
+        if (!hasKey()) {
           
           return false;
         }
@@ -5174,35 +5194,76 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required int32 id = 1;
-      private int id_ ;
+      // required string key = 1;
+      private java.lang.Object key_ = "";
       /**
-       * <code>required int32 id = 1;</code>
+       * <code>required string key = 1;</code>
        */
-      public boolean hasId() {
+      public boolean hasKey() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 id = 1;</code>
+       * <code>required string key = 1;</code>
        */
-      public int getId() {
-        return id_;
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>required int32 id = 1;</code>
+       * <code>required string key = 1;</code>
        */
-      public Builder setId(int value) {
-        bitField0_ |= 0x00000001;
-        id_ = value;
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder setKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 id = 1;</code>
+       * <code>required string key = 1;</code>
        */
-      public Builder clearId() {
+      public Builder clearKey() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        id_ = 0;
+        key_ = getDefaultInstance().getKey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
         onChanged();
         return this;
       }
@@ -6568,15 +6629,15 @@ public final class AccountProtos {
       "Id\030\006 \003(\005\022\r\n\005level\030\007 \002(\005\022\022\n\nloginTimes\030\010 " +
       "\002(\005\022\021\n\troleIndex\030\t \002(\005\022\013\n\003job\030\n \002(\t\"F\n\032R" +
       "ESPONSE_ACCOUNT_ROLE_LIST\022(\n\007players\030\001 \003",
-      "(\0132\027.VO_ACCOUNT_PLAYER_INFO\":\n\tVO_SERVER" +
-      "\022\014\n\004name\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\023\n\013connectTim" +
-      "e\030\003 \002(\005\"3\n\024RESPONSE_SERVER_LIST\022\033\n\007serve" +
-      "rs\030\001 \003(\0132\n.VO_SERVER\"#\n\025REQUEST_SERVER_S" +
-      "ELECT\022\n\n\002id\030\001 \002(\005\"%\n\026RESPONSE_SERVER_SEL" +
-      "ECT\022\013\n\003url\030\001 \002(\t\"\\\n\037REQUEST_ACCOUNT_CHAN" +
-      "GE_PASSWORD\022\017\n\007account\030\001 \002(\t\022\023\n\013oldPassw" +
-      "ord\030\002 \002(\t\022\023\n\013newPassword\030\003 \002(\tB!\n\020cg.bas" +
-      "e.io.protoB\rAccountProtos"
+      "(\0132\027.VO_ACCOUNT_PLAYER_INFO\"&\n\tVO_SERVER" +
+      "\022\013\n\003key\030\001 \002(\t\022\014\n\004name\030\002 \002(\t\"3\n\024RESPONSE_" +
+      "SERVER_LIST\022\033\n\007servers\030\001 \003(\0132\n.VO_SERVER" +
+      "\"$\n\025REQUEST_SERVER_SELECT\022\013\n\003key\030\001 \002(\t\"%" +
+      "\n\026RESPONSE_SERVER_SELECT\022\013\n\003url\030\001 \002(\t\"\\\n" +
+      "\037REQUEST_ACCOUNT_CHANGE_PASSWORD\022\017\n\007acco" +
+      "unt\030\001 \002(\t\022\023\n\013oldPassword\030\002 \002(\t\022\023\n\013newPas" +
+      "sword\030\003 \002(\tB!\n\020cg.base.io.protoB\rAccount" +
+      "Protos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -6612,7 +6673,7 @@ public final class AccountProtos {
           internal_static_VO_SERVER_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_SERVER_descriptor,
-              new java.lang.String[] { "Name", "Id", "ConnectTime", });
+              new java.lang.String[] { "Key", "Name", });
           internal_static_RESPONSE_SERVER_LIST_descriptor =
             getDescriptor().getMessageTypes().get(5);
           internal_static_RESPONSE_SERVER_LIST_fieldAccessorTable = new
@@ -6624,7 +6685,7 @@ public final class AccountProtos {
           internal_static_REQUEST_SERVER_SELECT_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_SERVER_SELECT_descriptor,
-              new java.lang.String[] { "Id", });
+              new java.lang.String[] { "Key", });
           internal_static_RESPONSE_SERVER_SELECT_descriptor =
             getDescriptor().getMessageTypes().get(7);
           internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable = new

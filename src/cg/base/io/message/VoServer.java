@@ -22,24 +22,6 @@ public class VoServer {
 
 	/**
 	 * 
-	 * @param	connectTime
-	 * 			<u>do not has any annotate.</u>
-	 */
-	public void setConnectTime(Integer connectTime) {
-		builder.setConnectTime(connectTime);
-	}
-
-	/**
-	 * 
-	 * @return	<u>do not has any annotate.</u>
-	 */
-	public int getConnectTime() {
-		int ret = vo.getConnectTime();
-		return ret;
-	}
-
-	/**
-	 * 
 	 * @param	name
 	 * 			<u>do not has any annotate.</u>
 	 */
@@ -58,19 +40,19 @@ public class VoServer {
 
 	/**
 	 * 
-	 * @param	id
+	 * @param	key
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setId(Integer id) {
-		builder.setId(id);
+	public void setKey(String key) {
+		builder.setKey(key);
 	}
 
 	/**
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public int getId() {
-		int ret = vo.getId();
+	public String getKey() {
+		String ret = vo.getKey();
 		return ret;
 	}
 

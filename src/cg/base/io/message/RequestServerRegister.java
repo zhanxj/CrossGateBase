@@ -29,37 +29,19 @@ public class RequestServerRegister extends ProtoMessage {
 
 	/**
 	 * 
-	 * @param	messageId
+	 * @param	name
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setMessageId(Integer messageId) {
-		builder.setMessageId(messageId);
+	public void setName(String name) {
+		builder.setName(name);
 	}
 
 	/**
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public int getMessageId() {
-		int ret = builder.getMessageId();
-		return ret;
-	}
-
-	/**
-	 * 
-	 * @param	message
-	 * 			<u>do not has any annotate.</u>
-	 */
-	public void setMessage(String message) {
-		builder.setMessage(message);
-	}
-
-	/**
-	 * 
-	 * @return	<u>do not has any annotate.</u>
-	 */
-	public String getMessage() {
-		String ret = builder.getMessage();
+	public String getName() {
+		String ret = builder.getName();
 		return ret;
 	}
 
