@@ -25,6 +25,16 @@ public final class ServerProtos {
      */
     com.google.protobuf.ByteString
         getNameBytes();
+
+    // required int32 port = 2;
+    /**
+     * <code>required int32 port = 2;</code>
+     */
+    boolean hasPort();
+    /**
+     * <code>required int32 port = 2;</code>
+     */
+    int getPort();
   }
   /**
    * Protobuf type {@code REQUEST_SERVER_REGISTER}
@@ -80,6 +90,11 @@ public final class ServerProtos {
             case 10: {
               bitField0_ |= 0x00000001;
               name_ = input.readBytes();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              port_ = input.readInt32();
               break;
             }
           }
@@ -165,8 +180,25 @@ public final class ServerProtos {
       }
     }
 
+    // required int32 port = 2;
+    public static final int PORT_FIELD_NUMBER = 2;
+    private int port_;
+    /**
+     * <code>required int32 port = 2;</code>
+     */
+    public boolean hasPort() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 port = 2;</code>
+     */
+    public int getPort() {
+      return port_;
+    }
+
     private void initFields() {
       name_ = "";
+      port_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -174,6 +206,10 @@ public final class ServerProtos {
       if (isInitialized != -1) return isInitialized == 1;
 
       if (!hasName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPort()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -187,6 +223,9 @@ public final class ServerProtos {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeBytes(1, getNameBytes());
       }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, port_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -199,6 +238,10 @@ public final class ServerProtos {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(1, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, port_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -318,6 +361,8 @@ public final class ServerProtos {
         super.clear();
         name_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
+        port_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -350,6 +395,10 @@ public final class ServerProtos {
           to_bitField0_ |= 0x00000001;
         }
         result.name_ = name_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.port_ = port_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -371,12 +420,19 @@ public final class ServerProtos {
           name_ = other.name_;
           onChanged();
         }
+        if (other.hasPort()) {
+          setPort(other.getPort());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
         if (!hasName()) {
+          
+          return false;
+        }
+        if (!hasPort()) {
           
           return false;
         }
@@ -476,6 +532,39 @@ public final class ServerProtos {
         return this;
       }
 
+      // required int32 port = 2;
+      private int port_ ;
+      /**
+       * <code>required int32 port = 2;</code>
+       */
+      public boolean hasPort() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 port = 2;</code>
+       */
+      public int getPort() {
+        return port_;
+      }
+      /**
+       * <code>required int32 port = 2;</code>
+       */
+      public Builder setPort(int value) {
+        bitField0_ |= 0x00000002;
+        port_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 port = 2;</code>
+       */
+      public Builder clearPort() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        port_ = 0;
+        onChanged();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:REQUEST_SERVER_REGISTER)
     }
 
@@ -487,11 +576,1001 @@ public final class ServerProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_SERVER_REGISTER)
   }
 
+  public interface REQUEST_ACCOUNT_AUTHENTICATEOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required string key = 1;
+    /**
+     * <code>required string key = 1;</code>
+     */
+    boolean hasKey();
+    /**
+     * <code>required string key = 1;</code>
+     */
+    java.lang.String getKey();
+    /**
+     * <code>required string key = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
+
+    // required string ip = 2;
+    /**
+     * <code>required string ip = 2;</code>
+     */
+    boolean hasIp();
+    /**
+     * <code>required string ip = 2;</code>
+     */
+    java.lang.String getIp();
+    /**
+     * <code>required string ip = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getIpBytes();
+
+    // required int32 accountId = 3;
+    /**
+     * <code>required int32 accountId = 3;</code>
+     */
+    boolean hasAccountId();
+    /**
+     * <code>required int32 accountId = 3;</code>
+     */
+    int getAccountId();
+
+    // required string account = 4;
+    /**
+     * <code>required string account = 4;</code>
+     */
+    boolean hasAccount();
+    /**
+     * <code>required string account = 4;</code>
+     */
+    java.lang.String getAccount();
+    /**
+     * <code>required string account = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getAccountBytes();
+
+    // required int32 imoney = 5;
+    /**
+     * <code>required int32 imoney = 5;</code>
+     */
+    boolean hasImoney();
+    /**
+     * <code>required int32 imoney = 5;</code>
+     */
+    int getImoney();
+  }
+  /**
+   * Protobuf type {@code REQUEST_ACCOUNT_AUTHENTICATE}
+   */
+  public static final class REQUEST_ACCOUNT_AUTHENTICATE extends
+      com.google.protobuf.GeneratedMessage
+      implements REQUEST_ACCOUNT_AUTHENTICATEOrBuilder {
+    // Use REQUEST_ACCOUNT_AUTHENTICATE.newBuilder() to construct.
+    private REQUEST_ACCOUNT_AUTHENTICATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private REQUEST_ACCOUNT_AUTHENTICATE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final REQUEST_ACCOUNT_AUTHENTICATE defaultInstance;
+    public static REQUEST_ACCOUNT_AUTHENTICATE getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public REQUEST_ACCOUNT_AUTHENTICATE getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private REQUEST_ACCOUNT_AUTHENTICATE(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              key_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              ip_ = input.readBytes();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              accountId_ = input.readInt32();
+              break;
+            }
+            case 34: {
+              bitField0_ |= 0x00000008;
+              account_ = input.readBytes();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              imoney_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.ServerProtos.internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.ServerProtos.internal_static_REQUEST_ACCOUNT_AUTHENTICATE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE.class, cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<REQUEST_ACCOUNT_AUTHENTICATE> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_ACCOUNT_AUTHENTICATE>() {
+      public REQUEST_ACCOUNT_AUTHENTICATE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_ACCOUNT_AUTHENTICATE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_ACCOUNT_AUTHENTICATE> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required string key = 1;
+    public static final int KEY_FIELD_NUMBER = 1;
+    private java.lang.Object key_;
+    /**
+     * <code>required string key = 1;</code>
+     */
+    public boolean hasKey() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string key = 1;</code>
+     */
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          key_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string key = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        key_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required string ip = 2;
+    public static final int IP_FIELD_NUMBER = 2;
+    private java.lang.Object ip_;
+    /**
+     * <code>required string ip = 2;</code>
+     */
+    public boolean hasIp() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string ip = 2;</code>
+     */
+    public java.lang.String getIp() {
+      java.lang.Object ref = ip_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          ip_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string ip = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getIpBytes() {
+      java.lang.Object ref = ip_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        ip_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required int32 accountId = 3;
+    public static final int ACCOUNTID_FIELD_NUMBER = 3;
+    private int accountId_;
+    /**
+     * <code>required int32 accountId = 3;</code>
+     */
+    public boolean hasAccountId() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required int32 accountId = 3;</code>
+     */
+    public int getAccountId() {
+      return accountId_;
+    }
+
+    // required string account = 4;
+    public static final int ACCOUNT_FIELD_NUMBER = 4;
+    private java.lang.Object account_;
+    /**
+     * <code>required string account = 4;</code>
+     */
+    public boolean hasAccount() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>required string account = 4;</code>
+     */
+    public java.lang.String getAccount() {
+      java.lang.Object ref = account_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          account_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string account = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getAccountBytes() {
+      java.lang.Object ref = account_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        account_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // required int32 imoney = 5;
+    public static final int IMONEY_FIELD_NUMBER = 5;
+    private int imoney_;
+    /**
+     * <code>required int32 imoney = 5;</code>
+     */
+    public boolean hasImoney() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>required int32 imoney = 5;</code>
+     */
+    public int getImoney() {
+      return imoney_;
+    }
+
+    private void initFields() {
+      key_ = "";
+      ip_ = "";
+      accountId_ = 0;
+      account_ = "";
+      imoney_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasKey()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasIp()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasAccountId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasAccount()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasImoney()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getKeyBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getIpBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, accountId_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(4, getAccountBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(5, imoney_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getKeyBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getIpBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, accountId_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, getAccountBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, imoney_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code REQUEST_ACCOUNT_AUTHENTICATE}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATEOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.ServerProtos.internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.ServerProtos.internal_static_REQUEST_ACCOUNT_AUTHENTICATE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE.class, cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        key_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        ip_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        accountId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        account_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        imoney_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.ServerProtos.internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor;
+      }
+
+      public cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE getDefaultInstanceForType() {
+        return cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE build() {
+        cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE buildPartial() {
+        cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE result = new cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.key_ = key_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.ip_ = ip_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.accountId_ = accountId_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.account_ = account_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.imoney_ = imoney_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE) {
+          return mergeFrom((cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE other) {
+        if (other == cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE.getDefaultInstance()) return this;
+        if (other.hasKey()) {
+          bitField0_ |= 0x00000001;
+          key_ = other.key_;
+          onChanged();
+        }
+        if (other.hasIp()) {
+          bitField0_ |= 0x00000002;
+          ip_ = other.ip_;
+          onChanged();
+        }
+        if (other.hasAccountId()) {
+          setAccountId(other.getAccountId());
+        }
+        if (other.hasAccount()) {
+          bitField0_ |= 0x00000008;
+          account_ = other.account_;
+          onChanged();
+        }
+        if (other.hasImoney()) {
+          setImoney(other.getImoney());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasKey()) {
+          
+          return false;
+        }
+        if (!hasIp()) {
+          
+          return false;
+        }
+        if (!hasAccountId()) {
+          
+          return false;
+        }
+        if (!hasAccount()) {
+          
+          return false;
+        }
+        if (!hasImoney()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required string key = 1;
+      private java.lang.Object key_ = "";
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public boolean hasKey() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder setKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder clearKey() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        key_ = getDefaultInstance().getKey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required string ip = 2;
+      private java.lang.Object ip_ = "";
+      /**
+       * <code>required string ip = 2;</code>
+       */
+      public boolean hasIp() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string ip = 2;</code>
+       */
+      public java.lang.String getIp() {
+        java.lang.Object ref = ip_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          ip_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string ip = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getIpBytes() {
+        java.lang.Object ref = ip_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          ip_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string ip = 2;</code>
+       */
+      public Builder setIp(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        ip_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string ip = 2;</code>
+       */
+      public Builder clearIp() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        ip_ = getDefaultInstance().getIp();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string ip = 2;</code>
+       */
+      public Builder setIpBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        ip_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required int32 accountId = 3;
+      private int accountId_ ;
+      /**
+       * <code>required int32 accountId = 3;</code>
+       */
+      public boolean hasAccountId() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required int32 accountId = 3;</code>
+       */
+      public int getAccountId() {
+        return accountId_;
+      }
+      /**
+       * <code>required int32 accountId = 3;</code>
+       */
+      public Builder setAccountId(int value) {
+        bitField0_ |= 0x00000004;
+        accountId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 accountId = 3;</code>
+       */
+      public Builder clearAccountId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        accountId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // required string account = 4;
+      private java.lang.Object account_ = "";
+      /**
+       * <code>required string account = 4;</code>
+       */
+      public boolean hasAccount() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required string account = 4;</code>
+       */
+      public java.lang.String getAccount() {
+        java.lang.Object ref = account_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          account_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string account = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getAccountBytes() {
+        java.lang.Object ref = account_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          account_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string account = 4;</code>
+       */
+      public Builder setAccount(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        account_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string account = 4;</code>
+       */
+      public Builder clearAccount() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        account_ = getDefaultInstance().getAccount();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string account = 4;</code>
+       */
+      public Builder setAccountBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        account_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required int32 imoney = 5;
+      private int imoney_ ;
+      /**
+       * <code>required int32 imoney = 5;</code>
+       */
+      public boolean hasImoney() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>required int32 imoney = 5;</code>
+       */
+      public int getImoney() {
+        return imoney_;
+      }
+      /**
+       * <code>required int32 imoney = 5;</code>
+       */
+      public Builder setImoney(int value) {
+        bitField0_ |= 0x00000010;
+        imoney_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 imoney = 5;</code>
+       */
+      public Builder clearImoney() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        imoney_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:REQUEST_ACCOUNT_AUTHENTICATE)
+    }
+
+    static {
+      defaultInstance = new REQUEST_ACCOUNT_AUTHENTICATE(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:REQUEST_ACCOUNT_AUTHENTICATE)
+  }
+
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_SERVER_REGISTER_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_SERVER_REGISTER_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_REQUEST_ACCOUNT_AUTHENTICATE_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -501,9 +1580,12 @@ public final class ServerProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014Server.proto\"\'\n\027REQUEST_SERVER_REGISTE" +
-      "R\022\014\n\004name\030\001 \002(\tB \n\020cg.base.io.protoB\014Ser" +
-      "verProtos"
+      "\n\014Server.proto\"5\n\027REQUEST_SERVER_REGISTE" +
+      "R\022\014\n\004name\030\001 \002(\t\022\014\n\004port\030\002 \002(\005\"k\n\034REQUEST" +
+      "_ACCOUNT_AUTHENTICATE\022\013\n\003key\030\001 \002(\t\022\n\n\002ip" +
+      "\030\002 \002(\t\022\021\n\taccountId\030\003 \002(\005\022\017\n\007account\030\004 \002" +
+      "(\t\022\016\n\006imoney\030\005 \002(\005B \n\020cg.base.io.protoB\014" +
+      "ServerProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -515,7 +1597,13 @@ public final class ServerProtos {
           internal_static_REQUEST_SERVER_REGISTER_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_SERVER_REGISTER_descriptor,
-              new java.lang.String[] { "Name", });
+              new java.lang.String[] { "Name", "Port", });
+          internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor =
+            getDescriptor().getMessageTypes().get(1);
+          internal_static_REQUEST_ACCOUNT_AUTHENTICATE_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor,
+              new java.lang.String[] { "Key", "Ip", "AccountId", "Account", "Imoney", });
           return null;
         }
       };

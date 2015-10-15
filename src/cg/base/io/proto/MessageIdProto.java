@@ -63,9 +63,13 @@ public final class MessageIdProto {
      */
     MI_REQUEST_SERVER_UNREGISTER(8, 12),
     /**
+     * <code>MI_REQUEST_ACCOUNT_AUTHENTICATE = 14;</code>
+     */
+    MI_REQUEST_ACCOUNT_AUTHENTICATE(9, 14),
+    /**
      * <code>MI_REQUEST_ACCOUNT_REGISTER = 61;</code>
      */
-    MI_REQUEST_ACCOUNT_REGISTER(9, 61),
+    MI_REQUEST_ACCOUNT_REGISTER(10, 61),
     /**
      * <code>MI_RESPONSE_ACCOUNT_REGISTER = 62;</code>
      *
@@ -73,11 +77,11 @@ public final class MessageIdProto {
      * @proto=Account
      * </pre>
      */
-    MI_RESPONSE_ACCOUNT_REGISTER(10, 62),
+    MI_RESPONSE_ACCOUNT_REGISTER(11, 62),
     /**
      * <code>MI_REQUEST_ACCOUNT_LOGIN = 63;</code>
      */
-    MI_REQUEST_ACCOUNT_LOGIN(11, 63),
+    MI_REQUEST_ACCOUNT_LOGIN(12, 63),
     /**
      * <code>MI_RESPONSE_ACCOUNT_LOGIN = 64;</code>
      *
@@ -85,7 +89,7 @@ public final class MessageIdProto {
      * @proto=Account
      * </pre>
      */
-    MI_RESPONSE_ACCOUNT_LOGIN(12, 64),
+    MI_RESPONSE_ACCOUNT_LOGIN(13, 64),
     /**
      * <code>MI_REQUEST_ACCOUNT_ROLE_LIST = 65;</code>
      *
@@ -93,11 +97,11 @@ public final class MessageIdProto {
      * @proto=Account
      * </pre>
      */
-    MI_REQUEST_ACCOUNT_ROLE_LIST(13, 65),
+    MI_REQUEST_ACCOUNT_ROLE_LIST(14, 65),
     /**
      * <code>MI_RESPONSE_ACCOUNT_ROLE_LIST = 66;</code>
      */
-    MI_RESPONSE_ACCOUNT_ROLE_LIST(14, 66),
+    MI_RESPONSE_ACCOUNT_ROLE_LIST(15, 66),
     /**
      * <code>MI_REQUEST_SERVER_LIST = 67;</code>
      *
@@ -105,19 +109,19 @@ public final class MessageIdProto {
      * @proto=Account
      * </pre>
      */
-    MI_REQUEST_SERVER_LIST(15, 67),
+    MI_REQUEST_SERVER_LIST(16, 67),
     /**
      * <code>MI_RESPONSE_SERVER_LIST = 68;</code>
      */
-    MI_RESPONSE_SERVER_LIST(16, 68),
+    MI_RESPONSE_SERVER_LIST(17, 68),
     /**
      * <code>MI_REQUEST_SERVER_SELECT = 69;</code>
      */
-    MI_REQUEST_SERVER_SELECT(17, 69),
+    MI_REQUEST_SERVER_SELECT(18, 69),
     /**
      * <code>MI_RESPONSE_SERVER_SELECT = 70;</code>
      */
-    MI_RESPONSE_SERVER_SELECT(18, 70),
+    MI_RESPONSE_SERVER_SELECT(19, 70),
     /**
      * <code>MI_REQUEST_ACCOUNT_LOGOUT = 71;</code>
      *
@@ -125,7 +129,7 @@ public final class MessageIdProto {
      * @proto=Account
      * </pre>
      */
-    MI_REQUEST_ACCOUNT_LOGOUT(19, 71),
+    MI_REQUEST_ACCOUNT_LOGOUT(20, 71),
     /**
      * <code>MI_RESPONSE_ACCOUNT_LOGOUT = 72;</code>
      *
@@ -133,11 +137,11 @@ public final class MessageIdProto {
      * @proto=Account
      * </pre>
      */
-    MI_RESPONSE_ACCOUNT_LOGOUT(20, 72),
+    MI_RESPONSE_ACCOUNT_LOGOUT(21, 72),
     /**
      * <code>MI_REQUEST_ACCOUNT_CHANGE_PASSWORD = 73;</code>
      */
-    MI_REQUEST_ACCOUNT_CHANGE_PASSWORD(21, 73),
+    MI_REQUEST_ACCOUNT_CHANGE_PASSWORD(22, 73),
     /**
      * <code>MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD = 74;</code>
      *
@@ -145,23 +149,23 @@ public final class MessageIdProto {
      * @proto=Account
      * </pre>
      */
-    MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD(22, 74),
+    MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD(23, 74),
     /**
      * <code>MI_REQUEST_PLAYER_CREATE = 101;</code>
      */
-    MI_REQUEST_PLAYER_CREATE(23, 101),
+    MI_REQUEST_PLAYER_CREATE(24, 101),
     /**
      * <code>MI_RESPONSE_PLAYER_CREATE = 102;</code>
      */
-    MI_RESPONSE_PLAYER_CREATE(24, 102),
+    MI_RESPONSE_PLAYER_CREATE(25, 102),
     /**
      * <code>MI_REQUEST_PLAYER_DELETE = 103;</code>
      */
-    MI_REQUEST_PLAYER_DELETE(25, 103),
+    MI_REQUEST_PLAYER_DELETE(26, 103),
     /**
      * <code>MI_REQUEST_PLAYER_QUERY = 105;</code>
      */
-    MI_REQUEST_PLAYER_QUERY(26, 105),
+    MI_REQUEST_PLAYER_QUERY(27, 105),
     /**
      * <code>MI_RESPONSE_PLAYER_QUERY = 106;</code>
      *
@@ -169,15 +173,15 @@ public final class MessageIdProto {
      * @proto=Account
      * </pre>
      */
-    MI_RESPONSE_PLAYER_QUERY(27, 106),
+    MI_RESPONSE_PLAYER_QUERY(28, 106),
     /**
      * <code>MI_REQUEST_PLAYER_LOGIN = 107;</code>
      */
-    MI_REQUEST_PLAYER_LOGIN(28, 107),
+    MI_REQUEST_PLAYER_LOGIN(29, 107),
     /**
      * <code>MI_RESPONSE_PLAYER_LOGIN = 108;</code>
      */
-    MI_RESPONSE_PLAYER_LOGIN(29, 108),
+    MI_RESPONSE_PLAYER_LOGIN(30, 108),
     /**
      * <code>MI_REQUEST_PLAYER_CREATE_INFO = 109;</code>
      *
@@ -185,51 +189,51 @@ public final class MessageIdProto {
      * @proto=Account
      * </pre>
      */
-    MI_REQUEST_PLAYER_CREATE_INFO(30, 109),
+    MI_REQUEST_PLAYER_CREATE_INFO(31, 109),
     /**
      * <code>MI_RESPONSE_PLAYER_CREATE_INFO = 110;</code>
      */
-    MI_RESPONSE_PLAYER_CREATE_INFO(31, 110),
+    MI_RESPONSE_PLAYER_CREATE_INFO(32, 110),
     /**
      * <code>MI_REQUEST_PLAYER_ANIMATION_INFO = 111;</code>
      */
-    MI_REQUEST_PLAYER_ANIMATION_INFO(32, 111),
+    MI_REQUEST_PLAYER_ANIMATION_INFO(33, 111),
     /**
      * <code>MI_RESPONSE_PLAYER_ANIMATION_INFO = 112;</code>
      */
-    MI_RESPONSE_PLAYER_ANIMATION_INFO(33, 112),
+    MI_RESPONSE_PLAYER_ANIMATION_INFO(34, 112),
     /**
      * <code>MI_REQUEST_MAP_IN = 151;</code>
      */
-    MI_REQUEST_MAP_IN(34, 151),
+    MI_REQUEST_MAP_IN(35, 151),
     /**
      * <code>MI_RESPONSE_MAP_IN = 152;</code>
      */
-    MI_RESPONSE_MAP_IN(35, 152),
+    MI_RESPONSE_MAP_IN(36, 152),
     /**
      * <code>MI_REQUEST_MAP_MOVE = 153;</code>
      */
-    MI_REQUEST_MAP_MOVE(36, 153),
+    MI_REQUEST_MAP_MOVE(37, 153),
     /**
      * <code>MI_RESPONSE_MAP_MOVE = 154;</code>
      */
-    MI_RESPONSE_MAP_MOVE(37, 154),
+    MI_RESPONSE_MAP_MOVE(38, 154),
     /**
      * <code>MI_REQUEST_MAP_MOVE_FINISH = 155;</code>
      */
-    MI_REQUEST_MAP_MOVE_FINISH(38, 155),
+    MI_REQUEST_MAP_MOVE_FINISH(39, 155),
     /**
      * <code>MI_RESPONSE_MAP_UNIT_CREATE = 158;</code>
      */
-    MI_RESPONSE_MAP_UNIT_CREATE(39, 158),
+    MI_RESPONSE_MAP_UNIT_CREATE(40, 158),
     /**
      * <code>MI_RESPONSE_MAP_UNIT_MOVE = 160;</code>
      */
-    MI_RESPONSE_MAP_UNIT_MOVE(40, 160),
+    MI_RESPONSE_MAP_UNIT_MOVE(41, 160),
     /**
      * <code>MI_RESPONSE_MAP_UNIT_REMOVE = 162;</code>
      */
-    MI_RESPONSE_MAP_UNIT_REMOVE(41, 162),
+    MI_RESPONSE_MAP_UNIT_REMOVE(42, 162),
     /**
      * <code>MI_REQUEST_MAP_CELLS = 163;</code>
      *
@@ -237,11 +241,11 @@ public final class MessageIdProto {
      * @proto=Map
      * </pre>
      */
-    MI_REQUEST_MAP_CELLS(42, 163),
+    MI_REQUEST_MAP_CELLS(43, 163),
     /**
      * <code>MI_RESPONSE_MAP_CELLS = 164;</code>
      */
-    MI_RESPONSE_MAP_CELLS(43, 164),
+    MI_RESPONSE_MAP_CELLS(44, 164),
     /**
      * <code>MI_REQUEST_MAP_LOAD_FINISH = 165;</code>
      *
@@ -249,7 +253,7 @@ public final class MessageIdProto {
      * @proto=Map
      * </pre>
      */
-    MI_REQUEST_MAP_LOAD_FINISH(44, 165),
+    MI_REQUEST_MAP_LOAD_FINISH(45, 165),
     /**
      * <code>MI_RESPONSE_MAP_LOAD_FINISH = 166;</code>
      *
@@ -257,19 +261,19 @@ public final class MessageIdProto {
      * @proto=Map
      * </pre>
      */
-    MI_RESPONSE_MAP_LOAD_FINISH(45, 166),
+    MI_RESPONSE_MAP_LOAD_FINISH(46, 166),
     /**
      * <code>MI_RESPONSE_BATTLE_ENTER = 202;</code>
      */
-    MI_RESPONSE_BATTLE_ENTER(46, 202),
+    MI_RESPONSE_BATTLE_ENTER(47, 202),
     /**
      * <code>MI_REQUEST_BATTLE_ATTACK = 203;</code>
      */
-    MI_REQUEST_BATTLE_ATTACK(47, 203),
+    MI_REQUEST_BATTLE_ATTACK(48, 203),
     /**
      * <code>MI_RESPONSE_BATTLE_ACTION = 206;</code>
      */
-    MI_RESPONSE_BATTLE_ACTION(48, 206),
+    MI_RESPONSE_BATTLE_ACTION(49, 206),
     /**
      * <code>MI_REQUEST_BATTLE_DEFEND = 207;</code>
      *
@@ -277,7 +281,7 @@ public final class MessageIdProto {
      * @proto=Battle
      * </pre>
      */
-    MI_REQUEST_BATTLE_DEFEND(49, 207),
+    MI_REQUEST_BATTLE_DEFEND(50, 207),
     /**
      * <code>MI_RESPONSE_BATTLE_WAIT_COMMAND = 210;</code>
      *
@@ -285,7 +289,7 @@ public final class MessageIdProto {
      * @proto=Battle
      * </pre>
      */
-    MI_RESPONSE_BATTLE_WAIT_COMMAND(50, 210),
+    MI_RESPONSE_BATTLE_WAIT_COMMAND(51, 210),
     /**
      * <code>MI_REQUEST_BATTLE_ANIMATION_FINISH = 211;</code>
      *
@@ -293,11 +297,11 @@ public final class MessageIdProto {
      * @proto=Battle
      * </pre>
      */
-    MI_REQUEST_BATTLE_ANIMATION_FINISH(51, 211),
+    MI_REQUEST_BATTLE_ANIMATION_FINISH(52, 211),
     /**
      * <code>MI_RESPONSE_BATTLE_FINISH = 214;</code>
      */
-    MI_RESPONSE_BATTLE_FINISH(52, 214),
+    MI_RESPONSE_BATTLE_FINISH(53, 214),
     /**
      * <code>MI_RESPONSE_SCRIPT = 302;</code>
      *
@@ -306,11 +310,11 @@ public final class MessageIdProto {
      * @proto=Script
      * </pre>
      */
-    MI_RESPONSE_SCRIPT(53, 302),
+    MI_RESPONSE_SCRIPT(54, 302),
     /**
      * <code>MI_REQUEST_SCRIPT_MUTUAL = 303;</code>
      */
-    MI_REQUEST_SCRIPT_MUTUAL(54, 303),
+    MI_REQUEST_SCRIPT_MUTUAL(55, 303),
     /**
      * <code>MI_RESPONSE_SCRIPT_MUTUAL = 304;</code>
      *
@@ -318,7 +322,7 @@ public final class MessageIdProto {
      * @proto=Script
      * </pre>
      */
-    MI_RESPONSE_SCRIPT_MUTUAL(55, 304),
+    MI_RESPONSE_SCRIPT_MUTUAL(56, 304),
     /**
      * <code>MI_RESPONSE_SCRIPT_ERROR = 306;</code>
      *
@@ -326,15 +330,15 @@ public final class MessageIdProto {
      * @proto=Script
      * </pre>
      */
-    MI_RESPONSE_SCRIPT_ERROR(56, 306),
+    MI_RESPONSE_SCRIPT_ERROR(57, 306),
     /**
      * <code>MI_REQUEST_CHAT = 351;</code>
      */
-    MI_REQUEST_CHAT(57, 351),
+    MI_REQUEST_CHAT(58, 351),
     /**
      * <code>MI_RESPONSE_CHAT = 352;</code>
      */
-    MI_RESPONSE_CHAT(58, 352),
+    MI_RESPONSE_CHAT(59, 352),
     /**
      * <code>MI_REQUEST_CHAT_JOIN = 353;</code>
      *
@@ -342,7 +346,7 @@ public final class MessageIdProto {
      * @proto=Chat
      * </pre>
      */
-    MI_REQUEST_CHAT_JOIN(59, 353),
+    MI_REQUEST_CHAT_JOIN(60, 353),
     /**
      * <code>MI_RESPONSE_CHAT_JOIN = 354;</code>
      *
@@ -350,7 +354,7 @@ public final class MessageIdProto {
      * @proto=Chat
      * </pre>
      */
-    MI_RESPONSE_CHAT_JOIN(60, 354),
+    MI_RESPONSE_CHAT_JOIN(61, 354),
     /**
      * <code>MI_REQUEST_CHAT_LEAVE = 355;</code>
      *
@@ -358,7 +362,7 @@ public final class MessageIdProto {
      * @proto=Chat
      * </pre>
      */
-    MI_REQUEST_CHAT_LEAVE(61, 355),
+    MI_REQUEST_CHAT_LEAVE(62, 355),
     /**
      * <code>MI_RESPONSE_CHAT_LEAVE = 356;</code>
      *
@@ -366,7 +370,7 @@ public final class MessageIdProto {
      * @proto=Chat
      * </pre>
      */
-    MI_RESPONSE_CHAT_LEAVE(62, 356),
+    MI_RESPONSE_CHAT_LEAVE(63, 356),
     /**
      * <code>MI_REQUEST_SKILL_USE = 401;</code>
      *
@@ -375,7 +379,7 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_REQUEST_SKILL_USE(63, 401),
+    MI_REQUEST_SKILL_USE(64, 401),
     /**
      * <code>MI_REQUEST_RECIPE = 403;</code>
      *
@@ -383,7 +387,7 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_REQUEST_RECIPE(64, 403),
+    MI_REQUEST_RECIPE(65, 403),
     /**
      * <code>MI_REQUEST_DOUBLE_EXP_BEGIN = 405;</code>
      *
@@ -391,7 +395,7 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_REQUEST_DOUBLE_EXP_BEGIN(65, 405),
+    MI_REQUEST_DOUBLE_EXP_BEGIN(66, 405),
     /**
      * <code>MI_REQUEST_DOUBLE_EXP_END = 407;</code>
      *
@@ -399,7 +403,7 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_REQUEST_DOUBLE_EXP_END(66, 407),
+    MI_REQUEST_DOUBLE_EXP_END(67, 407),
     /**
      * <code>MI_RESPONSE_DOUBLE_EXP_END = 408;</code>
      *
@@ -407,7 +411,7 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_RESPONSE_DOUBLE_EXP_END(67, 408),
+    MI_RESPONSE_DOUBLE_EXP_END(68, 408),
     /**
      * <code>MI_REQUEST_DOUBLE_EXP_UPDATE = 409;</code>
      *
@@ -415,11 +419,11 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_REQUEST_DOUBLE_EXP_UPDATE(68, 409),
+    MI_REQUEST_DOUBLE_EXP_UPDATE(69, 409),
     /**
      * <code>MI_RESPONSE_DOUBLE_EXP_UPDATE = 410;</code>
      */
-    MI_RESPONSE_DOUBLE_EXP_UPDATE(69, 410),
+    MI_RESPONSE_DOUBLE_EXP_UPDATE(70, 410),
     /**
      * <code>MI_REQUEST_SKILL_LEARN = 411;</code>
      *
@@ -427,7 +431,7 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_REQUEST_SKILL_LEARN(70, 411),
+    MI_REQUEST_SKILL_LEARN(71, 411),
     /**
      * <code>MI_RESPONSE_SKILL_LEARN = 412;</code>
      *
@@ -435,7 +439,7 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_RESPONSE_SKILL_LEARN(71, 412),
+    MI_RESPONSE_SKILL_LEARN(72, 412),
     /**
      * <code>MI_REQUEST_SKILL_UNLEARN = 413;</code>
      *
@@ -443,7 +447,7 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_REQUEST_SKILL_UNLEARN(72, 413),
+    MI_REQUEST_SKILL_UNLEARN(73, 413),
     /**
      * <code>MI_RESPONSE_SKILL_UNLEARN = 414;</code>
      *
@@ -451,7 +455,7 @@ public final class MessageIdProto {
      * @proto=Skill
      * </pre>
      */
-    MI_RESPONSE_SKILL_UNLEARN(73, 414),
+    MI_RESPONSE_SKILL_UNLEARN(74, 414),
     /**
      * <code>MI_REQUEST_MAIL_SEND = 451;</code>
      *
@@ -460,7 +464,7 @@ public final class MessageIdProto {
      * @proto=Mail
      * </pre>
      */
-    MI_REQUEST_MAIL_SEND(74, 451),
+    MI_REQUEST_MAIL_SEND(75, 451),
     /**
      * <code>MI_RESPONSE_MAIL_SEND = 452;</code>
      *
@@ -468,15 +472,15 @@ public final class MessageIdProto {
      * @proto=Mail
      * </pre>
      */
-    MI_RESPONSE_MAIL_SEND(75, 452),
+    MI_RESPONSE_MAIL_SEND(76, 452),
     /**
      * <code>MI_REQUEST_OPTIONS_SET = 501;</code>
      */
-    MI_REQUEST_OPTIONS_SET(76, 501),
+    MI_REQUEST_OPTIONS_SET(77, 501),
     /**
      * <code>MI_RESPONSE_OPTIONS_SET = 502;</code>
      */
-    MI_RESPONSE_OPTIONS_SET(77, 502),
+    MI_RESPONSE_OPTIONS_SET(78, 502),
     ;
 
     /**
@@ -528,6 +532,10 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_SERVER_UNREGISTER = 12;</code>
      */
     public static final int MI_REQUEST_SERVER_UNREGISTER_VALUE = 12;
+    /**
+     * <code>MI_REQUEST_ACCOUNT_AUTHENTICATE = 14;</code>
+     */
+    public static final int MI_REQUEST_ACCOUNT_AUTHENTICATE_VALUE = 14;
     /**
      * <code>MI_REQUEST_ACCOUNT_REGISTER = 61;</code>
      */
@@ -958,6 +966,7 @@ public final class MessageIdProto {
         case 8: return MI_REQUEST_PROXY_LOGIN;
         case 10: return MI_REQUEST_SERVER_REGISTER;
         case 12: return MI_REQUEST_SERVER_UNREGISTER;
+        case 14: return MI_REQUEST_ACCOUNT_AUTHENTICATE;
         case 61: return MI_REQUEST_ACCOUNT_REGISTER;
         case 62: return MI_RESPONSE_ACCOUNT_REGISTER;
         case 63: return MI_REQUEST_ACCOUNT_LOGIN;
@@ -1087,69 +1096,70 @@ public final class MessageIdProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017MessageId.proto*\377\022\n\tMessageId\022\031\n\025MI_RE" +
+      "\n\017MessageId.proto*\244\023\n\tMessageId\022\031\n\025MI_RE" +
       "QUEST_HEART_BEAT\020\001\022\032\n\026MI_RESPONSE_HEART_" +
       "BEAT\020\002\022\033\n\027MI_REQUEST_DISCONNECTED\020\003\022\032\n\026M" +
       "I_RESPONSE_EXECUTE_OK\020\004\022\035\n\031MI_RESPONSE_E" +
       "XECUTE_ERROR\020\005\022\'\n#MI_REQUEST_PROXY_SESSI" +
       "ON_DISCONNECT\020\006\022\032\n\026MI_REQUEST_PROXY_LOGI" +
       "N\020\010\022\036\n\032MI_REQUEST_SERVER_REGISTER\020\n\022 \n\034M" +
-      "I_REQUEST_SERVER_UNREGISTER\020\014\022\037\n\033MI_REQU" +
-      "EST_ACCOUNT_REGISTER\020=\022 \n\034MI_RESPONSE_AC" +
-      "COUNT_REGISTER\020>\022\034\n\030MI_REQUEST_ACCOUNT_L",
-      "OGIN\020?\022\035\n\031MI_RESPONSE_ACCOUNT_LOGIN\020@\022 \n" +
-      "\034MI_REQUEST_ACCOUNT_ROLE_LIST\020A\022!\n\035MI_RE" +
-      "SPONSE_ACCOUNT_ROLE_LIST\020B\022\032\n\026MI_REQUEST" +
-      "_SERVER_LIST\020C\022\033\n\027MI_RESPONSE_SERVER_LIS" +
-      "T\020D\022\034\n\030MI_REQUEST_SERVER_SELECT\020E\022\035\n\031MI_" +
-      "RESPONSE_SERVER_SELECT\020F\022\035\n\031MI_REQUEST_A" +
-      "CCOUNT_LOGOUT\020G\022\036\n\032MI_RESPONSE_ACCOUNT_L" +
-      "OGOUT\020H\022&\n\"MI_REQUEST_ACCOUNT_CHANGE_PAS" +
-      "SWORD\020I\022\'\n#MI_RESPONSE_ACCOUNT_CHANGE_PA" +
-      "SSWORD\020J\022\034\n\030MI_REQUEST_PLAYER_CREATE\020e\022\035",
-      "\n\031MI_RESPONSE_PLAYER_CREATE\020f\022\034\n\030MI_REQU" +
-      "EST_PLAYER_DELETE\020g\022\033\n\027MI_REQUEST_PLAYER" +
-      "_QUERY\020i\022\034\n\030MI_RESPONSE_PLAYER_QUERY\020j\022\033" +
-      "\n\027MI_REQUEST_PLAYER_LOGIN\020k\022\034\n\030MI_RESPON" +
-      "SE_PLAYER_LOGIN\020l\022!\n\035MI_REQUEST_PLAYER_C" +
-      "REATE_INFO\020m\022\"\n\036MI_RESPONSE_PLAYER_CREAT" +
-      "E_INFO\020n\022$\n MI_REQUEST_PLAYER_ANIMATION_" +
-      "INFO\020o\022%\n!MI_RESPONSE_PLAYER_ANIMATION_I" +
-      "NFO\020p\022\026\n\021MI_REQUEST_MAP_IN\020\227\001\022\027\n\022MI_RESP" +
-      "ONSE_MAP_IN\020\230\001\022\030\n\023MI_REQUEST_MAP_MOVE\020\231\001",
-      "\022\031\n\024MI_RESPONSE_MAP_MOVE\020\232\001\022\037\n\032MI_REQUES" +
-      "T_MAP_MOVE_FINISH\020\233\001\022 \n\033MI_RESPONSE_MAP_" +
-      "UNIT_CREATE\020\236\001\022\036\n\031MI_RESPONSE_MAP_UNIT_M" +
-      "OVE\020\240\001\022 \n\033MI_RESPONSE_MAP_UNIT_REMOVE\020\242\001" +
-      "\022\031\n\024MI_REQUEST_MAP_CELLS\020\243\001\022\032\n\025MI_RESPON" +
-      "SE_MAP_CELLS\020\244\001\022\037\n\032MI_REQUEST_MAP_LOAD_F" +
-      "INISH\020\245\001\022 \n\033MI_RESPONSE_MAP_LOAD_FINISH\020" +
-      "\246\001\022\035\n\030MI_RESPONSE_BATTLE_ENTER\020\312\001\022\035\n\030MI_" +
-      "REQUEST_BATTLE_ATTACK\020\313\001\022\036\n\031MI_RESPONSE_" +
-      "BATTLE_ACTION\020\316\001\022\035\n\030MI_REQUEST_BATTLE_DE",
-      "FEND\020\317\001\022$\n\037MI_RESPONSE_BATTLE_WAIT_COMMA" +
-      "ND\020\322\001\022\'\n\"MI_REQUEST_BATTLE_ANIMATION_FIN" +
-      "ISH\020\323\001\022\036\n\031MI_RESPONSE_BATTLE_FINISH\020\326\001\022\027" +
-      "\n\022MI_RESPONSE_SCRIPT\020\256\002\022\035\n\030MI_REQUEST_SC" +
-      "RIPT_MUTUAL\020\257\002\022\036\n\031MI_RESPONSE_SCRIPT_MUT" +
-      "UAL\020\260\002\022\035\n\030MI_RESPONSE_SCRIPT_ERROR\020\262\002\022\024\n" +
-      "\017MI_REQUEST_CHAT\020\337\002\022\025\n\020MI_RESPONSE_CHAT\020" +
-      "\340\002\022\031\n\024MI_REQUEST_CHAT_JOIN\020\341\002\022\032\n\025MI_RESP" +
-      "ONSE_CHAT_JOIN\020\342\002\022\032\n\025MI_REQUEST_CHAT_LEA" +
-      "VE\020\343\002\022\033\n\026MI_RESPONSE_CHAT_LEAVE\020\344\002\022\031\n\024MI",
-      "_REQUEST_SKILL_USE\020\221\003\022\026\n\021MI_REQUEST_RECI" +
-      "PE\020\223\003\022 \n\033MI_REQUEST_DOUBLE_EXP_BEGIN\020\225\003\022" +
-      "\036\n\031MI_REQUEST_DOUBLE_EXP_END\020\227\003\022\037\n\032MI_RE" +
-      "SPONSE_DOUBLE_EXP_END\020\230\003\022!\n\034MI_REQUEST_D" +
-      "OUBLE_EXP_UPDATE\020\231\003\022\"\n\035MI_RESPONSE_DOUBL" +
-      "E_EXP_UPDATE\020\232\003\022\033\n\026MI_REQUEST_SKILL_LEAR" +
-      "N\020\233\003\022\034\n\027MI_RESPONSE_SKILL_LEARN\020\234\003\022\035\n\030MI" +
-      "_REQUEST_SKILL_UNLEARN\020\235\003\022\036\n\031MI_RESPONSE" +
-      "_SKILL_UNLEARN\020\236\003\022\031\n\024MI_REQUEST_MAIL_SEN" +
-      "D\020\303\003\022\032\n\025MI_RESPONSE_MAIL_SEND\020\304\003\022\033\n\026MI_R",
-      "EQUEST_OPTIONS_SET\020\365\003\022\034\n\027MI_RESPONSE_OPT" +
-      "IONS_SET\020\366\003B\"\n\020cg.base.io.protoB\016Message" +
-      "IdProto"
+      "I_REQUEST_SERVER_UNREGISTER\020\014\022#\n\037MI_REQU" +
+      "EST_ACCOUNT_AUTHENTICATE\020\016\022\037\n\033MI_REQUEST" +
+      "_ACCOUNT_REGISTER\020=\022 \n\034MI_RESPONSE_ACCOU",
+      "NT_REGISTER\020>\022\034\n\030MI_REQUEST_ACCOUNT_LOGI" +
+      "N\020?\022\035\n\031MI_RESPONSE_ACCOUNT_LOGIN\020@\022 \n\034MI" +
+      "_REQUEST_ACCOUNT_ROLE_LIST\020A\022!\n\035MI_RESPO" +
+      "NSE_ACCOUNT_ROLE_LIST\020B\022\032\n\026MI_REQUEST_SE" +
+      "RVER_LIST\020C\022\033\n\027MI_RESPONSE_SERVER_LIST\020D" +
+      "\022\034\n\030MI_REQUEST_SERVER_SELECT\020E\022\035\n\031MI_RES" +
+      "PONSE_SERVER_SELECT\020F\022\035\n\031MI_REQUEST_ACCO" +
+      "UNT_LOGOUT\020G\022\036\n\032MI_RESPONSE_ACCOUNT_LOGO" +
+      "UT\020H\022&\n\"MI_REQUEST_ACCOUNT_CHANGE_PASSWO" +
+      "RD\020I\022\'\n#MI_RESPONSE_ACCOUNT_CHANGE_PASSW",
+      "ORD\020J\022\034\n\030MI_REQUEST_PLAYER_CREATE\020e\022\035\n\031M" +
+      "I_RESPONSE_PLAYER_CREATE\020f\022\034\n\030MI_REQUEST" +
+      "_PLAYER_DELETE\020g\022\033\n\027MI_REQUEST_PLAYER_QU" +
+      "ERY\020i\022\034\n\030MI_RESPONSE_PLAYER_QUERY\020j\022\033\n\027M" +
+      "I_REQUEST_PLAYER_LOGIN\020k\022\034\n\030MI_RESPONSE_" +
+      "PLAYER_LOGIN\020l\022!\n\035MI_REQUEST_PLAYER_CREA" +
+      "TE_INFO\020m\022\"\n\036MI_RESPONSE_PLAYER_CREATE_I" +
+      "NFO\020n\022$\n MI_REQUEST_PLAYER_ANIMATION_INF" +
+      "O\020o\022%\n!MI_RESPONSE_PLAYER_ANIMATION_INFO" +
+      "\020p\022\026\n\021MI_REQUEST_MAP_IN\020\227\001\022\027\n\022MI_RESPONS",
+      "E_MAP_IN\020\230\001\022\030\n\023MI_REQUEST_MAP_MOVE\020\231\001\022\031\n" +
+      "\024MI_RESPONSE_MAP_MOVE\020\232\001\022\037\n\032MI_REQUEST_M" +
+      "AP_MOVE_FINISH\020\233\001\022 \n\033MI_RESPONSE_MAP_UNI" +
+      "T_CREATE\020\236\001\022\036\n\031MI_RESPONSE_MAP_UNIT_MOVE" +
+      "\020\240\001\022 \n\033MI_RESPONSE_MAP_UNIT_REMOVE\020\242\001\022\031\n" +
+      "\024MI_REQUEST_MAP_CELLS\020\243\001\022\032\n\025MI_RESPONSE_" +
+      "MAP_CELLS\020\244\001\022\037\n\032MI_REQUEST_MAP_LOAD_FINI" +
+      "SH\020\245\001\022 \n\033MI_RESPONSE_MAP_LOAD_FINISH\020\246\001\022" +
+      "\035\n\030MI_RESPONSE_BATTLE_ENTER\020\312\001\022\035\n\030MI_REQ" +
+      "UEST_BATTLE_ATTACK\020\313\001\022\036\n\031MI_RESPONSE_BAT",
+      "TLE_ACTION\020\316\001\022\035\n\030MI_REQUEST_BATTLE_DEFEN" +
+      "D\020\317\001\022$\n\037MI_RESPONSE_BATTLE_WAIT_COMMAND\020" +
+      "\322\001\022\'\n\"MI_REQUEST_BATTLE_ANIMATION_FINISH" +
+      "\020\323\001\022\036\n\031MI_RESPONSE_BATTLE_FINISH\020\326\001\022\027\n\022M" +
+      "I_RESPONSE_SCRIPT\020\256\002\022\035\n\030MI_REQUEST_SCRIP" +
+      "T_MUTUAL\020\257\002\022\036\n\031MI_RESPONSE_SCRIPT_MUTUAL" +
+      "\020\260\002\022\035\n\030MI_RESPONSE_SCRIPT_ERROR\020\262\002\022\024\n\017MI" +
+      "_REQUEST_CHAT\020\337\002\022\025\n\020MI_RESPONSE_CHAT\020\340\002\022" +
+      "\031\n\024MI_REQUEST_CHAT_JOIN\020\341\002\022\032\n\025MI_RESPONS" +
+      "E_CHAT_JOIN\020\342\002\022\032\n\025MI_REQUEST_CHAT_LEAVE\020",
+      "\343\002\022\033\n\026MI_RESPONSE_CHAT_LEAVE\020\344\002\022\031\n\024MI_RE" +
+      "QUEST_SKILL_USE\020\221\003\022\026\n\021MI_REQUEST_RECIPE\020" +
+      "\223\003\022 \n\033MI_REQUEST_DOUBLE_EXP_BEGIN\020\225\003\022\036\n\031" +
+      "MI_REQUEST_DOUBLE_EXP_END\020\227\003\022\037\n\032MI_RESPO" +
+      "NSE_DOUBLE_EXP_END\020\230\003\022!\n\034MI_REQUEST_DOUB" +
+      "LE_EXP_UPDATE\020\231\003\022\"\n\035MI_RESPONSE_DOUBLE_E" +
+      "XP_UPDATE\020\232\003\022\033\n\026MI_REQUEST_SKILL_LEARN\020\233" +
+      "\003\022\034\n\027MI_RESPONSE_SKILL_LEARN\020\234\003\022\035\n\030MI_RE" +
+      "QUEST_SKILL_UNLEARN\020\235\003\022\036\n\031MI_RESPONSE_SK" +
+      "ILL_UNLEARN\020\236\003\022\031\n\024MI_REQUEST_MAIL_SEND\020\303",
+      "\003\022\032\n\025MI_RESPONSE_MAIL_SEND\020\304\003\022\033\n\026MI_REQU" +
+      "EST_OPTIONS_SET\020\365\003\022\034\n\027MI_RESPONSE_OPTION" +
+      "S_SET\020\366\003B\"\n\020cg.base.io.protoB\016MessageIdP" +
+      "roto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {

@@ -10,9 +10,9 @@ import net.io.IMessageFactory;
 
 public class SimpleContentHandler implements IContentHandler {
 	
-	private final ISimplePubsub pubsub;
+	protected final ISimplePubsub pubsub;
 	
-	private final IMessageFactory messageFactory;
+	protected final IMessageFactory messageFactory;
 	
 	public SimpleContentHandler(ISimplePubsub pubsub) {
 		this.pubsub = pubsub;

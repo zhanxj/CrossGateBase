@@ -45,6 +45,24 @@ public class ResponseServerSelect extends ProtoMessage {
 		return ret;
 	}
 
+	/**
+	 * 
+	 * @param	key
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setKey(String key) {
+		builder.setKey(key);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public String getKey() {
+		String ret = builder.getKey();
+		return ret;
+	}
+
 	public RESPONSE_SERVER_SELECT getResponseServerSelect() {
 		return builder.build();
 	}

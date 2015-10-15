@@ -29,6 +29,24 @@ public class RequestServerRegister extends ProtoMessage {
 
 	/**
 	 * 
+	 * @param	port
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setPort(Integer port) {
+		builder.setPort(port);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public int getPort() {
+		int ret = builder.getPort();
+		return ret;
+	}
+
+	/**
+	 * 
 	 * @param	name
 	 * 			<u>do not has any annotate.</u>
 	 */

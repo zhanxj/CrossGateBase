@@ -2785,6 +2785,485 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:VO_ACCOUNT_PLAYER_INFO)
   }
 
+  public interface REQUEST_ACCOUNT_ROLE_LISTOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // required string key = 1;
+    /**
+     * <code>required string key = 1;</code>
+     */
+    boolean hasKey();
+    /**
+     * <code>required string key = 1;</code>
+     */
+    java.lang.String getKey();
+    /**
+     * <code>required string key = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
+  }
+  /**
+   * Protobuf type {@code REQUEST_ACCOUNT_ROLE_LIST}
+   */
+  public static final class REQUEST_ACCOUNT_ROLE_LIST extends
+      com.google.protobuf.GeneratedMessage
+      implements REQUEST_ACCOUNT_ROLE_LISTOrBuilder {
+    // Use REQUEST_ACCOUNT_ROLE_LIST.newBuilder() to construct.
+    private REQUEST_ACCOUNT_ROLE_LIST(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private REQUEST_ACCOUNT_ROLE_LIST(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final REQUEST_ACCOUNT_ROLE_LIST defaultInstance;
+    public static REQUEST_ACCOUNT_ROLE_LIST getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public REQUEST_ACCOUNT_ROLE_LIST getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private REQUEST_ACCOUNT_ROLE_LIST(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              key_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_ROLE_LIST_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST.class, cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<REQUEST_ACCOUNT_ROLE_LIST> PARSER =
+        new com.google.protobuf.AbstractParser<REQUEST_ACCOUNT_ROLE_LIST>() {
+      public REQUEST_ACCOUNT_ROLE_LIST parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new REQUEST_ACCOUNT_ROLE_LIST(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<REQUEST_ACCOUNT_ROLE_LIST> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // required string key = 1;
+    public static final int KEY_FIELD_NUMBER = 1;
+    private java.lang.Object key_;
+    /**
+     * <code>required string key = 1;</code>
+     */
+    public boolean hasKey() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string key = 1;</code>
+     */
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          key_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string key = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        key_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      key_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      if (!hasKey()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getKeyBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getKeyBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code REQUEST_ACCOUNT_ROLE_LIST}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LISTOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_ROLE_LIST_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST.class, cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        key_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor;
+      }
+
+      public cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST getDefaultInstanceForType() {
+        return cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST build() {
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST buildPartial() {
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST result = new cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.key_ = key_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST) {
+          return mergeFrom((cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST other) {
+        if (other == cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST.getDefaultInstance()) return this;
+        if (other.hasKey()) {
+          bitField0_ |= 0x00000001;
+          key_ = other.key_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasKey()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LIST) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // required string key = 1;
+      private java.lang.Object key_ = "";
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public boolean hasKey() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder setKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder clearKey() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        key_ = getDefaultInstance().getKey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 1;</code>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:REQUEST_ACCOUNT_ROLE_LIST)
+    }
+
+    static {
+      defaultInstance = new REQUEST_ACCOUNT_ROLE_LIST(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:REQUEST_ACCOUNT_ROLE_LIST)
+  }
+
   public interface RESPONSE_ACCOUNT_ROLE_LISTOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
@@ -3503,6 +3982,21 @@ public final class AccountProtos {
      */
     com.google.protobuf.ByteString
         getNameBytes();
+
+    // required string url = 3;
+    /**
+     * <code>required string url = 3;</code>
+     */
+    boolean hasUrl();
+    /**
+     * <code>required string url = 3;</code>
+     */
+    java.lang.String getUrl();
+    /**
+     * <code>required string url = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getUrlBytes();
   }
   /**
    * Protobuf type {@code VO_SERVER}
@@ -3563,6 +4057,11 @@ public final class AccountProtos {
             case 18: {
               bitField0_ |= 0x00000002;
               name_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              url_ = input.readBytes();
               break;
             }
           }
@@ -3691,9 +4190,53 @@ public final class AccountProtos {
       }
     }
 
+    // required string url = 3;
+    public static final int URL_FIELD_NUMBER = 3;
+    private java.lang.Object url_;
+    /**
+     * <code>required string url = 3;</code>
+     */
+    public boolean hasUrl() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>required string url = 3;</code>
+     */
+    public java.lang.String getUrl() {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          url_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string url = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getUrlBytes() {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        url_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private void initFields() {
       key_ = "";
       name_ = "";
+      url_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -3705,6 +4248,10 @@ public final class AccountProtos {
         return false;
       }
       if (!hasName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasUrl()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -3720,6 +4267,9 @@ public final class AccountProtos {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeBytes(2, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getUrlBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -3737,6 +4287,10 @@ public final class AccountProtos {
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getUrlBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -3858,6 +4412,8 @@ public final class AccountProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         name_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
+        url_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -3894,6 +4450,10 @@ public final class AccountProtos {
           to_bitField0_ |= 0x00000002;
         }
         result.name_ = name_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.url_ = url_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -3920,6 +4480,11 @@ public final class AccountProtos {
           name_ = other.name_;
           onChanged();
         }
+        if (other.hasUrl()) {
+          bitField0_ |= 0x00000004;
+          url_ = other.url_;
+          onChanged();
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -3930,6 +4495,10 @@ public final class AccountProtos {
           return false;
         }
         if (!hasName()) {
+          
+          return false;
+        }
+        if (!hasUrl()) {
           
           return false;
         }
@@ -4099,6 +4668,80 @@ public final class AccountProtos {
   }
   bitField0_ |= 0x00000002;
         name_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required string url = 3;
+      private java.lang.Object url_ = "";
+      /**
+       * <code>required string url = 3;</code>
+       */
+      public boolean hasUrl() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required string url = 3;</code>
+       */
+      public java.lang.String getUrl() {
+        java.lang.Object ref = url_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          url_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string url = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getUrlBytes() {
+        java.lang.Object ref = url_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          url_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string url = 3;</code>
+       */
+      public Builder setUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        url_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string url = 3;</code>
+       */
+      public Builder clearUrl() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        url_ = getDefaultInstance().getUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string url = 3;</code>
+       */
+      public Builder setUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        url_ = value;
         onChanged();
         return this;
       }
@@ -5296,6 +5939,21 @@ public final class AccountProtos {
      */
     com.google.protobuf.ByteString
         getUrlBytes();
+
+    // required string key = 2;
+    /**
+     * <code>required string key = 2;</code>
+     */
+    boolean hasKey();
+    /**
+     * <code>required string key = 2;</code>
+     */
+    java.lang.String getKey();
+    /**
+     * <code>required string key = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
   }
   /**
    * Protobuf type {@code RESPONSE_SERVER_SELECT}
@@ -5351,6 +6009,11 @@ public final class AccountProtos {
             case 10: {
               bitField0_ |= 0x00000001;
               url_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              key_ = input.readBytes();
               break;
             }
           }
@@ -5436,8 +6099,52 @@ public final class AccountProtos {
       }
     }
 
+    // required string key = 2;
+    public static final int KEY_FIELD_NUMBER = 2;
+    private java.lang.Object key_;
+    /**
+     * <code>required string key = 2;</code>
+     */
+    public boolean hasKey() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string key = 2;</code>
+     */
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          key_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string key = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        key_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private void initFields() {
       url_ = "";
+      key_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -5445,6 +6152,10 @@ public final class AccountProtos {
       if (isInitialized != -1) return isInitialized == 1;
 
       if (!hasUrl()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasKey()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -5458,6 +6169,9 @@ public final class AccountProtos {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeBytes(1, getUrlBytes());
       }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getKeyBytes());
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -5470,6 +6184,10 @@ public final class AccountProtos {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(1, getUrlBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getKeyBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -5589,6 +6307,8 @@ public final class AccountProtos {
         super.clear();
         url_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
+        key_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -5621,6 +6341,10 @@ public final class AccountProtos {
           to_bitField0_ |= 0x00000001;
         }
         result.url_ = url_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.key_ = key_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -5642,12 +6366,21 @@ public final class AccountProtos {
           url_ = other.url_;
           onChanged();
         }
+        if (other.hasKey()) {
+          bitField0_ |= 0x00000002;
+          key_ = other.key_;
+          onChanged();
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
         if (!hasUrl()) {
+          
+          return false;
+        }
+        if (!hasKey()) {
           
           return false;
         }
@@ -5743,6 +6476,80 @@ public final class AccountProtos {
   }
   bitField0_ |= 0x00000001;
         url_ = value;
+        onChanged();
+        return this;
+      }
+
+      // required string key = 2;
+      private java.lang.Object key_ = "";
+      /**
+       * <code>required string key = 2;</code>
+       */
+      public boolean hasKey() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string key = 2;</code>
+       */
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string key = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string key = 2;</code>
+       */
+      public Builder setKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 2;</code>
+       */
+      public Builder clearKey() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        key_ = getDefaultInstance().getKey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string key = 2;</code>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        key_ = value;
         onChanged();
         return this;
       }
@@ -6581,6 +7388,11 @@ public final class AccountProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_ACCOUNT_PLAYER_INFO_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_REQUEST_ACCOUNT_ROLE_LIST_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -6627,17 +7439,18 @@ public final class AccountProtos {
       "\023\n\013roleVersion\030\003 \002(\005\022\023\n\013headVersion\030\004 \002(" +
       "\005\022\030\n\020animationGloabId\030\005 \003(\005\022\023\n\013headGloab" +
       "Id\030\006 \003(\005\022\r\n\005level\030\007 \002(\005\022\022\n\nloginTimes\030\010 " +
-      "\002(\005\022\021\n\troleIndex\030\t \002(\005\022\013\n\003job\030\n \002(\t\"F\n\032R" +
-      "ESPONSE_ACCOUNT_ROLE_LIST\022(\n\007players\030\001 \003",
-      "(\0132\027.VO_ACCOUNT_PLAYER_INFO\"&\n\tVO_SERVER" +
-      "\022\013\n\003key\030\001 \002(\t\022\014\n\004name\030\002 \002(\t\"3\n\024RESPONSE_" +
-      "SERVER_LIST\022\033\n\007servers\030\001 \003(\0132\n.VO_SERVER" +
-      "\"$\n\025REQUEST_SERVER_SELECT\022\013\n\003key\030\001 \002(\t\"%" +
-      "\n\026RESPONSE_SERVER_SELECT\022\013\n\003url\030\001 \002(\t\"\\\n" +
-      "\037REQUEST_ACCOUNT_CHANGE_PASSWORD\022\017\n\007acco" +
-      "unt\030\001 \002(\t\022\023\n\013oldPassword\030\002 \002(\t\022\023\n\013newPas" +
-      "sword\030\003 \002(\tB!\n\020cg.base.io.protoB\rAccount" +
-      "Protos"
+      "\002(\005\022\021\n\troleIndex\030\t \002(\005\022\013\n\003job\030\n \002(\t\"(\n\031R" +
+      "EQUEST_ACCOUNT_ROLE_LIST\022\013\n\003key\030\001 \002(\t\"F\n",
+      "\032RESPONSE_ACCOUNT_ROLE_LIST\022(\n\007players\030\001" +
+      " \003(\0132\027.VO_ACCOUNT_PLAYER_INFO\"3\n\tVO_SERV" +
+      "ER\022\013\n\003key\030\001 \002(\t\022\014\n\004name\030\002 \002(\t\022\013\n\003url\030\003 \002" +
+      "(\t\"3\n\024RESPONSE_SERVER_LIST\022\033\n\007servers\030\001 " +
+      "\003(\0132\n.VO_SERVER\"$\n\025REQUEST_SERVER_SELECT" +
+      "\022\013\n\003key\030\001 \002(\t\"2\n\026RESPONSE_SERVER_SELECT\022" +
+      "\013\n\003url\030\001 \002(\t\022\013\n\003key\030\002 \002(\t\"\\\n\037REQUEST_ACC" +
+      "OUNT_CHANGE_PASSWORD\022\017\n\007account\030\001 \002(\t\022\023\n" +
+      "\013oldPassword\030\002 \002(\t\022\023\n\013newPassword\030\003 \002(\tB" +
+      "!\n\020cg.base.io.protoB\rAccountProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -6662,38 +7475,44 @@ public final class AccountProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_ACCOUNT_PLAYER_INFO_descriptor,
               new java.lang.String[] { "InstanceId", "Name", "RoleVersion", "HeadVersion", "AnimationGloabId", "HeadGloabId", "Level", "LoginTimes", "RoleIndex", "Job", });
-          internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor =
+          internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor =
             getDescriptor().getMessageTypes().get(3);
+          internal_static_REQUEST_ACCOUNT_ROLE_LIST_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor,
+              new java.lang.String[] { "Key", });
+          internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor =
+            getDescriptor().getMessageTypes().get(4);
           internal_static_RESPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor,
               new java.lang.String[] { "Players", });
           internal_static_VO_SERVER_descriptor =
-            getDescriptor().getMessageTypes().get(4);
+            getDescriptor().getMessageTypes().get(5);
           internal_static_VO_SERVER_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_VO_SERVER_descriptor,
-              new java.lang.String[] { "Key", "Name", });
+              new java.lang.String[] { "Key", "Name", "Url", });
           internal_static_RESPONSE_SERVER_LIST_descriptor =
-            getDescriptor().getMessageTypes().get(5);
+            getDescriptor().getMessageTypes().get(6);
           internal_static_RESPONSE_SERVER_LIST_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_SERVER_LIST_descriptor,
               new java.lang.String[] { "Servers", });
           internal_static_REQUEST_SERVER_SELECT_descriptor =
-            getDescriptor().getMessageTypes().get(6);
+            getDescriptor().getMessageTypes().get(7);
           internal_static_REQUEST_SERVER_SELECT_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_SERVER_SELECT_descriptor,
               new java.lang.String[] { "Key", });
           internal_static_RESPONSE_SERVER_SELECT_descriptor =
-            getDescriptor().getMessageTypes().get(7);
+            getDescriptor().getMessageTypes().get(8);
           internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RESPONSE_SERVER_SELECT_descriptor,
-              new java.lang.String[] { "Url", });
+              new java.lang.String[] { "Url", "Key", });
           internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor =
-            getDescriptor().getMessageTypes().get(8);
+            getDescriptor().getMessageTypes().get(9);
           internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor,

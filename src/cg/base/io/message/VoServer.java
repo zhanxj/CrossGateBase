@@ -56,6 +56,24 @@ public class VoServer {
 		return ret;
 	}
 
+	/**
+	 * 
+	 * @param	url
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setUrl(String url) {
+		builder.setUrl(url);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public String getUrl() {
+		String ret = vo.getUrl();
+		return ret;
+	}
+
 	public VO_SERVER getVO_SERVER() {
 		return vo == null ? builder.build() : vo;
 	}
