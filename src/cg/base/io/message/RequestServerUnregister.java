@@ -15,6 +15,7 @@ public class RequestServerUnregister extends ProtoMessage {
 
 	public RequestServerUnregister(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_SERVER_UNREGISTER_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_SERVER_UNREGISTER.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestServerUnregister extends ProtoMessage {
 
 	public RequestServerUnregister() {
 		super();
+		builder = REQUEST_SERVER_UNREGISTER.newBuilder();
 		messageId = MessageId.MI_REQUEST_SERVER_UNREGISTER_VALUE;
 	}
 

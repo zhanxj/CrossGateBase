@@ -15,6 +15,7 @@ public class ResponseChatLeave extends ProtoMessage {
 
 	public ResponseChatLeave(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_CHAT_LEAVE_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_CHAT_LEAVE.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponseChatLeave extends ProtoMessage {
 
 	public ResponseChatLeave() {
 		super();
+		builder = RESPONSE_CHAT_LEAVE.newBuilder();
 		messageId = MessageId.MI_RESPONSE_CHAT_LEAVE_VALUE;
 	}
 

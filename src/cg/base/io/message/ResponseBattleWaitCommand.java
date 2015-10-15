@@ -15,6 +15,7 @@ public class ResponseBattleWaitCommand extends ProtoMessage {
 
 	public ResponseBattleWaitCommand(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_BATTLE_WAIT_COMMAND_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_BATTLE_WAIT_COMMAND.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponseBattleWaitCommand extends ProtoMessage {
 
 	public ResponseBattleWaitCommand() {
 		super();
+		builder = RESPONSE_BATTLE_WAIT_COMMAND.newBuilder();
 		messageId = MessageId.MI_RESPONSE_BATTLE_WAIT_COMMAND_VALUE;
 	}
 

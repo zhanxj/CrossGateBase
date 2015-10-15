@@ -15,6 +15,7 @@ public class RequestMapIn extends ProtoMessage {
 
 	public RequestMapIn(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_MAP_IN_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_MAP_IN.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestMapIn extends ProtoMessage {
 
 	public RequestMapIn() {
 		super();
+		builder = REQUEST_MAP_IN.newBuilder();
 		messageId = MessageId.MI_REQUEST_MAP_IN_VALUE;
 	}
 

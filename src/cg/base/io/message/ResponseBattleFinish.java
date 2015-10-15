@@ -18,6 +18,7 @@ public class ResponseBattleFinish extends ProtoMessage {
 
 	public ResponseBattleFinish(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_BATTLE_FINISH_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_BATTLE_FINISH.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -25,6 +26,7 @@ public class ResponseBattleFinish extends ProtoMessage {
 
 	public ResponseBattleFinish() {
 		super();
+		builder = RESPONSE_BATTLE_FINISH.newBuilder();
 		messageId = MessageId.MI_RESPONSE_BATTLE_FINISH_VALUE;
 	}
 

@@ -15,6 +15,7 @@ public class RequestAccountLogin extends ProtoMessage {
 
 	public RequestAccountLogin(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_ACCOUNT_LOGIN_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_ACCOUNT_LOGIN.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestAccountLogin extends ProtoMessage {
 
 	public RequestAccountLogin() {
 		super();
+		builder = REQUEST_ACCOUNT_LOGIN.newBuilder();
 		messageId = MessageId.MI_REQUEST_ACCOUNT_LOGIN_VALUE;
 	}
 

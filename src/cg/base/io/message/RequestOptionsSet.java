@@ -15,6 +15,7 @@ public class RequestOptionsSet extends ProtoMessage {
 
 	public RequestOptionsSet(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_OPTIONS_SET_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_OPTIONS_SET.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestOptionsSet extends ProtoMessage {
 
 	public RequestOptionsSet() {
 		super();
+		builder = REQUEST_OPTIONS_SET.newBuilder();
 		messageId = MessageId.MI_REQUEST_OPTIONS_SET_VALUE;
 	}
 

@@ -15,6 +15,7 @@ public class ResponseChat extends ProtoMessage {
 
 	public ResponseChat(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_CHAT_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_CHAT.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponseChat extends ProtoMessage {
 
 	public ResponseChat() {
 		super();
+		builder = RESPONSE_CHAT.newBuilder();
 		messageId = MessageId.MI_RESPONSE_CHAT_VALUE;
 	}
 

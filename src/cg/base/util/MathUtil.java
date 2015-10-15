@@ -320,22 +320,10 @@ public class MathUtil {
 		return ret;
 	}
 	
-	/**
-	 * ��ò���ֵ��Ӧ������
-	 * @param 	b
-	 * 			����ֵ
-	 * @return	����
-	 */
 	public static byte booleanToNumber(boolean b) {
 		return (byte) (b ? 1 : 0);
 	}
 	
-	/**
-	 * ������ֶ�Ӧ�Ĳ���ֵ
-	 * @param 	v
-	 * 			����
-	 * @return	����ֵ
-	 */
 	public static boolean numberToBoolean(int v) {
 		return v > 0 ? true : false;
 	}
@@ -354,6 +342,18 @@ public class MathUtil {
 	
 	public static Byte getRandomInRangeByte(Range<Byte> range) {
 		return (byte) getRandom(range.lowerEndpoint(), range.upperEndpoint());
+	}
+	
+	public static Range<Integer> createRange(int value_1, int value_2) {
+		return value_1 > value_2 ? Range.closed(value_2, value_1) : Range.closed(value_1, value_2);
+	}
+	
+	public static Range<Short> createRange(short value_1, short value_2) {
+		return value_1 > value_2 ? Range.closed(value_2, value_1) : Range.closed(value_1, value_2);
+	}
+	
+	public static Range<Byte> createRange(byte value_1, byte value_2) {
+		return value_1 > value_2 ? Range.closed(value_2, value_1) : Range.closed(value_1, value_2);
 	}
 
 }

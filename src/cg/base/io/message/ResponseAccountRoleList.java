@@ -17,6 +17,7 @@ public class ResponseAccountRoleList extends ProtoMessage {
 
 	public ResponseAccountRoleList(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_ACCOUNT_ROLE_LIST_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_ACCOUNT_ROLE_LIST.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -24,6 +25,7 @@ public class ResponseAccountRoleList extends ProtoMessage {
 
 	public ResponseAccountRoleList() {
 		super();
+		builder = RESPONSE_ACCOUNT_ROLE_LIST.newBuilder();
 		messageId = MessageId.MI_RESPONSE_ACCOUNT_ROLE_LIST_VALUE;
 	}
 

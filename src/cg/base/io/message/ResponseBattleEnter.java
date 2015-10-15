@@ -17,6 +17,7 @@ public class ResponseBattleEnter extends ProtoMessage {
 
 	public ResponseBattleEnter(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_BATTLE_ENTER_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_BATTLE_ENTER.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -24,6 +25,7 @@ public class ResponseBattleEnter extends ProtoMessage {
 
 	public ResponseBattleEnter() {
 		super();
+		builder = RESPONSE_BATTLE_ENTER.newBuilder();
 		messageId = MessageId.MI_RESPONSE_BATTLE_ENTER_VALUE;
 	}
 

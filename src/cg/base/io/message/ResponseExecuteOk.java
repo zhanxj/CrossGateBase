@@ -15,6 +15,7 @@ public class ResponseExecuteOk extends ProtoMessage {
 
 	public ResponseExecuteOk(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_EXECUTE_OK_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_EXECUTE_OK.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponseExecuteOk extends ProtoMessage {
 
 	public ResponseExecuteOk() {
 		super();
+		builder = RESPONSE_EXECUTE_OK.newBuilder();
 		messageId = MessageId.MI_RESPONSE_EXECUTE_OK_VALUE;
 	}
 

@@ -15,6 +15,7 @@ public class RequestChat extends ProtoMessage {
 
 	public RequestChat(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_CHAT_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_CHAT.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestChat extends ProtoMessage {
 
 	public RequestChat() {
 		super();
+		builder = REQUEST_CHAT.newBuilder();
 		messageId = MessageId.MI_REQUEST_CHAT_VALUE;
 	}
 

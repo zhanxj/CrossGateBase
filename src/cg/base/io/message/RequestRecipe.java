@@ -16,6 +16,7 @@ public class RequestRecipe extends ProtoMessage {
 
 	public RequestRecipe(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_RECIPE_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_RECIPE.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -23,6 +24,7 @@ public class RequestRecipe extends ProtoMessage {
 
 	public RequestRecipe() {
 		super();
+		builder = REQUEST_RECIPE.newBuilder();
 		messageId = MessageId.MI_REQUEST_RECIPE_VALUE;
 	}
 

@@ -15,6 +15,7 @@ public class RequestMapMove extends ProtoMessage {
 
 	public RequestMapMove(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_MAP_MOVE_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_MAP_MOVE.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestMapMove extends ProtoMessage {
 
 	public RequestMapMove() {
 		super();
+		builder = REQUEST_MAP_MOVE.newBuilder();
 		messageId = MessageId.MI_REQUEST_MAP_MOVE_VALUE;
 	}
 

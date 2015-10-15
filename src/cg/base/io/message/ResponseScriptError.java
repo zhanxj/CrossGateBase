@@ -15,6 +15,7 @@ public class ResponseScriptError extends ProtoMessage {
 
 	public ResponseScriptError(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_SCRIPT_ERROR_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_SCRIPT_ERROR.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponseScriptError extends ProtoMessage {
 
 	public ResponseScriptError() {
 		super();
+		builder = RESPONSE_SCRIPT_ERROR.newBuilder();
 		messageId = MessageId.MI_RESPONSE_SCRIPT_ERROR_VALUE;
 	}
 

@@ -15,6 +15,7 @@ public class RequestPlayerAnimationInfo extends ProtoMessage {
 
 	public RequestPlayerAnimationInfo(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_PLAYER_ANIMATION_INFO_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_PLAYER_ANIMATION_INFO.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestPlayerAnimationInfo extends ProtoMessage {
 
 	public RequestPlayerAnimationInfo() {
 		super();
+		builder = REQUEST_PLAYER_ANIMATION_INFO.newBuilder();
 		messageId = MessageId.MI_REQUEST_PLAYER_ANIMATION_INFO_VALUE;
 	}
 

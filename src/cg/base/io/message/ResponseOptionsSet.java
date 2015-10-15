@@ -15,6 +15,7 @@ public class ResponseOptionsSet extends ProtoMessage {
 
 	public ResponseOptionsSet(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_OPTIONS_SET_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_OPTIONS_SET.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponseOptionsSet extends ProtoMessage {
 
 	public ResponseOptionsSet() {
 		super();
+		builder = RESPONSE_OPTIONS_SET.newBuilder();
 		messageId = MessageId.MI_RESPONSE_OPTIONS_SET_VALUE;
 	}
 

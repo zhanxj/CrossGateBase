@@ -15,6 +15,7 @@ public class RequestSkillUse extends ProtoMessage {
 
 	public RequestSkillUse(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_SKILL_USE_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_SKILL_USE.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestSkillUse extends ProtoMessage {
 
 	public RequestSkillUse() {
 		super();
+		builder = REQUEST_SKILL_USE.newBuilder();
 		messageId = MessageId.MI_REQUEST_SKILL_USE_VALUE;
 	}
 

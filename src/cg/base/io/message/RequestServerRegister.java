@@ -15,6 +15,7 @@ public class RequestServerRegister extends ProtoMessage {
 
 	public RequestServerRegister(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_SERVER_REGISTER_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_SERVER_REGISTER.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestServerRegister extends ProtoMessage {
 
 	public RequestServerRegister() {
 		super();
+		builder = REQUEST_SERVER_REGISTER.newBuilder();
 		messageId = MessageId.MI_REQUEST_SERVER_REGISTER_VALUE;
 	}
 

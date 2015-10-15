@@ -16,6 +16,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 
 	public RequestPlayerCreate(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_PLAYER_CREATE_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_PLAYER_CREATE.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -23,6 +24,7 @@ public class RequestPlayerCreate extends ProtoMessage {
 
 	public RequestPlayerCreate() {
 		super();
+		builder = REQUEST_PLAYER_CREATE.newBuilder();
 		messageId = MessageId.MI_REQUEST_PLAYER_CREATE_VALUE;
 	}
 

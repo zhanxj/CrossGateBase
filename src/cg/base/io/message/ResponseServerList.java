@@ -17,6 +17,7 @@ public class ResponseServerList extends ProtoMessage {
 
 	public ResponseServerList(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_SERVER_LIST_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_SERVER_LIST.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -24,6 +25,7 @@ public class ResponseServerList extends ProtoMessage {
 
 	public ResponseServerList() {
 		super();
+		builder = RESPONSE_SERVER_LIST.newBuilder();
 		messageId = MessageId.MI_RESPONSE_SERVER_LIST_VALUE;
 	}
 

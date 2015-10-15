@@ -15,6 +15,7 @@ public class RequestPlayerDelete extends ProtoMessage {
 
 	public RequestPlayerDelete(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_PLAYER_DELETE_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_PLAYER_DELETE.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestPlayerDelete extends ProtoMessage {
 
 	public RequestPlayerDelete() {
 		super();
+		builder = REQUEST_PLAYER_DELETE.newBuilder();
 		messageId = MessageId.MI_REQUEST_PLAYER_DELETE_VALUE;
 	}
 

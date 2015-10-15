@@ -18,6 +18,7 @@ public class ResponseMailSend extends ProtoMessage {
 
 	public ResponseMailSend(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_MAIL_SEND_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_MAIL_SEND.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -25,6 +26,7 @@ public class ResponseMailSend extends ProtoMessage {
 
 	public ResponseMailSend() {
 		super();
+		builder = RESPONSE_MAIL_SEND.newBuilder();
 		messageId = MessageId.MI_RESPONSE_MAIL_SEND_VALUE;
 	}
 

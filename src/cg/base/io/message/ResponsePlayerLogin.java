@@ -15,6 +15,7 @@ public class ResponsePlayerLogin extends ProtoMessage {
 
 	public ResponsePlayerLogin(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_PLAYER_LOGIN_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_PLAYER_LOGIN.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponsePlayerLogin extends ProtoMessage {
 
 	public ResponsePlayerLogin() {
 		super();
+		builder = RESPONSE_PLAYER_LOGIN.newBuilder();
 		messageId = MessageId.MI_RESPONSE_PLAYER_LOGIN_VALUE;
 	}
 

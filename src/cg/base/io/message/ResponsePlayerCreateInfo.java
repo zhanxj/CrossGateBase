@@ -17,6 +17,7 @@ public class ResponsePlayerCreateInfo extends ProtoMessage {
 
 	public ResponsePlayerCreateInfo(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_PLAYER_CREATE_INFO_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_PLAYER_CREATE_INFO.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -24,6 +25,7 @@ public class ResponsePlayerCreateInfo extends ProtoMessage {
 
 	public ResponsePlayerCreateInfo() {
 		super();
+		builder = RESPONSE_PLAYER_CREATE_INFO.newBuilder();
 		messageId = MessageId.MI_RESPONSE_PLAYER_CREATE_INFO_VALUE;
 	}
 

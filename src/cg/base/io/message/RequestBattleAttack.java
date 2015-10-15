@@ -15,6 +15,7 @@ public class RequestBattleAttack extends ProtoMessage {
 
 	public RequestBattleAttack(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_BATTLE_ATTACK_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_BATTLE_ATTACK.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestBattleAttack extends ProtoMessage {
 
 	public RequestBattleAttack() {
 		super();
+		builder = REQUEST_BATTLE_ATTACK.newBuilder();
 		messageId = MessageId.MI_REQUEST_BATTLE_ATTACK_VALUE;
 	}
 

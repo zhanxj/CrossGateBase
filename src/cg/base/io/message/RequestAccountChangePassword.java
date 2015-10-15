@@ -15,6 +15,7 @@ public class RequestAccountChangePassword extends ProtoMessage {
 
 	public RequestAccountChangePassword(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_ACCOUNT_CHANGE_PASSWORD_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_ACCOUNT_CHANGE_PASSWORD.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestAccountChangePassword extends ProtoMessage {
 
 	public RequestAccountChangePassword() {
 		super();
+		builder = REQUEST_ACCOUNT_CHANGE_PASSWORD.newBuilder();
 		messageId = MessageId.MI_REQUEST_ACCOUNT_CHANGE_PASSWORD_VALUE;
 	}
 

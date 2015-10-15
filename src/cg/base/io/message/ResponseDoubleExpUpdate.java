@@ -15,6 +15,7 @@ public class ResponseDoubleExpUpdate extends ProtoMessage {
 
 	public ResponseDoubleExpUpdate(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_DOUBLE_EXP_UPDATE_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_DOUBLE_EXP_UPDATE.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponseDoubleExpUpdate extends ProtoMessage {
 
 	public ResponseDoubleExpUpdate() {
 		super();
+		builder = RESPONSE_DOUBLE_EXP_UPDATE.newBuilder();
 		messageId = MessageId.MI_RESPONSE_DOUBLE_EXP_UPDATE_VALUE;
 	}
 

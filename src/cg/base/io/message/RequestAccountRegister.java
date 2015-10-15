@@ -15,6 +15,7 @@ public class RequestAccountRegister extends ProtoMessage {
 
 	public RequestAccountRegister(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_ACCOUNT_REGISTER_VALUE, status, sessionId, sender, datas);
+		builder = REQUEST_ACCOUNT_REGISTER.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class RequestAccountRegister extends ProtoMessage {
 
 	public RequestAccountRegister() {
 		super();
+		builder = REQUEST_ACCOUNT_REGISTER.newBuilder();
 		messageId = MessageId.MI_REQUEST_ACCOUNT_REGISTER_VALUE;
 	}
 

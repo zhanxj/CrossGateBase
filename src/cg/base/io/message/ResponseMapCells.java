@@ -18,6 +18,7 @@ public class ResponseMapCells extends ProtoMessage {
 
 	public ResponseMapCells(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_MAP_CELLS_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_MAP_CELLS.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -25,6 +26,7 @@ public class ResponseMapCells extends ProtoMessage {
 
 	public ResponseMapCells() {
 		super();
+		builder = RESPONSE_MAP_CELLS.newBuilder();
 		messageId = MessageId.MI_RESPONSE_MAP_CELLS_VALUE;
 	}
 

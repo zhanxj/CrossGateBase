@@ -15,6 +15,7 @@ public class ResponseExecuteError extends ProtoMessage {
 
 	public ResponseExecuteError(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_EXECUTE_ERROR_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_EXECUTE_ERROR.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponseExecuteError extends ProtoMessage {
 
 	public ResponseExecuteError() {
 		super();
+		builder = RESPONSE_EXECUTE_ERROR.newBuilder();
 		messageId = MessageId.MI_RESPONSE_EXECUTE_ERROR_VALUE;
 	}
 

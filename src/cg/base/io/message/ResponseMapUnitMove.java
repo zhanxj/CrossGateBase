@@ -15,6 +15,7 @@ public class ResponseMapUnitMove extends ProtoMessage {
 
 	public ResponseMapUnitMove(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_RESPONSE_MAP_UNIT_MOVE_VALUE, status, sessionId, sender, datas);
+		builder = RESPONSE_MAP_UNIT_MOVE.newBuilder();
 		if (datas != null) {
 			builder.mergeFrom(datas);
 		}
@@ -22,6 +23,7 @@ public class ResponseMapUnitMove extends ProtoMessage {
 
 	public ResponseMapUnitMove() {
 		super();
+		builder = RESPONSE_MAP_UNIT_MOVE.newBuilder();
 		messageId = MessageId.MI_RESPONSE_MAP_UNIT_MOVE_VALUE;
 	}
 
