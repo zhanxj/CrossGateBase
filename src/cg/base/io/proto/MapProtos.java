@@ -8,10 +8,10 @@ public final class MapProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface REQUEST_MAP_INOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_MAP_INOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_MAP_IN)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 mapId = 1;
     /**
      * <code>required int32 mapId = 1;</code>
      */
@@ -21,7 +21,6 @@ public final class MapProtos {
      */
     int getMapId();
 
-    // required int32 east = 2;
     /**
      * <code>required int32 east = 2;</code>
      */
@@ -31,7 +30,6 @@ public final class MapProtos {
      */
     int getEast();
 
-    // required int32 south = 3;
     /**
      * <code>required int32 south = 3;</code>
      */
@@ -45,8 +43,9 @@ public final class MapProtos {
    * Protobuf type {@code REQUEST_MAP_IN}
    */
   public static final class REQUEST_MAP_IN extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_MAP_INOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_MAP_IN)
+      REQUEST_MAP_INOrBuilder {
     // Use REQUEST_MAP_IN.newBuilder() to construct.
     private REQUEST_MAP_IN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -147,7 +146,6 @@ public final class MapProtos {
     }
 
     private int bitField0_;
-    // required int32 mapId = 1;
     public static final int MAPID_FIELD_NUMBER = 1;
     private int mapId_;
     /**
@@ -163,7 +161,6 @@ public final class MapProtos {
       return mapId_;
     }
 
-    // required int32 east = 2;
     public static final int EAST_FIELD_NUMBER = 2;
     private int east_;
     /**
@@ -179,7 +176,6 @@ public final class MapProtos {
       return east_;
     }
 
-    // required int32 south = 3;
     public static final int SOUTH_FIELD_NUMBER = 3;
     private int south_;
     /**
@@ -203,7 +199,8 @@ public final class MapProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasMapId()) {
         memoizedIsInitialized = 0;
@@ -336,8 +333,9 @@ public final class MapProtos {
      * Protobuf type {@code REQUEST_MAP_IN}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.REQUEST_MAP_INOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_MAP_IN)
+        cg.base.io.proto.MapProtos.REQUEST_MAP_INOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_IN_descriptor;
@@ -480,7 +478,6 @@ public final class MapProtos {
       }
       private int bitField0_;
 
-      // required int32 mapId = 1;
       private int mapId_ ;
       /**
        * <code>required int32 mapId = 1;</code>
@@ -513,7 +510,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 east = 2;
       private int east_ ;
       /**
        * <code>required int32 east = 2;</code>
@@ -546,7 +542,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 south = 3;
       private int south_ ;
       /**
        * <code>required int32 south = 3;</code>
@@ -590,10 +585,10 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_MAP_IN)
   }
 
-  public interface RESPONSE_MAP_INOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_MAP_INOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_MAP_IN)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 mapId = 1;
     /**
      * <code>required int32 mapId = 1;</code>
      */
@@ -603,7 +598,6 @@ public final class MapProtos {
      */
     int getMapId();
 
-    // required int32 mapInstanceId = 2;
     /**
      * <code>required int32 mapInstanceId = 2;</code>
      */
@@ -613,7 +607,6 @@ public final class MapProtos {
      */
     int getMapInstanceId();
 
-    // required string mapName = 3;
     /**
      * <code>required string mapName = 3;</code>
      */
@@ -628,7 +621,6 @@ public final class MapProtos {
     com.google.protobuf.ByteString
         getMapNameBytes();
 
-    // required int32 east = 4;
     /**
      * <code>required int32 east = 4;</code>
      */
@@ -638,7 +630,6 @@ public final class MapProtos {
      */
     int getEast();
 
-    // required int32 south = 5;
     /**
      * <code>required int32 south = 5;</code>
      */
@@ -648,7 +639,6 @@ public final class MapProtos {
      */
     int getSouth();
 
-    // required int32 maxEast = 6;
     /**
      * <code>required int32 maxEast = 6;</code>
      */
@@ -658,7 +648,6 @@ public final class MapProtos {
      */
     int getMaxEast();
 
-    // required int32 maxSouth = 7;
     /**
      * <code>required int32 maxSouth = 7;</code>
      */
@@ -672,8 +661,9 @@ public final class MapProtos {
    * Protobuf type {@code RESPONSE_MAP_IN}
    */
   public static final class RESPONSE_MAP_IN extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_MAP_INOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_MAP_IN)
+      RESPONSE_MAP_INOrBuilder {
     // Use RESPONSE_MAP_IN.newBuilder() to construct.
     private RESPONSE_MAP_IN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -730,8 +720,9 @@ public final class MapProtos {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              mapName_ = input.readBytes();
+              mapName_ = bs;
               break;
             }
             case 32: {
@@ -794,7 +785,6 @@ public final class MapProtos {
     }
 
     private int bitField0_;
-    // required int32 mapId = 1;
     public static final int MAPID_FIELD_NUMBER = 1;
     private int mapId_;
     /**
@@ -810,7 +800,6 @@ public final class MapProtos {
       return mapId_;
     }
 
-    // required int32 mapInstanceId = 2;
     public static final int MAPINSTANCEID_FIELD_NUMBER = 2;
     private int mapInstanceId_;
     /**
@@ -826,7 +815,6 @@ public final class MapProtos {
       return mapInstanceId_;
     }
 
-    // required string mapName = 3;
     public static final int MAPNAME_FIELD_NUMBER = 3;
     private java.lang.Object mapName_;
     /**
@@ -869,7 +857,6 @@ public final class MapProtos {
       }
     }
 
-    // required int32 east = 4;
     public static final int EAST_FIELD_NUMBER = 4;
     private int east_;
     /**
@@ -885,7 +872,6 @@ public final class MapProtos {
       return east_;
     }
 
-    // required int32 south = 5;
     public static final int SOUTH_FIELD_NUMBER = 5;
     private int south_;
     /**
@@ -901,7 +887,6 @@ public final class MapProtos {
       return south_;
     }
 
-    // required int32 maxEast = 6;
     public static final int MAXEAST_FIELD_NUMBER = 6;
     private int maxEast_;
     /**
@@ -917,7 +902,6 @@ public final class MapProtos {
       return maxEast_;
     }
 
-    // required int32 maxSouth = 7;
     public static final int MAXSOUTH_FIELD_NUMBER = 7;
     private int maxSouth_;
     /**
@@ -945,7 +929,8 @@ public final class MapProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasMapId()) {
         memoizedIsInitialized = 0;
@@ -1122,8 +1107,9 @@ public final class MapProtos {
      * Protobuf type {@code RESPONSE_MAP_IN}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_INOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_MAP_IN)
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_INOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_IN_descriptor;
@@ -1320,7 +1306,6 @@ public final class MapProtos {
       }
       private int bitField0_;
 
-      // required int32 mapId = 1;
       private int mapId_ ;
       /**
        * <code>required int32 mapId = 1;</code>
@@ -1353,7 +1338,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 mapInstanceId = 2;
       private int mapInstanceId_ ;
       /**
        * <code>required int32 mapInstanceId = 2;</code>
@@ -1386,7 +1370,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required string mapName = 3;
       private java.lang.Object mapName_ = "";
       /**
        * <code>required string mapName = 3;</code>
@@ -1400,9 +1383,12 @@ public final class MapProtos {
       public java.lang.String getMapName() {
         java.lang.Object ref = mapName_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          mapName_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            mapName_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1460,7 +1446,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 east = 4;
       private int east_ ;
       /**
        * <code>required int32 east = 4;</code>
@@ -1493,7 +1478,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 south = 5;
       private int south_ ;
       /**
        * <code>required int32 south = 5;</code>
@@ -1526,7 +1510,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 maxEast = 6;
       private int maxEast_ ;
       /**
        * <code>required int32 maxEast = 6;</code>
@@ -1559,7 +1542,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 maxSouth = 7;
       private int maxSouth_ ;
       /**
        * <code>required int32 maxSouth = 7;</code>
@@ -1603,10 +1585,10 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_IN)
   }
 
-  public interface REQUEST_MAP_MOVEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_MAP_MOVEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_MAP_MOVE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 east = 1;
     /**
      * <code>required int32 east = 1;</code>
      */
@@ -1616,7 +1598,6 @@ public final class MapProtos {
      */
     int getEast();
 
-    // required int32 south = 2;
     /**
      * <code>required int32 south = 2;</code>
      */
@@ -1626,7 +1607,6 @@ public final class MapProtos {
      */
     int getSouth();
 
-    // required bool needEast = 3;
     /**
      * <code>required bool needEast = 3;</code>
      */
@@ -1636,7 +1616,6 @@ public final class MapProtos {
      */
     boolean getNeedEast();
 
-    // required .VO_MAP_AREA eastArea = 4;
     /**
      * <code>required .VO_MAP_AREA eastArea = 4;</code>
      */
@@ -1650,7 +1629,6 @@ public final class MapProtos {
      */
     cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder getEastAreaOrBuilder();
 
-    // required bool needSouth = 5;
     /**
      * <code>required bool needSouth = 5;</code>
      */
@@ -1660,7 +1638,6 @@ public final class MapProtos {
      */
     boolean getNeedSouth();
 
-    // required .VO_MAP_AREA southArea = 6;
     /**
      * <code>required .VO_MAP_AREA southArea = 6;</code>
      */
@@ -1674,7 +1651,6 @@ public final class MapProtos {
      */
     cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder getSouthAreaOrBuilder();
 
-    // required int32 serial = 7;
     /**
      * <code>required int32 serial = 7;</code>
      */
@@ -1688,8 +1664,9 @@ public final class MapProtos {
    * Protobuf type {@code REQUEST_MAP_MOVE}
    */
   public static final class REQUEST_MAP_MOVE extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_MAP_MOVEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_MAP_MOVE)
+      REQUEST_MAP_MOVEOrBuilder {
     // Use REQUEST_MAP_MOVE.newBuilder() to construct.
     private REQUEST_MAP_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1826,7 +1803,6 @@ public final class MapProtos {
     }
 
     private int bitField0_;
-    // required int32 east = 1;
     public static final int EAST_FIELD_NUMBER = 1;
     private int east_;
     /**
@@ -1842,7 +1818,6 @@ public final class MapProtos {
       return east_;
     }
 
-    // required int32 south = 2;
     public static final int SOUTH_FIELD_NUMBER = 2;
     private int south_;
     /**
@@ -1858,7 +1833,6 @@ public final class MapProtos {
       return south_;
     }
 
-    // required bool needEast = 3;
     public static final int NEEDEAST_FIELD_NUMBER = 3;
     private boolean needEast_;
     /**
@@ -1874,7 +1848,6 @@ public final class MapProtos {
       return needEast_;
     }
 
-    // required .VO_MAP_AREA eastArea = 4;
     public static final int EASTAREA_FIELD_NUMBER = 4;
     private cg.base.io.proto.VOProtos.VO_MAP_AREA eastArea_;
     /**
@@ -1896,7 +1869,6 @@ public final class MapProtos {
       return eastArea_;
     }
 
-    // required bool needSouth = 5;
     public static final int NEEDSOUTH_FIELD_NUMBER = 5;
     private boolean needSouth_;
     /**
@@ -1912,7 +1884,6 @@ public final class MapProtos {
       return needSouth_;
     }
 
-    // required .VO_MAP_AREA southArea = 6;
     public static final int SOUTHAREA_FIELD_NUMBER = 6;
     private cg.base.io.proto.VOProtos.VO_MAP_AREA southArea_;
     /**
@@ -1934,7 +1905,6 @@ public final class MapProtos {
       return southArea_;
     }
 
-    // required int32 serial = 7;
     public static final int SERIAL_FIELD_NUMBER = 7;
     private int serial_;
     /**
@@ -1962,7 +1932,8 @@ public final class MapProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasEast()) {
         memoizedIsInitialized = 0;
@@ -2147,8 +2118,9 @@ public final class MapProtos {
      * Protobuf type {@code REQUEST_MAP_MOVE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.REQUEST_MAP_MOVEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_MAP_MOVE)
+        cg.base.io.proto.MapProtos.REQUEST_MAP_MOVEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_REQUEST_MAP_MOVE_descriptor;
@@ -2369,7 +2341,6 @@ public final class MapProtos {
       }
       private int bitField0_;
 
-      // required int32 east = 1;
       private int east_ ;
       /**
        * <code>required int32 east = 1;</code>
@@ -2402,7 +2373,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 south = 2;
       private int south_ ;
       /**
        * <code>required int32 south = 2;</code>
@@ -2435,7 +2405,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required bool needEast = 3;
       private boolean needEast_ ;
       /**
        * <code>required bool needEast = 3;</code>
@@ -2468,7 +2437,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required .VO_MAP_AREA eastArea = 4;
       private cg.base.io.proto.VOProtos.VO_MAP_AREA eastArea_ = cg.base.io.proto.VOProtos.VO_MAP_AREA.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_MAP_AREA, cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder, cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder> eastAreaBuilder_;
@@ -2577,7 +2545,7 @@ public final class MapProtos {
         if (eastAreaBuilder_ == null) {
           eastAreaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_MAP_AREA, cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder, cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder>(
-                  eastArea_,
+                  getEastArea(),
                   getParentForChildren(),
                   isClean());
           eastArea_ = null;
@@ -2585,7 +2553,6 @@ public final class MapProtos {
         return eastAreaBuilder_;
       }
 
-      // required bool needSouth = 5;
       private boolean needSouth_ ;
       /**
        * <code>required bool needSouth = 5;</code>
@@ -2618,7 +2585,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required .VO_MAP_AREA southArea = 6;
       private cg.base.io.proto.VOProtos.VO_MAP_AREA southArea_ = cg.base.io.proto.VOProtos.VO_MAP_AREA.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_MAP_AREA, cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder, cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder> southAreaBuilder_;
@@ -2727,7 +2693,7 @@ public final class MapProtos {
         if (southAreaBuilder_ == null) {
           southAreaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_MAP_AREA, cg.base.io.proto.VOProtos.VO_MAP_AREA.Builder, cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder>(
-                  southArea_,
+                  getSouthArea(),
                   getParentForChildren(),
                   isClean());
           southArea_ = null;
@@ -2735,7 +2701,6 @@ public final class MapProtos {
         return southAreaBuilder_;
       }
 
-      // required int32 serial = 7;
       private int serial_ ;
       /**
        * <code>required int32 serial = 7;</code>
@@ -2779,10 +2744,10 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_MAP_MOVE)
   }
 
-  public interface RESPONSE_MAP_MOVEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_MAP_MOVEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_MAP_MOVE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 serial = 1;
     /**
      * <code>required int32 serial = 1;</code>
      */
@@ -2792,7 +2757,6 @@ public final class MapProtos {
      */
     int getSerial();
 
-    // repeated .VO_MAP_CELL mapCells = 2;
     /**
      * <code>repeated .VO_MAP_CELL mapCells = 2;</code>
      */
@@ -2821,8 +2785,9 @@ public final class MapProtos {
    * Protobuf type {@code RESPONSE_MAP_MOVE}
    */
   public static final class RESPONSE_MAP_MOVE extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_MAP_MOVEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_MAP_MOVE)
+      RESPONSE_MAP_MOVEOrBuilder {
     // Use RESPONSE_MAP_MOVE.newBuilder() to construct.
     private RESPONSE_MAP_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2924,7 +2889,6 @@ public final class MapProtos {
     }
 
     private int bitField0_;
-    // required int32 serial = 1;
     public static final int SERIAL_FIELD_NUMBER = 1;
     private int serial_;
     /**
@@ -2940,7 +2904,6 @@ public final class MapProtos {
       return serial_;
     }
 
-    // repeated .VO_MAP_CELL mapCells = 2;
     public static final int MAPCELLS_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_;
     /**
@@ -2983,7 +2946,8 @@ public final class MapProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasSerial()) {
         memoizedIsInitialized = 0;
@@ -3107,8 +3071,9 @@ public final class MapProtos {
      * Protobuf type {@code RESPONSE_MAP_MOVE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_MAP_MOVE)
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_MOVEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_MOVE_descriptor;
@@ -3273,7 +3238,6 @@ public final class MapProtos {
       }
       private int bitField0_;
 
-      // required int32 serial = 1;
       private int serial_ ;
       /**
        * <code>required int32 serial = 1;</code>
@@ -3306,7 +3270,6 @@ public final class MapProtos {
         return this;
       }
 
-      // repeated .VO_MAP_CELL mapCells = 2;
       private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_ =
         java.util.Collections.emptyList();
       private void ensureMapCellsIsMutable() {
@@ -3448,7 +3411,8 @@ public final class MapProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_MAP_CELL> values) {
         if (mapCellsBuilder_ == null) {
           ensureMapCellsIsMutable();
-          super.addAll(values, mapCells_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, mapCells_);
           onChanged();
         } else {
           mapCellsBuilder_.addAllMessages(values);
@@ -3557,10 +3521,10 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_MOVE)
   }
 
-  public interface VO_MAP_UNIT_EXTENDOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_MAP_UNIT_EXTENDOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_MAP_UNIT_EXTEND)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional int32 ownerInstanceId = 1;
     /**
      * <code>optional int32 ownerInstanceId = 1;</code>
      *
@@ -3578,7 +3542,6 @@ public final class MapProtos {
      */
     int getOwnerInstanceId();
 
-    // optional int32 state = 2;
     /**
      * <code>optional int32 state = 2;</code>
      *
@@ -3596,7 +3559,6 @@ public final class MapProtos {
      */
     int getState();
 
-    // optional string talkType = 3;
     /**
      * <code>optional string talkType = 3;</code>
      *
@@ -3627,8 +3589,9 @@ public final class MapProtos {
    * Protobuf type {@code VO_MAP_UNIT_EXTEND}
    */
   public static final class VO_MAP_UNIT_EXTEND extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_MAP_UNIT_EXTENDOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_MAP_UNIT_EXTEND)
+      VO_MAP_UNIT_EXTENDOrBuilder {
     // Use VO_MAP_UNIT_EXTEND.newBuilder() to construct.
     private VO_MAP_UNIT_EXTEND(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -3685,8 +3648,9 @@ public final class MapProtos {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              talkType_ = input.readBytes();
+              talkType_ = bs;
               break;
             }
           }
@@ -3729,7 +3693,6 @@ public final class MapProtos {
     }
 
     private int bitField0_;
-    // optional int32 ownerInstanceId = 1;
     public static final int OWNERINSTANCEID_FIELD_NUMBER = 1;
     private int ownerInstanceId_;
     /**
@@ -3753,7 +3716,6 @@ public final class MapProtos {
       return ownerInstanceId_;
     }
 
-    // optional int32 state = 2;
     public static final int STATE_FIELD_NUMBER = 2;
     private int state_;
     /**
@@ -3777,7 +3739,6 @@ public final class MapProtos {
       return state_;
     }
 
-    // optional string talkType = 3;
     public static final int TALKTYPE_FIELD_NUMBER = 3;
     private java.lang.Object talkType_;
     /**
@@ -3840,7 +3801,8 @@ public final class MapProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -3961,8 +3923,9 @@ public final class MapProtos {
      * Protobuf type {@code VO_MAP_UNIT_EXTEND}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_MAP_UNIT_EXTEND)
+        cg.base.io.proto.MapProtos.VO_MAP_UNIT_EXTENDOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_VO_MAP_UNIT_EXTEND_descriptor;
@@ -4095,7 +4058,6 @@ public final class MapProtos {
       }
       private int bitField0_;
 
-      // optional int32 ownerInstanceId = 1;
       private int ownerInstanceId_ ;
       /**
        * <code>optional int32 ownerInstanceId = 1;</code>
@@ -4144,7 +4106,6 @@ public final class MapProtos {
         return this;
       }
 
-      // optional int32 state = 2;
       private int state_ ;
       /**
        * <code>optional int32 state = 2;</code>
@@ -4193,7 +4154,6 @@ public final class MapProtos {
         return this;
       }
 
-      // optional string talkType = 3;
       private java.lang.Object talkType_ = "";
       /**
        * <code>optional string talkType = 3;</code>
@@ -4215,9 +4175,12 @@ public final class MapProtos {
       public java.lang.String getTalkType() {
         java.lang.Object ref = talkType_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          talkType_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            talkType_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -4302,10 +4265,10 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:VO_MAP_UNIT_EXTEND)
   }
 
-  public interface RESPONSE_MAP_UNIT_CREATEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_MAP_UNIT_CREATEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_MAP_UNIT_CREATE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required .VO_UNIT unitInfo = 1;
     /**
      * <code>required .VO_UNIT unitInfo = 1;</code>
      */
@@ -4323,8 +4286,9 @@ public final class MapProtos {
    * Protobuf type {@code RESPONSE_MAP_UNIT_CREATE}
    */
   public static final class RESPONSE_MAP_UNIT_CREATE extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_MAP_UNIT_CREATEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_MAP_UNIT_CREATE)
+      RESPONSE_MAP_UNIT_CREATEOrBuilder {
     // Use RESPONSE_MAP_UNIT_CREATE.newBuilder() to construct.
     private RESPONSE_MAP_UNIT_CREATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -4423,7 +4387,6 @@ public final class MapProtos {
     }
 
     private int bitField0_;
-    // required .VO_UNIT unitInfo = 1;
     public static final int UNITINFO_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_;
     /**
@@ -4451,7 +4414,8 @@ public final class MapProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasUnitInfo()) {
         memoizedIsInitialized = 0;
@@ -4566,8 +4530,9 @@ public final class MapProtos {
      * Protobuf type {@code RESPONSE_MAP_UNIT_CREATE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_MAP_UNIT_CREATE)
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_CREATEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor;
@@ -4697,7 +4662,6 @@ public final class MapProtos {
       }
       private int bitField0_;
 
-      // required .VO_UNIT unitInfo = 1;
       private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> unitInfoBuilder_;
@@ -4806,7 +4770,7 @@ public final class MapProtos {
         if (unitInfoBuilder_ == null) {
           unitInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder>(
-                  unitInfo_,
+                  getUnitInfo(),
                   getParentForChildren(),
                   isClean());
           unitInfo_ = null;
@@ -4825,10 +4789,10 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_CREATE)
   }
 
-  public interface RESPONSE_MAP_UNIT_MOVEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_MAP_UNIT_MOVEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_MAP_UNIT_MOVE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 unitType = 1;
     /**
      * <code>required int32 unitType = 1;</code>
      */
@@ -4838,7 +4802,6 @@ public final class MapProtos {
      */
     int getUnitType();
 
-    // required int32 instanceId = 2;
     /**
      * <code>required int32 instanceId = 2;</code>
      */
@@ -4848,7 +4811,6 @@ public final class MapProtos {
      */
     int getInstanceId();
 
-    // required int32 east = 3;
     /**
      * <code>required int32 east = 3;</code>
      */
@@ -4858,7 +4820,6 @@ public final class MapProtos {
      */
     int getEast();
 
-    // required int32 south = 4;
     /**
      * <code>required int32 south = 4;</code>
      */
@@ -4872,8 +4833,9 @@ public final class MapProtos {
    * Protobuf type {@code RESPONSE_MAP_UNIT_MOVE}
    */
   public static final class RESPONSE_MAP_UNIT_MOVE extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_MAP_UNIT_MOVEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_MAP_UNIT_MOVE)
+      RESPONSE_MAP_UNIT_MOVEOrBuilder {
     // Use RESPONSE_MAP_UNIT_MOVE.newBuilder() to construct.
     private RESPONSE_MAP_UNIT_MOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -4979,7 +4941,6 @@ public final class MapProtos {
     }
 
     private int bitField0_;
-    // required int32 unitType = 1;
     public static final int UNITTYPE_FIELD_NUMBER = 1;
     private int unitType_;
     /**
@@ -4995,7 +4956,6 @@ public final class MapProtos {
       return unitType_;
     }
 
-    // required int32 instanceId = 2;
     public static final int INSTANCEID_FIELD_NUMBER = 2;
     private int instanceId_;
     /**
@@ -5011,7 +4971,6 @@ public final class MapProtos {
       return instanceId_;
     }
 
-    // required int32 east = 3;
     public static final int EAST_FIELD_NUMBER = 3;
     private int east_;
     /**
@@ -5027,7 +4986,6 @@ public final class MapProtos {
       return east_;
     }
 
-    // required int32 south = 4;
     public static final int SOUTH_FIELD_NUMBER = 4;
     private int south_;
     /**
@@ -5052,7 +5010,8 @@ public final class MapProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasUnitType()) {
         memoizedIsInitialized = 0;
@@ -5196,8 +5155,9 @@ public final class MapProtos {
      * Protobuf type {@code RESPONSE_MAP_UNIT_MOVE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_MAP_UNIT_MOVE)
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_MOVEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
@@ -5353,7 +5313,6 @@ public final class MapProtos {
       }
       private int bitField0_;
 
-      // required int32 unitType = 1;
       private int unitType_ ;
       /**
        * <code>required int32 unitType = 1;</code>
@@ -5386,7 +5345,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 instanceId = 2;
       private int instanceId_ ;
       /**
        * <code>required int32 instanceId = 2;</code>
@@ -5419,7 +5377,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 east = 3;
       private int east_ ;
       /**
        * <code>required int32 east = 3;</code>
@@ -5452,7 +5409,6 @@ public final class MapProtos {
         return this;
       }
 
-      // required int32 south = 4;
       private int south_ ;
       /**
        * <code>required int32 south = 4;</code>
@@ -5496,10 +5452,10 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_MOVE)
   }
 
-  public interface RESPONSE_MAP_UNIT_REMOVEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_MAP_UNIT_REMOVEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_MAP_UNIT_REMOVE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 instanceId = 1;
     /**
      * <code>required int32 instanceId = 1;</code>
      */
@@ -5513,8 +5469,9 @@ public final class MapProtos {
    * Protobuf type {@code RESPONSE_MAP_UNIT_REMOVE}
    */
   public static final class RESPONSE_MAP_UNIT_REMOVE extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_MAP_UNIT_REMOVEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_MAP_UNIT_REMOVE)
+      RESPONSE_MAP_UNIT_REMOVEOrBuilder {
     // Use RESPONSE_MAP_UNIT_REMOVE.newBuilder() to construct.
     private RESPONSE_MAP_UNIT_REMOVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -5605,7 +5562,6 @@ public final class MapProtos {
     }
 
     private int bitField0_;
-    // required int32 instanceId = 1;
     public static final int INSTANCEID_FIELD_NUMBER = 1;
     private int instanceId_;
     /**
@@ -5627,7 +5583,8 @@ public final class MapProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasInstanceId()) {
         memoizedIsInitialized = 0;
@@ -5738,8 +5695,9 @@ public final class MapProtos {
      * Protobuf type {@code RESPONSE_MAP_UNIT_REMOVE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_MAP_UNIT_REMOVE)
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_UNIT_REMOVEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
@@ -5856,7 +5814,6 @@ public final class MapProtos {
       }
       private int bitField0_;
 
-      // required int32 instanceId = 1;
       private int instanceId_ ;
       /**
        * <code>required int32 instanceId = 1;</code>
@@ -5900,10 +5857,10 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_UNIT_REMOVE)
   }
 
-  public interface RESPONSE_MAP_CELLSOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_MAP_CELLSOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_MAP_CELLS)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated .VO_MAP_CELL mapCells = 1;
     /**
      * <code>repeated .VO_MAP_CELL mapCells = 1;</code>
      */
@@ -5932,8 +5889,9 @@ public final class MapProtos {
    * Protobuf type {@code RESPONSE_MAP_CELLS}
    */
   public static final class RESPONSE_MAP_CELLS extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_MAP_CELLSOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_MAP_CELLS)
+      RESPONSE_MAP_CELLSOrBuilder {
     // Use RESPONSE_MAP_CELLS.newBuilder() to construct.
     private RESPONSE_MAP_CELLS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -6029,7 +5987,6 @@ public final class MapProtos {
       return PARSER;
     }
 
-    // repeated .VO_MAP_CELL mapCells = 1;
     public static final int MAPCELLS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_;
     /**
@@ -6071,7 +6028,8 @@ public final class MapProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       for (int i = 0; i < getMapCellsCount(); i++) {
         if (!getMapCells(i).isInitialized()) {
@@ -6184,8 +6142,9 @@ public final class MapProtos {
      * Protobuf type {@code RESPONSE_MAP_CELLS}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLSOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_MAP_CELLS)
+        cg.base.io.proto.MapProtos.RESPONSE_MAP_CELLSOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MapProtos.internal_static_RESPONSE_MAP_CELLS_descriptor;
@@ -6335,7 +6294,6 @@ public final class MapProtos {
       }
       private int bitField0_;
 
-      // repeated .VO_MAP_CELL mapCells = 1;
       private java.util.List<cg.base.io.proto.VOProtos.VO_MAP_CELL> mapCells_ =
         java.util.Collections.emptyList();
       private void ensureMapCellsIsMutable() {
@@ -6477,7 +6435,8 @@ public final class MapProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_MAP_CELL> values) {
         if (mapCellsBuilder_ == null) {
           ensureMapCellsIsMutable();
-          super.addAll(values, mapCells_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, mapCells_);
           onChanged();
         } else {
           mapCellsBuilder_.addAllMessages(values);
@@ -6586,47 +6545,47 @@ public final class MapProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_MAP_CELLS)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_MAP_IN_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_MAP_IN_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_MAP_IN_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_MAP_IN_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_MAP_MOVE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_MAP_MOVE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_MAP_MOVE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_MAP_UNIT_EXTEND_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_MAP_UNIT_EXTEND_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_MAP_CELLS_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -6663,72 +6622,73 @@ public final class MapProtos {
       "e.io.protoB\tMapProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_REQUEST_MAP_IN_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_REQUEST_MAP_IN_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_MAP_IN_descriptor,
-              new java.lang.String[] { "MapId", "East", "South", });
-          internal_static_RESPONSE_MAP_IN_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_RESPONSE_MAP_IN_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_MAP_IN_descriptor,
-              new java.lang.String[] { "MapId", "MapInstanceId", "MapName", "East", "South", "MaxEast", "MaxSouth", });
-          internal_static_REQUEST_MAP_MOVE_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_REQUEST_MAP_MOVE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_MAP_MOVE_descriptor,
-              new java.lang.String[] { "East", "South", "NeedEast", "EastArea", "NeedSouth", "SouthArea", "Serial", });
-          internal_static_RESPONSE_MAP_MOVE_descriptor =
-            getDescriptor().getMessageTypes().get(3);
-          internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_MAP_MOVE_descriptor,
-              new java.lang.String[] { "Serial", "MapCells", });
-          internal_static_VO_MAP_UNIT_EXTEND_descriptor =
-            getDescriptor().getMessageTypes().get(4);
-          internal_static_VO_MAP_UNIT_EXTEND_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_MAP_UNIT_EXTEND_descriptor,
-              new java.lang.String[] { "OwnerInstanceId", "State", "TalkType", });
-          internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor =
-            getDescriptor().getMessageTypes().get(5);
-          internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor,
-              new java.lang.String[] { "UnitInfo", });
-          internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor =
-            getDescriptor().getMessageTypes().get(6);
-          internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor,
-              new java.lang.String[] { "UnitType", "InstanceId", "East", "South", });
-          internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor =
-            getDescriptor().getMessageTypes().get(7);
-          internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor,
-              new java.lang.String[] { "InstanceId", });
-          internal_static_RESPONSE_MAP_CELLS_descriptor =
-            getDescriptor().getMessageTypes().get(8);
-          internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_MAP_CELLS_descriptor,
-              new java.lang.String[] { "MapCells", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
+    internal_static_REQUEST_MAP_IN_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_REQUEST_MAP_IN_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_MAP_IN_descriptor,
+        new java.lang.String[] { "MapId", "East", "South", });
+    internal_static_RESPONSE_MAP_IN_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_RESPONSE_MAP_IN_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_MAP_IN_descriptor,
+        new java.lang.String[] { "MapId", "MapInstanceId", "MapName", "East", "South", "MaxEast", "MaxSouth", });
+    internal_static_REQUEST_MAP_MOVE_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_REQUEST_MAP_MOVE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_MAP_MOVE_descriptor,
+        new java.lang.String[] { "East", "South", "NeedEast", "EastArea", "NeedSouth", "SouthArea", "Serial", });
+    internal_static_RESPONSE_MAP_MOVE_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_RESPONSE_MAP_MOVE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_MAP_MOVE_descriptor,
+        new java.lang.String[] { "Serial", "MapCells", });
+    internal_static_VO_MAP_UNIT_EXTEND_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_VO_MAP_UNIT_EXTEND_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_MAP_UNIT_EXTEND_descriptor,
+        new java.lang.String[] { "OwnerInstanceId", "State", "TalkType", });
+    internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_RESPONSE_MAP_UNIT_CREATE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_MAP_UNIT_CREATE_descriptor,
+        new java.lang.String[] { "UnitInfo", });
+    internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_RESPONSE_MAP_UNIT_MOVE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_MAP_UNIT_MOVE_descriptor,
+        new java.lang.String[] { "UnitType", "InstanceId", "East", "South", });
+    internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_RESPONSE_MAP_UNIT_REMOVE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_MAP_UNIT_REMOVE_descriptor,
+        new java.lang.String[] { "InstanceId", });
+    internal_static_RESPONSE_MAP_CELLS_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_RESPONSE_MAP_CELLS_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_MAP_CELLS_descriptor,
+        new java.lang.String[] { "MapCells", });
+    cg.base.io.proto.VOProtos.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

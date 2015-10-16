@@ -8,10 +8,10 @@ public final class PlayerProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface REQUEST_PLAYER_CREATEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_PLAYER_CREATEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_PLAYER_CREATE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 roleId = 1;
     /**
      * <code>required int32 roleId = 1;</code>
      */
@@ -21,7 +21,6 @@ public final class PlayerProtos {
      */
     int getRoleId();
 
-    // required int32 colorId = 2;
     /**
      * <code>required int32 colorId = 2;</code>
      */
@@ -31,7 +30,6 @@ public final class PlayerProtos {
      */
     int getColorId();
 
-    // required int32 eyeStyleId = 3;
     /**
      * <code>required int32 eyeStyleId = 3;</code>
      */
@@ -41,7 +39,6 @@ public final class PlayerProtos {
      */
     int getEyeStyleId();
 
-    // required int32 mouthStyleId = 4;
     /**
      * <code>required int32 mouthStyleId = 4;</code>
      */
@@ -51,7 +48,6 @@ public final class PlayerProtos {
      */
     int getMouthStyleId();
 
-    // required int32 hairStyleId = 5;
     /**
      * <code>required int32 hairStyleId = 5;</code>
      */
@@ -61,7 +57,6 @@ public final class PlayerProtos {
      */
     int getHairStyleId();
 
-    // required int32 roleIndex = 6;
     /**
      * <code>required int32 roleIndex = 6;</code>
      */
@@ -71,7 +66,6 @@ public final class PlayerProtos {
      */
     int getRoleIndex();
 
-    // required string name = 7;
     /**
      * <code>required string name = 7;</code>
      */
@@ -86,7 +80,6 @@ public final class PlayerProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // repeated int32 attributes = 8;
     /**
      * <code>repeated int32 attributes = 8;</code>
      */
@@ -100,7 +93,6 @@ public final class PlayerProtos {
      */
     int getAttributes(int index);
 
-    // repeated int32 elements = 9;
     /**
      * <code>repeated int32 elements = 9;</code>
      */
@@ -118,8 +110,9 @@ public final class PlayerProtos {
    * Protobuf type {@code REQUEST_PLAYER_CREATE}
    */
   public static final class REQUEST_PLAYER_CREATE extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_PLAYER_CREATEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_PLAYER_CREATE)
+      REQUEST_PLAYER_CREATEOrBuilder {
     // Use REQUEST_PLAYER_CREATE.newBuilder() to construct.
     private REQUEST_PLAYER_CREATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -196,8 +189,9 @@ public final class PlayerProtos {
               break;
             }
             case 58: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000040;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 64: {
@@ -288,7 +282,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
     /**
@@ -304,7 +297,6 @@ public final class PlayerProtos {
       return roleId_;
     }
 
-    // required int32 colorId = 2;
     public static final int COLORID_FIELD_NUMBER = 2;
     private int colorId_;
     /**
@@ -320,7 +312,6 @@ public final class PlayerProtos {
       return colorId_;
     }
 
-    // required int32 eyeStyleId = 3;
     public static final int EYESTYLEID_FIELD_NUMBER = 3;
     private int eyeStyleId_;
     /**
@@ -336,7 +327,6 @@ public final class PlayerProtos {
       return eyeStyleId_;
     }
 
-    // required int32 mouthStyleId = 4;
     public static final int MOUTHSTYLEID_FIELD_NUMBER = 4;
     private int mouthStyleId_;
     /**
@@ -352,7 +342,6 @@ public final class PlayerProtos {
       return mouthStyleId_;
     }
 
-    // required int32 hairStyleId = 5;
     public static final int HAIRSTYLEID_FIELD_NUMBER = 5;
     private int hairStyleId_;
     /**
@@ -368,7 +357,6 @@ public final class PlayerProtos {
       return hairStyleId_;
     }
 
-    // required int32 roleIndex = 6;
     public static final int ROLEINDEX_FIELD_NUMBER = 6;
     private int roleIndex_;
     /**
@@ -384,7 +372,6 @@ public final class PlayerProtos {
       return roleIndex_;
     }
 
-    // required string name = 7;
     public static final int NAME_FIELD_NUMBER = 7;
     private java.lang.Object name_;
     /**
@@ -427,7 +414,6 @@ public final class PlayerProtos {
       }
     }
 
-    // repeated int32 attributes = 8;
     public static final int ATTRIBUTES_FIELD_NUMBER = 8;
     private java.util.List<java.lang.Integer> attributes_;
     /**
@@ -450,7 +436,6 @@ public final class PlayerProtos {
       return attributes_.get(index);
     }
 
-    // repeated int32 elements = 9;
     public static final int ELEMENTS_FIELD_NUMBER = 9;
     private java.util.List<java.lang.Integer> elements_;
     /**
@@ -487,7 +472,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
@@ -688,8 +674,9 @@ public final class PlayerProtos {
      * Protobuf type {@code REQUEST_PLAYER_CREATE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_PLAYER_CREATE)
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_CREATEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_CREATE_descriptor;
@@ -920,7 +907,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required int32 roleId = 1;
       private int roleId_ ;
       /**
        * <code>required int32 roleId = 1;</code>
@@ -953,7 +939,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 colorId = 2;
       private int colorId_ ;
       /**
        * <code>required int32 colorId = 2;</code>
@@ -986,7 +971,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 eyeStyleId = 3;
       private int eyeStyleId_ ;
       /**
        * <code>required int32 eyeStyleId = 3;</code>
@@ -1019,7 +1003,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 mouthStyleId = 4;
       private int mouthStyleId_ ;
       /**
        * <code>required int32 mouthStyleId = 4;</code>
@@ -1052,7 +1035,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 hairStyleId = 5;
       private int hairStyleId_ ;
       /**
        * <code>required int32 hairStyleId = 5;</code>
@@ -1085,7 +1067,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 roleIndex = 6;
       private int roleIndex_ ;
       /**
        * <code>required int32 roleIndex = 6;</code>
@@ -1118,7 +1099,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required string name = 7;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 7;</code>
@@ -1132,9 +1112,12 @@ public final class PlayerProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1192,7 +1175,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // repeated int32 attributes = 8;
       private java.util.List<java.lang.Integer> attributes_ = java.util.Collections.emptyList();
       private void ensureAttributesIsMutable() {
         if (!((bitField0_ & 0x00000080) == 0x00000080)) {
@@ -1244,7 +1226,8 @@ public final class PlayerProtos {
       public Builder addAllAttributes(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureAttributesIsMutable();
-        super.addAll(values, attributes_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, attributes_);
         onChanged();
         return this;
       }
@@ -1258,7 +1241,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // repeated int32 elements = 9;
       private java.util.List<java.lang.Integer> elements_ = java.util.Collections.emptyList();
       private void ensureElementsIsMutable() {
         if (!((bitField0_ & 0x00000100) == 0x00000100)) {
@@ -1310,7 +1292,8 @@ public final class PlayerProtos {
       public Builder addAllElements(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureElementsIsMutable();
-        super.addAll(values, elements_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, elements_);
         onChanged();
         return this;
       }
@@ -1335,10 +1318,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_CREATE)
   }
 
-  public interface RESPONSE_PLAYER_CREATEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_PLAYER_CREATEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_PLAYER_CREATE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 instanceId = 1;
     /**
      * <code>required int32 instanceId = 1;</code>
      */
@@ -1352,8 +1335,9 @@ public final class PlayerProtos {
    * Protobuf type {@code RESPONSE_PLAYER_CREATE}
    */
   public static final class RESPONSE_PLAYER_CREATE extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_PLAYER_CREATEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_PLAYER_CREATE)
+      RESPONSE_PLAYER_CREATEOrBuilder {
     // Use RESPONSE_PLAYER_CREATE.newBuilder() to construct.
     private RESPONSE_PLAYER_CREATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1444,7 +1428,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required int32 instanceId = 1;
     public static final int INSTANCEID_FIELD_NUMBER = 1;
     private int instanceId_;
     /**
@@ -1466,7 +1449,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasInstanceId()) {
         memoizedIsInitialized = 0;
@@ -1577,8 +1561,9 @@ public final class PlayerProtos {
      * Protobuf type {@code RESPONSE_PLAYER_CREATE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_PLAYER_CREATE)
+        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_descriptor;
@@ -1695,7 +1680,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required int32 instanceId = 1;
       private int instanceId_ ;
       /**
        * <code>required int32 instanceId = 1;</code>
@@ -1739,10 +1723,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_PLAYER_CREATE)
   }
 
-  public interface REQUEST_PLAYER_DELETEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_PLAYER_DELETEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_PLAYER_DELETE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 roleId = 1;
     /**
      * <code>required int32 roleId = 1;</code>
      */
@@ -1756,8 +1740,9 @@ public final class PlayerProtos {
    * Protobuf type {@code REQUEST_PLAYER_DELETE}
    */
   public static final class REQUEST_PLAYER_DELETE extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_PLAYER_DELETEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_PLAYER_DELETE)
+      REQUEST_PLAYER_DELETEOrBuilder {
     // Use REQUEST_PLAYER_DELETE.newBuilder() to construct.
     private REQUEST_PLAYER_DELETE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1848,7 +1833,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
     /**
@@ -1870,7 +1854,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
@@ -1981,8 +1966,9 @@ public final class PlayerProtos {
      * Protobuf type {@code REQUEST_PLAYER_DELETE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_PLAYER_DELETE)
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_DELETEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_DELETE_descriptor;
@@ -2099,7 +2085,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required int32 roleId = 1;
       private int roleId_ ;
       /**
        * <code>required int32 roleId = 1;</code>
@@ -2143,10 +2128,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_DELETE)
   }
 
-  public interface REQUEST_PLAYER_QUERYOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_PLAYER_QUERYOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_PLAYER_QUERY)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 roleId = 1;
     /**
      * <code>required int32 roleId = 1;</code>
      */
@@ -2160,8 +2145,9 @@ public final class PlayerProtos {
    * Protobuf type {@code REQUEST_PLAYER_QUERY}
    */
   public static final class REQUEST_PLAYER_QUERY extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_PLAYER_QUERYOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_PLAYER_QUERY)
+      REQUEST_PLAYER_QUERYOrBuilder {
     // Use REQUEST_PLAYER_QUERY.newBuilder() to construct.
     private REQUEST_PLAYER_QUERY(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2252,7 +2238,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
     /**
@@ -2274,7 +2259,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
@@ -2385,8 +2371,9 @@ public final class PlayerProtos {
      * Protobuf type {@code REQUEST_PLAYER_QUERY}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERYOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_PLAYER_QUERY)
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_QUERYOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_QUERY_descriptor;
@@ -2503,7 +2490,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required int32 roleId = 1;
       private int roleId_ ;
       /**
        * <code>required int32 roleId = 1;</code>
@@ -2547,10 +2533,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_QUERY)
   }
 
-  public interface REQUEST_PLAYER_LOGINOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_PLAYER_LOGINOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_PLAYER_LOGIN)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 roleId = 1;
     /**
      * <code>required int32 roleId = 1;</code>
      */
@@ -2560,7 +2546,6 @@ public final class PlayerProtos {
      */
     int getRoleId();
 
-    // required int32 eyeShot = 2;
     /**
      * <code>required int32 eyeShot = 2;</code>
      */
@@ -2570,7 +2555,6 @@ public final class PlayerProtos {
      */
     int getEyeShot();
 
-    // required int32 animationVersion = 3;
     /**
      * <code>required int32 animationVersion = 3;</code>
      */
@@ -2580,7 +2564,6 @@ public final class PlayerProtos {
      */
     int getAnimationVersion();
 
-    // required int32 headVersion = 4;
     /**
      * <code>required int32 headVersion = 4;</code>
      */
@@ -2594,8 +2577,9 @@ public final class PlayerProtos {
    * Protobuf type {@code REQUEST_PLAYER_LOGIN}
    */
   public static final class REQUEST_PLAYER_LOGIN extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_PLAYER_LOGINOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_PLAYER_LOGIN)
+      REQUEST_PLAYER_LOGINOrBuilder {
     // Use REQUEST_PLAYER_LOGIN.newBuilder() to construct.
     private REQUEST_PLAYER_LOGIN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2701,7 +2685,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
     /**
@@ -2717,7 +2700,6 @@ public final class PlayerProtos {
       return roleId_;
     }
 
-    // required int32 eyeShot = 2;
     public static final int EYESHOT_FIELD_NUMBER = 2;
     private int eyeShot_;
     /**
@@ -2733,7 +2715,6 @@ public final class PlayerProtos {
       return eyeShot_;
     }
 
-    // required int32 animationVersion = 3;
     public static final int ANIMATIONVERSION_FIELD_NUMBER = 3;
     private int animationVersion_;
     /**
@@ -2749,7 +2730,6 @@ public final class PlayerProtos {
       return animationVersion_;
     }
 
-    // required int32 headVersion = 4;
     public static final int HEADVERSION_FIELD_NUMBER = 4;
     private int headVersion_;
     /**
@@ -2774,7 +2754,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
@@ -2918,8 +2899,9 @@ public final class PlayerProtos {
      * Protobuf type {@code REQUEST_PLAYER_LOGIN}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGINOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_PLAYER_LOGIN)
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_LOGINOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_LOGIN_descriptor;
@@ -3075,7 +3057,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required int32 roleId = 1;
       private int roleId_ ;
       /**
        * <code>required int32 roleId = 1;</code>
@@ -3108,7 +3089,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 eyeShot = 2;
       private int eyeShot_ ;
       /**
        * <code>required int32 eyeShot = 2;</code>
@@ -3141,7 +3121,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 animationVersion = 3;
       private int animationVersion_ ;
       /**
        * <code>required int32 animationVersion = 3;</code>
@@ -3174,7 +3153,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 headVersion = 4;
       private int headVersion_ ;
       /**
        * <code>required int32 headVersion = 4;</code>
@@ -3218,10 +3196,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_LOGIN)
   }
 
-  public interface RESPONSE_PLAYER_LOGINOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_PLAYER_LOGINOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_PLAYER_LOGIN)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required .VO_UNIT unitInfo = 1;
     /**
      * <code>required .VO_UNIT unitInfo = 1;</code>
      */
@@ -3234,13 +3212,23 @@ public final class PlayerProtos {
      * <code>required .VO_UNIT unitInfo = 1;</code>
      */
     cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder();
+
+    /**
+     * <code>required int32 mapId = 2;</code>
+     */
+    boolean hasMapId();
+    /**
+     * <code>required int32 mapId = 2;</code>
+     */
+    int getMapId();
   }
   /**
    * Protobuf type {@code RESPONSE_PLAYER_LOGIN}
    */
   public static final class RESPONSE_PLAYER_LOGIN extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_PLAYER_LOGINOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_PLAYER_LOGIN)
+      RESPONSE_PLAYER_LOGINOrBuilder {
     // Use RESPONSE_PLAYER_LOGIN.newBuilder() to construct.
     private RESPONSE_PLAYER_LOGIN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -3299,6 +3287,11 @@ public final class PlayerProtos {
               bitField0_ |= 0x00000001;
               break;
             }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              mapId_ = input.readInt32();
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -3339,7 +3332,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required .VO_UNIT unitInfo = 1;
     public static final int UNITINFO_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_;
     /**
@@ -3361,15 +3353,36 @@ public final class PlayerProtos {
       return unitInfo_;
     }
 
+    public static final int MAPID_FIELD_NUMBER = 2;
+    private int mapId_;
+    /**
+     * <code>required int32 mapId = 2;</code>
+     */
+    public boolean hasMapId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 mapId = 2;</code>
+     */
+    public int getMapId() {
+      return mapId_;
+    }
+
     private void initFields() {
       unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
+      mapId_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasUnitInfo()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMapId()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -3387,6 +3400,9 @@ public final class PlayerProtos {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeMessage(1, unitInfo_);
       }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, mapId_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -3399,6 +3415,10 @@ public final class PlayerProtos {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, unitInfo_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, mapId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -3482,8 +3502,9 @@ public final class PlayerProtos {
      * Protobuf type {@code RESPONSE_PLAYER_LOGIN}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGINOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_PLAYER_LOGIN)
+        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_LOGINOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_LOGIN_descriptor;
@@ -3523,6 +3544,8 @@ public final class PlayerProtos {
           unitInfoBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
+        mapId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -3559,6 +3582,10 @@ public final class PlayerProtos {
         } else {
           result.unitInfo_ = unitInfoBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.mapId_ = mapId_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -3578,12 +3605,19 @@ public final class PlayerProtos {
         if (other.hasUnitInfo()) {
           mergeUnitInfo(other.getUnitInfo());
         }
+        if (other.hasMapId()) {
+          setMapId(other.getMapId());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
         if (!hasUnitInfo()) {
+          
+          return false;
+        }
+        if (!hasMapId()) {
           
           return false;
         }
@@ -3613,7 +3647,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required .VO_UNIT unitInfo = 1;
       private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> unitInfoBuilder_;
@@ -3722,12 +3755,44 @@ public final class PlayerProtos {
         if (unitInfoBuilder_ == null) {
           unitInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder>(
-                  unitInfo_,
+                  getUnitInfo(),
                   getParentForChildren(),
                   isClean());
           unitInfo_ = null;
         }
         return unitInfoBuilder_;
+      }
+
+      private int mapId_ ;
+      /**
+       * <code>required int32 mapId = 2;</code>
+       */
+      public boolean hasMapId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 mapId = 2;</code>
+       */
+      public int getMapId() {
+        return mapId_;
+      }
+      /**
+       * <code>required int32 mapId = 2;</code>
+       */
+      public Builder setMapId(int value) {
+        bitField0_ |= 0x00000002;
+        mapId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 mapId = 2;</code>
+       */
+      public Builder clearMapId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        mapId_ = 0;
+        onChanged();
+        return this;
       }
 
       // @@protoc_insertion_point(builder_scope:RESPONSE_PLAYER_LOGIN)
@@ -3741,10 +3806,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_PLAYER_LOGIN)
   }
 
-  public interface VO_PLAYER_ANIMATIONOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_PLAYER_ANIMATIONOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_PLAYER_ANIMATION)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 roleId = 1;
     /**
      * <code>required int32 roleId = 1;</code>
      */
@@ -3754,7 +3819,6 @@ public final class PlayerProtos {
      */
     int getRoleId();
 
-    // repeated int32 globalId = 2;
     /**
      * <code>repeated int32 globalId = 2;</code>
      */
@@ -3768,7 +3832,6 @@ public final class PlayerProtos {
      */
     int getGlobalId(int index);
 
-    // required int32 headGlobalId = 3;
     /**
      * <code>required int32 headGlobalId = 3;</code>
      */
@@ -3782,8 +3845,9 @@ public final class PlayerProtos {
    * Protobuf type {@code VO_PLAYER_ANIMATION}
    */
   public static final class VO_PLAYER_ANIMATION extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_PLAYER_ANIMATIONOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_PLAYER_ANIMATION)
+      VO_PLAYER_ANIMATIONOrBuilder {
     // Use VO_PLAYER_ANIMATION.newBuilder() to construct.
     private VO_PLAYER_ANIMATION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -3903,7 +3967,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
     /**
@@ -3919,7 +3982,6 @@ public final class PlayerProtos {
       return roleId_;
     }
 
-    // repeated int32 globalId = 2;
     public static final int GLOBALID_FIELD_NUMBER = 2;
     private java.util.List<java.lang.Integer> globalId_;
     /**
@@ -3942,7 +4004,6 @@ public final class PlayerProtos {
       return globalId_.get(index);
     }
 
-    // required int32 headGlobalId = 3;
     public static final int HEADGLOBALID_FIELD_NUMBER = 3;
     private int headGlobalId_;
     /**
@@ -3966,7 +4027,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
@@ -4100,8 +4162,9 @@ public final class PlayerProtos {
      * Protobuf type {@code VO_PLAYER_ANIMATION}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_PLAYER_ANIMATION)
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_descriptor;
@@ -4248,7 +4311,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required int32 roleId = 1;
       private int roleId_ ;
       /**
        * <code>required int32 roleId = 1;</code>
@@ -4281,7 +4343,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // repeated int32 globalId = 2;
       private java.util.List<java.lang.Integer> globalId_ = java.util.Collections.emptyList();
       private void ensureGlobalIdIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -4333,7 +4394,8 @@ public final class PlayerProtos {
       public Builder addAllGlobalId(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureGlobalIdIsMutable();
-        super.addAll(values, globalId_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, globalId_);
         onChanged();
         return this;
       }
@@ -4347,7 +4409,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 headGlobalId = 3;
       private int headGlobalId_ ;
       /**
        * <code>required int32 headGlobalId = 3;</code>
@@ -4391,10 +4452,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATION)
   }
 
-  public interface VO_PLAYER_ANIMATIONSOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_PLAYER_ANIMATIONSOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_PLAYER_ANIMATIONS)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated .VO_PLAYER_ANIMATION animations = 1;
     /**
      * <code>repeated .VO_PLAYER_ANIMATION animations = 1;</code>
      */
@@ -4423,8 +4484,9 @@ public final class PlayerProtos {
    * Protobuf type {@code VO_PLAYER_ANIMATIONS}
    */
   public static final class VO_PLAYER_ANIMATIONS extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_PLAYER_ANIMATIONSOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_PLAYER_ANIMATIONS)
+      VO_PLAYER_ANIMATIONSOrBuilder {
     // Use VO_PLAYER_ANIMATIONS.newBuilder() to construct.
     private VO_PLAYER_ANIMATIONS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -4520,7 +4582,6 @@ public final class PlayerProtos {
       return PARSER;
     }
 
-    // repeated .VO_PLAYER_ANIMATION animations = 1;
     public static final int ANIMATIONS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION> animations_;
     /**
@@ -4562,7 +4623,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       for (int i = 0; i < getAnimationsCount(); i++) {
         if (!getAnimations(i).isInitialized()) {
@@ -4675,8 +4737,9 @@ public final class PlayerProtos {
      * Protobuf type {@code VO_PLAYER_ANIMATIONS}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_PLAYER_ANIMATIONS)
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONSOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATIONS_descriptor;
@@ -4826,7 +4889,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // repeated .VO_PLAYER_ANIMATION animations = 1;
       private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION> animations_ =
         java.util.Collections.emptyList();
       private void ensureAnimationsIsMutable() {
@@ -4968,7 +5030,8 @@ public final class PlayerProtos {
           java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION> values) {
         if (animationsBuilder_ == null) {
           ensureAnimationsIsMutable();
-          super.addAll(values, animations_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, animations_);
           onChanged();
         } else {
           animationsBuilder_.addAllMessages(values);
@@ -5077,10 +5140,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATIONS)
   }
 
-  public interface RESPONSE_PLAYER_CREATE_INFOOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_PLAYER_CREATE_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_PLAYER_CREATE_INFO)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 bp = 1;
     /**
      * <code>required int32 bp = 1;</code>
      */
@@ -5090,7 +5153,6 @@ public final class PlayerProtos {
      */
     int getBp();
 
-    // required int32 pageMax = 2;
     /**
      * <code>required int32 pageMax = 2;</code>
      */
@@ -5100,7 +5162,6 @@ public final class PlayerProtos {
      */
     int getPageMax();
 
-    // repeated .VO_PLAYER_ANIMATIONS animations = 3;
     /**
      * <code>repeated .VO_PLAYER_ANIMATIONS animations = 3;</code>
      */
@@ -5129,8 +5190,9 @@ public final class PlayerProtos {
    * Protobuf type {@code RESPONSE_PLAYER_CREATE_INFO}
    */
   public static final class RESPONSE_PLAYER_CREATE_INFO extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_PLAYER_CREATE_INFOOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_PLAYER_CREATE_INFO)
+      RESPONSE_PLAYER_CREATE_INFOOrBuilder {
     // Use RESPONSE_PLAYER_CREATE_INFO.newBuilder() to construct.
     private RESPONSE_PLAYER_CREATE_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -5237,7 +5299,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required int32 bp = 1;
     public static final int BP_FIELD_NUMBER = 1;
     private int bp_;
     /**
@@ -5253,7 +5314,6 @@ public final class PlayerProtos {
       return bp_;
     }
 
-    // required int32 pageMax = 2;
     public static final int PAGEMAX_FIELD_NUMBER = 2;
     private int pageMax_;
     /**
@@ -5269,7 +5329,6 @@ public final class PlayerProtos {
       return pageMax_;
     }
 
-    // repeated .VO_PLAYER_ANIMATIONS animations = 3;
     public static final int ANIMATIONS_FIELD_NUMBER = 3;
     private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS> animations_;
     /**
@@ -5313,7 +5372,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasBp()) {
         memoizedIsInitialized = 0;
@@ -5448,8 +5508,9 @@ public final class PlayerProtos {
      * Protobuf type {@code RESPONSE_PLAYER_CREATE_INFO}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFOOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_PLAYER_CREATE_INFO)
+        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_CREATE_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor;
@@ -5627,7 +5688,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required int32 bp = 1;
       private int bp_ ;
       /**
        * <code>required int32 bp = 1;</code>
@@ -5660,7 +5720,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 pageMax = 2;
       private int pageMax_ ;
       /**
        * <code>required int32 pageMax = 2;</code>
@@ -5693,7 +5752,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // repeated .VO_PLAYER_ANIMATIONS animations = 3;
       private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS> animations_ =
         java.util.Collections.emptyList();
       private void ensureAnimationsIsMutable() {
@@ -5835,7 +5893,8 @@ public final class PlayerProtos {
           java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATIONS> values) {
         if (animationsBuilder_ == null) {
           ensureAnimationsIsMutable();
-          super.addAll(values, animations_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, animations_);
           onChanged();
         } else {
           animationsBuilder_.addAllMessages(values);
@@ -5944,10 +6003,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_PLAYER_CREATE_INFO)
   }
 
-  public interface REQUEST_PLAYER_ANIMATION_INFOOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_PLAYER_ANIMATION_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_PLAYER_ANIMATION_INFO)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 page = 1;
     /**
      * <code>required int32 page = 1;</code>
      */
@@ -5961,8 +6020,9 @@ public final class PlayerProtos {
    * Protobuf type {@code REQUEST_PLAYER_ANIMATION_INFO}
    */
   public static final class REQUEST_PLAYER_ANIMATION_INFO extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_PLAYER_ANIMATION_INFOOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_PLAYER_ANIMATION_INFO)
+      REQUEST_PLAYER_ANIMATION_INFOOrBuilder {
     // Use REQUEST_PLAYER_ANIMATION_INFO.newBuilder() to construct.
     private REQUEST_PLAYER_ANIMATION_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -6053,7 +6113,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required int32 page = 1;
     public static final int PAGE_FIELD_NUMBER = 1;
     private int page_;
     /**
@@ -6075,7 +6134,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasPage()) {
         memoizedIsInitialized = 0;
@@ -6186,8 +6246,9 @@ public final class PlayerProtos {
      * Protobuf type {@code REQUEST_PLAYER_ANIMATION_INFO}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFOOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_PLAYER_ANIMATION_INFO)
+        cg.base.io.proto.PlayerProtos.REQUEST_PLAYER_ANIMATION_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor;
@@ -6304,7 +6365,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required int32 page = 1;
       private int page_ ;
       /**
        * <code>required int32 page = 1;</code>
@@ -6348,10 +6408,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_PLAYER_ANIMATION_INFO)
   }
 
-  public interface VO_PLAYER_ANIMATION_INFOOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_PLAYER_ANIMATION_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_PLAYER_ANIMATION_INFO)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 roleId = 1;
     /**
      * <code>required int32 roleId = 1;</code>
      */
@@ -6361,7 +6421,6 @@ public final class PlayerProtos {
      */
     int getRoleId();
 
-    // repeated int32 animationId2 = 2;
     /**
      * <code>repeated int32 animationId2 = 2;</code>
      */
@@ -6375,7 +6434,6 @@ public final class PlayerProtos {
      */
     int getAnimationId2(int index);
 
-    // required int32 headId = 3;
     /**
      * <code>required int32 headId = 3;</code>
      */
@@ -6389,8 +6447,9 @@ public final class PlayerProtos {
    * Protobuf type {@code VO_PLAYER_ANIMATION_INFO}
    */
   public static final class VO_PLAYER_ANIMATION_INFO extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_PLAYER_ANIMATION_INFOOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_PLAYER_ANIMATION_INFO)
+      VO_PLAYER_ANIMATION_INFOOrBuilder {
     // Use VO_PLAYER_ANIMATION_INFO.newBuilder() to construct.
     private VO_PLAYER_ANIMATION_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -6510,7 +6569,6 @@ public final class PlayerProtos {
     }
 
     private int bitField0_;
-    // required int32 roleId = 1;
     public static final int ROLEID_FIELD_NUMBER = 1;
     private int roleId_;
     /**
@@ -6526,7 +6584,6 @@ public final class PlayerProtos {
       return roleId_;
     }
 
-    // repeated int32 animationId2 = 2;
     public static final int ANIMATIONID2_FIELD_NUMBER = 2;
     private java.util.List<java.lang.Integer> animationId2_;
     /**
@@ -6549,7 +6606,6 @@ public final class PlayerProtos {
       return animationId2_.get(index);
     }
 
-    // required int32 headId = 3;
     public static final int HEADID_FIELD_NUMBER = 3;
     private int headId_;
     /**
@@ -6573,7 +6629,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasRoleId()) {
         memoizedIsInitialized = 0;
@@ -6707,8 +6764,9 @@ public final class PlayerProtos {
      * Protobuf type {@code VO_PLAYER_ANIMATION_INFO}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_PLAYER_ANIMATION_INFO)
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFO_descriptor;
@@ -6855,7 +6913,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // required int32 roleId = 1;
       private int roleId_ ;
       /**
        * <code>required int32 roleId = 1;</code>
@@ -6888,7 +6945,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // repeated int32 animationId2 = 2;
       private java.util.List<java.lang.Integer> animationId2_ = java.util.Collections.emptyList();
       private void ensureAnimationId2IsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
@@ -6940,7 +6996,8 @@ public final class PlayerProtos {
       public Builder addAllAnimationId2(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureAnimationId2IsMutable();
-        super.addAll(values, animationId2_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, animationId2_);
         onChanged();
         return this;
       }
@@ -6954,7 +7011,6 @@ public final class PlayerProtos {
         return this;
       }
 
-      // required int32 headId = 3;
       private int headId_ ;
       /**
        * <code>required int32 headId = 3;</code>
@@ -6998,10 +7054,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATION_INFO)
   }
 
-  public interface VO_PLAYER_ANIMATION_INFOSOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_PLAYER_ANIMATION_INFOSOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_PLAYER_ANIMATION_INFOS)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;
     /**
      * <code>repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;</code>
      */
@@ -7030,8 +7086,9 @@ public final class PlayerProtos {
    * Protobuf type {@code VO_PLAYER_ANIMATION_INFOS}
    */
   public static final class VO_PLAYER_ANIMATION_INFOS extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_PLAYER_ANIMATION_INFOSOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_PLAYER_ANIMATION_INFOS)
+      VO_PLAYER_ANIMATION_INFOSOrBuilder {
     // Use VO_PLAYER_ANIMATION_INFOS.newBuilder() to construct.
     private VO_PLAYER_ANIMATION_INFOS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -7127,7 +7184,6 @@ public final class PlayerProtos {
       return PARSER;
     }
 
-    // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;
     public static final int ANIMATIONINFOS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> animationInfos_;
     /**
@@ -7169,7 +7225,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       for (int i = 0; i < getAnimationInfosCount(); i++) {
         if (!getAnimationInfos(i).isInitialized()) {
@@ -7282,8 +7339,9 @@ public final class PlayerProtos {
      * Protobuf type {@code VO_PLAYER_ANIMATION_INFOS}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_PLAYER_ANIMATION_INFOS)
+        cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOSOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor;
@@ -7433,7 +7491,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // repeated .VO_PLAYER_ANIMATION_INFO animationInfos = 1;
       private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> animationInfos_ =
         java.util.Collections.emptyList();
       private void ensureAnimationInfosIsMutable() {
@@ -7575,7 +7632,8 @@ public final class PlayerProtos {
           java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFO> values) {
         if (animationInfosBuilder_ == null) {
           ensureAnimationInfosIsMutable();
-          super.addAll(values, animationInfos_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, animationInfos_);
           onChanged();
         } else {
           animationInfosBuilder_.addAllMessages(values);
@@ -7684,10 +7742,10 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:VO_PLAYER_ANIMATION_INFOS)
   }
 
-  public interface RESPONSE_PLAYER_ANIMATION_INFOOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_PLAYER_ANIMATION_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_PLAYER_ANIMATION_INFO)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;
     /**
      * <code>repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;</code>
      */
@@ -7716,8 +7774,9 @@ public final class PlayerProtos {
    * Protobuf type {@code RESPONSE_PLAYER_ANIMATION_INFO}
    */
   public static final class RESPONSE_PLAYER_ANIMATION_INFO extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_PLAYER_ANIMATION_INFOOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_PLAYER_ANIMATION_INFO)
+      RESPONSE_PLAYER_ANIMATION_INFOOrBuilder {
     // Use RESPONSE_PLAYER_ANIMATION_INFO.newBuilder() to construct.
     private RESPONSE_PLAYER_ANIMATION_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -7813,7 +7872,6 @@ public final class PlayerProtos {
       return PARSER;
     }
 
-    // repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;
     public static final int ANIMATIONINFOS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> animationInfos_;
     /**
@@ -7855,7 +7913,8 @@ public final class PlayerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       for (int i = 0; i < getAnimationInfosCount(); i++) {
         if (!getAnimationInfos(i).isInitialized()) {
@@ -7968,8 +8027,9 @@ public final class PlayerProtos {
      * Protobuf type {@code RESPONSE_PLAYER_ANIMATION_INFO}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFOOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_PLAYER_ANIMATION_INFO)
+        cg.base.io.proto.PlayerProtos.RESPONSE_PLAYER_ANIMATION_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.PlayerProtos.internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor;
@@ -8119,7 +8179,6 @@ public final class PlayerProtos {
       }
       private int bitField0_;
 
-      // repeated .VO_PLAYER_ANIMATION_INFOS animationInfos = 1;
       private java.util.List<cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> animationInfos_ =
         java.util.Collections.emptyList();
       private void ensureAnimationInfosIsMutable() {
@@ -8261,7 +8320,8 @@ public final class PlayerProtos {
           java.lang.Iterable<? extends cg.base.io.proto.PlayerProtos.VO_PLAYER_ANIMATION_INFOS> values) {
         if (animationInfosBuilder_ == null) {
           ensureAnimationInfosIsMutable();
-          super.addAll(values, animationInfos_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, animationInfos_);
           onChanged();
         } else {
           animationInfosBuilder_.addAllMessages(values);
@@ -8370,67 +8430,67 @@ public final class PlayerProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_PLAYER_ANIMATION_INFO)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_PLAYER_CREATE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_PLAYER_CREATE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_PLAYER_CREATE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_PLAYER_CREATE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_PLAYER_DELETE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_PLAYER_DELETE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_PLAYER_QUERY_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_PLAYER_QUERY_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_PLAYER_LOGIN_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_PLAYER_LOGIN_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_PLAYER_LOGIN_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_PLAYER_LOGIN_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_PLAYER_ANIMATION_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_PLAYER_ANIMATION_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_PLAYER_ANIMATIONS_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_PLAYER_ANIMATIONS_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_PLAYER_CREATE_INFO_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_PLAYER_ANIMATION_INFO_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_PLAYER_ANIMATION_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_PLAYER_ANIMATION_INFO_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -8455,114 +8515,116 @@ public final class PlayerProtos {
       "ER_QUERY\022\016\n\006roleId\030\001 \002(\005\"f\n\024REQUEST_PLAY" +
       "ER_LOGIN\022\016\n\006roleId\030\001 \002(\005\022\017\n\007eyeShot\030\002 \002(",
       "\005\022\030\n\020animationVersion\030\003 \002(\005\022\023\n\013headVersi" +
-      "on\030\004 \002(\005\"3\n\025RESPONSE_PLAYER_LOGIN\022\032\n\010uni" +
-      "tInfo\030\001 \002(\0132\010.VO_UNIT\"M\n\023VO_PLAYER_ANIMA" +
-      "TION\022\016\n\006roleId\030\001 \002(\005\022\020\n\010globalId\030\002 \003(\005\022\024" +
-      "\n\014headGlobalId\030\003 \002(\005\"@\n\024VO_PLAYER_ANIMAT" +
-      "IONS\022(\n\nanimations\030\001 \003(\0132\024.VO_PLAYER_ANI" +
-      "MATION\"e\n\033RESPONSE_PLAYER_CREATE_INFO\022\n\n" +
-      "\002bp\030\001 \002(\005\022\017\n\007pageMax\030\002 \002(\005\022)\n\nanimations" +
-      "\030\003 \003(\0132\025.VO_PLAYER_ANIMATIONS\"-\n\035REQUEST" +
-      "_PLAYER_ANIMATION_INFO\022\014\n\004page\030\001 \002(\005\"P\n\030",
-      "VO_PLAYER_ANIMATION_INFO\022\016\n\006roleId\030\001 \002(\005" +
-      "\022\024\n\014animationId2\030\002 \003(\005\022\016\n\006headId\030\003 \002(\005\"N" +
-      "\n\031VO_PLAYER_ANIMATION_INFOS\0221\n\016animation" +
-      "Infos\030\001 \003(\0132\031.VO_PLAYER_ANIMATION_INFO\"T" +
-      "\n\036RESPONSE_PLAYER_ANIMATION_INFO\0222\n\016anim" +
-      "ationInfos\030\001 \003(\0132\032.VO_PLAYER_ANIMATION_I" +
-      "NFOSB \n\020cg.base.io.protoB\014PlayerProtos"
+      "on\030\004 \002(\005\"B\n\025RESPONSE_PLAYER_LOGIN\022\032\n\010uni" +
+      "tInfo\030\001 \002(\0132\010.VO_UNIT\022\r\n\005mapId\030\002 \002(\005\"M\n\023" +
+      "VO_PLAYER_ANIMATION\022\016\n\006roleId\030\001 \002(\005\022\020\n\010g" +
+      "lobalId\030\002 \003(\005\022\024\n\014headGlobalId\030\003 \002(\005\"@\n\024V" +
+      "O_PLAYER_ANIMATIONS\022(\n\nanimations\030\001 \003(\0132" +
+      "\024.VO_PLAYER_ANIMATION\"e\n\033RESPONSE_PLAYER" +
+      "_CREATE_INFO\022\n\n\002bp\030\001 \002(\005\022\017\n\007pageMax\030\002 \002(" +
+      "\005\022)\n\nanimations\030\003 \003(\0132\025.VO_PLAYER_ANIMAT" +
+      "IONS\"-\n\035REQUEST_PLAYER_ANIMATION_INFO\022\014\n",
+      "\004page\030\001 \002(\005\"P\n\030VO_PLAYER_ANIMATION_INFO\022" +
+      "\016\n\006roleId\030\001 \002(\005\022\024\n\014animationId2\030\002 \003(\005\022\016\n" +
+      "\006headId\030\003 \002(\005\"N\n\031VO_PLAYER_ANIMATION_INF" +
+      "OS\0221\n\016animationInfos\030\001 \003(\0132\031.VO_PLAYER_A" +
+      "NIMATION_INFO\"T\n\036RESPONSE_PLAYER_ANIMATI" +
+      "ON_INFO\0222\n\016animationInfos\030\001 \003(\0132\032.VO_PLA" +
+      "YER_ANIMATION_INFOSB \n\020cg.base.io.protoB" +
+      "\014PlayerProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_REQUEST_PLAYER_CREATE_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_REQUEST_PLAYER_CREATE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_PLAYER_CREATE_descriptor,
-              new java.lang.String[] { "RoleId", "ColorId", "EyeStyleId", "MouthStyleId", "HairStyleId", "RoleIndex", "Name", "Attributes", "Elements", });
-          internal_static_RESPONSE_PLAYER_CREATE_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_RESPONSE_PLAYER_CREATE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_PLAYER_CREATE_descriptor,
-              new java.lang.String[] { "InstanceId", });
-          internal_static_REQUEST_PLAYER_DELETE_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_REQUEST_PLAYER_DELETE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_PLAYER_DELETE_descriptor,
-              new java.lang.String[] { "RoleId", });
-          internal_static_REQUEST_PLAYER_QUERY_descriptor =
-            getDescriptor().getMessageTypes().get(3);
-          internal_static_REQUEST_PLAYER_QUERY_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_PLAYER_QUERY_descriptor,
-              new java.lang.String[] { "RoleId", });
-          internal_static_REQUEST_PLAYER_LOGIN_descriptor =
-            getDescriptor().getMessageTypes().get(4);
-          internal_static_REQUEST_PLAYER_LOGIN_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_PLAYER_LOGIN_descriptor,
-              new java.lang.String[] { "RoleId", "EyeShot", "AnimationVersion", "HeadVersion", });
-          internal_static_RESPONSE_PLAYER_LOGIN_descriptor =
-            getDescriptor().getMessageTypes().get(5);
-          internal_static_RESPONSE_PLAYER_LOGIN_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_PLAYER_LOGIN_descriptor,
-              new java.lang.String[] { "UnitInfo", });
-          internal_static_VO_PLAYER_ANIMATION_descriptor =
-            getDescriptor().getMessageTypes().get(6);
-          internal_static_VO_PLAYER_ANIMATION_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_PLAYER_ANIMATION_descriptor,
-              new java.lang.String[] { "RoleId", "GlobalId", "HeadGlobalId", });
-          internal_static_VO_PLAYER_ANIMATIONS_descriptor =
-            getDescriptor().getMessageTypes().get(7);
-          internal_static_VO_PLAYER_ANIMATIONS_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_PLAYER_ANIMATIONS_descriptor,
-              new java.lang.String[] { "Animations", });
-          internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor =
-            getDescriptor().getMessageTypes().get(8);
-          internal_static_RESPONSE_PLAYER_CREATE_INFO_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor,
-              new java.lang.String[] { "Bp", "PageMax", "Animations", });
-          internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor =
-            getDescriptor().getMessageTypes().get(9);
-          internal_static_REQUEST_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor,
-              new java.lang.String[] { "Page", });
-          internal_static_VO_PLAYER_ANIMATION_INFO_descriptor =
-            getDescriptor().getMessageTypes().get(10);
-          internal_static_VO_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_PLAYER_ANIMATION_INFO_descriptor,
-              new java.lang.String[] { "RoleId", "AnimationId2", "HeadId", });
-          internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor =
-            getDescriptor().getMessageTypes().get(11);
-          internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor,
-              new java.lang.String[] { "AnimationInfos", });
-          internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor =
-            getDescriptor().getMessageTypes().get(12);
-          internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor,
-              new java.lang.String[] { "AnimationInfos", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
+    internal_static_REQUEST_PLAYER_CREATE_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_REQUEST_PLAYER_CREATE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_PLAYER_CREATE_descriptor,
+        new java.lang.String[] { "RoleId", "ColorId", "EyeStyleId", "MouthStyleId", "HairStyleId", "RoleIndex", "Name", "Attributes", "Elements", });
+    internal_static_RESPONSE_PLAYER_CREATE_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_RESPONSE_PLAYER_CREATE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_PLAYER_CREATE_descriptor,
+        new java.lang.String[] { "InstanceId", });
+    internal_static_REQUEST_PLAYER_DELETE_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_REQUEST_PLAYER_DELETE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_PLAYER_DELETE_descriptor,
+        new java.lang.String[] { "RoleId", });
+    internal_static_REQUEST_PLAYER_QUERY_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_REQUEST_PLAYER_QUERY_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_PLAYER_QUERY_descriptor,
+        new java.lang.String[] { "RoleId", });
+    internal_static_REQUEST_PLAYER_LOGIN_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_REQUEST_PLAYER_LOGIN_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_PLAYER_LOGIN_descriptor,
+        new java.lang.String[] { "RoleId", "EyeShot", "AnimationVersion", "HeadVersion", });
+    internal_static_RESPONSE_PLAYER_LOGIN_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_RESPONSE_PLAYER_LOGIN_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_PLAYER_LOGIN_descriptor,
+        new java.lang.String[] { "UnitInfo", "MapId", });
+    internal_static_VO_PLAYER_ANIMATION_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_VO_PLAYER_ANIMATION_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_PLAYER_ANIMATION_descriptor,
+        new java.lang.String[] { "RoleId", "GlobalId", "HeadGlobalId", });
+    internal_static_VO_PLAYER_ANIMATIONS_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_VO_PLAYER_ANIMATIONS_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_PLAYER_ANIMATIONS_descriptor,
+        new java.lang.String[] { "Animations", });
+    internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_RESPONSE_PLAYER_CREATE_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_PLAYER_CREATE_INFO_descriptor,
+        new java.lang.String[] { "Bp", "PageMax", "Animations", });
+    internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_REQUEST_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_PLAYER_ANIMATION_INFO_descriptor,
+        new java.lang.String[] { "Page", });
+    internal_static_VO_PLAYER_ANIMATION_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_VO_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_PLAYER_ANIMATION_INFO_descriptor,
+        new java.lang.String[] { "RoleId", "AnimationId2", "HeadId", });
+    internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_VO_PLAYER_ANIMATION_INFOS_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_PLAYER_ANIMATION_INFOS_descriptor,
+        new java.lang.String[] { "AnimationInfos", });
+    internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_RESPONSE_PLAYER_ANIMATION_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_PLAYER_ANIMATION_INFO_descriptor,
+        new java.lang.String[] { "AnimationInfos", });
+    cg.base.io.proto.VOProtos.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

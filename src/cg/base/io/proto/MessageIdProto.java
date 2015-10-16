@@ -18,7 +18,7 @@ public final class MessageIdProto {
      *
      * <pre>
      *----------------COMMON----------------
-     * @proto=Common
+     * &#64;proto=Common
      * </pre>
      */
     MI_REQUEST_HEART_BEAT(0, 1),
@@ -26,7 +26,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_HEART_BEAT = 2;</code>
      *
      * <pre>
-     * @proto=Common
+     * &#64;proto=Common
      * </pre>
      */
     MI_RESPONSE_HEART_BEAT(1, 2),
@@ -34,7 +34,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_DISCONNECTED = 3;</code>
      *
      * <pre>
-     * @proto=Common
+     * &#64;proto=Common
      * </pre>
      */
     MI_REQUEST_DISCONNECTED(2, 3),
@@ -74,7 +74,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_ACCOUNT_REGISTER = 62;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     MI_RESPONSE_ACCOUNT_REGISTER(11, 62),
@@ -86,7 +86,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_ACCOUNT_LOGIN = 64;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     MI_RESPONSE_ACCOUNT_LOGIN(13, 64),
@@ -94,7 +94,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_ACCOUNT_ROLE_LIST = 65;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     MI_REQUEST_ACCOUNT_ROLE_LIST(14, 65),
@@ -106,7 +106,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_SERVER_LIST = 67;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     MI_REQUEST_SERVER_LIST(16, 67),
@@ -126,7 +126,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_ACCOUNT_LOGOUT = 71;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     MI_REQUEST_ACCOUNT_LOGOUT(20, 71),
@@ -134,7 +134,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_ACCOUNT_LOGOUT = 72;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     MI_RESPONSE_ACCOUNT_LOGOUT(21, 72),
@@ -146,7 +146,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD = 74;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD(23, 74),
@@ -170,7 +170,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_PLAYER_QUERY = 106;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     MI_RESPONSE_PLAYER_QUERY(28, 106),
@@ -186,7 +186,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_PLAYER_CREATE_INFO = 109;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     MI_REQUEST_PLAYER_CREATE_INFO(31, 109),
@@ -238,7 +238,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_MAP_CELLS = 163;</code>
      *
      * <pre>
-     * @proto=Map
+     * &#64;proto=Map
      * </pre>
      */
     MI_REQUEST_MAP_CELLS(43, 163),
@@ -250,7 +250,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_MAP_LOAD_FINISH = 165;</code>
      *
      * <pre>
-     * @proto=Map
+     * &#64;proto=Map
      * </pre>
      */
     MI_REQUEST_MAP_LOAD_FINISH(45, 165),
@@ -258,7 +258,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_MAP_LOAD_FINISH = 166;</code>
      *
      * <pre>
-     * @proto=Map
+     * &#64;proto=Map
      * </pre>
      */
     MI_RESPONSE_MAP_LOAD_FINISH(46, 166),
@@ -278,7 +278,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_BATTLE_DEFEND = 207;</code>
      *
      * <pre>
-     * @proto=Battle
+     * &#64;proto=Battle
      * </pre>
      */
     MI_REQUEST_BATTLE_DEFEND(50, 207),
@@ -286,7 +286,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_BATTLE_WAIT_COMMAND = 210;</code>
      *
      * <pre>
-     * @proto=Battle
+     * &#64;proto=Battle
      * </pre>
      */
     MI_RESPONSE_BATTLE_WAIT_COMMAND(51, 210),
@@ -294,7 +294,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_BATTLE_ANIMATION_FINISH = 211;</code>
      *
      * <pre>
-     * @proto=Battle
+     * &#64;proto=Battle
      * </pre>
      */
     MI_REQUEST_BATTLE_ANIMATION_FINISH(52, 211),
@@ -307,7 +307,7 @@ public final class MessageIdProto {
      *
      * <pre>
      *----------------SCRIPT----------------
-     * @proto=Script
+     * &#64;proto=Script
      * </pre>
      */
     MI_RESPONSE_SCRIPT(54, 302),
@@ -319,7 +319,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_SCRIPT_MUTUAL = 304;</code>
      *
      * <pre>
-     * @proto=Script
+     * &#64;proto=Script
      * </pre>
      */
     MI_RESPONSE_SCRIPT_MUTUAL(56, 304),
@@ -327,7 +327,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_SCRIPT_ERROR = 306;</code>
      *
      * <pre>
-     * @proto=Script
+     * &#64;proto=Script
      * </pre>
      */
     MI_RESPONSE_SCRIPT_ERROR(57, 306),
@@ -343,7 +343,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_CHAT_JOIN = 353;</code>
      *
      * <pre>
-     * @proto=Chat
+     * &#64;proto=Chat
      * </pre>
      */
     MI_REQUEST_CHAT_JOIN(60, 353),
@@ -351,7 +351,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_CHAT_JOIN = 354;</code>
      *
      * <pre>
-     * @proto=Chat
+     * &#64;proto=Chat
      * </pre>
      */
     MI_RESPONSE_CHAT_JOIN(61, 354),
@@ -359,7 +359,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_CHAT_LEAVE = 355;</code>
      *
      * <pre>
-     * @proto=Chat
+     * &#64;proto=Chat
      * </pre>
      */
     MI_REQUEST_CHAT_LEAVE(62, 355),
@@ -367,7 +367,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_CHAT_LEAVE = 356;</code>
      *
      * <pre>
-     * @proto=Chat
+     * &#64;proto=Chat
      * </pre>
      */
     MI_RESPONSE_CHAT_LEAVE(63, 356),
@@ -376,7 +376,7 @@ public final class MessageIdProto {
      *
      * <pre>
      *----------------SKILL----------------
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_REQUEST_SKILL_USE(64, 401),
@@ -384,7 +384,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_RECIPE = 403;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_REQUEST_RECIPE(65, 403),
@@ -392,7 +392,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_DOUBLE_EXP_BEGIN = 405;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_REQUEST_DOUBLE_EXP_BEGIN(66, 405),
@@ -400,7 +400,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_DOUBLE_EXP_END = 407;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_REQUEST_DOUBLE_EXP_END(67, 407),
@@ -408,7 +408,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_DOUBLE_EXP_END = 408;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_RESPONSE_DOUBLE_EXP_END(68, 408),
@@ -416,7 +416,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_DOUBLE_EXP_UPDATE = 409;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_REQUEST_DOUBLE_EXP_UPDATE(69, 409),
@@ -428,7 +428,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_SKILL_LEARN = 411;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_REQUEST_SKILL_LEARN(71, 411),
@@ -436,7 +436,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_SKILL_LEARN = 412;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_RESPONSE_SKILL_LEARN(72, 412),
@@ -444,7 +444,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_SKILL_UNLEARN = 413;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_REQUEST_SKILL_UNLEARN(73, 413),
@@ -452,7 +452,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_SKILL_UNLEARN = 414;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     MI_RESPONSE_SKILL_UNLEARN(74, 414),
@@ -461,7 +461,7 @@ public final class MessageIdProto {
      *
      * <pre>
      *----------------MAIL----------------
-     * @proto=Mail
+     * &#64;proto=Mail
      * </pre>
      */
     MI_REQUEST_MAIL_SEND(75, 451),
@@ -469,7 +469,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_MAIL_SEND = 452;</code>
      *
      * <pre>
-     * @proto=Mail
+     * &#64;proto=Mail
      * </pre>
      */
     MI_RESPONSE_MAIL_SEND(76, 452),
@@ -488,7 +488,7 @@ public final class MessageIdProto {
      *
      * <pre>
      *----------------COMMON----------------
-     * @proto=Common
+     * &#64;proto=Common
      * </pre>
      */
     public static final int MI_REQUEST_HEART_BEAT_VALUE = 1;
@@ -496,7 +496,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_HEART_BEAT = 2;</code>
      *
      * <pre>
-     * @proto=Common
+     * &#64;proto=Common
      * </pre>
      */
     public static final int MI_RESPONSE_HEART_BEAT_VALUE = 2;
@@ -504,7 +504,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_DISCONNECTED = 3;</code>
      *
      * <pre>
-     * @proto=Common
+     * &#64;proto=Common
      * </pre>
      */
     public static final int MI_REQUEST_DISCONNECTED_VALUE = 3;
@@ -544,7 +544,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_ACCOUNT_REGISTER = 62;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     public static final int MI_RESPONSE_ACCOUNT_REGISTER_VALUE = 62;
@@ -556,7 +556,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_ACCOUNT_LOGIN = 64;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     public static final int MI_RESPONSE_ACCOUNT_LOGIN_VALUE = 64;
@@ -564,7 +564,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_ACCOUNT_ROLE_LIST = 65;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     public static final int MI_REQUEST_ACCOUNT_ROLE_LIST_VALUE = 65;
@@ -576,7 +576,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_SERVER_LIST = 67;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     public static final int MI_REQUEST_SERVER_LIST_VALUE = 67;
@@ -596,7 +596,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_ACCOUNT_LOGOUT = 71;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     public static final int MI_REQUEST_ACCOUNT_LOGOUT_VALUE = 71;
@@ -604,7 +604,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_ACCOUNT_LOGOUT = 72;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     public static final int MI_RESPONSE_ACCOUNT_LOGOUT_VALUE = 72;
@@ -616,7 +616,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD = 74;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     public static final int MI_RESPONSE_ACCOUNT_CHANGE_PASSWORD_VALUE = 74;
@@ -640,7 +640,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_PLAYER_QUERY = 106;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     public static final int MI_RESPONSE_PLAYER_QUERY_VALUE = 106;
@@ -656,7 +656,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_PLAYER_CREATE_INFO = 109;</code>
      *
      * <pre>
-     * @proto=Account
+     * &#64;proto=Account
      * </pre>
      */
     public static final int MI_REQUEST_PLAYER_CREATE_INFO_VALUE = 109;
@@ -708,7 +708,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_MAP_CELLS = 163;</code>
      *
      * <pre>
-     * @proto=Map
+     * &#64;proto=Map
      * </pre>
      */
     public static final int MI_REQUEST_MAP_CELLS_VALUE = 163;
@@ -720,7 +720,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_MAP_LOAD_FINISH = 165;</code>
      *
      * <pre>
-     * @proto=Map
+     * &#64;proto=Map
      * </pre>
      */
     public static final int MI_REQUEST_MAP_LOAD_FINISH_VALUE = 165;
@@ -728,7 +728,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_MAP_LOAD_FINISH = 166;</code>
      *
      * <pre>
-     * @proto=Map
+     * &#64;proto=Map
      * </pre>
      */
     public static final int MI_RESPONSE_MAP_LOAD_FINISH_VALUE = 166;
@@ -748,7 +748,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_BATTLE_DEFEND = 207;</code>
      *
      * <pre>
-     * @proto=Battle
+     * &#64;proto=Battle
      * </pre>
      */
     public static final int MI_REQUEST_BATTLE_DEFEND_VALUE = 207;
@@ -756,7 +756,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_BATTLE_WAIT_COMMAND = 210;</code>
      *
      * <pre>
-     * @proto=Battle
+     * &#64;proto=Battle
      * </pre>
      */
     public static final int MI_RESPONSE_BATTLE_WAIT_COMMAND_VALUE = 210;
@@ -764,7 +764,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_BATTLE_ANIMATION_FINISH = 211;</code>
      *
      * <pre>
-     * @proto=Battle
+     * &#64;proto=Battle
      * </pre>
      */
     public static final int MI_REQUEST_BATTLE_ANIMATION_FINISH_VALUE = 211;
@@ -777,7 +777,7 @@ public final class MessageIdProto {
      *
      * <pre>
      *----------------SCRIPT----------------
-     * @proto=Script
+     * &#64;proto=Script
      * </pre>
      */
     public static final int MI_RESPONSE_SCRIPT_VALUE = 302;
@@ -789,7 +789,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_SCRIPT_MUTUAL = 304;</code>
      *
      * <pre>
-     * @proto=Script
+     * &#64;proto=Script
      * </pre>
      */
     public static final int MI_RESPONSE_SCRIPT_MUTUAL_VALUE = 304;
@@ -797,7 +797,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_SCRIPT_ERROR = 306;</code>
      *
      * <pre>
-     * @proto=Script
+     * &#64;proto=Script
      * </pre>
      */
     public static final int MI_RESPONSE_SCRIPT_ERROR_VALUE = 306;
@@ -813,7 +813,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_CHAT_JOIN = 353;</code>
      *
      * <pre>
-     * @proto=Chat
+     * &#64;proto=Chat
      * </pre>
      */
     public static final int MI_REQUEST_CHAT_JOIN_VALUE = 353;
@@ -821,7 +821,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_CHAT_JOIN = 354;</code>
      *
      * <pre>
-     * @proto=Chat
+     * &#64;proto=Chat
      * </pre>
      */
     public static final int MI_RESPONSE_CHAT_JOIN_VALUE = 354;
@@ -829,7 +829,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_CHAT_LEAVE = 355;</code>
      *
      * <pre>
-     * @proto=Chat
+     * &#64;proto=Chat
      * </pre>
      */
     public static final int MI_REQUEST_CHAT_LEAVE_VALUE = 355;
@@ -837,7 +837,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_CHAT_LEAVE = 356;</code>
      *
      * <pre>
-     * @proto=Chat
+     * &#64;proto=Chat
      * </pre>
      */
     public static final int MI_RESPONSE_CHAT_LEAVE_VALUE = 356;
@@ -846,7 +846,7 @@ public final class MessageIdProto {
      *
      * <pre>
      *----------------SKILL----------------
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_REQUEST_SKILL_USE_VALUE = 401;
@@ -854,7 +854,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_RECIPE = 403;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_REQUEST_RECIPE_VALUE = 403;
@@ -862,7 +862,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_DOUBLE_EXP_BEGIN = 405;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_REQUEST_DOUBLE_EXP_BEGIN_VALUE = 405;
@@ -870,7 +870,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_DOUBLE_EXP_END = 407;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_REQUEST_DOUBLE_EXP_END_VALUE = 407;
@@ -878,7 +878,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_DOUBLE_EXP_END = 408;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_RESPONSE_DOUBLE_EXP_END_VALUE = 408;
@@ -886,7 +886,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_DOUBLE_EXP_UPDATE = 409;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_REQUEST_DOUBLE_EXP_UPDATE_VALUE = 409;
@@ -898,7 +898,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_SKILL_LEARN = 411;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_REQUEST_SKILL_LEARN_VALUE = 411;
@@ -906,7 +906,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_SKILL_LEARN = 412;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_RESPONSE_SKILL_LEARN_VALUE = 412;
@@ -914,7 +914,7 @@ public final class MessageIdProto {
      * <code>MI_REQUEST_SKILL_UNLEARN = 413;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_REQUEST_SKILL_UNLEARN_VALUE = 413;
@@ -922,7 +922,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_SKILL_UNLEARN = 414;</code>
      *
      * <pre>
-     * @proto=Skill
+     * &#64;proto=Skill
      * </pre>
      */
     public static final int MI_RESPONSE_SKILL_UNLEARN_VALUE = 414;
@@ -931,7 +931,7 @@ public final class MessageIdProto {
      *
      * <pre>
      *----------------MAIL----------------
-     * @proto=Mail
+     * &#64;proto=Mail
      * </pre>
      */
     public static final int MI_REQUEST_MAIL_SEND_VALUE = 451;
@@ -939,7 +939,7 @@ public final class MessageIdProto {
      * <code>MI_RESPONSE_MAIL_SEND = 452;</code>
      *
      * <pre>
-     * @proto=Mail
+     * &#64;proto=Mail
      * </pre>
      */
     public static final int MI_RESPONSE_MAIL_SEND_VALUE = 452;
@@ -1162,13 +1162,13 @@ public final class MessageIdProto {
       "roto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {

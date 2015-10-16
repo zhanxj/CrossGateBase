@@ -8,10 +8,10 @@ public final class ChatProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface REQUEST_CHATOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_CHATOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_CHAT)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 channel = 1;
     /**
      * <code>required int32 channel = 1;</code>
      */
@@ -21,7 +21,6 @@ public final class ChatProtos {
      */
     int getChannel();
 
-    // optional int32 targetId = 2;
     /**
      * <code>optional int32 targetId = 2;</code>
      */
@@ -31,7 +30,6 @@ public final class ChatProtos {
      */
     int getTargetId();
 
-    // required string text = 3;
     /**
      * <code>required string text = 3;</code>
      */
@@ -50,8 +48,9 @@ public final class ChatProtos {
    * Protobuf type {@code REQUEST_CHAT}
    */
   public static final class REQUEST_CHAT extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_CHATOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_CHAT)
+      REQUEST_CHATOrBuilder {
     // Use REQUEST_CHAT.newBuilder() to construct.
     private REQUEST_CHAT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -108,8 +107,9 @@ public final class ChatProtos {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              text_ = input.readBytes();
+              text_ = bs;
               break;
             }
           }
@@ -152,7 +152,6 @@ public final class ChatProtos {
     }
 
     private int bitField0_;
-    // required int32 channel = 1;
     public static final int CHANNEL_FIELD_NUMBER = 1;
     private int channel_;
     /**
@@ -168,7 +167,6 @@ public final class ChatProtos {
       return channel_;
     }
 
-    // optional int32 targetId = 2;
     public static final int TARGETID_FIELD_NUMBER = 2;
     private int targetId_;
     /**
@@ -184,7 +182,6 @@ public final class ChatProtos {
       return targetId_;
     }
 
-    // required string text = 3;
     public static final int TEXT_FIELD_NUMBER = 3;
     private java.lang.Object text_;
     /**
@@ -235,7 +232,8 @@ public final class ChatProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasChannel()) {
         memoizedIsInitialized = 0;
@@ -364,8 +362,9 @@ public final class ChatProtos {
      * Protobuf type {@code REQUEST_CHAT}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ChatProtos.REQUEST_CHATOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_CHAT)
+        cg.base.io.proto.ChatProtos.REQUEST_CHATOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.ChatProtos.internal_static_REQUEST_CHAT_descriptor;
@@ -506,7 +505,6 @@ public final class ChatProtos {
       }
       private int bitField0_;
 
-      // required int32 channel = 1;
       private int channel_ ;
       /**
        * <code>required int32 channel = 1;</code>
@@ -539,7 +537,6 @@ public final class ChatProtos {
         return this;
       }
 
-      // optional int32 targetId = 2;
       private int targetId_ ;
       /**
        * <code>optional int32 targetId = 2;</code>
@@ -572,7 +569,6 @@ public final class ChatProtos {
         return this;
       }
 
-      // required string text = 3;
       private java.lang.Object text_ = "";
       /**
        * <code>required string text = 3;</code>
@@ -586,9 +582,12 @@ public final class ChatProtos {
       public java.lang.String getText() {
         java.lang.Object ref = text_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          text_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            text_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -657,10 +656,10 @@ public final class ChatProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_CHAT)
   }
 
-  public interface RESPONSE_CHATOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_CHATOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_CHAT)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 channel = 1;
     /**
      * <code>required int32 channel = 1;</code>
      */
@@ -670,7 +669,6 @@ public final class ChatProtos {
      */
     int getChannel();
 
-    // required int32 sourceId = 2;
     /**
      * <code>required int32 sourceId = 2;</code>
      */
@@ -680,7 +678,6 @@ public final class ChatProtos {
      */
     int getSourceId();
 
-    // required string souceName = 3;
     /**
      * <code>required string souceName = 3;</code>
      */
@@ -695,7 +692,6 @@ public final class ChatProtos {
     com.google.protobuf.ByteString
         getSouceNameBytes();
 
-    // required string text = 4;
     /**
      * <code>required string text = 4;</code>
      */
@@ -714,8 +710,9 @@ public final class ChatProtos {
    * Protobuf type {@code RESPONSE_CHAT}
    */
   public static final class RESPONSE_CHAT extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_CHATOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_CHAT)
+      RESPONSE_CHATOrBuilder {
     // Use RESPONSE_CHAT.newBuilder() to construct.
     private RESPONSE_CHAT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -772,13 +769,15 @@ public final class ChatProtos {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              souceName_ = input.readBytes();
+              souceName_ = bs;
               break;
             }
             case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              text_ = input.readBytes();
+              text_ = bs;
               break;
             }
           }
@@ -821,7 +820,6 @@ public final class ChatProtos {
     }
 
     private int bitField0_;
-    // required int32 channel = 1;
     public static final int CHANNEL_FIELD_NUMBER = 1;
     private int channel_;
     /**
@@ -837,7 +835,6 @@ public final class ChatProtos {
       return channel_;
     }
 
-    // required int32 sourceId = 2;
     public static final int SOURCEID_FIELD_NUMBER = 2;
     private int sourceId_;
     /**
@@ -853,7 +850,6 @@ public final class ChatProtos {
       return sourceId_;
     }
 
-    // required string souceName = 3;
     public static final int SOUCENAME_FIELD_NUMBER = 3;
     private java.lang.Object souceName_;
     /**
@@ -896,7 +892,6 @@ public final class ChatProtos {
       }
     }
 
-    // required string text = 4;
     public static final int TEXT_FIELD_NUMBER = 4;
     private java.lang.Object text_;
     /**
@@ -948,7 +943,8 @@ public final class ChatProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasChannel()) {
         memoizedIsInitialized = 0;
@@ -1092,8 +1088,9 @@ public final class ChatProtos {
      * Protobuf type {@code RESPONSE_CHAT}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ChatProtos.RESPONSE_CHATOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_CHAT)
+        cg.base.io.proto.ChatProtos.RESPONSE_CHATOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.ChatProtos.internal_static_RESPONSE_CHAT_descriptor;
@@ -1253,7 +1250,6 @@ public final class ChatProtos {
       }
       private int bitField0_;
 
-      // required int32 channel = 1;
       private int channel_ ;
       /**
        * <code>required int32 channel = 1;</code>
@@ -1286,7 +1282,6 @@ public final class ChatProtos {
         return this;
       }
 
-      // required int32 sourceId = 2;
       private int sourceId_ ;
       /**
        * <code>required int32 sourceId = 2;</code>
@@ -1319,7 +1314,6 @@ public final class ChatProtos {
         return this;
       }
 
-      // required string souceName = 3;
       private java.lang.Object souceName_ = "";
       /**
        * <code>required string souceName = 3;</code>
@@ -1333,9 +1327,12 @@ public final class ChatProtos {
       public java.lang.String getSouceName() {
         java.lang.Object ref = souceName_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          souceName_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            souceName_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1393,7 +1390,6 @@ public final class ChatProtos {
         return this;
       }
 
-      // required string text = 4;
       private java.lang.Object text_ = "";
       /**
        * <code>required string text = 4;</code>
@@ -1407,9 +1403,12 @@ public final class ChatProtos {
       public java.lang.String getText() {
         java.lang.Object ref = text_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          text_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            text_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1478,10 +1477,10 @@ public final class ChatProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_CHAT)
   }
 
-  public interface RESPONSE_CHAT_JOINOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_CHAT_JOINOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_CHAT_JOIN)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string channelName = 1;
     /**
      * <code>required string channelName = 1;</code>
      */
@@ -1496,7 +1495,6 @@ public final class ChatProtos {
     com.google.protobuf.ByteString
         getChannelNameBytes();
 
-    // required int32 channel = 2;
     /**
      * <code>required int32 channel = 2;</code>
      */
@@ -1510,8 +1508,9 @@ public final class ChatProtos {
    * Protobuf type {@code RESPONSE_CHAT_JOIN}
    */
   public static final class RESPONSE_CHAT_JOIN extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_CHAT_JOINOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_CHAT_JOIN)
+      RESPONSE_CHAT_JOINOrBuilder {
     // Use RESPONSE_CHAT_JOIN.newBuilder() to construct.
     private RESPONSE_CHAT_JOIN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1558,8 +1557,9 @@ public final class ChatProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              channelName_ = input.readBytes();
+              channelName_ = bs;
               break;
             }
             case 16: {
@@ -1607,7 +1607,6 @@ public final class ChatProtos {
     }
 
     private int bitField0_;
-    // required string channelName = 1;
     public static final int CHANNELNAME_FIELD_NUMBER = 1;
     private java.lang.Object channelName_;
     /**
@@ -1650,7 +1649,6 @@ public final class ChatProtos {
       }
     }
 
-    // required int32 channel = 2;
     public static final int CHANNEL_FIELD_NUMBER = 2;
     private int channel_;
     /**
@@ -1673,7 +1671,8 @@ public final class ChatProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasChannelName()) {
         memoizedIsInitialized = 0;
@@ -1795,8 +1794,9 @@ public final class ChatProtos {
      * Protobuf type {@code RESPONSE_CHAT_JOIN}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ChatProtos.RESPONSE_CHAT_JOINOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_CHAT_JOIN)
+        cg.base.io.proto.ChatProtos.RESPONSE_CHAT_JOINOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.ChatProtos.internal_static_RESPONSE_CHAT_JOIN_descriptor;
@@ -1928,7 +1928,6 @@ public final class ChatProtos {
       }
       private int bitField0_;
 
-      // required string channelName = 1;
       private java.lang.Object channelName_ = "";
       /**
        * <code>required string channelName = 1;</code>
@@ -1942,9 +1941,12 @@ public final class ChatProtos {
       public java.lang.String getChannelName() {
         java.lang.Object ref = channelName_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          channelName_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            channelName_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -2002,7 +2004,6 @@ public final class ChatProtos {
         return this;
       }
 
-      // required int32 channel = 2;
       private int channel_ ;
       /**
        * <code>required int32 channel = 2;</code>
@@ -2046,10 +2047,10 @@ public final class ChatProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_CHAT_JOIN)
   }
 
-  public interface RESPONSE_CHAT_LEAVEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_CHAT_LEAVEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_CHAT_LEAVE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string channelName = 1;
     /**
      * <code>required string channelName = 1;</code>
      */
@@ -2068,8 +2069,9 @@ public final class ChatProtos {
    * Protobuf type {@code RESPONSE_CHAT_LEAVE}
    */
   public static final class RESPONSE_CHAT_LEAVE extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_CHAT_LEAVEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_CHAT_LEAVE)
+      RESPONSE_CHAT_LEAVEOrBuilder {
     // Use RESPONSE_CHAT_LEAVE.newBuilder() to construct.
     private RESPONSE_CHAT_LEAVE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2116,8 +2118,9 @@ public final class ChatProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              channelName_ = input.readBytes();
+              channelName_ = bs;
               break;
             }
           }
@@ -2160,7 +2163,6 @@ public final class ChatProtos {
     }
 
     private int bitField0_;
-    // required string channelName = 1;
     public static final int CHANNELNAME_FIELD_NUMBER = 1;
     private java.lang.Object channelName_;
     /**
@@ -2209,7 +2211,8 @@ public final class ChatProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasChannelName()) {
         memoizedIsInitialized = 0;
@@ -2320,8 +2323,9 @@ public final class ChatProtos {
      * Protobuf type {@code RESPONSE_CHAT_LEAVE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ChatProtos.RESPONSE_CHAT_LEAVEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_CHAT_LEAVE)
+        cg.base.io.proto.ChatProtos.RESPONSE_CHAT_LEAVEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.ChatProtos.internal_static_RESPONSE_CHAT_LEAVE_descriptor;
@@ -2440,7 +2444,6 @@ public final class ChatProtos {
       }
       private int bitField0_;
 
-      // required string channelName = 1;
       private java.lang.Object channelName_ = "";
       /**
        * <code>required string channelName = 1;</code>
@@ -2454,9 +2457,12 @@ public final class ChatProtos {
       public java.lang.String getChannelName() {
         java.lang.Object ref = channelName_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          channelName_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            channelName_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -2525,22 +2531,22 @@ public final class ChatProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_CHAT_LEAVE)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_CHAT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_CHAT_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_CHAT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_CHAT_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_CHAT_JOIN_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_CHAT_JOIN_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_CHAT_LEAVE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -2564,41 +2570,41 @@ public final class ChatProtos {
       ".protoB\nChatProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_REQUEST_CHAT_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_REQUEST_CHAT_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_CHAT_descriptor,
-              new java.lang.String[] { "Channel", "TargetId", "Text", });
-          internal_static_RESPONSE_CHAT_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_RESPONSE_CHAT_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_CHAT_descriptor,
-              new java.lang.String[] { "Channel", "SourceId", "SouceName", "Text", });
-          internal_static_RESPONSE_CHAT_JOIN_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_RESPONSE_CHAT_JOIN_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_CHAT_JOIN_descriptor,
-              new java.lang.String[] { "ChannelName", "Channel", });
-          internal_static_RESPONSE_CHAT_LEAVE_descriptor =
-            getDescriptor().getMessageTypes().get(3);
-          internal_static_RESPONSE_CHAT_LEAVE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_CHAT_LEAVE_descriptor,
-              new java.lang.String[] { "ChannelName", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
+    internal_static_REQUEST_CHAT_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_REQUEST_CHAT_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_CHAT_descriptor,
+        new java.lang.String[] { "Channel", "TargetId", "Text", });
+    internal_static_RESPONSE_CHAT_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_RESPONSE_CHAT_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_CHAT_descriptor,
+        new java.lang.String[] { "Channel", "SourceId", "SouceName", "Text", });
+    internal_static_RESPONSE_CHAT_JOIN_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_RESPONSE_CHAT_JOIN_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_CHAT_JOIN_descriptor,
+        new java.lang.String[] { "ChannelName", "Channel", });
+    internal_static_RESPONSE_CHAT_LEAVE_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_RESPONSE_CHAT_LEAVE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_CHAT_LEAVE_descriptor,
+        new java.lang.String[] { "ChannelName", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

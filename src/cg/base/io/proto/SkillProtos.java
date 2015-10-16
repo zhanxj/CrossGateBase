@@ -8,10 +8,10 @@ public final class SkillProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface RESPONSE_DOUBLE_EXP_UPDATEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_DOUBLE_EXP_UPDATEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_DOUBLE_EXP_UPDATE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required bool isDouble = 1;
     /**
      * <code>required bool isDouble = 1;</code>
      */
@@ -21,7 +21,6 @@ public final class SkillProtos {
      */
     boolean getIsDouble();
 
-    // required int32 time = 2;
     /**
      * <code>required int32 time = 2;</code>
      */
@@ -35,8 +34,9 @@ public final class SkillProtos {
    * Protobuf type {@code RESPONSE_DOUBLE_EXP_UPDATE}
    */
   public static final class RESPONSE_DOUBLE_EXP_UPDATE extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_DOUBLE_EXP_UPDATEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_DOUBLE_EXP_UPDATE)
+      RESPONSE_DOUBLE_EXP_UPDATEOrBuilder {
     // Use RESPONSE_DOUBLE_EXP_UPDATE.newBuilder() to construct.
     private RESPONSE_DOUBLE_EXP_UPDATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -132,7 +132,6 @@ public final class SkillProtos {
     }
 
     private int bitField0_;
-    // required bool isDouble = 1;
     public static final int ISDOUBLE_FIELD_NUMBER = 1;
     private boolean isDouble_;
     /**
@@ -148,7 +147,6 @@ public final class SkillProtos {
       return isDouble_;
     }
 
-    // required int32 time = 2;
     public static final int TIME_FIELD_NUMBER = 2;
     private int time_;
     /**
@@ -171,7 +169,8 @@ public final class SkillProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasIsDouble()) {
         memoizedIsInitialized = 0;
@@ -293,8 +292,9 @@ public final class SkillProtos {
      * Protobuf type {@code RESPONSE_DOUBLE_EXP_UPDATE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.SkillProtos.RESPONSE_DOUBLE_EXP_UPDATEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_DOUBLE_EXP_UPDATE)
+        cg.base.io.proto.SkillProtos.RESPONSE_DOUBLE_EXP_UPDATEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.SkillProtos.internal_static_RESPONSE_DOUBLE_EXP_UPDATE_descriptor;
@@ -424,7 +424,6 @@ public final class SkillProtos {
       }
       private int bitField0_;
 
-      // required bool isDouble = 1;
       private boolean isDouble_ ;
       /**
        * <code>required bool isDouble = 1;</code>
@@ -457,7 +456,6 @@ public final class SkillProtos {
         return this;
       }
 
-      // required int32 time = 2;
       private int time_ ;
       /**
        * <code>required int32 time = 2;</code>
@@ -501,10 +499,10 @@ public final class SkillProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_DOUBLE_EXP_UPDATE)
   }
 
-  public interface REQUEST_SKILL_USEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_SKILL_USEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_SKILL_USE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 skillCode = 1;
     /**
      * <code>required int32 skillCode = 1;</code>
      */
@@ -514,7 +512,6 @@ public final class SkillProtos {
      */
     int getSkillCode();
 
-    // optional int32 targetId = 2;
     /**
      * <code>optional int32 targetId = 2;</code>
      */
@@ -528,8 +525,9 @@ public final class SkillProtos {
    * Protobuf type {@code REQUEST_SKILL_USE}
    */
   public static final class REQUEST_SKILL_USE extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_SKILL_USEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_SKILL_USE)
+      REQUEST_SKILL_USEOrBuilder {
     // Use REQUEST_SKILL_USE.newBuilder() to construct.
     private REQUEST_SKILL_USE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -625,7 +623,6 @@ public final class SkillProtos {
     }
 
     private int bitField0_;
-    // required int32 skillCode = 1;
     public static final int SKILLCODE_FIELD_NUMBER = 1;
     private int skillCode_;
     /**
@@ -641,7 +638,6 @@ public final class SkillProtos {
       return skillCode_;
     }
 
-    // optional int32 targetId = 2;
     public static final int TARGETID_FIELD_NUMBER = 2;
     private int targetId_;
     /**
@@ -664,7 +660,8 @@ public final class SkillProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasSkillCode()) {
         memoizedIsInitialized = 0;
@@ -782,8 +779,9 @@ public final class SkillProtos {
      * Protobuf type {@code REQUEST_SKILL_USE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.SkillProtos.REQUEST_SKILL_USEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_SKILL_USE)
+        cg.base.io.proto.SkillProtos.REQUEST_SKILL_USEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.SkillProtos.internal_static_REQUEST_SKILL_USE_descriptor;
@@ -909,7 +907,6 @@ public final class SkillProtos {
       }
       private int bitField0_;
 
-      // required int32 skillCode = 1;
       private int skillCode_ ;
       /**
        * <code>required int32 skillCode = 1;</code>
@@ -942,7 +939,6 @@ public final class SkillProtos {
         return this;
       }
 
-      // optional int32 targetId = 2;
       private int targetId_ ;
       /**
        * <code>optional int32 targetId = 2;</code>
@@ -986,10 +982,10 @@ public final class SkillProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_SKILL_USE)
   }
 
-  public interface REQUEST_RECIPEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_RECIPEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_RECIPE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 recipeId = 1;
     /**
      * <code>required int32 recipeId = 1;</code>
      */
@@ -999,7 +995,6 @@ public final class SkillProtos {
      */
     int getRecipeId();
 
-    // required int32 bagId = 2;
     /**
      * <code>required int32 bagId = 2;</code>
      */
@@ -1009,7 +1004,6 @@ public final class SkillProtos {
      */
     int getBagId();
 
-    // repeated int32 gridIds = 3;
     /**
      * <code>repeated int32 gridIds = 3;</code>
      */
@@ -1027,8 +1021,9 @@ public final class SkillProtos {
    * Protobuf type {@code REQUEST_RECIPE}
    */
   public static final class REQUEST_RECIPE extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_RECIPEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_RECIPE)
+      REQUEST_RECIPEOrBuilder {
     // Use REQUEST_RECIPE.newBuilder() to construct.
     private REQUEST_RECIPE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1148,7 +1143,6 @@ public final class SkillProtos {
     }
 
     private int bitField0_;
-    // required int32 recipeId = 1;
     public static final int RECIPEID_FIELD_NUMBER = 1;
     private int recipeId_;
     /**
@@ -1164,7 +1158,6 @@ public final class SkillProtos {
       return recipeId_;
     }
 
-    // required int32 bagId = 2;
     public static final int BAGID_FIELD_NUMBER = 2;
     private int bagId_;
     /**
@@ -1180,7 +1173,6 @@ public final class SkillProtos {
       return bagId_;
     }
 
-    // repeated int32 gridIds = 3;
     public static final int GRIDIDS_FIELD_NUMBER = 3;
     private java.util.List<java.lang.Integer> gridIds_;
     /**
@@ -1211,7 +1203,8 @@ public final class SkillProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasRecipeId()) {
         memoizedIsInitialized = 0;
@@ -1345,8 +1338,9 @@ public final class SkillProtos {
      * Protobuf type {@code REQUEST_RECIPE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.SkillProtos.REQUEST_RECIPEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_RECIPE)
+        cg.base.io.proto.SkillProtos.REQUEST_RECIPEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.SkillProtos.internal_static_REQUEST_RECIPE_descriptor;
@@ -1493,7 +1487,6 @@ public final class SkillProtos {
       }
       private int bitField0_;
 
-      // required int32 recipeId = 1;
       private int recipeId_ ;
       /**
        * <code>required int32 recipeId = 1;</code>
@@ -1526,7 +1519,6 @@ public final class SkillProtos {
         return this;
       }
 
-      // required int32 bagId = 2;
       private int bagId_ ;
       /**
        * <code>required int32 bagId = 2;</code>
@@ -1559,7 +1551,6 @@ public final class SkillProtos {
         return this;
       }
 
-      // repeated int32 gridIds = 3;
       private java.util.List<java.lang.Integer> gridIds_ = java.util.Collections.emptyList();
       private void ensureGridIdsIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
@@ -1611,7 +1602,8 @@ public final class SkillProtos {
       public Builder addAllGridIds(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureGridIdsIsMutable();
-        super.addAll(values, gridIds_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, gridIds_);
         onChanged();
         return this;
       }
@@ -1636,17 +1628,17 @@ public final class SkillProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_RECIPE)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_DOUBLE_EXP_UPDATE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_DOUBLE_EXP_UPDATE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_SKILL_USE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_SKILL_USE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_RECIPE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -1668,35 +1660,35 @@ public final class SkillProtos {
       "\005B\037\n\020cg.base.io.protoB\013SkillProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_RESPONSE_DOUBLE_EXP_UPDATE_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_RESPONSE_DOUBLE_EXP_UPDATE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_DOUBLE_EXP_UPDATE_descriptor,
-              new java.lang.String[] { "IsDouble", "Time", });
-          internal_static_REQUEST_SKILL_USE_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_REQUEST_SKILL_USE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_SKILL_USE_descriptor,
-              new java.lang.String[] { "SkillCode", "TargetId", });
-          internal_static_REQUEST_RECIPE_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_REQUEST_RECIPE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_RECIPE_descriptor,
-              new java.lang.String[] { "RecipeId", "BagId", "GridIds", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
+    internal_static_RESPONSE_DOUBLE_EXP_UPDATE_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_RESPONSE_DOUBLE_EXP_UPDATE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_DOUBLE_EXP_UPDATE_descriptor,
+        new java.lang.String[] { "IsDouble", "Time", });
+    internal_static_REQUEST_SKILL_USE_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_REQUEST_SKILL_USE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_SKILL_USE_descriptor,
+        new java.lang.String[] { "SkillCode", "TargetId", });
+    internal_static_REQUEST_RECIPE_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_REQUEST_RECIPE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_RECIPE_descriptor,
+        new java.lang.String[] { "RecipeId", "BagId", "GridIds", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

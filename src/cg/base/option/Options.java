@@ -61,7 +61,7 @@ public class Options {
 	
 	public static final String CHAT_NAME_TEAM = "team";
 	
-	private Map<String, Byte> options = Maps.newHashMap();
+	private final Map<String, Byte> options = Maps.newHashMap();
 	
 	public byte getState(String name) {
 		return options.get(name);

@@ -143,7 +143,7 @@ public class VoItem {
 	 */
 	public VoItemIdentify getIdentifyInfo() {
 		VoItemIdentify ret = null;
-		VO_ITEM_IDENTIFY vo = builder.getIdentifyInfo();
+		VO_ITEM_IDENTIFY vo = this.vo.getIdentifyInfo();
 		ret = vo == null ? null : new VoItemIdentify(vo);
 		return ret;
 	}

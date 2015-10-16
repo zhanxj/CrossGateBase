@@ -8,10 +8,10 @@ public final class AccountProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface REQUEST_ACCOUNT_REGISTEROrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_ACCOUNT_REGISTEROrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_ACCOUNT_REGISTER)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string account = 1;
     /**
      * <code>required string account = 1;</code>
      */
@@ -26,7 +26,6 @@ public final class AccountProtos {
     com.google.protobuf.ByteString
         getAccountBytes();
 
-    // required string password = 2;
     /**
      * <code>required string password = 2;</code>
      */
@@ -45,8 +44,9 @@ public final class AccountProtos {
    * Protobuf type {@code REQUEST_ACCOUNT_REGISTER}
    */
   public static final class REQUEST_ACCOUNT_REGISTER extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_ACCOUNT_REGISTEROrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_ACCOUNT_REGISTER)
+      REQUEST_ACCOUNT_REGISTEROrBuilder {
     // Use REQUEST_ACCOUNT_REGISTER.newBuilder() to construct.
     private REQUEST_ACCOUNT_REGISTER(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -93,13 +93,15 @@ public final class AccountProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              account_ = input.readBytes();
+              account_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              password_ = input.readBytes();
+              password_ = bs;
               break;
             }
           }
@@ -142,7 +144,6 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required string account = 1;
     public static final int ACCOUNT_FIELD_NUMBER = 1;
     private java.lang.Object account_;
     /**
@@ -185,7 +186,6 @@ public final class AccountProtos {
       }
     }
 
-    // required string password = 2;
     public static final int PASSWORD_FIELD_NUMBER = 2;
     private java.lang.Object password_;
     /**
@@ -235,7 +235,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasAccount()) {
         memoizedIsInitialized = 0;
@@ -357,8 +358,9 @@ public final class AccountProtos {
      * Protobuf type {@code REQUEST_ACCOUNT_REGISTER}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_REGISTEROrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_ACCOUNT_REGISTER)
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_REGISTEROrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_REGISTER_descriptor;
@@ -492,7 +494,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required string account = 1;
       private java.lang.Object account_ = "";
       /**
        * <code>required string account = 1;</code>
@@ -506,9 +507,12 @@ public final class AccountProtos {
       public java.lang.String getAccount() {
         java.lang.Object ref = account_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          account_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            account_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -566,7 +570,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required string password = 2;
       private java.lang.Object password_ = "";
       /**
        * <code>required string password = 2;</code>
@@ -580,9 +583,12 @@ public final class AccountProtos {
       public java.lang.String getPassword() {
         java.lang.Object ref = password_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          password_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            password_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -651,10 +657,10 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_ACCOUNT_REGISTER)
   }
 
-  public interface REQUEST_ACCOUNT_LOGINOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_ACCOUNT_LOGINOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_ACCOUNT_LOGIN)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string account = 1;
     /**
      * <code>required string account = 1;</code>
      */
@@ -669,7 +675,6 @@ public final class AccountProtos {
     com.google.protobuf.ByteString
         getAccountBytes();
 
-    // required string password = 2;
     /**
      * <code>required string password = 2;</code>
      */
@@ -688,8 +693,9 @@ public final class AccountProtos {
    * Protobuf type {@code REQUEST_ACCOUNT_LOGIN}
    */
   public static final class REQUEST_ACCOUNT_LOGIN extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_ACCOUNT_LOGINOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_ACCOUNT_LOGIN)
+      REQUEST_ACCOUNT_LOGINOrBuilder {
     // Use REQUEST_ACCOUNT_LOGIN.newBuilder() to construct.
     private REQUEST_ACCOUNT_LOGIN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -736,13 +742,15 @@ public final class AccountProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              account_ = input.readBytes();
+              account_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              password_ = input.readBytes();
+              password_ = bs;
               break;
             }
           }
@@ -785,7 +793,6 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required string account = 1;
     public static final int ACCOUNT_FIELD_NUMBER = 1;
     private java.lang.Object account_;
     /**
@@ -828,7 +835,6 @@ public final class AccountProtos {
       }
     }
 
-    // required string password = 2;
     public static final int PASSWORD_FIELD_NUMBER = 2;
     private java.lang.Object password_;
     /**
@@ -878,7 +884,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasAccount()) {
         memoizedIsInitialized = 0;
@@ -1000,8 +1007,9 @@ public final class AccountProtos {
      * Protobuf type {@code REQUEST_ACCOUNT_LOGIN}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_LOGINOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_ACCOUNT_LOGIN)
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_LOGINOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_LOGIN_descriptor;
@@ -1135,7 +1143,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required string account = 1;
       private java.lang.Object account_ = "";
       /**
        * <code>required string account = 1;</code>
@@ -1149,9 +1156,12 @@ public final class AccountProtos {
       public java.lang.String getAccount() {
         java.lang.Object ref = account_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          account_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            account_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1209,7 +1219,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required string password = 2;
       private java.lang.Object password_ = "";
       /**
        * <code>required string password = 2;</code>
@@ -1223,9 +1232,12 @@ public final class AccountProtos {
       public java.lang.String getPassword() {
         java.lang.Object ref = password_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          password_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            password_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1294,10 +1306,10 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_ACCOUNT_LOGIN)
   }
 
-  public interface VO_ACCOUNT_PLAYER_INFOOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_ACCOUNT_PLAYER_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_ACCOUNT_PLAYER_INFO)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 instanceId = 1;
     /**
      * <code>required int32 instanceId = 1;</code>
      */
@@ -1307,7 +1319,6 @@ public final class AccountProtos {
      */
     int getInstanceId();
 
-    // required string name = 2;
     /**
      * <code>required string name = 2;</code>
      */
@@ -1322,7 +1333,6 @@ public final class AccountProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // required int32 roleVersion = 3;
     /**
      * <code>required int32 roleVersion = 3;</code>
      */
@@ -1332,7 +1342,6 @@ public final class AccountProtos {
      */
     int getRoleVersion();
 
-    // required int32 headVersion = 4;
     /**
      * <code>required int32 headVersion = 4;</code>
      */
@@ -1342,7 +1351,6 @@ public final class AccountProtos {
      */
     int getHeadVersion();
 
-    // repeated int32 animationGloabId = 5;
     /**
      * <code>repeated int32 animationGloabId = 5;</code>
      */
@@ -1356,7 +1364,6 @@ public final class AccountProtos {
      */
     int getAnimationGloabId(int index);
 
-    // repeated int32 headGloabId = 6;
     /**
      * <code>repeated int32 headGloabId = 6;</code>
      */
@@ -1370,7 +1377,6 @@ public final class AccountProtos {
      */
     int getHeadGloabId(int index);
 
-    // required int32 level = 7;
     /**
      * <code>required int32 level = 7;</code>
      */
@@ -1380,7 +1386,6 @@ public final class AccountProtos {
      */
     int getLevel();
 
-    // required int32 loginTimes = 8;
     /**
      * <code>required int32 loginTimes = 8;</code>
      */
@@ -1390,7 +1395,6 @@ public final class AccountProtos {
      */
     int getLoginTimes();
 
-    // required int32 roleIndex = 9;
     /**
      * <code>required int32 roleIndex = 9;</code>
      */
@@ -1400,7 +1404,6 @@ public final class AccountProtos {
      */
     int getRoleIndex();
 
-    // required string job = 10;
     /**
      * <code>required string job = 10;</code>
      */
@@ -1419,8 +1422,9 @@ public final class AccountProtos {
    * Protobuf type {@code VO_ACCOUNT_PLAYER_INFO}
    */
   public static final class VO_ACCOUNT_PLAYER_INFO extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_ACCOUNT_PLAYER_INFOOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_ACCOUNT_PLAYER_INFO)
+      VO_ACCOUNT_PLAYER_INFOOrBuilder {
     // Use VO_ACCOUNT_PLAYER_INFO.newBuilder() to construct.
     private VO_ACCOUNT_PLAYER_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1472,8 +1476,9 @@ public final class AccountProtos {
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 24: {
@@ -1544,8 +1549,9 @@ public final class AccountProtos {
               break;
             }
             case 82: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000080;
-              job_ = input.readBytes();
+              job_ = bs;
               break;
             }
           }
@@ -1594,7 +1600,6 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required int32 instanceId = 1;
     public static final int INSTANCEID_FIELD_NUMBER = 1;
     private int instanceId_;
     /**
@@ -1610,7 +1615,6 @@ public final class AccountProtos {
       return instanceId_;
     }
 
-    // required string name = 2;
     public static final int NAME_FIELD_NUMBER = 2;
     private java.lang.Object name_;
     /**
@@ -1653,7 +1657,6 @@ public final class AccountProtos {
       }
     }
 
-    // required int32 roleVersion = 3;
     public static final int ROLEVERSION_FIELD_NUMBER = 3;
     private int roleVersion_;
     /**
@@ -1669,7 +1672,6 @@ public final class AccountProtos {
       return roleVersion_;
     }
 
-    // required int32 headVersion = 4;
     public static final int HEADVERSION_FIELD_NUMBER = 4;
     private int headVersion_;
     /**
@@ -1685,7 +1687,6 @@ public final class AccountProtos {
       return headVersion_;
     }
 
-    // repeated int32 animationGloabId = 5;
     public static final int ANIMATIONGLOABID_FIELD_NUMBER = 5;
     private java.util.List<java.lang.Integer> animationGloabId_;
     /**
@@ -1708,7 +1709,6 @@ public final class AccountProtos {
       return animationGloabId_.get(index);
     }
 
-    // repeated int32 headGloabId = 6;
     public static final int HEADGLOABID_FIELD_NUMBER = 6;
     private java.util.List<java.lang.Integer> headGloabId_;
     /**
@@ -1731,7 +1731,6 @@ public final class AccountProtos {
       return headGloabId_.get(index);
     }
 
-    // required int32 level = 7;
     public static final int LEVEL_FIELD_NUMBER = 7;
     private int level_;
     /**
@@ -1747,7 +1746,6 @@ public final class AccountProtos {
       return level_;
     }
 
-    // required int32 loginTimes = 8;
     public static final int LOGINTIMES_FIELD_NUMBER = 8;
     private int loginTimes_;
     /**
@@ -1763,7 +1761,6 @@ public final class AccountProtos {
       return loginTimes_;
     }
 
-    // required int32 roleIndex = 9;
     public static final int ROLEINDEX_FIELD_NUMBER = 9;
     private int roleIndex_;
     /**
@@ -1779,7 +1776,6 @@ public final class AccountProtos {
       return roleIndex_;
     }
 
-    // required string job = 10;
     public static final int JOB_FIELD_NUMBER = 10;
     private java.lang.Object job_;
     /**
@@ -1837,7 +1833,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasInstanceId()) {
         memoizedIsInitialized = 0;
@@ -2049,8 +2046,9 @@ public final class AccountProtos {
      * Protobuf type {@code VO_ACCOUNT_PLAYER_INFO}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.VO_ACCOUNT_PLAYER_INFOOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_ACCOUNT_PLAYER_INFO)
+        cg.base.io.proto.AccountProtos.VO_ACCOUNT_PLAYER_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_VO_ACCOUNT_PLAYER_INFO_descriptor;
@@ -2296,7 +2294,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required int32 instanceId = 1;
       private int instanceId_ ;
       /**
        * <code>required int32 instanceId = 1;</code>
@@ -2329,7 +2326,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required string name = 2;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 2;</code>
@@ -2343,9 +2339,12 @@ public final class AccountProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -2403,7 +2402,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required int32 roleVersion = 3;
       private int roleVersion_ ;
       /**
        * <code>required int32 roleVersion = 3;</code>
@@ -2436,7 +2434,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required int32 headVersion = 4;
       private int headVersion_ ;
       /**
        * <code>required int32 headVersion = 4;</code>
@@ -2469,7 +2466,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // repeated int32 animationGloabId = 5;
       private java.util.List<java.lang.Integer> animationGloabId_ = java.util.Collections.emptyList();
       private void ensureAnimationGloabIdIsMutable() {
         if (!((bitField0_ & 0x00000010) == 0x00000010)) {
@@ -2521,7 +2517,8 @@ public final class AccountProtos {
       public Builder addAllAnimationGloabId(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureAnimationGloabIdIsMutable();
-        super.addAll(values, animationGloabId_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, animationGloabId_);
         onChanged();
         return this;
       }
@@ -2535,7 +2532,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // repeated int32 headGloabId = 6;
       private java.util.List<java.lang.Integer> headGloabId_ = java.util.Collections.emptyList();
       private void ensureHeadGloabIdIsMutable() {
         if (!((bitField0_ & 0x00000020) == 0x00000020)) {
@@ -2587,7 +2583,8 @@ public final class AccountProtos {
       public Builder addAllHeadGloabId(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureHeadGloabIdIsMutable();
-        super.addAll(values, headGloabId_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, headGloabId_);
         onChanged();
         return this;
       }
@@ -2601,7 +2598,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required int32 level = 7;
       private int level_ ;
       /**
        * <code>required int32 level = 7;</code>
@@ -2634,7 +2630,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required int32 loginTimes = 8;
       private int loginTimes_ ;
       /**
        * <code>required int32 loginTimes = 8;</code>
@@ -2667,7 +2662,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required int32 roleIndex = 9;
       private int roleIndex_ ;
       /**
        * <code>required int32 roleIndex = 9;</code>
@@ -2700,7 +2694,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required string job = 10;
       private java.lang.Object job_ = "";
       /**
        * <code>required string job = 10;</code>
@@ -2714,9 +2707,12 @@ public final class AccountProtos {
       public java.lang.String getJob() {
         java.lang.Object ref = job_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          job_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            job_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -2785,10 +2781,10 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:VO_ACCOUNT_PLAYER_INFO)
   }
 
-  public interface REQUEST_ACCOUNT_ROLE_LISTOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_ACCOUNT_ROLE_LISTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_ACCOUNT_ROLE_LIST)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string key = 1;
     /**
      * <code>required string key = 1;</code>
      */
@@ -2807,8 +2803,9 @@ public final class AccountProtos {
    * Protobuf type {@code REQUEST_ACCOUNT_ROLE_LIST}
    */
   public static final class REQUEST_ACCOUNT_ROLE_LIST extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_ACCOUNT_ROLE_LISTOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_ACCOUNT_ROLE_LIST)
+      REQUEST_ACCOUNT_ROLE_LISTOrBuilder {
     // Use REQUEST_ACCOUNT_ROLE_LIST.newBuilder() to construct.
     private REQUEST_ACCOUNT_ROLE_LIST(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2855,8 +2852,9 @@ public final class AccountProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              key_ = input.readBytes();
+              key_ = bs;
               break;
             }
           }
@@ -2899,7 +2897,6 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required string key = 1;
     public static final int KEY_FIELD_NUMBER = 1;
     private java.lang.Object key_;
     /**
@@ -2948,7 +2945,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasKey()) {
         memoizedIsInitialized = 0;
@@ -3059,8 +3057,9 @@ public final class AccountProtos {
      * Protobuf type {@code REQUEST_ACCOUNT_ROLE_LIST}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LISTOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_ACCOUNT_ROLE_LIST)
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_ROLE_LISTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor;
@@ -3179,7 +3178,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required string key = 1;
       private java.lang.Object key_ = "";
       /**
        * <code>required string key = 1;</code>
@@ -3193,9 +3191,12 @@ public final class AccountProtos {
       public java.lang.String getKey() {
         java.lang.Object ref = key_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          key_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            key_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -3264,10 +3265,10 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_ACCOUNT_ROLE_LIST)
   }
 
-  public interface RESPONSE_ACCOUNT_ROLE_LISTOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_ACCOUNT_ROLE_LISTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_ACCOUNT_ROLE_LIST)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated .VO_ACCOUNT_PLAYER_INFO players = 1;
     /**
      * <code>repeated .VO_ACCOUNT_PLAYER_INFO players = 1;</code>
      */
@@ -3296,8 +3297,9 @@ public final class AccountProtos {
    * Protobuf type {@code RESPONSE_ACCOUNT_ROLE_LIST}
    */
   public static final class RESPONSE_ACCOUNT_ROLE_LIST extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_ACCOUNT_ROLE_LISTOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_ACCOUNT_ROLE_LIST)
+      RESPONSE_ACCOUNT_ROLE_LISTOrBuilder {
     // Use RESPONSE_ACCOUNT_ROLE_LIST.newBuilder() to construct.
     private RESPONSE_ACCOUNT_ROLE_LIST(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -3393,7 +3395,6 @@ public final class AccountProtos {
       return PARSER;
     }
 
-    // repeated .VO_ACCOUNT_PLAYER_INFO players = 1;
     public static final int PLAYERS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.AccountProtos.VO_ACCOUNT_PLAYER_INFO> players_;
     /**
@@ -3435,7 +3436,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       for (int i = 0; i < getPlayersCount(); i++) {
         if (!getPlayers(i).isInitialized()) {
@@ -3548,8 +3550,9 @@ public final class AccountProtos {
      * Protobuf type {@code RESPONSE_ACCOUNT_ROLE_LIST}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LISTOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_ACCOUNT_ROLE_LIST)
+        cg.base.io.proto.AccountProtos.RESPONSE_ACCOUNT_ROLE_LISTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor;
@@ -3699,7 +3702,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // repeated .VO_ACCOUNT_PLAYER_INFO players = 1;
       private java.util.List<cg.base.io.proto.AccountProtos.VO_ACCOUNT_PLAYER_INFO> players_ =
         java.util.Collections.emptyList();
       private void ensurePlayersIsMutable() {
@@ -3841,7 +3843,8 @@ public final class AccountProtos {
           java.lang.Iterable<? extends cg.base.io.proto.AccountProtos.VO_ACCOUNT_PLAYER_INFO> values) {
         if (playersBuilder_ == null) {
           ensurePlayersIsMutable();
-          super.addAll(values, players_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, players_);
           onChanged();
         } else {
           playersBuilder_.addAllMessages(values);
@@ -3950,10 +3953,10 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_ACCOUNT_ROLE_LIST)
   }
 
-  public interface VO_SERVEROrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_SERVEROrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_SERVER)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string key = 1;
     /**
      * <code>required string key = 1;</code>
      */
@@ -3968,7 +3971,6 @@ public final class AccountProtos {
     com.google.protobuf.ByteString
         getKeyBytes();
 
-    // required string name = 2;
     /**
      * <code>required string name = 2;</code>
      */
@@ -3983,7 +3985,6 @@ public final class AccountProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // required string url = 3;
     /**
      * <code>required string url = 3;</code>
      */
@@ -4002,8 +4003,9 @@ public final class AccountProtos {
    * Protobuf type {@code VO_SERVER}
    */
   public static final class VO_SERVER extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_SERVEROrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_SERVER)
+      VO_SERVEROrBuilder {
     // Use VO_SERVER.newBuilder() to construct.
     private VO_SERVER(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -4050,18 +4052,21 @@ public final class AccountProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              key_ = input.readBytes();
+              key_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              url_ = input.readBytes();
+              url_ = bs;
               break;
             }
           }
@@ -4104,7 +4109,6 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required string key = 1;
     public static final int KEY_FIELD_NUMBER = 1;
     private java.lang.Object key_;
     /**
@@ -4147,7 +4151,6 @@ public final class AccountProtos {
       }
     }
 
-    // required string name = 2;
     public static final int NAME_FIELD_NUMBER = 2;
     private java.lang.Object name_;
     /**
@@ -4190,7 +4193,6 @@ public final class AccountProtos {
       }
     }
 
-    // required string url = 3;
     public static final int URL_FIELD_NUMBER = 3;
     private java.lang.Object url_;
     /**
@@ -4241,7 +4243,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasKey()) {
         memoizedIsInitialized = 0;
@@ -4374,8 +4377,9 @@ public final class AccountProtos {
      * Protobuf type {@code VO_SERVER}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.VO_SERVEROrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_SERVER)
+        cg.base.io.proto.AccountProtos.VO_SERVEROrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_VO_SERVER_descriptor;
@@ -4524,7 +4528,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required string key = 1;
       private java.lang.Object key_ = "";
       /**
        * <code>required string key = 1;</code>
@@ -4538,9 +4541,12 @@ public final class AccountProtos {
       public java.lang.String getKey() {
         java.lang.Object ref = key_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          key_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            key_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -4598,7 +4604,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required string name = 2;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 2;</code>
@@ -4612,9 +4617,12 @@ public final class AccountProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -4672,7 +4680,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required string url = 3;
       private java.lang.Object url_ = "";
       /**
        * <code>required string url = 3;</code>
@@ -4686,9 +4693,12 @@ public final class AccountProtos {
       public java.lang.String getUrl() {
         java.lang.Object ref = url_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          url_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            url_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -4757,10 +4767,10 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:VO_SERVER)
   }
 
-  public interface RESPONSE_SERVER_LISTOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_SERVER_LISTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_SERVER_LIST)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated .VO_SERVER servers = 1;
     /**
      * <code>repeated .VO_SERVER servers = 1;</code>
      */
@@ -4789,8 +4799,9 @@ public final class AccountProtos {
    * Protobuf type {@code RESPONSE_SERVER_LIST}
    */
   public static final class RESPONSE_SERVER_LIST extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_SERVER_LISTOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_SERVER_LIST)
+      RESPONSE_SERVER_LISTOrBuilder {
     // Use RESPONSE_SERVER_LIST.newBuilder() to construct.
     private RESPONSE_SERVER_LIST(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -4886,7 +4897,6 @@ public final class AccountProtos {
       return PARSER;
     }
 
-    // repeated .VO_SERVER servers = 1;
     public static final int SERVERS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.AccountProtos.VO_SERVER> servers_;
     /**
@@ -4928,7 +4938,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       for (int i = 0; i < getServersCount(); i++) {
         if (!getServers(i).isInitialized()) {
@@ -5041,8 +5052,9 @@ public final class AccountProtos {
      * Protobuf type {@code RESPONSE_SERVER_LIST}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LISTOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_SERVER_LIST)
+        cg.base.io.proto.AccountProtos.RESPONSE_SERVER_LISTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_LIST_descriptor;
@@ -5192,7 +5204,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // repeated .VO_SERVER servers = 1;
       private java.util.List<cg.base.io.proto.AccountProtos.VO_SERVER> servers_ =
         java.util.Collections.emptyList();
       private void ensureServersIsMutable() {
@@ -5334,7 +5345,8 @@ public final class AccountProtos {
           java.lang.Iterable<? extends cg.base.io.proto.AccountProtos.VO_SERVER> values) {
         if (serversBuilder_ == null) {
           ensureServersIsMutable();
-          super.addAll(values, servers_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, servers_);
           onChanged();
         } else {
           serversBuilder_.addAllMessages(values);
@@ -5443,10 +5455,10 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_SERVER_LIST)
   }
 
-  public interface REQUEST_SERVER_SELECTOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_SERVER_SELECTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_SERVER_SELECT)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string key = 1;
     /**
      * <code>required string key = 1;</code>
      */
@@ -5465,8 +5477,9 @@ public final class AccountProtos {
    * Protobuf type {@code REQUEST_SERVER_SELECT}
    */
   public static final class REQUEST_SERVER_SELECT extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_SERVER_SELECTOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_SERVER_SELECT)
+      REQUEST_SERVER_SELECTOrBuilder {
     // Use REQUEST_SERVER_SELECT.newBuilder() to construct.
     private REQUEST_SERVER_SELECT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -5513,8 +5526,9 @@ public final class AccountProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              key_ = input.readBytes();
+              key_ = bs;
               break;
             }
           }
@@ -5557,7 +5571,6 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required string key = 1;
     public static final int KEY_FIELD_NUMBER = 1;
     private java.lang.Object key_;
     /**
@@ -5606,7 +5619,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasKey()) {
         memoizedIsInitialized = 0;
@@ -5717,8 +5731,9 @@ public final class AccountProtos {
      * Protobuf type {@code REQUEST_SERVER_SELECT}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.REQUEST_SERVER_SELECTOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_SERVER_SELECT)
+        cg.base.io.proto.AccountProtos.REQUEST_SERVER_SELECTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_REQUEST_SERVER_SELECT_descriptor;
@@ -5837,7 +5852,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required string key = 1;
       private java.lang.Object key_ = "";
       /**
        * <code>required string key = 1;</code>
@@ -5851,9 +5865,12 @@ public final class AccountProtos {
       public java.lang.String getKey() {
         java.lang.Object ref = key_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          key_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            key_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -5922,10 +5939,10 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_SERVER_SELECT)
   }
 
-  public interface RESPONSE_SERVER_SELECTOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_SERVER_SELECTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_SERVER_SELECT)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string url = 1;
     /**
      * <code>required string url = 1;</code>
      */
@@ -5940,7 +5957,6 @@ public final class AccountProtos {
     com.google.protobuf.ByteString
         getUrlBytes();
 
-    // required string key = 2;
     /**
      * <code>required string key = 2;</code>
      */
@@ -5959,8 +5975,9 @@ public final class AccountProtos {
    * Protobuf type {@code RESPONSE_SERVER_SELECT}
    */
   public static final class RESPONSE_SERVER_SELECT extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_SERVER_SELECTOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_SERVER_SELECT)
+      RESPONSE_SERVER_SELECTOrBuilder {
     // Use RESPONSE_SERVER_SELECT.newBuilder() to construct.
     private RESPONSE_SERVER_SELECT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -6007,13 +6024,15 @@ public final class AccountProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              url_ = input.readBytes();
+              url_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              key_ = input.readBytes();
+              key_ = bs;
               break;
             }
           }
@@ -6056,7 +6075,6 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required string url = 1;
     public static final int URL_FIELD_NUMBER = 1;
     private java.lang.Object url_;
     /**
@@ -6099,7 +6117,6 @@ public final class AccountProtos {
       }
     }
 
-    // required string key = 2;
     public static final int KEY_FIELD_NUMBER = 2;
     private java.lang.Object key_;
     /**
@@ -6149,7 +6166,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasUrl()) {
         memoizedIsInitialized = 0;
@@ -6271,8 +6289,9 @@ public final class AccountProtos {
      * Protobuf type {@code RESPONSE_SERVER_SELECT}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECTOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_SERVER_SELECT)
+        cg.base.io.proto.AccountProtos.RESPONSE_SERVER_SELECTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_RESPONSE_SERVER_SELECT_descriptor;
@@ -6406,7 +6425,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required string url = 1;
       private java.lang.Object url_ = "";
       /**
        * <code>required string url = 1;</code>
@@ -6420,9 +6438,12 @@ public final class AccountProtos {
       public java.lang.String getUrl() {
         java.lang.Object ref = url_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          url_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            url_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -6480,7 +6501,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required string key = 2;
       private java.lang.Object key_ = "";
       /**
        * <code>required string key = 2;</code>
@@ -6494,9 +6514,12 @@ public final class AccountProtos {
       public java.lang.String getKey() {
         java.lang.Object ref = key_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          key_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            key_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -6565,10 +6588,10 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_SERVER_SELECT)
   }
 
-  public interface REQUEST_ACCOUNT_CHANGE_PASSWORDOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_ACCOUNT_CHANGE_PASSWORDOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_ACCOUNT_CHANGE_PASSWORD)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string account = 1;
     /**
      * <code>required string account = 1;</code>
      */
@@ -6583,7 +6606,6 @@ public final class AccountProtos {
     com.google.protobuf.ByteString
         getAccountBytes();
 
-    // required string oldPassword = 2;
     /**
      * <code>required string oldPassword = 2;</code>
      */
@@ -6598,7 +6620,6 @@ public final class AccountProtos {
     com.google.protobuf.ByteString
         getOldPasswordBytes();
 
-    // required string newPassword = 3;
     /**
      * <code>required string newPassword = 3;</code>
      */
@@ -6617,8 +6638,9 @@ public final class AccountProtos {
    * Protobuf type {@code REQUEST_ACCOUNT_CHANGE_PASSWORD}
    */
   public static final class REQUEST_ACCOUNT_CHANGE_PASSWORD extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_ACCOUNT_CHANGE_PASSWORDOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_ACCOUNT_CHANGE_PASSWORD)
+      REQUEST_ACCOUNT_CHANGE_PASSWORDOrBuilder {
     // Use REQUEST_ACCOUNT_CHANGE_PASSWORD.newBuilder() to construct.
     private REQUEST_ACCOUNT_CHANGE_PASSWORD(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -6665,18 +6687,21 @@ public final class AccountProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              account_ = input.readBytes();
+              account_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              oldPassword_ = input.readBytes();
+              oldPassword_ = bs;
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              newPassword_ = input.readBytes();
+              newPassword_ = bs;
               break;
             }
           }
@@ -6719,7 +6744,6 @@ public final class AccountProtos {
     }
 
     private int bitField0_;
-    // required string account = 1;
     public static final int ACCOUNT_FIELD_NUMBER = 1;
     private java.lang.Object account_;
     /**
@@ -6762,7 +6786,6 @@ public final class AccountProtos {
       }
     }
 
-    // required string oldPassword = 2;
     public static final int OLDPASSWORD_FIELD_NUMBER = 2;
     private java.lang.Object oldPassword_;
     /**
@@ -6805,7 +6828,6 @@ public final class AccountProtos {
       }
     }
 
-    // required string newPassword = 3;
     public static final int NEWPASSWORD_FIELD_NUMBER = 3;
     private java.lang.Object newPassword_;
     /**
@@ -6856,7 +6878,8 @@ public final class AccountProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasAccount()) {
         memoizedIsInitialized = 0;
@@ -6989,8 +7012,9 @@ public final class AccountProtos {
      * Protobuf type {@code REQUEST_ACCOUNT_CHANGE_PASSWORD}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORDOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_ACCOUNT_CHANGE_PASSWORD)
+        cg.base.io.proto.AccountProtos.REQUEST_ACCOUNT_CHANGE_PASSWORDOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.AccountProtos.internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor;
@@ -7139,7 +7163,6 @@ public final class AccountProtos {
       }
       private int bitField0_;
 
-      // required string account = 1;
       private java.lang.Object account_ = "";
       /**
        * <code>required string account = 1;</code>
@@ -7153,9 +7176,12 @@ public final class AccountProtos {
       public java.lang.String getAccount() {
         java.lang.Object ref = account_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          account_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            account_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -7213,7 +7239,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required string oldPassword = 2;
       private java.lang.Object oldPassword_ = "";
       /**
        * <code>required string oldPassword = 2;</code>
@@ -7227,9 +7252,12 @@ public final class AccountProtos {
       public java.lang.String getOldPassword() {
         java.lang.Object ref = oldPassword_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          oldPassword_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            oldPassword_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -7287,7 +7315,6 @@ public final class AccountProtos {
         return this;
       }
 
-      // required string newPassword = 3;
       private java.lang.Object newPassword_ = "";
       /**
        * <code>required string newPassword = 3;</code>
@@ -7301,9 +7328,12 @@ public final class AccountProtos {
       public java.lang.String getNewPassword() {
         java.lang.Object ref = newPassword_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          newPassword_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            newPassword_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -7372,52 +7402,52 @@ public final class AccountProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_ACCOUNT_CHANGE_PASSWORD)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_ACCOUNT_REGISTER_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_ACCOUNT_REGISTER_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_ACCOUNT_LOGIN_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_ACCOUNT_LOGIN_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_ACCOUNT_PLAYER_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_ACCOUNT_PLAYER_INFO_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_ACCOUNT_ROLE_LIST_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_SERVER_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_SERVER_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_SERVER_LIST_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_SERVER_LIST_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_SERVER_SELECT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_SERVER_SELECT_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_SERVER_SELECT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -7453,77 +7483,77 @@ public final class AccountProtos {
       "!\n\020cg.base.io.protoB\rAccountProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_REQUEST_ACCOUNT_REGISTER_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_REQUEST_ACCOUNT_REGISTER_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_ACCOUNT_REGISTER_descriptor,
-              new java.lang.String[] { "Account", "Password", });
-          internal_static_REQUEST_ACCOUNT_LOGIN_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_REQUEST_ACCOUNT_LOGIN_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_ACCOUNT_LOGIN_descriptor,
-              new java.lang.String[] { "Account", "Password", });
-          internal_static_VO_ACCOUNT_PLAYER_INFO_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_VO_ACCOUNT_PLAYER_INFO_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_ACCOUNT_PLAYER_INFO_descriptor,
-              new java.lang.String[] { "InstanceId", "Name", "RoleVersion", "HeadVersion", "AnimationGloabId", "HeadGloabId", "Level", "LoginTimes", "RoleIndex", "Job", });
-          internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor =
-            getDescriptor().getMessageTypes().get(3);
-          internal_static_REQUEST_ACCOUNT_ROLE_LIST_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor,
-              new java.lang.String[] { "Key", });
-          internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor =
-            getDescriptor().getMessageTypes().get(4);
-          internal_static_RESPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor,
-              new java.lang.String[] { "Players", });
-          internal_static_VO_SERVER_descriptor =
-            getDescriptor().getMessageTypes().get(5);
-          internal_static_VO_SERVER_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_SERVER_descriptor,
-              new java.lang.String[] { "Key", "Name", "Url", });
-          internal_static_RESPONSE_SERVER_LIST_descriptor =
-            getDescriptor().getMessageTypes().get(6);
-          internal_static_RESPONSE_SERVER_LIST_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_SERVER_LIST_descriptor,
-              new java.lang.String[] { "Servers", });
-          internal_static_REQUEST_SERVER_SELECT_descriptor =
-            getDescriptor().getMessageTypes().get(7);
-          internal_static_REQUEST_SERVER_SELECT_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_SERVER_SELECT_descriptor,
-              new java.lang.String[] { "Key", });
-          internal_static_RESPONSE_SERVER_SELECT_descriptor =
-            getDescriptor().getMessageTypes().get(8);
-          internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_SERVER_SELECT_descriptor,
-              new java.lang.String[] { "Url", "Key", });
-          internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor =
-            getDescriptor().getMessageTypes().get(9);
-          internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor,
-              new java.lang.String[] { "Account", "OldPassword", "NewPassword", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
+    internal_static_REQUEST_ACCOUNT_REGISTER_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_REQUEST_ACCOUNT_REGISTER_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_ACCOUNT_REGISTER_descriptor,
+        new java.lang.String[] { "Account", "Password", });
+    internal_static_REQUEST_ACCOUNT_LOGIN_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_REQUEST_ACCOUNT_LOGIN_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_ACCOUNT_LOGIN_descriptor,
+        new java.lang.String[] { "Account", "Password", });
+    internal_static_VO_ACCOUNT_PLAYER_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_VO_ACCOUNT_PLAYER_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_ACCOUNT_PLAYER_INFO_descriptor,
+        new java.lang.String[] { "InstanceId", "Name", "RoleVersion", "HeadVersion", "AnimationGloabId", "HeadGloabId", "Level", "LoginTimes", "RoleIndex", "Job", });
+    internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_REQUEST_ACCOUNT_ROLE_LIST_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_ACCOUNT_ROLE_LIST_descriptor,
+        new java.lang.String[] { "Key", });
+    internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_RESPONSE_ACCOUNT_ROLE_LIST_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_ACCOUNT_ROLE_LIST_descriptor,
+        new java.lang.String[] { "Players", });
+    internal_static_VO_SERVER_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_VO_SERVER_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_SERVER_descriptor,
+        new java.lang.String[] { "Key", "Name", "Url", });
+    internal_static_RESPONSE_SERVER_LIST_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_RESPONSE_SERVER_LIST_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_SERVER_LIST_descriptor,
+        new java.lang.String[] { "Servers", });
+    internal_static_REQUEST_SERVER_SELECT_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_REQUEST_SERVER_SELECT_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_SERVER_SELECT_descriptor,
+        new java.lang.String[] { "Key", });
+    internal_static_RESPONSE_SERVER_SELECT_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_RESPONSE_SERVER_SELECT_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_SERVER_SELECT_descriptor,
+        new java.lang.String[] { "Url", "Key", });
+    internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_ACCOUNT_CHANGE_PASSWORD_descriptor,
+        new java.lang.String[] { "Account", "OldPassword", "NewPassword", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

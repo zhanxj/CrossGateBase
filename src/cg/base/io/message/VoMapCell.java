@@ -40,6 +40,24 @@ public class VoMapCell {
 
 	/**
 	 * 
+	 * @param	cellMark
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setCellMark(Integer cellMark) {
+		builder.setCellMark(cellMark);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public int getCellMark() {
+		int ret = vo.getCellMark();
+		return ret;
+	}
+
+	/**
+	 * 
 	 * @param	south
 	 * 			<u>do not has any annotate.</u>
 	 */
@@ -58,37 +76,19 @@ public class VoMapCell {
 
 	/**
 	 * 
-	 * @param	objectId
+	 * @param	mapObjectId
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setObjectId(Integer objectId) {
-		builder.setObjectId(objectId);
+	public void setMapObjectId(Integer mapObjectId) {
+		builder.setMapObjectId(mapObjectId);
 	}
 
 	/**
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public int getObjectId() {
-		int ret = vo.getObjectId();
-		return ret;
-	}
-
-	/**
-	 * 
-	 * @param	mark
-	 * 			<u>do not has any annotate.</u>
-	 */
-	public void setMark(Integer mark) {
-		builder.setMark(mark);
-	}
-
-	/**
-	 * 
-	 * @return	<u>do not has any annotate.</u>
-	 */
-	public int getMark() {
-		int ret = vo.getMark();
+	public int getMapObjectId() {
+		int ret = vo.getMapObjectId();
 		return ret;
 	}
 

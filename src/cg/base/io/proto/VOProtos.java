@@ -8,10 +8,10 @@ public final class VOProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface VO_UNIT_BASE_INFOOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_UNIT_BASE_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_UNIT_BASE_INFO)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 unitType = 1;
     /**
      * <code>required int32 unitType = 1;</code>
      */
@@ -21,7 +21,6 @@ public final class VOProtos {
      */
     int getUnitType();
 
-    // required int32 instanceId = 2;
     /**
      * <code>required int32 instanceId = 2;</code>
      */
@@ -31,7 +30,6 @@ public final class VOProtos {
      */
     int getInstanceId();
 
-    // required string name = 3;
     /**
      * <code>required string name = 3;</code>
      */
@@ -46,7 +44,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // required int32 faceModel = 4;
     /**
      * <code>required int32 faceModel = 4;</code>
      */
@@ -56,7 +53,6 @@ public final class VOProtos {
      */
     int getFaceModel();
 
-    // required int32 tempFaceModel = 5;
     /**
      * <code>required int32 tempFaceModel = 5;</code>
      */
@@ -70,8 +66,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_UNIT_BASE_INFO}
    */
   public static final class VO_UNIT_BASE_INFO extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_UNIT_BASE_INFOOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_UNIT_BASE_INFO)
+      VO_UNIT_BASE_INFOOrBuilder {
     // Use VO_UNIT_BASE_INFO.newBuilder() to construct.
     private VO_UNIT_BASE_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -128,8 +125,9 @@ public final class VOProtos {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 32: {
@@ -182,7 +180,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 unitType = 1;
     public static final int UNITTYPE_FIELD_NUMBER = 1;
     private int unitType_;
     /**
@@ -198,7 +195,6 @@ public final class VOProtos {
       return unitType_;
     }
 
-    // required int32 instanceId = 2;
     public static final int INSTANCEID_FIELD_NUMBER = 2;
     private int instanceId_;
     /**
@@ -214,7 +210,6 @@ public final class VOProtos {
       return instanceId_;
     }
 
-    // required string name = 3;
     public static final int NAME_FIELD_NUMBER = 3;
     private java.lang.Object name_;
     /**
@@ -257,7 +252,6 @@ public final class VOProtos {
       }
     }
 
-    // required int32 faceModel = 4;
     public static final int FACEMODEL_FIELD_NUMBER = 4;
     private int faceModel_;
     /**
@@ -273,7 +267,6 @@ public final class VOProtos {
       return faceModel_;
     }
 
-    // required int32 tempFaceModel = 5;
     public static final int TEMPFACEMODEL_FIELD_NUMBER = 5;
     private int tempFaceModel_;
     /**
@@ -299,7 +292,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasUnitType()) {
         memoizedIsInitialized = 0;
@@ -454,8 +448,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_UNIT_BASE_INFO}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_UNIT_BASE_INFO)
+        cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_UNIT_BASE_INFO_descriptor;
@@ -626,7 +621,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 unitType = 1;
       private int unitType_ ;
       /**
        * <code>required int32 unitType = 1;</code>
@@ -659,7 +653,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 instanceId = 2;
       private int instanceId_ ;
       /**
        * <code>required int32 instanceId = 2;</code>
@@ -692,7 +685,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string name = 3;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 3;</code>
@@ -706,9 +698,12 @@ public final class VOProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -766,7 +761,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 faceModel = 4;
       private int faceModel_ ;
       /**
        * <code>required int32 faceModel = 4;</code>
@@ -799,7 +793,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 tempFaceModel = 5;
       private int tempFaceModel_ ;
       /**
        * <code>required int32 tempFaceModel = 5;</code>
@@ -843,10 +836,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_UNIT_BASE_INFO)
   }
 
-  public interface VO_POSITIONOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_POSITIONOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_POSITION)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 east = 1;
     /**
      * <code>required int32 east = 1;</code>
      */
@@ -856,7 +849,6 @@ public final class VOProtos {
      */
     int getEast();
 
-    // required int32 south = 2;
     /**
      * <code>required int32 south = 2;</code>
      */
@@ -866,7 +858,6 @@ public final class VOProtos {
      */
     int getSouth();
 
-    // required int32 dir = 3;
     /**
      * <code>required int32 dir = 3;</code>
      */
@@ -880,8 +871,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_POSITION}
    */
   public static final class VO_POSITION extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_POSITIONOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_POSITION)
+      VO_POSITIONOrBuilder {
     // Use VO_POSITION.newBuilder() to construct.
     private VO_POSITION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -982,7 +974,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 east = 1;
     public static final int EAST_FIELD_NUMBER = 1;
     private int east_;
     /**
@@ -998,7 +989,6 @@ public final class VOProtos {
       return east_;
     }
 
-    // required int32 south = 2;
     public static final int SOUTH_FIELD_NUMBER = 2;
     private int south_;
     /**
@@ -1014,7 +1004,6 @@ public final class VOProtos {
       return south_;
     }
 
-    // required int32 dir = 3;
     public static final int DIR_FIELD_NUMBER = 3;
     private int dir_;
     /**
@@ -1038,7 +1027,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasEast()) {
         memoizedIsInitialized = 0;
@@ -1171,8 +1161,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_POSITION}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_POSITION)
+        cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_POSITION_descriptor;
@@ -1315,7 +1306,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 east = 1;
       private int east_ ;
       /**
        * <code>required int32 east = 1;</code>
@@ -1348,7 +1338,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 south = 2;
       private int south_ ;
       /**
        * <code>required int32 south = 2;</code>
@@ -1381,7 +1370,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 dir = 3;
       private int dir_ ;
       /**
        * <code>required int32 dir = 3;</code>
@@ -1425,10 +1413,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_POSITION)
   }
 
-  public interface VO_UNIT_EXTEND_INFOOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_UNIT_EXTEND_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_UNIT_EXTEND_INFO)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional int32 race = 1;
     /**
      * <code>optional int32 race = 1;</code>
      */
@@ -1438,7 +1426,6 @@ public final class VOProtos {
      */
     int getRace();
 
-    // required int32 level = 2;
     /**
      * <code>required int32 level = 2;</code>
      */
@@ -1448,7 +1435,6 @@ public final class VOProtos {
      */
     int getLevel();
 
-    // optional int32 exp = 3;
     /**
      * <code>optional int32 exp = 3;</code>
      */
@@ -1462,8 +1448,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_UNIT_EXTEND_INFO}
    */
   public static final class VO_UNIT_EXTEND_INFO extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_UNIT_EXTEND_INFOOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_UNIT_EXTEND_INFO)
+      VO_UNIT_EXTEND_INFOOrBuilder {
     // Use VO_UNIT_EXTEND_INFO.newBuilder() to construct.
     private VO_UNIT_EXTEND_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1564,7 +1551,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // optional int32 race = 1;
     public static final int RACE_FIELD_NUMBER = 1;
     private int race_;
     /**
@@ -1580,7 +1566,6 @@ public final class VOProtos {
       return race_;
     }
 
-    // required int32 level = 2;
     public static final int LEVEL_FIELD_NUMBER = 2;
     private int level_;
     /**
@@ -1596,7 +1581,6 @@ public final class VOProtos {
       return level_;
     }
 
-    // optional int32 exp = 3;
     public static final int EXP_FIELD_NUMBER = 3;
     private int exp_;
     /**
@@ -1620,7 +1604,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasLevel()) {
         memoizedIsInitialized = 0;
@@ -1745,8 +1730,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_UNIT_EXTEND_INFO}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_UNIT_EXTEND_INFO)
+        cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_UNIT_EXTEND_INFO_descriptor;
@@ -1881,7 +1867,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // optional int32 race = 1;
       private int race_ ;
       /**
        * <code>optional int32 race = 1;</code>
@@ -1914,7 +1899,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 level = 2;
       private int level_ ;
       /**
        * <code>required int32 level = 2;</code>
@@ -1947,7 +1931,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 exp = 3;
       private int exp_ ;
       /**
        * <code>optional int32 exp = 3;</code>
@@ -1991,10 +1974,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_UNIT_EXTEND_INFO)
   }
 
-  public interface VO_TITLEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_TITLEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_TITLE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 id = 1;
     /**
      * <code>required int32 id = 1;</code>
      */
@@ -2004,7 +1987,6 @@ public final class VOProtos {
      */
     int getId();
 
-    // required string name = 2;
     /**
      * <code>required string name = 2;</code>
      */
@@ -2023,8 +2005,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_TITLE}
    */
   public static final class VO_TITLE extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_TITLEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_TITLE)
+      VO_TITLEOrBuilder {
     // Use VO_TITLE.newBuilder() to construct.
     private VO_TITLE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2076,8 +2059,9 @@ public final class VOProtos {
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
           }
@@ -2120,7 +2104,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 id = 1;
     public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     /**
@@ -2136,7 +2119,6 @@ public final class VOProtos {
       return id_;
     }
 
-    // required string name = 2;
     public static final int NAME_FIELD_NUMBER = 2;
     private java.lang.Object name_;
     /**
@@ -2186,7 +2168,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasId()) {
         memoizedIsInitialized = 0;
@@ -2308,8 +2291,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_TITLE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_TITLEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_TITLE)
+        cg.base.io.proto.VOProtos.VO_TITLEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_TITLE_descriptor;
@@ -2441,7 +2425,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 id = 1;
       private int id_ ;
       /**
        * <code>required int32 id = 1;</code>
@@ -2474,7 +2457,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string name = 2;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 2;</code>
@@ -2488,9 +2470,12 @@ public final class VOProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -2559,10 +2544,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_TITLE)
   }
 
-  public interface VO_ATTRIBUTEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_ATTRIBUTEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_ATTRIBUTE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 type = 1;
     /**
      * <code>required int32 type = 1;</code>
      */
@@ -2572,7 +2557,6 @@ public final class VOProtos {
      */
     int getType();
 
-    // required int32 value = 2;
     /**
      * <code>required int32 value = 2;</code>
      */
@@ -2586,8 +2570,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_ATTRIBUTE}
    */
   public static final class VO_ATTRIBUTE extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_ATTRIBUTEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_ATTRIBUTE)
+      VO_ATTRIBUTEOrBuilder {
     // Use VO_ATTRIBUTE.newBuilder() to construct.
     private VO_ATTRIBUTE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2683,7 +2668,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 type = 1;
     public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
     /**
@@ -2699,7 +2683,6 @@ public final class VOProtos {
       return type_;
     }
 
-    // required int32 value = 2;
     public static final int VALUE_FIELD_NUMBER = 2;
     private int value_;
     /**
@@ -2722,7 +2705,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasType()) {
         memoizedIsInitialized = 0;
@@ -2844,8 +2828,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_ATTRIBUTE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_ATTRIBUTEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_ATTRIBUTE)
+        cg.base.io.proto.VOProtos.VO_ATTRIBUTEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_ATTRIBUTE_descriptor;
@@ -2975,7 +2960,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 type = 1;
       private int type_ ;
       /**
        * <code>required int32 type = 1;</code>
@@ -3008,7 +2992,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 value = 2;
       private int value_ ;
       /**
        * <code>required int32 value = 2;</code>
@@ -3052,10 +3035,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_ATTRIBUTE)
   }
 
-  public interface VO_ATTRIBUTESOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_ATTRIBUTESOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_ATTRIBUTES)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string type = 1;
     /**
      * <code>required string type = 1;</code>
      */
@@ -3070,7 +3053,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getTypeBytes();
 
-    // repeated .VO_ATTRIBUTE attributes = 2;
     /**
      * <code>repeated .VO_ATTRIBUTE attributes = 2;</code>
      */
@@ -3099,8 +3081,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_ATTRIBUTES}
    */
   public static final class VO_ATTRIBUTES extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_ATTRIBUTESOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_ATTRIBUTES)
+      VO_ATTRIBUTESOrBuilder {
     // Use VO_ATTRIBUTES.newBuilder() to construct.
     private VO_ATTRIBUTES(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -3147,8 +3130,9 @@ public final class VOProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              type_ = input.readBytes();
+              type_ = bs;
               break;
             }
             case 18: {
@@ -3202,7 +3186,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required string type = 1;
     public static final int TYPE_FIELD_NUMBER = 1;
     private java.lang.Object type_;
     /**
@@ -3245,7 +3228,6 @@ public final class VOProtos {
       }
     }
 
-    // repeated .VO_ATTRIBUTE attributes = 2;
     public static final int ATTRIBUTES_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTE> attributes_;
     /**
@@ -3288,7 +3270,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasType()) {
         memoizedIsInitialized = 0;
@@ -3412,8 +3395,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_ATTRIBUTES}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_ATTRIBUTES)
+        cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_ATTRIBUTES_descriptor;
@@ -3580,7 +3564,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required string type = 1;
       private java.lang.Object type_ = "";
       /**
        * <code>required string type = 1;</code>
@@ -3594,9 +3577,12 @@ public final class VOProtos {
       public java.lang.String getType() {
         java.lang.Object ref = type_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          type_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            type_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -3654,7 +3640,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_ATTRIBUTE attributes = 2;
       private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTE> attributes_ =
         java.util.Collections.emptyList();
       private void ensureAttributesIsMutable() {
@@ -3796,7 +3781,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTE> values) {
         if (attributesBuilder_ == null) {
           ensureAttributesIsMutable();
-          super.addAll(values, attributes_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, attributes_);
           onChanged();
         } else {
           attributesBuilder_.addAllMessages(values);
@@ -3905,10 +3891,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_ATTRIBUTES)
   }
 
-  public interface VO_ITEM_IDENTIFYOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_ITEM_IDENTIFYOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_ITEM_IDENTIFY)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string description = 1;
     /**
      * <code>required string description = 1;</code>
      */
@@ -3923,7 +3909,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getDescriptionBytes();
 
-    // required string rightButtonDescription = 2;
     /**
      * <code>required string rightButtonDescription = 2;</code>
      */
@@ -3938,7 +3923,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getRightButtonDescriptionBytes();
 
-    // required int32 level = 3;
     /**
      * <code>required int32 level = 3;</code>
      */
@@ -3948,7 +3932,6 @@ public final class VOProtos {
      */
     int getLevel();
 
-    // required bool canPostByPet = 4;
     /**
      * <code>required bool canPostByPet = 4;</code>
      */
@@ -3958,7 +3941,6 @@ public final class VOProtos {
      */
     boolean getCanPostByPet();
 
-    // required bool canUseInBattle = 5;
     /**
      * <code>required bool canUseInBattle = 5;</code>
      */
@@ -3968,7 +3950,6 @@ public final class VOProtos {
      */
     boolean getCanUseInBattle();
 
-    // required int32 type = 6;
     /**
      * <code>required int32 type = 6;</code>
      */
@@ -3978,7 +3959,6 @@ public final class VOProtos {
      */
     int getType();
 
-    // optional bool doubleHand = 7 [default = false];
     /**
      * <code>optional bool doubleHand = 7 [default = false];</code>
      */
@@ -3988,7 +3968,6 @@ public final class VOProtos {
      */
     boolean getDoubleHand();
 
-    // repeated .VO_ATTRIBUTES attributes = 8;
     /**
      * <code>repeated .VO_ATTRIBUTES attributes = 8;</code>
      */
@@ -4013,7 +3992,6 @@ public final class VOProtos {
     cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder getAttributesOrBuilder(
         int index);
 
-    // optional int32 magicAttack = 9;
     /**
      * <code>optional int32 magicAttack = 9;</code>
      */
@@ -4023,7 +4001,6 @@ public final class VOProtos {
      */
     int getMagicAttack();
 
-    // repeated .VO_ITEM_ELEMENT elements = 10;
     /**
      * <code>repeated .VO_ITEM_ELEMENT elements = 10;</code>
      */
@@ -4048,7 +4025,6 @@ public final class VOProtos {
     cg.base.io.proto.VOProtos.VO_ITEM_ELEMENTOrBuilder getElementsOrBuilder(
         int index);
 
-    // optional int32 gemWeaponType = 11;
     /**
      * <code>optional int32 gemWeaponType = 11;</code>
      */
@@ -4058,7 +4034,6 @@ public final class VOProtos {
      */
     int getGemWeaponType();
 
-    // optional int32 gemArmorType = 12;
     /**
      * <code>optional int32 gemArmorType = 12;</code>
      */
@@ -4072,8 +4047,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_ITEM_IDENTIFY}
    */
   public static final class VO_ITEM_IDENTIFY extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_ITEM_IDENTIFYOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_ITEM_IDENTIFY)
+      VO_ITEM_IDENTIFYOrBuilder {
     // Use VO_ITEM_IDENTIFY.newBuilder() to construct.
     private VO_ITEM_IDENTIFY(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -4120,13 +4096,15 @@ public final class VOProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              description_ = input.readBytes();
+              description_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              rightButtonDescription_ = input.readBytes();
+              rightButtonDescription_ = bs;
               break;
             }
             case 24: {
@@ -4231,7 +4209,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required string description = 1;
     public static final int DESCRIPTION_FIELD_NUMBER = 1;
     private java.lang.Object description_;
     /**
@@ -4274,7 +4251,6 @@ public final class VOProtos {
       }
     }
 
-    // required string rightButtonDescription = 2;
     public static final int RIGHTBUTTONDESCRIPTION_FIELD_NUMBER = 2;
     private java.lang.Object rightButtonDescription_;
     /**
@@ -4317,7 +4293,6 @@ public final class VOProtos {
       }
     }
 
-    // required int32 level = 3;
     public static final int LEVEL_FIELD_NUMBER = 3;
     private int level_;
     /**
@@ -4333,7 +4308,6 @@ public final class VOProtos {
       return level_;
     }
 
-    // required bool canPostByPet = 4;
     public static final int CANPOSTBYPET_FIELD_NUMBER = 4;
     private boolean canPostByPet_;
     /**
@@ -4349,7 +4323,6 @@ public final class VOProtos {
       return canPostByPet_;
     }
 
-    // required bool canUseInBattle = 5;
     public static final int CANUSEINBATTLE_FIELD_NUMBER = 5;
     private boolean canUseInBattle_;
     /**
@@ -4365,7 +4338,6 @@ public final class VOProtos {
       return canUseInBattle_;
     }
 
-    // required int32 type = 6;
     public static final int TYPE_FIELD_NUMBER = 6;
     private int type_;
     /**
@@ -4381,7 +4353,6 @@ public final class VOProtos {
       return type_;
     }
 
-    // optional bool doubleHand = 7 [default = false];
     public static final int DOUBLEHAND_FIELD_NUMBER = 7;
     private boolean doubleHand_;
     /**
@@ -4397,7 +4368,6 @@ public final class VOProtos {
       return doubleHand_;
     }
 
-    // repeated .VO_ATTRIBUTES attributes = 8;
     public static final int ATTRIBUTES_FIELD_NUMBER = 8;
     private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> attributes_;
     /**
@@ -4433,7 +4403,6 @@ public final class VOProtos {
       return attributes_.get(index);
     }
 
-    // optional int32 magicAttack = 9;
     public static final int MAGICATTACK_FIELD_NUMBER = 9;
     private int magicAttack_;
     /**
@@ -4449,7 +4418,6 @@ public final class VOProtos {
       return magicAttack_;
     }
 
-    // repeated .VO_ITEM_ELEMENT elements = 10;
     public static final int ELEMENTS_FIELD_NUMBER = 10;
     private java.util.List<cg.base.io.proto.VOProtos.VO_ITEM_ELEMENT> elements_;
     /**
@@ -4485,7 +4453,6 @@ public final class VOProtos {
       return elements_.get(index);
     }
 
-    // optional int32 gemWeaponType = 11;
     public static final int GEMWEAPONTYPE_FIELD_NUMBER = 11;
     private int gemWeaponType_;
     /**
@@ -4501,7 +4468,6 @@ public final class VOProtos {
       return gemWeaponType_;
     }
 
-    // optional int32 gemArmorType = 12;
     public static final int GEMARMORTYPE_FIELD_NUMBER = 12;
     private int gemArmorType_;
     /**
@@ -4534,7 +4500,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasDescription()) {
         memoizedIsInitialized = 0;
@@ -4754,8 +4721,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_ITEM_IDENTIFY}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFYOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_ITEM_IDENTIFY)
+        cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFYOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_ITEM_IDENTIFY_descriptor;
@@ -5073,7 +5041,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required string description = 1;
       private java.lang.Object description_ = "";
       /**
        * <code>required string description = 1;</code>
@@ -5087,9 +5054,12 @@ public final class VOProtos {
       public java.lang.String getDescription() {
         java.lang.Object ref = description_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          description_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            description_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -5147,7 +5117,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string rightButtonDescription = 2;
       private java.lang.Object rightButtonDescription_ = "";
       /**
        * <code>required string rightButtonDescription = 2;</code>
@@ -5161,9 +5130,12 @@ public final class VOProtos {
       public java.lang.String getRightButtonDescription() {
         java.lang.Object ref = rightButtonDescription_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          rightButtonDescription_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            rightButtonDescription_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -5221,7 +5193,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 level = 3;
       private int level_ ;
       /**
        * <code>required int32 level = 3;</code>
@@ -5254,7 +5225,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required bool canPostByPet = 4;
       private boolean canPostByPet_ ;
       /**
        * <code>required bool canPostByPet = 4;</code>
@@ -5287,7 +5257,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required bool canUseInBattle = 5;
       private boolean canUseInBattle_ ;
       /**
        * <code>required bool canUseInBattle = 5;</code>
@@ -5320,7 +5289,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 type = 6;
       private int type_ ;
       /**
        * <code>required int32 type = 6;</code>
@@ -5353,7 +5321,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional bool doubleHand = 7 [default = false];
       private boolean doubleHand_ ;
       /**
        * <code>optional bool doubleHand = 7 [default = false];</code>
@@ -5386,7 +5353,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_ATTRIBUTES attributes = 8;
       private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> attributes_ =
         java.util.Collections.emptyList();
       private void ensureAttributesIsMutable() {
@@ -5528,7 +5494,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTES> values) {
         if (attributesBuilder_ == null) {
           ensureAttributesIsMutable();
-          super.addAll(values, attributes_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, attributes_);
           onChanged();
         } else {
           attributesBuilder_.addAllMessages(values);
@@ -5626,7 +5593,6 @@ public final class VOProtos {
         return attributesBuilder_;
       }
 
-      // optional int32 magicAttack = 9;
       private int magicAttack_ ;
       /**
        * <code>optional int32 magicAttack = 9;</code>
@@ -5659,7 +5625,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_ITEM_ELEMENT elements = 10;
       private java.util.List<cg.base.io.proto.VOProtos.VO_ITEM_ELEMENT> elements_ =
         java.util.Collections.emptyList();
       private void ensureElementsIsMutable() {
@@ -5801,7 +5766,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_ITEM_ELEMENT> values) {
         if (elementsBuilder_ == null) {
           ensureElementsIsMutable();
-          super.addAll(values, elements_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, elements_);
           onChanged();
         } else {
           elementsBuilder_.addAllMessages(values);
@@ -5899,7 +5865,6 @@ public final class VOProtos {
         return elementsBuilder_;
       }
 
-      // optional int32 gemWeaponType = 11;
       private int gemWeaponType_ ;
       /**
        * <code>optional int32 gemWeaponType = 11;</code>
@@ -5932,7 +5897,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 gemArmorType = 12;
       private int gemArmorType_ ;
       /**
        * <code>optional int32 gemArmorType = 12;</code>
@@ -5976,10 +5940,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_ITEM_IDENTIFY)
   }
 
-  public interface VO_ITEMOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_ITEMOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_ITEM)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 templateId = 1;
     /**
      * <code>required int32 templateId = 1;</code>
      */
@@ -5989,7 +5953,6 @@ public final class VOProtos {
      */
     int getTemplateId();
 
-    // required string name = 2;
     /**
      * <code>required string name = 2;</code>
      */
@@ -6004,7 +5967,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // required int32 iconId = 3;
     /**
      * <code>required int32 iconId = 3;</code>
      */
@@ -6014,7 +5976,6 @@ public final class VOProtos {
      */
     int getIconId();
 
-    // required int32 groupSize = 4;
     /**
      * <code>required int32 groupSize = 4;</code>
      */
@@ -6024,7 +5985,6 @@ public final class VOProtos {
      */
     int getGroupSize();
 
-    // required bool dropDispear = 5;
     /**
      * <code>required bool dropDispear = 5;</code>
      */
@@ -6034,7 +5994,6 @@ public final class VOProtos {
      */
     boolean getDropDispear();
 
-    // required bool logoutDispear = 6;
     /**
      * <code>required bool logoutDispear = 6;</code>
      */
@@ -6044,7 +6003,6 @@ public final class VOProtos {
      */
     boolean getLogoutDispear();
 
-    // optional .VO_ITEM_IDENTIFY identifyInfo = 7;
     /**
      * <code>optional .VO_ITEM_IDENTIFY identifyInfo = 7;</code>
      */
@@ -6062,8 +6020,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_ITEM}
    */
   public static final class VO_ITEM extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_ITEMOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_ITEM)
+      VO_ITEMOrBuilder {
     // Use VO_ITEM.newBuilder() to construct.
     private VO_ITEM(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -6115,8 +6074,9 @@ public final class VOProtos {
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 24: {
@@ -6192,7 +6152,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 templateId = 1;
     public static final int TEMPLATEID_FIELD_NUMBER = 1;
     private int templateId_;
     /**
@@ -6208,7 +6167,6 @@ public final class VOProtos {
       return templateId_;
     }
 
-    // required string name = 2;
     public static final int NAME_FIELD_NUMBER = 2;
     private java.lang.Object name_;
     /**
@@ -6251,7 +6209,6 @@ public final class VOProtos {
       }
     }
 
-    // required int32 iconId = 3;
     public static final int ICONID_FIELD_NUMBER = 3;
     private int iconId_;
     /**
@@ -6267,7 +6224,6 @@ public final class VOProtos {
       return iconId_;
     }
 
-    // required int32 groupSize = 4;
     public static final int GROUPSIZE_FIELD_NUMBER = 4;
     private int groupSize_;
     /**
@@ -6283,7 +6239,6 @@ public final class VOProtos {
       return groupSize_;
     }
 
-    // required bool dropDispear = 5;
     public static final int DROPDISPEAR_FIELD_NUMBER = 5;
     private boolean dropDispear_;
     /**
@@ -6299,7 +6254,6 @@ public final class VOProtos {
       return dropDispear_;
     }
 
-    // required bool logoutDispear = 6;
     public static final int LOGOUTDISPEAR_FIELD_NUMBER = 6;
     private boolean logoutDispear_;
     /**
@@ -6315,7 +6269,6 @@ public final class VOProtos {
       return logoutDispear_;
     }
 
-    // optional .VO_ITEM_IDENTIFY identifyInfo = 7;
     public static final int IDENTIFYINFO_FIELD_NUMBER = 7;
     private cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFY identifyInfo_;
     /**
@@ -6349,7 +6302,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasTemplateId()) {
         memoizedIsInitialized = 0;
@@ -6528,8 +6482,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_ITEM}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_ITEMOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_ITEM)
+        cg.base.io.proto.VOProtos.VO_ITEMOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_ITEM_descriptor;
@@ -6737,7 +6692,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 templateId = 1;
       private int templateId_ ;
       /**
        * <code>required int32 templateId = 1;</code>
@@ -6770,7 +6724,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string name = 2;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 2;</code>
@@ -6784,9 +6737,12 @@ public final class VOProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -6844,7 +6800,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 iconId = 3;
       private int iconId_ ;
       /**
        * <code>required int32 iconId = 3;</code>
@@ -6877,7 +6832,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 groupSize = 4;
       private int groupSize_ ;
       /**
        * <code>required int32 groupSize = 4;</code>
@@ -6910,7 +6864,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required bool dropDispear = 5;
       private boolean dropDispear_ ;
       /**
        * <code>required bool dropDispear = 5;</code>
@@ -6943,7 +6896,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required bool logoutDispear = 6;
       private boolean logoutDispear_ ;
       /**
        * <code>required bool logoutDispear = 6;</code>
@@ -6976,7 +6928,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional .VO_ITEM_IDENTIFY identifyInfo = 7;
       private cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFY identifyInfo_ = cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFY.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFY, cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFY.Builder, cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFYOrBuilder> identifyInfoBuilder_;
@@ -7085,7 +7036,7 @@ public final class VOProtos {
         if (identifyInfoBuilder_ == null) {
           identifyInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFY, cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFY.Builder, cg.base.io.proto.VOProtos.VO_ITEM_IDENTIFYOrBuilder>(
-                  identifyInfo_,
+                  getIdentifyInfo(),
                   getParentForChildren(),
                   isClean());
           identifyInfo_ = null;
@@ -7104,10 +7055,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_ITEM)
   }
 
-  public interface VO_GRIDOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_GRIDOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_GRID)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 id = 1;
     /**
      * <code>required int32 id = 1;</code>
      */
@@ -7117,7 +7068,6 @@ public final class VOProtos {
      */
     int getId();
 
-    // required int32 size = 2;
     /**
      * <code>required int32 size = 2;</code>
      */
@@ -7127,7 +7077,6 @@ public final class VOProtos {
      */
     int getSize();
 
-    // optional .VO_ITEM item = 3;
     /**
      * <code>optional .VO_ITEM item = 3;</code>
      */
@@ -7141,7 +7090,6 @@ public final class VOProtos {
      */
     cg.base.io.proto.VOProtos.VO_ITEMOrBuilder getItemOrBuilder();
 
-    // optional int32 count = 4;
     /**
      * <code>optional int32 count = 4;</code>
      */
@@ -7155,8 +7103,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_GRID}
    */
   public static final class VO_GRID extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_GRIDOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_GRID)
+      VO_GRIDOrBuilder {
     // Use VO_GRID.newBuilder() to construct.
     private VO_GRID(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -7270,7 +7219,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 id = 1;
     public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     /**
@@ -7286,7 +7234,6 @@ public final class VOProtos {
       return id_;
     }
 
-    // required int32 size = 2;
     public static final int SIZE_FIELD_NUMBER = 2;
     private int size_;
     /**
@@ -7302,7 +7249,6 @@ public final class VOProtos {
       return size_;
     }
 
-    // optional .VO_ITEM item = 3;
     public static final int ITEM_FIELD_NUMBER = 3;
     private cg.base.io.proto.VOProtos.VO_ITEM item_;
     /**
@@ -7324,7 +7270,6 @@ public final class VOProtos {
       return item_;
     }
 
-    // optional int32 count = 4;
     public static final int COUNT_FIELD_NUMBER = 4;
     private int count_;
     /**
@@ -7349,7 +7294,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasId()) {
         memoizedIsInitialized = 0;
@@ -7491,8 +7437,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_GRID}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_GRIDOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_GRID)
+        cg.base.io.proto.VOProtos.VO_GRIDOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_GRID_descriptor;
@@ -7655,7 +7602,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 id = 1;
       private int id_ ;
       /**
        * <code>required int32 id = 1;</code>
@@ -7688,7 +7634,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 size = 2;
       private int size_ ;
       /**
        * <code>required int32 size = 2;</code>
@@ -7721,7 +7666,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional .VO_ITEM item = 3;
       private cg.base.io.proto.VOProtos.VO_ITEM item_ = cg.base.io.proto.VOProtos.VO_ITEM.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_ITEM, cg.base.io.proto.VOProtos.VO_ITEM.Builder, cg.base.io.proto.VOProtos.VO_ITEMOrBuilder> itemBuilder_;
@@ -7830,7 +7774,7 @@ public final class VOProtos {
         if (itemBuilder_ == null) {
           itemBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_ITEM, cg.base.io.proto.VOProtos.VO_ITEM.Builder, cg.base.io.proto.VOProtos.VO_ITEMOrBuilder>(
-                  item_,
+                  getItem(),
                   getParentForChildren(),
                   isClean());
           item_ = null;
@@ -7838,7 +7782,6 @@ public final class VOProtos {
         return itemBuilder_;
       }
 
-      // optional int32 count = 4;
       private int count_ ;
       /**
        * <code>optional int32 count = 4;</code>
@@ -7882,10 +7825,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_GRID)
   }
 
-  public interface VO_BAGOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_BAGOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_BAG)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 id = 1;
     /**
      * <code>required int32 id = 1;</code>
      */
@@ -7895,7 +7838,6 @@ public final class VOProtos {
      */
     int getId();
 
-    // repeated .VO_GRID grids = 2;
     /**
      * <code>repeated .VO_GRID grids = 2;</code>
      */
@@ -7924,8 +7866,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_BAG}
    */
   public static final class VO_BAG extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_BAGOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_BAG)
+      VO_BAGOrBuilder {
     // Use VO_BAG.newBuilder() to construct.
     private VO_BAG(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -8027,7 +7970,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 id = 1;
     public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     /**
@@ -8043,7 +7985,6 @@ public final class VOProtos {
       return id_;
     }
 
-    // repeated .VO_GRID grids = 2;
     public static final int GRIDS_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.VOProtos.VO_GRID> grids_;
     /**
@@ -8086,7 +8027,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasId()) {
         memoizedIsInitialized = 0;
@@ -8210,8 +8152,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_BAG}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_BAGOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_BAG)
+        cg.base.io.proto.VOProtos.VO_BAGOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_BAG_descriptor;
@@ -8376,7 +8319,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 id = 1;
       private int id_ ;
       /**
        * <code>required int32 id = 1;</code>
@@ -8409,7 +8351,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_GRID grids = 2;
       private java.util.List<cg.base.io.proto.VOProtos.VO_GRID> grids_ =
         java.util.Collections.emptyList();
       private void ensureGridsIsMutable() {
@@ -8551,7 +8492,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_GRID> values) {
         if (gridsBuilder_ == null) {
           ensureGridsIsMutable();
-          super.addAll(values, grids_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, grids_);
           onChanged();
         } else {
           gridsBuilder_.addAllMessages(values);
@@ -8660,10 +8602,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_BAG)
   }
 
-  public interface VO_TITLESOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_TITLESOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_TITLES)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional string guid = 1 [default = ""];
     /**
      * <code>optional string guid = 1 [default = ""];</code>
      */
@@ -8678,7 +8620,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getGuidBytes();
 
-    // optional string guidTitle = 2 [default = ""];
     /**
      * <code>optional string guidTitle = 2 [default = ""];</code>
      */
@@ -8693,7 +8634,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getGuidTitleBytes();
 
-    // optional string title = 3 [default = ""];
     /**
      * <code>optional string title = 3 [default = ""];</code>
      */
@@ -8708,7 +8648,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getTitleBytes();
 
-    // required string signature = 4;
     /**
      * <code>required string signature = 4;</code>
      */
@@ -8727,8 +8666,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_TITLES}
    */
   public static final class VO_TITLES extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_TITLESOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_TITLES)
+      VO_TITLESOrBuilder {
     // Use VO_TITLES.newBuilder() to construct.
     private VO_TITLES(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -8775,23 +8715,27 @@ public final class VOProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              guid_ = input.readBytes();
+              guid_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              guidTitle_ = input.readBytes();
+              guidTitle_ = bs;
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              title_ = input.readBytes();
+              title_ = bs;
               break;
             }
             case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              signature_ = input.readBytes();
+              signature_ = bs;
               break;
             }
           }
@@ -8834,7 +8778,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // optional string guid = 1 [default = ""];
     public static final int GUID_FIELD_NUMBER = 1;
     private java.lang.Object guid_;
     /**
@@ -8877,7 +8820,6 @@ public final class VOProtos {
       }
     }
 
-    // optional string guidTitle = 2 [default = ""];
     public static final int GUIDTITLE_FIELD_NUMBER = 2;
     private java.lang.Object guidTitle_;
     /**
@@ -8920,7 +8862,6 @@ public final class VOProtos {
       }
     }
 
-    // optional string title = 3 [default = ""];
     public static final int TITLE_FIELD_NUMBER = 3;
     private java.lang.Object title_;
     /**
@@ -8963,7 +8904,6 @@ public final class VOProtos {
       }
     }
 
-    // required string signature = 4;
     public static final int SIGNATURE_FIELD_NUMBER = 4;
     private java.lang.Object signature_;
     /**
@@ -9015,7 +8955,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasSignature()) {
         memoizedIsInitialized = 0;
@@ -9147,8 +9088,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_TITLES}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_TITLESOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_TITLES)
+        cg.base.io.proto.VOProtos.VO_TITLESOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_TITLES_descriptor;
@@ -9300,7 +9242,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // optional string guid = 1 [default = ""];
       private java.lang.Object guid_ = "";
       /**
        * <code>optional string guid = 1 [default = ""];</code>
@@ -9314,9 +9255,12 @@ public final class VOProtos {
       public java.lang.String getGuid() {
         java.lang.Object ref = guid_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          guid_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            guid_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -9374,7 +9318,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional string guidTitle = 2 [default = ""];
       private java.lang.Object guidTitle_ = "";
       /**
        * <code>optional string guidTitle = 2 [default = ""];</code>
@@ -9388,9 +9331,12 @@ public final class VOProtos {
       public java.lang.String getGuidTitle() {
         java.lang.Object ref = guidTitle_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          guidTitle_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            guidTitle_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -9448,7 +9394,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional string title = 3 [default = ""];
       private java.lang.Object title_ = "";
       /**
        * <code>optional string title = 3 [default = ""];</code>
@@ -9462,9 +9407,12 @@ public final class VOProtos {
       public java.lang.String getTitle() {
         java.lang.Object ref = title_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          title_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            title_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -9522,7 +9470,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string signature = 4;
       private java.lang.Object signature_ = "";
       /**
        * <code>required string signature = 4;</code>
@@ -9536,9 +9483,12 @@ public final class VOProtos {
       public java.lang.String getSignature() {
         java.lang.Object ref = signature_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          signature_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            signature_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -9607,10 +9557,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_TITLES)
   }
 
-  public interface VO_MATERIAL_INFOOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_MATERIAL_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_MATERIAL_INFO)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 itemId = 1;
     /**
      * <code>required int32 itemId = 1;</code>
      */
@@ -9620,7 +9570,6 @@ public final class VOProtos {
      */
     int getItemId();
 
-    // required int32 needAmount = 2;
     /**
      * <code>required int32 needAmount = 2;</code>
      */
@@ -9630,7 +9579,6 @@ public final class VOProtos {
      */
     int getNeedAmount();
 
-    // required string identifyName = 3;
     /**
      * <code>required string identifyName = 3;</code>
      */
@@ -9649,8 +9597,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_MATERIAL_INFO}
    */
   public static final class VO_MATERIAL_INFO extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_MATERIAL_INFOOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_MATERIAL_INFO)
+      VO_MATERIAL_INFOOrBuilder {
     // Use VO_MATERIAL_INFO.newBuilder() to construct.
     private VO_MATERIAL_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -9707,8 +9656,9 @@ public final class VOProtos {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              identifyName_ = input.readBytes();
+              identifyName_ = bs;
               break;
             }
           }
@@ -9751,7 +9701,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 itemId = 1;
     public static final int ITEMID_FIELD_NUMBER = 1;
     private int itemId_;
     /**
@@ -9767,7 +9716,6 @@ public final class VOProtos {
       return itemId_;
     }
 
-    // required int32 needAmount = 2;
     public static final int NEEDAMOUNT_FIELD_NUMBER = 2;
     private int needAmount_;
     /**
@@ -9783,7 +9731,6 @@ public final class VOProtos {
       return needAmount_;
     }
 
-    // required string identifyName = 3;
     public static final int IDENTIFYNAME_FIELD_NUMBER = 3;
     private java.lang.Object identifyName_;
     /**
@@ -9834,7 +9781,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasItemId()) {
         memoizedIsInitialized = 0;
@@ -9967,8 +9915,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_MATERIAL_INFO}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_MATERIAL_INFOOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_MATERIAL_INFO)
+        cg.base.io.proto.VOProtos.VO_MATERIAL_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_MATERIAL_INFO_descriptor;
@@ -10113,7 +10062,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 itemId = 1;
       private int itemId_ ;
       /**
        * <code>required int32 itemId = 1;</code>
@@ -10146,7 +10094,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 needAmount = 2;
       private int needAmount_ ;
       /**
        * <code>required int32 needAmount = 2;</code>
@@ -10179,7 +10126,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string identifyName = 3;
       private java.lang.Object identifyName_ = "";
       /**
        * <code>required string identifyName = 3;</code>
@@ -10193,9 +10139,12 @@ public final class VOProtos {
       public java.lang.String getIdentifyName() {
         java.lang.Object ref = identifyName_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          identifyName_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            identifyName_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -10264,10 +10213,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_MATERIAL_INFO)
   }
 
-  public interface VO_PRODUCE_SKILL_LEVELOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_PRODUCE_SKILL_LEVELOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_PRODUCE_SKILL_LEVEL)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 producesId = 1;
     /**
      * <code>required int32 producesId = 1;</code>
      */
@@ -10277,7 +10226,6 @@ public final class VOProtos {
      */
     int getProducesId();
 
-    // required string name = 2;
     /**
      * <code>required string name = 2;</code>
      */
@@ -10292,7 +10240,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // required int32 itemId = 3;
     /**
      * <code>required int32 itemId = 3;</code>
      */
@@ -10302,7 +10249,6 @@ public final class VOProtos {
      */
     int getItemId();
 
-    // required string identifyName = 4;
     /**
      * <code>required string identifyName = 4;</code>
      */
@@ -10317,7 +10263,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getIdentifyNameBytes();
 
-    // repeated .VO_MATERIAL_INFO materials = 5;
     /**
      * <code>repeated .VO_MATERIAL_INFO materials = 5;</code>
      */
@@ -10346,8 +10291,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_PRODUCE_SKILL_LEVEL}
    */
   public static final class VO_PRODUCE_SKILL_LEVEL extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_PRODUCE_SKILL_LEVELOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_PRODUCE_SKILL_LEVEL)
+      VO_PRODUCE_SKILL_LEVELOrBuilder {
     // Use VO_PRODUCE_SKILL_LEVEL.newBuilder() to construct.
     private VO_PRODUCE_SKILL_LEVEL(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -10399,8 +10345,9 @@ public final class VOProtos {
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 24: {
@@ -10409,8 +10356,9 @@ public final class VOProtos {
               break;
             }
             case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              identifyName_ = input.readBytes();
+              identifyName_ = bs;
               break;
             }
             case 42: {
@@ -10464,7 +10412,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 producesId = 1;
     public static final int PRODUCESID_FIELD_NUMBER = 1;
     private int producesId_;
     /**
@@ -10480,7 +10427,6 @@ public final class VOProtos {
       return producesId_;
     }
 
-    // required string name = 2;
     public static final int NAME_FIELD_NUMBER = 2;
     private java.lang.Object name_;
     /**
@@ -10523,7 +10469,6 @@ public final class VOProtos {
       }
     }
 
-    // required int32 itemId = 3;
     public static final int ITEMID_FIELD_NUMBER = 3;
     private int itemId_;
     /**
@@ -10539,7 +10484,6 @@ public final class VOProtos {
       return itemId_;
     }
 
-    // required string identifyName = 4;
     public static final int IDENTIFYNAME_FIELD_NUMBER = 4;
     private java.lang.Object identifyName_;
     /**
@@ -10582,7 +10526,6 @@ public final class VOProtos {
       }
     }
 
-    // repeated .VO_MATERIAL_INFO materials = 5;
     public static final int MATERIALS_FIELD_NUMBER = 5;
     private java.util.List<cg.base.io.proto.VOProtos.VO_MATERIAL_INFO> materials_;
     /**
@@ -10628,7 +10571,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasProducesId()) {
         memoizedIsInitialized = 0;
@@ -10785,8 +10729,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_PRODUCE_SKILL_LEVEL}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_PRODUCE_SKILL_LEVELOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_PRODUCE_SKILL_LEVEL)
+        cg.base.io.proto.VOProtos.VO_PRODUCE_SKILL_LEVELOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_PRODUCE_SKILL_LEVEL_descriptor;
@@ -10994,7 +10939,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 producesId = 1;
       private int producesId_ ;
       /**
        * <code>required int32 producesId = 1;</code>
@@ -11027,7 +10971,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string name = 2;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 2;</code>
@@ -11041,9 +10984,12 @@ public final class VOProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -11101,7 +11047,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 itemId = 3;
       private int itemId_ ;
       /**
        * <code>required int32 itemId = 3;</code>
@@ -11134,7 +11079,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string identifyName = 4;
       private java.lang.Object identifyName_ = "";
       /**
        * <code>required string identifyName = 4;</code>
@@ -11148,9 +11092,12 @@ public final class VOProtos {
       public java.lang.String getIdentifyName() {
         java.lang.Object ref = identifyName_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          identifyName_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            identifyName_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -11208,7 +11155,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_MATERIAL_INFO materials = 5;
       private java.util.List<cg.base.io.proto.VOProtos.VO_MATERIAL_INFO> materials_ =
         java.util.Collections.emptyList();
       private void ensureMaterialsIsMutable() {
@@ -11350,7 +11296,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_MATERIAL_INFO> values) {
         if (materialsBuilder_ == null) {
           ensureMaterialsIsMutable();
-          super.addAll(values, materials_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, materials_);
           onChanged();
         } else {
           materialsBuilder_.addAllMessages(values);
@@ -11459,10 +11406,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_PRODUCE_SKILL_LEVEL)
   }
 
-  public interface VO_SKILL_LEVELOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_SKILL_LEVELOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_SKILL_LEVEL)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string name = 1;
     /**
      * <code>required string name = 1;</code>
      */
@@ -11477,7 +11424,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // required string description = 2;
     /**
      * <code>required string description = 2;</code>
      */
@@ -11492,7 +11438,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getDescriptionBytes();
 
-    // required int32 costMp = 3;
     /**
      * <code>required int32 costMp = 3;</code>
      */
@@ -11502,7 +11447,6 @@ public final class VOProtos {
      */
     int getCostMp();
 
-    // required string techType = 4;
     /**
      * <code>required string techType = 4;</code>
      */
@@ -11517,7 +11461,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getTechTypeBytes();
 
-    // required int32 targetType = 5;
     /**
      * <code>required int32 targetType = 5;</code>
      */
@@ -11527,7 +11470,6 @@ public final class VOProtos {
      */
     int getTargetType();
 
-    // repeated .VO_PRODUCE_SKILL_LEVEL skillLevelDatas = 6;
     /**
      * <code>repeated .VO_PRODUCE_SKILL_LEVEL skillLevelDatas = 6;</code>
      */
@@ -11556,8 +11498,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_SKILL_LEVEL}
    */
   public static final class VO_SKILL_LEVEL extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_SKILL_LEVELOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_SKILL_LEVEL)
+      VO_SKILL_LEVELOrBuilder {
     // Use VO_SKILL_LEVEL.newBuilder() to construct.
     private VO_SKILL_LEVEL(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -11604,13 +11547,15 @@ public final class VOProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              description_ = input.readBytes();
+              description_ = bs;
               break;
             }
             case 24: {
@@ -11619,8 +11564,9 @@ public final class VOProtos {
               break;
             }
             case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              techType_ = input.readBytes();
+              techType_ = bs;
               break;
             }
             case 40: {
@@ -11679,7 +11625,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
     private java.lang.Object name_;
     /**
@@ -11722,7 +11667,6 @@ public final class VOProtos {
       }
     }
 
-    // required string description = 2;
     public static final int DESCRIPTION_FIELD_NUMBER = 2;
     private java.lang.Object description_;
     /**
@@ -11765,7 +11709,6 @@ public final class VOProtos {
       }
     }
 
-    // required int32 costMp = 3;
     public static final int COSTMP_FIELD_NUMBER = 3;
     private int costMp_;
     /**
@@ -11781,7 +11724,6 @@ public final class VOProtos {
       return costMp_;
     }
 
-    // required string techType = 4;
     public static final int TECHTYPE_FIELD_NUMBER = 4;
     private java.lang.Object techType_;
     /**
@@ -11824,7 +11766,6 @@ public final class VOProtos {
       }
     }
 
-    // required int32 targetType = 5;
     public static final int TARGETTYPE_FIELD_NUMBER = 5;
     private int targetType_;
     /**
@@ -11840,7 +11781,6 @@ public final class VOProtos {
       return targetType_;
     }
 
-    // repeated .VO_PRODUCE_SKILL_LEVEL skillLevelDatas = 6;
     public static final int SKILLLEVELDATAS_FIELD_NUMBER = 6;
     private java.util.List<cg.base.io.proto.VOProtos.VO_PRODUCE_SKILL_LEVEL> skillLevelDatas_;
     /**
@@ -11887,7 +11827,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasName()) {
         memoizedIsInitialized = 0;
@@ -12055,8 +11996,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_SKILL_LEVEL}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_SKILL_LEVEL)
+        cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_SKILL_LEVEL_descriptor;
@@ -12279,7 +12221,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required string name = 1;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 1;</code>
@@ -12293,9 +12234,12 @@ public final class VOProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -12353,7 +12297,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string description = 2;
       private java.lang.Object description_ = "";
       /**
        * <code>required string description = 2;</code>
@@ -12367,9 +12310,12 @@ public final class VOProtos {
       public java.lang.String getDescription() {
         java.lang.Object ref = description_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          description_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            description_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -12427,7 +12373,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 costMp = 3;
       private int costMp_ ;
       /**
        * <code>required int32 costMp = 3;</code>
@@ -12460,7 +12405,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string techType = 4;
       private java.lang.Object techType_ = "";
       /**
        * <code>required string techType = 4;</code>
@@ -12474,9 +12418,12 @@ public final class VOProtos {
       public java.lang.String getTechType() {
         java.lang.Object ref = techType_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          techType_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            techType_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -12534,7 +12481,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 targetType = 5;
       private int targetType_ ;
       /**
        * <code>required int32 targetType = 5;</code>
@@ -12567,7 +12513,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_PRODUCE_SKILL_LEVEL skillLevelDatas = 6;
       private java.util.List<cg.base.io.proto.VOProtos.VO_PRODUCE_SKILL_LEVEL> skillLevelDatas_ =
         java.util.Collections.emptyList();
       private void ensureSkillLevelDatasIsMutable() {
@@ -12709,7 +12654,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_PRODUCE_SKILL_LEVEL> values) {
         if (skillLevelDatasBuilder_ == null) {
           ensureSkillLevelDatasIsMutable();
-          super.addAll(values, skillLevelDatas_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, skillLevelDatas_);
           onChanged();
         } else {
           skillLevelDatasBuilder_.addAllMessages(values);
@@ -12818,10 +12764,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_SKILL_LEVEL)
   }
 
-  public interface VO_SKILLOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_SKILLOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_SKILL)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 id = 1;
     /**
      * <code>required int32 id = 1;</code>
      */
@@ -12831,7 +12777,6 @@ public final class VOProtos {
      */
     int getId();
 
-    // required int32 maxLevel = 2;
     /**
      * <code>required int32 maxLevel = 2;</code>
      */
@@ -12841,7 +12786,6 @@ public final class VOProtos {
      */
     int getMaxLevel();
 
-    // required string name = 3;
     /**
      * <code>required string name = 3;</code>
      */
@@ -12856,7 +12800,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // required string description = 4;
     /**
      * <code>required string description = 4;</code>
      */
@@ -12871,7 +12814,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getDescriptionBytes();
 
-    // required int32 level = 5;
     /**
      * <code>required int32 level = 5;</code>
      */
@@ -12881,7 +12823,6 @@ public final class VOProtos {
      */
     int getLevel();
 
-    // optional int32 exp = 6;
     /**
      * <code>optional int32 exp = 6;</code>
      */
@@ -12891,7 +12832,6 @@ public final class VOProtos {
      */
     int getExp();
 
-    // optional int32 nextLevelExp = 7;
     /**
      * <code>optional int32 nextLevelExp = 7;</code>
      */
@@ -12901,7 +12841,6 @@ public final class VOProtos {
      */
     int getNextLevelExp();
 
-    // required int32 useSpace = 8;
     /**
      * <code>required int32 useSpace = 8;</code>
      */
@@ -12911,7 +12850,6 @@ public final class VOProtos {
      */
     int getUseSpace();
 
-    // required int32 type = 9;
     /**
      * <code>required int32 type = 9;</code>
      */
@@ -12921,7 +12859,6 @@ public final class VOProtos {
      */
     int getType();
 
-    // repeated .VO_SKILL_LEVEL skills = 10;
     /**
      * <code>repeated .VO_SKILL_LEVEL skills = 10;</code>
      */
@@ -12946,7 +12883,6 @@ public final class VOProtos {
     cg.base.io.proto.VOProtos.VO_SKILL_LEVELOrBuilder getSkillsOrBuilder(
         int index);
 
-    // required int32 index = 11;
     /**
      * <code>required int32 index = 11;</code>
      */
@@ -12960,8 +12896,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_SKILL}
    */
   public static final class VO_SKILL extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_SKILLOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_SKILL)
+      VO_SKILLOrBuilder {
     // Use VO_SKILL.newBuilder() to construct.
     private VO_SKILL(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -13018,13 +12955,15 @@ public final class VOProtos {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              description_ = input.readBytes();
+              description_ = bs;
               break;
             }
             case 40: {
@@ -13108,7 +13047,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 id = 1;
     public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     /**
@@ -13124,7 +13062,6 @@ public final class VOProtos {
       return id_;
     }
 
-    // required int32 maxLevel = 2;
     public static final int MAXLEVEL_FIELD_NUMBER = 2;
     private int maxLevel_;
     /**
@@ -13140,7 +13077,6 @@ public final class VOProtos {
       return maxLevel_;
     }
 
-    // required string name = 3;
     public static final int NAME_FIELD_NUMBER = 3;
     private java.lang.Object name_;
     /**
@@ -13183,7 +13119,6 @@ public final class VOProtos {
       }
     }
 
-    // required string description = 4;
     public static final int DESCRIPTION_FIELD_NUMBER = 4;
     private java.lang.Object description_;
     /**
@@ -13226,7 +13161,6 @@ public final class VOProtos {
       }
     }
 
-    // required int32 level = 5;
     public static final int LEVEL_FIELD_NUMBER = 5;
     private int level_;
     /**
@@ -13242,7 +13176,6 @@ public final class VOProtos {
       return level_;
     }
 
-    // optional int32 exp = 6;
     public static final int EXP_FIELD_NUMBER = 6;
     private int exp_;
     /**
@@ -13258,7 +13191,6 @@ public final class VOProtos {
       return exp_;
     }
 
-    // optional int32 nextLevelExp = 7;
     public static final int NEXTLEVELEXP_FIELD_NUMBER = 7;
     private int nextLevelExp_;
     /**
@@ -13274,7 +13206,6 @@ public final class VOProtos {
       return nextLevelExp_;
     }
 
-    // required int32 useSpace = 8;
     public static final int USESPACE_FIELD_NUMBER = 8;
     private int useSpace_;
     /**
@@ -13290,7 +13221,6 @@ public final class VOProtos {
       return useSpace_;
     }
 
-    // required int32 type = 9;
     public static final int TYPE_FIELD_NUMBER = 9;
     private int type_;
     /**
@@ -13306,7 +13236,6 @@ public final class VOProtos {
       return type_;
     }
 
-    // repeated .VO_SKILL_LEVEL skills = 10;
     public static final int SKILLS_FIELD_NUMBER = 10;
     private java.util.List<cg.base.io.proto.VOProtos.VO_SKILL_LEVEL> skills_;
     /**
@@ -13342,7 +13271,6 @@ public final class VOProtos {
       return skills_.get(index);
     }
 
-    // required int32 index = 11;
     public static final int INDEX_FIELD_NUMBER = 11;
     private int index_;
     /**
@@ -13374,7 +13302,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasId()) {
         memoizedIsInitialized = 0;
@@ -13589,8 +13518,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_SKILL}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_SKILLOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_SKILL)
+        cg.base.io.proto.VOProtos.VO_SKILLOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_SKILL_descriptor;
@@ -13868,7 +13798,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 id = 1;
       private int id_ ;
       /**
        * <code>required int32 id = 1;</code>
@@ -13901,7 +13830,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 maxLevel = 2;
       private int maxLevel_ ;
       /**
        * <code>required int32 maxLevel = 2;</code>
@@ -13934,7 +13862,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string name = 3;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 3;</code>
@@ -13948,9 +13875,12 @@ public final class VOProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -14008,7 +13938,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required string description = 4;
       private java.lang.Object description_ = "";
       /**
        * <code>required string description = 4;</code>
@@ -14022,9 +13951,12 @@ public final class VOProtos {
       public java.lang.String getDescription() {
         java.lang.Object ref = description_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          description_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            description_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -14082,7 +14014,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 level = 5;
       private int level_ ;
       /**
        * <code>required int32 level = 5;</code>
@@ -14115,7 +14046,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 exp = 6;
       private int exp_ ;
       /**
        * <code>optional int32 exp = 6;</code>
@@ -14148,7 +14078,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 nextLevelExp = 7;
       private int nextLevelExp_ ;
       /**
        * <code>optional int32 nextLevelExp = 7;</code>
@@ -14181,7 +14110,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 useSpace = 8;
       private int useSpace_ ;
       /**
        * <code>required int32 useSpace = 8;</code>
@@ -14214,7 +14142,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 type = 9;
       private int type_ ;
       /**
        * <code>required int32 type = 9;</code>
@@ -14247,7 +14174,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_SKILL_LEVEL skills = 10;
       private java.util.List<cg.base.io.proto.VOProtos.VO_SKILL_LEVEL> skills_ =
         java.util.Collections.emptyList();
       private void ensureSkillsIsMutable() {
@@ -14389,7 +14315,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_SKILL_LEVEL> values) {
         if (skillsBuilder_ == null) {
           ensureSkillsIsMutable();
-          super.addAll(values, skills_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, skills_);
           onChanged();
         } else {
           skillsBuilder_.addAllMessages(values);
@@ -14487,7 +14414,6 @@ public final class VOProtos {
         return skillsBuilder_;
       }
 
-      // required int32 index = 11;
       private int index_ ;
       /**
        * <code>required int32 index = 11;</code>
@@ -14531,10 +14457,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_SKILL)
   }
 
-  public interface VO_SKILL_SETOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_SKILL_SETOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_SKILL_SET)
+      com.google.protobuf.MessageOrBuilder {
 
-    // repeated .VO_SKILL baseSkills = 1;
     /**
      * <code>repeated .VO_SKILL baseSkills = 1;</code>
      */
@@ -14559,7 +14485,6 @@ public final class VOProtos {
     cg.base.io.proto.VOProtos.VO_SKILLOrBuilder getBaseSkillsOrBuilder(
         int index);
 
-    // required int32 max = 2;
     /**
      * <code>required int32 max = 2;</code>
      */
@@ -14569,7 +14494,6 @@ public final class VOProtos {
      */
     int getMax();
 
-    // repeated .VO_SKILL skills = 3;
     /**
      * <code>repeated .VO_SKILL skills = 3;</code>
      */
@@ -14598,8 +14522,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_SKILL_SET}
    */
   public static final class VO_SKILL_SET extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_SKILL_SETOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_SKILL_SET)
+      VO_SKILL_SETOrBuilder {
     // Use VO_SKILL_SET.newBuilder() to construct.
     private VO_SKILL_SET(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -14712,7 +14637,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // repeated .VO_SKILL baseSkills = 1;
     public static final int BASESKILLS_FIELD_NUMBER = 1;
     private java.util.List<cg.base.io.proto.VOProtos.VO_SKILL> baseSkills_;
     /**
@@ -14748,7 +14672,6 @@ public final class VOProtos {
       return baseSkills_.get(index);
     }
 
-    // required int32 max = 2;
     public static final int MAX_FIELD_NUMBER = 2;
     private int max_;
     /**
@@ -14764,7 +14687,6 @@ public final class VOProtos {
       return max_;
     }
 
-    // repeated .VO_SKILL skills = 3;
     public static final int SKILLS_FIELD_NUMBER = 3;
     private java.util.List<cg.base.io.proto.VOProtos.VO_SKILL> skills_;
     /**
@@ -14808,7 +14730,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasMax()) {
         memoizedIsInitialized = 0;
@@ -14945,8 +14868,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_SKILL_SET}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_SKILL_SET)
+        cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_SKILL_SET_descriptor;
@@ -15159,7 +15083,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // repeated .VO_SKILL baseSkills = 1;
       private java.util.List<cg.base.io.proto.VOProtos.VO_SKILL> baseSkills_ =
         java.util.Collections.emptyList();
       private void ensureBaseSkillsIsMutable() {
@@ -15301,7 +15224,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_SKILL> values) {
         if (baseSkillsBuilder_ == null) {
           ensureBaseSkillsIsMutable();
-          super.addAll(values, baseSkills_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, baseSkills_);
           onChanged();
         } else {
           baseSkillsBuilder_.addAllMessages(values);
@@ -15399,7 +15323,6 @@ public final class VOProtos {
         return baseSkillsBuilder_;
       }
 
-      // required int32 max = 2;
       private int max_ ;
       /**
        * <code>required int32 max = 2;</code>
@@ -15432,7 +15355,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_SKILL skills = 3;
       private java.util.List<cg.base.io.proto.VOProtos.VO_SKILL> skills_ =
         java.util.Collections.emptyList();
       private void ensureSkillsIsMutable() {
@@ -15574,7 +15496,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_SKILL> values) {
         if (skillsBuilder_ == null) {
           ensureSkillsIsMutable();
-          super.addAll(values, skills_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, skills_);
           onChanged();
         } else {
           skillsBuilder_.addAllMessages(values);
@@ -15683,10 +15606,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_SKILL_SET)
   }
 
-  public interface VO_PETOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_PETOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_PET)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required .VO_UNIT unitInfo = 1;
     /**
      * <code>required .VO_UNIT unitInfo = 1;</code>
      */
@@ -15704,8 +15627,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_PET}
    */
   public static final class VO_PET extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_PETOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_PET)
+      VO_PETOrBuilder {
     // Use VO_PET.newBuilder() to construct.
     private VO_PET(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -15804,7 +15728,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required .VO_UNIT unitInfo = 1;
     public static final int UNITINFO_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_;
     /**
@@ -15832,7 +15755,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasUnitInfo()) {
         memoizedIsInitialized = 0;
@@ -15947,8 +15871,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_PET}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_PETOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_PET)
+        cg.base.io.proto.VOProtos.VO_PETOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_PET_descriptor;
@@ -16078,7 +16003,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required .VO_UNIT unitInfo = 1;
       private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> unitInfoBuilder_;
@@ -16187,7 +16111,7 @@ public final class VOProtos {
         if (unitInfoBuilder_ == null) {
           unitInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder>(
-                  unitInfo_,
+                  getUnitInfo(),
                   getParentForChildren(),
                   isClean());
           unitInfo_ = null;
@@ -16206,10 +16130,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_PET)
   }
 
-  public interface VO_OPTIONOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_OPTIONOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_OPTION)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string name = 1;
     /**
      * <code>required string name = 1;</code>
      */
@@ -16224,7 +16148,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // required int32 state = 2;
     /**
      * <code>required int32 state = 2;</code>
      */
@@ -16234,7 +16157,6 @@ public final class VOProtos {
      */
     int getState();
 
-    // optional string value = 3;
     /**
      * <code>optional string value = 3;</code>
      */
@@ -16253,8 +16175,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_OPTION}
    */
   public static final class VO_OPTION extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_OPTIONOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_OPTION)
+      VO_OPTIONOrBuilder {
     // Use VO_OPTION.newBuilder() to construct.
     private VO_OPTION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -16301,8 +16224,9 @@ public final class VOProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 16: {
@@ -16311,8 +16235,9 @@ public final class VOProtos {
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              value_ = input.readBytes();
+              value_ = bs;
               break;
             }
           }
@@ -16355,7 +16280,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
     private java.lang.Object name_;
     /**
@@ -16398,7 +16322,6 @@ public final class VOProtos {
       }
     }
 
-    // required int32 state = 2;
     public static final int STATE_FIELD_NUMBER = 2;
     private int state_;
     /**
@@ -16414,7 +16337,6 @@ public final class VOProtos {
       return state_;
     }
 
-    // optional string value = 3;
     public static final int VALUE_FIELD_NUMBER = 3;
     private java.lang.Object value_;
     /**
@@ -16465,7 +16387,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasName()) {
         memoizedIsInitialized = 0;
@@ -16594,8 +16517,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_OPTION}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_OPTION)
+        cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_OPTION_descriptor;
@@ -16738,7 +16662,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required string name = 1;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 1;</code>
@@ -16752,9 +16675,12 @@ public final class VOProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -16812,7 +16738,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 state = 2;
       private int state_ ;
       /**
        * <code>required int32 state = 2;</code>
@@ -16845,7 +16770,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional string value = 3;
       private java.lang.Object value_ = "";
       /**
        * <code>optional string value = 3;</code>
@@ -16859,9 +16783,12 @@ public final class VOProtos {
       public java.lang.String getValue() {
         java.lang.Object ref = value_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          value_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            value_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -16930,10 +16857,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_OPTION)
   }
 
-  public interface VO_MAP_AREAOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_MAP_AREAOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_MAP_AREA)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 west = 1;
     /**
      * <code>required int32 west = 1;</code>
      */
@@ -16943,7 +16870,6 @@ public final class VOProtos {
      */
     int getWest();
 
-    // required int32 east = 2;
     /**
      * <code>required int32 east = 2;</code>
      */
@@ -16953,7 +16879,6 @@ public final class VOProtos {
      */
     int getEast();
 
-    // required int32 south = 3;
     /**
      * <code>required int32 south = 3;</code>
      */
@@ -16963,7 +16888,6 @@ public final class VOProtos {
      */
     int getSouth();
 
-    // required int32 north = 4;
     /**
      * <code>required int32 north = 4;</code>
      */
@@ -16977,8 +16901,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_MAP_AREA}
    */
   public static final class VO_MAP_AREA extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_MAP_AREAOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_MAP_AREA)
+      VO_MAP_AREAOrBuilder {
     // Use VO_MAP_AREA.newBuilder() to construct.
     private VO_MAP_AREA(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -17084,7 +17009,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 west = 1;
     public static final int WEST_FIELD_NUMBER = 1;
     private int west_;
     /**
@@ -17100,7 +17024,6 @@ public final class VOProtos {
       return west_;
     }
 
-    // required int32 east = 2;
     public static final int EAST_FIELD_NUMBER = 2;
     private int east_;
     /**
@@ -17116,7 +17039,6 @@ public final class VOProtos {
       return east_;
     }
 
-    // required int32 south = 3;
     public static final int SOUTH_FIELD_NUMBER = 3;
     private int south_;
     /**
@@ -17132,7 +17054,6 @@ public final class VOProtos {
       return south_;
     }
 
-    // required int32 north = 4;
     public static final int NORTH_FIELD_NUMBER = 4;
     private int north_;
     /**
@@ -17157,7 +17078,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasWest()) {
         memoizedIsInitialized = 0;
@@ -17301,8 +17223,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_MAP_AREA}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_MAP_AREA)
+        cg.base.io.proto.VOProtos.VO_MAP_AREAOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_MAP_AREA_descriptor;
@@ -17458,7 +17381,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 west = 1;
       private int west_ ;
       /**
        * <code>required int32 west = 1;</code>
@@ -17491,7 +17413,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 east = 2;
       private int east_ ;
       /**
        * <code>required int32 east = 2;</code>
@@ -17524,7 +17445,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 south = 3;
       private int south_ ;
       /**
        * <code>required int32 south = 3;</code>
@@ -17557,7 +17477,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 north = 4;
       private int north_ ;
       /**
        * <code>required int32 north = 4;</code>
@@ -17601,10 +17520,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_MAP_AREA)
   }
 
-  public interface VO_MAP_CELLOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_MAP_CELLOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_MAP_CELL)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 east = 1;
     /**
      * <code>required int32 east = 1;</code>
      */
@@ -17614,7 +17533,6 @@ public final class VOProtos {
      */
     int getEast();
 
-    // required int32 south = 2;
     /**
      * <code>required int32 south = 2;</code>
      */
@@ -17624,7 +17542,6 @@ public final class VOProtos {
      */
     int getSouth();
 
-    // required int32 imageGlobalId = 3;
     /**
      * <code>required int32 imageGlobalId = 3;</code>
      */
@@ -17634,32 +17551,31 @@ public final class VOProtos {
      */
     int getImageGlobalId();
 
-    // required int32 objectId = 4;
     /**
-     * <code>required int32 objectId = 4;</code>
+     * <code>required int32 mapObjectId = 4;</code>
      */
-    boolean hasObjectId();
+    boolean hasMapObjectId();
     /**
-     * <code>required int32 objectId = 4;</code>
+     * <code>required int32 mapObjectId = 4;</code>
      */
-    int getObjectId();
+    int getMapObjectId();
 
-    // required int32 mark = 5;
     /**
-     * <code>required int32 mark = 5;</code>
+     * <code>required int32 cellMark = 5;</code>
      */
-    boolean hasMark();
+    boolean hasCellMark();
     /**
-     * <code>required int32 mark = 5;</code>
+     * <code>required int32 cellMark = 5;</code>
      */
-    int getMark();
+    int getCellMark();
   }
   /**
    * Protobuf type {@code VO_MAP_CELL}
    */
   public static final class VO_MAP_CELL extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_MAP_CELLOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_MAP_CELL)
+      VO_MAP_CELLOrBuilder {
     // Use VO_MAP_CELL.newBuilder() to construct.
     private VO_MAP_CELL(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -17722,12 +17638,12 @@ public final class VOProtos {
             }
             case 32: {
               bitField0_ |= 0x00000008;
-              objectId_ = input.readInt32();
+              mapObjectId_ = input.readInt32();
               break;
             }
             case 40: {
               bitField0_ |= 0x00000010;
-              mark_ = input.readInt32();
+              cellMark_ = input.readInt32();
               break;
             }
           }
@@ -17770,7 +17686,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 east = 1;
     public static final int EAST_FIELD_NUMBER = 1;
     private int east_;
     /**
@@ -17786,7 +17701,6 @@ public final class VOProtos {
       return east_;
     }
 
-    // required int32 south = 2;
     public static final int SOUTH_FIELD_NUMBER = 2;
     private int south_;
     /**
@@ -17802,7 +17716,6 @@ public final class VOProtos {
       return south_;
     }
 
-    // required int32 imageGlobalId = 3;
     public static final int IMAGEGLOBALID_FIELD_NUMBER = 3;
     private int imageGlobalId_;
     /**
@@ -17818,49 +17731,48 @@ public final class VOProtos {
       return imageGlobalId_;
     }
 
-    // required int32 objectId = 4;
-    public static final int OBJECTID_FIELD_NUMBER = 4;
-    private int objectId_;
+    public static final int MAPOBJECTID_FIELD_NUMBER = 4;
+    private int mapObjectId_;
     /**
-     * <code>required int32 objectId = 4;</code>
+     * <code>required int32 mapObjectId = 4;</code>
      */
-    public boolean hasObjectId() {
+    public boolean hasMapObjectId() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>required int32 objectId = 4;</code>
+     * <code>required int32 mapObjectId = 4;</code>
      */
-    public int getObjectId() {
-      return objectId_;
+    public int getMapObjectId() {
+      return mapObjectId_;
     }
 
-    // required int32 mark = 5;
-    public static final int MARK_FIELD_NUMBER = 5;
-    private int mark_;
+    public static final int CELLMARK_FIELD_NUMBER = 5;
+    private int cellMark_;
     /**
-     * <code>required int32 mark = 5;</code>
+     * <code>required int32 cellMark = 5;</code>
      */
-    public boolean hasMark() {
+    public boolean hasCellMark() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>required int32 mark = 5;</code>
+     * <code>required int32 cellMark = 5;</code>
      */
-    public int getMark() {
-      return mark_;
+    public int getCellMark() {
+      return cellMark_;
     }
 
     private void initFields() {
       east_ = 0;
       south_ = 0;
       imageGlobalId_ = 0;
-      objectId_ = 0;
-      mark_ = 0;
+      mapObjectId_ = 0;
+      cellMark_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasEast()) {
         memoizedIsInitialized = 0;
@@ -17874,11 +17786,11 @@ public final class VOProtos {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasObjectId()) {
+      if (!hasMapObjectId()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasMark()) {
+      if (!hasCellMark()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -17899,10 +17811,10 @@ public final class VOProtos {
         output.writeInt32(3, imageGlobalId_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, objectId_);
+        output.writeInt32(4, mapObjectId_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt32(5, mark_);
+        output.writeInt32(5, cellMark_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -17927,11 +17839,11 @@ public final class VOProtos {
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, objectId_);
+          .computeInt32Size(4, mapObjectId_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, mark_);
+          .computeInt32Size(5, cellMark_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -18015,8 +17927,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_MAP_CELL}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_MAP_CELL)
+        cg.base.io.proto.VOProtos.VO_MAP_CELLOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_MAP_CELL_descriptor;
@@ -18055,9 +17968,9 @@ public final class VOProtos {
         bitField0_ = (bitField0_ & ~0x00000002);
         imageGlobalId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
-        objectId_ = 0;
+        mapObjectId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000008);
-        mark_ = 0;
+        cellMark_ = 0;
         bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
@@ -18102,11 +18015,11 @@ public final class VOProtos {
         if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
         }
-        result.objectId_ = objectId_;
+        result.mapObjectId_ = mapObjectId_;
         if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
           to_bitField0_ |= 0x00000010;
         }
-        result.mark_ = mark_;
+        result.cellMark_ = cellMark_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -18132,11 +18045,11 @@ public final class VOProtos {
         if (other.hasImageGlobalId()) {
           setImageGlobalId(other.getImageGlobalId());
         }
-        if (other.hasObjectId()) {
-          setObjectId(other.getObjectId());
+        if (other.hasMapObjectId()) {
+          setMapObjectId(other.getMapObjectId());
         }
-        if (other.hasMark()) {
-          setMark(other.getMark());
+        if (other.hasCellMark()) {
+          setCellMark(other.getCellMark());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -18155,11 +18068,11 @@ public final class VOProtos {
           
           return false;
         }
-        if (!hasObjectId()) {
+        if (!hasMapObjectId()) {
           
           return false;
         }
-        if (!hasMark()) {
+        if (!hasCellMark()) {
           
           return false;
         }
@@ -18185,7 +18098,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 east = 1;
       private int east_ ;
       /**
        * <code>required int32 east = 1;</code>
@@ -18218,7 +18130,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 south = 2;
       private int south_ ;
       /**
        * <code>required int32 south = 2;</code>
@@ -18251,7 +18162,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 imageGlobalId = 3;
       private int imageGlobalId_ ;
       /**
        * <code>required int32 imageGlobalId = 3;</code>
@@ -18284,68 +18194,66 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 objectId = 4;
-      private int objectId_ ;
+      private int mapObjectId_ ;
       /**
-       * <code>required int32 objectId = 4;</code>
+       * <code>required int32 mapObjectId = 4;</code>
        */
-      public boolean hasObjectId() {
+      public boolean hasMapObjectId() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required int32 objectId = 4;</code>
+       * <code>required int32 mapObjectId = 4;</code>
        */
-      public int getObjectId() {
-        return objectId_;
+      public int getMapObjectId() {
+        return mapObjectId_;
       }
       /**
-       * <code>required int32 objectId = 4;</code>
+       * <code>required int32 mapObjectId = 4;</code>
        */
-      public Builder setObjectId(int value) {
+      public Builder setMapObjectId(int value) {
         bitField0_ |= 0x00000008;
-        objectId_ = value;
+        mapObjectId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 objectId = 4;</code>
+       * <code>required int32 mapObjectId = 4;</code>
        */
-      public Builder clearObjectId() {
+      public Builder clearMapObjectId() {
         bitField0_ = (bitField0_ & ~0x00000008);
-        objectId_ = 0;
+        mapObjectId_ = 0;
         onChanged();
         return this;
       }
 
-      // required int32 mark = 5;
-      private int mark_ ;
+      private int cellMark_ ;
       /**
-       * <code>required int32 mark = 5;</code>
+       * <code>required int32 cellMark = 5;</code>
        */
-      public boolean hasMark() {
+      public boolean hasCellMark() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>required int32 mark = 5;</code>
+       * <code>required int32 cellMark = 5;</code>
        */
-      public int getMark() {
-        return mark_;
+      public int getCellMark() {
+        return cellMark_;
       }
       /**
-       * <code>required int32 mark = 5;</code>
+       * <code>required int32 cellMark = 5;</code>
        */
-      public Builder setMark(int value) {
+      public Builder setCellMark(int value) {
         bitField0_ |= 0x00000010;
-        mark_ = value;
+        cellMark_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 mark = 5;</code>
+       * <code>required int32 cellMark = 5;</code>
        */
-      public Builder clearMark() {
+      public Builder clearCellMark() {
         bitField0_ = (bitField0_ & ~0x00000010);
-        mark_ = 0;
+        cellMark_ = 0;
         onChanged();
         return this;
       }
@@ -18361,10 +18269,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_MAP_CELL)
   }
 
-  public interface VO_UNITOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_UNITOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_UNIT)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required .VO_UNIT_BASE_INFO baseInfo = 1;
     /**
      * <code>required .VO_UNIT_BASE_INFO baseInfo = 1;</code>
      *
@@ -18390,7 +18298,6 @@ public final class VOProtos {
      */
     cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder getBaseInfoOrBuilder();
 
-    // optional .VO_POSITION position = 2;
     /**
      * <code>optional .VO_POSITION position = 2;</code>
      *
@@ -18416,7 +18323,6 @@ public final class VOProtos {
      */
     cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder getPositionOrBuilder();
 
-    // optional .VO_TITLES headTitle = 3;
     /**
      * <code>optional .VO_TITLES headTitle = 3;</code>
      *
@@ -18442,7 +18348,6 @@ public final class VOProtos {
      */
     cg.base.io.proto.VOProtos.VO_TITLESOrBuilder getHeadTitleOrBuilder();
 
-    // optional .VO_UNIT_EXTEND_INFO extendInfo = 4;
     /**
      * <code>optional .VO_UNIT_EXTEND_INFO extendInfo = 4;</code>
      *
@@ -18468,7 +18373,6 @@ public final class VOProtos {
      */
     cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder getExtendInfoOrBuilder();
 
-    // optional int32 battleScore = 5;
     /**
      * <code>optional int32 battleScore = 5;</code>
      *
@@ -18486,7 +18390,6 @@ public final class VOProtos {
      */
     int getBattleScore();
 
-    // optional bool battleLocal = 6;
     /**
      * <code>optional bool battleLocal = 6;</code>
      *
@@ -18504,7 +18407,6 @@ public final class VOProtos {
      */
     boolean getBattleLocal();
 
-    // repeated .VO_TITLE titles = 7;
     /**
      * <code>repeated .VO_TITLE titles = 7;</code>
      *
@@ -18549,9 +18451,8 @@ public final class VOProtos {
     cg.base.io.proto.VOProtos.VO_TITLEOrBuilder getTitlesOrBuilder(
         int index);
 
-    // repeated int32 elements = 8;
     /**
-     * <code>repeated int32 elements = 8;</code>
+     * <code>repeated int32 elements = 8 [packed = true];</code>
      *
      * <pre>
      * 元素属性组
@@ -18559,7 +18460,7 @@ public final class VOProtos {
      */
     java.util.List<java.lang.Integer> getElementsList();
     /**
-     * <code>repeated int32 elements = 8;</code>
+     * <code>repeated int32 elements = 8 [packed = true];</code>
      *
      * <pre>
      * 元素属性组
@@ -18567,7 +18468,7 @@ public final class VOProtos {
      */
     int getElementsCount();
     /**
-     * <code>repeated int32 elements = 8;</code>
+     * <code>repeated int32 elements = 8 [packed = true];</code>
      *
      * <pre>
      * 元素属性组
@@ -18575,7 +18476,6 @@ public final class VOProtos {
      */
     int getElements(int index);
 
-    // repeated .VO_ATTRIBUTES attributes = 9;
     /**
      * <code>repeated .VO_ATTRIBUTES attributes = 9;</code>
      *
@@ -18620,7 +18520,6 @@ public final class VOProtos {
     cg.base.io.proto.VOProtos.VO_ATTRIBUTESOrBuilder getAttributesOrBuilder(
         int index);
 
-    // optional int32 money = 10;
     /**
      * <code>optional int32 money = 10;</code>
      *
@@ -18638,7 +18537,6 @@ public final class VOProtos {
      */
     int getMoney();
 
-    // repeated .VO_BAG bags = 11;
     /**
      * <code>repeated .VO_BAG bags = 11;</code>
      *
@@ -18683,7 +18581,6 @@ public final class VOProtos {
     cg.base.io.proto.VOProtos.VO_BAGOrBuilder getBagsOrBuilder(
         int index);
 
-    // optional string job = 12;
     /**
      * <code>optional string job = 12;</code>
      *
@@ -18710,7 +18607,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getJobBytes();
 
-    // optional .VO_SKILL_SET skillSet = 13;
     /**
      * <code>optional .VO_SKILL_SET skillSet = 13;</code>
      *
@@ -18736,7 +18632,6 @@ public final class VOProtos {
      */
     cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder getSkillSetOrBuilder();
 
-    // repeated .VO_OPTION options = 14;
     /**
      * <code>repeated .VO_OPTION options = 14;</code>
      *
@@ -18781,7 +18676,6 @@ public final class VOProtos {
     cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionsOrBuilder(
         int index);
 
-    // optional int32 state = 15;
     /**
      * <code>optional int32 state = 15;</code>
      *
@@ -18799,7 +18693,6 @@ public final class VOProtos {
      */
     int getState();
 
-    // optional int32 loyal = 16;
     /**
      * <code>optional int32 loyal = 16;</code>
      *
@@ -18817,7 +18710,6 @@ public final class VOProtos {
      */
     int getLoyal();
 
-    // optional string talkType = 17;
     /**
      * <code>optional string talkType = 17;</code>
      *
@@ -18844,7 +18736,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getTalkTypeBytes();
 
-    // optional int32 index = 18;
     /**
      * <code>optional int32 index = 18;</code>
      *
@@ -18862,7 +18753,6 @@ public final class VOProtos {
      */
     int getIndex();
 
-    // optional int32 ownerInstanceId = 19;
     /**
      * <code>optional int32 ownerInstanceId = 19;</code>
      *
@@ -18880,7 +18770,6 @@ public final class VOProtos {
      */
     int getOwnerInstanceId();
 
-    // optional .VO_PET_SET petSet = 20;
     /**
      * <code>optional .VO_PET_SET petSet = 20;</code>
      *
@@ -18910,8 +18799,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_UNIT}
    */
   public static final class VO_UNIT extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_UNITOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_UNIT)
+      VO_UNITOrBuilder {
     // Use VO_UNIT.newBuilder() to construct.
     private VO_UNIT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -19070,8 +18960,9 @@ public final class VOProtos {
               break;
             }
             case 98: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000080;
-              job_ = input.readBytes();
+              job_ = bs;
               break;
             }
             case 106: {
@@ -19106,8 +18997,9 @@ public final class VOProtos {
               break;
             }
             case 138: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000800;
-              talkType_ = input.readBytes();
+              talkType_ = bs;
               break;
             }
             case 144: {
@@ -19188,7 +19080,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required .VO_UNIT_BASE_INFO baseInfo = 1;
     public static final int BASEINFO_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_;
     /**
@@ -19222,7 +19113,6 @@ public final class VOProtos {
       return baseInfo_;
     }
 
-    // optional .VO_POSITION position = 2;
     public static final int POSITION_FIELD_NUMBER = 2;
     private cg.base.io.proto.VOProtos.VO_POSITION position_;
     /**
@@ -19256,7 +19146,6 @@ public final class VOProtos {
       return position_;
     }
 
-    // optional .VO_TITLES headTitle = 3;
     public static final int HEADTITLE_FIELD_NUMBER = 3;
     private cg.base.io.proto.VOProtos.VO_TITLES headTitle_;
     /**
@@ -19290,7 +19179,6 @@ public final class VOProtos {
       return headTitle_;
     }
 
-    // optional .VO_UNIT_EXTEND_INFO extendInfo = 4;
     public static final int EXTENDINFO_FIELD_NUMBER = 4;
     private cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO extendInfo_;
     /**
@@ -19324,7 +19212,6 @@ public final class VOProtos {
       return extendInfo_;
     }
 
-    // optional int32 battleScore = 5;
     public static final int BATTLESCORE_FIELD_NUMBER = 5;
     private int battleScore_;
     /**
@@ -19348,7 +19235,6 @@ public final class VOProtos {
       return battleScore_;
     }
 
-    // optional bool battleLocal = 6;
     public static final int BATTLELOCAL_FIELD_NUMBER = 6;
     private boolean battleLocal_;
     /**
@@ -19372,7 +19258,6 @@ public final class VOProtos {
       return battleLocal_;
     }
 
-    // repeated .VO_TITLE titles = 7;
     public static final int TITLES_FIELD_NUMBER = 7;
     private java.util.List<cg.base.io.proto.VOProtos.VO_TITLE> titles_;
     /**
@@ -19428,11 +19313,10 @@ public final class VOProtos {
       return titles_.get(index);
     }
 
-    // repeated int32 elements = 8;
     public static final int ELEMENTS_FIELD_NUMBER = 8;
     private java.util.List<java.lang.Integer> elements_;
     /**
-     * <code>repeated int32 elements = 8;</code>
+     * <code>repeated int32 elements = 8 [packed = true];</code>
      *
      * <pre>
      * 元素属性组
@@ -19443,7 +19327,7 @@ public final class VOProtos {
       return elements_;
     }
     /**
-     * <code>repeated int32 elements = 8;</code>
+     * <code>repeated int32 elements = 8 [packed = true];</code>
      *
      * <pre>
      * 元素属性组
@@ -19453,7 +19337,7 @@ public final class VOProtos {
       return elements_.size();
     }
     /**
-     * <code>repeated int32 elements = 8;</code>
+     * <code>repeated int32 elements = 8 [packed = true];</code>
      *
      * <pre>
      * 元素属性组
@@ -19462,8 +19346,8 @@ public final class VOProtos {
     public int getElements(int index) {
       return elements_.get(index);
     }
+    private int elementsMemoizedSerializedSize = -1;
 
-    // repeated .VO_ATTRIBUTES attributes = 9;
     public static final int ATTRIBUTES_FIELD_NUMBER = 9;
     private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> attributes_;
     /**
@@ -19519,7 +19403,6 @@ public final class VOProtos {
       return attributes_.get(index);
     }
 
-    // optional int32 money = 10;
     public static final int MONEY_FIELD_NUMBER = 10;
     private int money_;
     /**
@@ -19543,7 +19426,6 @@ public final class VOProtos {
       return money_;
     }
 
-    // repeated .VO_BAG bags = 11;
     public static final int BAGS_FIELD_NUMBER = 11;
     private java.util.List<cg.base.io.proto.VOProtos.VO_BAG> bags_;
     /**
@@ -19599,7 +19481,6 @@ public final class VOProtos {
       return bags_.get(index);
     }
 
-    // optional string job = 12;
     public static final int JOB_FIELD_NUMBER = 12;
     private java.lang.Object job_;
     /**
@@ -19654,7 +19535,6 @@ public final class VOProtos {
       }
     }
 
-    // optional .VO_SKILL_SET skillSet = 13;
     public static final int SKILLSET_FIELD_NUMBER = 13;
     private cg.base.io.proto.VOProtos.VO_SKILL_SET skillSet_;
     /**
@@ -19688,7 +19568,6 @@ public final class VOProtos {
       return skillSet_;
     }
 
-    // repeated .VO_OPTION options = 14;
     public static final int OPTIONS_FIELD_NUMBER = 14;
     private java.util.List<cg.base.io.proto.VOProtos.VO_OPTION> options_;
     /**
@@ -19744,7 +19623,6 @@ public final class VOProtos {
       return options_.get(index);
     }
 
-    // optional int32 state = 15;
     public static final int STATE_FIELD_NUMBER = 15;
     private int state_;
     /**
@@ -19768,7 +19646,6 @@ public final class VOProtos {
       return state_;
     }
 
-    // optional int32 loyal = 16;
     public static final int LOYAL_FIELD_NUMBER = 16;
     private int loyal_;
     /**
@@ -19792,7 +19669,6 @@ public final class VOProtos {
       return loyal_;
     }
 
-    // optional string talkType = 17;
     public static final int TALKTYPE_FIELD_NUMBER = 17;
     private java.lang.Object talkType_;
     /**
@@ -19847,7 +19723,6 @@ public final class VOProtos {
       }
     }
 
-    // optional int32 index = 18;
     public static final int INDEX_FIELD_NUMBER = 18;
     private int index_;
     /**
@@ -19871,7 +19746,6 @@ public final class VOProtos {
       return index_;
     }
 
-    // optional int32 ownerInstanceId = 19;
     public static final int OWNERINSTANCEID_FIELD_NUMBER = 19;
     private int ownerInstanceId_;
     /**
@@ -19895,7 +19769,6 @@ public final class VOProtos {
       return ownerInstanceId_;
     }
 
-    // optional .VO_PET_SET petSet = 20;
     public static final int PETSET_FIELD_NUMBER = 20;
     private cg.base.io.proto.VOProtos.VO_PET_SET petSet_;
     /**
@@ -19954,7 +19827,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasBaseInfo()) {
         memoizedIsInitialized = 0;
@@ -20046,8 +19920,12 @@ public final class VOProtos {
       for (int i = 0; i < titles_.size(); i++) {
         output.writeMessage(7, titles_.get(i));
       }
+      if (getElementsList().size() > 0) {
+        output.writeRawVarint32(66);
+        output.writeRawVarint32(elementsMemoizedSerializedSize);
+      }
       for (int i = 0; i < elements_.size(); i++) {
-        output.writeInt32(8, elements_.get(i));
+        output.writeInt32NoTag(elements_.get(i));
       }
       for (int i = 0; i < attributes_.size(); i++) {
         output.writeMessage(9, attributes_.get(i));
@@ -20129,7 +20007,12 @@ public final class VOProtos {
             .computeInt32SizeNoTag(elements_.get(i));
         }
         size += dataSize;
-        size += 1 * getElementsList().size();
+        if (!getElementsList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        elementsMemoizedSerializedSize = dataSize;
       }
       for (int i = 0; i < attributes_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -20261,8 +20144,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_UNIT}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_UNITOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_UNIT)
+        cg.base.io.proto.VOProtos.VO_UNITOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_UNIT_descriptor;
@@ -20806,7 +20690,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required .VO_UNIT_BASE_INFO baseInfo = 1;
       private cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO baseInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder> baseInfoBuilder_;
@@ -20951,7 +20834,7 @@ public final class VOProtos {
         if (baseInfoBuilder_ == null) {
           baseInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_BASE_INFOOrBuilder>(
-                  baseInfo_,
+                  getBaseInfo(),
                   getParentForChildren(),
                   isClean());
           baseInfo_ = null;
@@ -20959,7 +20842,6 @@ public final class VOProtos {
         return baseInfoBuilder_;
       }
 
-      // optional .VO_POSITION position = 2;
       private cg.base.io.proto.VOProtos.VO_POSITION position_ = cg.base.io.proto.VOProtos.VO_POSITION.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_POSITION, cg.base.io.proto.VOProtos.VO_POSITION.Builder, cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder> positionBuilder_;
@@ -21104,7 +20986,7 @@ public final class VOProtos {
         if (positionBuilder_ == null) {
           positionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_POSITION, cg.base.io.proto.VOProtos.VO_POSITION.Builder, cg.base.io.proto.VOProtos.VO_POSITIONOrBuilder>(
-                  position_,
+                  getPosition(),
                   getParentForChildren(),
                   isClean());
           position_ = null;
@@ -21112,7 +20994,6 @@ public final class VOProtos {
         return positionBuilder_;
       }
 
-      // optional .VO_TITLES headTitle = 3;
       private cg.base.io.proto.VOProtos.VO_TITLES headTitle_ = cg.base.io.proto.VOProtos.VO_TITLES.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_TITLES, cg.base.io.proto.VOProtos.VO_TITLES.Builder, cg.base.io.proto.VOProtos.VO_TITLESOrBuilder> headTitleBuilder_;
@@ -21257,7 +21138,7 @@ public final class VOProtos {
         if (headTitleBuilder_ == null) {
           headTitleBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_TITLES, cg.base.io.proto.VOProtos.VO_TITLES.Builder, cg.base.io.proto.VOProtos.VO_TITLESOrBuilder>(
-                  headTitle_,
+                  getHeadTitle(),
                   getParentForChildren(),
                   isClean());
           headTitle_ = null;
@@ -21265,7 +21146,6 @@ public final class VOProtos {
         return headTitleBuilder_;
       }
 
-      // optional .VO_UNIT_EXTEND_INFO extendInfo = 4;
       private cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO extendInfo_ = cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder> extendInfoBuilder_;
@@ -21410,7 +21290,7 @@ public final class VOProtos {
         if (extendInfoBuilder_ == null) {
           extendInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFO.Builder, cg.base.io.proto.VOProtos.VO_UNIT_EXTEND_INFOOrBuilder>(
-                  extendInfo_,
+                  getExtendInfo(),
                   getParentForChildren(),
                   isClean());
           extendInfo_ = null;
@@ -21418,7 +21298,6 @@ public final class VOProtos {
         return extendInfoBuilder_;
       }
 
-      // optional int32 battleScore = 5;
       private int battleScore_ ;
       /**
        * <code>optional int32 battleScore = 5;</code>
@@ -21467,7 +21346,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional bool battleLocal = 6;
       private boolean battleLocal_ ;
       /**
        * <code>optional bool battleLocal = 6;</code>
@@ -21516,7 +21394,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_TITLE titles = 7;
       private java.util.List<cg.base.io.proto.VOProtos.VO_TITLE> titles_ =
         java.util.Collections.emptyList();
       private void ensureTitlesIsMutable() {
@@ -21698,7 +21575,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_TITLE> values) {
         if (titlesBuilder_ == null) {
           ensureTitlesIsMutable();
-          super.addAll(values, titles_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, titles_);
           onChanged();
         } else {
           titlesBuilder_.addAllMessages(values);
@@ -21828,7 +21706,6 @@ public final class VOProtos {
         return titlesBuilder_;
       }
 
-      // repeated int32 elements = 8;
       private java.util.List<java.lang.Integer> elements_ = java.util.Collections.emptyList();
       private void ensureElementsIsMutable() {
         if (!((bitField0_ & 0x00000080) == 0x00000080)) {
@@ -21837,7 +21714,7 @@ public final class VOProtos {
          }
       }
       /**
-       * <code>repeated int32 elements = 8;</code>
+       * <code>repeated int32 elements = 8 [packed = true];</code>
        *
        * <pre>
        * 元素属性组
@@ -21848,7 +21725,7 @@ public final class VOProtos {
         return java.util.Collections.unmodifiableList(elements_);
       }
       /**
-       * <code>repeated int32 elements = 8;</code>
+       * <code>repeated int32 elements = 8 [packed = true];</code>
        *
        * <pre>
        * 元素属性组
@@ -21858,7 +21735,7 @@ public final class VOProtos {
         return elements_.size();
       }
       /**
-       * <code>repeated int32 elements = 8;</code>
+       * <code>repeated int32 elements = 8 [packed = true];</code>
        *
        * <pre>
        * 元素属性组
@@ -21868,7 +21745,7 @@ public final class VOProtos {
         return elements_.get(index);
       }
       /**
-       * <code>repeated int32 elements = 8;</code>
+       * <code>repeated int32 elements = 8 [packed = true];</code>
        *
        * <pre>
        * 元素属性组
@@ -21882,7 +21759,7 @@ public final class VOProtos {
         return this;
       }
       /**
-       * <code>repeated int32 elements = 8;</code>
+       * <code>repeated int32 elements = 8 [packed = true];</code>
        *
        * <pre>
        * 元素属性组
@@ -21895,7 +21772,7 @@ public final class VOProtos {
         return this;
       }
       /**
-       * <code>repeated int32 elements = 8;</code>
+       * <code>repeated int32 elements = 8 [packed = true];</code>
        *
        * <pre>
        * 元素属性组
@@ -21904,12 +21781,13 @@ public final class VOProtos {
       public Builder addAllElements(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureElementsIsMutable();
-        super.addAll(values, elements_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, elements_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated int32 elements = 8;</code>
+       * <code>repeated int32 elements = 8 [packed = true];</code>
        *
        * <pre>
        * 元素属性组
@@ -21922,7 +21800,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_ATTRIBUTES attributes = 9;
       private java.util.List<cg.base.io.proto.VOProtos.VO_ATTRIBUTES> attributes_ =
         java.util.Collections.emptyList();
       private void ensureAttributesIsMutable() {
@@ -22104,7 +21981,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_ATTRIBUTES> values) {
         if (attributesBuilder_ == null) {
           ensureAttributesIsMutable();
-          super.addAll(values, attributes_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, attributes_);
           onChanged();
         } else {
           attributesBuilder_.addAllMessages(values);
@@ -22234,7 +22112,6 @@ public final class VOProtos {
         return attributesBuilder_;
       }
 
-      // optional int32 money = 10;
       private int money_ ;
       /**
        * <code>optional int32 money = 10;</code>
@@ -22283,7 +22160,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_BAG bags = 11;
       private java.util.List<cg.base.io.proto.VOProtos.VO_BAG> bags_ =
         java.util.Collections.emptyList();
       private void ensureBagsIsMutable() {
@@ -22465,7 +22341,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_BAG> values) {
         if (bagsBuilder_ == null) {
           ensureBagsIsMutable();
-          super.addAll(values, bags_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, bags_);
           onChanged();
         } else {
           bagsBuilder_.addAllMessages(values);
@@ -22595,7 +22472,6 @@ public final class VOProtos {
         return bagsBuilder_;
       }
 
-      // optional string job = 12;
       private java.lang.Object job_ = "";
       /**
        * <code>optional string job = 12;</code>
@@ -22617,9 +22493,12 @@ public final class VOProtos {
       public java.lang.String getJob() {
         java.lang.Object ref = job_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          job_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            job_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -22693,7 +22572,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional .VO_SKILL_SET skillSet = 13;
       private cg.base.io.proto.VOProtos.VO_SKILL_SET skillSet_ = cg.base.io.proto.VOProtos.VO_SKILL_SET.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_SKILL_SET, cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder, cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder> skillSetBuilder_;
@@ -22838,7 +22716,7 @@ public final class VOProtos {
         if (skillSetBuilder_ == null) {
           skillSetBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_SKILL_SET, cg.base.io.proto.VOProtos.VO_SKILL_SET.Builder, cg.base.io.proto.VOProtos.VO_SKILL_SETOrBuilder>(
-                  skillSet_,
+                  getSkillSet(),
                   getParentForChildren(),
                   isClean());
           skillSet_ = null;
@@ -22846,7 +22724,6 @@ public final class VOProtos {
         return skillSetBuilder_;
       }
 
-      // repeated .VO_OPTION options = 14;
       private java.util.List<cg.base.io.proto.VOProtos.VO_OPTION> options_ =
         java.util.Collections.emptyList();
       private void ensureOptionsIsMutable() {
@@ -23028,7 +22905,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_OPTION> values) {
         if (optionsBuilder_ == null) {
           ensureOptionsIsMutable();
-          super.addAll(values, options_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, options_);
           onChanged();
         } else {
           optionsBuilder_.addAllMessages(values);
@@ -23158,7 +23036,6 @@ public final class VOProtos {
         return optionsBuilder_;
       }
 
-      // optional int32 state = 15;
       private int state_ ;
       /**
        * <code>optional int32 state = 15;</code>
@@ -23207,7 +23084,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 loyal = 16;
       private int loyal_ ;
       /**
        * <code>optional int32 loyal = 16;</code>
@@ -23256,7 +23132,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional string talkType = 17;
       private java.lang.Object talkType_ = "";
       /**
        * <code>optional string talkType = 17;</code>
@@ -23278,9 +23153,12 @@ public final class VOProtos {
       public java.lang.String getTalkType() {
         java.lang.Object ref = talkType_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          talkType_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            talkType_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -23354,7 +23232,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 index = 18;
       private int index_ ;
       /**
        * <code>optional int32 index = 18;</code>
@@ -23403,7 +23280,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 ownerInstanceId = 19;
       private int ownerInstanceId_ ;
       /**
        * <code>optional int32 ownerInstanceId = 19;</code>
@@ -23452,7 +23328,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional .VO_PET_SET petSet = 20;
       private cg.base.io.proto.VOProtos.VO_PET_SET petSet_ = cg.base.io.proto.VOProtos.VO_PET_SET.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_PET_SET, cg.base.io.proto.VOProtos.VO_PET_SET.Builder, cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder> petSetBuilder_;
@@ -23597,7 +23472,7 @@ public final class VOProtos {
         if (petSetBuilder_ == null) {
           petSetBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_PET_SET, cg.base.io.proto.VOProtos.VO_PET_SET.Builder, cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder>(
-                  petSet_,
+                  getPetSet(),
                   getParentForChildren(),
                   isClean());
           petSet_ = null;
@@ -23616,10 +23491,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_UNIT)
   }
 
-  public interface VO_PET_SETOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_PET_SETOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_PET_SET)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 max = 1;
     /**
      * <code>required int32 max = 1;</code>
      */
@@ -23629,7 +23504,6 @@ public final class VOProtos {
      */
     int getMax();
 
-    // repeated .VO_PET pets = 2;
     /**
      * <code>repeated .VO_PET pets = 2;</code>
      */
@@ -23658,8 +23532,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_PET_SET}
    */
   public static final class VO_PET_SET extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_PET_SETOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_PET_SET)
+      VO_PET_SETOrBuilder {
     // Use VO_PET_SET.newBuilder() to construct.
     private VO_PET_SET(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -23761,7 +23636,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 max = 1;
     public static final int MAX_FIELD_NUMBER = 1;
     private int max_;
     /**
@@ -23777,7 +23651,6 @@ public final class VOProtos {
       return max_;
     }
 
-    // repeated .VO_PET pets = 2;
     public static final int PETS_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.VOProtos.VO_PET> pets_;
     /**
@@ -23820,7 +23693,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasMax()) {
         memoizedIsInitialized = 0;
@@ -23944,8 +23818,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_PET_SET}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_PET_SET)
+        cg.base.io.proto.VOProtos.VO_PET_SETOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_PET_SET_descriptor;
@@ -24110,7 +23985,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 max = 1;
       private int max_ ;
       /**
        * <code>required int32 max = 1;</code>
@@ -24143,7 +24017,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_PET pets = 2;
       private java.util.List<cg.base.io.proto.VOProtos.VO_PET> pets_ =
         java.util.Collections.emptyList();
       private void ensurePetsIsMutable() {
@@ -24285,7 +24158,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_PET> values) {
         if (petsBuilder_ == null) {
           ensurePetsIsMutable();
-          super.addAll(values, pets_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, pets_);
           onChanged();
         } else {
           petsBuilder_.addAllMessages(values);
@@ -24394,10 +24268,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_PET_SET)
   }
 
-  public interface VO_GAINOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_GAINOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_GAIN)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional int32 value = 1;
     /**
      * <code>optional int32 value = 1;</code>
      *
@@ -24415,7 +24289,6 @@ public final class VOProtos {
      */
     int getValue();
 
-    // optional string itemName = 2;
     /**
      * <code>optional string itemName = 2;</code>
      *
@@ -24442,7 +24315,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getItemNameBytes();
 
-    // optional int32 itemIconId = 3;
     /**
      * <code>optional int32 itemIconId = 3;</code>
      *
@@ -24460,7 +24332,6 @@ public final class VOProtos {
      */
     int getItemIconId();
 
-    // optional int32 itemCount = 4;
     /**
      * <code>optional int32 itemCount = 4;</code>
      *
@@ -24482,8 +24353,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_GAIN}
    */
   public static final class VO_GAIN extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_GAINOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_GAIN)
+      VO_GAINOrBuilder {
     // Use VO_GAIN.newBuilder() to construct.
     private VO_GAIN(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -24535,8 +24407,9 @@ public final class VOProtos {
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              itemName_ = input.readBytes();
+              itemName_ = bs;
               break;
             }
             case 24: {
@@ -24589,7 +24462,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // optional int32 value = 1;
     public static final int VALUE_FIELD_NUMBER = 1;
     private int value_;
     /**
@@ -24613,7 +24485,6 @@ public final class VOProtos {
       return value_;
     }
 
-    // optional string itemName = 2;
     public static final int ITEMNAME_FIELD_NUMBER = 2;
     private java.lang.Object itemName_;
     /**
@@ -24668,7 +24539,6 @@ public final class VOProtos {
       }
     }
 
-    // optional int32 itemIconId = 3;
     public static final int ITEMICONID_FIELD_NUMBER = 3;
     private int itemIconId_;
     /**
@@ -24692,7 +24562,6 @@ public final class VOProtos {
       return itemIconId_;
     }
 
-    // optional int32 itemCount = 4;
     public static final int ITEMCOUNT_FIELD_NUMBER = 4;
     private int itemCount_;
     /**
@@ -24725,7 +24594,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
       return true;
@@ -24853,8 +24723,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_GAIN}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_GAINOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_GAIN)
+        cg.base.io.proto.VOProtos.VO_GAINOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_GAIN_descriptor;
@@ -24996,7 +24867,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // optional int32 value = 1;
       private int value_ ;
       /**
        * <code>optional int32 value = 1;</code>
@@ -25045,7 +24915,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional string itemName = 2;
       private java.lang.Object itemName_ = "";
       /**
        * <code>optional string itemName = 2;</code>
@@ -25067,9 +24936,12 @@ public final class VOProtos {
       public java.lang.String getItemName() {
         java.lang.Object ref = itemName_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          itemName_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            itemName_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -25143,7 +25015,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 itemIconId = 3;
       private int itemIconId_ ;
       /**
        * <code>optional int32 itemIconId = 3;</code>
@@ -25192,7 +25063,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 itemCount = 4;
       private int itemCount_ ;
       /**
        * <code>optional int32 itemCount = 4;</code>
@@ -25252,10 +25122,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_GAIN)
   }
 
-  public interface VO_GAINSOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_GAINSOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_GAINS)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string className = 1;
     /**
      * <code>required string className = 1;</code>
      */
@@ -25270,7 +25140,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getClassNameBytes();
 
-    // repeated .VO_GAIN gains = 2;
     /**
      * <code>repeated .VO_GAIN gains = 2;</code>
      */
@@ -25299,8 +25168,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_GAINS}
    */
   public static final class VO_GAINS extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_GAINSOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_GAINS)
+      VO_GAINSOrBuilder {
     // Use VO_GAINS.newBuilder() to construct.
     private VO_GAINS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -25347,8 +25217,9 @@ public final class VOProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              className_ = input.readBytes();
+              className_ = bs;
               break;
             }
             case 18: {
@@ -25402,7 +25273,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required string className = 1;
     public static final int CLASSNAME_FIELD_NUMBER = 1;
     private java.lang.Object className_;
     /**
@@ -25445,7 +25315,6 @@ public final class VOProtos {
       }
     }
 
-    // repeated .VO_GAIN gains = 2;
     public static final int GAINS_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.VOProtos.VO_GAIN> gains_;
     /**
@@ -25488,7 +25357,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasClassName()) {
         memoizedIsInitialized = 0;
@@ -25606,8 +25476,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_GAINS}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_GAINSOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_GAINS)
+        cg.base.io.proto.VOProtos.VO_GAINSOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_GAINS_descriptor;
@@ -25768,7 +25639,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required string className = 1;
       private java.lang.Object className_ = "";
       /**
        * <code>required string className = 1;</code>
@@ -25782,9 +25652,12 @@ public final class VOProtos {
       public java.lang.String getClassName() {
         java.lang.Object ref = className_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          className_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            className_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -25842,7 +25715,6 @@ public final class VOProtos {
         return this;
       }
 
-      // repeated .VO_GAIN gains = 2;
       private java.util.List<cg.base.io.proto.VOProtos.VO_GAIN> gains_ =
         java.util.Collections.emptyList();
       private void ensureGainsIsMutable() {
@@ -25984,7 +25856,8 @@ public final class VOProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_GAIN> values) {
         if (gainsBuilder_ == null) {
           ensureGainsIsMutable();
-          super.addAll(values, gains_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, gains_);
           onChanged();
         } else {
           gainsBuilder_.addAllMessages(values);
@@ -26093,10 +25966,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_GAINS)
   }
 
-  public interface VO_ATTACHMENTOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_ATTACHMENTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_ATTACHMENT)
+      com.google.protobuf.MessageOrBuilder {
 
-    // optional int32 type = 1;
     /**
      * <code>optional int32 type = 1;</code>
      *
@@ -26114,7 +25987,6 @@ public final class VOProtos {
      */
     int getType();
 
-    // optional int32 value = 2;
     /**
      * <code>optional int32 value = 2;</code>
      *
@@ -26132,7 +26004,6 @@ public final class VOProtos {
      */
     int getValue();
 
-    // optional .VO_ITEM item = 3;
     /**
      * <code>optional .VO_ITEM item = 3;</code>
      *
@@ -26162,8 +26033,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_ATTACHMENT}
    */
   public static final class VO_ATTACHMENT extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_ATTACHMENTOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_ATTACHMENT)
+      VO_ATTACHMENTOrBuilder {
     // Use VO_ATTACHMENT.newBuilder() to construct.
     private VO_ATTACHMENT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -26272,7 +26144,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // optional int32 type = 1;
     public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
     /**
@@ -26296,7 +26167,6 @@ public final class VOProtos {
       return type_;
     }
 
-    // optional int32 value = 2;
     public static final int VALUE_FIELD_NUMBER = 2;
     private int value_;
     /**
@@ -26320,7 +26190,6 @@ public final class VOProtos {
       return value_;
     }
 
-    // optional .VO_ITEM item = 3;
     public static final int ITEM_FIELD_NUMBER = 3;
     private cg.base.io.proto.VOProtos.VO_ITEM item_;
     /**
@@ -26362,7 +26231,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (hasItem()) {
         if (!getItem().isInitialized()) {
@@ -26489,8 +26359,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_ATTACHMENT}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_ATTACHMENT)
+        cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_ATTACHMENT_descriptor;
@@ -26636,7 +26507,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // optional int32 type = 1;
       private int type_ ;
       /**
        * <code>optional int32 type = 1;</code>
@@ -26685,7 +26555,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional int32 value = 2;
       private int value_ ;
       /**
        * <code>optional int32 value = 2;</code>
@@ -26734,7 +26603,6 @@ public final class VOProtos {
         return this;
       }
 
-      // optional .VO_ITEM item = 3;
       private cg.base.io.proto.VOProtos.VO_ITEM item_ = cg.base.io.proto.VOProtos.VO_ITEM.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_ITEM, cg.base.io.proto.VOProtos.VO_ITEM.Builder, cg.base.io.proto.VOProtos.VO_ITEMOrBuilder> itemBuilder_;
@@ -26879,7 +26747,7 @@ public final class VOProtos {
         if (itemBuilder_ == null) {
           itemBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_ITEM, cg.base.io.proto.VOProtos.VO_ITEM.Builder, cg.base.io.proto.VOProtos.VO_ITEMOrBuilder>(
-                  item_,
+                  getItem(),
                   getParentForChildren(),
                   isClean());
           item_ = null;
@@ -26898,10 +26766,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_ATTACHMENT)
   }
 
-  public interface VO_ITEM_ELEMENTOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_ITEM_ELEMENTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_ITEM_ELEMENT)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 type = 1;
     /**
      * <code>required int32 type = 1;</code>
      */
@@ -26911,7 +26779,6 @@ public final class VOProtos {
      */
     int getType();
 
-    // required int32 value = 2;
     /**
      * <code>required int32 value = 2;</code>
      */
@@ -26925,8 +26792,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_ITEM_ELEMENT}
    */
   public static final class VO_ITEM_ELEMENT extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_ITEM_ELEMENTOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_ITEM_ELEMENT)
+      VO_ITEM_ELEMENTOrBuilder {
     // Use VO_ITEM_ELEMENT.newBuilder() to construct.
     private VO_ITEM_ELEMENT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -27022,7 +26890,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required int32 type = 1;
     public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
     /**
@@ -27038,7 +26905,6 @@ public final class VOProtos {
       return type_;
     }
 
-    // required int32 value = 2;
     public static final int VALUE_FIELD_NUMBER = 2;
     private int value_;
     /**
@@ -27061,7 +26927,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasType()) {
         memoizedIsInitialized = 0;
@@ -27183,8 +27050,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_ITEM_ELEMENT}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_ITEM_ELEMENTOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_ITEM_ELEMENT)
+        cg.base.io.proto.VOProtos.VO_ITEM_ELEMENTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_ITEM_ELEMENT_descriptor;
@@ -27314,7 +27182,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required int32 type = 1;
       private int type_ ;
       /**
        * <code>required int32 type = 1;</code>
@@ -27347,7 +27214,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 value = 2;
       private int value_ ;
       /**
        * <code>required int32 value = 2;</code>
@@ -27391,10 +27257,10 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_ITEM_ELEMENT)
   }
 
-  public interface VO_PRICEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_PRICEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_PRICE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string type = 1;
     /**
      * <code>required string type = 1;</code>
      */
@@ -27409,7 +27275,6 @@ public final class VOProtos {
     com.google.protobuf.ByteString
         getTypeBytes();
 
-    // required int32 id = 2;
     /**
      * <code>required int32 id = 2;</code>
      */
@@ -27419,7 +27284,6 @@ public final class VOProtos {
      */
     int getId();
 
-    // required int32 value = 3;
     /**
      * <code>required int32 value = 3;</code>
      */
@@ -27433,8 +27297,9 @@ public final class VOProtos {
    * Protobuf type {@code VO_PRICE}
    */
   public static final class VO_PRICE extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_PRICEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_PRICE)
+      VO_PRICEOrBuilder {
     // Use VO_PRICE.newBuilder() to construct.
     private VO_PRICE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -27481,8 +27346,9 @@ public final class VOProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              type_ = input.readBytes();
+              type_ = bs;
               break;
             }
             case 16: {
@@ -27535,7 +27401,6 @@ public final class VOProtos {
     }
 
     private int bitField0_;
-    // required string type = 1;
     public static final int TYPE_FIELD_NUMBER = 1;
     private java.lang.Object type_;
     /**
@@ -27578,7 +27443,6 @@ public final class VOProtos {
       }
     }
 
-    // required int32 id = 2;
     public static final int ID_FIELD_NUMBER = 2;
     private int id_;
     /**
@@ -27594,7 +27458,6 @@ public final class VOProtos {
       return id_;
     }
 
-    // required int32 value = 3;
     public static final int VALUE_FIELD_NUMBER = 3;
     private int value_;
     /**
@@ -27618,7 +27481,8 @@ public final class VOProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasType()) {
         memoizedIsInitialized = 0;
@@ -27751,8 +27615,9 @@ public final class VOProtos {
      * Protobuf type {@code VO_PRICE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.VOProtos.VO_PRICEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_PRICE)
+        cg.base.io.proto.VOProtos.VO_PRICEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.VOProtos.internal_static_VO_PRICE_descriptor;
@@ -27897,7 +27762,6 @@ public final class VOProtos {
       }
       private int bitField0_;
 
-      // required string type = 1;
       private java.lang.Object type_ = "";
       /**
        * <code>required string type = 1;</code>
@@ -27911,9 +27775,12 @@ public final class VOProtos {
       public java.lang.String getType() {
         java.lang.Object ref = type_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          type_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            type_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -27971,7 +27838,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 id = 2;
       private int id_ ;
       /**
        * <code>required int32 id = 2;</code>
@@ -28004,7 +27870,6 @@ public final class VOProtos {
         return this;
       }
 
-      // required int32 value = 3;
       private int value_ ;
       /**
        * <code>required int32 value = 3;</code>
@@ -28048,137 +27913,137 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_PRICE)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_UNIT_BASE_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_UNIT_BASE_INFO_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_POSITION_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_POSITION_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_UNIT_EXTEND_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_UNIT_EXTEND_INFO_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_TITLE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_TITLE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_ATTRIBUTE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_ATTRIBUTE_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_ATTRIBUTES_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_ATTRIBUTES_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_ITEM_IDENTIFY_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_ITEM_IDENTIFY_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_ITEM_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_ITEM_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_GRID_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_GRID_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_BAG_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_BAG_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_TITLES_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_TITLES_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_MATERIAL_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_MATERIAL_INFO_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_PRODUCE_SKILL_LEVEL_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_PRODUCE_SKILL_LEVEL_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_SKILL_LEVEL_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_SKILL_LEVEL_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_SKILL_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_SKILL_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_SKILL_SET_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_SKILL_SET_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_PET_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_PET_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_OPTION_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_OPTION_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_MAP_AREA_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_MAP_AREA_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_MAP_CELL_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_MAP_CELL_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_UNIT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_UNIT_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_PET_SET_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_PET_SET_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_GAIN_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_GAIN_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_GAINS_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_GAINS_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_ATTACHMENT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_ATTACHMENT_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_ITEM_ELEMENT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_ITEM_ELEMENT_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_PRICE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -28240,206 +28105,207 @@ public final class VOProtos {
       "TION\022\014\n\004name\030\001 \002(\t\022\r\n\005state\030\002 \002(\005\022\r\n\005val" +
       "ue\030\003 \001(\t\"G\n\013VO_MAP_AREA\022\014\n\004west\030\001 \002(\005\022\014\n" +
       "\004east\030\002 \002(\005\022\r\n\005south\030\003 \002(\005\022\r\n\005north\030\004 \002(" +
-      "\005\"a\n\013VO_MAP_CELL\022\014\n\004east\030\001 \002(\005\022\r\n\005south\030" +
-      "\002 \002(\005\022\025\n\rimageGlobalId\030\003 \002(\005\022\020\n\010objectId",
-      "\030\004 \002(\005\022\014\n\004mark\030\005 \002(\005\"\371\003\n\007VO_UNIT\022$\n\010base" +
-      "Info\030\001 \002(\0132\022.VO_UNIT_BASE_INFO\022\036\n\010positi" +
-      "on\030\002 \001(\0132\014.VO_POSITION\022\035\n\theadTitle\030\003 \001(" +
-      "\0132\n.VO_TITLES\022(\n\nextendInfo\030\004 \001(\0132\024.VO_U" +
-      "NIT_EXTEND_INFO\022\023\n\013battleScore\030\005 \001(\005\022\023\n\013" +
-      "battleLocal\030\006 \001(\010\022\031\n\006titles\030\007 \003(\0132\t.VO_T" +
-      "ITLE\022\020\n\010elements\030\010 \003(\005\022\"\n\nattributes\030\t \003" +
-      "(\0132\016.VO_ATTRIBUTES\022\r\n\005money\030\n \001(\005\022\025\n\004bag" +
-      "s\030\013 \003(\0132\007.VO_BAG\022\013\n\003job\030\014 \001(\t\022\037\n\010skillSe" +
-      "t\030\r \001(\0132\r.VO_SKILL_SET\022\033\n\007options\030\016 \003(\0132",
-      "\n.VO_OPTION\022\r\n\005state\030\017 \001(\005\022\r\n\005loyal\030\020 \001(" +
-      "\005\022\020\n\010talkType\030\021 \001(\t\022\r\n\005index\030\022 \001(\005\022\027\n\017ow" +
-      "nerInstanceId\030\023 \001(\005\022\033\n\006petSet\030\024 \001(\0132\013.VO" +
-      "_PET_SET\"0\n\nVO_PET_SET\022\013\n\003max\030\001 \002(\005\022\025\n\004p" +
-      "ets\030\002 \003(\0132\007.VO_PET\"Q\n\007VO_GAIN\022\r\n\005value\030\001" +
-      " \001(\005\022\020\n\010itemName\030\002 \001(\t\022\022\n\nitemIconId\030\003 \001" +
-      "(\005\022\021\n\titemCount\030\004 \001(\005\"6\n\010VO_GAINS\022\021\n\tcla" +
-      "ssName\030\001 \002(\t\022\027\n\005gains\030\002 \003(\0132\010.VO_GAIN\"D\n" +
-      "\rVO_ATTACHMENT\022\014\n\004type\030\001 \001(\005\022\r\n\005value\030\002 " +
-      "\001(\005\022\026\n\004item\030\003 \001(\0132\010.VO_ITEM\".\n\017VO_ITEM_E",
-      "LEMENT\022\014\n\004type\030\001 \002(\005\022\r\n\005value\030\002 \002(\005\"3\n\010V" +
-      "O_PRICE\022\014\n\004type\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\r\n\005val" +
-      "ue\030\003 \002(\005B\034\n\020cg.base.io.protoB\010VOProtos"
+      "\005\"h\n\013VO_MAP_CELL\022\014\n\004east\030\001 \002(\005\022\r\n\005south\030" +
+      "\002 \002(\005\022\025\n\rimageGlobalId\030\003 \002(\005\022\023\n\013mapObjec",
+      "tId\030\004 \002(\005\022\020\n\010cellMark\030\005 \002(\005\"\375\003\n\007VO_UNIT\022" +
+      "$\n\010baseInfo\030\001 \002(\0132\022.VO_UNIT_BASE_INFO\022\036\n" +
+      "\010position\030\002 \001(\0132\014.VO_POSITION\022\035\n\theadTit" +
+      "le\030\003 \001(\0132\n.VO_TITLES\022(\n\nextendInfo\030\004 \001(\013" +
+      "2\024.VO_UNIT_EXTEND_INFO\022\023\n\013battleScore\030\005 " +
+      "\001(\005\022\023\n\013battleLocal\030\006 \001(\010\022\031\n\006titles\030\007 \003(\013" +
+      "2\t.VO_TITLE\022\024\n\010elements\030\010 \003(\005B\002\020\001\022\"\n\natt" +
+      "ributes\030\t \003(\0132\016.VO_ATTRIBUTES\022\r\n\005money\030\n" +
+      " \001(\005\022\025\n\004bags\030\013 \003(\0132\007.VO_BAG\022\013\n\003job\030\014 \001(\t" +
+      "\022\037\n\010skillSet\030\r \001(\0132\r.VO_SKILL_SET\022\033\n\007opt",
+      "ions\030\016 \003(\0132\n.VO_OPTION\022\r\n\005state\030\017 \001(\005\022\r\n" +
+      "\005loyal\030\020 \001(\005\022\020\n\010talkType\030\021 \001(\t\022\r\n\005index\030" +
+      "\022 \001(\005\022\027\n\017ownerInstanceId\030\023 \001(\005\022\033\n\006petSet" +
+      "\030\024 \001(\0132\013.VO_PET_SET\"0\n\nVO_PET_SET\022\013\n\003max" +
+      "\030\001 \002(\005\022\025\n\004pets\030\002 \003(\0132\007.VO_PET\"Q\n\007VO_GAIN" +
+      "\022\r\n\005value\030\001 \001(\005\022\020\n\010itemName\030\002 \001(\t\022\022\n\nite" +
+      "mIconId\030\003 \001(\005\022\021\n\titemCount\030\004 \001(\005\"6\n\010VO_G" +
+      "AINS\022\021\n\tclassName\030\001 \002(\t\022\027\n\005gains\030\002 \003(\0132\010" +
+      ".VO_GAIN\"D\n\rVO_ATTACHMENT\022\014\n\004type\030\001 \001(\005\022" +
+      "\r\n\005value\030\002 \001(\005\022\026\n\004item\030\003 \001(\0132\010.VO_ITEM\".",
+      "\n\017VO_ITEM_ELEMENT\022\014\n\004type\030\001 \002(\005\022\r\n\005value" +
+      "\030\002 \002(\005\"3\n\010VO_PRICE\022\014\n\004type\030\001 \002(\t\022\n\n\002id\030\002" +
+      " \002(\005\022\r\n\005value\030\003 \002(\005B\034\n\020cg.base.io.protoB" +
+      "\010VOProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_VO_UNIT_BASE_INFO_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_VO_UNIT_BASE_INFO_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_UNIT_BASE_INFO_descriptor,
-              new java.lang.String[] { "UnitType", "InstanceId", "Name", "FaceModel", "TempFaceModel", });
-          internal_static_VO_POSITION_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_VO_POSITION_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_POSITION_descriptor,
-              new java.lang.String[] { "East", "South", "Dir", });
-          internal_static_VO_UNIT_EXTEND_INFO_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_VO_UNIT_EXTEND_INFO_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_UNIT_EXTEND_INFO_descriptor,
-              new java.lang.String[] { "Race", "Level", "Exp", });
-          internal_static_VO_TITLE_descriptor =
-            getDescriptor().getMessageTypes().get(3);
-          internal_static_VO_TITLE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_TITLE_descriptor,
-              new java.lang.String[] { "Id", "Name", });
-          internal_static_VO_ATTRIBUTE_descriptor =
-            getDescriptor().getMessageTypes().get(4);
-          internal_static_VO_ATTRIBUTE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_ATTRIBUTE_descriptor,
-              new java.lang.String[] { "Type", "Value", });
-          internal_static_VO_ATTRIBUTES_descriptor =
-            getDescriptor().getMessageTypes().get(5);
-          internal_static_VO_ATTRIBUTES_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_ATTRIBUTES_descriptor,
-              new java.lang.String[] { "Type", "Attributes", });
-          internal_static_VO_ITEM_IDENTIFY_descriptor =
-            getDescriptor().getMessageTypes().get(6);
-          internal_static_VO_ITEM_IDENTIFY_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_ITEM_IDENTIFY_descriptor,
-              new java.lang.String[] { "Description", "RightButtonDescription", "Level", "CanPostByPet", "CanUseInBattle", "Type", "DoubleHand", "Attributes", "MagicAttack", "Elements", "GemWeaponType", "GemArmorType", });
-          internal_static_VO_ITEM_descriptor =
-            getDescriptor().getMessageTypes().get(7);
-          internal_static_VO_ITEM_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_ITEM_descriptor,
-              new java.lang.String[] { "TemplateId", "Name", "IconId", "GroupSize", "DropDispear", "LogoutDispear", "IdentifyInfo", });
-          internal_static_VO_GRID_descriptor =
-            getDescriptor().getMessageTypes().get(8);
-          internal_static_VO_GRID_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_GRID_descriptor,
-              new java.lang.String[] { "Id", "Size", "Item", "Count", });
-          internal_static_VO_BAG_descriptor =
-            getDescriptor().getMessageTypes().get(9);
-          internal_static_VO_BAG_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_BAG_descriptor,
-              new java.lang.String[] { "Id", "Grids", });
-          internal_static_VO_TITLES_descriptor =
-            getDescriptor().getMessageTypes().get(10);
-          internal_static_VO_TITLES_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_TITLES_descriptor,
-              new java.lang.String[] { "Guid", "GuidTitle", "Title", "Signature", });
-          internal_static_VO_MATERIAL_INFO_descriptor =
-            getDescriptor().getMessageTypes().get(11);
-          internal_static_VO_MATERIAL_INFO_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_MATERIAL_INFO_descriptor,
-              new java.lang.String[] { "ItemId", "NeedAmount", "IdentifyName", });
-          internal_static_VO_PRODUCE_SKILL_LEVEL_descriptor =
-            getDescriptor().getMessageTypes().get(12);
-          internal_static_VO_PRODUCE_SKILL_LEVEL_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_PRODUCE_SKILL_LEVEL_descriptor,
-              new java.lang.String[] { "ProducesId", "Name", "ItemId", "IdentifyName", "Materials", });
-          internal_static_VO_SKILL_LEVEL_descriptor =
-            getDescriptor().getMessageTypes().get(13);
-          internal_static_VO_SKILL_LEVEL_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_SKILL_LEVEL_descriptor,
-              new java.lang.String[] { "Name", "Description", "CostMp", "TechType", "TargetType", "SkillLevelDatas", });
-          internal_static_VO_SKILL_descriptor =
-            getDescriptor().getMessageTypes().get(14);
-          internal_static_VO_SKILL_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_SKILL_descriptor,
-              new java.lang.String[] { "Id", "MaxLevel", "Name", "Description", "Level", "Exp", "NextLevelExp", "UseSpace", "Type", "Skills", "Index", });
-          internal_static_VO_SKILL_SET_descriptor =
-            getDescriptor().getMessageTypes().get(15);
-          internal_static_VO_SKILL_SET_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_SKILL_SET_descriptor,
-              new java.lang.String[] { "BaseSkills", "Max", "Skills", });
-          internal_static_VO_PET_descriptor =
-            getDescriptor().getMessageTypes().get(16);
-          internal_static_VO_PET_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_PET_descriptor,
-              new java.lang.String[] { "UnitInfo", });
-          internal_static_VO_OPTION_descriptor =
-            getDescriptor().getMessageTypes().get(17);
-          internal_static_VO_OPTION_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_OPTION_descriptor,
-              new java.lang.String[] { "Name", "State", "Value", });
-          internal_static_VO_MAP_AREA_descriptor =
-            getDescriptor().getMessageTypes().get(18);
-          internal_static_VO_MAP_AREA_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_MAP_AREA_descriptor,
-              new java.lang.String[] { "West", "East", "South", "North", });
-          internal_static_VO_MAP_CELL_descriptor =
-            getDescriptor().getMessageTypes().get(19);
-          internal_static_VO_MAP_CELL_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_MAP_CELL_descriptor,
-              new java.lang.String[] { "East", "South", "ImageGlobalId", "ObjectId", "Mark", });
-          internal_static_VO_UNIT_descriptor =
-            getDescriptor().getMessageTypes().get(20);
-          internal_static_VO_UNIT_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_UNIT_descriptor,
-              new java.lang.String[] { "BaseInfo", "Position", "HeadTitle", "ExtendInfo", "BattleScore", "BattleLocal", "Titles", "Elements", "Attributes", "Money", "Bags", "Job", "SkillSet", "Options", "State", "Loyal", "TalkType", "Index", "OwnerInstanceId", "PetSet", });
-          internal_static_VO_PET_SET_descriptor =
-            getDescriptor().getMessageTypes().get(21);
-          internal_static_VO_PET_SET_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_PET_SET_descriptor,
-              new java.lang.String[] { "Max", "Pets", });
-          internal_static_VO_GAIN_descriptor =
-            getDescriptor().getMessageTypes().get(22);
-          internal_static_VO_GAIN_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_GAIN_descriptor,
-              new java.lang.String[] { "Value", "ItemName", "ItemIconId", "ItemCount", });
-          internal_static_VO_GAINS_descriptor =
-            getDescriptor().getMessageTypes().get(23);
-          internal_static_VO_GAINS_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_GAINS_descriptor,
-              new java.lang.String[] { "ClassName", "Gains", });
-          internal_static_VO_ATTACHMENT_descriptor =
-            getDescriptor().getMessageTypes().get(24);
-          internal_static_VO_ATTACHMENT_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_ATTACHMENT_descriptor,
-              new java.lang.String[] { "Type", "Value", "Item", });
-          internal_static_VO_ITEM_ELEMENT_descriptor =
-            getDescriptor().getMessageTypes().get(25);
-          internal_static_VO_ITEM_ELEMENT_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_ITEM_ELEMENT_descriptor,
-              new java.lang.String[] { "Type", "Value", });
-          internal_static_VO_PRICE_descriptor =
-            getDescriptor().getMessageTypes().get(26);
-          internal_static_VO_PRICE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_PRICE_descriptor,
-              new java.lang.String[] { "Type", "Id", "Value", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
+    internal_static_VO_UNIT_BASE_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_VO_UNIT_BASE_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_UNIT_BASE_INFO_descriptor,
+        new java.lang.String[] { "UnitType", "InstanceId", "Name", "FaceModel", "TempFaceModel", });
+    internal_static_VO_POSITION_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_VO_POSITION_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_POSITION_descriptor,
+        new java.lang.String[] { "East", "South", "Dir", });
+    internal_static_VO_UNIT_EXTEND_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_VO_UNIT_EXTEND_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_UNIT_EXTEND_INFO_descriptor,
+        new java.lang.String[] { "Race", "Level", "Exp", });
+    internal_static_VO_TITLE_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_VO_TITLE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_TITLE_descriptor,
+        new java.lang.String[] { "Id", "Name", });
+    internal_static_VO_ATTRIBUTE_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_VO_ATTRIBUTE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_ATTRIBUTE_descriptor,
+        new java.lang.String[] { "Type", "Value", });
+    internal_static_VO_ATTRIBUTES_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_VO_ATTRIBUTES_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_ATTRIBUTES_descriptor,
+        new java.lang.String[] { "Type", "Attributes", });
+    internal_static_VO_ITEM_IDENTIFY_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_VO_ITEM_IDENTIFY_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_ITEM_IDENTIFY_descriptor,
+        new java.lang.String[] { "Description", "RightButtonDescription", "Level", "CanPostByPet", "CanUseInBattle", "Type", "DoubleHand", "Attributes", "MagicAttack", "Elements", "GemWeaponType", "GemArmorType", });
+    internal_static_VO_ITEM_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_VO_ITEM_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_ITEM_descriptor,
+        new java.lang.String[] { "TemplateId", "Name", "IconId", "GroupSize", "DropDispear", "LogoutDispear", "IdentifyInfo", });
+    internal_static_VO_GRID_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_VO_GRID_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_GRID_descriptor,
+        new java.lang.String[] { "Id", "Size", "Item", "Count", });
+    internal_static_VO_BAG_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_VO_BAG_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_BAG_descriptor,
+        new java.lang.String[] { "Id", "Grids", });
+    internal_static_VO_TITLES_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_VO_TITLES_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_TITLES_descriptor,
+        new java.lang.String[] { "Guid", "GuidTitle", "Title", "Signature", });
+    internal_static_VO_MATERIAL_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_VO_MATERIAL_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_MATERIAL_INFO_descriptor,
+        new java.lang.String[] { "ItemId", "NeedAmount", "IdentifyName", });
+    internal_static_VO_PRODUCE_SKILL_LEVEL_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_VO_PRODUCE_SKILL_LEVEL_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_PRODUCE_SKILL_LEVEL_descriptor,
+        new java.lang.String[] { "ProducesId", "Name", "ItemId", "IdentifyName", "Materials", });
+    internal_static_VO_SKILL_LEVEL_descriptor =
+      getDescriptor().getMessageTypes().get(13);
+    internal_static_VO_SKILL_LEVEL_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_SKILL_LEVEL_descriptor,
+        new java.lang.String[] { "Name", "Description", "CostMp", "TechType", "TargetType", "SkillLevelDatas", });
+    internal_static_VO_SKILL_descriptor =
+      getDescriptor().getMessageTypes().get(14);
+    internal_static_VO_SKILL_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_SKILL_descriptor,
+        new java.lang.String[] { "Id", "MaxLevel", "Name", "Description", "Level", "Exp", "NextLevelExp", "UseSpace", "Type", "Skills", "Index", });
+    internal_static_VO_SKILL_SET_descriptor =
+      getDescriptor().getMessageTypes().get(15);
+    internal_static_VO_SKILL_SET_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_SKILL_SET_descriptor,
+        new java.lang.String[] { "BaseSkills", "Max", "Skills", });
+    internal_static_VO_PET_descriptor =
+      getDescriptor().getMessageTypes().get(16);
+    internal_static_VO_PET_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_PET_descriptor,
+        new java.lang.String[] { "UnitInfo", });
+    internal_static_VO_OPTION_descriptor =
+      getDescriptor().getMessageTypes().get(17);
+    internal_static_VO_OPTION_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_OPTION_descriptor,
+        new java.lang.String[] { "Name", "State", "Value", });
+    internal_static_VO_MAP_AREA_descriptor =
+      getDescriptor().getMessageTypes().get(18);
+    internal_static_VO_MAP_AREA_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_MAP_AREA_descriptor,
+        new java.lang.String[] { "West", "East", "South", "North", });
+    internal_static_VO_MAP_CELL_descriptor =
+      getDescriptor().getMessageTypes().get(19);
+    internal_static_VO_MAP_CELL_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_MAP_CELL_descriptor,
+        new java.lang.String[] { "East", "South", "ImageGlobalId", "MapObjectId", "CellMark", });
+    internal_static_VO_UNIT_descriptor =
+      getDescriptor().getMessageTypes().get(20);
+    internal_static_VO_UNIT_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_UNIT_descriptor,
+        new java.lang.String[] { "BaseInfo", "Position", "HeadTitle", "ExtendInfo", "BattleScore", "BattleLocal", "Titles", "Elements", "Attributes", "Money", "Bags", "Job", "SkillSet", "Options", "State", "Loyal", "TalkType", "Index", "OwnerInstanceId", "PetSet", });
+    internal_static_VO_PET_SET_descriptor =
+      getDescriptor().getMessageTypes().get(21);
+    internal_static_VO_PET_SET_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_PET_SET_descriptor,
+        new java.lang.String[] { "Max", "Pets", });
+    internal_static_VO_GAIN_descriptor =
+      getDescriptor().getMessageTypes().get(22);
+    internal_static_VO_GAIN_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_GAIN_descriptor,
+        new java.lang.String[] { "Value", "ItemName", "ItemIconId", "ItemCount", });
+    internal_static_VO_GAINS_descriptor =
+      getDescriptor().getMessageTypes().get(23);
+    internal_static_VO_GAINS_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_GAINS_descriptor,
+        new java.lang.String[] { "ClassName", "Gains", });
+    internal_static_VO_ATTACHMENT_descriptor =
+      getDescriptor().getMessageTypes().get(24);
+    internal_static_VO_ATTACHMENT_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_ATTACHMENT_descriptor,
+        new java.lang.String[] { "Type", "Value", "Item", });
+    internal_static_VO_ITEM_ELEMENT_descriptor =
+      getDescriptor().getMessageTypes().get(25);
+    internal_static_VO_ITEM_ELEMENT_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_ITEM_ELEMENT_descriptor,
+        new java.lang.String[] { "Type", "Value", });
+    internal_static_VO_PRICE_descriptor =
+      getDescriptor().getMessageTypes().get(26);
+    internal_static_VO_PRICE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_PRICE_descriptor,
+        new java.lang.String[] { "Type", "Id", "Value", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

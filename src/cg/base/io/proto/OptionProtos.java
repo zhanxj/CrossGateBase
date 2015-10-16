@@ -8,10 +8,10 @@ public final class OptionProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface REQUEST_OPTIONS_SETOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_OPTIONS_SETOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_OPTIONS_SET)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required .VO_OPTION option = 1;
     /**
      * <code>required .VO_OPTION option = 1;</code>
      */
@@ -29,8 +29,9 @@ public final class OptionProtos {
    * Protobuf type {@code REQUEST_OPTIONS_SET}
    */
   public static final class REQUEST_OPTIONS_SET extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_OPTIONS_SETOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_OPTIONS_SET)
+      REQUEST_OPTIONS_SETOrBuilder {
     // Use REQUEST_OPTIONS_SET.newBuilder() to construct.
     private REQUEST_OPTIONS_SET(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -129,7 +130,6 @@ public final class OptionProtos {
     }
 
     private int bitField0_;
-    // required .VO_OPTION option = 1;
     public static final int OPTION_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_OPTION option_;
     /**
@@ -157,7 +157,8 @@ public final class OptionProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasOption()) {
         memoizedIsInitialized = 0;
@@ -272,8 +273,9 @@ public final class OptionProtos {
      * Protobuf type {@code REQUEST_OPTIONS_SET}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SETOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_OPTIONS_SET)
+        cg.base.io.proto.OptionProtos.REQUEST_OPTIONS_SETOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.OptionProtos.internal_static_REQUEST_OPTIONS_SET_descriptor;
@@ -403,7 +405,6 @@ public final class OptionProtos {
       }
       private int bitField0_;
 
-      // required .VO_OPTION option = 1;
       private cg.base.io.proto.VOProtos.VO_OPTION option_ = cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> optionBuilder_;
@@ -512,7 +513,7 @@ public final class OptionProtos {
         if (optionBuilder_ == null) {
           optionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder>(
-                  option_,
+                  getOption(),
                   getParentForChildren(),
                   isClean());
           option_ = null;
@@ -531,10 +532,10 @@ public final class OptionProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_OPTIONS_SET)
   }
 
-  public interface RESPONSE_OPTIONS_SETOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_OPTIONS_SETOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_OPTIONS_SET)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required .VO_OPTION option = 1;
     /**
      * <code>required .VO_OPTION option = 1;</code>
      */
@@ -548,7 +549,6 @@ public final class OptionProtos {
      */
     cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder getOptionOrBuilder();
 
-    // required string name = 2;
     /**
      * <code>required string name = 2;</code>
      */
@@ -567,8 +567,9 @@ public final class OptionProtos {
    * Protobuf type {@code RESPONSE_OPTIONS_SET}
    */
   public static final class RESPONSE_OPTIONS_SET extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_OPTIONS_SETOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_OPTIONS_SET)
+      RESPONSE_OPTIONS_SETOrBuilder {
     // Use RESPONSE_OPTIONS_SET.newBuilder() to construct.
     private RESPONSE_OPTIONS_SET(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -628,8 +629,9 @@ public final class OptionProtos {
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
           }
@@ -672,7 +674,6 @@ public final class OptionProtos {
     }
 
     private int bitField0_;
-    // required .VO_OPTION option = 1;
     public static final int OPTION_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_OPTION option_;
     /**
@@ -694,7 +695,6 @@ public final class OptionProtos {
       return option_;
     }
 
-    // required string name = 2;
     public static final int NAME_FIELD_NUMBER = 2;
     private java.lang.Object name_;
     /**
@@ -744,7 +744,8 @@ public final class OptionProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasOption()) {
         memoizedIsInitialized = 0;
@@ -870,8 +871,9 @@ public final class OptionProtos {
      * Protobuf type {@code RESPONSE_OPTIONS_SET}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SETOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_OPTIONS_SET)
+        cg.base.io.proto.OptionProtos.RESPONSE_OPTIONS_SETOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.OptionProtos.internal_static_RESPONSE_OPTIONS_SET_descriptor;
@@ -1016,7 +1018,6 @@ public final class OptionProtos {
       }
       private int bitField0_;
 
-      // required .VO_OPTION option = 1;
       private cg.base.io.proto.VOProtos.VO_OPTION option_ = cg.base.io.proto.VOProtos.VO_OPTION.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder> optionBuilder_;
@@ -1125,7 +1126,7 @@ public final class OptionProtos {
         if (optionBuilder_ == null) {
           optionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_OPTION, cg.base.io.proto.VOProtos.VO_OPTION.Builder, cg.base.io.proto.VOProtos.VO_OPTIONOrBuilder>(
-                  option_,
+                  getOption(),
                   getParentForChildren(),
                   isClean());
           option_ = null;
@@ -1133,7 +1134,6 @@ public final class OptionProtos {
         return optionBuilder_;
       }
 
-      // required string name = 2;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 2;</code>
@@ -1147,9 +1147,12 @@ public final class OptionProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1218,12 +1221,12 @@ public final class OptionProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_OPTIONS_SET)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_OPTIONS_SET_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_OPTIONS_SET_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_OPTIONS_SET_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -1244,30 +1247,31 @@ public final class OptionProtos {
       "oB\014OptionProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_REQUEST_OPTIONS_SET_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_REQUEST_OPTIONS_SET_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_OPTIONS_SET_descriptor,
-              new java.lang.String[] { "Option", });
-          internal_static_RESPONSE_OPTIONS_SET_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_RESPONSE_OPTIONS_SET_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_OPTIONS_SET_descriptor,
-              new java.lang.String[] { "Option", "Name", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
+    internal_static_REQUEST_OPTIONS_SET_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_REQUEST_OPTIONS_SET_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_OPTIONS_SET_descriptor,
+        new java.lang.String[] { "Option", });
+    internal_static_RESPONSE_OPTIONS_SET_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_RESPONSE_OPTIONS_SET_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_OPTIONS_SET_descriptor,
+        new java.lang.String[] { "Option", "Name", });
+    cg.base.io.proto.VOProtos.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

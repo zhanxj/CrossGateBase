@@ -35,7 +35,7 @@ public class VoGrid {
 	 */
 	public VoItem getItem() {
 		VoItem ret = null;
-		VO_ITEM vo = builder.getItem();
+		VO_ITEM vo = this.vo.getItem();
 		ret = vo == null ? null : new VoItem(vo);
 		return ret;
 	}

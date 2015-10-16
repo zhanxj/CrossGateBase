@@ -8,10 +8,10 @@ public final class ScriptProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface REQUEST_SCRIPT_MUTUALOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_SCRIPT_MUTUALOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_SCRIPT_MUTUAL)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 dir = 1;
     /**
      * <code>required int32 dir = 1;</code>
      */
@@ -21,7 +21,6 @@ public final class ScriptProtos {
      */
     int getDir();
 
-    // required int32 op = 2;
     /**
      * <code>required int32 op = 2;</code>
      */
@@ -35,8 +34,9 @@ public final class ScriptProtos {
    * Protobuf type {@code REQUEST_SCRIPT_MUTUAL}
    */
   public static final class REQUEST_SCRIPT_MUTUAL extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_SCRIPT_MUTUALOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_SCRIPT_MUTUAL)
+      REQUEST_SCRIPT_MUTUALOrBuilder {
     // Use REQUEST_SCRIPT_MUTUAL.newBuilder() to construct.
     private REQUEST_SCRIPT_MUTUAL(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -132,7 +132,6 @@ public final class ScriptProtos {
     }
 
     private int bitField0_;
-    // required int32 dir = 1;
     public static final int DIR_FIELD_NUMBER = 1;
     private int dir_;
     /**
@@ -148,7 +147,6 @@ public final class ScriptProtos {
       return dir_;
     }
 
-    // required int32 op = 2;
     public static final int OP_FIELD_NUMBER = 2;
     private int op_;
     /**
@@ -171,7 +169,8 @@ public final class ScriptProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasDir()) {
         memoizedIsInitialized = 0;
@@ -293,8 +292,9 @@ public final class ScriptProtos {
      * Protobuf type {@code REQUEST_SCRIPT_MUTUAL}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUALOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_SCRIPT_MUTUAL)
+        cg.base.io.proto.ScriptProtos.REQUEST_SCRIPT_MUTUALOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.ScriptProtos.internal_static_REQUEST_SCRIPT_MUTUAL_descriptor;
@@ -424,7 +424,6 @@ public final class ScriptProtos {
       }
       private int bitField0_;
 
-      // required int32 dir = 1;
       private int dir_ ;
       /**
        * <code>required int32 dir = 1;</code>
@@ -457,7 +456,6 @@ public final class ScriptProtos {
         return this;
       }
 
-      // required int32 op = 2;
       private int op_ ;
       /**
        * <code>required int32 op = 2;</code>
@@ -501,10 +499,10 @@ public final class ScriptProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_SCRIPT_MUTUAL)
   }
 
-  public interface RESPONSE_SCRIPTOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_SCRIPTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_SCRIPT)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string talkType = 1;
     /**
      * <code>required string talkType = 1;</code>
      */
@@ -519,7 +517,6 @@ public final class ScriptProtos {
     com.google.protobuf.ByteString
         getTalkTypeBytes();
 
-    // required string message = 2;
     /**
      * <code>required string message = 2;</code>
      */
@@ -534,12 +531,11 @@ public final class ScriptProtos {
     com.google.protobuf.ByteString
         getMessageBytes();
 
-    // repeated string infos = 3;
     /**
      * <code>repeated string infos = 3;</code>
      */
-    java.util.List<java.lang.String>
-    getInfosList();
+    com.google.protobuf.ProtocolStringList
+        getInfosList();
     /**
      * <code>repeated string infos = 3;</code>
      */
@@ -558,8 +554,9 @@ public final class ScriptProtos {
    * Protobuf type {@code RESPONSE_SCRIPT}
    */
   public static final class RESPONSE_SCRIPT extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_SCRIPTOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_SCRIPT)
+      RESPONSE_SCRIPTOrBuilder {
     // Use RESPONSE_SCRIPT.newBuilder() to construct.
     private RESPONSE_SCRIPT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -606,21 +603,24 @@ public final class ScriptProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              talkType_ = input.readBytes();
+              talkType_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              message_ = input.readBytes();
+              message_ = bs;
               break;
             }
             case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
                 infos_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000004;
               }
-              infos_.add(input.readBytes());
+              infos_.add(bs);
               break;
             }
           }
@@ -632,7 +632,7 @@ public final class ScriptProtos {
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-          infos_ = new com.google.protobuf.UnmodifiableLazyStringList(infos_);
+          infos_ = infos_.getUnmodifiableView();
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -666,7 +666,6 @@ public final class ScriptProtos {
     }
 
     private int bitField0_;
-    // required string talkType = 1;
     public static final int TALKTYPE_FIELD_NUMBER = 1;
     private java.lang.Object talkType_;
     /**
@@ -709,7 +708,6 @@ public final class ScriptProtos {
       }
     }
 
-    // required string message = 2;
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private java.lang.Object message_;
     /**
@@ -752,13 +750,12 @@ public final class ScriptProtos {
       }
     }
 
-    // repeated string infos = 3;
     public static final int INFOS_FIELD_NUMBER = 3;
     private com.google.protobuf.LazyStringList infos_;
     /**
      * <code>repeated string infos = 3;</code>
      */
-    public java.util.List<java.lang.String>
+    public com.google.protobuf.ProtocolStringList
         getInfosList() {
       return infos_;
     }
@@ -790,7 +787,8 @@ public final class ScriptProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasTalkType()) {
         memoizedIsInitialized = 0;
@@ -924,8 +922,9 @@ public final class ScriptProtos {
      * Protobuf type {@code RESPONSE_SCRIPT}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPTOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_SCRIPT)
+        cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPTOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.ScriptProtos.internal_static_RESPONSE_SCRIPT_descriptor;
@@ -1001,8 +1000,7 @@ public final class ScriptProtos {
         }
         result.message_ = message_;
         if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          infos_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              infos_);
+          infos_ = infos_.getUnmodifiableView();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.infos_ = infos_;
@@ -1077,7 +1075,6 @@ public final class ScriptProtos {
       }
       private int bitField0_;
 
-      // required string talkType = 1;
       private java.lang.Object talkType_ = "";
       /**
        * <code>required string talkType = 1;</code>
@@ -1091,9 +1088,12 @@ public final class ScriptProtos {
       public java.lang.String getTalkType() {
         java.lang.Object ref = talkType_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          talkType_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            talkType_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1151,7 +1151,6 @@ public final class ScriptProtos {
         return this;
       }
 
-      // required string message = 2;
       private java.lang.Object message_ = "";
       /**
        * <code>required string message = 2;</code>
@@ -1165,9 +1164,12 @@ public final class ScriptProtos {
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          message_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            message_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1225,7 +1227,6 @@ public final class ScriptProtos {
         return this;
       }
 
-      // repeated string infos = 3;
       private com.google.protobuf.LazyStringList infos_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureInfosIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
@@ -1236,9 +1237,9 @@ public final class ScriptProtos {
       /**
        * <code>repeated string infos = 3;</code>
        */
-      public java.util.List<java.lang.String>
+      public com.google.protobuf.ProtocolStringList
           getInfosList() {
-        return java.util.Collections.unmodifiableList(infos_);
+        return infos_.getUnmodifiableView();
       }
       /**
        * <code>repeated string infos = 3;</code>
@@ -1291,7 +1292,8 @@ public final class ScriptProtos {
       public Builder addAllInfos(
           java.lang.Iterable<java.lang.String> values) {
         ensureInfosIsMutable();
-        super.addAll(values, infos_);
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, infos_);
         onChanged();
         return this;
       }
@@ -1329,10 +1331,10 @@ public final class ScriptProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_SCRIPT)
   }
 
-  public interface RESPONSE_SCRIPT_ERROROrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_SCRIPT_ERROROrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_SCRIPT_ERROR)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string talkType = 1;
     /**
      * <code>required string talkType = 1;</code>
      */
@@ -1347,7 +1349,6 @@ public final class ScriptProtos {
     com.google.protobuf.ByteString
         getTalkTypeBytes();
 
-    // required int32 message = 2;
     /**
      * <code>required int32 message = 2;</code>
      */
@@ -1361,8 +1362,9 @@ public final class ScriptProtos {
    * Protobuf type {@code RESPONSE_SCRIPT_ERROR}
    */
   public static final class RESPONSE_SCRIPT_ERROR extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_SCRIPT_ERROROrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_SCRIPT_ERROR)
+      RESPONSE_SCRIPT_ERROROrBuilder {
     // Use RESPONSE_SCRIPT_ERROR.newBuilder() to construct.
     private RESPONSE_SCRIPT_ERROR(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1409,8 +1411,9 @@ public final class ScriptProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              talkType_ = input.readBytes();
+              talkType_ = bs;
               break;
             }
             case 16: {
@@ -1458,7 +1461,6 @@ public final class ScriptProtos {
     }
 
     private int bitField0_;
-    // required string talkType = 1;
     public static final int TALKTYPE_FIELD_NUMBER = 1;
     private java.lang.Object talkType_;
     /**
@@ -1501,7 +1503,6 @@ public final class ScriptProtos {
       }
     }
 
-    // required int32 message = 2;
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private int message_;
     /**
@@ -1524,7 +1525,8 @@ public final class ScriptProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasTalkType()) {
         memoizedIsInitialized = 0;
@@ -1646,8 +1648,9 @@ public final class ScriptProtos {
      * Protobuf type {@code RESPONSE_SCRIPT_ERROR}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_ERROROrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_SCRIPT_ERROR)
+        cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_ERROROrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.ScriptProtos.internal_static_RESPONSE_SCRIPT_ERROR_descriptor;
@@ -1779,7 +1782,6 @@ public final class ScriptProtos {
       }
       private int bitField0_;
 
-      // required string talkType = 1;
       private java.lang.Object talkType_ = "";
       /**
        * <code>required string talkType = 1;</code>
@@ -1793,9 +1795,12 @@ public final class ScriptProtos {
       public java.lang.String getTalkType() {
         java.lang.Object ref = talkType_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          talkType_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            talkType_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1853,7 +1858,6 @@ public final class ScriptProtos {
         return this;
       }
 
-      // required int32 message = 2;
       private int message_ ;
       /**
        * <code>required int32 message = 2;</code>
@@ -1897,17 +1901,17 @@ public final class ScriptProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_SCRIPT_ERROR)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_SCRIPT_MUTUAL_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_SCRIPT_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_SCRIPT_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_SCRIPT_ERROR_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -1929,35 +1933,35 @@ public final class ScriptProtos {
       "base.io.protoB\014ScriptProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_REQUEST_SCRIPT_MUTUAL_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_SCRIPT_MUTUAL_descriptor,
-              new java.lang.String[] { "Dir", "Op", });
-          internal_static_RESPONSE_SCRIPT_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_RESPONSE_SCRIPT_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_SCRIPT_descriptor,
-              new java.lang.String[] { "TalkType", "Message", "Infos", });
-          internal_static_RESPONSE_SCRIPT_ERROR_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_RESPONSE_SCRIPT_ERROR_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_SCRIPT_ERROR_descriptor,
-              new java.lang.String[] { "TalkType", "Message", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
+    internal_static_REQUEST_SCRIPT_MUTUAL_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_SCRIPT_MUTUAL_descriptor,
+        new java.lang.String[] { "Dir", "Op", });
+    internal_static_RESPONSE_SCRIPT_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_RESPONSE_SCRIPT_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_SCRIPT_descriptor,
+        new java.lang.String[] { "TalkType", "Message", "Infos", });
+    internal_static_RESPONSE_SCRIPT_ERROR_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_RESPONSE_SCRIPT_ERROR_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_SCRIPT_ERROR_descriptor,
+        new java.lang.String[] { "TalkType", "Message", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

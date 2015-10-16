@@ -8,10 +8,10 @@ public final class MailProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface RESPONSE_MAIL_SENDOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_MAIL_SENDOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_MAIL_SEND)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 type = 1;
     /**
      * <code>required int32 type = 1;</code>
      */
@@ -21,7 +21,6 @@ public final class MailProtos {
      */
     int getType();
 
-    // required int32 status = 2;
     /**
      * <code>required int32 status = 2;</code>
      */
@@ -31,7 +30,6 @@ public final class MailProtos {
      */
     int getStatus();
 
-    // required int32 sourceId = 3;
     /**
      * <code>required int32 sourceId = 3;</code>
      */
@@ -41,7 +39,6 @@ public final class MailProtos {
      */
     int getSourceId();
 
-    // required int32 destId = 4;
     /**
      * <code>required int32 destId = 4;</code>
      */
@@ -51,7 +48,6 @@ public final class MailProtos {
      */
     int getDestId();
 
-    // required int32 lastTime = 5;
     /**
      * <code>required int32 lastTime = 5;</code>
      */
@@ -61,7 +57,6 @@ public final class MailProtos {
      */
     int getLastTime();
 
-    // required string sourceName = 6;
     /**
      * <code>required string sourceName = 6;</code>
      */
@@ -76,7 +71,6 @@ public final class MailProtos {
     com.google.protobuf.ByteString
         getSourceNameBytes();
 
-    // required string title = 7;
     /**
      * <code>required string title = 7;</code>
      */
@@ -91,7 +85,6 @@ public final class MailProtos {
     com.google.protobuf.ByteString
         getTitleBytes();
 
-    // required string content = 8;
     /**
      * <code>required string content = 8;</code>
      */
@@ -106,7 +99,6 @@ public final class MailProtos {
     com.google.protobuf.ByteString
         getContentBytes();
 
-    // repeated .VO_ATTACHMENT attachments = 9;
     /**
      * <code>repeated .VO_ATTACHMENT attachments = 9;</code>
      */
@@ -131,7 +123,6 @@ public final class MailProtos {
     cg.base.io.proto.VOProtos.VO_ATTACHMENTOrBuilder getAttachmentsOrBuilder(
         int index);
 
-    // repeated .VO_PRICE prices = 10;
     /**
      * <code>repeated .VO_PRICE prices = 10;</code>
      */
@@ -160,8 +151,9 @@ public final class MailProtos {
    * Protobuf type {@code RESPONSE_MAIL_SEND}
    */
   public static final class RESPONSE_MAIL_SEND extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_MAIL_SENDOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_MAIL_SEND)
+      RESPONSE_MAIL_SENDOrBuilder {
     // Use RESPONSE_MAIL_SEND.newBuilder() to construct.
     private RESPONSE_MAIL_SEND(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -233,18 +225,21 @@ public final class MailProtos {
               break;
             }
             case 50: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000020;
-              sourceName_ = input.readBytes();
+              sourceName_ = bs;
               break;
             }
             case 58: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000040;
-              title_ = input.readBytes();
+              title_ = bs;
               break;
             }
             case 66: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000080;
-              content_ = input.readBytes();
+              content_ = bs;
               break;
             }
             case 74: {
@@ -309,7 +304,6 @@ public final class MailProtos {
     }
 
     private int bitField0_;
-    // required int32 type = 1;
     public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
     /**
@@ -325,7 +319,6 @@ public final class MailProtos {
       return type_;
     }
 
-    // required int32 status = 2;
     public static final int STATUS_FIELD_NUMBER = 2;
     private int status_;
     /**
@@ -341,7 +334,6 @@ public final class MailProtos {
       return status_;
     }
 
-    // required int32 sourceId = 3;
     public static final int SOURCEID_FIELD_NUMBER = 3;
     private int sourceId_;
     /**
@@ -357,7 +349,6 @@ public final class MailProtos {
       return sourceId_;
     }
 
-    // required int32 destId = 4;
     public static final int DESTID_FIELD_NUMBER = 4;
     private int destId_;
     /**
@@ -373,7 +364,6 @@ public final class MailProtos {
       return destId_;
     }
 
-    // required int32 lastTime = 5;
     public static final int LASTTIME_FIELD_NUMBER = 5;
     private int lastTime_;
     /**
@@ -389,7 +379,6 @@ public final class MailProtos {
       return lastTime_;
     }
 
-    // required string sourceName = 6;
     public static final int SOURCENAME_FIELD_NUMBER = 6;
     private java.lang.Object sourceName_;
     /**
@@ -432,7 +421,6 @@ public final class MailProtos {
       }
     }
 
-    // required string title = 7;
     public static final int TITLE_FIELD_NUMBER = 7;
     private java.lang.Object title_;
     /**
@@ -475,7 +463,6 @@ public final class MailProtos {
       }
     }
 
-    // required string content = 8;
     public static final int CONTENT_FIELD_NUMBER = 8;
     private java.lang.Object content_;
     /**
@@ -518,7 +505,6 @@ public final class MailProtos {
       }
     }
 
-    // repeated .VO_ATTACHMENT attachments = 9;
     public static final int ATTACHMENTS_FIELD_NUMBER = 9;
     private java.util.List<cg.base.io.proto.VOProtos.VO_ATTACHMENT> attachments_;
     /**
@@ -554,7 +540,6 @@ public final class MailProtos {
       return attachments_.get(index);
     }
 
-    // repeated .VO_PRICE prices = 10;
     public static final int PRICES_FIELD_NUMBER = 10;
     private java.util.List<cg.base.io.proto.VOProtos.VO_PRICE> prices_;
     /**
@@ -605,7 +590,8 @@ public final class MailProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasType()) {
         memoizedIsInitialized = 0;
@@ -819,8 +805,9 @@ public final class MailProtos {
      * Protobuf type {@code RESPONSE_MAIL_SEND}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.MailProtos.RESPONSE_MAIL_SENDOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_MAIL_SEND)
+        cg.base.io.proto.MailProtos.RESPONSE_MAIL_SENDOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.MailProtos.internal_static_RESPONSE_MAIL_SEND_descriptor;
@@ -1130,7 +1117,6 @@ public final class MailProtos {
       }
       private int bitField0_;
 
-      // required int32 type = 1;
       private int type_ ;
       /**
        * <code>required int32 type = 1;</code>
@@ -1163,7 +1149,6 @@ public final class MailProtos {
         return this;
       }
 
-      // required int32 status = 2;
       private int status_ ;
       /**
        * <code>required int32 status = 2;</code>
@@ -1196,7 +1181,6 @@ public final class MailProtos {
         return this;
       }
 
-      // required int32 sourceId = 3;
       private int sourceId_ ;
       /**
        * <code>required int32 sourceId = 3;</code>
@@ -1229,7 +1213,6 @@ public final class MailProtos {
         return this;
       }
 
-      // required int32 destId = 4;
       private int destId_ ;
       /**
        * <code>required int32 destId = 4;</code>
@@ -1262,7 +1245,6 @@ public final class MailProtos {
         return this;
       }
 
-      // required int32 lastTime = 5;
       private int lastTime_ ;
       /**
        * <code>required int32 lastTime = 5;</code>
@@ -1295,7 +1277,6 @@ public final class MailProtos {
         return this;
       }
 
-      // required string sourceName = 6;
       private java.lang.Object sourceName_ = "";
       /**
        * <code>required string sourceName = 6;</code>
@@ -1309,9 +1290,12 @@ public final class MailProtos {
       public java.lang.String getSourceName() {
         java.lang.Object ref = sourceName_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          sourceName_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            sourceName_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1369,7 +1353,6 @@ public final class MailProtos {
         return this;
       }
 
-      // required string title = 7;
       private java.lang.Object title_ = "";
       /**
        * <code>required string title = 7;</code>
@@ -1383,9 +1366,12 @@ public final class MailProtos {
       public java.lang.String getTitle() {
         java.lang.Object ref = title_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          title_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            title_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1443,7 +1429,6 @@ public final class MailProtos {
         return this;
       }
 
-      // required string content = 8;
       private java.lang.Object content_ = "";
       /**
        * <code>required string content = 8;</code>
@@ -1457,9 +1442,12 @@ public final class MailProtos {
       public java.lang.String getContent() {
         java.lang.Object ref = content_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          content_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            content_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1517,7 +1505,6 @@ public final class MailProtos {
         return this;
       }
 
-      // repeated .VO_ATTACHMENT attachments = 9;
       private java.util.List<cg.base.io.proto.VOProtos.VO_ATTACHMENT> attachments_ =
         java.util.Collections.emptyList();
       private void ensureAttachmentsIsMutable() {
@@ -1659,7 +1646,8 @@ public final class MailProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_ATTACHMENT> values) {
         if (attachmentsBuilder_ == null) {
           ensureAttachmentsIsMutable();
-          super.addAll(values, attachments_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, attachments_);
           onChanged();
         } else {
           attachmentsBuilder_.addAllMessages(values);
@@ -1757,7 +1745,6 @@ public final class MailProtos {
         return attachmentsBuilder_;
       }
 
-      // repeated .VO_PRICE prices = 10;
       private java.util.List<cg.base.io.proto.VOProtos.VO_PRICE> prices_ =
         java.util.Collections.emptyList();
       private void ensurePricesIsMutable() {
@@ -1899,7 +1886,8 @@ public final class MailProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_PRICE> values) {
         if (pricesBuilder_ == null) {
           ensurePricesIsMutable();
-          super.addAll(values, prices_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, prices_);
           onChanged();
         } else {
           pricesBuilder_.addAllMessages(values);
@@ -2008,7 +1996,7 @@ public final class MailProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_MAIL_SEND)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_MAIL_SEND_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -2031,24 +2019,25 @@ public final class MailProtos {
       "ICEB\036\n\020cg.base.io.protoB\nMailProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_RESPONSE_MAIL_SEND_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_RESPONSE_MAIL_SEND_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_MAIL_SEND_descriptor,
-              new java.lang.String[] { "Type", "Status", "SourceId", "DestId", "LastTime", "SourceName", "Title", "Content", "Attachments", "Prices", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
+    internal_static_RESPONSE_MAIL_SEND_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_RESPONSE_MAIL_SEND_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_MAIL_SEND_descriptor,
+        new java.lang.String[] { "Type", "Status", "SourceId", "DestId", "LastTime", "SourceName", "Title", "Content", "Attachments", "Prices", });
+    cg.base.io.proto.VOProtos.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

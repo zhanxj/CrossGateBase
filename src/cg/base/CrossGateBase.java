@@ -36,7 +36,8 @@ public class CrossGateBase {
 	protected static ImageManager imageManager;
 	
 	public static String getClientFilePath() {
-		return (clientFilePath.getHost() == null ? clientFilePath.getPath() : clientFilePath.toString());
+//		return (clientFilePath.getHost() == null ? clientFilePath.getPath() : clientFilePath.toString());
+		return clientFilePath.toString();
 	}
 
 	public static AnimationReader getAnimationReader() {

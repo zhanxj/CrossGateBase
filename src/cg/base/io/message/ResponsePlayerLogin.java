@@ -29,6 +29,24 @@ public class ResponsePlayerLogin extends ProtoMessage {
 
 	/**
 	 * 
+	 * @param	mapId
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setMapId(Integer mapId) {
+		builder.setMapId(mapId);
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public int getMapId() {
+		int ret = builder.getMapId();
+		return ret;
+	}
+
+	/**
+	 * 
 	 * @param	unitInfo
 	 * 			<u>do not has any annotate.</u>
 	 */

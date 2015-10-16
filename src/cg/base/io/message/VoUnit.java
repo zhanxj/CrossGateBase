@@ -55,7 +55,7 @@ public class VoUnit {
 	 */
 	public VoSkillSet getSkillSet() {
 		VoSkillSet ret = null;
-		VO_SKILL_SET vo = builder.getSkillSet();
+		VO_SKILL_SET vo = this.vo.getSkillSet();
 		ret = vo == null ? null : new VoSkillSet(vo);
 		return ret;
 	}
@@ -119,7 +119,7 @@ public class VoUnit {
 	 */
 	public VoPetSet getPetSet() {
 		VoPetSet ret = null;
-		VO_PET_SET vo = builder.getPetSet();
+		VO_PET_SET vo = this.vo.getPetSet();
 		ret = vo == null ? null : new VoPetSet(vo);
 		return ret;
 	}
@@ -183,7 +183,7 @@ public class VoUnit {
 	 */
 	public VoUnitExtendInfo getExtendInfo() {
 		VoUnitExtendInfo ret = null;
-		VO_UNIT_EXTEND_INFO vo = builder.getExtendInfo();
+		VO_UNIT_EXTEND_INFO vo = this.vo.getExtendInfo();
 		ret = vo == null ? null : new VoUnitExtendInfo(vo);
 		return ret;
 	}
@@ -203,7 +203,7 @@ public class VoUnit {
 	 */
 	public VoTitles getHeadTitle() {
 		VoTitles ret = null;
-		VO_TITLES vo = builder.getHeadTitle();
+		VO_TITLES vo = this.vo.getHeadTitle();
 		ret = vo == null ? null : new VoTitles(vo);
 		return ret;
 	}
@@ -346,7 +346,7 @@ public class VoUnit {
 	 */
 	public VoPosition getPosition() {
 		VoPosition ret = null;
-		VO_POSITION vo = builder.getPosition();
+		VO_POSITION vo = this.vo.getPosition();
 		ret = vo == null ? null : new VoPosition(vo);
 		return ret;
 	}

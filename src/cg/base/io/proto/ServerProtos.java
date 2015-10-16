@@ -8,10 +8,10 @@ public final class ServerProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface REQUEST_SERVER_REGISTEROrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_SERVER_REGISTEROrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_SERVER_REGISTER)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string name = 1;
     /**
      * <code>required string name = 1;</code>
      */
@@ -26,7 +26,6 @@ public final class ServerProtos {
     com.google.protobuf.ByteString
         getNameBytes();
 
-    // required int32 port = 2;
     /**
      * <code>required int32 port = 2;</code>
      */
@@ -40,8 +39,9 @@ public final class ServerProtos {
    * Protobuf type {@code REQUEST_SERVER_REGISTER}
    */
   public static final class REQUEST_SERVER_REGISTER extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_SERVER_REGISTEROrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_SERVER_REGISTER)
+      REQUEST_SERVER_REGISTEROrBuilder {
     // Use REQUEST_SERVER_REGISTER.newBuilder() to construct.
     private REQUEST_SERVER_REGISTER(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -88,8 +88,9 @@ public final class ServerProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              name_ = input.readBytes();
+              name_ = bs;
               break;
             }
             case 16: {
@@ -137,7 +138,6 @@ public final class ServerProtos {
     }
 
     private int bitField0_;
-    // required string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
     private java.lang.Object name_;
     /**
@@ -180,7 +180,6 @@ public final class ServerProtos {
       }
     }
 
-    // required int32 port = 2;
     public static final int PORT_FIELD_NUMBER = 2;
     private int port_;
     /**
@@ -203,7 +202,8 @@ public final class ServerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasName()) {
         memoizedIsInitialized = 0;
@@ -325,8 +325,9 @@ public final class ServerProtos {
      * Protobuf type {@code REQUEST_SERVER_REGISTER}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ServerProtos.REQUEST_SERVER_REGISTEROrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_SERVER_REGISTER)
+        cg.base.io.proto.ServerProtos.REQUEST_SERVER_REGISTEROrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.ServerProtos.internal_static_REQUEST_SERVER_REGISTER_descriptor;
@@ -458,7 +459,6 @@ public final class ServerProtos {
       }
       private int bitField0_;
 
-      // required string name = 1;
       private java.lang.Object name_ = "";
       /**
        * <code>required string name = 1;</code>
@@ -472,9 +472,12 @@ public final class ServerProtos {
       public java.lang.String getName() {
         java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          name_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -532,7 +535,6 @@ public final class ServerProtos {
         return this;
       }
 
-      // required int32 port = 2;
       private int port_ ;
       /**
        * <code>required int32 port = 2;</code>
@@ -576,10 +578,10 @@ public final class ServerProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_SERVER_REGISTER)
   }
 
-  public interface REQUEST_ACCOUNT_AUTHENTICATEOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_ACCOUNT_AUTHENTICATEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_ACCOUNT_AUTHENTICATE)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required string key = 1;
     /**
      * <code>required string key = 1;</code>
      */
@@ -594,7 +596,6 @@ public final class ServerProtos {
     com.google.protobuf.ByteString
         getKeyBytes();
 
-    // required string ip = 2;
     /**
      * <code>required string ip = 2;</code>
      */
@@ -609,7 +610,6 @@ public final class ServerProtos {
     com.google.protobuf.ByteString
         getIpBytes();
 
-    // required int32 accountId = 3;
     /**
      * <code>required int32 accountId = 3;</code>
      */
@@ -619,7 +619,6 @@ public final class ServerProtos {
      */
     int getAccountId();
 
-    // required string account = 4;
     /**
      * <code>required string account = 4;</code>
      */
@@ -634,7 +633,6 @@ public final class ServerProtos {
     com.google.protobuf.ByteString
         getAccountBytes();
 
-    // required int32 imoney = 5;
     /**
      * <code>required int32 imoney = 5;</code>
      */
@@ -648,8 +646,9 @@ public final class ServerProtos {
    * Protobuf type {@code REQUEST_ACCOUNT_AUTHENTICATE}
    */
   public static final class REQUEST_ACCOUNT_AUTHENTICATE extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_ACCOUNT_AUTHENTICATEOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_ACCOUNT_AUTHENTICATE)
+      REQUEST_ACCOUNT_AUTHENTICATEOrBuilder {
     // Use REQUEST_ACCOUNT_AUTHENTICATE.newBuilder() to construct.
     private REQUEST_ACCOUNT_AUTHENTICATE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -696,13 +695,15 @@ public final class ServerProtos {
               break;
             }
             case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              key_ = input.readBytes();
+              key_ = bs;
               break;
             }
             case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              ip_ = input.readBytes();
+              ip_ = bs;
               break;
             }
             case 24: {
@@ -711,8 +712,9 @@ public final class ServerProtos {
               break;
             }
             case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              account_ = input.readBytes();
+              account_ = bs;
               break;
             }
             case 40: {
@@ -760,7 +762,6 @@ public final class ServerProtos {
     }
 
     private int bitField0_;
-    // required string key = 1;
     public static final int KEY_FIELD_NUMBER = 1;
     private java.lang.Object key_;
     /**
@@ -803,7 +804,6 @@ public final class ServerProtos {
       }
     }
 
-    // required string ip = 2;
     public static final int IP_FIELD_NUMBER = 2;
     private java.lang.Object ip_;
     /**
@@ -846,7 +846,6 @@ public final class ServerProtos {
       }
     }
 
-    // required int32 accountId = 3;
     public static final int ACCOUNTID_FIELD_NUMBER = 3;
     private int accountId_;
     /**
@@ -862,7 +861,6 @@ public final class ServerProtos {
       return accountId_;
     }
 
-    // required string account = 4;
     public static final int ACCOUNT_FIELD_NUMBER = 4;
     private java.lang.Object account_;
     /**
@@ -905,7 +903,6 @@ public final class ServerProtos {
       }
     }
 
-    // required int32 imoney = 5;
     public static final int IMONEY_FIELD_NUMBER = 5;
     private int imoney_;
     /**
@@ -931,7 +928,8 @@ public final class ServerProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasKey()) {
         memoizedIsInitialized = 0;
@@ -1086,8 +1084,9 @@ public final class ServerProtos {
      * Protobuf type {@code REQUEST_ACCOUNT_AUTHENTICATE}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATEOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_ACCOUNT_AUTHENTICATE)
+        cg.base.io.proto.ServerProtos.REQUEST_ACCOUNT_AUTHENTICATEOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.ServerProtos.internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor;
@@ -1262,7 +1261,6 @@ public final class ServerProtos {
       }
       private int bitField0_;
 
-      // required string key = 1;
       private java.lang.Object key_ = "";
       /**
        * <code>required string key = 1;</code>
@@ -1276,9 +1274,12 @@ public final class ServerProtos {
       public java.lang.String getKey() {
         java.lang.Object ref = key_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          key_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            key_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1336,7 +1337,6 @@ public final class ServerProtos {
         return this;
       }
 
-      // required string ip = 2;
       private java.lang.Object ip_ = "";
       /**
        * <code>required string ip = 2;</code>
@@ -1350,9 +1350,12 @@ public final class ServerProtos {
       public java.lang.String getIp() {
         java.lang.Object ref = ip_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          ip_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            ip_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1410,7 +1413,6 @@ public final class ServerProtos {
         return this;
       }
 
-      // required int32 accountId = 3;
       private int accountId_ ;
       /**
        * <code>required int32 accountId = 3;</code>
@@ -1443,7 +1445,6 @@ public final class ServerProtos {
         return this;
       }
 
-      // required string account = 4;
       private java.lang.Object account_ = "";
       /**
        * <code>required string account = 4;</code>
@@ -1457,9 +1458,12 @@ public final class ServerProtos {
       public java.lang.String getAccount() {
         java.lang.Object ref = account_;
         if (!(ref instanceof java.lang.String)) {
-          java.lang.String s = ((com.google.protobuf.ByteString) ref)
-              .toStringUtf8();
-          account_ = s;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            account_ = s;
+          }
           return s;
         } else {
           return (java.lang.String) ref;
@@ -1517,7 +1521,6 @@ public final class ServerProtos {
         return this;
       }
 
-      // required int32 imoney = 5;
       private int imoney_ ;
       /**
        * <code>required int32 imoney = 5;</code>
@@ -1561,12 +1564,12 @@ public final class ServerProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_ACCOUNT_AUTHENTICATE)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_SERVER_REGISTER_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_SERVER_REGISTER_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -1588,29 +1591,29 @@ public final class ServerProtos {
       "ServerProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_REQUEST_SERVER_REGISTER_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_REQUEST_SERVER_REGISTER_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_SERVER_REGISTER_descriptor,
-              new java.lang.String[] { "Name", "Port", });
-          internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_REQUEST_ACCOUNT_AUTHENTICATE_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor,
-              new java.lang.String[] { "Key", "Ip", "AccountId", "Account", "Imoney", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
+    internal_static_REQUEST_SERVER_REGISTER_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_REQUEST_SERVER_REGISTER_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_SERVER_REGISTER_descriptor,
+        new java.lang.String[] { "Name", "Port", });
+    internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_REQUEST_ACCOUNT_AUTHENTICATE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_ACCOUNT_AUTHENTICATE_descriptor,
+        new java.lang.String[] { "Key", "Ip", "AccountId", "Account", "Imoney", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

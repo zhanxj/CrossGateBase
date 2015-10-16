@@ -8,10 +8,10 @@ public final class BattleProtos {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface VO_UNIT_BATTLE_INFOOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface VO_UNIT_BATTLE_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_UNIT_BATTLE_INFO)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required .VO_UNIT unitInfo = 1;
     /**
      * <code>required .VO_UNIT unitInfo = 1;</code>
      */
@@ -25,7 +25,6 @@ public final class BattleProtos {
      */
     cg.base.io.proto.VOProtos.VO_UNITOrBuilder getUnitInfoOrBuilder();
 
-    // required int32 hpMax = 2;
     /**
      * <code>required int32 hpMax = 2;</code>
      */
@@ -35,7 +34,6 @@ public final class BattleProtos {
      */
     int getHpMax();
 
-    // required int32 hp = 3;
     /**
      * <code>required int32 hp = 3;</code>
      */
@@ -45,7 +43,6 @@ public final class BattleProtos {
      */
     int getHp();
 
-    // required int32 mpMax = 4;
     /**
      * <code>required int32 mpMax = 4;</code>
      */
@@ -55,7 +52,6 @@ public final class BattleProtos {
      */
     int getMpMax();
 
-    // required int32 mp = 5;
     /**
      * <code>required int32 mp = 5;</code>
      */
@@ -65,7 +61,6 @@ public final class BattleProtos {
      */
     int getMp();
 
-    // required int32 local = 6;
     /**
      * <code>required int32 local = 6;</code>
      */
@@ -75,7 +70,6 @@ public final class BattleProtos {
      */
     int getLocal();
 
-    // required bool isChallenger = 7;
     /**
      * <code>required bool isChallenger = 7;</code>
      */
@@ -89,8 +83,9 @@ public final class BattleProtos {
    * Protobuf type {@code VO_UNIT_BATTLE_INFO}
    */
   public static final class VO_UNIT_BATTLE_INFO extends
-      com.google.protobuf.GeneratedMessage
-      implements VO_UNIT_BATTLE_INFOOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_UNIT_BATTLE_INFO)
+      VO_UNIT_BATTLE_INFOOrBuilder {
     // Use VO_UNIT_BATTLE_INFO.newBuilder() to construct.
     private VO_UNIT_BATTLE_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -219,7 +214,6 @@ public final class BattleProtos {
     }
 
     private int bitField0_;
-    // required .VO_UNIT unitInfo = 1;
     public static final int UNITINFO_FIELD_NUMBER = 1;
     private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_;
     /**
@@ -241,7 +235,6 @@ public final class BattleProtos {
       return unitInfo_;
     }
 
-    // required int32 hpMax = 2;
     public static final int HPMAX_FIELD_NUMBER = 2;
     private int hpMax_;
     /**
@@ -257,7 +250,6 @@ public final class BattleProtos {
       return hpMax_;
     }
 
-    // required int32 hp = 3;
     public static final int HP_FIELD_NUMBER = 3;
     private int hp_;
     /**
@@ -273,7 +265,6 @@ public final class BattleProtos {
       return hp_;
     }
 
-    // required int32 mpMax = 4;
     public static final int MPMAX_FIELD_NUMBER = 4;
     private int mpMax_;
     /**
@@ -289,7 +280,6 @@ public final class BattleProtos {
       return mpMax_;
     }
 
-    // required int32 mp = 5;
     public static final int MP_FIELD_NUMBER = 5;
     private int mp_;
     /**
@@ -305,7 +295,6 @@ public final class BattleProtos {
       return mp_;
     }
 
-    // required int32 local = 6;
     public static final int LOCAL_FIELD_NUMBER = 6;
     private int local_;
     /**
@@ -321,7 +310,6 @@ public final class BattleProtos {
       return local_;
     }
 
-    // required bool isChallenger = 7;
     public static final int ISCHALLENGER_FIELD_NUMBER = 7;
     private boolean isChallenger_;
     /**
@@ -349,7 +337,8 @@ public final class BattleProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasUnitInfo()) {
         memoizedIsInitialized = 0;
@@ -530,8 +519,9 @@ public final class BattleProtos {
      * Protobuf type {@code VO_UNIT_BATTLE_INFO}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_UNIT_BATTLE_INFO)
+        cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_VO_UNIT_BATTLE_INFO_descriptor;
@@ -739,7 +729,6 @@ public final class BattleProtos {
       }
       private int bitField0_;
 
-      // required .VO_UNIT unitInfo = 1;
       private cg.base.io.proto.VOProtos.VO_UNIT unitInfo_ = cg.base.io.proto.VOProtos.VO_UNIT.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder> unitInfoBuilder_;
@@ -848,7 +837,7 @@ public final class BattleProtos {
         if (unitInfoBuilder_ == null) {
           unitInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
               cg.base.io.proto.VOProtos.VO_UNIT, cg.base.io.proto.VOProtos.VO_UNIT.Builder, cg.base.io.proto.VOProtos.VO_UNITOrBuilder>(
-                  unitInfo_,
+                  getUnitInfo(),
                   getParentForChildren(),
                   isClean());
           unitInfo_ = null;
@@ -856,7 +845,6 @@ public final class BattleProtos {
         return unitInfoBuilder_;
       }
 
-      // required int32 hpMax = 2;
       private int hpMax_ ;
       /**
        * <code>required int32 hpMax = 2;</code>
@@ -889,7 +877,6 @@ public final class BattleProtos {
         return this;
       }
 
-      // required int32 hp = 3;
       private int hp_ ;
       /**
        * <code>required int32 hp = 3;</code>
@@ -922,7 +909,6 @@ public final class BattleProtos {
         return this;
       }
 
-      // required int32 mpMax = 4;
       private int mpMax_ ;
       /**
        * <code>required int32 mpMax = 4;</code>
@@ -955,7 +941,6 @@ public final class BattleProtos {
         return this;
       }
 
-      // required int32 mp = 5;
       private int mp_ ;
       /**
        * <code>required int32 mp = 5;</code>
@@ -988,7 +973,6 @@ public final class BattleProtos {
         return this;
       }
 
-      // required int32 local = 6;
       private int local_ ;
       /**
        * <code>required int32 local = 6;</code>
@@ -1021,7 +1005,6 @@ public final class BattleProtos {
         return this;
       }
 
-      // required bool isChallenger = 7;
       private boolean isChallenger_ ;
       /**
        * <code>required bool isChallenger = 7;</code>
@@ -1065,10 +1048,10 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:VO_UNIT_BATTLE_INFO)
   }
 
-  public interface RESPONSE_BATTLE_ENTEROrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_BATTLE_ENTEROrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_BATTLE_ENTER)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 battleId = 1;
     /**
      * <code>required int32 battleId = 1;</code>
      */
@@ -1078,7 +1061,6 @@ public final class BattleProtos {
      */
     int getBattleId();
 
-    // repeated .VO_UNIT_BATTLE_INFO teamA = 2;
     /**
      * <code>repeated .VO_UNIT_BATTLE_INFO teamA = 2;</code>
      */
@@ -1103,7 +1085,6 @@ public final class BattleProtos {
     cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFOOrBuilder getTeamAOrBuilder(
         int index);
 
-    // repeated .VO_UNIT_BATTLE_INFO teamB = 3;
     /**
      * <code>repeated .VO_UNIT_BATTLE_INFO teamB = 3;</code>
      */
@@ -1132,8 +1113,9 @@ public final class BattleProtos {
    * Protobuf type {@code RESPONSE_BATTLE_ENTER}
    */
   public static final class RESPONSE_BATTLE_ENTER extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_BATTLE_ENTEROrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_BATTLE_ENTER)
+      RESPONSE_BATTLE_ENTEROrBuilder {
     // Use RESPONSE_BATTLE_ENTER.newBuilder() to construct.
     private RESPONSE_BATTLE_ENTER(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -1246,7 +1228,6 @@ public final class BattleProtos {
     }
 
     private int bitField0_;
-    // required int32 battleId = 1;
     public static final int BATTLEID_FIELD_NUMBER = 1;
     private int battleId_;
     /**
@@ -1262,7 +1243,6 @@ public final class BattleProtos {
       return battleId_;
     }
 
-    // repeated .VO_UNIT_BATTLE_INFO teamA = 2;
     public static final int TEAMA_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamA_;
     /**
@@ -1298,7 +1278,6 @@ public final class BattleProtos {
       return teamA_.get(index);
     }
 
-    // repeated .VO_UNIT_BATTLE_INFO teamB = 3;
     public static final int TEAMB_FIELD_NUMBER = 3;
     private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamB_;
     /**
@@ -1342,7 +1321,8 @@ public final class BattleProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasBattleId()) {
         memoizedIsInitialized = 0;
@@ -1479,8 +1459,9 @@ public final class BattleProtos {
      * Protobuf type {@code RESPONSE_BATTLE_ENTER}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTEROrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_BATTLE_ENTER)
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ENTEROrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ENTER_descriptor;
@@ -1693,7 +1674,6 @@ public final class BattleProtos {
       }
       private int bitField0_;
 
-      // required int32 battleId = 1;
       private int battleId_ ;
       /**
        * <code>required int32 battleId = 1;</code>
@@ -1726,7 +1706,6 @@ public final class BattleProtos {
         return this;
       }
 
-      // repeated .VO_UNIT_BATTLE_INFO teamA = 2;
       private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamA_ =
         java.util.Collections.emptyList();
       private void ensureTeamAIsMutable() {
@@ -1868,7 +1847,8 @@ public final class BattleProtos {
           java.lang.Iterable<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> values) {
         if (teamABuilder_ == null) {
           ensureTeamAIsMutable();
-          super.addAll(values, teamA_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, teamA_);
           onChanged();
         } else {
           teamABuilder_.addAllMessages(values);
@@ -1966,7 +1946,6 @@ public final class BattleProtos {
         return teamABuilder_;
       }
 
-      // repeated .VO_UNIT_BATTLE_INFO teamB = 3;
       private java.util.List<cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> teamB_ =
         java.util.Collections.emptyList();
       private void ensureTeamBIsMutable() {
@@ -2108,7 +2087,8 @@ public final class BattleProtos {
           java.lang.Iterable<? extends cg.base.io.proto.BattleProtos.VO_UNIT_BATTLE_INFO> values) {
         if (teamBBuilder_ == null) {
           ensureTeamBIsMutable();
-          super.addAll(values, teamB_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, teamB_);
           onChanged();
         } else {
           teamBBuilder_.addAllMessages(values);
@@ -2217,10 +2197,10 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_ENTER)
   }
 
-  public interface REQUEST_BATTLE_ATTACKOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface REQUEST_BATTLE_ATTACKOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:REQUEST_BATTLE_ATTACK)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 targetId = 1;
     /**
      * <code>required int32 targetId = 1;</code>
      */
@@ -2234,8 +2214,9 @@ public final class BattleProtos {
    * Protobuf type {@code REQUEST_BATTLE_ATTACK}
    */
   public static final class REQUEST_BATTLE_ATTACK extends
-      com.google.protobuf.GeneratedMessage
-      implements REQUEST_BATTLE_ATTACKOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:REQUEST_BATTLE_ATTACK)
+      REQUEST_BATTLE_ATTACKOrBuilder {
     // Use REQUEST_BATTLE_ATTACK.newBuilder() to construct.
     private REQUEST_BATTLE_ATTACK(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2326,7 +2307,6 @@ public final class BattleProtos {
     }
 
     private int bitField0_;
-    // required int32 targetId = 1;
     public static final int TARGETID_FIELD_NUMBER = 1;
     private int targetId_;
     /**
@@ -2348,7 +2328,8 @@ public final class BattleProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasTargetId()) {
         memoizedIsInitialized = 0;
@@ -2459,8 +2440,9 @@ public final class BattleProtos {
      * Protobuf type {@code REQUEST_BATTLE_ATTACK}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACKOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:REQUEST_BATTLE_ATTACK)
+        cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACKOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_REQUEST_BATTLE_ATTACK_descriptor;
@@ -2577,7 +2559,6 @@ public final class BattleProtos {
       }
       private int bitField0_;
 
-      // required int32 targetId = 1;
       private int targetId_ ;
       /**
        * <code>required int32 targetId = 1;</code>
@@ -2621,10 +2602,10 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_BATTLE_ATTACK)
   }
 
-  public interface RESPONSE_BATTLE_ACTIONOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_BATTLE_ACTIONOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_BATTLE_ACTION)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 targetId = 1;
     /**
      * <code>required int32 targetId = 1;</code>
      */
@@ -2638,8 +2619,9 @@ public final class BattleProtos {
    * Protobuf type {@code RESPONSE_BATTLE_ACTION}
    */
   public static final class RESPONSE_BATTLE_ACTION extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_BATTLE_ACTIONOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_BATTLE_ACTION)
+      RESPONSE_BATTLE_ACTIONOrBuilder {
     // Use RESPONSE_BATTLE_ACTION.newBuilder() to construct.
     private RESPONSE_BATTLE_ACTION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -2730,7 +2712,6 @@ public final class BattleProtos {
     }
 
     private int bitField0_;
-    // required int32 targetId = 1;
     public static final int TARGETID_FIELD_NUMBER = 1;
     private int targetId_;
     /**
@@ -2752,7 +2733,8 @@ public final class BattleProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasTargetId()) {
         memoizedIsInitialized = 0;
@@ -2863,8 +2845,9 @@ public final class BattleProtos {
      * Protobuf type {@code RESPONSE_BATTLE_ACTION}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_BATTLE_ACTION)
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
@@ -2981,7 +2964,6 @@ public final class BattleProtos {
       }
       private int bitField0_;
 
-      // required int32 targetId = 1;
       private int targetId_ ;
       /**
        * <code>required int32 targetId = 1;</code>
@@ -3025,10 +3007,10 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_ACTION)
   }
 
-  public interface RESPONSE_BATTLE_FINISHOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_BATTLE_FINISHOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_BATTLE_FINISH)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required bool isWin = 1;
     /**
      * <code>required bool isWin = 1;</code>
      */
@@ -3038,7 +3020,6 @@ public final class BattleProtos {
      */
     boolean getIsWin();
 
-    // repeated .VO_GAINS gains = 2;
     /**
      * <code>repeated .VO_GAINS gains = 2;</code>
      */
@@ -3067,8 +3048,9 @@ public final class BattleProtos {
    * Protobuf type {@code RESPONSE_BATTLE_FINISH}
    */
   public static final class RESPONSE_BATTLE_FINISH extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_BATTLE_FINISHOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_BATTLE_FINISH)
+      RESPONSE_BATTLE_FINISHOrBuilder {
     // Use RESPONSE_BATTLE_FINISH.newBuilder() to construct.
     private RESPONSE_BATTLE_FINISH(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -3170,7 +3152,6 @@ public final class BattleProtos {
     }
 
     private int bitField0_;
-    // required bool isWin = 1;
     public static final int ISWIN_FIELD_NUMBER = 1;
     private boolean isWin_;
     /**
@@ -3186,7 +3167,6 @@ public final class BattleProtos {
       return isWin_;
     }
 
-    // repeated .VO_GAINS gains = 2;
     public static final int GAINS_FIELD_NUMBER = 2;
     private java.util.List<cg.base.io.proto.VOProtos.VO_GAINS> gains_;
     /**
@@ -3229,7 +3209,8 @@ public final class BattleProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasIsWin()) {
         memoizedIsInitialized = 0;
@@ -3353,8 +3334,9 @@ public final class BattleProtos {
      * Protobuf type {@code RESPONSE_BATTLE_FINISH}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISHOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_BATTLE_FINISH)
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_FINISHOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_FINISH_descriptor;
@@ -3519,7 +3501,6 @@ public final class BattleProtos {
       }
       private int bitField0_;
 
-      // required bool isWin = 1;
       private boolean isWin_ ;
       /**
        * <code>required bool isWin = 1;</code>
@@ -3552,7 +3533,6 @@ public final class BattleProtos {
         return this;
       }
 
-      // repeated .VO_GAINS gains = 2;
       private java.util.List<cg.base.io.proto.VOProtos.VO_GAINS> gains_ =
         java.util.Collections.emptyList();
       private void ensureGainsIsMutable() {
@@ -3694,7 +3674,8 @@ public final class BattleProtos {
           java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_GAINS> values) {
         if (gainsBuilder_ == null) {
           ensureGainsIsMutable();
-          super.addAll(values, gains_);
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, gains_);
           onChanged();
         } else {
           gainsBuilder_.addAllMessages(values);
@@ -3803,10 +3784,10 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_FINISH)
   }
 
-  public interface RESPONSE_BATTLE_WAIT_COMMANDOrBuilder
-      extends com.google.protobuf.MessageOrBuilder {
+  public interface RESPONSE_BATTLE_WAIT_COMMANDOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_BATTLE_WAIT_COMMAND)
+      com.google.protobuf.MessageOrBuilder {
 
-    // required int32 actionCount = 1;
     /**
      * <code>required int32 actionCount = 1;</code>
      */
@@ -3820,8 +3801,9 @@ public final class BattleProtos {
    * Protobuf type {@code RESPONSE_BATTLE_WAIT_COMMAND}
    */
   public static final class RESPONSE_BATTLE_WAIT_COMMAND extends
-      com.google.protobuf.GeneratedMessage
-      implements RESPONSE_BATTLE_WAIT_COMMANDOrBuilder {
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_BATTLE_WAIT_COMMAND)
+      RESPONSE_BATTLE_WAIT_COMMANDOrBuilder {
     // Use RESPONSE_BATTLE_WAIT_COMMAND.newBuilder() to construct.
     private RESPONSE_BATTLE_WAIT_COMMAND(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
@@ -3912,7 +3894,6 @@ public final class BattleProtos {
     }
 
     private int bitField0_;
-    // required int32 actionCount = 1;
     public static final int ACTIONCOUNT_FIELD_NUMBER = 1;
     private int actionCount_;
     /**
@@ -3934,7 +3915,8 @@ public final class BattleProtos {
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-      if (isInitialized != -1) return isInitialized == 1;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
       if (!hasActionCount()) {
         memoizedIsInitialized = 0;
@@ -4045,8 +4027,9 @@ public final class BattleProtos {
      * Protobuf type {@code RESPONSE_BATTLE_WAIT_COMMAND}
      */
     public static final class Builder extends
-        com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_WAIT_COMMANDOrBuilder {
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_BATTLE_WAIT_COMMAND)
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_WAIT_COMMANDOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor;
@@ -4163,7 +4146,6 @@ public final class BattleProtos {
       }
       private int bitField0_;
 
-      // required int32 actionCount = 1;
       private int actionCount_ ;
       /**
        * <code>required int32 actionCount = 1;</code>
@@ -4207,32 +4189,32 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_WAIT_COMMAND)
   }
 
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_UNIT_BATTLE_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_BATTLE_ENTER_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_BATTLE_ATTACK_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_BATTLE_ACTION_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_BATTLE_FINISH_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable;
-  private static com.google.protobuf.Descriptors.Descriptor
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -4262,54 +4244,55 @@ public final class BattleProtos {
       "rotos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-      new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-        public com.google.protobuf.ExtensionRegistry assignDescriptors(
-            com.google.protobuf.Descriptors.FileDescriptor root) {
-          descriptor = root;
-          internal_static_VO_UNIT_BATTLE_INFO_descriptor =
-            getDescriptor().getMessageTypes().get(0);
-          internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_VO_UNIT_BATTLE_INFO_descriptor,
-              new java.lang.String[] { "UnitInfo", "HpMax", "Hp", "MpMax", "Mp", "Local", "IsChallenger", });
-          internal_static_RESPONSE_BATTLE_ENTER_descriptor =
-            getDescriptor().getMessageTypes().get(1);
-          internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_BATTLE_ENTER_descriptor,
-              new java.lang.String[] { "BattleId", "TeamA", "TeamB", });
-          internal_static_REQUEST_BATTLE_ATTACK_descriptor =
-            getDescriptor().getMessageTypes().get(2);
-          internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_REQUEST_BATTLE_ATTACK_descriptor,
-              new java.lang.String[] { "TargetId", });
-          internal_static_RESPONSE_BATTLE_ACTION_descriptor =
-            getDescriptor().getMessageTypes().get(3);
-          internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_BATTLE_ACTION_descriptor,
-              new java.lang.String[] { "TargetId", });
-          internal_static_RESPONSE_BATTLE_FINISH_descriptor =
-            getDescriptor().getMessageTypes().get(4);
-          internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_BATTLE_FINISH_descriptor,
-              new java.lang.String[] { "IsWin", "Gains", });
-          internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor =
-            getDescriptor().getMessageTypes().get(5);
-          internal_static_RESPONSE_BATTLE_WAIT_COMMAND_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor,
-              new java.lang.String[] { "ActionCount", });
-          return null;
-        }
-      };
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
+        };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           cg.base.io.proto.VOProtos.getDescriptor(),
         }, assigner);
+    internal_static_VO_UNIT_BATTLE_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_VO_UNIT_BATTLE_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_UNIT_BATTLE_INFO_descriptor,
+        new java.lang.String[] { "UnitInfo", "HpMax", "Hp", "MpMax", "Mp", "Local", "IsChallenger", });
+    internal_static_RESPONSE_BATTLE_ENTER_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_RESPONSE_BATTLE_ENTER_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_BATTLE_ENTER_descriptor,
+        new java.lang.String[] { "BattleId", "TeamA", "TeamB", });
+    internal_static_REQUEST_BATTLE_ATTACK_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_REQUEST_BATTLE_ATTACK_descriptor,
+        new java.lang.String[] { "TargetId", });
+    internal_static_RESPONSE_BATTLE_ACTION_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_BATTLE_ACTION_descriptor,
+        new java.lang.String[] { "TargetId", });
+    internal_static_RESPONSE_BATTLE_FINISH_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_BATTLE_FINISH_descriptor,
+        new java.lang.String[] { "IsWin", "Gains", });
+    internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_RESPONSE_BATTLE_WAIT_COMMAND_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor,
+        new java.lang.String[] { "ActionCount", });
+    cg.base.io.proto.VOProtos.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
