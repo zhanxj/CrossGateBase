@@ -150,6 +150,10 @@ public class MathUtil {
 		return getRandom(min, max + 1);
 	}
 	
+	public static <T> T getRandomIn(T[] array) {
+		return array[getRandom(array.length)];
+	}
+	
 	public static int stringToInt(String s) {
 		return stringToInt(s, 0);
 	}

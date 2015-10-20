@@ -3,47 +3,47 @@ package cg.base.skill;
 public interface SkillLevelInfo {
 	
 	/**
-	 * 0Î»£ºÊÇ·ñÐèÒªÑ¡Ôñ»î×ÅµÄÄ¿±ê
+	 * 0Î»ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ÒªÑ¡ï¿½ï¿½ï¿½ï¿½Åµï¿½Ä¿ï¿½ï¿½
 	 */
 	byte TARGET_SELECT_ALIVE = 0;
 	/**
-	 * 1Î»£ºÊÇ·ñÐèÒªÑ¡ÔñËÀÍöµÄÄ¿±ê
+	 * 1Î»ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ÒªÑ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½
 	 */
 	byte TARGET_SELECT_DIE = 1;
 	/**
-	 * 2Î»£ºÊÇ·ñ¿ÉÒÔÑ¡ÔñÓÑºÃµ¥Î»
+	 * 2Î»ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ÑºÃµï¿½Î»
 	 */
 	byte TARGET_SELECT_FRIEND = 2;
 	/**
-	 * 3Î»£ºÊÇ·ñ¿ÉÒÔÑ¡Ôñ×Ô¼º
+	 * 3Î»ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ô¼ï¿½
 	 */
 	byte TARGET_SELECT_ME = 3;
 	/**
-	 * 4Î»£ºÊÇ·ñ¿ÉÒÔÑ¡Ôñ×Ô¼ºÐ¡¶Ó
+	 * 4Î»ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ô¼ï¿½Ð¡ï¿½ï¿½
 	 */
 	byte TARGET_FRIEND = 4;
 	/**
-	 * 5Î»£ºÊÇ·ñ¿ÉÒÔÑ¡ÔñµÐÈË
+	 * 5Î»ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	byte TARGET_ENEMY = 5;
 	/**
-	 * 6Î»£ºÓ°ÏìÒ»¸öµ¥Î»
+	 * 6Î»ï¿½ï¿½Ó°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Î»
 	 */
 	byte TARGET_SINGLE = 6;
 	/**
-	 * 7Î»£ºÓ°ÏìËÄ¸öµ¥Î»
+	 * 7Î»ï¿½ï¿½Ó°ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½Î»
 	 */
 	byte TARGET_FOUR = 7;
 	/**
-	 * 8Î»£ºÓ°ÏìÊ®¸öµ¥Î»
+	 * 8Î»ï¿½ï¿½Ó°ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½Î»
 	 */
 	byte TARGET_TEAM = 8;
 	/**
-	 * 9Î»£ºÓ°ÏìÈ«²¿µ¥Î»
+	 * 9Î»ï¿½ï¿½Ó°ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½Î»
 	 */
 	byte TARGET_ALL = 9;
 	/**
-	 * 10Î»£º´ÓËùÓÐµ¥Î»ÖÐÑ¡Ôñ
+	 * 10Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Î»ï¿½ï¿½Ñ¡ï¿½ï¿½
 	 */
 	byte TARGET_ALL_IN = 10;
 	
@@ -64,6 +64,8 @@ public interface SkillLevelInfo {
 	String TECH_Ineffective_Physics = "TECH_Ineffective_Physics";
 	
 	String TECH_Ineffective_Magic = "TECH_Ineffective_Magic";
+	
+	String TECH_PanicAttack = "TECH_PanicAttack";
 	
 	String TECH_SpiracleShot = "TECH_SpiracleShot";
 	

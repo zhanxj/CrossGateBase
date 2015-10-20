@@ -14,10 +14,13 @@ public class EffectValue {
 	
 	private final boolean isCritical;
 	
-	public EffectValue(int value, byte effectType, boolean isCritical) {
+	private final String message;
+	
+	public EffectValue(int value, byte effectType, boolean isCritical, String message) {
 		this.value = value;
 		this.effectType = effectType;
 		this.isCritical = isCritical;
+		this.message = message;
 	}
 
 	public int getValue() {
@@ -30,6 +33,10 @@ public class EffectValue {
 
 	public boolean isCritical() {
 		return isCritical;
+	}
+
+	public String getMessage() {
+		return message;
 	}
 
 }

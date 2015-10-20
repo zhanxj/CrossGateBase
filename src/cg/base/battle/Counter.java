@@ -2,7 +2,9 @@ package cg.base.battle;
 
 public interface Counter {
 	
-	short getSkillId();
+	String getTech();
+	
+	ActionResult getActionResult();
 	
 	Counter getCounter();
 
