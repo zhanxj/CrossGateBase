@@ -14,6 +14,8 @@ public interface BattleActionInfo {
 	
 	byte TYPE_ESCAPE = 6;
 	
+	byte TYPE_LOCAL = 7;
+	
 	byte getType();
 	
 	byte getSkillType();

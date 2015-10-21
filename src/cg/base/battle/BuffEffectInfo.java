@@ -1,36 +1,47 @@
 package cg.base.battle;
 
+import java.util.List;
+
+import com.google.common.collect.Lists;
+
 public class BuffEffectInfo {
 	
-	private final int animation;
+	private final String tech;
 	
-	private final int headAnimation;
+	private final int id;
 	
-	private final EffectValue effectValue;
+	private List<EffectValue> effectValues;
 	
-	private final boolean finish;
+	private boolean finish;
 	
-	public BuffEffectInfo(int animation, int headAnimation, EffectValue effectValue, boolean finish) {
-		this.animation = animation;
-		this.headAnimation = headAnimation;
-		this.effectValue = effectValue;
-		this.finish = finish;
+	public BuffEffectInfo(String tech, int id) {
+		this.tech = tech;
+		this.id = id;
+		effectValues = Lists.newLinkedList();
 	}
 
-	public int getAnimation() {
-		return animation;
+	public String getTech() {
+		return tech;
 	}
 
-	public EffectValue getEffectValue() {
-		return effectValue;
+	public int getId() {
+		return id;
+	}
+
+	public List<EffectValue> getEffectValues() {
+		return effectValues;
+	}
+
+	public void addEffectValue(EffectValue effectValue) {
+		effectValues.add(effectValue);
 	}
 
 	public boolean isFinish() {
 		return finish;
 	}
 
-	public int getHeadAnimation() {
-		return headAnimation;
+	public void setFinish(boolean finish) {
+		this.finish = finish;
 	}
 
 }

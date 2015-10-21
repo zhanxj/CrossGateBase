@@ -8,6 +8,8 @@ public interface ActionProcess {
 	
 	ActionResult getActionResult();
 	
+	ActionResult getBlood();
+	
 	Counter getCounter();
 	
 	ActionProcess getActionProcess();

@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface Record {
 	
-	List<Operation> getOperations();
+	List<BattleActionInfo> getBattleActionInfos();
 	
 	int getBattleId();
 

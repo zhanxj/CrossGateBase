@@ -2,7 +2,7 @@ package cg.base.battle;
 
 public interface Guard {
 	
-	short getSkillId();
+	String getTech();
 	
 	int getSpriteId();
 

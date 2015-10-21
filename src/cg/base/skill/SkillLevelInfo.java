@@ -135,6 +135,8 @@ public interface SkillLevelInfo {
 	
 	String TECH_MagicGuard = "TECH_MagicGuard";
 	
+	String TECH_Sacrifice = "TECH_Sacrifice";
+	
 	String getName();
 	
 	String getDescription();
