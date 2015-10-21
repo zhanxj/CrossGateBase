@@ -2202,13 +2202,13 @@ public final class BattleProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 tarId = 1;</code>
+     * <code>required int32 targetId = 1;</code>
      */
-    boolean hasTarId();
+    boolean hasTargetId();
     /**
-     * <code>required int32 tarId = 1;</code>
+     * <code>required int32 targetId = 1;</code>
      */
-    int getTarId();
+    int getTargetId();
   }
   /**
    * Protobuf type {@code REQUEST_BATTLE_ATTACK}
@@ -2264,7 +2264,7 @@ public final class BattleProtos {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              tarId_ = input.readInt32();
+              targetId_ = input.readInt32();
               break;
             }
           }
@@ -2307,23 +2307,23 @@ public final class BattleProtos {
     }
 
     private int bitField0_;
-    public static final int TARID_FIELD_NUMBER = 1;
-    private int tarId_;
+    public static final int TARGETID_FIELD_NUMBER = 1;
+    private int targetId_;
     /**
-     * <code>required int32 tarId = 1;</code>
+     * <code>required int32 targetId = 1;</code>
      */
-    public boolean hasTarId() {
+    public boolean hasTargetId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 tarId = 1;</code>
+     * <code>required int32 targetId = 1;</code>
      */
-    public int getTarId() {
-      return tarId_;
+    public int getTargetId() {
+      return targetId_;
     }
 
     private void initFields() {
-      tarId_ = 0;
+      targetId_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2331,7 +2331,7 @@ public final class BattleProtos {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasTarId()) {
+      if (!hasTargetId()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -2343,7 +2343,7 @@ public final class BattleProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, tarId_);
+        output.writeInt32(1, targetId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2356,7 +2356,7 @@ public final class BattleProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, tarId_);
+          .computeInt32Size(1, targetId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2475,7 +2475,7 @@ public final class BattleProtos {
 
       public Builder clear() {
         super.clear();
-        tarId_ = 0;
+        targetId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -2508,7 +2508,7 @@ public final class BattleProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.tarId_ = tarId_;
+        result.targetId_ = targetId_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2525,15 +2525,15 @@ public final class BattleProtos {
 
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK other) {
         if (other == cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.getDefaultInstance()) return this;
-        if (other.hasTarId()) {
-          setTarId(other.getTarId());
+        if (other.hasTargetId()) {
+          setTargetId(other.getTargetId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasTarId()) {
+        if (!hasTargetId()) {
           
           return false;
         }
@@ -2559,34 +2559,34 @@ public final class BattleProtos {
       }
       private int bitField0_;
 
-      private int tarId_ ;
+      private int targetId_ ;
       /**
-       * <code>required int32 tarId = 1;</code>
+       * <code>required int32 targetId = 1;</code>
        */
-      public boolean hasTarId() {
+      public boolean hasTargetId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 tarId = 1;</code>
+       * <code>required int32 targetId = 1;</code>
        */
-      public int getTarId() {
-        return tarId_;
+      public int getTargetId() {
+        return targetId_;
       }
       /**
-       * <code>required int32 tarId = 1;</code>
+       * <code>required int32 targetId = 1;</code>
        */
-      public Builder setTarId(int value) {
+      public Builder setTargetId(int value) {
         bitField0_ |= 0x00000001;
-        tarId_ = value;
+        targetId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 tarId = 1;</code>
+       * <code>required int32 targetId = 1;</code>
        */
-      public Builder clearTarId() {
+      public Builder clearTargetId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        tarId_ = 0;
+        targetId_ = 0;
         onChanged();
         return this;
       }
@@ -6654,20 +6654,20 @@ public final class BattleProtos {
       "r\030\007 \002(\010\"s\n\025RESPONSE_BATTLE_ENTER\022\020\n\010batt" +
       "leId\030\001 \002(\005\022#\n\005teamA\030\002 \003(\0132\024.VO_UNIT_BATT" +
       "LE_INFO\022#\n\005teamB\030\003 \003(\0132\024.VO_UNIT_BATTLE_" +
-      "INFO\"&\n\025REQUEST_BATTLE_ATTACK\022\r\n\005tarId\030\001" +
-      " \002(\005\"l\n\021VO_BuffEffectInfo\022\014\n\004tech\030\001 \002(\t\022" +
-      "\n\n\002id\030\002 \002(\005\022&\n\014effectValues\030\003 \003(\0132\020.VO_E",
-      "FFECT_VALUE\022\025\n\006finish\030\004 \001(\010:\005false\"\345\001\n\026R" +
-      "ESPONSE_BATTLE_ACTION\022\014\n\004type\030\001 \002(\005\022\021\n\ts" +
-      "killType\030\002 \001(\005\022\022\n\nskillLevel\030\003 \001(\005\022\017\n\007sk" +
-      "illId\030\004 \001(\005\022\020\n\010sourceId\030\005 \002(\005\022\014\n\004tech\030\006 " +
-      "\002(\t\022\017\n\007message\030\007 \002(\t\022\'\n\013buffEffects\030\010 \003(" +
-      "\0132\022.VO_BuffEffectInfo\022+\n\017actionProcesses" +
-      "\030\t \003(\0132\022.VO_ACTION_PROCESS\"A\n\026RESPONSE_B" +
-      "ATTLE_FINISH\022\r\n\005isWin\030\001 \002(\010\022\030\n\005gains\030\002 \003" +
-      "(\0132\t.VO_GAINS\"3\n\034RESPONSE_BATTLE_WAIT_CO" +
-      "MMAND\022\023\n\013actionCount\030\001 \002(\005B \n\020cg.base.io",
-      ".protoB\014BattleProtos"
+      "INFO\")\n\025REQUEST_BATTLE_ATTACK\022\020\n\010targetI" +
+      "d\030\001 \002(\005\"l\n\021VO_BuffEffectInfo\022\014\n\004tech\030\001 \002" +
+      "(\t\022\n\n\002id\030\002 \002(\005\022&\n\014effectValues\030\003 \003(\0132\020.V",
+      "O_EFFECT_VALUE\022\025\n\006finish\030\004 \001(\010:\005false\"\345\001" +
+      "\n\026RESPONSE_BATTLE_ACTION\022\014\n\004type\030\001 \002(\005\022\021" +
+      "\n\tskillType\030\002 \001(\005\022\022\n\nskillLevel\030\003 \001(\005\022\017\n" +
+      "\007skillId\030\004 \001(\005\022\020\n\010sourceId\030\005 \002(\005\022\014\n\004tech" +
+      "\030\006 \002(\t\022\017\n\007message\030\007 \002(\t\022\'\n\013buffEffects\030\010" +
+      " \003(\0132\022.VO_BuffEffectInfo\022+\n\017actionProces" +
+      "ses\030\t \003(\0132\022.VO_ACTION_PROCESS\"A\n\026RESPONS" +
+      "E_BATTLE_FINISH\022\r\n\005isWin\030\001 \002(\010\022\030\n\005gains\030" +
+      "\002 \003(\0132\t.VO_GAINS\"3\n\034RESPONSE_BATTLE_WAIT" +
+      "_COMMAND\022\023\n\013actionCount\030\001 \002(\005B \n\020cg.base",
+      ".io.protoB\014BattleProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -6699,7 +6699,7 @@ public final class BattleProtos {
     internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_REQUEST_BATTLE_ATTACK_descriptor,
-        new java.lang.String[] { "TarId", });
+        new java.lang.String[] { "TargetId", });
     internal_static_VO_BuffEffectInfo_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_VO_BuffEffectInfo_fieldAccessorTable = new

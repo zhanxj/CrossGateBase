@@ -29,19 +29,19 @@ public class RequestBattleAttack extends ProtoMessage {
 
 	/**
 	 * 
-	 * @param	tarId
+	 * @param	targetId
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setTarId(Integer tarId) {
-		builder.setTarId(tarId);
+	public void setTargetId(Integer targetId) {
+		builder.setTargetId(targetId);
 	}
 
 	/**
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public int getTarId() {
-		int ret = builder.getTarId();
+	public int getTargetId() {
+		int ret = builder.getTargetId();
 		return ret;
 	}
 
