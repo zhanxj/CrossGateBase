@@ -3622,8 +3622,8 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:VO_BuffEffectInfo)
   }
 
-  public interface RESPONSE_BATTLE_ACTIONOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:RESPONSE_BATTLE_ACTION)
+  public interface VO_BATTLE_ACTIONOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_BATTLE_ACTION)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3748,25 +3748,25 @@ public final class BattleProtos {
         int index);
   }
   /**
-   * Protobuf type {@code RESPONSE_BATTLE_ACTION}
+   * Protobuf type {@code VO_BATTLE_ACTION}
    */
-  public static final class RESPONSE_BATTLE_ACTION extends
+  public static final class VO_BATTLE_ACTION extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:RESPONSE_BATTLE_ACTION)
-      RESPONSE_BATTLE_ACTIONOrBuilder {
-    // Use RESPONSE_BATTLE_ACTION.newBuilder() to construct.
-    private RESPONSE_BATTLE_ACTION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:VO_BATTLE_ACTION)
+      VO_BATTLE_ACTIONOrBuilder {
+    // Use VO_BATTLE_ACTION.newBuilder() to construct.
+    private VO_BATTLE_ACTION(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private RESPONSE_BATTLE_ACTION(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private VO_BATTLE_ACTION(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final RESPONSE_BATTLE_ACTION defaultInstance;
-    public static RESPONSE_BATTLE_ACTION getDefaultInstance() {
+    private static final VO_BATTLE_ACTION defaultInstance;
+    public static VO_BATTLE_ACTION getDefaultInstance() {
       return defaultInstance;
     }
 
-    public RESPONSE_BATTLE_ACTION getDefaultInstanceForType() {
+    public VO_BATTLE_ACTION getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -3776,7 +3776,7 @@ public final class BattleProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private RESPONSE_BATTLE_ACTION(
+    private VO_BATTLE_ACTION(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3872,28 +3872,28 @@ public final class BattleProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
+      return cg.base.io.proto.BattleProtos.internal_static_VO_BATTLE_ACTION_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable
+      return cg.base.io.proto.BattleProtos.internal_static_VO_BATTLE_ACTION_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.Builder.class);
+              cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<RESPONSE_BATTLE_ACTION> PARSER =
-        new com.google.protobuf.AbstractParser<RESPONSE_BATTLE_ACTION>() {
-      public RESPONSE_BATTLE_ACTION parsePartialFrom(
+    public static com.google.protobuf.Parser<VO_BATTLE_ACTION> PARSER =
+        new com.google.protobuf.AbstractParser<VO_BATTLE_ACTION>() {
+      public VO_BATTLE_ACTION parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new RESPONSE_BATTLE_ACTION(input, extensionRegistry);
+        return new VO_BATTLE_ACTION(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<RESPONSE_BATTLE_ACTION> getParserForType() {
+    public com.google.protobuf.Parser<VO_BATTLE_ACTION> getParserForType() {
       return PARSER;
     }
 
@@ -4263,53 +4263,53 @@ public final class BattleProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(byte[] data)
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseDelimitedFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4318,7 +4318,7 @@ public final class BattleProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION prototype) {
+    public static Builder newBuilder(cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -4330,25 +4330,25 @@ public final class BattleProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code RESPONSE_BATTLE_ACTION}
+     * Protobuf type {@code VO_BATTLE_ACTION}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:RESPONSE_BATTLE_ACTION)
-        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONOrBuilder {
+        // @@protoc_insertion_point(builder_implements:VO_BATTLE_ACTION)
+        cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_VO_BATTLE_ACTION_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable
+        return cg.base.io.proto.BattleProtos.internal_static_VO_BATTLE_ACTION_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.Builder.class);
+                cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.class, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.newBuilder()
+      // Construct using cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4405,23 +4405,23 @@ public final class BattleProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTION_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_VO_BATTLE_ACTION_descriptor;
       }
 
-      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION getDefaultInstanceForType() {
-        return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.getDefaultInstance();
+      public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION getDefaultInstanceForType() {
+        return cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.getDefaultInstance();
       }
 
-      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION build() {
-        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION result = buildPartial();
+      public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION build() {
+        cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION buildPartial() {
-        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION result = new cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION(this);
+      public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION buildPartial() {
+        cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION result = new cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -4476,16 +4476,16 @@ public final class BattleProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION) {
-          return mergeFrom((cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION)other);
+        if (other instanceof cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION) {
+          return mergeFrom((cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION other) {
-        if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION other) {
+        if (other == cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.getDefaultInstance()) return this;
         if (other.hasType()) {
           setType(other.getType());
         }
@@ -4603,11 +4603,11 @@ public final class BattleProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION parsedMessage = null;
+        cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -5410,15 +5410,703 @@ public final class BattleProtos {
         return actionProcessesBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_ACTION)
+      // @@protoc_insertion_point(builder_scope:VO_BATTLE_ACTION)
     }
 
     static {
-      defaultInstance = new RESPONSE_BATTLE_ACTION(true);
+      defaultInstance = new VO_BATTLE_ACTION(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_ACTION)
+    // @@protoc_insertion_point(class_scope:VO_BATTLE_ACTION)
+  }
+
+  public interface RESPONSE_BATTLE_ACTIONSOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_BATTLE_ACTIONS)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    java.util.List<cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION> 
+        getActionsList();
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION getActions(int index);
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    int getActionsCount();
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder> 
+        getActionsOrBuilderList();
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder getActionsOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code RESPONSE_BATTLE_ACTIONS}
+   */
+  public static final class RESPONSE_BATTLE_ACTIONS extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_BATTLE_ACTIONS)
+      RESPONSE_BATTLE_ACTIONSOrBuilder {
+    // Use RESPONSE_BATTLE_ACTIONS.newBuilder() to construct.
+    private RESPONSE_BATTLE_ACTIONS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private RESPONSE_BATTLE_ACTIONS(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final RESPONSE_BATTLE_ACTIONS defaultInstance;
+    public static RESPONSE_BATTLE_ACTIONS getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public RESPONSE_BATTLE_ACTIONS getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_BATTLE_ACTIONS(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                actions_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              actions_.add(input.readMessage(cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          actions_ = java.util.Collections.unmodifiableList(actions_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTIONS_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTIONS_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<RESPONSE_BATTLE_ACTIONS> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_BATTLE_ACTIONS>() {
+      public RESPONSE_BATTLE_ACTIONS parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_BATTLE_ACTIONS(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_BATTLE_ACTIONS> getParserForType() {
+      return PARSER;
+    }
+
+    public static final int ACTIONS_FIELD_NUMBER = 1;
+    private java.util.List<cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION> actions_;
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    public java.util.List<cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION> getActionsList() {
+      return actions_;
+    }
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder> 
+        getActionsOrBuilderList() {
+      return actions_;
+    }
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    public int getActionsCount() {
+      return actions_.size();
+    }
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION getActions(int index) {
+      return actions_.get(index);
+    }
+    /**
+     * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+     */
+    public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder getActionsOrBuilder(
+        int index) {
+      return actions_.get(index);
+    }
+
+    private void initFields() {
+      actions_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      for (int i = 0; i < getActionsCount(); i++) {
+        if (!getActions(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < actions_.size(); i++) {
+        output.writeMessage(1, actions_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < actions_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, actions_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code RESPONSE_BATTLE_ACTIONS}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_BATTLE_ACTIONS)
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONSOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTIONS_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTIONS_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS.class, cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getActionsFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (actionsBuilder_ == null) {
+          actions_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          actionsBuilder_.clear();
+        }
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.BattleProtos.internal_static_RESPONSE_BATTLE_ACTIONS_descriptor;
+      }
+
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS getDefaultInstanceForType() {
+        return cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS build() {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS buildPartial() {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS result = new cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS(this);
+        int from_bitField0_ = bitField0_;
+        if (actionsBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            actions_ = java.util.Collections.unmodifiableList(actions_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.actions_ = actions_;
+        } else {
+          result.actions_ = actionsBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS) {
+          return mergeFrom((cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS other) {
+        if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS.getDefaultInstance()) return this;
+        if (actionsBuilder_ == null) {
+          if (!other.actions_.isEmpty()) {
+            if (actions_.isEmpty()) {
+              actions_ = other.actions_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureActionsIsMutable();
+              actions_.addAll(other.actions_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.actions_.isEmpty()) {
+            if (actionsBuilder_.isEmpty()) {
+              actionsBuilder_.dispose();
+              actionsBuilder_ = null;
+              actions_ = other.actions_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              actionsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getActionsFieldBuilder() : null;
+            } else {
+              actionsBuilder_.addAllMessages(other.actions_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        for (int i = 0; i < getActionsCount(); i++) {
+          if (!getActions(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTIONS) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION> actions_ =
+        java.util.Collections.emptyList();
+      private void ensureActionsIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          actions_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION>(actions_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder> actionsBuilder_;
+
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public java.util.List<cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION> getActionsList() {
+        if (actionsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(actions_);
+        } else {
+          return actionsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public int getActionsCount() {
+        if (actionsBuilder_ == null) {
+          return actions_.size();
+        } else {
+          return actionsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION getActions(int index) {
+        if (actionsBuilder_ == null) {
+          return actions_.get(index);
+        } else {
+          return actionsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public Builder setActions(
+          int index, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION value) {
+        if (actionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActionsIsMutable();
+          actions_.set(index, value);
+          onChanged();
+        } else {
+          actionsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public Builder setActions(
+          int index, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder builderForValue) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          actions_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          actionsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public Builder addActions(cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION value) {
+        if (actionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActionsIsMutable();
+          actions_.add(value);
+          onChanged();
+        } else {
+          actionsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public Builder addActions(
+          int index, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION value) {
+        if (actionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActionsIsMutable();
+          actions_.add(index, value);
+          onChanged();
+        } else {
+          actionsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public Builder addActions(
+          cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder builderForValue) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          actions_.add(builderForValue.build());
+          onChanged();
+        } else {
+          actionsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public Builder addActions(
+          int index, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder builderForValue) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          actions_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          actionsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public Builder addAllActions(
+          java.lang.Iterable<? extends cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION> values) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, actions_);
+          onChanged();
+        } else {
+          actionsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public Builder clearActions() {
+        if (actionsBuilder_ == null) {
+          actions_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          actionsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public Builder removeActions(int index) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          actions_.remove(index);
+          onChanged();
+        } else {
+          actionsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder getActionsBuilder(
+          int index) {
+        return getActionsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder getActionsOrBuilder(
+          int index) {
+        if (actionsBuilder_ == null) {
+          return actions_.get(index);  } else {
+          return actionsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder> 
+           getActionsOrBuilderList() {
+        if (actionsBuilder_ != null) {
+          return actionsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(actions_);
+        }
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder addActionsBuilder() {
+        return getActionsFieldBuilder().addBuilder(
+            cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder addActionsBuilder(
+          int index) {
+        return getActionsFieldBuilder().addBuilder(
+            index, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .VO_BATTLE_ACTION actions = 1;</code>
+       */
+      public java.util.List<cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder> 
+           getActionsBuilderList() {
+        return getActionsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder> 
+          getActionsFieldBuilder() {
+        if (actionsBuilder_ == null) {
+          actionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTION.Builder, cg.base.io.proto.BattleProtos.VO_BATTLE_ACTIONOrBuilder>(
+                  actions_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  getParentForChildren(),
+                  isClean());
+          actions_ = null;
+        }
+        return actionsBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_ACTIONS)
+    }
+
+    static {
+      defaultInstance = new RESPONSE_BATTLE_ACTIONS(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:RESPONSE_BATTLE_ACTIONS)
   }
 
   public interface RESPONSE_BATTLE_FINISHOrBuilder extends
@@ -6624,10 +7312,15 @@ public final class BattleProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_BuffEffectInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_RESPONSE_BATTLE_ACTION_descriptor;
+    internal_static_VO_BATTLE_ACTION_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable;
+      internal_static_VO_BATTLE_ACTION_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_RESPONSE_BATTLE_ACTIONS_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_RESPONSE_BATTLE_ACTIONS_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_BATTLE_FINISH_descriptor;
   private static
@@ -6657,17 +7350,18 @@ public final class BattleProtos {
       "INFO\")\n\025REQUEST_BATTLE_ATTACK\022\020\n\010targetI" +
       "d\030\001 \002(\005\"l\n\021VO_BuffEffectInfo\022\014\n\004tech\030\001 \002" +
       "(\t\022\n\n\002id\030\002 \002(\005\022&\n\014effectValues\030\003 \003(\0132\020.V",
-      "O_EFFECT_VALUE\022\025\n\006finish\030\004 \001(\010:\005false\"\345\001" +
-      "\n\026RESPONSE_BATTLE_ACTION\022\014\n\004type\030\001 \002(\005\022\021" +
-      "\n\tskillType\030\002 \001(\005\022\022\n\nskillLevel\030\003 \001(\005\022\017\n" +
-      "\007skillId\030\004 \001(\005\022\020\n\010sourceId\030\005 \002(\005\022\014\n\004tech" +
-      "\030\006 \002(\t\022\017\n\007message\030\007 \002(\t\022\'\n\013buffEffects\030\010" +
-      " \003(\0132\022.VO_BuffEffectInfo\022+\n\017actionProces" +
-      "ses\030\t \003(\0132\022.VO_ACTION_PROCESS\"A\n\026RESPONS" +
-      "E_BATTLE_FINISH\022\r\n\005isWin\030\001 \002(\010\022\030\n\005gains\030" +
-      "\002 \003(\0132\t.VO_GAINS\"3\n\034RESPONSE_BATTLE_WAIT" +
-      "_COMMAND\022\023\n\013actionCount\030\001 \002(\005B \n\020cg.base",
-      ".io.protoB\014BattleProtos"
+      "O_EFFECT_VALUE\022\025\n\006finish\030\004 \001(\010:\005false\"\337\001" +
+      "\n\020VO_BATTLE_ACTION\022\014\n\004type\030\001 \002(\005\022\021\n\tskil" +
+      "lType\030\002 \001(\005\022\022\n\nskillLevel\030\003 \001(\005\022\017\n\007skill" +
+      "Id\030\004 \001(\005\022\020\n\010sourceId\030\005 \002(\005\022\014\n\004tech\030\006 \002(\t" +
+      "\022\017\n\007message\030\007 \002(\t\022\'\n\013buffEffects\030\010 \003(\0132\022" +
+      ".VO_BuffEffectInfo\022+\n\017actionProcesses\030\t " +
+      "\003(\0132\022.VO_ACTION_PROCESS\"=\n\027RESPONSE_BATT" +
+      "LE_ACTIONS\022\"\n\007actions\030\001 \003(\0132\021.VO_BATTLE_" +
+      "ACTION\"A\n\026RESPONSE_BATTLE_FINISH\022\r\n\005isWi" +
+      "n\030\001 \002(\010\022\030\n\005gains\030\002 \003(\0132\t.VO_GAINS\"3\n\034RES",
+      "PONSE_BATTLE_WAIT_COMMAND\022\023\n\013actionCount" +
+      "\030\001 \002(\005B \n\020cg.base.io.protoB\014BattleProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -6706,20 +7400,26 @@ public final class BattleProtos {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_VO_BuffEffectInfo_descriptor,
         new java.lang.String[] { "Tech", "Id", "EffectValues", "Finish", });
-    internal_static_RESPONSE_BATTLE_ACTION_descriptor =
+    internal_static_VO_BATTLE_ACTION_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable = new
+    internal_static_VO_BATTLE_ACTION_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_RESPONSE_BATTLE_ACTION_descriptor,
+        internal_static_VO_BATTLE_ACTION_descriptor,
         new java.lang.String[] { "Type", "SkillType", "SkillLevel", "SkillId", "SourceId", "Tech", "Message", "BuffEffects", "ActionProcesses", });
-    internal_static_RESPONSE_BATTLE_FINISH_descriptor =
+    internal_static_RESPONSE_BATTLE_ACTIONS_descriptor =
       getDescriptor().getMessageTypes().get(5);
+    internal_static_RESPONSE_BATTLE_ACTIONS_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_BATTLE_ACTIONS_descriptor,
+        new java.lang.String[] { "Actions", });
+    internal_static_RESPONSE_BATTLE_FINISH_descriptor =
+      getDescriptor().getMessageTypes().get(6);
     internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_RESPONSE_BATTLE_FINISH_descriptor,
         new java.lang.String[] { "IsWin", "Gains", });
     internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_RESPONSE_BATTLE_WAIT_COMMAND_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor,

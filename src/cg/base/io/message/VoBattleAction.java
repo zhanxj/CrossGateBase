@@ -1,9 +1,6 @@
 package cg.base.io.message;
 
-import net.dipatch.ISender;
-import net.io.protocal.proto.ProtoMessage;
 import cg.base.io.proto.BattleProtos.*;
-import cg.base.io.proto.MessageIdProto.MessageId;
 import cg.base.io.proto.VOProtos.*;
 import com.google.common.collect.Lists;
 import java.util.List;
@@ -12,22 +9,18 @@ import java.util.List;
  * This is a auto make java file, so do not modify me.
  * @author fuhuiyuan
  */
-public class ResponseBattleAction extends ProtoMessage {
+public class VoBattleAction {
 
-	private RESPONSE_BATTLE_ACTION.Builder builder;
+	private VO_BATTLE_ACTION vo;
 
-	public ResponseBattleAction(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
-		super(MessageId.MI_RESPONSE_BATTLE_ACTION_VALUE, status, sessionId, sender, datas);
-		builder = RESPONSE_BATTLE_ACTION.newBuilder();
-		if (datas != null) {
-			builder.mergeFrom(datas);
-		}
+	private VO_BATTLE_ACTION.Builder builder;
+
+	public VoBattleAction(VO_BATTLE_ACTION vo) {
+		this.vo = vo;
 	}
 
-	public ResponseBattleAction() {
-		super();
-		builder = RESPONSE_BATTLE_ACTION.newBuilder();
-		messageId = MessageId.MI_RESPONSE_BATTLE_ACTION_VALUE;
+	public VoBattleAction() {
+		builder = VO_BATTLE_ACTION.newBuilder();
 	}
 
 	/**
@@ -44,7 +37,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSourceId() {
-		int ret = builder.getSourceId();
+		int ret = vo.getSourceId();
 		return ret;
 	}
 
@@ -62,7 +55,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTech() {
-		String ret = builder.getTech();
+		String ret = vo.getTech();
 		return ret;
 	}
 
@@ -80,7 +73,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSkillId() {
-		int ret = builder.getSkillId();
+		int ret = vo.getSkillId();
 		return ret;
 	}
 
@@ -98,7 +91,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSkillType() {
-		int ret = builder.getSkillType();
+		int ret = vo.getSkillType();
 		return ret;
 	}
 
@@ -120,7 +113,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public List<VoActionProcess> getActionProcessesList() {
-		List<VO_ACTION_PROCESS> list = builder.getActionProcessesList();
+		List<VO_ACTION_PROCESS> list = vo.getActionProcessesList();
 		List<VoActionProcess> ret = Lists.newArrayListWithCapacity(list.size());
 		for (VO_ACTION_PROCESS vo : list) {
 			ret.add(new VoActionProcess(vo));
@@ -142,7 +135,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getType() {
-		int ret = builder.getType();
+		int ret = vo.getType();
 		return ret;
 	}
 
@@ -160,7 +153,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getMessage() {
-		String ret = builder.getMessage();
+		String ret = vo.getMessage();
 		return ret;
 	}
 
@@ -178,7 +171,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSkillLevel() {
-		int ret = builder.getSkillLevel();
+		int ret = vo.getSkillLevel();
 		return ret;
 	}
 
@@ -200,7 +193,7 @@ public class ResponseBattleAction extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public List<VoBuffeffectinfo> getBuffEffectsList() {
-		List<VO_BuffEffectInfo> list = builder.getBuffEffectsList();
+		List<VO_BuffEffectInfo> list = vo.getBuffEffectsList();
 		List<VoBuffeffectinfo> ret = Lists.newArrayListWithCapacity(list.size());
 		for (VO_BuffEffectInfo vo : list) {
 			ret.add(new VoBuffeffectinfo(vo));
@@ -208,13 +201,8 @@ public class ResponseBattleAction extends ProtoMessage {
 		return ret;
 	}
 
-	public RESPONSE_BATTLE_ACTION getResponseBattleAction() {
-		return builder.build();
-	}
-
-	@Override
-	public byte[] getByteArray() {
-		return builder.build().toByteArray();
+	public VO_BATTLE_ACTION getVO_BATTLE_ACTION() {
+		return vo == null ? builder.build() : vo;
 	}
 
 }
