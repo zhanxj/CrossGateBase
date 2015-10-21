@@ -10,6 +10,8 @@ public class EffectValue {
 	
 	public static final byte EFFECT_TYPE_OTHER = 3;
 	
+	public static final byte EFFECT_TYPE_LOYAL = 3;
+	
 	private final int value;
 	
 	private final byte effectType;
