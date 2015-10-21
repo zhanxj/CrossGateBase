@@ -12884,11 +12884,11 @@ public final class VOProtos {
         int index);
 
     /**
-     * <code>required int32 index = 11;</code>
+     * <code>optional int32 index = 11;</code>
      */
     boolean hasIndex();
     /**
-     * <code>required int32 index = 11;</code>
+     * <code>optional int32 index = 11;</code>
      */
     int getIndex();
   }
@@ -13274,13 +13274,13 @@ public final class VOProtos {
     public static final int INDEX_FIELD_NUMBER = 11;
     private int index_;
     /**
-     * <code>required int32 index = 11;</code>
+     * <code>optional int32 index = 11;</code>
      */
     public boolean hasIndex() {
       return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     /**
-     * <code>required int32 index = 11;</code>
+     * <code>optional int32 index = 11;</code>
      */
     public int getIndex() {
       return index_;
@@ -13330,10 +13330,6 @@ public final class VOProtos {
         return false;
       }
       if (!hasType()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasIndex()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -13763,10 +13759,6 @@ public final class VOProtos {
           return false;
         }
         if (!hasType()) {
-          
-          return false;
-        }
-        if (!hasIndex()) {
           
           return false;
         }
@@ -14416,19 +14408,19 @@ public final class VOProtos {
 
       private int index_ ;
       /**
-       * <code>required int32 index = 11;</code>
+       * <code>optional int32 index = 11;</code>
        */
       public boolean hasIndex() {
         return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       /**
-       * <code>required int32 index = 11;</code>
+       * <code>optional int32 index = 11;</code>
        */
       public int getIndex() {
         return index_;
       }
       /**
-       * <code>required int32 index = 11;</code>
+       * <code>optional int32 index = 11;</code>
        */
       public Builder setIndex(int value) {
         bitField0_ |= 0x00000400;
@@ -14437,7 +14429,7 @@ public final class VOProtos {
         return this;
       }
       /**
-       * <code>required int32 index = 11;</code>
+       * <code>optional int32 index = 11;</code>
        */
       public Builder clearIndex() {
         bitField0_ = (bitField0_ & ~0x00000400);
@@ -28098,7 +28090,7 @@ public final class VOProtos {
       "escription\030\004 \002(\t\022\r\n\005level\030\005 \002(\005\022\013\n\003exp\030\006" +
       " \001(\005\022\024\n\014nextLevelExp\030\007 \001(\005\022\020\n\010useSpace\030\010",
       " \002(\005\022\014\n\004type\030\t \002(\005\022\037\n\006skills\030\n \003(\0132\017.VO_" +
-      "SKILL_LEVEL\022\r\n\005index\030\013 \002(\005\"U\n\014VO_SKILL_S" +
+      "SKILL_LEVEL\022\r\n\005index\030\013 \001(\005\"U\n\014VO_SKILL_S" +
       "ET\022\035\n\nbaseSkills\030\001 \003(\0132\t.VO_SKILL\022\013\n\003max" +
       "\030\002 \002(\005\022\031\n\006skills\030\003 \003(\0132\t.VO_SKILL\"$\n\006VO_" +
       "PET\022\032\n\010unitInfo\030\001 \002(\0132\010.VO_UNIT\"7\n\tVO_OP" +
