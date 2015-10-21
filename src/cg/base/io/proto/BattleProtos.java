@@ -2202,13 +2202,13 @@ public final class BattleProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 targetId = 1;</code>
+     * <code>required int32 tarId = 1;</code>
      */
-    boolean hasTargetId();
+    boolean hasTarId();
     /**
-     * <code>required int32 targetId = 1;</code>
+     * <code>required int32 tarId = 1;</code>
      */
-    int getTargetId();
+    int getTarId();
   }
   /**
    * Protobuf type {@code REQUEST_BATTLE_ATTACK}
@@ -2264,7 +2264,7 @@ public final class BattleProtos {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              targetId_ = input.readInt32();
+              tarId_ = input.readInt32();
               break;
             }
           }
@@ -2307,23 +2307,23 @@ public final class BattleProtos {
     }
 
     private int bitField0_;
-    public static final int TARGETID_FIELD_NUMBER = 1;
-    private int targetId_;
+    public static final int TARID_FIELD_NUMBER = 1;
+    private int tarId_;
     /**
-     * <code>required int32 targetId = 1;</code>
+     * <code>required int32 tarId = 1;</code>
      */
-    public boolean hasTargetId() {
+    public boolean hasTarId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 targetId = 1;</code>
+     * <code>required int32 tarId = 1;</code>
      */
-    public int getTargetId() {
-      return targetId_;
+    public int getTarId() {
+      return tarId_;
     }
 
     private void initFields() {
-      targetId_ = 0;
+      tarId_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2331,7 +2331,7 @@ public final class BattleProtos {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasTargetId()) {
+      if (!hasTarId()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -2343,7 +2343,7 @@ public final class BattleProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, targetId_);
+        output.writeInt32(1, tarId_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2356,7 +2356,7 @@ public final class BattleProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, targetId_);
+          .computeInt32Size(1, tarId_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2475,7 +2475,7 @@ public final class BattleProtos {
 
       public Builder clear() {
         super.clear();
-        targetId_ = 0;
+        tarId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -2508,7 +2508,7 @@ public final class BattleProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.targetId_ = targetId_;
+        result.tarId_ = tarId_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2525,15 +2525,15 @@ public final class BattleProtos {
 
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK other) {
         if (other == cg.base.io.proto.BattleProtos.REQUEST_BATTLE_ATTACK.getDefaultInstance()) return this;
-        if (other.hasTargetId()) {
-          setTargetId(other.getTargetId());
+        if (other.hasTarId()) {
+          setTarId(other.getTarId());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasTargetId()) {
+        if (!hasTarId()) {
           
           return false;
         }
@@ -2559,34 +2559,34 @@ public final class BattleProtos {
       }
       private int bitField0_;
 
-      private int targetId_ ;
+      private int tarId_ ;
       /**
-       * <code>required int32 targetId = 1;</code>
+       * <code>required int32 tarId = 1;</code>
        */
-      public boolean hasTargetId() {
+      public boolean hasTarId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 targetId = 1;</code>
+       * <code>required int32 tarId = 1;</code>
        */
-      public int getTargetId() {
-        return targetId_;
+      public int getTarId() {
+        return tarId_;
       }
       /**
-       * <code>required int32 targetId = 1;</code>
+       * <code>required int32 tarId = 1;</code>
        */
-      public Builder setTargetId(int value) {
+      public Builder setTarId(int value) {
         bitField0_ |= 0x00000001;
-        targetId_ = value;
+        tarId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 targetId = 1;</code>
+       * <code>required int32 tarId = 1;</code>
        */
-      public Builder clearTargetId() {
+      public Builder clearTarId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        targetId_ = 0;
+        tarId_ = 0;
         onChanged();
         return this;
       }
@@ -2602,18 +2602,1150 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_BATTLE_ATTACK)
   }
 
+  public interface VO_BuffEffectInfoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_BuffEffectInfo)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    boolean hasTech();
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    java.lang.String getTech();
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getTechBytes();
+
+    /**
+     * <code>required int32 id = 2;</code>
+     */
+    boolean hasId();
+    /**
+     * <code>required int32 id = 2;</code>
+     */
+    int getId();
+
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    java.util.List<cg.base.io.proto.VOProtos.VO_EFFECT_VALUE> 
+        getEffectValuesList();
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_EFFECT_VALUE getEffectValues(int index);
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    int getEffectValuesCount();
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    java.util.List<? extends cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder> 
+        getEffectValuesOrBuilderList();
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder getEffectValuesOrBuilder(
+        int index);
+
+    /**
+     * <code>optional bool finish = 4 [default = false];</code>
+     */
+    boolean hasFinish();
+    /**
+     * <code>optional bool finish = 4 [default = false];</code>
+     */
+    boolean getFinish();
+  }
+  /**
+   * Protobuf type {@code VO_BuffEffectInfo}
+   */
+  public static final class VO_BuffEffectInfo extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_BuffEffectInfo)
+      VO_BuffEffectInfoOrBuilder {
+    // Use VO_BuffEffectInfo.newBuilder() to construct.
+    private VO_BuffEffectInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private VO_BuffEffectInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final VO_BuffEffectInfo defaultInstance;
+    public static VO_BuffEffectInfo getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public VO_BuffEffectInfo getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_BuffEffectInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              tech_ = bs;
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              id_ = input.readInt32();
+              break;
+            }
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                effectValues_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_EFFECT_VALUE>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              effectValues_.add(input.readMessage(cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.PARSER, extensionRegistry));
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000004;
+              finish_ = input.readBool();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+          effectValues_ = java.util.Collections.unmodifiableList(effectValues_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.class, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<VO_BuffEffectInfo> PARSER =
+        new com.google.protobuf.AbstractParser<VO_BuffEffectInfo>() {
+      public VO_BuffEffectInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_BuffEffectInfo(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_BuffEffectInfo> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int TECH_FIELD_NUMBER = 1;
+    private java.lang.Object tech_;
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    public boolean hasTech() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    public java.lang.String getTech() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          tech_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTechBytes() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        tech_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ID_FIELD_NUMBER = 2;
+    private int id_;
+    /**
+     * <code>required int32 id = 2;</code>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 id = 2;</code>
+     */
+    public int getId() {
+      return id_;
+    }
+
+    public static final int EFFECTVALUES_FIELD_NUMBER = 3;
+    private java.util.List<cg.base.io.proto.VOProtos.VO_EFFECT_VALUE> effectValues_;
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    public java.util.List<cg.base.io.proto.VOProtos.VO_EFFECT_VALUE> getEffectValuesList() {
+      return effectValues_;
+    }
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder> 
+        getEffectValuesOrBuilderList() {
+      return effectValues_;
+    }
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    public int getEffectValuesCount() {
+      return effectValues_.size();
+    }
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE getEffectValues(int index) {
+      return effectValues_.get(index);
+    }
+    /**
+     * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder getEffectValuesOrBuilder(
+        int index) {
+      return effectValues_.get(index);
+    }
+
+    public static final int FINISH_FIELD_NUMBER = 4;
+    private boolean finish_;
+    /**
+     * <code>optional bool finish = 4 [default = false];</code>
+     */
+    public boolean hasFinish() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional bool finish = 4 [default = false];</code>
+     */
+    public boolean getFinish() {
+      return finish_;
+    }
+
+    private void initFields() {
+      tech_ = "";
+      id_ = 0;
+      effectValues_ = java.util.Collections.emptyList();
+      finish_ = false;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasTech()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getEffectValuesCount(); i++) {
+        if (!getEffectValues(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, id_);
+      }
+      for (int i = 0; i < effectValues_.size(); i++) {
+        output.writeMessage(3, effectValues_.get(i));
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(4, finish_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, id_);
+      }
+      for (int i = 0; i < effectValues_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, effectValues_.get(i));
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, finish_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.BattleProtos.VO_BuffEffectInfo prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code VO_BuffEffectInfo}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_BuffEffectInfo)
+        cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.class, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getEffectValuesFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        tech_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (effectValuesBuilder_ == null) {
+          effectValues_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          effectValuesBuilder_.clear();
+        }
+        finish_ = false;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_descriptor;
+      }
+
+      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo getDefaultInstanceForType() {
+        return cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo build() {
+        cg.base.io.proto.BattleProtos.VO_BuffEffectInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo buildPartial() {
+        cg.base.io.proto.BattleProtos.VO_BuffEffectInfo result = new cg.base.io.proto.BattleProtos.VO_BuffEffectInfo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.tech_ = tech_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.id_ = id_;
+        if (effectValuesBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004)) {
+            effectValues_ = java.util.Collections.unmodifiableList(effectValues_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.effectValues_ = effectValues_;
+        } else {
+          result.effectValues_ = effectValuesBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.finish_ = finish_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.BattleProtos.VO_BuffEffectInfo) {
+          return mergeFrom((cg.base.io.proto.BattleProtos.VO_BuffEffectInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.BattleProtos.VO_BuffEffectInfo other) {
+        if (other == cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.getDefaultInstance()) return this;
+        if (other.hasTech()) {
+          bitField0_ |= 0x00000001;
+          tech_ = other.tech_;
+          onChanged();
+        }
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        if (effectValuesBuilder_ == null) {
+          if (!other.effectValues_.isEmpty()) {
+            if (effectValues_.isEmpty()) {
+              effectValues_ = other.effectValues_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureEffectValuesIsMutable();
+              effectValues_.addAll(other.effectValues_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.effectValues_.isEmpty()) {
+            if (effectValuesBuilder_.isEmpty()) {
+              effectValuesBuilder_.dispose();
+              effectValuesBuilder_ = null;
+              effectValues_ = other.effectValues_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              effectValuesBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getEffectValuesFieldBuilder() : null;
+            } else {
+              effectValuesBuilder_.addAllMessages(other.effectValues_);
+            }
+          }
+        }
+        if (other.hasFinish()) {
+          setFinish(other.getFinish());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasTech()) {
+          
+          return false;
+        }
+        if (!hasId()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getEffectValuesCount(); i++) {
+          if (!getEffectValues(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.BattleProtos.VO_BuffEffectInfo) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object tech_ = "";
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public boolean hasTech() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public java.lang.String getTech() {
+        java.lang.Object ref = tech_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            tech_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTechBytes() {
+        java.lang.Object ref = tech_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          tech_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public Builder setTech(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public Builder clearTech() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        tech_ = getDefaultInstance().getTech();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public Builder setTechBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>required int32 id = 2;</code>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 id = 2;</code>
+       */
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>required int32 id = 2;</code>
+       */
+      public Builder setId(int value) {
+        bitField0_ |= 0x00000002;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 id = 2;</code>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<cg.base.io.proto.VOProtos.VO_EFFECT_VALUE> effectValues_ =
+        java.util.Collections.emptyList();
+      private void ensureEffectValuesIsMutable() {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+          effectValues_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_EFFECT_VALUE>(effectValues_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_EFFECT_VALUE, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder, cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder> effectValuesBuilder_;
+
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public java.util.List<cg.base.io.proto.VOProtos.VO_EFFECT_VALUE> getEffectValuesList() {
+        if (effectValuesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(effectValues_);
+        } else {
+          return effectValuesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public int getEffectValuesCount() {
+        if (effectValuesBuilder_ == null) {
+          return effectValues_.size();
+        } else {
+          return effectValuesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE getEffectValues(int index) {
+        if (effectValuesBuilder_ == null) {
+          return effectValues_.get(index);
+        } else {
+          return effectValuesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public Builder setEffectValues(
+          int index, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE value) {
+        if (effectValuesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEffectValuesIsMutable();
+          effectValues_.set(index, value);
+          onChanged();
+        } else {
+          effectValuesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public Builder setEffectValues(
+          int index, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder builderForValue) {
+        if (effectValuesBuilder_ == null) {
+          ensureEffectValuesIsMutable();
+          effectValues_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          effectValuesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public Builder addEffectValues(cg.base.io.proto.VOProtos.VO_EFFECT_VALUE value) {
+        if (effectValuesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEffectValuesIsMutable();
+          effectValues_.add(value);
+          onChanged();
+        } else {
+          effectValuesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public Builder addEffectValues(
+          int index, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE value) {
+        if (effectValuesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEffectValuesIsMutable();
+          effectValues_.add(index, value);
+          onChanged();
+        } else {
+          effectValuesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public Builder addEffectValues(
+          cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder builderForValue) {
+        if (effectValuesBuilder_ == null) {
+          ensureEffectValuesIsMutable();
+          effectValues_.add(builderForValue.build());
+          onChanged();
+        } else {
+          effectValuesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public Builder addEffectValues(
+          int index, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder builderForValue) {
+        if (effectValuesBuilder_ == null) {
+          ensureEffectValuesIsMutable();
+          effectValues_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          effectValuesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public Builder addAllEffectValues(
+          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_EFFECT_VALUE> values) {
+        if (effectValuesBuilder_ == null) {
+          ensureEffectValuesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, effectValues_);
+          onChanged();
+        } else {
+          effectValuesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public Builder clearEffectValues() {
+        if (effectValuesBuilder_ == null) {
+          effectValues_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          effectValuesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public Builder removeEffectValues(int index) {
+        if (effectValuesBuilder_ == null) {
+          ensureEffectValuesIsMutable();
+          effectValues_.remove(index);
+          onChanged();
+        } else {
+          effectValuesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder getEffectValuesBuilder(
+          int index) {
+        return getEffectValuesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder getEffectValuesOrBuilder(
+          int index) {
+        if (effectValuesBuilder_ == null) {
+          return effectValues_.get(index);  } else {
+          return effectValuesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder> 
+           getEffectValuesOrBuilderList() {
+        if (effectValuesBuilder_ != null) {
+          return effectValuesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(effectValues_);
+        }
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder addEffectValuesBuilder() {
+        return getEffectValuesFieldBuilder().addBuilder(
+            cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder addEffectValuesBuilder(
+          int index) {
+        return getEffectValuesFieldBuilder().addBuilder(
+            index, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .VO_EFFECT_VALUE effectValues = 3;</code>
+       */
+      public java.util.List<cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder> 
+           getEffectValuesBuilderList() {
+        return getEffectValuesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_EFFECT_VALUE, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder, cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder> 
+          getEffectValuesFieldBuilder() {
+        if (effectValuesBuilder_ == null) {
+          effectValuesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_EFFECT_VALUE, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder, cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder>(
+                  effectValues_,
+                  ((bitField0_ & 0x00000004) == 0x00000004),
+                  getParentForChildren(),
+                  isClean());
+          effectValues_ = null;
+        }
+        return effectValuesBuilder_;
+      }
+
+      private boolean finish_ ;
+      /**
+       * <code>optional bool finish = 4 [default = false];</code>
+       */
+      public boolean hasFinish() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional bool finish = 4 [default = false];</code>
+       */
+      public boolean getFinish() {
+        return finish_;
+      }
+      /**
+       * <code>optional bool finish = 4 [default = false];</code>
+       */
+      public Builder setFinish(boolean value) {
+        bitField0_ |= 0x00000008;
+        finish_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool finish = 4 [default = false];</code>
+       */
+      public Builder clearFinish() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        finish_ = false;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:VO_BuffEffectInfo)
+    }
+
+    static {
+      defaultInstance = new VO_BuffEffectInfo(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:VO_BuffEffectInfo)
+  }
+
   public interface RESPONSE_BATTLE_ACTIONOrBuilder extends
       // @@protoc_insertion_point(interface_extends:RESPONSE_BATTLE_ACTION)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 targetId = 1;</code>
+     * <code>required int32 type = 1;</code>
      */
-    boolean hasTargetId();
+    boolean hasType();
     /**
-     * <code>required int32 targetId = 1;</code>
+     * <code>required int32 type = 1;</code>
      */
-    int getTargetId();
+    int getType();
+
+    /**
+     * <code>optional int32 skillType = 2;</code>
+     */
+    boolean hasSkillType();
+    /**
+     * <code>optional int32 skillType = 2;</code>
+     */
+    int getSkillType();
+
+    /**
+     * <code>optional int32 skillLevel = 3;</code>
+     */
+    boolean hasSkillLevel();
+    /**
+     * <code>optional int32 skillLevel = 3;</code>
+     */
+    int getSkillLevel();
+
+    /**
+     * <code>optional int32 skillId = 4;</code>
+     */
+    boolean hasSkillId();
+    /**
+     * <code>optional int32 skillId = 4;</code>
+     */
+    int getSkillId();
+
+    /**
+     * <code>required int32 sourceId = 5;</code>
+     */
+    boolean hasSourceId();
+    /**
+     * <code>required int32 sourceId = 5;</code>
+     */
+    int getSourceId();
+
+    /**
+     * <code>required string tech = 6;</code>
+     */
+    boolean hasTech();
+    /**
+     * <code>required string tech = 6;</code>
+     */
+    java.lang.String getTech();
+    /**
+     * <code>required string tech = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getTechBytes();
+
+    /**
+     * <code>required string message = 7;</code>
+     */
+    boolean hasMessage();
+    /**
+     * <code>required string message = 7;</code>
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>required string message = 7;</code>
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> 
+        getBuffEffectsList();
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    cg.base.io.proto.BattleProtos.VO_BuffEffectInfo getBuffEffects(int index);
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    int getBuffEffectsCount();
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> 
+        getBuffEffectsOrBuilderList();
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder getBuffEffectsOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    java.util.List<cg.base.io.proto.VOProtos.VO_ACTION_PROCESS> 
+        getActionProcessesList();
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_PROCESS getActionProcesses(int index);
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    int getActionProcessesCount();
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    java.util.List<? extends cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder> 
+        getActionProcessesOrBuilderList();
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder getActionProcessesOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code RESPONSE_BATTLE_ACTION}
@@ -2669,7 +3801,55 @@ public final class BattleProtos {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              targetId_ = input.readInt32();
+              type_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              skillType_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              skillLevel_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              skillId_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              sourceId_ = input.readInt32();
+              break;
+            }
+            case 50: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000020;
+              tech_ = bs;
+              break;
+            }
+            case 58: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000040;
+              message_ = bs;
+              break;
+            }
+            case 66: {
+              if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+                buffEffects_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo>();
+                mutable_bitField0_ |= 0x00000080;
+              }
+              buffEffects_.add(input.readMessage(cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.PARSER, extensionRegistry));
+              break;
+            }
+            case 74: {
+              if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+                actionProcesses_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_ACTION_PROCESS>();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              actionProcesses_.add(input.readMessage(cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.PARSER, extensionRegistry));
               break;
             }
           }
@@ -2680,6 +3860,12 @@ public final class BattleProtos {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
+          buffEffects_ = java.util.Collections.unmodifiableList(buffEffects_);
+        }
+        if (((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+          actionProcesses_ = java.util.Collections.unmodifiableList(actionProcesses_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -2712,23 +3898,245 @@ public final class BattleProtos {
     }
 
     private int bitField0_;
-    public static final int TARGETID_FIELD_NUMBER = 1;
-    private int targetId_;
+    public static final int TYPE_FIELD_NUMBER = 1;
+    private int type_;
     /**
-     * <code>required int32 targetId = 1;</code>
+     * <code>required int32 type = 1;</code>
      */
-    public boolean hasTargetId() {
+    public boolean hasType() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 targetId = 1;</code>
+     * <code>required int32 type = 1;</code>
      */
-    public int getTargetId() {
-      return targetId_;
+    public int getType() {
+      return type_;
+    }
+
+    public static final int SKILLTYPE_FIELD_NUMBER = 2;
+    private int skillType_;
+    /**
+     * <code>optional int32 skillType = 2;</code>
+     */
+    public boolean hasSkillType() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional int32 skillType = 2;</code>
+     */
+    public int getSkillType() {
+      return skillType_;
+    }
+
+    public static final int SKILLLEVEL_FIELD_NUMBER = 3;
+    private int skillLevel_;
+    /**
+     * <code>optional int32 skillLevel = 3;</code>
+     */
+    public boolean hasSkillLevel() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional int32 skillLevel = 3;</code>
+     */
+    public int getSkillLevel() {
+      return skillLevel_;
+    }
+
+    public static final int SKILLID_FIELD_NUMBER = 4;
+    private int skillId_;
+    /**
+     * <code>optional int32 skillId = 4;</code>
+     */
+    public boolean hasSkillId() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional int32 skillId = 4;</code>
+     */
+    public int getSkillId() {
+      return skillId_;
+    }
+
+    public static final int SOURCEID_FIELD_NUMBER = 5;
+    private int sourceId_;
+    /**
+     * <code>required int32 sourceId = 5;</code>
+     */
+    public boolean hasSourceId() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>required int32 sourceId = 5;</code>
+     */
+    public int getSourceId() {
+      return sourceId_;
+    }
+
+    public static final int TECH_FIELD_NUMBER = 6;
+    private java.lang.Object tech_;
+    /**
+     * <code>required string tech = 6;</code>
+     */
+    public boolean hasTech() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>required string tech = 6;</code>
+     */
+    public java.lang.String getTech() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          tech_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string tech = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTechBytes() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        tech_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 7;
+    private java.lang.Object message_;
+    /**
+     * <code>required string message = 7;</code>
+     */
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>required string message = 7;</code>
+     */
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          message_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string message = 7;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int BUFFEFFECTS_FIELD_NUMBER = 8;
+    private java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> buffEffects_;
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    public java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> getBuffEffectsList() {
+      return buffEffects_;
+    }
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> 
+        getBuffEffectsOrBuilderList() {
+      return buffEffects_;
+    }
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    public int getBuffEffectsCount() {
+      return buffEffects_.size();
+    }
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo getBuffEffects(int index) {
+      return buffEffects_.get(index);
+    }
+    /**
+     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     */
+    public cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder getBuffEffectsOrBuilder(
+        int index) {
+      return buffEffects_.get(index);
+    }
+
+    public static final int ACTIONPROCESSES_FIELD_NUMBER = 9;
+    private java.util.List<cg.base.io.proto.VOProtos.VO_ACTION_PROCESS> actionProcesses_;
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    public java.util.List<cg.base.io.proto.VOProtos.VO_ACTION_PROCESS> getActionProcessesList() {
+      return actionProcesses_;
+    }
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    public java.util.List<? extends cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder> 
+        getActionProcessesOrBuilderList() {
+      return actionProcesses_;
+    }
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    public int getActionProcessesCount() {
+      return actionProcesses_.size();
+    }
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS getActionProcesses(int index) {
+      return actionProcesses_.get(index);
+    }
+    /**
+     * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder getActionProcessesOrBuilder(
+        int index) {
+      return actionProcesses_.get(index);
     }
 
     private void initFields() {
-      targetId_ = 0;
+      type_ = 0;
+      skillType_ = 0;
+      skillLevel_ = 0;
+      skillId_ = 0;
+      sourceId_ = 0;
+      tech_ = "";
+      message_ = "";
+      buffEffects_ = java.util.Collections.emptyList();
+      actionProcesses_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2736,9 +4144,33 @@ public final class BattleProtos {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasTargetId()) {
+      if (!hasType()) {
         memoizedIsInitialized = 0;
         return false;
+      }
+      if (!hasSourceId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasTech()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMessage()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getBuffEffectsCount(); i++) {
+        if (!getBuffEffects(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      for (int i = 0; i < getActionProcessesCount(); i++) {
+        if (!getActionProcesses(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
       }
       memoizedIsInitialized = 1;
       return true;
@@ -2748,7 +4180,31 @@ public final class BattleProtos {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, targetId_);
+        output.writeInt32(1, type_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, skillType_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, skillLevel_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, skillId_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(5, sourceId_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeBytes(6, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeBytes(7, getMessageBytes());
+      }
+      for (int i = 0; i < buffEffects_.size(); i++) {
+        output.writeMessage(8, buffEffects_.get(i));
+      }
+      for (int i = 0; i < actionProcesses_.size(); i++) {
+        output.writeMessage(9, actionProcesses_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -2761,7 +4217,39 @@ public final class BattleProtos {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, targetId_);
+          .computeInt32Size(1, type_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, skillType_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, skillLevel_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, skillId_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, sourceId_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(6, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(7, getMessageBytes());
+      }
+      for (int i = 0; i < buffEffects_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, buffEffects_.get(i));
+      }
+      for (int i = 0; i < actionProcesses_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, actionProcesses_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2872,6 +4360,8 @@ public final class BattleProtos {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getBuffEffectsFieldBuilder();
+          getActionProcessesFieldBuilder();
         }
       }
       private static Builder create() {
@@ -2880,8 +4370,32 @@ public final class BattleProtos {
 
       public Builder clear() {
         super.clear();
-        targetId_ = 0;
+        type_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
+        skillType_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        skillLevel_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        skillId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        sourceId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        tech_ = "";
+        bitField0_ = (bitField0_ & ~0x00000020);
+        message_ = "";
+        bitField0_ = (bitField0_ & ~0x00000040);
+        if (buffEffectsBuilder_ == null) {
+          buffEffects_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+        } else {
+          buffEffectsBuilder_.clear();
+        }
+        if (actionProcessesBuilder_ == null) {
+          actionProcesses_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+        } else {
+          actionProcessesBuilder_.clear();
+        }
         return this;
       }
 
@@ -2913,7 +4427,49 @@ public final class BattleProtos {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.targetId_ = targetId_;
+        result.type_ = type_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.skillType_ = skillType_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.skillLevel_ = skillLevel_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.skillId_ = skillId_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.sourceId_ = sourceId_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.tech_ = tech_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.message_ = message_;
+        if (buffEffectsBuilder_ == null) {
+          if (((bitField0_ & 0x00000080) == 0x00000080)) {
+            buffEffects_ = java.util.Collections.unmodifiableList(buffEffects_);
+            bitField0_ = (bitField0_ & ~0x00000080);
+          }
+          result.buffEffects_ = buffEffects_;
+        } else {
+          result.buffEffects_ = buffEffectsBuilder_.build();
+        }
+        if (actionProcessesBuilder_ == null) {
+          if (((bitField0_ & 0x00000100) == 0x00000100)) {
+            actionProcesses_ = java.util.Collections.unmodifiableList(actionProcesses_);
+            bitField0_ = (bitField0_ & ~0x00000100);
+          }
+          result.actionProcesses_ = actionProcesses_;
+        } else {
+          result.actionProcesses_ = actionProcessesBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2930,17 +4486,115 @@ public final class BattleProtos {
 
       public Builder mergeFrom(cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION other) {
         if (other == cg.base.io.proto.BattleProtos.RESPONSE_BATTLE_ACTION.getDefaultInstance()) return this;
-        if (other.hasTargetId()) {
-          setTargetId(other.getTargetId());
+        if (other.hasType()) {
+          setType(other.getType());
+        }
+        if (other.hasSkillType()) {
+          setSkillType(other.getSkillType());
+        }
+        if (other.hasSkillLevel()) {
+          setSkillLevel(other.getSkillLevel());
+        }
+        if (other.hasSkillId()) {
+          setSkillId(other.getSkillId());
+        }
+        if (other.hasSourceId()) {
+          setSourceId(other.getSourceId());
+        }
+        if (other.hasTech()) {
+          bitField0_ |= 0x00000020;
+          tech_ = other.tech_;
+          onChanged();
+        }
+        if (other.hasMessage()) {
+          bitField0_ |= 0x00000040;
+          message_ = other.message_;
+          onChanged();
+        }
+        if (buffEffectsBuilder_ == null) {
+          if (!other.buffEffects_.isEmpty()) {
+            if (buffEffects_.isEmpty()) {
+              buffEffects_ = other.buffEffects_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+            } else {
+              ensureBuffEffectsIsMutable();
+              buffEffects_.addAll(other.buffEffects_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.buffEffects_.isEmpty()) {
+            if (buffEffectsBuilder_.isEmpty()) {
+              buffEffectsBuilder_.dispose();
+              buffEffectsBuilder_ = null;
+              buffEffects_ = other.buffEffects_;
+              bitField0_ = (bitField0_ & ~0x00000080);
+              buffEffectsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getBuffEffectsFieldBuilder() : null;
+            } else {
+              buffEffectsBuilder_.addAllMessages(other.buffEffects_);
+            }
+          }
+        }
+        if (actionProcessesBuilder_ == null) {
+          if (!other.actionProcesses_.isEmpty()) {
+            if (actionProcesses_.isEmpty()) {
+              actionProcesses_ = other.actionProcesses_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+            } else {
+              ensureActionProcessesIsMutable();
+              actionProcesses_.addAll(other.actionProcesses_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.actionProcesses_.isEmpty()) {
+            if (actionProcessesBuilder_.isEmpty()) {
+              actionProcessesBuilder_.dispose();
+              actionProcessesBuilder_ = null;
+              actionProcesses_ = other.actionProcesses_;
+              bitField0_ = (bitField0_ & ~0x00000100);
+              actionProcessesBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getActionProcessesFieldBuilder() : null;
+            } else {
+              actionProcessesBuilder_.addAllMessages(other.actionProcesses_);
+            }
+          }
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
-        if (!hasTargetId()) {
+        if (!hasType()) {
           
           return false;
+        }
+        if (!hasSourceId()) {
+          
+          return false;
+        }
+        if (!hasTech()) {
+          
+          return false;
+        }
+        if (!hasMessage()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getBuffEffectsCount(); i++) {
+          if (!getBuffEffects(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        for (int i = 0; i < getActionProcessesCount(); i++) {
+          if (!getActionProcesses(i).isInitialized()) {
+            
+            return false;
+          }
         }
         return true;
       }
@@ -2964,36 +4618,796 @@ public final class BattleProtos {
       }
       private int bitField0_;
 
-      private int targetId_ ;
+      private int type_ ;
       /**
-       * <code>required int32 targetId = 1;</code>
+       * <code>required int32 type = 1;</code>
        */
-      public boolean hasTargetId() {
+      public boolean hasType() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 targetId = 1;</code>
+       * <code>required int32 type = 1;</code>
        */
-      public int getTargetId() {
-        return targetId_;
+      public int getType() {
+        return type_;
       }
       /**
-       * <code>required int32 targetId = 1;</code>
+       * <code>required int32 type = 1;</code>
        */
-      public Builder setTargetId(int value) {
+      public Builder setType(int value) {
         bitField0_ |= 0x00000001;
-        targetId_ = value;
+        type_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 targetId = 1;</code>
+       * <code>required int32 type = 1;</code>
        */
-      public Builder clearTargetId() {
+      public Builder clearType() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        targetId_ = 0;
+        type_ = 0;
         onChanged();
         return this;
+      }
+
+      private int skillType_ ;
+      /**
+       * <code>optional int32 skillType = 2;</code>
+       */
+      public boolean hasSkillType() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional int32 skillType = 2;</code>
+       */
+      public int getSkillType() {
+        return skillType_;
+      }
+      /**
+       * <code>optional int32 skillType = 2;</code>
+       */
+      public Builder setSkillType(int value) {
+        bitField0_ |= 0x00000002;
+        skillType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 skillType = 2;</code>
+       */
+      public Builder clearSkillType() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        skillType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int skillLevel_ ;
+      /**
+       * <code>optional int32 skillLevel = 3;</code>
+       */
+      public boolean hasSkillLevel() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional int32 skillLevel = 3;</code>
+       */
+      public int getSkillLevel() {
+        return skillLevel_;
+      }
+      /**
+       * <code>optional int32 skillLevel = 3;</code>
+       */
+      public Builder setSkillLevel(int value) {
+        bitField0_ |= 0x00000004;
+        skillLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 skillLevel = 3;</code>
+       */
+      public Builder clearSkillLevel() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        skillLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int skillId_ ;
+      /**
+       * <code>optional int32 skillId = 4;</code>
+       */
+      public boolean hasSkillId() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional int32 skillId = 4;</code>
+       */
+      public int getSkillId() {
+        return skillId_;
+      }
+      /**
+       * <code>optional int32 skillId = 4;</code>
+       */
+      public Builder setSkillId(int value) {
+        bitField0_ |= 0x00000008;
+        skillId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 skillId = 4;</code>
+       */
+      public Builder clearSkillId() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        skillId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sourceId_ ;
+      /**
+       * <code>required int32 sourceId = 5;</code>
+       */
+      public boolean hasSourceId() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>required int32 sourceId = 5;</code>
+       */
+      public int getSourceId() {
+        return sourceId_;
+      }
+      /**
+       * <code>required int32 sourceId = 5;</code>
+       */
+      public Builder setSourceId(int value) {
+        bitField0_ |= 0x00000010;
+        sourceId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 sourceId = 5;</code>
+       */
+      public Builder clearSourceId() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        sourceId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object tech_ = "";
+      /**
+       * <code>required string tech = 6;</code>
+       */
+      public boolean hasTech() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>required string tech = 6;</code>
+       */
+      public java.lang.String getTech() {
+        java.lang.Object ref = tech_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            tech_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string tech = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTechBytes() {
+        java.lang.Object ref = tech_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          tech_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string tech = 6;</code>
+       */
+      public Builder setTech(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string tech = 6;</code>
+       */
+      public Builder clearTech() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        tech_ = getDefaultInstance().getTech();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string tech = 6;</code>
+       */
+      public Builder setTechBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <code>required string message = 7;</code>
+       */
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>required string message = 7;</code>
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            message_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string message = 7;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string message = 7;</code>
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string message = 7;</code>
+       */
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string message = 7;</code>
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000040;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> buffEffects_ =
+        java.util.Collections.emptyList();
+      private void ensureBuffEffectsIsMutable() {
+        if (!((bitField0_ & 0x00000080) == 0x00000080)) {
+          buffEffects_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo>(buffEffects_);
+          bitField0_ |= 0x00000080;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.BattleProtos.VO_BuffEffectInfo, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder, cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> buffEffectsBuilder_;
+
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> getBuffEffectsList() {
+        if (buffEffectsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(buffEffects_);
+        } else {
+          return buffEffectsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public int getBuffEffectsCount() {
+        if (buffEffectsBuilder_ == null) {
+          return buffEffects_.size();
+        } else {
+          return buffEffectsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo getBuffEffects(int index) {
+        if (buffEffectsBuilder_ == null) {
+          return buffEffects_.get(index);
+        } else {
+          return buffEffectsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public Builder setBuffEffects(
+          int index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo value) {
+        if (buffEffectsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBuffEffectsIsMutable();
+          buffEffects_.set(index, value);
+          onChanged();
+        } else {
+          buffEffectsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public Builder setBuffEffects(
+          int index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder builderForValue) {
+        if (buffEffectsBuilder_ == null) {
+          ensureBuffEffectsIsMutable();
+          buffEffects_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          buffEffectsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public Builder addBuffEffects(cg.base.io.proto.BattleProtos.VO_BuffEffectInfo value) {
+        if (buffEffectsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBuffEffectsIsMutable();
+          buffEffects_.add(value);
+          onChanged();
+        } else {
+          buffEffectsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public Builder addBuffEffects(
+          int index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo value) {
+        if (buffEffectsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureBuffEffectsIsMutable();
+          buffEffects_.add(index, value);
+          onChanged();
+        } else {
+          buffEffectsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public Builder addBuffEffects(
+          cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder builderForValue) {
+        if (buffEffectsBuilder_ == null) {
+          ensureBuffEffectsIsMutable();
+          buffEffects_.add(builderForValue.build());
+          onChanged();
+        } else {
+          buffEffectsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public Builder addBuffEffects(
+          int index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder builderForValue) {
+        if (buffEffectsBuilder_ == null) {
+          ensureBuffEffectsIsMutable();
+          buffEffects_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          buffEffectsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public Builder addAllBuffEffects(
+          java.lang.Iterable<? extends cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> values) {
+        if (buffEffectsBuilder_ == null) {
+          ensureBuffEffectsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, buffEffects_);
+          onChanged();
+        } else {
+          buffEffectsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public Builder clearBuffEffects() {
+        if (buffEffectsBuilder_ == null) {
+          buffEffects_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000080);
+          onChanged();
+        } else {
+          buffEffectsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public Builder removeBuffEffects(int index) {
+        if (buffEffectsBuilder_ == null) {
+          ensureBuffEffectsIsMutable();
+          buffEffects_.remove(index);
+          onChanged();
+        } else {
+          buffEffectsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder getBuffEffectsBuilder(
+          int index) {
+        return getBuffEffectsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder getBuffEffectsOrBuilder(
+          int index) {
+        if (buffEffectsBuilder_ == null) {
+          return buffEffects_.get(index);  } else {
+          return buffEffectsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> 
+           getBuffEffectsOrBuilderList() {
+        if (buffEffectsBuilder_ != null) {
+          return buffEffectsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(buffEffects_);
+        }
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder addBuffEffectsBuilder() {
+        return getBuffEffectsFieldBuilder().addBuilder(
+            cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder addBuffEffectsBuilder(
+          int index) {
+        return getBuffEffectsFieldBuilder().addBuilder(
+            index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       */
+      public java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder> 
+           getBuffEffectsBuilderList() {
+        return getBuffEffectsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.BattleProtos.VO_BuffEffectInfo, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder, cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> 
+          getBuffEffectsFieldBuilder() {
+        if (buffEffectsBuilder_ == null) {
+          buffEffectsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.BattleProtos.VO_BuffEffectInfo, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder, cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder>(
+                  buffEffects_,
+                  ((bitField0_ & 0x00000080) == 0x00000080),
+                  getParentForChildren(),
+                  isClean());
+          buffEffects_ = null;
+        }
+        return buffEffectsBuilder_;
+      }
+
+      private java.util.List<cg.base.io.proto.VOProtos.VO_ACTION_PROCESS> actionProcesses_ =
+        java.util.Collections.emptyList();
+      private void ensureActionProcessesIsMutable() {
+        if (!((bitField0_ & 0x00000100) == 0x00000100)) {
+          actionProcesses_ = new java.util.ArrayList<cg.base.io.proto.VOProtos.VO_ACTION_PROCESS>(actionProcesses_);
+          bitField0_ |= 0x00000100;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_PROCESS, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder, cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder> actionProcessesBuilder_;
+
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public java.util.List<cg.base.io.proto.VOProtos.VO_ACTION_PROCESS> getActionProcessesList() {
+        if (actionProcessesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(actionProcesses_);
+        } else {
+          return actionProcessesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public int getActionProcessesCount() {
+        if (actionProcessesBuilder_ == null) {
+          return actionProcesses_.size();
+        } else {
+          return actionProcessesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS getActionProcesses(int index) {
+        if (actionProcessesBuilder_ == null) {
+          return actionProcesses_.get(index);
+        } else {
+          return actionProcessesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public Builder setActionProcesses(
+          int index, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS value) {
+        if (actionProcessesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActionProcessesIsMutable();
+          actionProcesses_.set(index, value);
+          onChanged();
+        } else {
+          actionProcessesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public Builder setActionProcesses(
+          int index, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder builderForValue) {
+        if (actionProcessesBuilder_ == null) {
+          ensureActionProcessesIsMutable();
+          actionProcesses_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          actionProcessesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public Builder addActionProcesses(cg.base.io.proto.VOProtos.VO_ACTION_PROCESS value) {
+        if (actionProcessesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActionProcessesIsMutable();
+          actionProcesses_.add(value);
+          onChanged();
+        } else {
+          actionProcessesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public Builder addActionProcesses(
+          int index, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS value) {
+        if (actionProcessesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureActionProcessesIsMutable();
+          actionProcesses_.add(index, value);
+          onChanged();
+        } else {
+          actionProcessesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public Builder addActionProcesses(
+          cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder builderForValue) {
+        if (actionProcessesBuilder_ == null) {
+          ensureActionProcessesIsMutable();
+          actionProcesses_.add(builderForValue.build());
+          onChanged();
+        } else {
+          actionProcessesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public Builder addActionProcesses(
+          int index, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder builderForValue) {
+        if (actionProcessesBuilder_ == null) {
+          ensureActionProcessesIsMutable();
+          actionProcesses_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          actionProcessesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public Builder addAllActionProcesses(
+          java.lang.Iterable<? extends cg.base.io.proto.VOProtos.VO_ACTION_PROCESS> values) {
+        if (actionProcessesBuilder_ == null) {
+          ensureActionProcessesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, actionProcesses_);
+          onChanged();
+        } else {
+          actionProcessesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public Builder clearActionProcesses() {
+        if (actionProcessesBuilder_ == null) {
+          actionProcesses_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000100);
+          onChanged();
+        } else {
+          actionProcessesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public Builder removeActionProcesses(int index) {
+        if (actionProcessesBuilder_ == null) {
+          ensureActionProcessesIsMutable();
+          actionProcesses_.remove(index);
+          onChanged();
+        } else {
+          actionProcessesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder getActionProcessesBuilder(
+          int index) {
+        return getActionProcessesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder getActionProcessesOrBuilder(
+          int index) {
+        if (actionProcessesBuilder_ == null) {
+          return actionProcesses_.get(index);  } else {
+          return actionProcessesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public java.util.List<? extends cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder> 
+           getActionProcessesOrBuilderList() {
+        if (actionProcessesBuilder_ != null) {
+          return actionProcessesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(actionProcesses_);
+        }
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder addActionProcessesBuilder() {
+        return getActionProcessesFieldBuilder().addBuilder(
+            cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder addActionProcessesBuilder(
+          int index) {
+        return getActionProcessesFieldBuilder().addBuilder(
+            index, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .VO_ACTION_PROCESS actionProcesses = 9;</code>
+       */
+      public java.util.List<cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder> 
+           getActionProcessesBuilderList() {
+        return getActionProcessesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_PROCESS, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder, cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder> 
+          getActionProcessesFieldBuilder() {
+        if (actionProcessesBuilder_ == null) {
+          actionProcessesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_ACTION_PROCESS, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder, cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder>(
+                  actionProcesses_,
+                  ((bitField0_ & 0x00000100) == 0x00000100),
+                  getParentForChildren(),
+                  isClean());
+          actionProcesses_ = null;
+        }
+        return actionProcessesBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:RESPONSE_BATTLE_ACTION)
@@ -4205,6 +6619,11 @@ public final class BattleProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_BuffEffectInfo_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_BuffEffectInfo_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_RESPONSE_BATTLE_ACTION_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -4235,13 +6654,20 @@ public final class BattleProtos {
       "r\030\007 \002(\010\"s\n\025RESPONSE_BATTLE_ENTER\022\020\n\010batt" +
       "leId\030\001 \002(\005\022#\n\005teamA\030\002 \003(\0132\024.VO_UNIT_BATT" +
       "LE_INFO\022#\n\005teamB\030\003 \003(\0132\024.VO_UNIT_BATTLE_" +
-      "INFO\")\n\025REQUEST_BATTLE_ATTACK\022\020\n\010targetI" +
-      "d\030\001 \002(\005\"*\n\026RESPONSE_BATTLE_ACTION\022\020\n\010tar" +
-      "getId\030\001 \002(\005\"A\n\026RESPONSE_BATTLE_FINISH\022\r\n",
-      "\005isWin\030\001 \002(\010\022\030\n\005gains\030\002 \003(\0132\t.VO_GAINS\"3" +
-      "\n\034RESPONSE_BATTLE_WAIT_COMMAND\022\023\n\013action" +
-      "Count\030\001 \002(\005B \n\020cg.base.io.protoB\014BattleP" +
-      "rotos"
+      "INFO\"&\n\025REQUEST_BATTLE_ATTACK\022\r\n\005tarId\030\001" +
+      " \002(\005\"l\n\021VO_BuffEffectInfo\022\014\n\004tech\030\001 \002(\t\022" +
+      "\n\n\002id\030\002 \002(\005\022&\n\014effectValues\030\003 \003(\0132\020.VO_E",
+      "FFECT_VALUE\022\025\n\006finish\030\004 \001(\010:\005false\"\345\001\n\026R" +
+      "ESPONSE_BATTLE_ACTION\022\014\n\004type\030\001 \002(\005\022\021\n\ts" +
+      "killType\030\002 \001(\005\022\022\n\nskillLevel\030\003 \001(\005\022\017\n\007sk" +
+      "illId\030\004 \001(\005\022\020\n\010sourceId\030\005 \002(\005\022\014\n\004tech\030\006 " +
+      "\002(\t\022\017\n\007message\030\007 \002(\t\022\'\n\013buffEffects\030\010 \003(" +
+      "\0132\022.VO_BuffEffectInfo\022+\n\017actionProcesses" +
+      "\030\t \003(\0132\022.VO_ACTION_PROCESS\"A\n\026RESPONSE_B" +
+      "ATTLE_FINISH\022\r\n\005isWin\030\001 \002(\010\022\030\n\005gains\030\002 \003" +
+      "(\0132\t.VO_GAINS\"3\n\034RESPONSE_BATTLE_WAIT_CO" +
+      "MMAND\022\023\n\013actionCount\030\001 \002(\005B \n\020cg.base.io",
+      ".protoB\014BattleProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -4273,21 +6699,27 @@ public final class BattleProtos {
     internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_REQUEST_BATTLE_ATTACK_descriptor,
-        new java.lang.String[] { "TargetId", });
-    internal_static_RESPONSE_BATTLE_ACTION_descriptor =
+        new java.lang.String[] { "TarId", });
+    internal_static_VO_BuffEffectInfo_descriptor =
       getDescriptor().getMessageTypes().get(3);
+    internal_static_VO_BuffEffectInfo_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_BuffEffectInfo_descriptor,
+        new java.lang.String[] { "Tech", "Id", "EffectValues", "Finish", });
+    internal_static_RESPONSE_BATTLE_ACTION_descriptor =
+      getDescriptor().getMessageTypes().get(4);
     internal_static_RESPONSE_BATTLE_ACTION_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_RESPONSE_BATTLE_ACTION_descriptor,
-        new java.lang.String[] { "TargetId", });
+        new java.lang.String[] { "Type", "SkillType", "SkillLevel", "SkillId", "SourceId", "Tech", "Message", "BuffEffects", "ActionProcesses", });
     internal_static_RESPONSE_BATTLE_FINISH_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_RESPONSE_BATTLE_FINISH_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_RESPONSE_BATTLE_FINISH_descriptor,
         new java.lang.String[] { "IsWin", "Gains", });
     internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_RESPONSE_BATTLE_WAIT_COMMAND_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_RESPONSE_BATTLE_WAIT_COMMAND_descriptor,

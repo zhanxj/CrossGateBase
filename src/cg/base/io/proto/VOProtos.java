@@ -27905,6 +27905,5169 @@ public final class VOProtos {
     // @@protoc_insertion_point(class_scope:VO_PRICE)
   }
 
+  public interface VO_EFFECT_VALUEOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_EFFECT_VALUE)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required int32 value = 1;</code>
+     */
+    boolean hasValue();
+    /**
+     * <code>required int32 value = 1;</code>
+     */
+    int getValue();
+
+    /**
+     * <code>required int32 effectType = 2;</code>
+     */
+    boolean hasEffectType();
+    /**
+     * <code>required int32 effectType = 2;</code>
+     */
+    int getEffectType();
+
+    /**
+     * <code>optional bool isCritical = 3 [default = false];</code>
+     */
+    boolean hasIsCritical();
+    /**
+     * <code>optional bool isCritical = 3 [default = false];</code>
+     */
+    boolean getIsCritical();
+
+    /**
+     * <code>optional string message = 4;</code>
+     */
+    boolean hasMessage();
+    /**
+     * <code>optional string message = 4;</code>
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>optional string message = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+  }
+  /**
+   * Protobuf type {@code VO_EFFECT_VALUE}
+   */
+  public static final class VO_EFFECT_VALUE extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_EFFECT_VALUE)
+      VO_EFFECT_VALUEOrBuilder {
+    // Use VO_EFFECT_VALUE.newBuilder() to construct.
+    private VO_EFFECT_VALUE(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private VO_EFFECT_VALUE(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final VO_EFFECT_VALUE defaultInstance;
+    public static VO_EFFECT_VALUE getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public VO_EFFECT_VALUE getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_EFFECT_VALUE(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              value_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              effectType_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              isCritical_ = input.readBool();
+              break;
+            }
+            case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000008;
+              message_ = bs;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_EFFECT_VALUE_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_EFFECT_VALUE_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.class, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<VO_EFFECT_VALUE> PARSER =
+        new com.google.protobuf.AbstractParser<VO_EFFECT_VALUE>() {
+      public VO_EFFECT_VALUE parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_EFFECT_VALUE(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_EFFECT_VALUE> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int VALUE_FIELD_NUMBER = 1;
+    private int value_;
+    /**
+     * <code>required int32 value = 1;</code>
+     */
+    public boolean hasValue() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 value = 1;</code>
+     */
+    public int getValue() {
+      return value_;
+    }
+
+    public static final int EFFECTTYPE_FIELD_NUMBER = 2;
+    private int effectType_;
+    /**
+     * <code>required int32 effectType = 2;</code>
+     */
+    public boolean hasEffectType() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 effectType = 2;</code>
+     */
+    public int getEffectType() {
+      return effectType_;
+    }
+
+    public static final int ISCRITICAL_FIELD_NUMBER = 3;
+    private boolean isCritical_;
+    /**
+     * <code>optional bool isCritical = 3 [default = false];</code>
+     */
+    public boolean hasIsCritical() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional bool isCritical = 3 [default = false];</code>
+     */
+    public boolean getIsCritical() {
+      return isCritical_;
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 4;
+    private java.lang.Object message_;
+    /**
+     * <code>optional string message = 4;</code>
+     */
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional string message = 4;</code>
+     */
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          message_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string message = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      value_ = 0;
+      effectType_ = 0;
+      isCritical_ = false;
+      message_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasValue()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasEffectType()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, value_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, effectType_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(3, isCritical_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(4, getMessageBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, value_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, effectType_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isCritical_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, getMessageBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.VOProtos.VO_EFFECT_VALUE prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code VO_EFFECT_VALUE}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_EFFECT_VALUE)
+        cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_EFFECT_VALUE_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_EFFECT_VALUE_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.class, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        value_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        effectType_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isCritical_ = false;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        message_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_EFFECT_VALUE_descriptor;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE getDefaultInstanceForType() {
+        return cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE build() {
+        cg.base.io.proto.VOProtos.VO_EFFECT_VALUE result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE buildPartial() {
+        cg.base.io.proto.VOProtos.VO_EFFECT_VALUE result = new cg.base.io.proto.VOProtos.VO_EFFECT_VALUE(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.value_ = value_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.effectType_ = effectType_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.isCritical_ = isCritical_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.message_ = message_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.VOProtos.VO_EFFECT_VALUE) {
+          return mergeFrom((cg.base.io.proto.VOProtos.VO_EFFECT_VALUE)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_EFFECT_VALUE other) {
+        if (other == cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.getDefaultInstance()) return this;
+        if (other.hasValue()) {
+          setValue(other.getValue());
+        }
+        if (other.hasEffectType()) {
+          setEffectType(other.getEffectType());
+        }
+        if (other.hasIsCritical()) {
+          setIsCritical(other.getIsCritical());
+        }
+        if (other.hasMessage()) {
+          bitField0_ |= 0x00000008;
+          message_ = other.message_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasValue()) {
+          
+          return false;
+        }
+        if (!hasEffectType()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.VOProtos.VO_EFFECT_VALUE parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.VOProtos.VO_EFFECT_VALUE) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int value_ ;
+      /**
+       * <code>required int32 value = 1;</code>
+       */
+      public boolean hasValue() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 value = 1;</code>
+       */
+      public int getValue() {
+        return value_;
+      }
+      /**
+       * <code>required int32 value = 1;</code>
+       */
+      public Builder setValue(int value) {
+        bitField0_ |= 0x00000001;
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 value = 1;</code>
+       */
+      public Builder clearValue() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        value_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int effectType_ ;
+      /**
+       * <code>required int32 effectType = 2;</code>
+       */
+      public boolean hasEffectType() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 effectType = 2;</code>
+       */
+      public int getEffectType() {
+        return effectType_;
+      }
+      /**
+       * <code>required int32 effectType = 2;</code>
+       */
+      public Builder setEffectType(int value) {
+        bitField0_ |= 0x00000002;
+        effectType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 effectType = 2;</code>
+       */
+      public Builder clearEffectType() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        effectType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isCritical_ ;
+      /**
+       * <code>optional bool isCritical = 3 [default = false];</code>
+       */
+      public boolean hasIsCritical() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional bool isCritical = 3 [default = false];</code>
+       */
+      public boolean getIsCritical() {
+        return isCritical_;
+      }
+      /**
+       * <code>optional bool isCritical = 3 [default = false];</code>
+       */
+      public Builder setIsCritical(boolean value) {
+        bitField0_ |= 0x00000004;
+        isCritical_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool isCritical = 3 [default = false];</code>
+       */
+      public Builder clearIsCritical() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        isCritical_ = false;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <code>optional string message = 4;</code>
+       */
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional string message = 4;</code>
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            message_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string message = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string message = 4;</code>
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string message = 4;</code>
+       */
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string message = 4;</code>
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:VO_EFFECT_VALUE)
+    }
+
+    static {
+      defaultInstance = new VO_EFFECT_VALUE(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:VO_EFFECT_VALUE)
+  }
+
+  public interface VO_ACTION_PROCESSOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_ACTION_PROCESS)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required int32 targetId = 1;</code>
+     */
+    boolean hasTargetId();
+    /**
+     * <code>required int32 targetId = 1;</code>
+     */
+    int getTargetId();
+
+    /**
+     * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    boolean hasActionResult();
+    /**
+     * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_RESULT getActionResult();
+    /**
+     * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder getActionResultOrBuilder();
+
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    boolean hasCounter();
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_COUNTER getCounter();
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder getCounterOrBuilder();
+
+    /**
+     * <code>optional .VO_GUARD guard = 4;</code>
+     */
+    boolean hasGuard();
+    /**
+     * <code>optional .VO_GUARD guard = 4;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_GUARD getGuard();
+    /**
+     * <code>optional .VO_GUARD guard = 4;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_GUARDOrBuilder getGuardOrBuilder();
+
+    /**
+     * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+     */
+    boolean hasBlood();
+    /**
+     * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_RESULT getBlood();
+    /**
+     * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder getBloodOrBuilder();
+
+    /**
+     * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+     */
+    boolean hasNext();
+    /**
+     * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_PROCESS getNext();
+    /**
+     * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder getNextOrBuilder();
+  }
+  /**
+   * Protobuf type {@code VO_ACTION_PROCESS}
+   */
+  public static final class VO_ACTION_PROCESS extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_ACTION_PROCESS)
+      VO_ACTION_PROCESSOrBuilder {
+    // Use VO_ACTION_PROCESS.newBuilder() to construct.
+    private VO_ACTION_PROCESS(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private VO_ACTION_PROCESS(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final VO_ACTION_PROCESS defaultInstance;
+    public static VO_ACTION_PROCESS getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public VO_ACTION_PROCESS getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_ACTION_PROCESS(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              targetId_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = actionResult_.toBuilder();
+              }
+              actionResult_ = input.readMessage(cg.base.io.proto.VOProtos.VO_ACTION_RESULT.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(actionResult_);
+                actionResult_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000002;
+              break;
+            }
+            case 26: {
+              cg.base.io.proto.VOProtos.VO_COUNTER.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = counter_.toBuilder();
+              }
+              counter_ = input.readMessage(cg.base.io.proto.VOProtos.VO_COUNTER.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(counter_);
+                counter_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000004;
+              break;
+            }
+            case 34: {
+              cg.base.io.proto.VOProtos.VO_GUARD.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                subBuilder = guard_.toBuilder();
+              }
+              guard_ = input.readMessage(cg.base.io.proto.VOProtos.VO_GUARD.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(guard_);
+                guard_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000008;
+              break;
+            }
+            case 42: {
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                subBuilder = blood_.toBuilder();
+              }
+              blood_ = input.readMessage(cg.base.io.proto.VOProtos.VO_ACTION_RESULT.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(blood_);
+                blood_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000010;
+              break;
+            }
+            case 50: {
+              cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000020) == 0x00000020)) {
+                subBuilder = next_.toBuilder();
+              }
+              next_ = input.readMessage(cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(next_);
+                next_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000020;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_PROCESS_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_PROCESS_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.class, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<VO_ACTION_PROCESS> PARSER =
+        new com.google.protobuf.AbstractParser<VO_ACTION_PROCESS>() {
+      public VO_ACTION_PROCESS parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_ACTION_PROCESS(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_ACTION_PROCESS> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int TARGETID_FIELD_NUMBER = 1;
+    private int targetId_;
+    /**
+     * <code>required int32 targetId = 1;</code>
+     */
+    public boolean hasTargetId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 targetId = 1;</code>
+     */
+    public int getTargetId() {
+      return targetId_;
+    }
+
+    public static final int ACTIONRESULT_FIELD_NUMBER = 2;
+    private cg.base.io.proto.VOProtos.VO_ACTION_RESULT actionResult_;
+    /**
+     * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    public boolean hasActionResult() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_RESULT getActionResult() {
+      return actionResult_;
+    }
+    /**
+     * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder getActionResultOrBuilder() {
+      return actionResult_;
+    }
+
+    public static final int COUNTER_FIELD_NUMBER = 3;
+    private cg.base.io.proto.VOProtos.VO_COUNTER counter_;
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    public boolean hasCounter() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_COUNTER getCounter() {
+      return counter_;
+    }
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder getCounterOrBuilder() {
+      return counter_;
+    }
+
+    public static final int GUARD_FIELD_NUMBER = 4;
+    private cg.base.io.proto.VOProtos.VO_GUARD guard_;
+    /**
+     * <code>optional .VO_GUARD guard = 4;</code>
+     */
+    public boolean hasGuard() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional .VO_GUARD guard = 4;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_GUARD getGuard() {
+      return guard_;
+    }
+    /**
+     * <code>optional .VO_GUARD guard = 4;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_GUARDOrBuilder getGuardOrBuilder() {
+      return guard_;
+    }
+
+    public static final int BLOOD_FIELD_NUMBER = 5;
+    private cg.base.io.proto.VOProtos.VO_ACTION_RESULT blood_;
+    /**
+     * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+     */
+    public boolean hasBlood() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_RESULT getBlood() {
+      return blood_;
+    }
+    /**
+     * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder getBloodOrBuilder() {
+      return blood_;
+    }
+
+    public static final int NEXT_FIELD_NUMBER = 6;
+    private cg.base.io.proto.VOProtos.VO_ACTION_PROCESS next_;
+    /**
+     * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+     */
+    public boolean hasNext() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS getNext() {
+      return next_;
+    }
+    /**
+     * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder getNextOrBuilder() {
+      return next_;
+    }
+
+    private void initFields() {
+      targetId_ = 0;
+      actionResult_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+      counter_ = cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance();
+      guard_ = cg.base.io.proto.VOProtos.VO_GUARD.getDefaultInstance();
+      blood_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+      next_ = cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasTargetId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (hasActionResult()) {
+        if (!getActionResult().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasCounter()) {
+        if (!getCounter().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasGuard()) {
+        if (!getGuard().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasBlood()) {
+        if (!getBlood().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasNext()) {
+        if (!getNext().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, targetId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, actionResult_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, counter_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(4, guard_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeMessage(5, blood_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeMessage(6, next_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, targetId_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, actionResult_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, counter_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, guard_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, blood_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, next_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.VOProtos.VO_ACTION_PROCESS prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code VO_ACTION_PROCESS}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_ACTION_PROCESS)
+        cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_PROCESS_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_PROCESS_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.class, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getActionResultFieldBuilder();
+          getCounterFieldBuilder();
+          getGuardFieldBuilder();
+          getBloodFieldBuilder();
+          getNextFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        targetId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (actionResultBuilder_ == null) {
+          actionResult_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+        } else {
+          actionResultBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (counterBuilder_ == null) {
+          counter_ = cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance();
+        } else {
+          counterBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        if (guardBuilder_ == null) {
+          guard_ = cg.base.io.proto.VOProtos.VO_GUARD.getDefaultInstance();
+        } else {
+          guardBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        if (bloodBuilder_ == null) {
+          blood_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+        } else {
+          bloodBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000010);
+        if (nextBuilder_ == null) {
+          next_ = cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.getDefaultInstance();
+        } else {
+          nextBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_PROCESS_descriptor;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS getDefaultInstanceForType() {
+        return cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS build() {
+        cg.base.io.proto.VOProtos.VO_ACTION_PROCESS result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS buildPartial() {
+        cg.base.io.proto.VOProtos.VO_ACTION_PROCESS result = new cg.base.io.proto.VOProtos.VO_ACTION_PROCESS(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.targetId_ = targetId_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (actionResultBuilder_ == null) {
+          result.actionResult_ = actionResult_;
+        } else {
+          result.actionResult_ = actionResultBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (counterBuilder_ == null) {
+          result.counter_ = counter_;
+        } else {
+          result.counter_ = counterBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        if (guardBuilder_ == null) {
+          result.guard_ = guard_;
+        } else {
+          result.guard_ = guardBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        if (bloodBuilder_ == null) {
+          result.blood_ = blood_;
+        } else {
+          result.blood_ = bloodBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        if (nextBuilder_ == null) {
+          result.next_ = next_;
+        } else {
+          result.next_ = nextBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.VOProtos.VO_ACTION_PROCESS) {
+          return mergeFrom((cg.base.io.proto.VOProtos.VO_ACTION_PROCESS)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_ACTION_PROCESS other) {
+        if (other == cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.getDefaultInstance()) return this;
+        if (other.hasTargetId()) {
+          setTargetId(other.getTargetId());
+        }
+        if (other.hasActionResult()) {
+          mergeActionResult(other.getActionResult());
+        }
+        if (other.hasCounter()) {
+          mergeCounter(other.getCounter());
+        }
+        if (other.hasGuard()) {
+          mergeGuard(other.getGuard());
+        }
+        if (other.hasBlood()) {
+          mergeBlood(other.getBlood());
+        }
+        if (other.hasNext()) {
+          mergeNext(other.getNext());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasTargetId()) {
+          
+          return false;
+        }
+        if (hasActionResult()) {
+          if (!getActionResult().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasCounter()) {
+          if (!getCounter().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasGuard()) {
+          if (!getGuard().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasBlood()) {
+          if (!getBlood().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasNext()) {
+          if (!getNext().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.VOProtos.VO_ACTION_PROCESS parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.VOProtos.VO_ACTION_PROCESS) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int targetId_ ;
+      /**
+       * <code>required int32 targetId = 1;</code>
+       */
+      public boolean hasTargetId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 targetId = 1;</code>
+       */
+      public int getTargetId() {
+        return targetId_;
+      }
+      /**
+       * <code>required int32 targetId = 1;</code>
+       */
+      public Builder setTargetId(int value) {
+        bitField0_ |= 0x00000001;
+        targetId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 targetId = 1;</code>
+       */
+      public Builder clearTargetId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        targetId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private cg.base.io.proto.VOProtos.VO_ACTION_RESULT actionResult_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_RESULT, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder, cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder> actionResultBuilder_;
+      /**
+       * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public boolean hasActionResult() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULT getActionResult() {
+        if (actionResultBuilder_ == null) {
+          return actionResult_;
+        } else {
+          return actionResultBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public Builder setActionResult(cg.base.io.proto.VOProtos.VO_ACTION_RESULT value) {
+        if (actionResultBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          actionResult_ = value;
+          onChanged();
+        } else {
+          actionResultBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public Builder setActionResult(
+          cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder builderForValue) {
+        if (actionResultBuilder_ == null) {
+          actionResult_ = builderForValue.build();
+          onChanged();
+        } else {
+          actionResultBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public Builder mergeActionResult(cg.base.io.proto.VOProtos.VO_ACTION_RESULT value) {
+        if (actionResultBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              actionResult_ != cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance()) {
+            actionResult_ =
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT.newBuilder(actionResult_).mergeFrom(value).buildPartial();
+          } else {
+            actionResult_ = value;
+          }
+          onChanged();
+        } else {
+          actionResultBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public Builder clearActionResult() {
+        if (actionResultBuilder_ == null) {
+          actionResult_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+          onChanged();
+        } else {
+          actionResultBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder getActionResultBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getActionResultFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder getActionResultOrBuilder() {
+        if (actionResultBuilder_ != null) {
+          return actionResultBuilder_.getMessageOrBuilder();
+        } else {
+          return actionResult_;
+        }
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_RESULT, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder, cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder> 
+          getActionResultFieldBuilder() {
+        if (actionResultBuilder_ == null) {
+          actionResultBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder, cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder>(
+                  getActionResult(),
+                  getParentForChildren(),
+                  isClean());
+          actionResult_ = null;
+        }
+        return actionResultBuilder_;
+      }
+
+      private cg.base.io.proto.VOProtos.VO_COUNTER counter_ = cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_COUNTER, cg.base.io.proto.VOProtos.VO_COUNTER.Builder, cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder> counterBuilder_;
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public boolean hasCounter() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_COUNTER getCounter() {
+        if (counterBuilder_ == null) {
+          return counter_;
+        } else {
+          return counterBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public Builder setCounter(cg.base.io.proto.VOProtos.VO_COUNTER value) {
+        if (counterBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          counter_ = value;
+          onChanged();
+        } else {
+          counterBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public Builder setCounter(
+          cg.base.io.proto.VOProtos.VO_COUNTER.Builder builderForValue) {
+        if (counterBuilder_ == null) {
+          counter_ = builderForValue.build();
+          onChanged();
+        } else {
+          counterBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public Builder mergeCounter(cg.base.io.proto.VOProtos.VO_COUNTER value) {
+        if (counterBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              counter_ != cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance()) {
+            counter_ =
+              cg.base.io.proto.VOProtos.VO_COUNTER.newBuilder(counter_).mergeFrom(value).buildPartial();
+          } else {
+            counter_ = value;
+          }
+          onChanged();
+        } else {
+          counterBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public Builder clearCounter() {
+        if (counterBuilder_ == null) {
+          counter_ = cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance();
+          onChanged();
+        } else {
+          counterBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_COUNTER.Builder getCounterBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getCounterFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder getCounterOrBuilder() {
+        if (counterBuilder_ != null) {
+          return counterBuilder_.getMessageOrBuilder();
+        } else {
+          return counter_;
+        }
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_COUNTER, cg.base.io.proto.VOProtos.VO_COUNTER.Builder, cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder> 
+          getCounterFieldBuilder() {
+        if (counterBuilder_ == null) {
+          counterBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_COUNTER, cg.base.io.proto.VOProtos.VO_COUNTER.Builder, cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder>(
+                  getCounter(),
+                  getParentForChildren(),
+                  isClean());
+          counter_ = null;
+        }
+        return counterBuilder_;
+      }
+
+      private cg.base.io.proto.VOProtos.VO_GUARD guard_ = cg.base.io.proto.VOProtos.VO_GUARD.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_GUARD, cg.base.io.proto.VOProtos.VO_GUARD.Builder, cg.base.io.proto.VOProtos.VO_GUARDOrBuilder> guardBuilder_;
+      /**
+       * <code>optional .VO_GUARD guard = 4;</code>
+       */
+      public boolean hasGuard() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional .VO_GUARD guard = 4;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_GUARD getGuard() {
+        if (guardBuilder_ == null) {
+          return guard_;
+        } else {
+          return guardBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .VO_GUARD guard = 4;</code>
+       */
+      public Builder setGuard(cg.base.io.proto.VOProtos.VO_GUARD value) {
+        if (guardBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          guard_ = value;
+          onChanged();
+        } else {
+          guardBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .VO_GUARD guard = 4;</code>
+       */
+      public Builder setGuard(
+          cg.base.io.proto.VOProtos.VO_GUARD.Builder builderForValue) {
+        if (guardBuilder_ == null) {
+          guard_ = builderForValue.build();
+          onChanged();
+        } else {
+          guardBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .VO_GUARD guard = 4;</code>
+       */
+      public Builder mergeGuard(cg.base.io.proto.VOProtos.VO_GUARD value) {
+        if (guardBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              guard_ != cg.base.io.proto.VOProtos.VO_GUARD.getDefaultInstance()) {
+            guard_ =
+              cg.base.io.proto.VOProtos.VO_GUARD.newBuilder(guard_).mergeFrom(value).buildPartial();
+          } else {
+            guard_ = value;
+          }
+          onChanged();
+        } else {
+          guardBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .VO_GUARD guard = 4;</code>
+       */
+      public Builder clearGuard() {
+        if (guardBuilder_ == null) {
+          guard_ = cg.base.io.proto.VOProtos.VO_GUARD.getDefaultInstance();
+          onChanged();
+        } else {
+          guardBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      /**
+       * <code>optional .VO_GUARD guard = 4;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_GUARD.Builder getGuardBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getGuardFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .VO_GUARD guard = 4;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_GUARDOrBuilder getGuardOrBuilder() {
+        if (guardBuilder_ != null) {
+          return guardBuilder_.getMessageOrBuilder();
+        } else {
+          return guard_;
+        }
+      }
+      /**
+       * <code>optional .VO_GUARD guard = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_GUARD, cg.base.io.proto.VOProtos.VO_GUARD.Builder, cg.base.io.proto.VOProtos.VO_GUARDOrBuilder> 
+          getGuardFieldBuilder() {
+        if (guardBuilder_ == null) {
+          guardBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_GUARD, cg.base.io.proto.VOProtos.VO_GUARD.Builder, cg.base.io.proto.VOProtos.VO_GUARDOrBuilder>(
+                  getGuard(),
+                  getParentForChildren(),
+                  isClean());
+          guard_ = null;
+        }
+        return guardBuilder_;
+      }
+
+      private cg.base.io.proto.VOProtos.VO_ACTION_RESULT blood_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_RESULT, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder, cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder> bloodBuilder_;
+      /**
+       * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+       */
+      public boolean hasBlood() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULT getBlood() {
+        if (bloodBuilder_ == null) {
+          return blood_;
+        } else {
+          return bloodBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+       */
+      public Builder setBlood(cg.base.io.proto.VOProtos.VO_ACTION_RESULT value) {
+        if (bloodBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          blood_ = value;
+          onChanged();
+        } else {
+          bloodBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+       */
+      public Builder setBlood(
+          cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder builderForValue) {
+        if (bloodBuilder_ == null) {
+          blood_ = builderForValue.build();
+          onChanged();
+        } else {
+          bloodBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+       */
+      public Builder mergeBlood(cg.base.io.proto.VOProtos.VO_ACTION_RESULT value) {
+        if (bloodBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) == 0x00000010) &&
+              blood_ != cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance()) {
+            blood_ =
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT.newBuilder(blood_).mergeFrom(value).buildPartial();
+          } else {
+            blood_ = value;
+          }
+          onChanged();
+        } else {
+          bloodBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+       */
+      public Builder clearBlood() {
+        if (bloodBuilder_ == null) {
+          blood_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+          onChanged();
+        } else {
+          bloodBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000010);
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder getBloodBuilder() {
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return getBloodFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder getBloodOrBuilder() {
+        if (bloodBuilder_ != null) {
+          return bloodBuilder_.getMessageOrBuilder();
+        } else {
+          return blood_;
+        }
+      }
+      /**
+       * <code>optional .VO_ACTION_RESULT blood = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_RESULT, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder, cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder> 
+          getBloodFieldBuilder() {
+        if (bloodBuilder_ == null) {
+          bloodBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder, cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder>(
+                  getBlood(),
+                  getParentForChildren(),
+                  isClean());
+          blood_ = null;
+        }
+        return bloodBuilder_;
+      }
+
+      private cg.base.io.proto.VOProtos.VO_ACTION_PROCESS next_ = cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_PROCESS, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder, cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder> nextBuilder_;
+      /**
+       * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+       */
+      public boolean hasNext() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS getNext() {
+        if (nextBuilder_ == null) {
+          return next_;
+        } else {
+          return nextBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+       */
+      public Builder setNext(cg.base.io.proto.VOProtos.VO_ACTION_PROCESS value) {
+        if (nextBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          next_ = value;
+          onChanged();
+        } else {
+          nextBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+       */
+      public Builder setNext(
+          cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder builderForValue) {
+        if (nextBuilder_ == null) {
+          next_ = builderForValue.build();
+          onChanged();
+        } else {
+          nextBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+       */
+      public Builder mergeNext(cg.base.io.proto.VOProtos.VO_ACTION_PROCESS value) {
+        if (nextBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) == 0x00000020) &&
+              next_ != cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.getDefaultInstance()) {
+            next_ =
+              cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.newBuilder(next_).mergeFrom(value).buildPartial();
+          } else {
+            next_ = value;
+          }
+          onChanged();
+        } else {
+          nextBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+       */
+      public Builder clearNext() {
+        if (nextBuilder_ == null) {
+          next_ = cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.getDefaultInstance();
+          onChanged();
+        } else {
+          nextBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+      /**
+       * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder getNextBuilder() {
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return getNextFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder getNextOrBuilder() {
+        if (nextBuilder_ != null) {
+          return nextBuilder_.getMessageOrBuilder();
+        } else {
+          return next_;
+        }
+      }
+      /**
+       * <code>optional .VO_ACTION_PROCESS next = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_PROCESS, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder, cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder> 
+          getNextFieldBuilder() {
+        if (nextBuilder_ == null) {
+          nextBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_ACTION_PROCESS, cg.base.io.proto.VOProtos.VO_ACTION_PROCESS.Builder, cg.base.io.proto.VOProtos.VO_ACTION_PROCESSOrBuilder>(
+                  getNext(),
+                  getParentForChildren(),
+                  isClean());
+          next_ = null;
+        }
+        return nextBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:VO_ACTION_PROCESS)
+    }
+
+    static {
+      defaultInstance = new VO_ACTION_PROCESS(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:VO_ACTION_PROCESS)
+  }
+
+  public interface VO_ACTION_RESULTOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_ACTION_RESULT)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    boolean hasTech();
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    java.lang.String getTech();
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getTechBytes();
+
+    /**
+     * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+     */
+    boolean hasEffectValue();
+    /**
+     * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_EFFECT_VALUE getEffectValue();
+    /**
+     * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder getEffectValueOrBuilder();
+
+    /**
+     * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+     */
+    boolean hasDieInfo();
+    /**
+     * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_DIE_INFO getDieInfo();
+    /**
+     * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_DIE_INFOOrBuilder getDieInfoOrBuilder();
+  }
+  /**
+   * Protobuf type {@code VO_ACTION_RESULT}
+   */
+  public static final class VO_ACTION_RESULT extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_ACTION_RESULT)
+      VO_ACTION_RESULTOrBuilder {
+    // Use VO_ACTION_RESULT.newBuilder() to construct.
+    private VO_ACTION_RESULT(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private VO_ACTION_RESULT(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final VO_ACTION_RESULT defaultInstance;
+    public static VO_ACTION_RESULT getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public VO_ACTION_RESULT getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_ACTION_RESULT(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              tech_ = bs;
+              break;
+            }
+            case 18: {
+              cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = effectValue_.toBuilder();
+              }
+              effectValue_ = input.readMessage(cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(effectValue_);
+                effectValue_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000002;
+              break;
+            }
+            case 26: {
+              cg.base.io.proto.VOProtos.VO_DIE_INFO.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = dieInfo_.toBuilder();
+              }
+              dieInfo_ = input.readMessage(cg.base.io.proto.VOProtos.VO_DIE_INFO.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(dieInfo_);
+                dieInfo_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000004;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_RESULT_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_RESULT_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT.class, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<VO_ACTION_RESULT> PARSER =
+        new com.google.protobuf.AbstractParser<VO_ACTION_RESULT>() {
+      public VO_ACTION_RESULT parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_ACTION_RESULT(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_ACTION_RESULT> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int TECH_FIELD_NUMBER = 1;
+    private java.lang.Object tech_;
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    public boolean hasTech() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    public java.lang.String getTech() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          tech_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTechBytes() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        tech_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int EFFECTVALUE_FIELD_NUMBER = 2;
+    private cg.base.io.proto.VOProtos.VO_EFFECT_VALUE effectValue_;
+    /**
+     * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+     */
+    public boolean hasEffectValue() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE getEffectValue() {
+      return effectValue_;
+    }
+    /**
+     * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder getEffectValueOrBuilder() {
+      return effectValue_;
+    }
+
+    public static final int DIEINFO_FIELD_NUMBER = 3;
+    private cg.base.io.proto.VOProtos.VO_DIE_INFO dieInfo_;
+    /**
+     * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+     */
+    public boolean hasDieInfo() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_DIE_INFO getDieInfo() {
+      return dieInfo_;
+    }
+    /**
+     * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_DIE_INFOOrBuilder getDieInfoOrBuilder() {
+      return dieInfo_;
+    }
+
+    private void initFields() {
+      tech_ = "";
+      effectValue_ = cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.getDefaultInstance();
+      dieInfo_ = cg.base.io.proto.VOProtos.VO_DIE_INFO.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (hasEffectValue()) {
+        if (!getEffectValue().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, effectValue_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, dieInfo_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, effectValue_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, dieInfo_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_ACTION_RESULT parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.VOProtos.VO_ACTION_RESULT prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code VO_ACTION_RESULT}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_ACTION_RESULT)
+        cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_RESULT_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_RESULT_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.VOProtos.VO_ACTION_RESULT.class, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.VOProtos.VO_ACTION_RESULT.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getEffectValueFieldBuilder();
+          getDieInfoFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        tech_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (effectValueBuilder_ == null) {
+          effectValue_ = cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.getDefaultInstance();
+        } else {
+          effectValueBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (dieInfoBuilder_ == null) {
+          dieInfo_ = cg.base.io.proto.VOProtos.VO_DIE_INFO.getDefaultInstance();
+        } else {
+          dieInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_ACTION_RESULT_descriptor;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULT getDefaultInstanceForType() {
+        return cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULT build() {
+        cg.base.io.proto.VOProtos.VO_ACTION_RESULT result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULT buildPartial() {
+        cg.base.io.proto.VOProtos.VO_ACTION_RESULT result = new cg.base.io.proto.VOProtos.VO_ACTION_RESULT(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.tech_ = tech_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (effectValueBuilder_ == null) {
+          result.effectValue_ = effectValue_;
+        } else {
+          result.effectValue_ = effectValueBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (dieInfoBuilder_ == null) {
+          result.dieInfo_ = dieInfo_;
+        } else {
+          result.dieInfo_ = dieInfoBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.VOProtos.VO_ACTION_RESULT) {
+          return mergeFrom((cg.base.io.proto.VOProtos.VO_ACTION_RESULT)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_ACTION_RESULT other) {
+        if (other == cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance()) return this;
+        if (other.hasTech()) {
+          bitField0_ |= 0x00000001;
+          tech_ = other.tech_;
+          onChanged();
+        }
+        if (other.hasEffectValue()) {
+          mergeEffectValue(other.getEffectValue());
+        }
+        if (other.hasDieInfo()) {
+          mergeDieInfo(other.getDieInfo());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (hasEffectValue()) {
+          if (!getEffectValue().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.VOProtos.VO_ACTION_RESULT parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.VOProtos.VO_ACTION_RESULT) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object tech_ = "";
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public boolean hasTech() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public java.lang.String getTech() {
+        java.lang.Object ref = tech_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            tech_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTechBytes() {
+        java.lang.Object ref = tech_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          tech_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public Builder setTech(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public Builder clearTech() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        tech_ = getDefaultInstance().getTech();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public Builder setTechBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+
+      private cg.base.io.proto.VOProtos.VO_EFFECT_VALUE effectValue_ = cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_EFFECT_VALUE, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder, cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder> effectValueBuilder_;
+      /**
+       * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+       */
+      public boolean hasEffectValue() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE getEffectValue() {
+        if (effectValueBuilder_ == null) {
+          return effectValue_;
+        } else {
+          return effectValueBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+       */
+      public Builder setEffectValue(cg.base.io.proto.VOProtos.VO_EFFECT_VALUE value) {
+        if (effectValueBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          effectValue_ = value;
+          onChanged();
+        } else {
+          effectValueBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+       */
+      public Builder setEffectValue(
+          cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder builderForValue) {
+        if (effectValueBuilder_ == null) {
+          effectValue_ = builderForValue.build();
+          onChanged();
+        } else {
+          effectValueBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+       */
+      public Builder mergeEffectValue(cg.base.io.proto.VOProtos.VO_EFFECT_VALUE value) {
+        if (effectValueBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              effectValue_ != cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.getDefaultInstance()) {
+            effectValue_ =
+              cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.newBuilder(effectValue_).mergeFrom(value).buildPartial();
+          } else {
+            effectValue_ = value;
+          }
+          onChanged();
+        } else {
+          effectValueBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+       */
+      public Builder clearEffectValue() {
+        if (effectValueBuilder_ == null) {
+          effectValue_ = cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.getDefaultInstance();
+          onChanged();
+        } else {
+          effectValueBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder getEffectValueBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getEffectValueFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder getEffectValueOrBuilder() {
+        if (effectValueBuilder_ != null) {
+          return effectValueBuilder_.getMessageOrBuilder();
+        } else {
+          return effectValue_;
+        }
+      }
+      /**
+       * <code>optional .VO_EFFECT_VALUE effectValue = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_EFFECT_VALUE, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder, cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder> 
+          getEffectValueFieldBuilder() {
+        if (effectValueBuilder_ == null) {
+          effectValueBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_EFFECT_VALUE, cg.base.io.proto.VOProtos.VO_EFFECT_VALUE.Builder, cg.base.io.proto.VOProtos.VO_EFFECT_VALUEOrBuilder>(
+                  getEffectValue(),
+                  getParentForChildren(),
+                  isClean());
+          effectValue_ = null;
+        }
+        return effectValueBuilder_;
+      }
+
+      private cg.base.io.proto.VOProtos.VO_DIE_INFO dieInfo_ = cg.base.io.proto.VOProtos.VO_DIE_INFO.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_DIE_INFO, cg.base.io.proto.VOProtos.VO_DIE_INFO.Builder, cg.base.io.proto.VOProtos.VO_DIE_INFOOrBuilder> dieInfoBuilder_;
+      /**
+       * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+       */
+      public boolean hasDieInfo() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_DIE_INFO getDieInfo() {
+        if (dieInfoBuilder_ == null) {
+          return dieInfo_;
+        } else {
+          return dieInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+       */
+      public Builder setDieInfo(cg.base.io.proto.VOProtos.VO_DIE_INFO value) {
+        if (dieInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dieInfo_ = value;
+          onChanged();
+        } else {
+          dieInfoBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+       */
+      public Builder setDieInfo(
+          cg.base.io.proto.VOProtos.VO_DIE_INFO.Builder builderForValue) {
+        if (dieInfoBuilder_ == null) {
+          dieInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          dieInfoBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+       */
+      public Builder mergeDieInfo(cg.base.io.proto.VOProtos.VO_DIE_INFO value) {
+        if (dieInfoBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              dieInfo_ != cg.base.io.proto.VOProtos.VO_DIE_INFO.getDefaultInstance()) {
+            dieInfo_ =
+              cg.base.io.proto.VOProtos.VO_DIE_INFO.newBuilder(dieInfo_).mergeFrom(value).buildPartial();
+          } else {
+            dieInfo_ = value;
+          }
+          onChanged();
+        } else {
+          dieInfoBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+       */
+      public Builder clearDieInfo() {
+        if (dieInfoBuilder_ == null) {
+          dieInfo_ = cg.base.io.proto.VOProtos.VO_DIE_INFO.getDefaultInstance();
+          onChanged();
+        } else {
+          dieInfoBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      /**
+       * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_DIE_INFO.Builder getDieInfoBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getDieInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_DIE_INFOOrBuilder getDieInfoOrBuilder() {
+        if (dieInfoBuilder_ != null) {
+          return dieInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return dieInfo_;
+        }
+      }
+      /**
+       * <code>optional .VO_DIE_INFO dieInfo = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_DIE_INFO, cg.base.io.proto.VOProtos.VO_DIE_INFO.Builder, cg.base.io.proto.VOProtos.VO_DIE_INFOOrBuilder> 
+          getDieInfoFieldBuilder() {
+        if (dieInfoBuilder_ == null) {
+          dieInfoBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_DIE_INFO, cg.base.io.proto.VOProtos.VO_DIE_INFO.Builder, cg.base.io.proto.VOProtos.VO_DIE_INFOOrBuilder>(
+                  getDieInfo(),
+                  getParentForChildren(),
+                  isClean());
+          dieInfo_ = null;
+        }
+        return dieInfoBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:VO_ACTION_RESULT)
+    }
+
+    static {
+      defaultInstance = new VO_ACTION_RESULT(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:VO_ACTION_RESULT)
+  }
+
+  public interface VO_DIE_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_DIE_INFO)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional bool isFly = 1 [default = false];</code>
+     */
+    boolean hasIsFly();
+    /**
+     * <code>optional bool isFly = 1 [default = false];</code>
+     */
+    boolean getIsFly();
+
+    /**
+     * <code>optional bool isDisappear = 2 [default = false];</code>
+     */
+    boolean hasIsDisappear();
+    /**
+     * <code>optional bool isDisappear = 2 [default = false];</code>
+     */
+    boolean getIsDisappear();
+
+    /**
+     * <code>optional bool isSource = 3 [default = false];</code>
+     */
+    boolean hasIsSource();
+    /**
+     * <code>optional bool isSource = 3 [default = false];</code>
+     */
+    boolean getIsSource();
+
+    /**
+     * <code>optional int32 injured = 4 [default = 0];</code>
+     */
+    boolean hasInjured();
+    /**
+     * <code>optional int32 injured = 4 [default = 0];</code>
+     */
+    int getInjured();
+
+    /**
+     * <code>optional int32 soul = 5 [default = 0];</code>
+     */
+    boolean hasSoul();
+    /**
+     * <code>optional int32 soul = 5 [default = 0];</code>
+     */
+    int getSoul();
+  }
+  /**
+   * Protobuf type {@code VO_DIE_INFO}
+   */
+  public static final class VO_DIE_INFO extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_DIE_INFO)
+      VO_DIE_INFOOrBuilder {
+    // Use VO_DIE_INFO.newBuilder() to construct.
+    private VO_DIE_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private VO_DIE_INFO(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final VO_DIE_INFO defaultInstance;
+    public static VO_DIE_INFO getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public VO_DIE_INFO getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_DIE_INFO(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              isFly_ = input.readBool();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              isDisappear_ = input.readBool();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              isSource_ = input.readBool();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              injured_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              soul_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_DIE_INFO_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_DIE_INFO_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.VOProtos.VO_DIE_INFO.class, cg.base.io.proto.VOProtos.VO_DIE_INFO.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<VO_DIE_INFO> PARSER =
+        new com.google.protobuf.AbstractParser<VO_DIE_INFO>() {
+      public VO_DIE_INFO parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_DIE_INFO(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_DIE_INFO> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int ISFLY_FIELD_NUMBER = 1;
+    private boolean isFly_;
+    /**
+     * <code>optional bool isFly = 1 [default = false];</code>
+     */
+    public boolean hasIsFly() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional bool isFly = 1 [default = false];</code>
+     */
+    public boolean getIsFly() {
+      return isFly_;
+    }
+
+    public static final int ISDISAPPEAR_FIELD_NUMBER = 2;
+    private boolean isDisappear_;
+    /**
+     * <code>optional bool isDisappear = 2 [default = false];</code>
+     */
+    public boolean hasIsDisappear() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional bool isDisappear = 2 [default = false];</code>
+     */
+    public boolean getIsDisappear() {
+      return isDisappear_;
+    }
+
+    public static final int ISSOURCE_FIELD_NUMBER = 3;
+    private boolean isSource_;
+    /**
+     * <code>optional bool isSource = 3 [default = false];</code>
+     */
+    public boolean hasIsSource() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional bool isSource = 3 [default = false];</code>
+     */
+    public boolean getIsSource() {
+      return isSource_;
+    }
+
+    public static final int INJURED_FIELD_NUMBER = 4;
+    private int injured_;
+    /**
+     * <code>optional int32 injured = 4 [default = 0];</code>
+     */
+    public boolean hasInjured() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional int32 injured = 4 [default = 0];</code>
+     */
+    public int getInjured() {
+      return injured_;
+    }
+
+    public static final int SOUL_FIELD_NUMBER = 5;
+    private int soul_;
+    /**
+     * <code>optional int32 soul = 5 [default = 0];</code>
+     */
+    public boolean hasSoul() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional int32 soul = 5 [default = 0];</code>
+     */
+    public int getSoul() {
+      return soul_;
+    }
+
+    private void initFields() {
+      isFly_ = false;
+      isDisappear_ = false;
+      isSource_ = false;
+      injured_ = 0;
+      soul_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBool(1, isFly_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBool(2, isDisappear_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(3, isSource_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, injured_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(5, soul_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isFly_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isDisappear_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isSource_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, injured_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, soul_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_DIE_INFO parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.VOProtos.VO_DIE_INFO prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code VO_DIE_INFO}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_DIE_INFO)
+        cg.base.io.proto.VOProtos.VO_DIE_INFOOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_DIE_INFO_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_DIE_INFO_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.VOProtos.VO_DIE_INFO.class, cg.base.io.proto.VOProtos.VO_DIE_INFO.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.VOProtos.VO_DIE_INFO.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        isFly_ = false;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        isDisappear_ = false;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isSource_ = false;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        injured_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        soul_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_DIE_INFO_descriptor;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_DIE_INFO getDefaultInstanceForType() {
+        return cg.base.io.proto.VOProtos.VO_DIE_INFO.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.VOProtos.VO_DIE_INFO build() {
+        cg.base.io.proto.VOProtos.VO_DIE_INFO result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_DIE_INFO buildPartial() {
+        cg.base.io.proto.VOProtos.VO_DIE_INFO result = new cg.base.io.proto.VOProtos.VO_DIE_INFO(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.isFly_ = isFly_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.isDisappear_ = isDisappear_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.isSource_ = isSource_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.injured_ = injured_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.soul_ = soul_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.VOProtos.VO_DIE_INFO) {
+          return mergeFrom((cg.base.io.proto.VOProtos.VO_DIE_INFO)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_DIE_INFO other) {
+        if (other == cg.base.io.proto.VOProtos.VO_DIE_INFO.getDefaultInstance()) return this;
+        if (other.hasIsFly()) {
+          setIsFly(other.getIsFly());
+        }
+        if (other.hasIsDisappear()) {
+          setIsDisappear(other.getIsDisappear());
+        }
+        if (other.hasIsSource()) {
+          setIsSource(other.getIsSource());
+        }
+        if (other.hasInjured()) {
+          setInjured(other.getInjured());
+        }
+        if (other.hasSoul()) {
+          setSoul(other.getSoul());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.VOProtos.VO_DIE_INFO parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.VOProtos.VO_DIE_INFO) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private boolean isFly_ ;
+      /**
+       * <code>optional bool isFly = 1 [default = false];</code>
+       */
+      public boolean hasIsFly() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional bool isFly = 1 [default = false];</code>
+       */
+      public boolean getIsFly() {
+        return isFly_;
+      }
+      /**
+       * <code>optional bool isFly = 1 [default = false];</code>
+       */
+      public Builder setIsFly(boolean value) {
+        bitField0_ |= 0x00000001;
+        isFly_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool isFly = 1 [default = false];</code>
+       */
+      public Builder clearIsFly() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        isFly_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isDisappear_ ;
+      /**
+       * <code>optional bool isDisappear = 2 [default = false];</code>
+       */
+      public boolean hasIsDisappear() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional bool isDisappear = 2 [default = false];</code>
+       */
+      public boolean getIsDisappear() {
+        return isDisappear_;
+      }
+      /**
+       * <code>optional bool isDisappear = 2 [default = false];</code>
+       */
+      public Builder setIsDisappear(boolean value) {
+        bitField0_ |= 0x00000002;
+        isDisappear_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool isDisappear = 2 [default = false];</code>
+       */
+      public Builder clearIsDisappear() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        isDisappear_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSource_ ;
+      /**
+       * <code>optional bool isSource = 3 [default = false];</code>
+       */
+      public boolean hasIsSource() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional bool isSource = 3 [default = false];</code>
+       */
+      public boolean getIsSource() {
+        return isSource_;
+      }
+      /**
+       * <code>optional bool isSource = 3 [default = false];</code>
+       */
+      public Builder setIsSource(boolean value) {
+        bitField0_ |= 0x00000004;
+        isSource_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool isSource = 3 [default = false];</code>
+       */
+      public Builder clearIsSource() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        isSource_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int injured_ ;
+      /**
+       * <code>optional int32 injured = 4 [default = 0];</code>
+       */
+      public boolean hasInjured() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional int32 injured = 4 [default = 0];</code>
+       */
+      public int getInjured() {
+        return injured_;
+      }
+      /**
+       * <code>optional int32 injured = 4 [default = 0];</code>
+       */
+      public Builder setInjured(int value) {
+        bitField0_ |= 0x00000008;
+        injured_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 injured = 4 [default = 0];</code>
+       */
+      public Builder clearInjured() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        injured_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int soul_ ;
+      /**
+       * <code>optional int32 soul = 5 [default = 0];</code>
+       */
+      public boolean hasSoul() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional int32 soul = 5 [default = 0];</code>
+       */
+      public int getSoul() {
+        return soul_;
+      }
+      /**
+       * <code>optional int32 soul = 5 [default = 0];</code>
+       */
+      public Builder setSoul(int value) {
+        bitField0_ |= 0x00000010;
+        soul_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 soul = 5 [default = 0];</code>
+       */
+      public Builder clearSoul() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        soul_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:VO_DIE_INFO)
+    }
+
+    static {
+      defaultInstance = new VO_DIE_INFO(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:VO_DIE_INFO)
+  }
+
+  public interface VO_COUNTEROrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_COUNTER)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    boolean hasTech();
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    java.lang.String getTech();
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getTechBytes();
+
+    /**
+     * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    boolean hasActionResult();
+    /**
+     * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_RESULT getActionResult();
+    /**
+     * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder getActionResultOrBuilder();
+
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    boolean hasCounter();
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_COUNTER getCounter();
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder getCounterOrBuilder();
+  }
+  /**
+   * Protobuf type {@code VO_COUNTER}
+   */
+  public static final class VO_COUNTER extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_COUNTER)
+      VO_COUNTEROrBuilder {
+    // Use VO_COUNTER.newBuilder() to construct.
+    private VO_COUNTER(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private VO_COUNTER(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final VO_COUNTER defaultInstance;
+    public static VO_COUNTER getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public VO_COUNTER getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_COUNTER(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              tech_ = bs;
+              break;
+            }
+            case 18: {
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = actionResult_.toBuilder();
+              }
+              actionResult_ = input.readMessage(cg.base.io.proto.VOProtos.VO_ACTION_RESULT.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(actionResult_);
+                actionResult_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000002;
+              break;
+            }
+            case 26: {
+              cg.base.io.proto.VOProtos.VO_COUNTER.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = counter_.toBuilder();
+              }
+              counter_ = input.readMessage(cg.base.io.proto.VOProtos.VO_COUNTER.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(counter_);
+                counter_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000004;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_COUNTER_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_COUNTER_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.VOProtos.VO_COUNTER.class, cg.base.io.proto.VOProtos.VO_COUNTER.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<VO_COUNTER> PARSER =
+        new com.google.protobuf.AbstractParser<VO_COUNTER>() {
+      public VO_COUNTER parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_COUNTER(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_COUNTER> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int TECH_FIELD_NUMBER = 1;
+    private java.lang.Object tech_;
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    public boolean hasTech() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    public java.lang.String getTech() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          tech_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string tech = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTechBytes() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        tech_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ACTIONRESULT_FIELD_NUMBER = 2;
+    private cg.base.io.proto.VOProtos.VO_ACTION_RESULT actionResult_;
+    /**
+     * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    public boolean hasActionResult() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_RESULT getActionResult() {
+      return actionResult_;
+    }
+    /**
+     * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder getActionResultOrBuilder() {
+      return actionResult_;
+    }
+
+    public static final int COUNTER_FIELD_NUMBER = 3;
+    private cg.base.io.proto.VOProtos.VO_COUNTER counter_;
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    public boolean hasCounter() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_COUNTER getCounter() {
+      return counter_;
+    }
+    /**
+     * <code>optional .VO_COUNTER counter = 3;</code>
+     */
+    public cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder getCounterOrBuilder() {
+      return counter_;
+    }
+
+    private void initFields() {
+      tech_ = "";
+      actionResult_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+      counter_ = cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasActionResult()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!getActionResult().isInitialized()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (hasCounter()) {
+        if (!getCounter().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, actionResult_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, counter_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, actionResult_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, counter_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_COUNTER parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.VOProtos.VO_COUNTER prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code VO_COUNTER}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_COUNTER)
+        cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_COUNTER_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_COUNTER_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.VOProtos.VO_COUNTER.class, cg.base.io.proto.VOProtos.VO_COUNTER.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.VOProtos.VO_COUNTER.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getActionResultFieldBuilder();
+          getCounterFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        tech_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (actionResultBuilder_ == null) {
+          actionResult_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+        } else {
+          actionResultBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (counterBuilder_ == null) {
+          counter_ = cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance();
+        } else {
+          counterBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_COUNTER_descriptor;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_COUNTER getDefaultInstanceForType() {
+        return cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.VOProtos.VO_COUNTER build() {
+        cg.base.io.proto.VOProtos.VO_COUNTER result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_COUNTER buildPartial() {
+        cg.base.io.proto.VOProtos.VO_COUNTER result = new cg.base.io.proto.VOProtos.VO_COUNTER(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.tech_ = tech_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (actionResultBuilder_ == null) {
+          result.actionResult_ = actionResult_;
+        } else {
+          result.actionResult_ = actionResultBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (counterBuilder_ == null) {
+          result.counter_ = counter_;
+        } else {
+          result.counter_ = counterBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.VOProtos.VO_COUNTER) {
+          return mergeFrom((cg.base.io.proto.VOProtos.VO_COUNTER)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_COUNTER other) {
+        if (other == cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance()) return this;
+        if (other.hasTech()) {
+          bitField0_ |= 0x00000001;
+          tech_ = other.tech_;
+          onChanged();
+        }
+        if (other.hasActionResult()) {
+          mergeActionResult(other.getActionResult());
+        }
+        if (other.hasCounter()) {
+          mergeCounter(other.getCounter());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasActionResult()) {
+          
+          return false;
+        }
+        if (!getActionResult().isInitialized()) {
+          
+          return false;
+        }
+        if (hasCounter()) {
+          if (!getCounter().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.VOProtos.VO_COUNTER parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.VOProtos.VO_COUNTER) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object tech_ = "";
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public boolean hasTech() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public java.lang.String getTech() {
+        java.lang.Object ref = tech_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            tech_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTechBytes() {
+        java.lang.Object ref = tech_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          tech_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public Builder setTech(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public Builder clearTech() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        tech_ = getDefaultInstance().getTech();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string tech = 1;</code>
+       */
+      public Builder setTechBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+
+      private cg.base.io.proto.VOProtos.VO_ACTION_RESULT actionResult_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_RESULT, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder, cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder> actionResultBuilder_;
+      /**
+       * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public boolean hasActionResult() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULT getActionResult() {
+        if (actionResultBuilder_ == null) {
+          return actionResult_;
+        } else {
+          return actionResultBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public Builder setActionResult(cg.base.io.proto.VOProtos.VO_ACTION_RESULT value) {
+        if (actionResultBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          actionResult_ = value;
+          onChanged();
+        } else {
+          actionResultBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public Builder setActionResult(
+          cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder builderForValue) {
+        if (actionResultBuilder_ == null) {
+          actionResult_ = builderForValue.build();
+          onChanged();
+        } else {
+          actionResultBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public Builder mergeActionResult(cg.base.io.proto.VOProtos.VO_ACTION_RESULT value) {
+        if (actionResultBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              actionResult_ != cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance()) {
+            actionResult_ =
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT.newBuilder(actionResult_).mergeFrom(value).buildPartial();
+          } else {
+            actionResult_ = value;
+          }
+          onChanged();
+        } else {
+          actionResultBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public Builder clearActionResult() {
+        if (actionResultBuilder_ == null) {
+          actionResult_ = cg.base.io.proto.VOProtos.VO_ACTION_RESULT.getDefaultInstance();
+          onChanged();
+        } else {
+          actionResultBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder getActionResultBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getActionResultFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder getActionResultOrBuilder() {
+        if (actionResultBuilder_ != null) {
+          return actionResultBuilder_.getMessageOrBuilder();
+        } else {
+          return actionResult_;
+        }
+      }
+      /**
+       * <code>required .VO_ACTION_RESULT actionResult = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_ACTION_RESULT, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder, cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder> 
+          getActionResultFieldBuilder() {
+        if (actionResultBuilder_ == null) {
+          actionResultBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_ACTION_RESULT, cg.base.io.proto.VOProtos.VO_ACTION_RESULT.Builder, cg.base.io.proto.VOProtos.VO_ACTION_RESULTOrBuilder>(
+                  getActionResult(),
+                  getParentForChildren(),
+                  isClean());
+          actionResult_ = null;
+        }
+        return actionResultBuilder_;
+      }
+
+      private cg.base.io.proto.VOProtos.VO_COUNTER counter_ = cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_COUNTER, cg.base.io.proto.VOProtos.VO_COUNTER.Builder, cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder> counterBuilder_;
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public boolean hasCounter() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_COUNTER getCounter() {
+        if (counterBuilder_ == null) {
+          return counter_;
+        } else {
+          return counterBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public Builder setCounter(cg.base.io.proto.VOProtos.VO_COUNTER value) {
+        if (counterBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          counter_ = value;
+          onChanged();
+        } else {
+          counterBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public Builder setCounter(
+          cg.base.io.proto.VOProtos.VO_COUNTER.Builder builderForValue) {
+        if (counterBuilder_ == null) {
+          counter_ = builderForValue.build();
+          onChanged();
+        } else {
+          counterBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public Builder mergeCounter(cg.base.io.proto.VOProtos.VO_COUNTER value) {
+        if (counterBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              counter_ != cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance()) {
+            counter_ =
+              cg.base.io.proto.VOProtos.VO_COUNTER.newBuilder(counter_).mergeFrom(value).buildPartial();
+          } else {
+            counter_ = value;
+          }
+          onChanged();
+        } else {
+          counterBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public Builder clearCounter() {
+        if (counterBuilder_ == null) {
+          counter_ = cg.base.io.proto.VOProtos.VO_COUNTER.getDefaultInstance();
+          onChanged();
+        } else {
+          counterBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_COUNTER.Builder getCounterBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getCounterFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      public cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder getCounterOrBuilder() {
+        if (counterBuilder_ != null) {
+          return counterBuilder_.getMessageOrBuilder();
+        } else {
+          return counter_;
+        }
+      }
+      /**
+       * <code>optional .VO_COUNTER counter = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          cg.base.io.proto.VOProtos.VO_COUNTER, cg.base.io.proto.VOProtos.VO_COUNTER.Builder, cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder> 
+          getCounterFieldBuilder() {
+        if (counterBuilder_ == null) {
+          counterBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              cg.base.io.proto.VOProtos.VO_COUNTER, cg.base.io.proto.VOProtos.VO_COUNTER.Builder, cg.base.io.proto.VOProtos.VO_COUNTEROrBuilder>(
+                  getCounter(),
+                  getParentForChildren(),
+                  isClean());
+          counter_ = null;
+        }
+        return counterBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:VO_COUNTER)
+    }
+
+    static {
+      defaultInstance = new VO_COUNTER(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:VO_COUNTER)
+  }
+
+  public interface VO_GUARDOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_GUARD)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    boolean hasTech();
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    java.lang.String getTech();
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getTechBytes();
+
+    /**
+     * <code>required int32 spriteId = 2;</code>
+     */
+    boolean hasSpriteId();
+    /**
+     * <code>required int32 spriteId = 2;</code>
+     */
+    int getSpriteId();
+  }
+  /**
+   * Protobuf type {@code VO_GUARD}
+   */
+  public static final class VO_GUARD extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:VO_GUARD)
+      VO_GUARDOrBuilder {
+    // Use VO_GUARD.newBuilder() to construct.
+    private VO_GUARD(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private VO_GUARD(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final VO_GUARD defaultInstance;
+    public static VO_GUARD getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public VO_GUARD getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private VO_GUARD(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000001;
+              tech_ = bs;
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              spriteId_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_GUARD_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.VOProtos.internal_static_VO_GUARD_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.VOProtos.VO_GUARD.class, cg.base.io.proto.VOProtos.VO_GUARD.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<VO_GUARD> PARSER =
+        new com.google.protobuf.AbstractParser<VO_GUARD>() {
+      public VO_GUARD parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new VO_GUARD(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<VO_GUARD> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int TECH_FIELD_NUMBER = 1;
+    private java.lang.Object tech_;
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    public boolean hasTech() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    public java.lang.String getTech() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          tech_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>required string tech = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTechBytes() {
+      java.lang.Object ref = tech_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        tech_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int SPRITEID_FIELD_NUMBER = 2;
+    private int spriteId_;
+    /**
+     * <code>required int32 spriteId = 2;</code>
+     */
+    public boolean hasSpriteId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 spriteId = 2;</code>
+     */
+    public int getSpriteId() {
+      return spriteId_;
+    }
+
+    private void initFields() {
+      tech_ = "";
+      spriteId_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasTech()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasSpriteId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, spriteId_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getTechBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, spriteId_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.VOProtos.VO_GUARD parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.VOProtos.VO_GUARD prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code VO_GUARD}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:VO_GUARD)
+        cg.base.io.proto.VOProtos.VO_GUARDOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_GUARD_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_GUARD_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.VOProtos.VO_GUARD.class, cg.base.io.proto.VOProtos.VO_GUARD.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.VOProtos.VO_GUARD.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        tech_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        spriteId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.VOProtos.internal_static_VO_GUARD_descriptor;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_GUARD getDefaultInstanceForType() {
+        return cg.base.io.proto.VOProtos.VO_GUARD.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.VOProtos.VO_GUARD build() {
+        cg.base.io.proto.VOProtos.VO_GUARD result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.VOProtos.VO_GUARD buildPartial() {
+        cg.base.io.proto.VOProtos.VO_GUARD result = new cg.base.io.proto.VOProtos.VO_GUARD(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.tech_ = tech_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.spriteId_ = spriteId_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.VOProtos.VO_GUARD) {
+          return mergeFrom((cg.base.io.proto.VOProtos.VO_GUARD)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.VOProtos.VO_GUARD other) {
+        if (other == cg.base.io.proto.VOProtos.VO_GUARD.getDefaultInstance()) return this;
+        if (other.hasTech()) {
+          bitField0_ |= 0x00000001;
+          tech_ = other.tech_;
+          onChanged();
+        }
+        if (other.hasSpriteId()) {
+          setSpriteId(other.getSpriteId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasTech()) {
+          
+          return false;
+        }
+        if (!hasSpriteId()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.VOProtos.VO_GUARD parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.VOProtos.VO_GUARD) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.lang.Object tech_ = "";
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public boolean hasTech() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public java.lang.String getTech() {
+        java.lang.Object ref = tech_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            tech_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTechBytes() {
+        java.lang.Object ref = tech_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          tech_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public Builder setTech(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public Builder clearTech() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        tech_ = getDefaultInstance().getTech();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required string tech = 1;</code>
+       */
+      public Builder setTechBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        tech_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int spriteId_ ;
+      /**
+       * <code>required int32 spriteId = 2;</code>
+       */
+      public boolean hasSpriteId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 spriteId = 2;</code>
+       */
+      public int getSpriteId() {
+        return spriteId_;
+      }
+      /**
+       * <code>required int32 spriteId = 2;</code>
+       */
+      public Builder setSpriteId(int value) {
+        bitField0_ |= 0x00000002;
+        spriteId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 spriteId = 2;</code>
+       */
+      public Builder clearSpriteId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        spriteId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:VO_GUARD)
+    }
+
+    static {
+      defaultInstance = new VO_GUARD(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:VO_GUARD)
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_UNIT_BASE_INFO_descriptor;
   private static
@@ -28040,6 +33203,36 @@ public final class VOProtos {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_VO_PRICE_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_EFFECT_VALUE_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_EFFECT_VALUE_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_ACTION_PROCESS_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_ACTION_PROCESS_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_ACTION_RESULT_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_ACTION_RESULT_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_DIE_INFO_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_DIE_INFO_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_COUNTER_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_COUNTER_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_VO_GUARD_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_VO_GUARD_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -28121,8 +33314,25 @@ public final class VOProtos {
       "\r\n\005value\030\002 \001(\005\022\026\n\004item\030\003 \001(\0132\010.VO_ITEM\".",
       "\n\017VO_ITEM_ELEMENT\022\014\n\004type\030\001 \002(\005\022\r\n\005value" +
       "\030\002 \002(\005\"3\n\010VO_PRICE\022\014\n\004type\030\001 \002(\t\022\n\n\002id\030\002" +
-      " \002(\005\022\r\n\005value\030\003 \002(\005B\034\n\020cg.base.io.protoB" +
-      "\010VOProtos"
+      " \002(\005\022\r\n\005value\030\003 \002(\005\"`\n\017VO_EFFECT_VALUE\022\r" +
+      "\n\005value\030\001 \002(\005\022\022\n\neffectType\030\002 \002(\005\022\031\n\nisC" +
+      "ritical\030\003 \001(\010:\005false\022\017\n\007message\030\004 \001(\t\"\312\001" +
+      "\n\021VO_ACTION_PROCESS\022\020\n\010targetId\030\001 \002(\005\022\'\n" +
+      "\014actionResult\030\002 \001(\0132\021.VO_ACTION_RESULT\022\034" +
+      "\n\007counter\030\003 \001(\0132\013.VO_COUNTER\022\030\n\005guard\030\004 " +
+      "\001(\0132\t.VO_GUARD\022 \n\005blood\030\005 \001(\0132\021.VO_ACTIO" +
+      "N_RESULT\022 \n\004next\030\006 \001(\0132\022.VO_ACTION_PROCE",
+      "SS\"f\n\020VO_ACTION_RESULT\022\014\n\004tech\030\001 \001(\t\022%\n\013" +
+      "effectValue\030\002 \001(\0132\020.VO_EFFECT_VALUE\022\035\n\007d" +
+      "ieInfo\030\003 \001(\0132\014.VO_DIE_INFO\"}\n\013VO_DIE_INF" +
+      "O\022\024\n\005isFly\030\001 \001(\010:\005false\022\032\n\013isDisappear\030\002" +
+      " \001(\010:\005false\022\027\n\010isSource\030\003 \001(\010:\005false\022\022\n\007" +
+      "injured\030\004 \001(\005:\0010\022\017\n\004soul\030\005 \001(\005:\0010\"a\n\nVO_" +
+      "COUNTER\022\014\n\004tech\030\001 \001(\t\022\'\n\014actionResult\030\002 " +
+      "\002(\0132\021.VO_ACTION_RESULT\022\034\n\007counter\030\003 \001(\0132" +
+      "\013.VO_COUNTER\"*\n\010VO_GUARD\022\014\n\004tech\030\001 \002(\t\022\020" +
+      "\n\010spriteId\030\002 \002(\005B\034\n\020cg.base.io.protoB\010VO",
+      "Protos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -28298,6 +33508,42 @@ public final class VOProtos {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_VO_PRICE_descriptor,
         new java.lang.String[] { "Type", "Id", "Value", });
+    internal_static_VO_EFFECT_VALUE_descriptor =
+      getDescriptor().getMessageTypes().get(27);
+    internal_static_VO_EFFECT_VALUE_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_EFFECT_VALUE_descriptor,
+        new java.lang.String[] { "Value", "EffectType", "IsCritical", "Message", });
+    internal_static_VO_ACTION_PROCESS_descriptor =
+      getDescriptor().getMessageTypes().get(28);
+    internal_static_VO_ACTION_PROCESS_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_ACTION_PROCESS_descriptor,
+        new java.lang.String[] { "TargetId", "ActionResult", "Counter", "Guard", "Blood", "Next", });
+    internal_static_VO_ACTION_RESULT_descriptor =
+      getDescriptor().getMessageTypes().get(29);
+    internal_static_VO_ACTION_RESULT_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_ACTION_RESULT_descriptor,
+        new java.lang.String[] { "Tech", "EffectValue", "DieInfo", });
+    internal_static_VO_DIE_INFO_descriptor =
+      getDescriptor().getMessageTypes().get(30);
+    internal_static_VO_DIE_INFO_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_DIE_INFO_descriptor,
+        new java.lang.String[] { "IsFly", "IsDisappear", "IsSource", "Injured", "Soul", });
+    internal_static_VO_COUNTER_descriptor =
+      getDescriptor().getMessageTypes().get(31);
+    internal_static_VO_COUNTER_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_COUNTER_descriptor,
+        new java.lang.String[] { "Tech", "ActionResult", "Counter", });
+    internal_static_VO_GUARD_descriptor =
+      getDescriptor().getMessageTypes().get(32);
+    internal_static_VO_GUARD_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_VO_GUARD_descriptor,
+        new java.lang.String[] { "Tech", "SpriteId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
