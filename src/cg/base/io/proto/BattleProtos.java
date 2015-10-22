@@ -3672,29 +3672,29 @@ public final class BattleProtos {
     int getSourceId();
 
     /**
-     * <code>required string tech = 6;</code>
+     * <code>optional string tech = 6;</code>
      */
     boolean hasTech();
     /**
-     * <code>required string tech = 6;</code>
+     * <code>optional string tech = 6;</code>
      */
     java.lang.String getTech();
     /**
-     * <code>required string tech = 6;</code>
+     * <code>optional string tech = 6;</code>
      */
     com.google.protobuf.ByteString
         getTechBytes();
 
     /**
-     * <code>required string message = 7;</code>
+     * <code>optional string message = 7;</code>
      */
     boolean hasMessage();
     /**
-     * <code>required string message = 7;</code>
+     * <code>optional string message = 7;</code>
      */
     java.lang.String getMessage();
     /**
-     * <code>required string message = 7;</code>
+     * <code>optional string message = 7;</code>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
@@ -3976,13 +3976,13 @@ public final class BattleProtos {
     public static final int TECH_FIELD_NUMBER = 6;
     private java.lang.Object tech_;
     /**
-     * <code>required string tech = 6;</code>
+     * <code>optional string tech = 6;</code>
      */
     public boolean hasTech() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>required string tech = 6;</code>
+     * <code>optional string tech = 6;</code>
      */
     public java.lang.String getTech() {
       java.lang.Object ref = tech_;
@@ -3999,7 +3999,7 @@ public final class BattleProtos {
       }
     }
     /**
-     * <code>required string tech = 6;</code>
+     * <code>optional string tech = 6;</code>
      */
     public com.google.protobuf.ByteString
         getTechBytes() {
@@ -4018,13 +4018,13 @@ public final class BattleProtos {
     public static final int MESSAGE_FIELD_NUMBER = 7;
     private java.lang.Object message_;
     /**
-     * <code>required string message = 7;</code>
+     * <code>optional string message = 7;</code>
      */
     public boolean hasMessage() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
-     * <code>required string message = 7;</code>
+     * <code>optional string message = 7;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -4041,7 +4041,7 @@ public final class BattleProtos {
       }
     }
     /**
-     * <code>required string message = 7;</code>
+     * <code>optional string message = 7;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -4149,14 +4149,6 @@ public final class BattleProtos {
         return false;
       }
       if (!hasSourceId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTech()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasMessage()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -4576,14 +4568,6 @@ public final class BattleProtos {
           
           return false;
         }
-        if (!hasTech()) {
-          
-          return false;
-        }
-        if (!hasMessage()) {
-          
-          return false;
-        }
         for (int i = 0; i < getBuffEffectsCount(); i++) {
           if (!getBuffEffects(i).isInitialized()) {
             
@@ -4780,13 +4764,13 @@ public final class BattleProtos {
 
       private java.lang.Object tech_ = "";
       /**
-       * <code>required string tech = 6;</code>
+       * <code>optional string tech = 6;</code>
        */
       public boolean hasTech() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
-       * <code>required string tech = 6;</code>
+       * <code>optional string tech = 6;</code>
        */
       public java.lang.String getTech() {
         java.lang.Object ref = tech_;
@@ -4803,7 +4787,7 @@ public final class BattleProtos {
         }
       }
       /**
-       * <code>required string tech = 6;</code>
+       * <code>optional string tech = 6;</code>
        */
       public com.google.protobuf.ByteString
           getTechBytes() {
@@ -4819,7 +4803,7 @@ public final class BattleProtos {
         }
       }
       /**
-       * <code>required string tech = 6;</code>
+       * <code>optional string tech = 6;</code>
        */
       public Builder setTech(
           java.lang.String value) {
@@ -4832,7 +4816,7 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>required string tech = 6;</code>
+       * <code>optional string tech = 6;</code>
        */
       public Builder clearTech() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -4841,7 +4825,7 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>required string tech = 6;</code>
+       * <code>optional string tech = 6;</code>
        */
       public Builder setTechBytes(
           com.google.protobuf.ByteString value) {
@@ -4856,13 +4840,13 @@ public final class BattleProtos {
 
       private java.lang.Object message_ = "";
       /**
-       * <code>required string message = 7;</code>
+       * <code>optional string message = 7;</code>
        */
       public boolean hasMessage() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
-       * <code>required string message = 7;</code>
+       * <code>optional string message = 7;</code>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
@@ -4879,7 +4863,7 @@ public final class BattleProtos {
         }
       }
       /**
-       * <code>required string message = 7;</code>
+       * <code>optional string message = 7;</code>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -4895,7 +4879,7 @@ public final class BattleProtos {
         }
       }
       /**
-       * <code>required string message = 7;</code>
+       * <code>optional string message = 7;</code>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -4908,7 +4892,7 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>required string message = 7;</code>
+       * <code>optional string message = 7;</code>
        */
       public Builder clearMessage() {
         bitField0_ = (bitField0_ & ~0x00000040);
@@ -4917,7 +4901,7 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>required string message = 7;</code>
+       * <code>optional string message = 7;</code>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {
@@ -7353,8 +7337,8 @@ public final class BattleProtos {
       ".VO_EFFECT_VALUE\022\025\n\006finish\030\004 \001(\010:\005false\"" +
       "\341\001\n\020VO_BATTLE_ACTION\022\014\n\004type\030\001 \002(\005\022\021\n\tsk" +
       "illType\030\002 \001(\005\022\022\n\nskillLevel\030\003 \001(\005\022\017\n\007ski" +
-      "llId\030\004 \001(\005\022\020\n\010sourceId\030\005 \002(\005\022\014\n\004tech\030\006 \002" +
-      "(\t\022\017\n\007message\030\007 \002(\t\022)\n\013buffEffects\030\010 \003(\013" +
+      "llId\030\004 \001(\005\022\020\n\010sourceId\030\005 \002(\005\022\014\n\004tech\030\006 \001" +
+      "(\t\022\017\n\007message\030\007 \001(\t\022)\n\013buffEffects\030\010 \003(\013" +
       "2\024.VO_BUFF_EFFECT_INFO\022+\n\017actionProcesse" +
       "s\030\t \003(\0132\022.VO_ACTION_PROCESS\"=\n\027RESPONSE_" +
       "BATTLE_ACTIONS\022\"\n\007actions\030\001 \003(\0132\021.VO_BAT" +
