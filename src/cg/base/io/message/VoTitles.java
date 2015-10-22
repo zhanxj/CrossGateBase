@@ -44,7 +44,9 @@ public class VoTitles {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setGuid(String guid) {
-		builder.setGuid(guid);
+		if (guid != null) {
+			builder.setGuid(guid);
+		}
 	}
 
 	/**
@@ -62,7 +64,9 @@ public class VoTitles {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setGuidTitle(String guidTitle) {
-		builder.setGuidTitle(guidTitle);
+		if (guidTitle != null) {
+			builder.setGuidTitle(guidTitle);
+		}
 	}
 
 	/**
@@ -80,7 +84,9 @@ public class VoTitles {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setTitle(String title) {
-		builder.setTitle(title);
+		if (title != null) {
+			builder.setTitle(title);
+		}
 	}
 
 	/**

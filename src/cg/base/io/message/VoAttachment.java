@@ -26,7 +26,9 @@ public class VoAttachment {
 	 * 			奖励物品
 	 */
 	public void setItem(VoItem item) {
-		builder.setItem(item.getVO_ITEM());
+		if (item != null) {
+			builder.setItem(item.getVO_ITEM());
+		}
 	}
 
 	/**
@@ -46,7 +48,9 @@ public class VoAttachment {
 	 * 			奖励类型
 	 */
 	public void setType(Integer type) {
-		builder.setType(type);
+		if (type != null) {
+			builder.setType(type);
+		}
 	}
 
 	/**
@@ -64,7 +68,9 @@ public class VoAttachment {
 	 * 			奖励数值
 	 */
 	public void setValue(Integer value) {
-		builder.setValue(value);
+		if (value != null) {
+			builder.setValue(value);
+		}
 	}
 
 	/**

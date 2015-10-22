@@ -73,7 +73,9 @@ public class VoBuffEffectInfo {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setFinish(Boolean finish) {
-		builder.setFinish(finish);
+		if (finish != null) {
+			builder.setFinish(finish);
+		}
 	}
 
 	/**

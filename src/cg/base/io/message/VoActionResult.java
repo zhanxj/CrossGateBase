@@ -26,7 +26,9 @@ public class VoActionResult {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setTech(String tech) {
-		builder.setTech(tech);
+		if (tech != null) {
+			builder.setTech(tech);
+		}
 	}
 
 	/**
@@ -44,7 +46,9 @@ public class VoActionResult {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setDieInfo(VoDieInfo dieInfo) {
-		builder.setDieInfo(dieInfo.getVO_DIE_INFO());
+		if (dieInfo != null) {
+			builder.setDieInfo(dieInfo.getVO_DIE_INFO());
+		}
 	}
 
 	/**
@@ -64,7 +68,9 @@ public class VoActionResult {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setEffectValue(VoEffectValue effectValue) {
-		builder.setEffectValue(effectValue.getVO_EFFECT_VALUE());
+		if (effectValue != null) {
+			builder.setEffectValue(effectValue.getVO_EFFECT_VALUE());
+		}
 	}
 
 	/**

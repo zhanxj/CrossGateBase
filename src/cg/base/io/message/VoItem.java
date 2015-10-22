@@ -134,7 +134,9 @@ public class VoItem {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setIdentifyInfo(VoItemIdentify identifyInfo) {
-		builder.setIdentifyInfo(identifyInfo.getVO_ITEM_IDENTIFY());
+		if (identifyInfo != null) {
+			builder.setIdentifyInfo(identifyInfo.getVO_ITEM_IDENTIFY());
+		}
 	}
 
 	/**

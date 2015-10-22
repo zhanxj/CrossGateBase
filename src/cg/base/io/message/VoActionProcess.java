@@ -26,7 +26,9 @@ public class VoActionProcess {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setNext(VoActionProcess next) {
-		builder.setNext(next.getVO_ACTION_PROCESS());
+		if (next != null) {
+			builder.setNext(next.getVO_ACTION_PROCESS());
+		}
 	}
 
 	/**
@@ -64,7 +66,9 @@ public class VoActionProcess {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setGuard(VoGuard guard) {
-		builder.setGuard(guard.getVO_GUARD());
+		if (guard != null) {
+			builder.setGuard(guard.getVO_GUARD());
+		}
 	}
 
 	/**
@@ -84,7 +88,9 @@ public class VoActionProcess {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setCounter(VoCounter counter) {
-		builder.setCounter(counter.getVO_COUNTER());
+		if (counter != null) {
+			builder.setCounter(counter.getVO_COUNTER());
+		}
 	}
 
 	/**
@@ -104,7 +110,9 @@ public class VoActionProcess {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setBlood(VoActionResult blood) {
-		builder.setBlood(blood.getVO_ACTION_RESULT());
+		if (blood != null) {
+			builder.setBlood(blood.getVO_ACTION_RESULT());
+		}
 	}
 
 	/**
@@ -124,7 +132,9 @@ public class VoActionProcess {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setActionResult(VoActionResult actionResult) {
-		builder.setActionResult(actionResult.getVO_ACTION_RESULT());
+		if (actionResult != null) {
+			builder.setActionResult(actionResult.getVO_ACTION_RESULT());
+		}
 	}
 
 	/**

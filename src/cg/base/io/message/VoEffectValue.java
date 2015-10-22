@@ -26,7 +26,9 @@ public class VoEffectValue {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setIsCritical(Boolean isCritical) {
-		builder.setIsCritical(isCritical);
+		if (isCritical != null) {
+			builder.setIsCritical(isCritical);
+		}
 	}
 
 	/**
@@ -44,7 +46,9 @@ public class VoEffectValue {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setMessage(String message) {
-		builder.setMessage(message);
+		if (message != null) {
+			builder.setMessage(message);
+		}
 	}
 
 	/**

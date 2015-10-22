@@ -26,7 +26,9 @@ public class VoUnitExtendInfo {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setRace(Integer race) {
-		builder.setRace(race);
+		if (race != null) {
+			builder.setRace(race);
+		}
 	}
 
 	/**
@@ -62,7 +64,9 @@ public class VoUnitExtendInfo {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setExp(Integer exp) {
-		builder.setExp(exp);
+		if (exp != null) {
+			builder.setExp(exp);
+		}
 	}
 
 	/**

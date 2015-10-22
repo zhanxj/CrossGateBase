@@ -33,7 +33,9 @@ public class RequestChat extends ProtoMessage {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setTargetId(Integer targetId) {
-		builder.setTargetId(targetId);
+		if (targetId != null) {
+			builder.setTargetId(targetId);
+		}
 	}
 
 	/**

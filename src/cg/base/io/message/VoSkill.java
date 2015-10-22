@@ -90,7 +90,9 @@ public class VoSkill {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setNextLevelExp(Integer nextLevelExp) {
-		builder.setNextLevelExp(nextLevelExp);
+		if (nextLevelExp != null) {
+			builder.setNextLevelExp(nextLevelExp);
+		}
 	}
 
 	/**
@@ -144,7 +146,9 @@ public class VoSkill {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setIndex(Integer index) {
-		builder.setIndex(index);
+		if (index != null) {
+			builder.setIndex(index);
+		}
 	}
 
 	/**
@@ -198,7 +202,9 @@ public class VoSkill {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setExp(Integer exp) {
-		builder.setExp(exp);
+		if (exp != null) {
+			builder.setExp(exp);
+		}
 	}
 
 	/**

@@ -62,7 +62,9 @@ public class VoOption {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setValue(String value) {
-		builder.setValue(value);
+		if (value != null) {
+			builder.setValue(value);
+		}
 	}
 
 	/**

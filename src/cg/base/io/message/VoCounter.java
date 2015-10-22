@@ -26,7 +26,9 @@ public class VoCounter {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setTech(String tech) {
-		builder.setTech(tech);
+		if (tech != null) {
+			builder.setTech(tech);
+		}
 	}
 
 	/**
@@ -44,7 +46,9 @@ public class VoCounter {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setCounter(VoCounter counter) {
-		builder.setCounter(counter.getVO_COUNTER());
+		if (counter != null) {
+			builder.setCounter(counter.getVO_COUNTER());
+		}
 	}
 
 	/**

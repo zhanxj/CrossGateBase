@@ -26,7 +26,9 @@ public class VoGain {
 	 * 			奖励物品名称
 	 */
 	public void setItemName(String itemName) {
-		builder.setItemName(itemName);
+		if (itemName != null) {
+			builder.setItemName(itemName);
+		}
 	}
 
 	/**
@@ -44,7 +46,9 @@ public class VoGain {
 	 * 			奖励数值
 	 */
 	public void setValue(Integer value) {
-		builder.setValue(value);
+		if (value != null) {
+			builder.setValue(value);
+		}
 	}
 
 	/**
@@ -62,7 +66,9 @@ public class VoGain {
 	 * 			奖励物品的图标id
 	 */
 	public void setItemIconId(Integer itemIconId) {
-		builder.setItemIconId(itemIconId);
+		if (itemIconId != null) {
+			builder.setItemIconId(itemIconId);
+		}
 	}
 
 	/**
@@ -80,7 +86,9 @@ public class VoGain {
 	 * 			奖励物品数量
 	 */
 	public void setItemCount(Integer itemCount) {
-		builder.setItemCount(itemCount);
+		if (itemCount != null) {
+			builder.setItemCount(itemCount);
+		}
 	}
 
 	/**

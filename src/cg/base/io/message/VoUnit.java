@@ -46,7 +46,9 @@ public class VoUnit {
 	 * 			技能组[玩家自己及其宠物专有]
 	 */
 	public void setSkillSet(VoSkillSet skillSet) {
-		builder.setSkillSet(skillSet.getVO_SKILL_SET());
+		if (skillSet != null) {
+			builder.setSkillSet(skillSet.getVO_SKILL_SET());
+		}
 	}
 
 	/**
@@ -92,7 +94,9 @@ public class VoUnit {
 	 * 			忠诚[玩家自己的宠物专有]
 	 */
 	public void setLoyal(Integer loyal) {
-		builder.setLoyal(loyal);
+		if (loyal != null) {
+			builder.setLoyal(loyal);
+		}
 	}
 
 	/**
@@ -110,7 +114,9 @@ public class VoUnit {
 	 * 			宠物组[玩家自己专有]
 	 */
 	public void setPetSet(VoPetSet petSet) {
-		builder.setPetSet(petSet.getVO_PET_SET());
+		if (petSet != null) {
+			builder.setPetSet(petSet.getVO_PET_SET());
+		}
 	}
 
 	/**
@@ -130,7 +136,9 @@ public class VoUnit {
 	 * 			宠物在宠物栏的位置索引[宠物专有]
 	 */
 	public void setIndex(Integer index) {
-		builder.setIndex(index);
+		if (index != null) {
+			builder.setIndex(index);
+		}
 	}
 
 	/**
@@ -174,7 +182,9 @@ public class VoUnit {
 	 * 			扩展信息
 	 */
 	public void setExtendInfo(VoUnitExtendInfo extendInfo) {
-		builder.setExtendInfo(extendInfo.getVO_UNIT_EXTEND_INFO());
+		if (extendInfo != null) {
+			builder.setExtendInfo(extendInfo.getVO_UNIT_EXTEND_INFO());
+		}
 	}
 
 	/**
@@ -194,7 +204,9 @@ public class VoUnit {
 	 * 			头顶信息
 	 */
 	public void setHeadTitle(VoTitles headTitle) {
-		builder.setHeadTitle(headTitle.getVO_TITLES());
+		if (headTitle != null) {
+			builder.setHeadTitle(headTitle.getVO_TITLES());
+		}
 	}
 
 	/**
@@ -214,7 +226,9 @@ public class VoUnit {
 	 * 			主人实例id[宠物专有]
 	 */
 	public void setOwnerInstanceId(Integer ownerInstanceId) {
-		builder.setOwnerInstanceId(ownerInstanceId);
+		if (ownerInstanceId != null) {
+			builder.setOwnerInstanceId(ownerInstanceId);
+		}
 	}
 
 	/**
@@ -232,7 +246,9 @@ public class VoUnit {
 	 * 			游戏币[玩家自己专有]
 	 */
 	public void setMoney(Integer money) {
-		builder.setMoney(money);
+		if (money != null) {
+			builder.setMoney(money);
+		}
 	}
 
 	/**
@@ -319,7 +335,9 @@ public class VoUnit {
 	 * 			对话类型[NPC专有]
 	 */
 	public void setTalkType(String talkType) {
-		builder.setTalkType(talkType);
+		if (talkType != null) {
+			builder.setTalkType(talkType);
+		}
 	}
 
 	/**
@@ -337,7 +355,9 @@ public class VoUnit {
 	 * 			地图位置信息[地图场景专有]
 	 */
 	public void setPosition(VoPosition position) {
-		builder.setPosition(position.getVO_POSITION());
+		if (position != null) {
+			builder.setPosition(position.getVO_POSITION());
+		}
 	}
 
 	/**
@@ -357,7 +377,9 @@ public class VoUnit {
 	 * 			战斗时位置[玩家自己专有]
 	 */
 	public void setBattleLocal(Boolean battleLocal) {
-		builder.setBattleLocal(battleLocal);
+		if (battleLocal != null) {
+			builder.setBattleLocal(battleLocal);
+		}
 	}
 
 	/**
@@ -375,7 +397,9 @@ public class VoUnit {
 	 * 			状态[玩家自己的宠物专有]
 	 */
 	public void setState(Integer state) {
-		builder.setState(state);
+		if (state != null) {
+			builder.setState(state);
+		}
 	}
 
 	/**
@@ -393,7 +417,9 @@ public class VoUnit {
 	 * 			职业[玩家自己专有]
 	 */
 	public void setJob(String job) {
-		builder.setJob(job);
+		if (job != null) {
+			builder.setJob(job);
+		}
 	}
 
 	/**
@@ -411,7 +437,9 @@ public class VoUnit {
 	 * 			战绩[玩家角色专有]
 	 */
 	public void setBattleScore(Integer battleScore) {
-		builder.setBattleScore(battleScore);
+		if (battleScore != null) {
+			builder.setBattleScore(battleScore);
+		}
 	}
 
 	/**

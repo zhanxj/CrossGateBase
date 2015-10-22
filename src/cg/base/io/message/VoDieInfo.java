@@ -26,7 +26,9 @@ public class VoDieInfo {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setInjured(Integer injured) {
-		builder.setInjured(injured);
+		if (injured != null) {
+			builder.setInjured(injured);
+		}
 	}
 
 	/**
@@ -44,7 +46,9 @@ public class VoDieInfo {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setIsFly(Boolean isFly) {
-		builder.setIsFly(isFly);
+		if (isFly != null) {
+			builder.setIsFly(isFly);
+		}
 	}
 
 	/**
@@ -62,7 +66,9 @@ public class VoDieInfo {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setSoul(Integer soul) {
-		builder.setSoul(soul);
+		if (soul != null) {
+			builder.setSoul(soul);
+		}
 	}
 
 	/**
@@ -80,7 +86,9 @@ public class VoDieInfo {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setIsSource(Boolean isSource) {
-		builder.setIsSource(isSource);
+		if (isSource != null) {
+			builder.setIsSource(isSource);
+		}
 	}
 
 	/**
@@ -98,7 +106,9 @@ public class VoDieInfo {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setIsDisappear(Boolean isDisappear) {
-		builder.setIsDisappear(isDisappear);
+		if (isDisappear != null) {
+			builder.setIsDisappear(isDisappear);
+		}
 	}
 
 	/**

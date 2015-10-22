@@ -26,7 +26,9 @@ public class VoMapUnitExtend {
 	 * 			npc
 	 */
 	public void setTalkType(String talkType) {
-		builder.setTalkType(talkType);
+		if (talkType != null) {
+			builder.setTalkType(talkType);
+		}
 	}
 
 	/**
@@ -44,7 +46,9 @@ public class VoMapUnitExtend {
 	 * 			pet
 	 */
 	public void setState(Integer state) {
-		builder.setState(state);
+		if (state != null) {
+			builder.setState(state);
+		}
 	}
 
 	/**
@@ -62,7 +66,9 @@ public class VoMapUnitExtend {
 	 * 			pet
 	 */
 	public void setOwnerInstanceId(Integer ownerInstanceId) {
-		builder.setOwnerInstanceId(ownerInstanceId);
+		if (ownerInstanceId != null) {
+			builder.setOwnerInstanceId(ownerInstanceId);
+		}
 	}
 
 	/**

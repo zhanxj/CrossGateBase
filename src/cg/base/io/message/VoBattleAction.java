@@ -47,7 +47,9 @@ public class VoBattleAction {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setTech(String tech) {
-		builder.setTech(tech);
+		if (tech != null) {
+			builder.setTech(tech);
+		}
 	}
 
 	/**
@@ -65,7 +67,9 @@ public class VoBattleAction {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setSkillId(Integer skillId) {
-		builder.setSkillId(skillId);
+		if (skillId != null) {
+			builder.setSkillId(skillId);
+		}
 	}
 
 	/**
@@ -83,7 +87,9 @@ public class VoBattleAction {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setSkillType(Integer skillType) {
-		builder.setSkillType(skillType);
+		if (skillType != null) {
+			builder.setSkillType(skillType);
+		}
 	}
 
 	/**
@@ -145,7 +151,9 @@ public class VoBattleAction {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setMessage(String message) {
-		builder.setMessage(message);
+		if (message != null) {
+			builder.setMessage(message);
+		}
 	}
 
 	/**
@@ -163,7 +171,9 @@ public class VoBattleAction {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setSkillLevel(Integer skillLevel) {
-		builder.setSkillLevel(skillLevel);
+		if (skillLevel != null) {
+			builder.setSkillLevel(skillLevel);
+		}
 	}
 
 	/**

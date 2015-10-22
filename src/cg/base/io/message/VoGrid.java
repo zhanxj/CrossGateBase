@@ -26,7 +26,9 @@ public class VoGrid {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setItem(VoItem item) {
-		builder.setItem(item.getVO_ITEM());
+		if (item != null) {
+			builder.setItem(item.getVO_ITEM());
+		}
 	}
 
 	/**
@@ -64,7 +66,9 @@ public class VoGrid {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setCount(Integer count) {
-		builder.setCount(count);
+		if (count != null) {
+			builder.setCount(count);
+		}
 	}
 
 	/**

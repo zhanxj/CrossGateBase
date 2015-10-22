@@ -46,7 +46,9 @@ public class VoItemIdentify {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setMagicAttack(Integer magicAttack) {
-		builder.setMagicAttack(magicAttack);
+		if (magicAttack != null) {
+			builder.setMagicAttack(magicAttack);
+		}
 	}
 
 	/**
@@ -82,7 +84,9 @@ public class VoItemIdentify {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setDoubleHand(Boolean doubleHand) {
-		builder.setDoubleHand(doubleHand);
+		if (doubleHand != null) {
+			builder.setDoubleHand(doubleHand);
+		}
 	}
 
 	/**
@@ -100,7 +104,9 @@ public class VoItemIdentify {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setGemArmorType(Integer gemArmorType) {
-		builder.setGemArmorType(gemArmorType);
+		if (gemArmorType != null) {
+			builder.setGemArmorType(gemArmorType);
+		}
 	}
 
 	/**
@@ -206,7 +212,9 @@ public class VoItemIdentify {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setGemWeaponType(Integer gemWeaponType) {
-		builder.setGemWeaponType(gemWeaponType);
+		if (gemWeaponType != null) {
+			builder.setGemWeaponType(gemWeaponType);
+		}
 	}
 
 	/**
