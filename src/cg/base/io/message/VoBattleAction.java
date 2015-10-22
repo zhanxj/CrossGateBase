@@ -180,10 +180,10 @@ public class VoBattleAction {
 	 * @param	buffEffects
 	 * 			<u>do not has any annotate.</u>
 	 */
-	public void setBuffEffects(Iterable<VoBuffeffectinfo> buffEffects) {
-		List<VO_BuffEffectInfo> list = Lists.newLinkedList();
-		for (VoBuffeffectinfo vo : buffEffects) {
-			list.add(vo.getVO_BuffEffectInfo());
+	public void setBuffEffects(Iterable<VoBuffEffectInfo> buffEffects) {
+		List<VO_BUFF_EFFECT_INFO> list = Lists.newLinkedList();
+		for (VoBuffEffectInfo vo : buffEffects) {
+			list.add(vo.getVO_BUFF_EFFECT_INFO());
 		}
 		builder.addAllBuffEffects(list);
 	}
@@ -192,11 +192,11 @@ public class VoBattleAction {
 	 * 
 	 * @return	<u>do not has any annotate.</u>
 	 */
-	public List<VoBuffeffectinfo> getBuffEffectsList() {
-		List<VO_BuffEffectInfo> list = vo.getBuffEffectsList();
-		List<VoBuffeffectinfo> ret = Lists.newArrayListWithCapacity(list.size());
-		for (VO_BuffEffectInfo vo : list) {
-			ret.add(new VoBuffeffectinfo(vo));
+	public List<VoBuffEffectInfo> getBuffEffectsList() {
+		List<VO_BUFF_EFFECT_INFO> list = vo.getBuffEffectsList();
+		List<VoBuffEffectInfo> ret = Lists.newArrayListWithCapacity(list.size());
+		for (VO_BUFF_EFFECT_INFO vo : list) {
+			ret.add(new VoBuffEffectInfo(vo));
 		}
 		return ret;
 	}

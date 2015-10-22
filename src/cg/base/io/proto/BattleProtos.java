@@ -2602,8 +2602,8 @@ public final class BattleProtos {
     // @@protoc_insertion_point(class_scope:REQUEST_BATTLE_ATTACK)
   }
 
-  public interface VO_BuffEffectInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:VO_BuffEffectInfo)
+  public interface VO_BUFF_EFFECT_INFOOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:VO_BUFF_EFFECT_INFO)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2663,25 +2663,25 @@ public final class BattleProtos {
     boolean getFinish();
   }
   /**
-   * Protobuf type {@code VO_BuffEffectInfo}
+   * Protobuf type {@code VO_BUFF_EFFECT_INFO}
    */
-  public static final class VO_BuffEffectInfo extends
+  public static final class VO_BUFF_EFFECT_INFO extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:VO_BuffEffectInfo)
-      VO_BuffEffectInfoOrBuilder {
-    // Use VO_BuffEffectInfo.newBuilder() to construct.
-    private VO_BuffEffectInfo(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:VO_BUFF_EFFECT_INFO)
+      VO_BUFF_EFFECT_INFOOrBuilder {
+    // Use VO_BUFF_EFFECT_INFO.newBuilder() to construct.
+    private VO_BUFF_EFFECT_INFO(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private VO_BuffEffectInfo(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private VO_BUFF_EFFECT_INFO(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final VO_BuffEffectInfo defaultInstance;
-    public static VO_BuffEffectInfo getDefaultInstance() {
+    private static final VO_BUFF_EFFECT_INFO defaultInstance;
+    public static VO_BUFF_EFFECT_INFO getDefaultInstance() {
       return defaultInstance;
     }
 
-    public VO_BuffEffectInfo getDefaultInstanceForType() {
+    public VO_BUFF_EFFECT_INFO getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -2691,7 +2691,7 @@ public final class BattleProtos {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private VO_BuffEffectInfo(
+    private VO_BUFF_EFFECT_INFO(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2755,28 +2755,28 @@ public final class BattleProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_descriptor;
+      return cg.base.io.proto.BattleProtos.internal_static_VO_BUFF_EFFECT_INFO_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_fieldAccessorTable
+      return cg.base.io.proto.BattleProtos.internal_static_VO_BUFF_EFFECT_INFO_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.class, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder.class);
+              cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.class, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<VO_BuffEffectInfo> PARSER =
-        new com.google.protobuf.AbstractParser<VO_BuffEffectInfo>() {
-      public VO_BuffEffectInfo parsePartialFrom(
+    public static com.google.protobuf.Parser<VO_BUFF_EFFECT_INFO> PARSER =
+        new com.google.protobuf.AbstractParser<VO_BUFF_EFFECT_INFO>() {
+      public VO_BUFF_EFFECT_INFO parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new VO_BuffEffectInfo(input, extensionRegistry);
+        return new VO_BUFF_EFFECT_INFO(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<VO_BuffEffectInfo> getParserForType() {
+    public com.google.protobuf.Parser<VO_BUFF_EFFECT_INFO> getParserForType() {
       return PARSER;
     }
 
@@ -2970,53 +2970,53 @@ public final class BattleProtos {
       return super.writeReplace();
     }
 
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(byte[] data)
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseDelimitedFrom(java.io.InputStream input)
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseDelimitedFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parseFrom(
+    public static cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3025,7 +3025,7 @@ public final class BattleProtos {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(cg.base.io.proto.BattleProtos.VO_BuffEffectInfo prototype) {
+    public static Builder newBuilder(cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -3037,25 +3037,25 @@ public final class BattleProtos {
       return builder;
     }
     /**
-     * Protobuf type {@code VO_BuffEffectInfo}
+     * Protobuf type {@code VO_BUFF_EFFECT_INFO}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:VO_BuffEffectInfo)
-        cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:VO_BUFF_EFFECT_INFO)
+        cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_VO_BUFF_EFFECT_INFO_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_fieldAccessorTable
+        return cg.base.io.proto.BattleProtos.internal_static_VO_BUFF_EFFECT_INFO_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.class, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder.class);
+                cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.class, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder.class);
       }
 
-      // Construct using cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.newBuilder()
+      // Construct using cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3097,23 +3097,23 @@ public final class BattleProtos {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cg.base.io.proto.BattleProtos.internal_static_VO_BuffEffectInfo_descriptor;
+        return cg.base.io.proto.BattleProtos.internal_static_VO_BUFF_EFFECT_INFO_descriptor;
       }
 
-      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo getDefaultInstanceForType() {
-        return cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.getDefaultInstance();
+      public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO getDefaultInstanceForType() {
+        return cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.getDefaultInstance();
       }
 
-      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo build() {
-        cg.base.io.proto.BattleProtos.VO_BuffEffectInfo result = buildPartial();
+      public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO build() {
+        cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo buildPartial() {
-        cg.base.io.proto.BattleProtos.VO_BuffEffectInfo result = new cg.base.io.proto.BattleProtos.VO_BuffEffectInfo(this);
+      public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO buildPartial() {
+        cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO result = new cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3143,16 +3143,16 @@ public final class BattleProtos {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof cg.base.io.proto.BattleProtos.VO_BuffEffectInfo) {
-          return mergeFrom((cg.base.io.proto.BattleProtos.VO_BuffEffectInfo)other);
+        if (other instanceof cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO) {
+          return mergeFrom((cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(cg.base.io.proto.BattleProtos.VO_BuffEffectInfo other) {
-        if (other == cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO other) {
+        if (other == cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.getDefaultInstance()) return this;
         if (other.hasTech()) {
           bitField0_ |= 0x00000001;
           tech_ = other.tech_;
@@ -3216,11 +3216,11 @@ public final class BattleProtos {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        cg.base.io.proto.BattleProtos.VO_BuffEffectInfo parsedMessage = null;
+        cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (cg.base.io.proto.BattleProtos.VO_BuffEffectInfo) e.getUnfinishedMessage();
+          parsedMessage = (cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -3611,15 +3611,15 @@ public final class BattleProtos {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:VO_BuffEffectInfo)
+      // @@protoc_insertion_point(builder_scope:VO_BUFF_EFFECT_INFO)
     }
 
     static {
-      defaultInstance = new VO_BuffEffectInfo(true);
+      defaultInstance = new VO_BUFF_EFFECT_INFO(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:VO_BuffEffectInfo)
+    // @@protoc_insertion_point(class_scope:VO_BUFF_EFFECT_INFO)
   }
 
   public interface VO_BATTLE_ACTIONOrBuilder extends
@@ -3700,27 +3700,27 @@ public final class BattleProtos {
         getMessageBytes();
 
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
-    java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> 
+    java.util.List<cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO> 
         getBuffEffectsList();
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
-    cg.base.io.proto.BattleProtos.VO_BuffEffectInfo getBuffEffects(int index);
+    cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO getBuffEffects(int index);
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
     int getBuffEffectsCount();
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
-    java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> 
+    java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder> 
         getBuffEffectsOrBuilderList();
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
-    cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder getBuffEffectsOrBuilder(
+    cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder getBuffEffectsOrBuilder(
         int index);
 
     /**
@@ -3838,10 +3838,10 @@ public final class BattleProtos {
             }
             case 66: {
               if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
-                buffEffects_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo>();
+                buffEffects_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO>();
                 mutable_bitField0_ |= 0x00000080;
               }
-              buffEffects_.add(input.readMessage(cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.PARSER, extensionRegistry));
+              buffEffects_.add(input.readMessage(cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.PARSER, extensionRegistry));
               break;
             }
             case 74: {
@@ -4058,36 +4058,36 @@ public final class BattleProtos {
     }
 
     public static final int BUFFEFFECTS_FIELD_NUMBER = 8;
-    private java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> buffEffects_;
+    private java.util.List<cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO> buffEffects_;
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
-    public java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> getBuffEffectsList() {
+    public java.util.List<cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO> getBuffEffectsList() {
       return buffEffects_;
     }
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
-    public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> 
+    public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder> 
         getBuffEffectsOrBuilderList() {
       return buffEffects_;
     }
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
     public int getBuffEffectsCount() {
       return buffEffects_.size();
     }
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
-    public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo getBuffEffects(int index) {
+    public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO getBuffEffects(int index) {
       return buffEffects_.get(index);
     }
     /**
-     * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+     * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
      */
-    public cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder getBuffEffectsOrBuilder(
+    public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder getBuffEffectsOrBuilder(
         int index) {
       return buffEffects_.get(index);
     }
@@ -4930,22 +4930,22 @@ public final class BattleProtos {
         return this;
       }
 
-      private java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> buffEffects_ =
+      private java.util.List<cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO> buffEffects_ =
         java.util.Collections.emptyList();
       private void ensureBuffEffectsIsMutable() {
         if (!((bitField0_ & 0x00000080) == 0x00000080)) {
-          buffEffects_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo>(buffEffects_);
+          buffEffects_ = new java.util.ArrayList<cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO>(buffEffects_);
           bitField0_ |= 0x00000080;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          cg.base.io.proto.BattleProtos.VO_BuffEffectInfo, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder, cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> buffEffectsBuilder_;
+          cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder> buffEffectsBuilder_;
 
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
-      public java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> getBuffEffectsList() {
+      public java.util.List<cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO> getBuffEffectsList() {
         if (buffEffectsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(buffEffects_);
         } else {
@@ -4953,7 +4953,7 @@ public final class BattleProtos {
         }
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
       public int getBuffEffectsCount() {
         if (buffEffectsBuilder_ == null) {
@@ -4963,9 +4963,9 @@ public final class BattleProtos {
         }
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
-      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo getBuffEffects(int index) {
+      public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO getBuffEffects(int index) {
         if (buffEffectsBuilder_ == null) {
           return buffEffects_.get(index);
         } else {
@@ -4973,10 +4973,10 @@ public final class BattleProtos {
         }
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
       public Builder setBuffEffects(
-          int index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo value) {
+          int index, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO value) {
         if (buffEffectsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4990,10 +4990,10 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
       public Builder setBuffEffects(
-          int index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder builderForValue) {
+          int index, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder builderForValue) {
         if (buffEffectsBuilder_ == null) {
           ensureBuffEffectsIsMutable();
           buffEffects_.set(index, builderForValue.build());
@@ -5004,9 +5004,9 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
-      public Builder addBuffEffects(cg.base.io.proto.BattleProtos.VO_BuffEffectInfo value) {
+      public Builder addBuffEffects(cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO value) {
         if (buffEffectsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5020,10 +5020,10 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
       public Builder addBuffEffects(
-          int index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo value) {
+          int index, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO value) {
         if (buffEffectsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5037,10 +5037,10 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
       public Builder addBuffEffects(
-          cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder builderForValue) {
+          cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder builderForValue) {
         if (buffEffectsBuilder_ == null) {
           ensureBuffEffectsIsMutable();
           buffEffects_.add(builderForValue.build());
@@ -5051,10 +5051,10 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
       public Builder addBuffEffects(
-          int index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder builderForValue) {
+          int index, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder builderForValue) {
         if (buffEffectsBuilder_ == null) {
           ensureBuffEffectsIsMutable();
           buffEffects_.add(index, builderForValue.build());
@@ -5065,10 +5065,10 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
       public Builder addAllBuffEffects(
-          java.lang.Iterable<? extends cg.base.io.proto.BattleProtos.VO_BuffEffectInfo> values) {
+          java.lang.Iterable<? extends cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO> values) {
         if (buffEffectsBuilder_ == null) {
           ensureBuffEffectsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -5080,7 +5080,7 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
       public Builder clearBuffEffects() {
         if (buffEffectsBuilder_ == null) {
@@ -5093,7 +5093,7 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
       public Builder removeBuffEffects(int index) {
         if (buffEffectsBuilder_ == null) {
@@ -5106,16 +5106,16 @@ public final class BattleProtos {
         return this;
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
-      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder getBuffEffectsBuilder(
+      public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder getBuffEffectsBuilder(
           int index) {
         return getBuffEffectsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
-      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder getBuffEffectsOrBuilder(
+      public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder getBuffEffectsOrBuilder(
           int index) {
         if (buffEffectsBuilder_ == null) {
           return buffEffects_.get(index);  } else {
@@ -5123,9 +5123,9 @@ public final class BattleProtos {
         }
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
-      public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> 
+      public java.util.List<? extends cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder> 
            getBuffEffectsOrBuilderList() {
         if (buffEffectsBuilder_ != null) {
           return buffEffectsBuilder_.getMessageOrBuilderList();
@@ -5134,33 +5134,33 @@ public final class BattleProtos {
         }
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
-      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder addBuffEffectsBuilder() {
+      public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder addBuffEffectsBuilder() {
         return getBuffEffectsFieldBuilder().addBuilder(
-            cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.getDefaultInstance());
+            cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.getDefaultInstance());
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
-      public cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder addBuffEffectsBuilder(
+      public cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder addBuffEffectsBuilder(
           int index) {
         return getBuffEffectsFieldBuilder().addBuilder(
-            index, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.getDefaultInstance());
+            index, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.getDefaultInstance());
       }
       /**
-       * <code>repeated .VO_BuffEffectInfo buffEffects = 8;</code>
+       * <code>repeated .VO_BUFF_EFFECT_INFO buffEffects = 8;</code>
        */
-      public java.util.List<cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder> 
+      public java.util.List<cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder> 
            getBuffEffectsBuilderList() {
         return getBuffEffectsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          cg.base.io.proto.BattleProtos.VO_BuffEffectInfo, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder, cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder> 
+          cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder> 
           getBuffEffectsFieldBuilder() {
         if (buffEffectsBuilder_ == null) {
           buffEffectsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              cg.base.io.proto.BattleProtos.VO_BuffEffectInfo, cg.base.io.proto.BattleProtos.VO_BuffEffectInfo.Builder, cg.base.io.proto.BattleProtos.VO_BuffEffectInfoOrBuilder>(
+              cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFO.Builder, cg.base.io.proto.BattleProtos.VO_BUFF_EFFECT_INFOOrBuilder>(
                   buffEffects_,
                   ((bitField0_ & 0x00000080) == 0x00000080),
                   getParentForChildren(),
@@ -7307,10 +7307,10 @@ public final class BattleProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_REQUEST_BATTLE_ATTACK_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_VO_BuffEffectInfo_descriptor;
+    internal_static_VO_BUFF_EFFECT_INFO_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_VO_BuffEffectInfo_fieldAccessorTable;
+      internal_static_VO_BUFF_EFFECT_INFO_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_VO_BATTLE_ACTION_descriptor;
   private static
@@ -7348,20 +7348,21 @@ public final class BattleProtos {
       "leId\030\001 \002(\005\022#\n\005teamA\030\002 \003(\0132\024.VO_UNIT_BATT" +
       "LE_INFO\022#\n\005teamB\030\003 \003(\0132\024.VO_UNIT_BATTLE_" +
       "INFO\")\n\025REQUEST_BATTLE_ATTACK\022\020\n\010targetI" +
-      "d\030\001 \002(\005\"l\n\021VO_BuffEffectInfo\022\014\n\004tech\030\001 \002" +
-      "(\t\022\n\n\002id\030\002 \002(\005\022&\n\014effectValues\030\003 \003(\0132\020.V",
-      "O_EFFECT_VALUE\022\025\n\006finish\030\004 \001(\010:\005false\"\337\001" +
-      "\n\020VO_BATTLE_ACTION\022\014\n\004type\030\001 \002(\005\022\021\n\tskil" +
-      "lType\030\002 \001(\005\022\022\n\nskillLevel\030\003 \001(\005\022\017\n\007skill" +
-      "Id\030\004 \001(\005\022\020\n\010sourceId\030\005 \002(\005\022\014\n\004tech\030\006 \002(\t" +
-      "\022\017\n\007message\030\007 \002(\t\022\'\n\013buffEffects\030\010 \003(\0132\022" +
-      ".VO_BuffEffectInfo\022+\n\017actionProcesses\030\t " +
-      "\003(\0132\022.VO_ACTION_PROCESS\"=\n\027RESPONSE_BATT" +
-      "LE_ACTIONS\022\"\n\007actions\030\001 \003(\0132\021.VO_BATTLE_" +
-      "ACTION\"A\n\026RESPONSE_BATTLE_FINISH\022\r\n\005isWi" +
-      "n\030\001 \002(\010\022\030\n\005gains\030\002 \003(\0132\t.VO_GAINS\"3\n\034RES",
-      "PONSE_BATTLE_WAIT_COMMAND\022\023\n\013actionCount" +
-      "\030\001 \002(\005B \n\020cg.base.io.protoB\014BattleProtos"
+      "d\030\001 \002(\005\"n\n\023VO_BUFF_EFFECT_INFO\022\014\n\004tech\030\001" +
+      " \002(\t\022\n\n\002id\030\002 \002(\005\022&\n\014effectValues\030\003 \003(\0132\020",
+      ".VO_EFFECT_VALUE\022\025\n\006finish\030\004 \001(\010:\005false\"" +
+      "\341\001\n\020VO_BATTLE_ACTION\022\014\n\004type\030\001 \002(\005\022\021\n\tsk" +
+      "illType\030\002 \001(\005\022\022\n\nskillLevel\030\003 \001(\005\022\017\n\007ski" +
+      "llId\030\004 \001(\005\022\020\n\010sourceId\030\005 \002(\005\022\014\n\004tech\030\006 \002" +
+      "(\t\022\017\n\007message\030\007 \002(\t\022)\n\013buffEffects\030\010 \003(\013" +
+      "2\024.VO_BUFF_EFFECT_INFO\022+\n\017actionProcesse" +
+      "s\030\t \003(\0132\022.VO_ACTION_PROCESS\"=\n\027RESPONSE_" +
+      "BATTLE_ACTIONS\022\"\n\007actions\030\001 \003(\0132\021.VO_BAT" +
+      "TLE_ACTION\"A\n\026RESPONSE_BATTLE_FINISH\022\r\n\005" +
+      "isWin\030\001 \002(\010\022\030\n\005gains\030\002 \003(\0132\t.VO_GAINS\"3\n",
+      "\034RESPONSE_BATTLE_WAIT_COMMAND\022\023\n\013actionC" +
+      "ount\030\001 \002(\005B \n\020cg.base.io.protoB\014BattlePr" +
+      "otos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -7394,11 +7395,11 @@ public final class BattleProtos {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_REQUEST_BATTLE_ATTACK_descriptor,
         new java.lang.String[] { "TargetId", });
-    internal_static_VO_BuffEffectInfo_descriptor =
+    internal_static_VO_BUFF_EFFECT_INFO_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_VO_BuffEffectInfo_fieldAccessorTable = new
+    internal_static_VO_BUFF_EFFECT_INFO_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_VO_BuffEffectInfo_descriptor,
+        internal_static_VO_BUFF_EFFECT_INFO_descriptor,
         new java.lang.String[] { "Tech", "Id", "EffectValues", "Finish", });
     internal_static_VO_BATTLE_ACTION_descriptor =
       getDescriptor().getMessageTypes().get(4);
