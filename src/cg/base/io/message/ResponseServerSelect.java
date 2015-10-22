@@ -41,8 +41,7 @@ public class ResponseServerSelect extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getUrl() {
-		String ret = builder.getUrl();
-		return ret;
+		return builder.getUrl();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class ResponseServerSelect extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getKey() {
-		String ret = builder.getKey();
-		return ret;
+		return builder.getKey();
 	}
 
 	public RESPONSE_SERVER_SELECT getResponseServerSelect() {

@@ -34,8 +34,7 @@ public class VoItemElement {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getType() {
-		int ret = vo.getType();
-		return ret;
+		return vo.getType();
 	}
 
 	/**
@@ -52,8 +51,7 @@ public class VoItemElement {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getValue() {
-		int ret = vo.getValue();
-		return ret;
+		return vo.getValue();
 	}
 
 	public VO_ITEM_ELEMENT getVO_ITEM_ELEMENT() {

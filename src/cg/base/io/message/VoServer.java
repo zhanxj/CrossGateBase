@@ -34,8 +34,7 @@ public class VoServer {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		String ret = vo.getName();
-		return ret;
+		return vo.getName();
 	}
 
 	/**
@@ -52,8 +51,7 @@ public class VoServer {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getKey() {
-		String ret = vo.getKey();
-		return ret;
+		return vo.getKey();
 	}
 
 	/**
@@ -70,8 +68,7 @@ public class VoServer {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getUrl() {
-		String ret = vo.getUrl();
-		return ret;
+		return vo.getUrl();
 	}
 
 	public VO_SERVER getVO_SERVER() {

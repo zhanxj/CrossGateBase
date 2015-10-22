@@ -36,8 +36,7 @@ public class VoCounter {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTech() {
-		String ret = vo.getTech();
-		return ret;
+		return vo.getTech();
 	}
 
 	/**
@@ -56,10 +55,7 @@ public class VoCounter {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoCounter getCounter() {
-		VoCounter ret = null;
-		VO_COUNTER vo = this.vo.getCounter();
-		ret = vo == null ? null : new VoCounter(vo);
-		return ret;
+		return vo.hasCounter() ? new VoCounter(vo.getCounter()) : null;
 	}
 
 	/**
@@ -76,8 +72,7 @@ public class VoCounter {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoActionResult getActionResult() {
-		VoActionResult ret = new VoActionResult(vo.getActionResult());
-		return ret;
+		return new VoActionResult(vo.getActionResult());
 	}
 
 	public VO_COUNTER getVO_COUNTER() {

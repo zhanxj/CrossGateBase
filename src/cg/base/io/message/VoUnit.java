@@ -36,8 +36,7 @@ public class VoUnit {
 	 * @return	基础信息
 	 */
 	public VoUnitBaseInfo getBaseInfo() {
-		VoUnitBaseInfo ret = new VoUnitBaseInfo(vo.getBaseInfo());
-		return ret;
+		return new VoUnitBaseInfo(vo.getBaseInfo());
 	}
 
 	/**
@@ -56,10 +55,7 @@ public class VoUnit {
 	 * @return	技能组[玩家自己及其宠物专有]
 	 */
 	public VoSkillSet getSkillSet() {
-		VoSkillSet ret = null;
-		VO_SKILL_SET vo = this.vo.getSkillSet();
-		ret = vo == null ? null : new VoSkillSet(vo);
-		return ret;
+		return vo.hasSkillSet() ? new VoSkillSet(vo.getSkillSet()) : null;
 	}
 
 	/**
@@ -104,8 +100,7 @@ public class VoUnit {
 	 * @return	忠诚[玩家自己的宠物专有]
 	 */
 	public int getLoyal() {
-		int ret = vo.getLoyal();
-		return ret;
+		return vo.getLoyal();
 	}
 
 	/**
@@ -124,10 +119,7 @@ public class VoUnit {
 	 * @return	宠物组[玩家自己专有]
 	 */
 	public VoPetSet getPetSet() {
-		VoPetSet ret = null;
-		VO_PET_SET vo = this.vo.getPetSet();
-		ret = vo == null ? null : new VoPetSet(vo);
-		return ret;
+		return vo.hasPetSet() ? new VoPetSet(vo.getPetSet()) : null;
 	}
 
 	/**
@@ -146,8 +138,7 @@ public class VoUnit {
 	 * @return	宠物在宠物栏的位置索引[宠物专有]
 	 */
 	public int getIndex() {
-		int ret = vo.getIndex();
-		return ret;
+		return vo.getIndex();
 	}
 
 	/**
@@ -192,10 +183,7 @@ public class VoUnit {
 	 * @return	扩展信息
 	 */
 	public VoUnitExtendInfo getExtendInfo() {
-		VoUnitExtendInfo ret = null;
-		VO_UNIT_EXTEND_INFO vo = this.vo.getExtendInfo();
-		ret = vo == null ? null : new VoUnitExtendInfo(vo);
-		return ret;
+		return vo.hasExtendInfo() ? new VoUnitExtendInfo(vo.getExtendInfo()) : null;
 	}
 
 	/**
@@ -214,10 +202,7 @@ public class VoUnit {
 	 * @return	头顶信息
 	 */
 	public VoTitles getHeadTitle() {
-		VoTitles ret = null;
-		VO_TITLES vo = this.vo.getHeadTitle();
-		ret = vo == null ? null : new VoTitles(vo);
-		return ret;
+		return vo.hasHeadTitle() ? new VoTitles(vo.getHeadTitle()) : null;
 	}
 
 	/**
@@ -236,8 +221,7 @@ public class VoUnit {
 	 * @return	主人实例id[宠物专有]
 	 */
 	public int getOwnerInstanceId() {
-		int ret = vo.getOwnerInstanceId();
-		return ret;
+		return vo.getOwnerInstanceId();
 	}
 
 	/**
@@ -256,8 +240,7 @@ public class VoUnit {
 	 * @return	游戏币[玩家自己专有]
 	 */
 	public int getMoney() {
-		int ret = vo.getMoney();
-		return ret;
+		return vo.getMoney();
 	}
 
 	/**
@@ -345,8 +328,7 @@ public class VoUnit {
 	 * @return	对话类型[NPC专有]
 	 */
 	public String getTalkType() {
-		String ret = vo.getTalkType();
-		return ret;
+		return vo.getTalkType();
 	}
 
 	/**
@@ -365,10 +347,7 @@ public class VoUnit {
 	 * @return	地图位置信息[地图场景专有]
 	 */
 	public VoPosition getPosition() {
-		VoPosition ret = null;
-		VO_POSITION vo = this.vo.getPosition();
-		ret = vo == null ? null : new VoPosition(vo);
-		return ret;
+		return vo.hasPosition() ? new VoPosition(vo.getPosition()) : null;
 	}
 
 	/**
@@ -387,8 +366,7 @@ public class VoUnit {
 	 * @return	战斗时位置[玩家自己专有]
 	 */
 	public Boolean getBattleLocal() {
-		Boolean ret = vo.getBattleLocal();
-		return ret;
+		return vo.getBattleLocal();
 	}
 
 	/**
@@ -407,8 +385,7 @@ public class VoUnit {
 	 * @return	状态[玩家自己的宠物专有]
 	 */
 	public int getState() {
-		int ret = vo.getState();
-		return ret;
+		return vo.getState();
 	}
 
 	/**
@@ -427,8 +404,7 @@ public class VoUnit {
 	 * @return	职业[玩家自己专有]
 	 */
 	public String getJob() {
-		String ret = vo.getJob();
-		return ret;
+		return vo.getJob();
 	}
 
 	/**
@@ -447,8 +423,7 @@ public class VoUnit {
 	 * @return	战绩[玩家角色专有]
 	 */
 	public int getBattleScore() {
-		int ret = vo.getBattleScore();
-		return ret;
+		return vo.getBattleScore();
 	}
 
 	public VO_UNIT getVO_UNIT() {

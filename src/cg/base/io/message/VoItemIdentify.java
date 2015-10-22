@@ -36,8 +36,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getRightButtonDescription() {
-		String ret = vo.getRightButtonDescription();
-		return ret;
+		return vo.getRightButtonDescription();
 	}
 
 	/**
@@ -56,8 +55,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMagicAttack() {
-		int ret = vo.getMagicAttack();
-		return ret;
+		return vo.getMagicAttack();
 	}
 
 	/**
@@ -74,8 +72,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getLevel() {
-		int ret = vo.getLevel();
-		return ret;
+		return vo.getLevel();
 	}
 
 	/**
@@ -94,8 +91,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getDoubleHand() {
-		Boolean ret = vo.getDoubleHand();
-		return ret;
+		return vo.getDoubleHand();
 	}
 
 	/**
@@ -114,8 +110,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getGemArmorType() {
-		int ret = vo.getGemArmorType();
-		return ret;
+		return vo.getGemArmorType();
 	}
 
 	/**
@@ -158,8 +153,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getCanUseInBattle() {
-		Boolean ret = vo.getCanUseInBattle();
-		return ret;
+		return vo.getCanUseInBattle();
 	}
 
 	/**
@@ -176,8 +170,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getDescription() {
-		String ret = vo.getDescription();
-		return ret;
+		return vo.getDescription();
 	}
 
 	/**
@@ -222,8 +215,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getGemWeaponType() {
-		int ret = vo.getGemWeaponType();
-		return ret;
+		return vo.getGemWeaponType();
 	}
 
 	/**
@@ -240,8 +232,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getType() {
-		int ret = vo.getType();
-		return ret;
+		return vo.getType();
 	}
 
 	/**
@@ -258,8 +249,7 @@ public class VoItemIdentify {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getCanPostByPet() {
-		Boolean ret = vo.getCanPostByPet();
-		return ret;
+		return vo.getCanPostByPet();
 	}
 
 	public VO_ITEM_IDENTIFY getVO_ITEM_IDENTIFY() {

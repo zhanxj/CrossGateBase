@@ -43,8 +43,7 @@ public class RequestSkillUse extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTargetId() {
-		int ret = builder.getTargetId();
-		return ret;
+		return builder.getTargetId();
 	}
 
 	/**
@@ -61,8 +60,7 @@ public class RequestSkillUse extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSkillCode() {
-		int ret = builder.getSkillCode();
-		return ret;
+		return builder.getSkillCode();
 	}
 
 	public REQUEST_SKILL_USE getRequestSkillUse() {

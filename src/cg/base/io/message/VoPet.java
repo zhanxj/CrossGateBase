@@ -34,8 +34,7 @@ public class VoPet {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoUnit getUnitInfo() {
-		VoUnit ret = new VoUnit(vo.getUnitInfo());
-		return ret;
+		return new VoUnit(vo.getUnitInfo());
 	}
 
 	public VO_PET getVO_PET() {

@@ -41,8 +41,7 @@ public class RequestOptionsSet extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoOption getOption() {
-		VoOption ret = new VoOption(builder.getOption());
-		return ret;
+		return new VoOption(builder.getOption());
 	}
 
 	public REQUEST_OPTIONS_SET getRequestOptionsSet() {

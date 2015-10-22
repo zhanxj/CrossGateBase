@@ -44,8 +44,7 @@ public class ResponseMapMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSerial() {
-		int ret = builder.getSerial();
-		return ret;
+		return builder.getSerial();
 	}
 
 	/**

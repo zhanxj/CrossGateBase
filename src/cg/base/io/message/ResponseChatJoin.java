@@ -41,8 +41,7 @@ public class ResponseChatJoin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getChannel() {
-		int ret = builder.getChannel();
-		return ret;
+		return builder.getChannel();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class ResponseChatJoin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getChannelName() {
-		String ret = builder.getChannelName();
-		return ret;
+		return builder.getChannelName();
 	}
 
 	public RESPONSE_CHAT_JOIN getResponseChatJoin() {

@@ -41,8 +41,7 @@ public class ResponseScriptError extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTalkType() {
-		String ret = builder.getTalkType();
-		return ret;
+		return builder.getTalkType();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class ResponseScriptError extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMessage() {
-		int ret = builder.getMessage();
-		return ret;
+		return builder.getMessage();
 	}
 
 	public RESPONSE_SCRIPT_ERROR getResponseScriptError() {

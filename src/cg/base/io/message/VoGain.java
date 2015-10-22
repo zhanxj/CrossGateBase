@@ -36,8 +36,7 @@ public class VoGain {
 	 * @return	奖励物品名称
 	 */
 	public String getItemName() {
-		String ret = vo.getItemName();
-		return ret;
+		return vo.getItemName();
 	}
 
 	/**
@@ -56,8 +55,7 @@ public class VoGain {
 	 * @return	奖励数值
 	 */
 	public int getValue() {
-		int ret = vo.getValue();
-		return ret;
+		return vo.getValue();
 	}
 
 	/**
@@ -76,8 +74,7 @@ public class VoGain {
 	 * @return	奖励物品的图标id
 	 */
 	public int getItemIconId() {
-		int ret = vo.getItemIconId();
-		return ret;
+		return vo.getItemIconId();
 	}
 
 	/**
@@ -96,8 +93,7 @@ public class VoGain {
 	 * @return	奖励物品数量
 	 */
 	public int getItemCount() {
-		int ret = vo.getItemCount();
-		return ret;
+		return vo.getItemCount();
 	}
 
 	public VO_GAIN getVO_GAIN() {

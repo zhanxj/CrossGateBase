@@ -36,10 +36,7 @@ public class VoAttachment {
 	 * @return	奖励物品
 	 */
 	public VoItem getItem() {
-		VoItem ret = null;
-		VO_ITEM vo = this.vo.getItem();
-		ret = vo == null ? null : new VoItem(vo);
-		return ret;
+		return vo.hasItem() ? new VoItem(vo.getItem()) : null;
 	}
 
 	/**
@@ -58,8 +55,7 @@ public class VoAttachment {
 	 * @return	奖励类型
 	 */
 	public int getType() {
-		int ret = vo.getType();
-		return ret;
+		return vo.getType();
 	}
 
 	/**
@@ -78,8 +74,7 @@ public class VoAttachment {
 	 * @return	奖励数值
 	 */
 	public int getValue() {
-		int ret = vo.getValue();
-		return ret;
+		return vo.getValue();
 	}
 
 	public VO_ATTACHMENT getVO_ATTACHMENT() {

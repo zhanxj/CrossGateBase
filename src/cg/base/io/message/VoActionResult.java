@@ -36,8 +36,7 @@ public class VoActionResult {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTech() {
-		String ret = vo.getTech();
-		return ret;
+		return vo.getTech();
 	}
 
 	/**
@@ -56,10 +55,7 @@ public class VoActionResult {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoDieInfo getDieInfo() {
-		VoDieInfo ret = null;
-		VO_DIE_INFO vo = this.vo.getDieInfo();
-		ret = vo == null ? null : new VoDieInfo(vo);
-		return ret;
+		return vo.hasDieInfo() ? new VoDieInfo(vo.getDieInfo()) : null;
 	}
 
 	/**
@@ -78,10 +74,7 @@ public class VoActionResult {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoEffectValue getEffectValue() {
-		VoEffectValue ret = null;
-		VO_EFFECT_VALUE vo = this.vo.getEffectValue();
-		ret = vo == null ? null : new VoEffectValue(vo);
-		return ret;
+		return vo.hasEffectValue() ? new VoEffectValue(vo.getEffectValue()) : null;
 	}
 
 	public VO_ACTION_RESULT getVO_ACTION_RESULT() {

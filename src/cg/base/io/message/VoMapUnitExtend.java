@@ -36,8 +36,7 @@ public class VoMapUnitExtend {
 	 * @return	npc
 	 */
 	public String getTalkType() {
-		String ret = vo.getTalkType();
-		return ret;
+		return vo.getTalkType();
 	}
 
 	/**
@@ -56,8 +55,7 @@ public class VoMapUnitExtend {
 	 * @return	pet
 	 */
 	public int getState() {
-		int ret = vo.getState();
-		return ret;
+		return vo.getState();
 	}
 
 	/**
@@ -76,8 +74,7 @@ public class VoMapUnitExtend {
 	 * @return	pet
 	 */
 	public int getOwnerInstanceId() {
-		int ret = vo.getOwnerInstanceId();
-		return ret;
+		return vo.getOwnerInstanceId();
 	}
 
 	public VO_MAP_UNIT_EXTEND getVO_MAP_UNIT_EXTEND() {

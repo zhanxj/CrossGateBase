@@ -41,8 +41,7 @@ public class ResponseDoubleExpUpdate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTime() {
-		int ret = builder.getTime();
-		return ret;
+		return builder.getTime();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class ResponseDoubleExpUpdate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getIsDouble() {
-		Boolean ret = builder.getIsDouble();
-		return ret;
+		return builder.getIsDouble();
 	}
 
 	public RESPONSE_DOUBLE_EXP_UPDATE getResponseDoubleExpUpdate() {

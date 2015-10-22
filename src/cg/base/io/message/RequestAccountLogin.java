@@ -41,8 +41,7 @@ public class RequestAccountLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getPassword() {
-		String ret = builder.getPassword();
-		return ret;
+		return builder.getPassword();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class RequestAccountLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getAccount() {
-		String ret = builder.getAccount();
-		return ret;
+		return builder.getAccount();
 	}
 
 	public REQUEST_ACCOUNT_LOGIN getRequestAccountLogin() {

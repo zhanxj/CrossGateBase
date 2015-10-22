@@ -41,8 +41,7 @@ public class RequestPlayerAnimationInfo extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getPage() {
-		int ret = builder.getPage();
-		return ret;
+		return builder.getPage();
 	}
 
 	public REQUEST_PLAYER_ANIMATION_INFO getRequestPlayerAnimationInfo() {

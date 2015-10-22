@@ -36,8 +36,7 @@ public class VoGains {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getClassName() {
-		String ret = vo.getClassName();
-		return ret;
+		return vo.getClassName();
 	}
 
 	/**

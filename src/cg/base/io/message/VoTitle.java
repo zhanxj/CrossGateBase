@@ -34,8 +34,7 @@ public class VoTitle {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		String ret = vo.getName();
-		return ret;
+		return vo.getName();
 	}
 
 	/**
@@ -52,8 +51,7 @@ public class VoTitle {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getId() {
-		int ret = vo.getId();
-		return ret;
+		return vo.getId();
 	}
 
 	public VO_TITLE getVO_TITLE() {

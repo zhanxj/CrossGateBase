@@ -41,8 +41,7 @@ public class ResponseBattleWaitCommand extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getActionCount() {
-		int ret = builder.getActionCount();
-		return ret;
+		return builder.getActionCount();
 	}
 
 	public RESPONSE_BATTLE_WAIT_COMMAND getResponseBattleWaitCommand() {

@@ -41,8 +41,7 @@ public class RequestPlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getRoleId() {
-		int ret = builder.getRoleId();
-		return ret;
+		return builder.getRoleId();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class RequestPlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getHeadVersion() {
-		int ret = builder.getHeadVersion();
-		return ret;
+		return builder.getHeadVersion();
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class RequestPlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEyeShot() {
-		int ret = builder.getEyeShot();
-		return ret;
+		return builder.getEyeShot();
 	}
 
 	/**
@@ -95,8 +92,7 @@ public class RequestPlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getAnimationVersion() {
-		int ret = builder.getAnimationVersion();
-		return ret;
+		return builder.getAnimationVersion();
 	}
 
 	public REQUEST_PLAYER_LOGIN getRequestPlayerLogin() {

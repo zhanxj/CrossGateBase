@@ -41,8 +41,7 @@ public class RequestServerRegister extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getPort() {
-		int ret = builder.getPort();
-		return ret;
+		return builder.getPort();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class RequestServerRegister extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		String ret = builder.getName();
-		return ret;
+		return builder.getName();
 	}
 
 	public REQUEST_SERVER_REGISTER getRequestServerRegister() {

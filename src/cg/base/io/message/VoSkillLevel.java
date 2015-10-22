@@ -36,8 +36,7 @@ public class VoSkillLevel {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getCostMp() {
-		int ret = vo.getCostMp();
-		return ret;
+		return vo.getCostMp();
 	}
 
 	/**
@@ -80,8 +79,7 @@ public class VoSkillLevel {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		String ret = vo.getName();
-		return ret;
+		return vo.getName();
 	}
 
 	/**
@@ -98,8 +96,7 @@ public class VoSkillLevel {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getDescription() {
-		String ret = vo.getDescription();
-		return ret;
+		return vo.getDescription();
 	}
 
 	/**
@@ -116,8 +113,7 @@ public class VoSkillLevel {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTargetType() {
-		int ret = vo.getTargetType();
-		return ret;
+		return vo.getTargetType();
 	}
 
 	/**
@@ -134,8 +130,7 @@ public class VoSkillLevel {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTechType() {
-		String ret = vo.getTechType();
-		return ret;
+		return vo.getTechType();
 	}
 
 	public VO_SKILL_LEVEL getVO_SKILL_LEVEL() {

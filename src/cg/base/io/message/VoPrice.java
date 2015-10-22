@@ -34,8 +34,7 @@ public class VoPrice {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getId() {
-		int ret = vo.getId();
-		return ret;
+		return vo.getId();
 	}
 
 	/**
@@ -52,8 +51,7 @@ public class VoPrice {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getType() {
-		String ret = vo.getType();
-		return ret;
+		return vo.getType();
 	}
 
 	/**
@@ -70,8 +68,7 @@ public class VoPrice {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getValue() {
-		int ret = vo.getValue();
-		return ret;
+		return vo.getValue();
 	}
 
 	public VO_PRICE getVO_PRICE() {

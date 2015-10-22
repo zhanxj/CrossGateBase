@@ -34,8 +34,7 @@ public class VoGuard {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTech() {
-		String ret = vo.getTech();
-		return ret;
+		return vo.getTech();
 	}
 
 	/**
@@ -52,8 +51,7 @@ public class VoGuard {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSpriteId() {
-		int ret = vo.getSpriteId();
-		return ret;
+		return vo.getSpriteId();
 	}
 
 	public VO_GUARD getVO_GUARD() {

@@ -42,8 +42,7 @@ public class ResponseScript extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTalkType() {
-		String ret = builder.getTalkType();
-		return ret;
+		return builder.getTalkType();
 	}
 
 	/**
@@ -60,8 +59,7 @@ public class ResponseScript extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getMessage() {
-		String ret = builder.getMessage();
-		return ret;
+		return builder.getMessage();
 	}
 
 	/**

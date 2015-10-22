@@ -43,8 +43,7 @@ public class RequestChat extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTargetId() {
-		int ret = builder.getTargetId();
-		return ret;
+		return builder.getTargetId();
 	}
 
 	/**
@@ -61,8 +60,7 @@ public class RequestChat extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getChannel() {
-		int ret = builder.getChannel();
-		return ret;
+		return builder.getChannel();
 	}
 
 	/**
@@ -79,8 +77,7 @@ public class RequestChat extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getText() {
-		String ret = builder.getText();
-		return ret;
+		return builder.getText();
 	}
 
 	public REQUEST_CHAT getRequestChat() {

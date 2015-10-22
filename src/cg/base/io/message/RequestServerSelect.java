@@ -41,8 +41,7 @@ public class RequestServerSelect extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getKey() {
-		String ret = builder.getKey();
-		return ret;
+		return builder.getKey();
 	}
 
 	public REQUEST_SERVER_SELECT getRequestServerSelect() {

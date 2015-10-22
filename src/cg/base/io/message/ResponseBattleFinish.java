@@ -70,8 +70,7 @@ public class ResponseBattleFinish extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getIsWin() {
-		Boolean ret = builder.getIsWin();
-		return ret;
+		return builder.getIsWin();
 	}
 
 	public RESPONSE_BATTLE_FINISH getResponseBattleFinish() {

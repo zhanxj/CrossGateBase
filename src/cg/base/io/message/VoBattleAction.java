@@ -37,8 +37,7 @@ public class VoBattleAction {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSourceId() {
-		int ret = vo.getSourceId();
-		return ret;
+		return vo.getSourceId();
 	}
 
 	/**
@@ -57,8 +56,7 @@ public class VoBattleAction {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTech() {
-		String ret = vo.getTech();
-		return ret;
+		return vo.getTech();
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class VoBattleAction {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSkillId() {
-		int ret = vo.getSkillId();
-		return ret;
+		return vo.getSkillId();
 	}
 
 	/**
@@ -97,8 +94,7 @@ public class VoBattleAction {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSkillType() {
-		int ret = vo.getSkillType();
-		return ret;
+		return vo.getSkillType();
 	}
 
 	/**
@@ -141,8 +137,7 @@ public class VoBattleAction {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getType() {
-		int ret = vo.getType();
-		return ret;
+		return vo.getType();
 	}
 
 	/**
@@ -161,8 +156,7 @@ public class VoBattleAction {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getMessage() {
-		String ret = vo.getMessage();
-		return ret;
+		return vo.getMessage();
 	}
 
 	/**
@@ -181,8 +175,7 @@ public class VoBattleAction {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSkillLevel() {
-		int ret = vo.getSkillLevel();
-		return ret;
+		return vo.getSkillLevel();
 	}
 
 	/**

@@ -41,8 +41,7 @@ public class ResponseChatLeave extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getChannelName() {
-		String ret = builder.getChannelName();
-		return ret;
+		return builder.getChannelName();
 	}
 
 	public RESPONSE_CHAT_LEAVE getResponseChatLeave() {

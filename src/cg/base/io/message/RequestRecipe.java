@@ -42,8 +42,7 @@ public class RequestRecipe extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getBagId() {
-		int ret = builder.getBagId();
-		return ret;
+		return builder.getBagId();
 	}
 
 	/**
@@ -77,8 +76,7 @@ public class RequestRecipe extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getRecipeId() {
-		int ret = builder.getRecipeId();
-		return ret;
+		return builder.getRecipeId();
 	}
 
 	public REQUEST_RECIPE getRequestRecipe() {

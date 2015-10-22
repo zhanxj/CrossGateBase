@@ -41,8 +41,7 @@ public class RequestMapMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getNeedEast() {
-		Boolean ret = builder.getNeedEast();
-		return ret;
+		return builder.getNeedEast();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class RequestMapMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEast() {
-		int ret = builder.getEast();
-		return ret;
+		return builder.getEast();
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class RequestMapMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSouth() {
-		int ret = builder.getSouth();
-		return ret;
+		return builder.getSouth();
 	}
 
 	/**
@@ -95,8 +92,7 @@ public class RequestMapMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSerial() {
-		int ret = builder.getSerial();
-		return ret;
+		return builder.getSerial();
 	}
 
 	/**
@@ -113,8 +109,7 @@ public class RequestMapMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoMapArea getEastArea() {
-		VoMapArea ret = new VoMapArea(builder.getEastArea());
-		return ret;
+		return new VoMapArea(builder.getEastArea());
 	}
 
 	/**
@@ -131,8 +126,7 @@ public class RequestMapMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getNeedSouth() {
-		Boolean ret = builder.getNeedSouth();
-		return ret;
+		return builder.getNeedSouth();
 	}
 
 	/**
@@ -149,8 +143,7 @@ public class RequestMapMove extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoMapArea getSouthArea() {
-		VoMapArea ret = new VoMapArea(builder.getSouthArea());
-		return ret;
+		return new VoMapArea(builder.getSouthArea());
 	}
 
 	public REQUEST_MAP_MOVE getRequestMapMove() {

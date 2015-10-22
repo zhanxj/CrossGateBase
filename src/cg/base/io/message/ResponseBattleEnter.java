@@ -43,8 +43,7 @@ public class ResponseBattleEnter extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getBattleId() {
-		int ret = builder.getBattleId();
-		return ret;
+		return builder.getBattleId();
 	}
 
 	/**

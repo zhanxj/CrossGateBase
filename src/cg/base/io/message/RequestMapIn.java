@@ -41,8 +41,7 @@ public class RequestMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEast() {
-		int ret = builder.getEast();
-		return ret;
+		return builder.getEast();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class RequestMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSouth() {
-		int ret = builder.getSouth();
-		return ret;
+		return builder.getSouth();
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class RequestMapIn extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMapId() {
-		int ret = builder.getMapId();
-		return ret;
+		return builder.getMapId();
 	}
 
 	public REQUEST_MAP_IN getRequestMapIn() {

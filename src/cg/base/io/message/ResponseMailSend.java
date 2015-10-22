@@ -44,8 +44,7 @@ public class ResponseMailSend extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSourceId() {
-		int ret = builder.getSourceId();
-		return ret;
+		return builder.getSourceId();
 	}
 
 	/**
@@ -62,8 +61,7 @@ public class ResponseMailSend extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getLastTime() {
-		int ret = builder.getLastTime();
-		return ret;
+		return builder.getLastTime();
 	}
 
 	/**
@@ -106,8 +104,7 @@ public class ResponseMailSend extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getDestId() {
-		int ret = builder.getDestId();
-		return ret;
+		return builder.getDestId();
 	}
 
 	/**
@@ -124,8 +121,7 @@ public class ResponseMailSend extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getSourceName() {
-		String ret = builder.getSourceName();
-		return ret;
+		return builder.getSourceName();
 	}
 
 	/**
@@ -142,8 +138,7 @@ public class ResponseMailSend extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getType() {
-		int ret = builder.getType();
-		return ret;
+		return builder.getType();
 	}
 
 	/**
@@ -160,8 +155,7 @@ public class ResponseMailSend extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTitle() {
-		String ret = builder.getTitle();
-		return ret;
+		return builder.getTitle();
 	}
 
 	/**
@@ -204,8 +198,7 @@ public class ResponseMailSend extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getContent() {
-		String ret = builder.getContent();
-		return ret;
+		return builder.getContent();
 	}
 
 	/**
@@ -222,8 +215,7 @@ public class ResponseMailSend extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getStatus() {
-		int ret = builder.getStatus();
-		return ret;
+		return builder.getStatus();
 	}
 
 	public RESPONSE_MAIL_SEND getResponseMailSend() {

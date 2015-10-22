@@ -41,8 +41,7 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getMapId() {
-		int ret = builder.getMapId();
-		return ret;
+		return builder.getMapId();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class ResponsePlayerLogin extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoUnit getUnitInfo() {
-		VoUnit ret = new VoUnit(builder.getUnitInfo());
-		return ret;
+		return new VoUnit(builder.getUnitInfo());
 	}
 
 	public RESPONSE_PLAYER_LOGIN getResponsePlayerLogin() {

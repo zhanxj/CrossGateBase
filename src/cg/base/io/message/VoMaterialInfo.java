@@ -34,8 +34,7 @@ public class VoMaterialInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getItemId() {
-		int ret = vo.getItemId();
-		return ret;
+		return vo.getItemId();
 	}
 
 	/**
@@ -52,8 +51,7 @@ public class VoMaterialInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getIdentifyName() {
-		String ret = vo.getIdentifyName();
-		return ret;
+		return vo.getIdentifyName();
 	}
 
 	/**
@@ -70,8 +68,7 @@ public class VoMaterialInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getNeedAmount() {
-		int ret = vo.getNeedAmount();
-		return ret;
+		return vo.getNeedAmount();
 	}
 
 	public VO_MATERIAL_INFO getVO_MATERIAL_INFO() {

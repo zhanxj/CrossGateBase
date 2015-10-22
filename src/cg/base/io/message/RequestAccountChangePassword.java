@@ -41,8 +41,7 @@ public class RequestAccountChangePassword extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getOldPassword() {
-		String ret = builder.getOldPassword();
-		return ret;
+		return builder.getOldPassword();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class RequestAccountChangePassword extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getNewPassword() {
-		String ret = builder.getNewPassword();
-		return ret;
+		return builder.getNewPassword();
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class RequestAccountChangePassword extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getAccount() {
-		String ret = builder.getAccount();
-		return ret;
+		return builder.getAccount();
 	}
 
 	public REQUEST_ACCOUNT_CHANGE_PASSWORD getRequestAccountChangePassword() {

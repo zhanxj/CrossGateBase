@@ -36,8 +36,7 @@ public class VoDieInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getInjured() {
-		int ret = vo.getInjured();
-		return ret;
+		return vo.getInjured();
 	}
 
 	/**
@@ -56,8 +55,7 @@ public class VoDieInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getIsFly() {
-		Boolean ret = vo.getIsFly();
-		return ret;
+		return vo.getIsFly();
 	}
 
 	/**
@@ -76,8 +74,7 @@ public class VoDieInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSoul() {
-		int ret = vo.getSoul();
-		return ret;
+		return vo.getSoul();
 	}
 
 	/**
@@ -96,8 +93,7 @@ public class VoDieInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getIsSource() {
-		Boolean ret = vo.getIsSource();
-		return ret;
+		return vo.getIsSource();
 	}
 
 	/**
@@ -116,8 +112,7 @@ public class VoDieInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getIsDisappear() {
-		Boolean ret = vo.getIsDisappear();
-		return ret;
+		return vo.getIsDisappear();
 	}
 
 	public VO_DIE_INFO getVO_DIE_INFO() {

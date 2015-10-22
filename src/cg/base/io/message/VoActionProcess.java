@@ -36,10 +36,7 @@ public class VoActionProcess {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoActionProcess getNext() {
-		VoActionProcess ret = null;
-		VO_ACTION_PROCESS vo = this.vo.getNext();
-		ret = vo == null ? null : new VoActionProcess(vo);
-		return ret;
+		return vo.hasNext() ? new VoActionProcess(vo.getNext()) : null;
 	}
 
 	/**
@@ -56,8 +53,7 @@ public class VoActionProcess {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTargetId() {
-		int ret = vo.getTargetId();
-		return ret;
+		return vo.getTargetId();
 	}
 
 	/**
@@ -76,10 +72,7 @@ public class VoActionProcess {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoGuard getGuard() {
-		VoGuard ret = null;
-		VO_GUARD vo = this.vo.getGuard();
-		ret = vo == null ? null : new VoGuard(vo);
-		return ret;
+		return vo.hasGuard() ? new VoGuard(vo.getGuard()) : null;
 	}
 
 	/**
@@ -98,10 +91,7 @@ public class VoActionProcess {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoCounter getCounter() {
-		VoCounter ret = null;
-		VO_COUNTER vo = this.vo.getCounter();
-		ret = vo == null ? null : new VoCounter(vo);
-		return ret;
+		return vo.hasCounter() ? new VoCounter(vo.getCounter()) : null;
 	}
 
 	/**
@@ -120,10 +110,7 @@ public class VoActionProcess {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoActionResult getBlood() {
-		VoActionResult ret = null;
-		VO_ACTION_RESULT vo = this.vo.getBlood();
-		ret = vo == null ? null : new VoActionResult(vo);
-		return ret;
+		return vo.hasBlood() ? new VoActionResult(vo.getBlood()) : null;
 	}
 
 	/**
@@ -142,10 +129,7 @@ public class VoActionProcess {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoActionResult getActionResult() {
-		VoActionResult ret = null;
-		VO_ACTION_RESULT vo = this.vo.getActionResult();
-		ret = vo == null ? null : new VoActionResult(vo);
-		return ret;
+		return vo.hasActionResult() ? new VoActionResult(vo.getActionResult()) : null;
 	}
 
 	public VO_ACTION_PROCESS getVO_ACTION_PROCESS() {

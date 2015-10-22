@@ -37,8 +37,7 @@ public class VoBuffEffectInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getTech() {
-		String ret = vo.getTech();
-		return ret;
+		return vo.getTech();
 	}
 
 	/**
@@ -83,8 +82,7 @@ public class VoBuffEffectInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getFinish() {
-		Boolean ret = vo.getFinish();
-		return ret;
+		return vo.getFinish();
 	}
 
 	/**
@@ -101,8 +99,7 @@ public class VoBuffEffectInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getId() {
-		int ret = vo.getId();
-		return ret;
+		return vo.getId();
 	}
 
 	public VO_BUFF_EFFECT_INFO getVO_BUFF_EFFECT_INFO() {

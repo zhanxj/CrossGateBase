@@ -36,10 +36,7 @@ public class VoGrid {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public VoItem getItem() {
-		VoItem ret = null;
-		VO_ITEM vo = this.vo.getItem();
-		ret = vo == null ? null : new VoItem(vo);
-		return ret;
+		return vo.hasItem() ? new VoItem(vo.getItem()) : null;
 	}
 
 	/**
@@ -56,8 +53,7 @@ public class VoGrid {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getSize() {
-		int ret = vo.getSize();
-		return ret;
+		return vo.getSize();
 	}
 
 	/**
@@ -76,8 +72,7 @@ public class VoGrid {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getCount() {
-		int ret = vo.getCount();
-		return ret;
+		return vo.getCount();
 	}
 
 	/**
@@ -94,8 +89,7 @@ public class VoGrid {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getId() {
-		int ret = vo.getId();
-		return ret;
+		return vo.getId();
 	}
 
 	public VO_GRID getVO_GRID() {

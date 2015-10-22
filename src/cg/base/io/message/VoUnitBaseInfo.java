@@ -34,8 +34,7 @@ public class VoUnitBaseInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getUnitType() {
-		int ret = vo.getUnitType();
-		return ret;
+		return vo.getUnitType();
 	}
 
 	/**
@@ -52,8 +51,7 @@ public class VoUnitBaseInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getInstanceId() {
-		int ret = vo.getInstanceId();
-		return ret;
+		return vo.getInstanceId();
 	}
 
 	/**
@@ -70,8 +68,7 @@ public class VoUnitBaseInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getFaceModel() {
-		int ret = vo.getFaceModel();
-		return ret;
+		return vo.getFaceModel();
 	}
 
 	/**
@@ -88,8 +85,7 @@ public class VoUnitBaseInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getName() {
-		String ret = vo.getName();
-		return ret;
+		return vo.getName();
 	}
 
 	/**
@@ -106,8 +102,7 @@ public class VoUnitBaseInfo {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getTempFaceModel() {
-		int ret = vo.getTempFaceModel();
-		return ret;
+		return vo.getTempFaceModel();
 	}
 
 	public VO_UNIT_BASE_INFO getVO_UNIT_BASE_INFO() {

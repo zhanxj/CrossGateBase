@@ -41,8 +41,7 @@ public class RequestAccountAuthenticate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getAccountId() {
-		int ret = builder.getAccountId();
-		return ret;
+		return builder.getAccountId();
 	}
 
 	/**
@@ -59,8 +58,7 @@ public class RequestAccountAuthenticate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getIp() {
-		String ret = builder.getIp();
-		return ret;
+		return builder.getIp();
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class RequestAccountAuthenticate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getImoney() {
-		int ret = builder.getImoney();
-		return ret;
+		return builder.getImoney();
 	}
 
 	/**
@@ -95,8 +92,7 @@ public class RequestAccountAuthenticate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getKey() {
-		String ret = builder.getKey();
-		return ret;
+		return builder.getKey();
 	}
 
 	/**
@@ -113,8 +109,7 @@ public class RequestAccountAuthenticate extends ProtoMessage {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getAccount() {
-		String ret = builder.getAccount();
-		return ret;
+		return builder.getAccount();
 	}
 
 	public REQUEST_ACCOUNT_AUTHENTICATE getRequestAccountAuthenticate() {

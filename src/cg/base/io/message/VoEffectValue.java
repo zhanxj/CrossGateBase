@@ -36,8 +36,7 @@ public class VoEffectValue {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public Boolean getIsCritical() {
-		Boolean ret = vo.getIsCritical();
-		return ret;
+		return vo.getIsCritical();
 	}
 
 	/**
@@ -56,8 +55,7 @@ public class VoEffectValue {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public String getMessage() {
-		String ret = vo.getMessage();
-		return ret;
+		return vo.getMessage();
 	}
 
 	/**
@@ -74,8 +72,7 @@ public class VoEffectValue {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getValue() {
-		int ret = vo.getValue();
-		return ret;
+		return vo.getValue();
 	}
 
 	/**
@@ -92,8 +89,7 @@ public class VoEffectValue {
 	 * @return	<u>do not has any annotate.</u>
 	 */
 	public int getEffectType() {
-		int ret = vo.getEffectType();
-		return ret;
+		return vo.getEffectType();
 	}
 
 	public VO_EFFECT_VALUE getVO_EFFECT_VALUE() {
