@@ -332,13 +332,17 @@ public final class MessageIdProto {
      */
     MI_RESPONSE_SCRIPT_ERROR(57, 306),
     /**
+     * <code>MI_RESPONSE_SCRIPT_CHANGE_PAL = 308;</code>
+     */
+    MI_RESPONSE_SCRIPT_CHANGE_PAL(58, 308),
+    /**
      * <code>MI_REQUEST_CHAT = 351;</code>
      */
-    MI_REQUEST_CHAT(58, 351),
+    MI_REQUEST_CHAT(59, 351),
     /**
      * <code>MI_RESPONSE_CHAT = 352;</code>
      */
-    MI_RESPONSE_CHAT(59, 352),
+    MI_RESPONSE_CHAT(60, 352),
     /**
      * <code>MI_REQUEST_CHAT_JOIN = 353;</code>
      *
@@ -346,7 +350,7 @@ public final class MessageIdProto {
      * &#64;proto=Chat
      * </pre>
      */
-    MI_REQUEST_CHAT_JOIN(60, 353),
+    MI_REQUEST_CHAT_JOIN(61, 353),
     /**
      * <code>MI_RESPONSE_CHAT_JOIN = 354;</code>
      *
@@ -354,7 +358,7 @@ public final class MessageIdProto {
      * &#64;proto=Chat
      * </pre>
      */
-    MI_RESPONSE_CHAT_JOIN(61, 354),
+    MI_RESPONSE_CHAT_JOIN(62, 354),
     /**
      * <code>MI_REQUEST_CHAT_LEAVE = 355;</code>
      *
@@ -362,7 +366,7 @@ public final class MessageIdProto {
      * &#64;proto=Chat
      * </pre>
      */
-    MI_REQUEST_CHAT_LEAVE(62, 355),
+    MI_REQUEST_CHAT_LEAVE(63, 355),
     /**
      * <code>MI_RESPONSE_CHAT_LEAVE = 356;</code>
      *
@@ -370,7 +374,7 @@ public final class MessageIdProto {
      * &#64;proto=Chat
      * </pre>
      */
-    MI_RESPONSE_CHAT_LEAVE(63, 356),
+    MI_RESPONSE_CHAT_LEAVE(64, 356),
     /**
      * <code>MI_REQUEST_SKILL_USE = 401;</code>
      *
@@ -379,7 +383,7 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_REQUEST_SKILL_USE(64, 401),
+    MI_REQUEST_SKILL_USE(65, 401),
     /**
      * <code>MI_REQUEST_RECIPE = 403;</code>
      *
@@ -387,7 +391,7 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_REQUEST_RECIPE(65, 403),
+    MI_REQUEST_RECIPE(66, 403),
     /**
      * <code>MI_REQUEST_DOUBLE_EXP_BEGIN = 405;</code>
      *
@@ -395,7 +399,7 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_REQUEST_DOUBLE_EXP_BEGIN(66, 405),
+    MI_REQUEST_DOUBLE_EXP_BEGIN(67, 405),
     /**
      * <code>MI_REQUEST_DOUBLE_EXP_END = 407;</code>
      *
@@ -403,7 +407,7 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_REQUEST_DOUBLE_EXP_END(67, 407),
+    MI_REQUEST_DOUBLE_EXP_END(68, 407),
     /**
      * <code>MI_RESPONSE_DOUBLE_EXP_END = 408;</code>
      *
@@ -411,7 +415,7 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_RESPONSE_DOUBLE_EXP_END(68, 408),
+    MI_RESPONSE_DOUBLE_EXP_END(69, 408),
     /**
      * <code>MI_REQUEST_DOUBLE_EXP_UPDATE = 409;</code>
      *
@@ -419,11 +423,11 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_REQUEST_DOUBLE_EXP_UPDATE(69, 409),
+    MI_REQUEST_DOUBLE_EXP_UPDATE(70, 409),
     /**
      * <code>MI_RESPONSE_DOUBLE_EXP_UPDATE = 410;</code>
      */
-    MI_RESPONSE_DOUBLE_EXP_UPDATE(70, 410),
+    MI_RESPONSE_DOUBLE_EXP_UPDATE(71, 410),
     /**
      * <code>MI_REQUEST_SKILL_LEARN = 411;</code>
      *
@@ -431,7 +435,7 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_REQUEST_SKILL_LEARN(71, 411),
+    MI_REQUEST_SKILL_LEARN(72, 411),
     /**
      * <code>MI_RESPONSE_SKILL_LEARN = 412;</code>
      *
@@ -439,7 +443,7 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_RESPONSE_SKILL_LEARN(72, 412),
+    MI_RESPONSE_SKILL_LEARN(73, 412),
     /**
      * <code>MI_REQUEST_SKILL_UNLEARN = 413;</code>
      *
@@ -447,7 +451,7 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_REQUEST_SKILL_UNLEARN(73, 413),
+    MI_REQUEST_SKILL_UNLEARN(74, 413),
     /**
      * <code>MI_RESPONSE_SKILL_UNLEARN = 414;</code>
      *
@@ -455,7 +459,7 @@ public final class MessageIdProto {
      * &#64;proto=Skill
      * </pre>
      */
-    MI_RESPONSE_SKILL_UNLEARN(74, 414),
+    MI_RESPONSE_SKILL_UNLEARN(75, 414),
     /**
      * <code>MI_REQUEST_MAIL_SEND = 451;</code>
      *
@@ -464,7 +468,7 @@ public final class MessageIdProto {
      * &#64;proto=Mail
      * </pre>
      */
-    MI_REQUEST_MAIL_SEND(75, 451),
+    MI_REQUEST_MAIL_SEND(76, 451),
     /**
      * <code>MI_RESPONSE_MAIL_SEND = 452;</code>
      *
@@ -472,15 +476,15 @@ public final class MessageIdProto {
      * &#64;proto=Mail
      * </pre>
      */
-    MI_RESPONSE_MAIL_SEND(76, 452),
+    MI_RESPONSE_MAIL_SEND(77, 452),
     /**
      * <code>MI_REQUEST_OPTIONS_SET = 501;</code>
      */
-    MI_REQUEST_OPTIONS_SET(77, 501),
+    MI_REQUEST_OPTIONS_SET(78, 501),
     /**
      * <code>MI_RESPONSE_OPTIONS_SET = 502;</code>
      */
-    MI_RESPONSE_OPTIONS_SET(78, 502),
+    MI_RESPONSE_OPTIONS_SET(79, 502),
     ;
 
     /**
@@ -802,6 +806,10 @@ public final class MessageIdProto {
      */
     public static final int MI_RESPONSE_SCRIPT_ERROR_VALUE = 306;
     /**
+     * <code>MI_RESPONSE_SCRIPT_CHANGE_PAL = 308;</code>
+     */
+    public static final int MI_RESPONSE_SCRIPT_CHANGE_PAL_VALUE = 308;
+    /**
      * <code>MI_REQUEST_CHAT = 351;</code>
      */
     public static final int MI_REQUEST_CHAT_VALUE = 351;
@@ -1015,6 +1023,7 @@ public final class MessageIdProto {
         case 303: return MI_REQUEST_SCRIPT_MUTUAL;
         case 304: return MI_RESPONSE_SCRIPT_MUTUAL;
         case 306: return MI_RESPONSE_SCRIPT_ERROR;
+        case 308: return MI_RESPONSE_SCRIPT_CHANGE_PAL;
         case 351: return MI_REQUEST_CHAT;
         case 352: return MI_RESPONSE_CHAT;
         case 353: return MI_REQUEST_CHAT_JOIN;
@@ -1096,7 +1105,7 @@ public final class MessageIdProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017MessageId.proto*\245\023\n\tMessageId\022\031\n\025MI_RE" +
+      "\n\017MessageId.proto*\311\023\n\tMessageId\022\031\n\025MI_RE" +
       "QUEST_HEART_BEAT\020\001\022\032\n\026MI_RESPONSE_HEART_" +
       "BEAT\020\002\022\033\n\027MI_REQUEST_DISCONNECTED\020\003\022\032\n\026M" +
       "I_RESPONSE_EXECUTE_OK\020\004\022\035\n\031MI_RESPONSE_E" +
@@ -1142,24 +1151,25 @@ public final class MessageIdProto {
       "H\020\323\001\022\036\n\031MI_RESPONSE_BATTLE_FINISH\020\326\001\022\027\n\022" +
       "MI_RESPONSE_SCRIPT\020\256\002\022\035\n\030MI_REQUEST_SCRI" +
       "PT_MUTUAL\020\257\002\022\036\n\031MI_RESPONSE_SCRIPT_MUTUA" +
-      "L\020\260\002\022\035\n\030MI_RESPONSE_SCRIPT_ERROR\020\262\002\022\024\n\017M" +
-      "I_REQUEST_CHAT\020\337\002\022\025\n\020MI_RESPONSE_CHAT\020\340\002" +
-      "\022\031\n\024MI_REQUEST_CHAT_JOIN\020\341\002\022\032\n\025MI_RESPON" +
-      "SE_CHAT_JOIN\020\342\002\022\032\n\025MI_REQUEST_CHAT_LEAVE",
-      "\020\343\002\022\033\n\026MI_RESPONSE_CHAT_LEAVE\020\344\002\022\031\n\024MI_R" +
-      "EQUEST_SKILL_USE\020\221\003\022\026\n\021MI_REQUEST_RECIPE" +
-      "\020\223\003\022 \n\033MI_REQUEST_DOUBLE_EXP_BEGIN\020\225\003\022\036\n" +
-      "\031MI_REQUEST_DOUBLE_EXP_END\020\227\003\022\037\n\032MI_RESP" +
-      "ONSE_DOUBLE_EXP_END\020\230\003\022!\n\034MI_REQUEST_DOU" +
-      "BLE_EXP_UPDATE\020\231\003\022\"\n\035MI_RESPONSE_DOUBLE_" +
-      "EXP_UPDATE\020\232\003\022\033\n\026MI_REQUEST_SKILL_LEARN\020" +
-      "\233\003\022\034\n\027MI_RESPONSE_SKILL_LEARN\020\234\003\022\035\n\030MI_R" +
-      "EQUEST_SKILL_UNLEARN\020\235\003\022\036\n\031MI_RESPONSE_S" +
-      "KILL_UNLEARN\020\236\003\022\031\n\024MI_REQUEST_MAIL_SEND\020",
-      "\303\003\022\032\n\025MI_RESPONSE_MAIL_SEND\020\304\003\022\033\n\026MI_REQ" +
-      "UEST_OPTIONS_SET\020\365\003\022\034\n\027MI_RESPONSE_OPTIO" +
-      "NS_SET\020\366\003B\"\n\020cg.base.io.protoB\016MessageId" +
-      "Proto"
+      "L\020\260\002\022\035\n\030MI_RESPONSE_SCRIPT_ERROR\020\262\002\022\"\n\035M" +
+      "I_RESPONSE_SCRIPT_CHANGE_PAL\020\264\002\022\024\n\017MI_RE" +
+      "QUEST_CHAT\020\337\002\022\025\n\020MI_RESPONSE_CHAT\020\340\002\022\031\n\024" +
+      "MI_REQUEST_CHAT_JOIN\020\341\002\022\032\n\025MI_RESPONSE_C",
+      "HAT_JOIN\020\342\002\022\032\n\025MI_REQUEST_CHAT_LEAVE\020\343\002\022" +
+      "\033\n\026MI_RESPONSE_CHAT_LEAVE\020\344\002\022\031\n\024MI_REQUE" +
+      "ST_SKILL_USE\020\221\003\022\026\n\021MI_REQUEST_RECIPE\020\223\003\022" +
+      " \n\033MI_REQUEST_DOUBLE_EXP_BEGIN\020\225\003\022\036\n\031MI_" +
+      "REQUEST_DOUBLE_EXP_END\020\227\003\022\037\n\032MI_RESPONSE" +
+      "_DOUBLE_EXP_END\020\230\003\022!\n\034MI_REQUEST_DOUBLE_" +
+      "EXP_UPDATE\020\231\003\022\"\n\035MI_RESPONSE_DOUBLE_EXP_" +
+      "UPDATE\020\232\003\022\033\n\026MI_REQUEST_SKILL_LEARN\020\233\003\022\034" +
+      "\n\027MI_RESPONSE_SKILL_LEARN\020\234\003\022\035\n\030MI_REQUE" +
+      "ST_SKILL_UNLEARN\020\235\003\022\036\n\031MI_RESPONSE_SKILL",
+      "_UNLEARN\020\236\003\022\031\n\024MI_REQUEST_MAIL_SEND\020\303\003\022\032" +
+      "\n\025MI_RESPONSE_MAIL_SEND\020\304\003\022\033\n\026MI_REQUEST" +
+      "_OPTIONS_SET\020\365\003\022\034\n\027MI_RESPONSE_OPTIONS_S" +
+      "ET\020\366\003B\"\n\020cg.base.io.protoB\016MessageIdProt" +
+      "o"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

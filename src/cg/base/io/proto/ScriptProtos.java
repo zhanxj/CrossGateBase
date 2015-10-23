@@ -1901,6 +1901,497 @@ public final class ScriptProtos {
     // @@protoc_insertion_point(class_scope:RESPONSE_SCRIPT_ERROR)
   }
 
+  public interface RESPONSE_SCRIPT_CHANGE_PALOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RESPONSE_SCRIPT_CHANGE_PAL)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>required int32 pal = 1;</code>
+     */
+    boolean hasPal();
+    /**
+     * <code>required int32 pal = 1;</code>
+     */
+    int getPal();
+
+    /**
+     * <code>required int32 time = 2;</code>
+     */
+    boolean hasTime();
+    /**
+     * <code>required int32 time = 2;</code>
+     */
+    int getTime();
+  }
+  /**
+   * Protobuf type {@code RESPONSE_SCRIPT_CHANGE_PAL}
+   */
+  public static final class RESPONSE_SCRIPT_CHANGE_PAL extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:RESPONSE_SCRIPT_CHANGE_PAL)
+      RESPONSE_SCRIPT_CHANGE_PALOrBuilder {
+    // Use RESPONSE_SCRIPT_CHANGE_PAL.newBuilder() to construct.
+    private RESPONSE_SCRIPT_CHANGE_PAL(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private RESPONSE_SCRIPT_CHANGE_PAL(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final RESPONSE_SCRIPT_CHANGE_PAL defaultInstance;
+    public static RESPONSE_SCRIPT_CHANGE_PAL getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public RESPONSE_SCRIPT_CHANGE_PAL getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RESPONSE_SCRIPT_CHANGE_PAL(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              pal_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              time_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cg.base.io.proto.ScriptProtos.internal_static_RESPONSE_SCRIPT_CHANGE_PAL_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cg.base.io.proto.ScriptProtos.internal_static_RESPONSE_SCRIPT_CHANGE_PAL_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL.class, cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<RESPONSE_SCRIPT_CHANGE_PAL> PARSER =
+        new com.google.protobuf.AbstractParser<RESPONSE_SCRIPT_CHANGE_PAL>() {
+      public RESPONSE_SCRIPT_CHANGE_PAL parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new RESPONSE_SCRIPT_CHANGE_PAL(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RESPONSE_SCRIPT_CHANGE_PAL> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int PAL_FIELD_NUMBER = 1;
+    private int pal_;
+    /**
+     * <code>required int32 pal = 1;</code>
+     */
+    public boolean hasPal() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>required int32 pal = 1;</code>
+     */
+    public int getPal() {
+      return pal_;
+    }
+
+    public static final int TIME_FIELD_NUMBER = 2;
+    private int time_;
+    /**
+     * <code>required int32 time = 2;</code>
+     */
+    public boolean hasTime() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required int32 time = 2;</code>
+     */
+    public int getTime() {
+      return time_;
+    }
+
+    private void initFields() {
+      pal_ = 0;
+      time_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      if (!hasPal()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasTime()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, pal_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, time_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, pal_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, time_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code RESPONSE_SCRIPT_CHANGE_PAL}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RESPONSE_SCRIPT_CHANGE_PAL)
+        cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PALOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cg.base.io.proto.ScriptProtos.internal_static_RESPONSE_SCRIPT_CHANGE_PAL_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cg.base.io.proto.ScriptProtos.internal_static_RESPONSE_SCRIPT_CHANGE_PAL_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL.class, cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL.Builder.class);
+      }
+
+      // Construct using cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        pal_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        time_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cg.base.io.proto.ScriptProtos.internal_static_RESPONSE_SCRIPT_CHANGE_PAL_descriptor;
+      }
+
+      public cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL getDefaultInstanceForType() {
+        return cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL.getDefaultInstance();
+      }
+
+      public cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL build() {
+        cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL buildPartial() {
+        cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL result = new cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.pal_ = pal_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.time_ = time_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL) {
+          return mergeFrom((cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL other) {
+        if (other == cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL.getDefaultInstance()) return this;
+        if (other.hasPal()) {
+          setPal(other.getPal());
+        }
+        if (other.hasTime()) {
+          setTime(other.getTime());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        if (!hasPal()) {
+          
+          return false;
+        }
+        if (!hasTime()) {
+          
+          return false;
+        }
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cg.base.io.proto.ScriptProtos.RESPONSE_SCRIPT_CHANGE_PAL) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int pal_ ;
+      /**
+       * <code>required int32 pal = 1;</code>
+       */
+      public boolean hasPal() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>required int32 pal = 1;</code>
+       */
+      public int getPal() {
+        return pal_;
+      }
+      /**
+       * <code>required int32 pal = 1;</code>
+       */
+      public Builder setPal(int value) {
+        bitField0_ |= 0x00000001;
+        pal_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 pal = 1;</code>
+       */
+      public Builder clearPal() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        pal_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int time_ ;
+      /**
+       * <code>required int32 time = 2;</code>
+       */
+      public boolean hasTime() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required int32 time = 2;</code>
+       */
+      public int getTime() {
+        return time_;
+      }
+      /**
+       * <code>required int32 time = 2;</code>
+       */
+      public Builder setTime(int value) {
+        bitField0_ |= 0x00000002;
+        time_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 time = 2;</code>
+       */
+      public Builder clearTime() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        time_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:RESPONSE_SCRIPT_CHANGE_PAL)
+    }
+
+    static {
+      defaultInstance = new RESPONSE_SCRIPT_CHANGE_PAL(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:RESPONSE_SCRIPT_CHANGE_PAL)
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_REQUEST_SCRIPT_MUTUAL_descriptor;
   private static
@@ -1916,6 +2407,11 @@ public final class ScriptProtos {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RESPONSE_SCRIPT_ERROR_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_RESPONSE_SCRIPT_CHANGE_PAL_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_RESPONSE_SCRIPT_CHANGE_PAL_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1929,8 +2425,10 @@ public final class ScriptProtos {
       "\013\n\003dir\030\001 \002(\005\022\n\n\002op\030\002 \002(\005\"C\n\017RESPONSE_SCR" +
       "IPT\022\020\n\010talkType\030\001 \002(\t\022\017\n\007message\030\002 \002(\t\022\r" +
       "\n\005infos\030\003 \003(\t\":\n\025RESPONSE_SCRIPT_ERROR\022\020" +
-      "\n\010talkType\030\001 \002(\t\022\017\n\007message\030\002 \002(\005B \n\020cg." +
-      "base.io.protoB\014ScriptProtos"
+      "\n\010talkType\030\001 \002(\t\022\017\n\007message\030\002 \002(\005\"7\n\032RES" +
+      "PONSE_SCRIPT_CHANGE_PAL\022\013\n\003pal\030\001 \002(\005\022\014\n\004" +
+      "time\030\002 \002(\005B \n\020cg.base.io.protoB\014ScriptPr" +
+      "otos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1962,6 +2460,12 @@ public final class ScriptProtos {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_RESPONSE_SCRIPT_ERROR_descriptor,
         new java.lang.String[] { "TalkType", "Message", });
+    internal_static_RESPONSE_SCRIPT_CHANGE_PAL_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_RESPONSE_SCRIPT_CHANGE_PAL_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_RESPONSE_SCRIPT_CHANGE_PAL_descriptor,
+        new java.lang.String[] { "Pal", "Time", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
