@@ -49,7 +49,7 @@ public abstract class RegexUtil {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(check(".*[a-zA-z]+.*", "a"));
+		System.out.println(check("^[a-zA-Z]+[a-zA-Z0-9]*[0-9]+$", "1111"));
 	}
 
 }
