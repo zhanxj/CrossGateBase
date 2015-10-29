@@ -13,7 +13,11 @@ public class MathUtil {
 	private static Random random = new Random();
 	
 	public static boolean isNum(String word){
-		return word.matches("^[-+]?(([0-9]+)([.]([0-9]+))?|([.]([0-9]+))?)$");
+		return word.matches("^[0-9]*$");
+	}
+	
+	public static boolean isNum(char c){
+		return c >= '0' && c <= '9';
 	}
 	
 	public static String byteFormat(byte data) {
