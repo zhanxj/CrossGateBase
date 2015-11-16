@@ -28,6 +28,8 @@ public class DateUtil {
 	/**格式化工具*/
 	private static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd,hh:mm:ss");
 	
+	private static byte DAY_REFRESH_CLOCK = 3;
+	
 	public static String formatDate(Date date) {
 		return dateFormat.format(date);
 	}
@@ -52,8 +54,20 @@ public class DateUtil {
 		if (time.getHourOfDay() < clock) {
 			return clockMills - time.getMillisOfDay();
 		} else {
-			return getMilliSecondStartOfTheNextDay() + clockMills - time.getMillisOfDay();
+			return getMilliSecondStartOfTheNextDay() + clockMills;
 		}
+	}
+	
+	public static void setDayRefreshClock(byte clock) {
+		DAY_REFRESH_CLOCK = clock;
+	}
+	
+	public static int getMilliSecondStartOfDayRefresh() {
+		return DateUtil.getMilliSecondStart(DAY_REFRESH_CLOCK);
+	}
+	
+	public static int getSecondOfDayRefresh() {
+		return DAY_REFRESH_CLOCK * HOUR_MINTUES * MINTUE_SECONDS;
 	}
 
 }
