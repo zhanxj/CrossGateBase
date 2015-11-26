@@ -69,5 +69,13 @@ public class DateUtil {
 	public static int getSecondOfDayRefresh() {
 		return DAY_REFRESH_CLOCK * HOUR_MINTUES * MINTUE_SECONDS;
 	}
+	
+	public static int getDayOfWeek() {
+		return getDayOfWeek(DateTime.now());
+	}
+	
+	public static int getDayOfWeek(DateTime time) {
+		return time.getDayOfWeek();
+	}
 
 }
