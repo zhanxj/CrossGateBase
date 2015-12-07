@@ -3,11 +3,13 @@ package cg.base;
 import java.util.List;
 import java.util.Queue;
 
-import cg.base.log.Log;
-import cg.base.util.Updatable;
-import cg.base.util.Updater;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.Lists;
+
+import cg.base.util.Updatable;
+import cg.base.util.Updater;
 
 /**
  * Ĭ�����߳�
@@ -19,6 +21,8 @@ import com.google.common.collect.Lists;
  */
 class CMainThread implements Updater, Runnable {
 	
+	private static final Logger log = LoggerFactory.getLogger(CMainThread.class);
+	
 	/**
 	 * ���¼���
 	 */
@@ -27,8 +31,6 @@ class CMainThread implements Updater, Runnable {
 	private Queue<Updatable> waitRemove, waitAdd;
 	
 	private int sleepTime;
-	
-	private Log log;
 	
 	/**
 	 * ����<br>
@@ -60,7 +62,7 @@ class CMainThread implements Updater, Runnable {
 					Thread.yield();
 				}
 			} catch (Exception e) {
-				log.error("CMainThread::run() : ", e); // ����쳣
+				log.error("", e); // ����쳣
 			}
 		}
 	}
@@ -83,7 +85,7 @@ class CMainThread implements Updater, Runnable {
 			
 			time = System.currentTimeMillis() - time; // ������º�ʱ�����룩
 			if (time >= sleepTime) { // ����ʱ��ϳ�
-				log.warning("CMainThread::update() too long : " + updatable.getClass().getName() + " ; time = " + time); // ���������Ϣ
+				log.warn("too long : {} ; time = {}", updatable.getClass().getName(), time); // ���������Ϣ
 			}
 		}
 		synchronized (waitRemove) {
