@@ -34,9 +34,8 @@ class CMainThread implements Updater, Runnable {
 	 * ����<br>
 	 * ���ʱ�����߳����С�
 	 */
-	public CMainThread(int sleepTime, Log log) {
+	public CMainThread(int sleepTime) {
 		this.sleepTime = sleepTime;
-		this.log = log;
 		updatables = Lists.newArrayList(); // ����һ�����鼯��
 		waitRemove = Lists.newLinkedList();
 		waitAdd = Lists.newLinkedList();

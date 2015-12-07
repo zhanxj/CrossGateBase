@@ -1,22 +1,22 @@
 package cg.base.util;
 
-import cg.base.log.Log;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import net.dipatch.ISender;
 import net.io.IMessage;
 
 public class SenderUtils {
 	
+	private static final Logger log = LoggerFactory.getLogger(SenderUtils.class);
+	
 	private SenderUtils() {}
 	
-	public static void send(ISender sender, IMessage message, Log log) {
+	public static void send(ISender sender, IMessage message) {
 		try {
 			sender.send(message.getByteArray(), message.getMessageId());
 		} catch (Exception e) {
-			if (log == null) {
-				e.printStackTrace();
-			} else {
-				log.error("", e);
-			}
+			log.error("", e);
 		}
 	}
 

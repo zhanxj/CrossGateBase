@@ -6,10 +6,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import cg.base.io.ImageResource;
-import cg.base.log.Log;
-import cg.base.reader.CColorPaletteReader;
-import cg.base.util.IOUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.LinkedListMultimap;
@@ -17,7 +15,13 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Table;
 
+import cg.base.io.ImageResource;
+import cg.base.reader.CColorPaletteReader;
+import cg.base.util.IOUtils;
+
 public abstract class CImageManager implements ImageManager {
+	
+	protected static final Logger log = LoggerFactory.getLogger(CImageManager.class);
 	
 	private Table<Byte, Integer, BufferedImage> versionCImages;
 	
@@ -31,10 +35,7 @@ public abstract class CImageManager implements ImageManager {
 	
 	protected ImageReader imageReader;
 	
-	protected Log log;
-	
-	public CImageManager(Log log, String clientFilePath) {
-		this.log = log;
+	public CImageManager(String clientFilePath) {
 		versionCImages = HashBasedTable.create();
 		listeners = LinkedListMultimap.create();
 		resources = LinkedListMultimap.create();

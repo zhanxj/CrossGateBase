@@ -4,9 +4,11 @@ import java.net.URI;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import cg.base.animation.AnimationReader;
 import cg.base.image.ImageManager;
-import cg.base.log.Log;
 import cg.base.reader.CAnimationReader;
 import cg.base.time.CTimer;
 import cg.base.time.Timer;
@@ -17,9 +19,9 @@ import dataplatform.pubsub.impl.SimplePubsub;
 
 public class CrossGateBase {
 	
-	protected static ISimplePubsub simplePubsub;
+	protected static final Logger log = LoggerFactory.getLogger(CrossGateBase.class);
 	
-	protected static Log log;
+	protected static ISimplePubsub simplePubsub;
 	
 	protected static Timer timer;
 	
@@ -48,10 +50,6 @@ public class CrossGateBase {
 		System.exit(0);
 	}
 
-	public static Log getLog() {
-		return log;
-	}
-
 	public static Timer getTimer() {
 		return timer;
 	}
@@ -69,7 +67,7 @@ public class CrossGateBase {
 	}
 	
 	public static void printObjectMemory(Object object) {
-		getLog().info("Object[" + object + "] shallowSize=" + MemoryCalculator.shallowSizeOf(object) + "; deepSize=" + MemoryCalculator.deepSizeOf(object) + ".");
+		log.info("Object[{}] shallowSize={}; deepSize={}.", object, MemoryCalculator.shallowSizeOf(object), MemoryCalculator.deepSizeOf(object));
 	}
 	
 	public static String getOSName() {
@@ -90,18 +88,17 @@ public class CrossGateBase {
 		}
 		
 		protected void createSimpleObject() {
-			log = createLog();
-			logStart(log);
+			logStart();
 			try {
 				clientFilePath = loadClientFilePath();
 			} catch (Exception e) {
-				log.error(getClass().getName(), e);
+				log.error("", e);
 				exit();
 			}
 			timer = createTimer();
 			mainThread = createUpdater();
 			scheduler = Executors.newScheduledThreadPool(3);
-			imageManager = createImageManager(log);
+			imageManager = createImageManager();
 			simplePubsub = createSimplePubsub();
 		}
 
@@ -122,25 +119,21 @@ public class CrossGateBase {
 		
 		protected abstract URI loadClientFilePath() throws Exception;
 		
-		protected Log createLog() {
-			return new CLog();
-		}
-		
 		protected Timer createTimer() {
 			return CTimer.getInstance();
 		}
 		
 		protected Updater createUpdater() {
-			return new CMainThread(timer.getSleepTime(), log);
+			return new CMainThread(timer.getSleepTime());
 		}
 		
-		protected abstract void logStart(Log log);
+		protected abstract void logStart();
 		
 		protected AnimationReader createAnimationReader() {
-			return new CAnimationReader(log, getClientFilePath(), getImageManager(), getTimer());
+			return new CAnimationReader(getClientFilePath(), getImageManager(), getTimer());
 		}
 		
-		protected abstract ImageManager createImageManager(Log log);
+		protected abstract ImageManager createImageManager();
 		
 		protected ISimplePubsub createSimplePubsub() {
 			return new SimplePubsub();

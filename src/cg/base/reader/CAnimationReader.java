@@ -6,6 +6,11 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.common.collect.Maps;
+
 import cg.base.Version;
 import cg.base.animation.Animation;
 import cg.base.animation.AnimationInfos;
@@ -20,14 +25,13 @@ import cg.base.image.ImageManager;
 import cg.base.image.ImageReader;
 import cg.base.io.ImageResource;
 import cg.base.io.ResourceInfo;
-import cg.base.log.Log;
 import cg.base.time.Timer;
 import cg.base.util.MathUtil;
 import cg.base.util.UnitUtil;
 
-import com.google.common.collect.Maps;
-
 public class CAnimationReader implements AnimationReader, Version {
+	
+	protected static final Logger log = LoggerFactory.getLogger(CAnimationReader.class);
 	
 	protected static final short ANIMATION_TURE_INDEX = 2375;
 	
@@ -39,12 +43,9 @@ public class CAnimationReader implements AnimationReader, Version {
 	
 	protected ImageReader imageReader;
 	
-	protected Log log;
-	
 	protected Timer timer;
 	
-	public CAnimationReader(Log log, String clientFilePath, ImageManager imageManager, Timer timer) {
-		this.log = log;
+	public CAnimationReader(String clientFilePath, ImageManager imageManager, Timer timer) {
 		this.timer = timer;
 		imageReader = imageManager.getImageReader();
 		List<ImageResource> list = imageManager.getImageResources(RESOURCE_TYPE);
@@ -67,9 +68,9 @@ public class CAnimationReader implements AnimationReader, Version {
 					int animationId = readAnimationId(i, index);
 					saveAnimationDictionary(new CAnimationDictionary(animationId, i == VERSION_20 ? index - ANIMATION_TURE_INDEX : index, i));
 				}
-				log.info(getClass().getSimpleName() + " : load " + resource.getDataFile() + ".");
+				log.info("{} : load {}.", getClass().getSimpleName(), resource.getDataFile());
 			} catch (IOException e) {
-				log.error("CAnimationReader::CAnimationReader()", e);
+				log.error("", e);
 			}
 		}
 	}

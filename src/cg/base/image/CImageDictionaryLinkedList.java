@@ -2,7 +2,8 @@ package cg.base.image;
 
 import java.util.List;
 
-import cg.base.CrossGateBase;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.Lists;
 
@@ -13,6 +14,8 @@ import com.google.common.collect.Lists;
  */
 @Deprecated
 public class CImageDictionaryLinkedList {
+	
+	private static final Logger log = LoggerFactory.getLogger(CImageDictionaryLinkedList.class);
 	
 	private Entry head, tail, last, versionHeads[], versionTails[], versionLasts[];
 	
@@ -183,7 +186,7 @@ public class CImageDictionaryLinkedList {
 		if (entry != null) {
 			entry.previous.next = entry.next;
 			entry.next.previous = entry.previous;
-			CrossGateBase.getLog().warning(getClass() + "::remove(" + entry.object + ") : old image.");
+			log.warn("remove({}) : old image.", entry.object);
 		}
 	}
 	

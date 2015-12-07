@@ -171,6 +171,7 @@ public class MathUtil {
 	}
 	
 	public static int stringToInt(String s, int defaultValue) {
+		s.replace((char) 65279, ' ');
 		s = s.trim();
 		return s.length() > 0 ? Integer.parseInt(s) : defaultValue;
 	}

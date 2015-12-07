@@ -7,14 +7,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import cg.base.image.ImageData;
 import cg.base.image.ImageDictionary;
 import cg.base.image.ImageManager;
 import cg.base.image.ImageReader;
 import cg.base.io.ImageResource;
-import cg.base.log.Log;
 
 public class CImageReader implements ImageReader {
+	
+	private static final Logger log = LoggerFactory.getLogger(CImageReader.class);
 	
 	private CRunLengthImageReader[] runLengthImageReaders;
 	
@@ -24,11 +28,8 @@ public class CImageReader implements ImageReader {
 	
 	protected ImageManager imageManager;
 	
-	protected Log log;
-	
-	public CImageReader(ImageManager imageManager, Log log, String clientFilePath) {
+	public CImageReader(ImageManager imageManager, String clientFilePath) {
 		this.imageManager = imageManager;
-		this.log = log;
 		List<ImageResource> list = imageManager.getImageResources(RESOURCE_TYPE);
 		
 		int size = list.size();
@@ -41,7 +42,7 @@ public class CImageReader implements ImageReader {
 			File file = new File(dir, resource.getInfoFile()); 
 			try {
 				FileInputStream fis = new FileInputStream(file);
-				runLengthImageReaders[i] = new CRunLengthImageReader(new File(dir, resource.getDataFile()), log, imageManager);
+				runLengthImageReaders[i] = new CRunLengthImageReader(new File(dir, resource.getDataFile()), imageManager);
 				imageDictionaries[i] = load((int) (fis.getChannel().size() / ImageDictionary.DATA_HEAD_LENGTH), resource, fis);
 				log.info(getClass().getSimpleName() + " : load " + resource.getDataFile() + ".");
 			} catch (IOException e) {
@@ -56,7 +57,7 @@ public class CImageReader implements ImageReader {
 			for (int i = 0;i < this.runLengthImageReaders.length;i++) {
 				runLengthImageReaders[i] = this.runLengthImageReaders[i];
 			}
-			runLengthImageReaders[version] = new CRunLengthImageReader(file, log, imageManager);
+			runLengthImageReaders[version] = new CRunLengthImageReader(file, imageManager);
 			this.runLengthImageReaders = runLengthImageReaders;
 		}
 	}

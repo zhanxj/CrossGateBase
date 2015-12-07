@@ -1,41 +1,43 @@
 package cg.base.reader;
 
-import static java.awt.image.BufferedImage.TYPE_INT_ARGB;
 import static cg.base.image.ImageDictionary.HEAD_VERSION_BITMAP;
 import static cg.base.image.ImageDictionary.HEAD_VERSION_RLE;
 import static cg.base.image.ImageDictionary.HEAD_VERSION_RLE_COLOR_PALETTES;
+import static java.awt.image.BufferedImage.TYPE_INT_ARGB;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.MessageFormat;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import cg.base.image.ColorPalette;
 import cg.base.image.ImageData;
 import cg.base.image.ImageDictionary;
 import cg.base.image.ImageManager;
-import cg.base.log.Log;
 import cg.base.util.MathUtil;
 
 class CRunLengthImageReader {
+	
+	private static final Logger log = LoggerFactory.getLogger(CRunLengthImageReader.class);
 	
 	private ColorPalette[] defaultColorPalettes;
 	
 	private FileInputStream fis;
 	
-	private Log log;
-	
 	private ImageManager imageManager;
 	
-	public CRunLengthImageReader(File file, Log log, ImageManager imageManager) {
-		this.log = log;
+	public CRunLengthImageReader(File file, ImageManager imageManager) {
 		this.imageManager = imageManager;
 		defaultColorPalettes = imageManager.getDefaultColorPalette();
 		try {
 			fis = new FileInputStream(file);
 		} catch (IOException e) {
-			log.error(getClass().getName(), e);
+			log.error("", e);
 		}
 	}
 	
@@ -43,7 +45,7 @@ class CRunLengthImageReader {
 		try {
 			return fis.getChannel().size();
 		} catch (IOException e) {
-			log.error(getClass().getName() + "::getSize()", e);
+			log.error("", e);
 			return 0;
 		}
 	}
@@ -94,8 +96,7 @@ class CRunLengthImageReader {
 
 		@Override
 		public String toString() {
-			return getClass().getName() + " : [" + head[0] + head[1] + "] version = " + version
-					+ " ; width = " + width + " ; height = " + height + " ; length = " + dataLength;
+			return MessageFormat.format("{} : [{}] version = {} ; width = {} ; height = {} ; length = {}", getClass().getName(), head[0] + head[1], version, width, height, dataLength);
 		}
 		
 	}
@@ -106,7 +107,7 @@ class CRunLengthImageReader {
 		try {
 			fis.read(new byte[head.dataLength > head.colorPaletteLength ? head.dataLength - head.colorPaletteLength : head.dataLength]);
 		} catch (Exception e) {
-			log.error(getClass().getName() + "::readColorPalettes() : ", e);
+			log.error("", e);
 		}
 		return CColorPaletteReader.read(fis, head.colorPaletteLength / 3);
 	}
@@ -130,11 +131,11 @@ class CRunLengthImageReader {
 			byte[] data = new byte[head.dataLength];
 			fis.read(data);
 			if (head.width != imageDictionary.getWidth() || head.height != imageDictionary.getHeight()) {
-				log.error(getClass() + "::ImageData() : head[width = " + head.width + ", height = " + head.height + "] ; imageDictionary[" + imageDictionary.getWidth() + ", " + imageDictionary.getHeight() + "]");
+				log.error("head[width = {}, height = {}] ; imageDictionary[{}, {}]", head.width, head.height, imageDictionary.getWidth(), imageDictionary.getHeight());
 			} else if (head.dataLength + head.length != imageDictionary.getSize()) {
-				log.error(getClass() + "::ImageData() : data.length = " + (head.dataLength + head.length) + " ; imageDictionary.getSize() = " + imageDictionary.getSize());
+				log.error("data.length = {} ; imageDictionary.getSize() = {}", (head.dataLength + head.length), imageDictionary.getSize());
 			} else if (imageDictionary.getHeight() < 0) {
-				log.error(getClass() + "::ImageData() : imageDictionary.getHeight() = " + imageDictionary.getHeight());
+				log.error("imageDictionary.getHeight() = {}", imageDictionary.getHeight());
 				return;
 			}
 			image = new BufferedImage(head.width, head.height, TYPE_INT_ARGB);
@@ -148,9 +149,9 @@ class CRunLengthImageReader {
 			byte[] data = new byte[head.dataLength];
 			fis.read(data);
 			if (head.width != imageDictionary.getWidth() || head.height != imageDictionary.getHeight()) {
-				log.error(getClass() + "::ImageData() : head[ = " + head.width + ",  = " + head.height + "] ; imageDictionary[" + imageDictionary.getWidth() + ", " + imageDictionary.getHeight() + "]");
+				log.error("head[width = {}, height = {}] ; imageDictionary[{}, {}]", head.width, head.height, imageDictionary.getWidth(), imageDictionary.getHeight());
 			} else if (head.dataLength + head.length != imageDictionary.getSize()) {
-				log.error(getClass() + "::ImageData() : data.length = " + (head.dataLength + head.length) + " ; imageDictionary.getSize() = " + imageDictionary.getSize());
+				log.error("data.length = {} ; imageDictionary.getSize() = {}", (head.dataLength + head.length), imageDictionary.getSize());
 			}
 			char[] chars = new char[data.length];
 			for (int i = 0;i < chars.length;i++) {
@@ -221,15 +222,15 @@ class CRunLengthImageReader {
 				while (offset < dataLength) {
 					if (fillCount == size) {
 						int cha = dataLength - offset;
-						log.error(getClass() + " load(" + info + ") : fillCount(" + cha + ") will out of bound.");
+						log.error("load({}) : fillCount({}) will out of bound.", info, cha);
 						break;
 					} else if (fillCount > size) {
-						log.error(getClass() + " load(" + info + ") : fillCount has been out of bound, offset = " + offset);
+						log.error("load({}) : fillCount has been out of bound, offset = {}", info, offset);
 					}
 					offset = readFirstWord(data, offset);
 				}
 				if (fillCount > size) {
-					log.warning(getClass() + " load(" + info + ") : fillCount(" + fillCount + ") and size(" + size + ").");
+					log.warn("load({}) : fillCount({}) and size({}).", info, fillCount, size);
 				}
 				break;
 			}
@@ -258,7 +259,7 @@ class CRunLengthImageReader {
 			case FIRST_WORD_XYZ_COLOR : 
 				return readXYZColor(bytes, offset + 1, low);
 			default : 
-				throw new IllegalArgumentException(getClass().getName() + ":" + info + " offset = " + offset);
+				throw new IllegalArgumentException(MessageFormat.format("{} : {} offset = {}", getClass().getName(), info, offset));
 			}
 		}
 		
@@ -342,14 +343,14 @@ class CRunLengthImageReader {
 		private void setRGB(int id) {
 			int x = getFillX(), y = getFillY();
 			if (x >= image.getWidth() || y >= image.getHeight() || x < 0 || y < 0) {
-				log.error(getClass().getName() + "::setRGB(" + info + ") : Coordinate out of bounds!(" + x + "/" + image.getWidth() + ", " + y + "/" + image.getHeight() + ")");
+				log.error("setRGB({}) : Coordinate out of bounds!({}/{}, {}/{})", info, x, image.getWidth(), y, image.getHeight());
 			} else if (head.version == HEAD_VERSION_BITMAP) {
 				image.setRGB(x, y, id);
 			} else if (colorPalettes.length == 256 || head.version == HEAD_VERSION_RLE_COLOR_PALETTES) {
 				if (id < colorPalettes.length) {
 					image.setRGB(x, y, colorPalettes[id].getColor());
 				} else {
-					log.error(getClass().getName() + "::setRGB(" + info + ") : id = " + id + ", colorPalettes.length = " + colorPalettes.length);
+					log.error("setRGB({}) : id = {}, colorPalettes.length = {}", info, id, colorPalettes.length);
 				}
 			} else if (id < 16) {
 				image.setRGB(x, y, defaultColorPalettes[id].getColor());
