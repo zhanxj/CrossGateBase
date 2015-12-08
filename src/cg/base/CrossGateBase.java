@@ -1,11 +1,14 @@
 package cg.base;
 
 import java.net.URI;
-import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.google.common.util.concurrent.MoreExecutors;
 
 import cg.base.animation.AnimationReader;
 import cg.base.image.ImageManager;
@@ -13,7 +16,6 @@ import cg.base.reader.CAnimationReader;
 import cg.base.time.CTimer;
 import cg.base.time.Timer;
 import cg.base.util.MemoryCalculator;
-import cg.base.util.Updater;
 import dataplatform.pubsub.ISimplePubsub;
 import dataplatform.pubsub.impl.SimplePubsub;
 
@@ -24,8 +26,6 @@ public class CrossGateBase {
 	protected static ISimplePubsub simplePubsub;
 	
 	protected static Timer timer;
-	
-	protected static Updater mainThread;
 	
 	protected static int version;
 	
@@ -47,15 +47,11 @@ public class CrossGateBase {
 	}
 	
 	public static void exit() {
-		System.exit(0);
+		System.exit(1);
 	}
 
 	public static Timer getTimer() {
 		return timer;
-	}
-	
-	public static Updater getUpdater() {
-		return mainThread;
 	}
 	
 	public static ScheduledExecutorService getScheduler() {
@@ -96,8 +92,7 @@ public class CrossGateBase {
 				exit();
 			}
 			timer = createTimer();
-			mainThread = createUpdater();
-			scheduler = Executors.newScheduledThreadPool(3);
+			scheduler = createScheduledExecutor();
 			imageManager = createImageManager();
 			simplePubsub = createSimplePubsub();
 		}
@@ -105,7 +100,7 @@ public class CrossGateBase {
 		@Override
 		public final void run() {
 			load();
-			mainThread.add(timer);
+			scheduler.scheduleWithFixedDelay(timer, 0, timer.getTime(), TimeUnit.MILLISECONDS);
 			if (call != null) {
 				call.loadFinish();
 			}
@@ -117,14 +112,14 @@ public class CrossGateBase {
 			animationReader = createAnimationReader();
 		}
 		
+		protected ScheduledExecutorService createScheduledExecutor() {
+			return MoreExecutors.getExitingScheduledExecutorService(new ScheduledThreadPoolExecutor(3));
+		}
+		
 		protected abstract URI loadClientFilePath() throws Exception;
 		
 		protected Timer createTimer() {
 			return CTimer.getInstance();
-		}
-		
-		protected Updater createUpdater() {
-			return new CMainThread(timer.getSleepTime());
 		}
 		
 		protected abstract void logStart();

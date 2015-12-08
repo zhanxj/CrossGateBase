@@ -40,7 +40,7 @@ public class CTimer implements Timer {
 	}
 
 	@Override
-	public void update() {
+	public void run() {
 		for (int i = cellTimers.size() - 1;i >=0;i--) {
 			if (cellTimers.get(i).update(getTime())) {
 				cellTimers.remove(i);

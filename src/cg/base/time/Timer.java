@@ -1,9 +1,8 @@
 package cg.base.time;
 
 import cg.base.time.TimeOutCallback.TimeListener;
-import cg.base.util.Updatable;
 
-public interface Timer extends Updatable {
+public interface Timer extends Runnable {
 	
 	int getTime();
 	
