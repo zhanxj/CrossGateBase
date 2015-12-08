@@ -8,8 +8,6 @@ import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.google.common.util.concurrent.MoreExecutors;
-
 import cg.base.animation.AnimationReader;
 import cg.base.image.ImageManager;
 import cg.base.reader.CAnimationReader;
@@ -40,10 +38,6 @@ public class CrossGateBase {
 	public static String getClientFilePath() {
 //		return (clientFilePath.getHost() == null ? clientFilePath.getPath() : clientFilePath.toString());
 		return clientFilePath.toString();
-	}
-
-	public static AnimationReader getAnimationReader() {
-		return animationReader;
 	}
 	
 	public static void exit() {
@@ -113,7 +107,7 @@ public class CrossGateBase {
 		}
 		
 		protected ScheduledExecutorService createScheduledExecutor() {
-			return MoreExecutors.getExitingScheduledExecutorService(new ScheduledThreadPoolExecutor(3));
+			return new ScheduledThreadPoolExecutor(3);
 		}
 		
 		protected abstract URI loadClientFilePath() throws Exception;
