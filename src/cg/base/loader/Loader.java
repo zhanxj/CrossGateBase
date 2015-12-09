@@ -45,7 +45,6 @@ public abstract class Loader {
 		}
 		scheduler = createScheduledExecutor();
 		imageManager = createImageManager();
-		animationReader = createAnimationReader();
 		loadMore();
 		addFixScheduler(timer);
 		loadFinish();
@@ -55,6 +54,10 @@ public abstract class Loader {
 	protected abstract void loadMore();
 	
 	protected abstract void loadFinish();
+	
+	protected final void loadAnimationReader() {
+		animationReader = createAnimationReader();
+	}
 	
 	protected final ScheduledFuture<?> addFixScheduler(Runnable runnable) {
 		return scheduler.scheduleAtFixedRate(runnable, 0, timer.getSleepTime(), TimeUnit.MILLISECONDS);
