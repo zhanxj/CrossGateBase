@@ -15,9 +15,9 @@ public class Countdown implements Updatable {
 	
 	private final Map<NAME, TimeInfo> timers;
 	
-	private final Timer timer;
+	private final Time timer;
 	
-	public Countdown(Timer timer) {
+	public Countdown(Time timer) {
 		this.timer = timer;
 		timers = new Hashtable<NAME, TimeInfo>();
 	}

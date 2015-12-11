@@ -4,7 +4,7 @@ import java.awt.Graphics;
 
 import cg.base.animation.AnimationInfos.AnimationInfo;
 import cg.base.image.ImageDictionary;
-import cg.base.time.Timer;
+import cg.base.time.Time;
 import cg.base.util.UnitUtil;
 
 public class SpriteAnimation implements Animation {
@@ -23,9 +23,9 @@ public class SpriteAnimation implements Animation {
 	
 	private byte percent;
 	
-	private Timer timer;
+	private Time timer;
 	
-	public SpriteAnimation(AnimationInfos animationInfos, Timer timer) {
+	public SpriteAnimation(AnimationInfos animationInfos, Time timer) {
 		this.animationInfos = animationInfos;
 		this.timer = timer;
 	}

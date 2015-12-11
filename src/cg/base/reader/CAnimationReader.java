@@ -25,7 +25,7 @@ import cg.base.image.ImageReader;
 import cg.base.io.ImageResource;
 import cg.base.io.ResourceInfo;
 import cg.base.loader.Version;
-import cg.base.time.Timer;
+import cg.base.time.Time;
 import cg.base.util.MathUtil;
 import cg.base.util.UnitUtil;
 
@@ -43,9 +43,9 @@ public class CAnimationReader implements AnimationReader, Version {
 	
 	protected ImageReader imageReader;
 	
-	protected Timer timer;
+	protected Time timer;
 	
-	public CAnimationReader(String clientFilePath, ImageManager imageManager, Timer timer) {
+	public CAnimationReader(String clientFilePath, ImageManager imageManager, Time timer) {
 		this.timer = timer;
 		imageReader = imageManager.getImageReader();
 		List<ImageResource> list = imageManager.getImageResources(RESOURCE_TYPE);

@@ -4,14 +4,14 @@ import java.util.concurrent.ScheduledExecutorService;
 
 import cg.base.animation.AnimationReader;
 import cg.base.image.ImageManager;
-import cg.base.time.Timer;
+import cg.base.time.Time;
 import dataplatform.pubsub.ISimplePubsub;
 
 public interface IPlatform {
 	
 	String getClientFilePath();
 	
-	Timer getTimer();
+	Time getTimer();
 	
 	ScheduledExecutorService getScheduler();
 	

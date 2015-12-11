@@ -13,7 +13,7 @@ import cg.base.animation.AnimationReader;
 import cg.base.image.ImageManager;
 import cg.base.reader.CAnimationReader;
 import cg.base.time.CTimer;
-import cg.base.time.Timer;
+import cg.base.time.Time;
 import dataplatform.pubsub.ISimplePubsub;
 import dataplatform.pubsub.impl.SimplePubsub;
 
@@ -23,7 +23,7 @@ public abstract class Loader implements IPlatform {
 	
 	protected ISimplePubsub simplePubsub;
 	
-	protected Timer timer;
+	protected Time timer;
 	
 	protected int version;
 	
@@ -46,7 +46,6 @@ public abstract class Loader implements IPlatform {
 		scheduler = createScheduledExecutor();
 		imageManager = createImageManager();
 		loadMore();
-		addFixScheduler(timer);
 		loadFinish();
 		log.info("Client start.");
 	}
@@ -69,8 +68,8 @@ public abstract class Loader implements IPlatform {
 		return new SimplePubsub();
 	}
 	
-	protected Timer createTimer() {
-		return CTimer.getInstance();
+	protected Time createTimer() {
+		return new CTimer();
 	}
 	
 	protected ScheduledExecutorService createScheduledExecutor() {
@@ -90,7 +89,7 @@ public abstract class Loader implements IPlatform {
 	}
 
 	@Override
-	public final Timer getTimer() {
+	public final Time getTimer() {
 		return timer;
 	}
 

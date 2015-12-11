@@ -4,7 +4,7 @@ import java.awt.Graphics;
 
 import cg.base.animation.AnimationInfos.AnimationInfo;
 import cg.base.image.ImageDictionary;
-import cg.base.time.Timer;
+import cg.base.time.Time;
 
 public class CAnimation implements Animation {
 	
@@ -20,13 +20,13 @@ public class CAnimation implements Animation {
 	
 	private byte percent;
 	
-	private Timer timer;
+	private Time timer;
 	
-	public CAnimation(ImageDictionary[] images, int time, Timer timer) {
+	public CAnimation(ImageDictionary[] images, int time, Time timer) {
 		this(new CAnimationInfo(images, time), timer);
 	}
 	
-	public CAnimation(AnimationInfo animationInfo, Timer timer) {
+	public CAnimation(AnimationInfo animationInfo, Time timer) {
 		this.animationInfo = animationInfo;
 		this.timer = timer;
 		for (int i = 0;i < animationInfo.getFrame();i++) {
