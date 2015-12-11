@@ -17,7 +17,7 @@ import cg.base.time.Timer;
 import dataplatform.pubsub.ISimplePubsub;
 import dataplatform.pubsub.impl.SimplePubsub;
 
-public abstract class Loader {
+public abstract class Loader implements IPlatform {
 	
 	protected static final Logger log = LoggerFactory.getLogger(Loader.class);
 	
@@ -83,32 +83,39 @@ public abstract class Loader {
 	
 	protected abstract URI loadClientFilePath() throws Exception;
 	
+	@Override
 	public final String getClientFilePath() {
 //		return (clientFilePath.getHost() == null ? clientFilePath.getPath() : clientFilePath.toString());
 		return clientFilePath.toString();
 	}
 
+	@Override
 	public final Timer getTimer() {
 		return timer;
 	}
-	
+
+	@Override
 	public final ScheduledExecutorService getScheduler() {
 		return scheduler;
 	}
-	
+
+	@Override
 	public final ImageManager getImageManager() {
 		return imageManager;
 	}
 
+	@Override
 	public final AnimationReader getAnimationReader() {
 		return animationReader;
 	}
-	
+
+	@Override
 	public final ISimplePubsub getSimplePubsub() {
 		return simplePubsub;
 	}
-	
-	public static void exit() {
+
+	@Override
+	public final void exit() {
 		System.exit(1);
 	}
 
