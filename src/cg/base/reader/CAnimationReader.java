@@ -11,7 +11,6 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.Maps;
 
-import cg.base.Version;
 import cg.base.animation.Animation;
 import cg.base.animation.AnimationInfos;
 import cg.base.animation.AnimationInfos.AnimationInfo;
@@ -25,6 +24,7 @@ import cg.base.image.ImageManager;
 import cg.base.image.ImageReader;
 import cg.base.io.ImageResource;
 import cg.base.io.ResourceInfo;
+import cg.base.loader.Version;
 import cg.base.time.Timer;
 import cg.base.util.MathUtil;
 import cg.base.util.UnitUtil;

@@ -1,4 +1,4 @@
-package cg.base;
+package cg.base.loader;
 
 public interface Version {
 	
