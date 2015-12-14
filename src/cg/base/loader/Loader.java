@@ -47,7 +47,7 @@ public abstract class Loader implements IPlatform {
 		imageManager = createImageManager();
 		loadMore();
 		loadFinish();
-		log.info("Client start.");
+		log.info("Load finish.");
 	}
 	
 	protected abstract void loadMore();
