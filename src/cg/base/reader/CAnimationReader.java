@@ -37,7 +37,7 @@ public class CAnimationReader implements AnimationReader, Version {
 	
 	protected static final byte HEAD_LENGTH = 12;
 	
-	protected FileInputStream[] fis, fis0;
+	protected FileInputStream[] infoFis, dataFis;
 	
 	protected Map<Integer, ResourceInfo> animationDictionarys;
 	
@@ -51,17 +51,17 @@ public class CAnimationReader implements AnimationReader, Version {
 		List<ImageResource> list = imageManager.getImageResources(RESOURCE_TYPE);
 		
 		int size = list.size();
-		fis = new FileInputStream[size];
-		fis0 = new FileInputStream[size];
+		infoFis = new FileInputStream[size];
+		dataFis = new FileInputStream[size];
 		animationDictionarys = Maps.newHashMap();
 		File dir = new File(clientFilePath);
 		for (byte i = 0;i < size;i++) {
 			ImageResource resource = list.get(i);
 			try {
-				fis[i] = new FileInputStream(new File(dir, resource.getInfoFile()));
-				fis0[i] = new FileInputStream(new File(dir, resource.getDataFile()));
+				infoFis[i] = new FileInputStream(new File(dir, resource.getInfoFile()));
+				dataFis[i] = new FileInputStream(new File(dir, resource.getDataFile()));
 				
-				for (int index = 0, loop = (int) (fis[i].getChannel().size() / HEAD_LENGTH);index < loop;index++) {
+				for (int index = 0, loop = (int) (infoFis[i].getChannel().size() / HEAD_LENGTH);index < loop;index++) {
 					if (i == VERSION_20 && index < ANIMATION_TURE_INDEX) {
 						continue;
 					}
@@ -76,9 +76,9 @@ public class CAnimationReader implements AnimationReader, Version {
 	}
 	
 	protected int readAnimationId(byte version, int index) throws IOException {
-		fis[version].getChannel().position((index) * HEAD_LENGTH);
+		infoFis[version].getChannel().position((index) * HEAD_LENGTH);
 		byte[] bytes = new byte[HEAD_LENGTH];
-		fis[version].read(bytes);
+		infoFis[version].read(bytes);
 		return MathUtil.bytesToInt(bytes, 0);
 	}
 	
@@ -99,8 +99,8 @@ public class CAnimationReader implements AnimationReader, Version {
 	@Override
 	public AnimationInfos read(byte version, int resourceId) throws IOException {
 		resourceId = version == VERSION_20 ? resourceId + ANIMATION_TURE_INDEX : resourceId;
-		fis[version].getChannel().position((resourceId) * HEAD_LENGTH);
-		return new CAnimationInfos(fis[version], version, fis0[version], imageReader);
+		infoFis[version].getChannel().position((resourceId) * HEAD_LENGTH);
+		return new CAnimationInfos(infoFis[version], version, dataFis[version], imageReader);
 	}
 
 	@Override
@@ -169,9 +169,9 @@ public class CAnimationReader implements AnimationReader, Version {
 		
 		protected FrameInfo[] frameInfos;
 		
-		public SpriteAnimationInfo(FileInputStream fin, byte version, ImageReader imageReader) throws IOException {
+		public SpriteAnimationInfo(FileInputStream dataFis, byte version, ImageReader imageReader) throws IOException {
 			byte[] bytes = new byte[SIZES[version]];
-			fin.read(bytes);
+			dataFis.read(bytes);
 			dir = (byte) MathUtil.bytesToShort(bytes, 0);
 			actionId = (byte) MathUtil.bytesToShort(bytes, 2);
 			time = MathUtil.bytesToInt(bytes, 4);
@@ -180,7 +180,7 @@ public class CAnimationReader implements AnimationReader, Version {
 			isMirror = version < VERSION_PUK_2 ? false : MathUtil.bytesToShort(bytes, 14) % 2 == 1;
 			images = new ImageDictionary[frame];
 			for (int i = 0;i < frame;i++) {
-				frameInfos[i] = new CFrameInfo(fin);
+				frameInfos[i] = new CFrameInfo(dataFis);
 				images[i] = imageReader.getImageDictionary(version, frameInfos[i].getImageId());
 			}
 		}
@@ -236,16 +236,16 @@ public class CAnimationReader implements AnimationReader, Version {
 		
 		protected Map<Integer, AnimationInfo> animationInfos;
 		
-		public CAnimationInfos(FileInputStream fin, byte version, FileInputStream fis0, ImageReader imageReader) throws IOException {
-			fin.read(bytes);
+		public CAnimationInfos(FileInputStream infoFis, byte version, FileInputStream dataFis, ImageReader imageReader) throws IOException {
+			infoFis.read(bytes);
 			id = MathUtil.bytesToInt(bytes, 0);
 			address = MathUtil.bytesToInt(bytes, 4);
 			actionCount = MathUtil.bytesToShort(bytes, 8);
 			
 			animationInfos = Maps.newHashMap();
-			fis0.getChannel().position(address);
+			dataFis.getChannel().position(address);
 			for (int i = 0;i < actionCount;i++) {
-				AnimationInfo animationInfo = new SpriteAnimationInfo(fis0, version, imageReader);
+				AnimationInfo animationInfo = new SpriteAnimationInfo(dataFis, version, imageReader);
 				animationInfos.put(UnitUtil.makeAnimationActionId(animationInfo.getDir(), animationInfo.getActionId()), animationInfo);
 			}
 		}

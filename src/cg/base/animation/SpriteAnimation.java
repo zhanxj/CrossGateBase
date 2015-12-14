@@ -149,9 +149,13 @@ public class SpriteAnimation implements Animation {
 
 	@Override
 	public boolean in(int x, int y, int spriteX, int spriteY) {
-		ImageDictionary image = getAnimationInfo().getImageDictionary(getIndex());
-		int animationX = spriteX + image.getOffsetX(), animationY = spriteY + image.getOffsetY();
-		return !(x < animationX || x > animationX + getWidth() || y < animationY || y > animationY + getHeight());
+		if (animationInfo == null) {
+			return false;
+		} else {
+			ImageDictionary image = animationInfo.getImageDictionary(getIndex());
+			int animationX = spriteX + image.getOffsetX(), animationY = spriteY + image.getOffsetY();
+			return !(x < animationX || x > animationX + getWidth() || y < animationY || y > animationY + getHeight());
+		}
 	}
 
 	@Override
