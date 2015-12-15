@@ -5,6 +5,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import cg.base.animation.AnimationReader;
 import cg.base.image.ImageManager;
 import cg.base.time.Time;
+import dataplatform.dataVisitor.IDataVisitor;
 import dataplatform.pubsub.ISimplePubsub;
 
 public interface IPlatform {
@@ -22,5 +23,7 @@ public interface IPlatform {
 	AnimationReader getAnimationReader();
 	
 	void exit();
+	
+	IDataVisitor getDataVisitor();
 
 }

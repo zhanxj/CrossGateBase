@@ -14,6 +14,7 @@ import cg.base.image.ImageManager;
 import cg.base.reader.CAnimationReader;
 import cg.base.time.CTimer;
 import cg.base.time.Time;
+import dataplatform.dataVisitor.IDataVisitor;
 import dataplatform.pubsub.ISimplePubsub;
 import dataplatform.pubsub.impl.SimplePubsub;
 
@@ -35,6 +36,8 @@ public abstract class Loader implements IPlatform {
 	
 	protected ImageManager imageManager;
 	
+	protected IDataVisitor dataVisitor;
+
 	public final void load() {
 		simplePubsub = createSimplePubsub();
 		timer = createTimer();
@@ -45,6 +48,7 @@ public abstract class Loader implements IPlatform {
 		}
 		scheduler = createScheduledExecutor();
 		imageManager = createImageManager();
+		dataVisitor = createDataVisitor();
 		loadMore();
 		loadFinish();
 		log.info("Load finish.");
@@ -53,6 +57,8 @@ public abstract class Loader implements IPlatform {
 	protected abstract void loadMore();
 	
 	protected abstract void loadFinish();
+	
+	protected abstract IDataVisitor createDataVisitor();
 	
 	protected final void loadAnimationReader() {
 		animationReader = createAnimationReader();
@@ -116,6 +122,11 @@ public abstract class Loader implements IPlatform {
 	@Override
 	public final void exit() {
 		System.exit(1);
+	}
+	
+	@Override
+	public IDataVisitor getDataVisitor() {
+		return dataVisitor;
 	}
 
 }
