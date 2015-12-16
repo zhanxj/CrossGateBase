@@ -5,8 +5,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import cg.base.animation.AnimationReader;
 import cg.base.image.ImageManager;
 import cg.base.time.Time;
-import dataplatform.dataVisitor.IDataVisitor;
 import dataplatform.pubsub.ISimplePubsub;
+import dataplatform.udsl.UDSL;
 
 public interface IPlatform {
 	
@@ -24,6 +24,6 @@ public interface IPlatform {
 	
 	void exit();
 	
-	IDataVisitor getDataVisitor();
+	UDSL getUDSL();
 
 }
