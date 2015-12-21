@@ -5,11 +5,11 @@ import java.awt.Graphics;
 import cg.base.animation.AnimationInfos.AnimationInfo;
 import cg.base.image.ImageDictionary;
 
-public class ImageAnimation implements Animation {
+class SingleImageAnimation implements Animation {
 	
 	protected ImageDictionary image;
 	
-	public ImageAnimation(ImageDictionary image) {
+	public SingleImageAnimation(ImageDictionary image) {
 		this.image = image;
 	}
 

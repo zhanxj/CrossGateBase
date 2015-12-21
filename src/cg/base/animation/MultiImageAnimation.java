@@ -6,7 +6,7 @@ import cg.base.animation.AnimationInfos.AnimationInfo;
 import cg.base.image.ImageDictionary;
 import cg.base.time.Time;
 
-public class CAnimation implements Animation {
+class MultiImageAnimation implements Animation {
 	
 	private final AnimationInfo animationInfo;
 	
@@ -22,11 +22,11 @@ public class CAnimation implements Animation {
 	
 	private Time timer;
 	
-	public CAnimation(ImageDictionary[] images, int time, Time timer) {
+	public MultiImageAnimation(ImageDictionary[] images, int time, Time timer) {
 		this(new CAnimationInfo(images, time), timer);
 	}
 	
-	public CAnimation(AnimationInfo animationInfo, Time timer) {
+	public MultiImageAnimation(AnimationInfo animationInfo, Time timer) {
 		this.animationInfo = animationInfo;
 		this.timer = timer;
 		for (int i = 0;i < animationInfo.getFrame();i++) {

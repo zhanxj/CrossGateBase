@@ -16,9 +16,7 @@ import cg.base.animation.AnimationInfos;
 import cg.base.animation.AnimationInfos.AnimationInfo;
 import cg.base.animation.AnimationInfos.FrameInfo;
 import cg.base.animation.AnimationReader;
-import cg.base.animation.CAnimation;
-import cg.base.animation.ImageAnimation;
-import cg.base.animation.SpriteAnimation;
+import cg.base.animation.Animations;
 import cg.base.image.ImageDictionary;
 import cg.base.image.ImageManager;
 import cg.base.image.ImageReader;
@@ -105,13 +103,13 @@ public class CAnimationReader implements AnimationReader, Version {
 
 	@Override
 	public Animation createAnimation(int globalId) throws IOException {
-		return animationDictionarys.containsKey(globalId) ? new SpriteAnimation(read(globalId), timer) : 
-			new ImageAnimation(imageReader.getImageDictionary(globalId));
+		return animationDictionarys.containsKey(globalId) ? Animations.createDataAnimation(read(globalId), timer) : 
+			Animations.createSingleImageAnimation(imageReader.getImageDictionary(globalId));
 	}
 
 	@Override
 	public Animation createAnimation(byte version, int resourceId) throws IOException {
-		return new SpriteAnimation(read(version, resourceId), timer);
+		return Animations.createDataAnimation(read(version, resourceId), timer);
 	}
 
 	@Override
@@ -120,7 +118,7 @@ public class CAnimationReader implements AnimationReader, Version {
 		for (int i = 0;i < imageIds.length;i++) {
 			images[i] = imageReader.getImageDictionary(imageIds[i]);
 		}
-		return new CAnimation(images, time, timer);
+		return Animations.createMultiImageAnimation(images, time, timer);
 	}
 	
 	private static class CFrameInfo implements FrameInfo {

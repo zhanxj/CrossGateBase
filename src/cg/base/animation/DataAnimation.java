@@ -7,7 +7,7 @@ import cg.base.image.ImageDictionary;
 import cg.base.time.Time;
 import cg.base.util.UnitUtil;
 
-public class SpriteAnimation implements Animation {
+class DataAnimation implements Animation {
 	
 	private final AnimationInfos animationInfos;
 	
@@ -25,7 +25,7 @@ public class SpriteAnimation implements Animation {
 	
 	private Time timer;
 	
-	public SpriteAnimation(AnimationInfos animationInfos, Time timer) {
+	public DataAnimation(AnimationInfos animationInfos, Time timer) {
 		this.animationInfos = animationInfos;
 		this.timer = timer;
 	}
