@@ -1,6 +1,7 @@
 package cg.base.animation;
 
 import java.awt.Graphics;
+import java.util.function.Function;
 
 import cg.base.animation.AnimationInfos.AnimationInfo;
 import cg.base.image.ImageDictionary;
@@ -16,7 +17,7 @@ class MultiImageAnimation implements Animation {
 	
 	private boolean isPlay;
 	
-	private AnimateCallback callback;
+	private Function<Animation, Void> function;
 	
 	private byte percent;
 	
@@ -150,8 +151,8 @@ class MultiImageAnimation implements Animation {
 	}
 
 	@Override
-	public void setCallback(AnimateCallback callback, byte percent) {
-		this.callback = callback;
+	public void setCallback(Function<Animation, Void> function, byte percent) {
+		this.function = function;
 		this.percent = percent;
 		if (percent > 100 || percent < 0) {
 			throw new IllegalArgumentException(getClass().getSimpleName() + "::setCallback() : percent " + percent + " is do not support.");
@@ -159,10 +160,10 @@ class MultiImageAnimation implements Animation {
 	}
 	
 	protected void callback() {
-		if (callback != null) {
-			AnimateCallback callback = this.callback;
-			this.callback = null;
-			callback.animationCallback();
+		if (function != null) {
+			Function<Animation, Void> function = this.function;
+			this.function = null;
+			function.apply(this);
 		}
 	}
 	

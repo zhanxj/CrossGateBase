@@ -1,6 +1,7 @@
 package cg.base.sprite;
 
-import cg.base.animation.AnimateCallback;
+import java.util.function.Function;
+
 import cg.base.animation.Animation;
 import cg.base.drawer.SpriteDrawer;
 
@@ -102,43 +103,43 @@ public interface Sprite {
 	
 	byte ROLE_COLOR_AMOUNT = 4;
 	
-	byte SETACTION_STAND = 1; // Õ¾Á¢...¼´Ä¬ÈÏ
+	byte SETACTION_STAND = 1; // Õ¾ï¿½ï¿½...ï¿½ï¿½Ä¬ï¿½ï¿½
 	
-	byte SETACTION_NOTHING = 2; // ¾²Ö¹...ÎÞÂÛÏÖÔÚÊ²Ã´¶¯×÷,¶¼ÏñÊ¯¸àÒ»ÑùµÄ
+	byte SETACTION_NOTHING = 2; // ï¿½ï¿½Ö¹...ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ê¯ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_RUN = 3; // ÅÜ²½
+	byte SETACTION_RUN = 3; // ï¿½Ü²ï¿½
 	
 	byte SETACTION_NOTHING_2 = 4; // Í¬2
 	
-	byte SETACTION_ATTACK = 5; // ¹¥»÷
+	byte SETACTION_ATTACK = 5; // ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_MAGIC = 6; // Ä§·¨
+	byte SETACTION_MAGIC = 6; // Ä§ï¿½ï¿½
 	
-	byte SETACTION_THROW = 7; // Í¶ÖÀ
+	byte SETACTION_THROW = 7; // Í¶ï¿½ï¿½
 	
-	byte SETACTION_INJURED = 8; // ÊÜÉË...¼´±»¹¥»÷µÄÑù×Ó
+	byte SETACTION_INJURED = 8; // ï¿½ï¿½ï¿½ï¿½...ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_DEFEND = 9; // ·ÀÓù
+	byte SETACTION_DEFEND = 9; // ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_DOWN = 10; // µ¹ÏÂ
+	byte SETACTION_DOWN = 10; // ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_SIT = 11; // ×øÏÂ
+	byte SETACTION_SIT = 11; // ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_BECKON = 12; // ÕÐÊÖ
+	byte SETACTION_BECKON = 12; // ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_HAPPY = 13; // ¸ßÐË
+	byte SETACTION_HAPPY = 13; // ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_ANGRY = 14; // ÉúÆø
+	byte SETACTION_ANGRY = 14; // ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_CRY = 15; // ¿ÞÆü
+	byte SETACTION_CRY = 15; // ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_NOD = 16; // µãÍ·
+	byte SETACTION_NOD = 16; // ï¿½ï¿½Í·
 	
-	byte SETACTION_FIST = 17; // ÊÖÊÆ...È­Í·
+	byte SETACTION_FIST = 17; // ï¿½ï¿½ï¿½ï¿½...È­Í·
 	
-	byte SETACTION_SHEARS = 18; // ÊÖÊÆ...¼ôµ¶
+	byte SETACTION_SHEARS = 18; // ï¿½ï¿½ï¿½ï¿½...ï¿½ï¿½ï¿½ï¿½
 	
-	byte SETACTION_HAND = 19; // ÊÖÊÆ...²¼
+	byte SETACTION_HAND = 19; // ï¿½ï¿½ï¿½ï¿½...ï¿½ï¿½
 	
 	Unit getUnit();
 	
@@ -162,7 +163,7 @@ public interface Sprite {
 	 * @see	{@link Animation#TYPE_ONCE}
 	 * @see	{@link Animation#TYPE_HOLD}
 	 */
-	String attachAnimation(int animationdId, AnimateCallback callback, byte type, byte percent);
+	String attachAnimation(int animationdId, Function<Animation, Void> function, byte type, byte percent);
 	
 	Animation getAttachAnimation(String key);
 	

@@ -1,10 +1,12 @@
 package cg.base.animation;
 
+import java.util.function.Function;
+
 import cg.base.animation.AnimationInfos.AnimationInfo;
 import cg.base.image.PositionPaintable;
 
 /**
- * ¶¯»­µ¥Ôª
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôª
  * @author 	hyfu
  */
 public interface Animation extends PositionPaintable {
@@ -43,42 +45,42 @@ public interface Animation extends PositionPaintable {
 	 */
 	void setType(byte type);
 	/**
-	 * Í£Ö¹²¥·Å
+	 * Í£Ö¹ï¿½ï¿½ï¿½ï¿½
 	 */
 	void stop();
 	/**
-	 * »ñµÃÊÇ·ñÕýÔÚ²¥·Å
-	 * @return	ÊÇ·ñÕýÔÚ²¥·Å
+	 * ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
+	 * @return	ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
 	 */
 	boolean getIsPlay();
 	/**
-	 * »ñµÃµ±Ç°¶¯»­µÄ¿í¶È
-	 * @return	µ±Ç°¶¯»­µÄ¿í¶È
+	 * ï¿½ï¿½Ãµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½
+	 * @return	ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½
 	 */
 	int getWidth();
 	/**
-	 * »ñµÃµ±Ç°¶¯»­µÄ¸ß¶È
-	 * @return	µ±Ç°¶¯»­µÄ¸ß¶È
+	 * ï¿½ï¿½Ãµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ß¶ï¿½
+	 * @return	ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ß¶ï¿½
 	 */
 	int getHeight();
 	/**
-	 * »ñµÃ¶¯»­µÄ×î´ó¿í¶È
-	 * @return	¶¯»­µÄ×î´ó¿í¶È
+	 * ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * @return	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	int getMaxWidth();
 	/**
-	 * »ñµÃ¶¯»­µÄ×î´ó¸ß¶È
-	 * @return	¶¯»­µÄ×î´ó¸ß¶È
+	 * ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½
+	 * @return	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½
 	 */
 	int getMaxHeight();
 	/**
-	 * »ñµÃµ±Ç°¶¯»­ÐòÁÐÖ¡ÐòºÅ
-	 * @return	µ±Ç°¶¯»­ÐòÁÐÖ¡ÐòºÅ
+	 * ï¿½ï¿½Ãµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½
+	 * @return	ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½
 	 */
 	int getIndex();
 	/**
-	 * »ñµÃµ±Ç°¶¯»­ÐÅÏ¢
-	 * @return	µ±Ç°¶¯»­ÐÅÏ¢
+	 * ï¿½ï¿½Ãµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+	 * @return	ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 	 */
 	AnimationInfo getAnimationInfo();
 	/**
@@ -95,6 +97,6 @@ public interface Animation extends PositionPaintable {
 	 * @param callback
 	 * @param percent
 	 */
-	void setCallback(AnimateCallback callback, byte percent);
+	void setCallback(Function<Animation, Void> function, byte percent);
 
 }

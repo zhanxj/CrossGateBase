@@ -1,6 +1,7 @@
 package cg.base.animation;
 
 import java.awt.Graphics;
+import java.util.function.Function;
 
 import cg.base.animation.AnimationInfos.AnimationInfo;
 import cg.base.image.ImageDictionary;
@@ -77,6 +78,6 @@ class SingleImageAnimation implements Animation {
 
 	@Deprecated
 	@Override
-	public void setCallback(AnimateCallback callback, byte percent) {}
+	public void setCallback(Function<Animation, Void> function, byte percent) {}
 
 }
