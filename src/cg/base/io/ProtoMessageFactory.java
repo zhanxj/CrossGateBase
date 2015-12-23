@@ -8,7 +8,7 @@ import cg.base.util.StringUtils;
 import net.dipatch.ISender;
 import net.io.IMessage;
 import net.io.IMessageFactory;
-import net.io.protocal.proto.ProtoMessage;
+import net.io.protocal.proto.ByteArrayMessage;
 
 public class ProtoMessageFactory implements IMessageFactory {
 	
@@ -19,8 +19,8 @@ public class ProtoMessageFactory implements IMessageFactory {
 	public IMessage createMessage(int messageId, int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		MessageId msgId = MessageId.valueOf(messageId);
 		@SuppressWarnings("unchecked")
-		Class<ProtoMessage> clz = (Class<ProtoMessage>) Class.forName("cg.base.io.message." + StringUtils.makeJavaClassName(msgId.name().replaceFirst("MI_", "")));
-		clz = clz == null ? ProtoMessage.class : clz;
+		Class<ByteArrayMessage> clz = (Class<ByteArrayMessage>) Class.forName("cg.base.io.message." + StringUtils.makeJavaClassName(msgId.name().replaceFirst("MI_", "")));
+		clz = clz == null ? ByteArrayMessage.class : clz;
 		return clz.getConstructor(int.class, String.class, ISender.class, byte[].class).newInstance(status, sessionId, sender, datas);
 	}
 

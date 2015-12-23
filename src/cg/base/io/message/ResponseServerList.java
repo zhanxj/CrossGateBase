@@ -1,7 +1,7 @@
 package cg.base.io.message;
 
 import net.dipatch.ISender;
-import net.io.protocal.proto.ProtoMessage;
+import net.io.protocal.proto.ByteArrayMessage;
 import cg.base.io.proto.AccountProtos.*;
 import cg.base.io.proto.MessageIdProto.MessageId;
 import com.google.common.collect.Lists;
@@ -11,7 +11,7 @@ import java.util.List;
  * This is a auto make java file, so do not modify me.
  * @author fuhuiyuan
  */
-public class ResponseServerList extends ProtoMessage {
+public class ResponseServerList extends ByteArrayMessage {
 
 	private RESPONSE_SERVER_LIST.Builder builder;
 

@@ -1,7 +1,7 @@
 package cg.base.io.message;
 
 import net.dipatch.ISender;
-import net.io.protocal.proto.ProtoMessage;
+import net.io.protocal.proto.ByteArrayMessage;
 import cg.base.io.proto.ScriptProtos.*;
 import cg.base.io.proto.MessageIdProto.MessageId;
 
@@ -9,7 +9,7 @@ import cg.base.io.proto.MessageIdProto.MessageId;
  * This is a auto make java file, so do not modify me.
  * @author fuhuiyuan
  */
-public class ResponseScriptChangePal extends ProtoMessage {
+public class ResponseScriptChangePal extends ByteArrayMessage {
 
 	private RESPONSE_SCRIPT_CHANGE_PAL.Builder builder;
 

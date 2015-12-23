@@ -1,7 +1,7 @@
 package cg.base.io.message;
 
 import net.dipatch.ISender;
-import net.io.protocal.proto.ProtoMessage;
+import net.io.protocal.proto.ByteArrayMessage;
 import cg.base.io.proto.CommonProtos.*;
 import cg.base.io.proto.MessageIdProto.MessageId;
 
@@ -9,7 +9,7 @@ import cg.base.io.proto.MessageIdProto.MessageId;
  * This is a auto make java file, so do not modify me.
  * @author fuhuiyuan
  */
-public class ResponseExecuteOk extends ProtoMessage {
+public class ResponseExecuteOk extends ByteArrayMessage {
 
 	private RESPONSE_EXECUTE_OK.Builder builder;
 

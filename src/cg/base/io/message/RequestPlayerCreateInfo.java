@@ -1,14 +1,14 @@
 package cg.base.io.message;
 
 import net.dipatch.ISender;
-import net.io.protocal.proto.ProtoMessage;
+import net.io.protocal.proto.ByteArrayMessage;
 import cg.base.io.proto.MessageIdProto.MessageId;
 
 /**
  * This is a auto make java file, so do not modify me.
  * @author fuhuiyuan
  */
-public class RequestPlayerCreateInfo extends ProtoMessage {
+public class RequestPlayerCreateInfo extends ByteArrayMessage {
 
 	public RequestPlayerCreateInfo(int status, String sessionId, ISender sender, byte[] datas) throws Exception {
 		super(MessageId.MI_REQUEST_PLAYER_CREATE_INFO_VALUE, status, sessionId, sender, datas);

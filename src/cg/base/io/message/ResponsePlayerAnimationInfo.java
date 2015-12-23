@@ -1,7 +1,7 @@
 package cg.base.io.message;
 
 import net.dipatch.ISender;
-import net.io.protocal.proto.ProtoMessage;
+import net.io.protocal.proto.ByteArrayMessage;
 import cg.base.io.proto.PlayerProtos.*;
 import cg.base.io.proto.MessageIdProto.MessageId;
 import com.google.common.collect.Lists;
@@ -11,7 +11,7 @@ import java.util.List;
  * This is a auto make java file, so do not modify me.
  * @author fuhuiyuan
  */
-public class ResponsePlayerAnimationInfo extends ProtoMessage {
+public class ResponsePlayerAnimationInfo extends ByteArrayMessage {
 
 	private RESPONSE_PLAYER_ANIMATION_INFO.Builder builder;
 

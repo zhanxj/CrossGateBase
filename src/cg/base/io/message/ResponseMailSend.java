@@ -1,7 +1,7 @@
 package cg.base.io.message;
 
 import net.dipatch.ISender;
-import net.io.protocal.proto.ProtoMessage;
+import net.io.protocal.proto.ByteArrayMessage;
 import cg.base.io.proto.MailProtos.*;
 import cg.base.io.proto.MessageIdProto.MessageId;
 import cg.base.io.proto.VOProtos.*;
@@ -12,7 +12,7 @@ import java.util.List;
  * This is a auto make java file, so do not modify me.
  * @author fuhuiyuan
  */
-public class ResponseMailSend extends ProtoMessage {
+public class ResponseMailSend extends ByteArrayMessage {
 
 	private RESPONSE_MAIL_SEND.Builder builder;
 

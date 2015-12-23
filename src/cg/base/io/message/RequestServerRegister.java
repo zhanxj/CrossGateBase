@@ -1,7 +1,7 @@
 package cg.base.io.message;
 
 import net.dipatch.ISender;
-import net.io.protocal.proto.ProtoMessage;
+import net.io.protocal.proto.ByteArrayMessage;
 import cg.base.io.proto.ServerProtos.*;
 import cg.base.io.proto.MessageIdProto.MessageId;
 
@@ -9,7 +9,7 @@ import cg.base.io.proto.MessageIdProto.MessageId;
  * This is a auto make java file, so do not modify me.
  * @author fuhuiyuan
  */
-public class RequestServerRegister extends ProtoMessage {
+public class RequestServerRegister extends ByteArrayMessage {
 
 	private REQUEST_SERVER_REGISTER.Builder builder;
 
