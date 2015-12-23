@@ -6,9 +6,9 @@ import java.io.InputStream;
 import cg.base.io.proto.MessageIdProto.MessageId;
 import cg.base.util.StringUtils;
 import net.dipatch.ISender;
-import net.io.IMessage;
-import net.io.IMessageFactory;
-import net.io.protocal.proto.ByteArrayMessage;
+import net.io.message.ByteArrayMessage;
+import net.io.message.IMessage;
+import net.io.message.IMessageFactory;
 
 public class ProtoMessageFactory implements IMessageFactory {
 	

@@ -1,7 +1,7 @@
 package cg.base.io.message;
 
 import net.dipatch.ISender;
-import net.io.protocal.proto.ByteArrayMessage;
+import net.io.message.ByteArrayMessage;
 import cg.base.io.proto.MapProtos.*;
 import cg.base.io.proto.MessageIdProto.MessageId;
 import cg.base.io.proto.VOProtos.*;

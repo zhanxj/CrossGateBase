@@ -5,8 +5,8 @@ import cg.base.io.ProtoMessageFactory;
 import dataplatform.pubsub.ISimplePubsub;
 import net.dipatch.IContent;
 import net.dipatch.IContentHandler;
-import net.io.IMessage;
-import net.io.IMessageFactory;
+import net.io.message.IMessage;
+import net.io.message.IMessageFactory;
 
 public class SimpleContentHandler implements IContentHandler {
 	
