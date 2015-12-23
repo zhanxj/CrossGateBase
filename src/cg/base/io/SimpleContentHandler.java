@@ -3,8 +3,8 @@ package cg.base.io;
 import cg.base.event.EventDisconnect;
 import cg.base.io.ProtoMessageFactory;
 import dataplatform.pubsub.ISimplePubsub;
-import net.dipatch.IContent;
-import net.dipatch.IContentHandler;
+import net.io.content.IContent;
+import net.io.content.IContentHandler;
 import net.io.message.IMessage;
 import net.io.message.IMessageFactory;
 

@@ -3,7 +3,7 @@ package cg.base.util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import net.dipatch.ISender;
+import net.io.ISender;
 import net.io.message.IMessage;
 
 public class SenderUtils {
