@@ -12,6 +12,6 @@ public interface ActionProcess {
 	
 	Counter getCounter();
 	
-	ActionProcess getActionProcess();
+	ActionProcess getNext();
 
 }
