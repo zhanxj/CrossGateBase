@@ -50,7 +50,7 @@ public final class BaseBattleUtils {
 	}
 	
 	public static boolean isLinkedCost(int weaponType, byte skillType) {
-		return skillType == TYPE_ATTACK && isCloseWeapon(weaponType);
+		return skillType == TYPE_ATTACK && isLinkedWeapon(weaponType);
 	}
 
 }
