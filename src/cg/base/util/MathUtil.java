@@ -225,7 +225,17 @@ public class MathUtil {
 		return array;
 	}
 	
-	public static int calcAngle(int x1, int y1, int x2, int y2) {
+	public static double calcAngle(double x1, double y1, double x2, double y2) {
+		double dx = x2 - x1, dy = y2 - y1, k;
+		if (dx == 0) {
+			return y1 > y2 ? 270 : 90;
+		} else {
+			k = dy / dx;
+			return Math.atan(k) * 180 / Math.PI;
+		}
+	}
+	
+	public static int calcDirAngle(int x1, int y1, int x2, int y2) {
 		double dx = x2 - x1, dy = y2 - y1, k;
 		
 		if (dx > 0) {
