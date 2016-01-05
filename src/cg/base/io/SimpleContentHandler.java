@@ -3,10 +3,10 @@ package cg.base.io;
 import cg.base.event.EventDisconnect;
 import cg.base.io.ProtoMessageFactory;
 import dataplatform.pubsub.ISimplePubsub;
-import net.io.content.IContent;
-import net.io.content.IContentHandler;
-import net.io.message.IMessage;
-import net.io.message.IMessageFactory;
+import net.content.IContent;
+import net.content.IContentHandler;
+import net.message.IMessage;
+import net.message.IMessageFactory;
 
 public class SimpleContentHandler implements IContentHandler {
 	
