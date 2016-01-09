@@ -79,7 +79,7 @@ class CRunLengthImageReader {
 		private int width, height, dataLength, colorPaletteLength;
 		
 		public ImageHead(InputStream fin, boolean readColorPalette) throws IOException {
-			length = (byte) (readColorPalette ? HEAD_LENGTH_COLOR : HEAD_LENGTH_NO_COLOR);
+			length = readColorPalette ? HEAD_LENGTH_COLOR : HEAD_LENGTH_NO_COLOR;
 			byte[] data = new byte[length];
 			fin.read(data);
 			head = new char[2];
