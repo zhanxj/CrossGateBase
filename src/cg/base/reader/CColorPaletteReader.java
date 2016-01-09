@@ -5,12 +5,17 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Map;
 
-import cg.base.image.ColorPalette;
-import cg.base.util.MathUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.Maps;
 
+import cg.base.image.ColorPalette;
+import cg.base.util.MathUtil;
+
 public class CColorPaletteReader {
+	
+	private static final Logger log = LoggerFactory.getLogger(CColorPaletteReader.class);
 	
 	public Map<String, ColorPalette[]> read(File file) {
 		Map<String, ColorPalette[]> ret = Maps.newHashMap();
@@ -21,7 +26,7 @@ public class CColorPaletteReader {
 				try {
 					ret.put(fileName, read(new FileInputStream(colorPaletteFile), 236));
 				} catch (IOException e) {
-					e.printStackTrace();
+					log.error("", e);
 					break;
 				}
 			}
