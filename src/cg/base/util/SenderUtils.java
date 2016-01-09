@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import net.io.ISender;
-import net.io.message.IMessage;
+import net.message.IMessage;
 
 public class SenderUtils {
 	

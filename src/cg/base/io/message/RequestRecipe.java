@@ -1,7 +1,7 @@
 package cg.base.io.message;
 
 import net.io.ISender;
-import net.io.message.ByteArrayMessage;
+import net.message.ByteArrayMessage;
 import cg.base.io.proto.SkillProtos.*;
 import cg.base.io.proto.MessageIdProto.MessageId;
 import java.util.List;
