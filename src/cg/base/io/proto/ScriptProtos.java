@@ -22,13 +22,27 @@ public final class ScriptProtos {
     int getDir();
 
     /**
-     * <code>required int32 op = 2;</code>
+     * <code>optional int32 op = 2 [default = 0];</code>
      */
     boolean hasOp();
     /**
-     * <code>required int32 op = 2;</code>
+     * <code>optional int32 op = 2 [default = 0];</code>
      */
     int getOp();
+
+    /**
+     * <code>optional string message = 3;</code>
+     */
+    boolean hasMessage();
+    /**
+     * <code>optional string message = 3;</code>
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>optional string message = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
   }
   /**
    * Protobuf type {@code REQUEST_SCRIPT_MUTUAL}
@@ -92,6 +106,12 @@ public final class ScriptProtos {
               op_ = input.readInt32();
               break;
             }
+            case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000004;
+              message_ = bs;
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -150,21 +170,64 @@ public final class ScriptProtos {
     public static final int OP_FIELD_NUMBER = 2;
     private int op_;
     /**
-     * <code>required int32 op = 2;</code>
+     * <code>optional int32 op = 2 [default = 0];</code>
      */
     public boolean hasOp() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required int32 op = 2;</code>
+     * <code>optional int32 op = 2 [default = 0];</code>
      */
     public int getOp() {
       return op_;
     }
 
+    public static final int MESSAGE_FIELD_NUMBER = 3;
+    private java.lang.Object message_;
+    /**
+     * <code>optional string message = 3;</code>
+     */
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional string message = 3;</code>
+     */
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          message_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string message = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private void initFields() {
       dir_ = 0;
       op_ = 0;
+      message_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -173,10 +236,6 @@ public final class ScriptProtos {
       if (isInitialized == 0) return false;
 
       if (!hasDir()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasOp()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -192,6 +251,9 @@ public final class ScriptProtos {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeInt32(2, op_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getMessageBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -209,6 +271,10 @@ public final class ScriptProtos {
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, op_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getMessageBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -331,6 +397,8 @@ public final class ScriptProtos {
         bitField0_ = (bitField0_ & ~0x00000001);
         op_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
+        message_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -367,6 +435,10 @@ public final class ScriptProtos {
           to_bitField0_ |= 0x00000002;
         }
         result.op_ = op_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.message_ = message_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -389,16 +461,17 @@ public final class ScriptProtos {
         if (other.hasOp()) {
           setOp(other.getOp());
         }
+        if (other.hasMessage()) {
+          bitField0_ |= 0x00000004;
+          message_ = other.message_;
+          onChanged();
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
 
       public final boolean isInitialized() {
         if (!hasDir()) {
-          
-          return false;
-        }
-        if (!hasOp()) {
           
           return false;
         }
@@ -458,19 +531,19 @@ public final class ScriptProtos {
 
       private int op_ ;
       /**
-       * <code>required int32 op = 2;</code>
+       * <code>optional int32 op = 2 [default = 0];</code>
        */
       public boolean hasOp() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required int32 op = 2;</code>
+       * <code>optional int32 op = 2 [default = 0];</code>
        */
       public int getOp() {
         return op_;
       }
       /**
-       * <code>required int32 op = 2;</code>
+       * <code>optional int32 op = 2 [default = 0];</code>
        */
       public Builder setOp(int value) {
         bitField0_ |= 0x00000002;
@@ -479,11 +552,87 @@ public final class ScriptProtos {
         return this;
       }
       /**
-       * <code>required int32 op = 2;</code>
+       * <code>optional int32 op = 2 [default = 0];</code>
        */
       public Builder clearOp() {
         bitField0_ = (bitField0_ & ~0x00000002);
         op_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <code>optional string message = 3;</code>
+       */
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional string message = 3;</code>
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            message_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string message = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string message = 3;</code>
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string message = 3;</code>
+       */
+      public Builder clearMessage() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string message = 3;</code>
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        message_ = value;
         onChanged();
         return this;
       }
@@ -2421,14 +2570,14 @@ public final class ScriptProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014Script.proto\"0\n\025REQUEST_SCRIPT_MUTUAL\022" +
-      "\013\n\003dir\030\001 \002(\005\022\n\n\002op\030\002 \002(\005\"C\n\017RESPONSE_SCR" +
-      "IPT\022\020\n\010talkType\030\001 \002(\t\022\017\n\007message\030\002 \002(\t\022\r" +
-      "\n\005infos\030\003 \003(\t\":\n\025RESPONSE_SCRIPT_ERROR\022\020" +
-      "\n\010talkType\030\001 \002(\t\022\017\n\007message\030\002 \002(\005\"7\n\032RES" +
-      "PONSE_SCRIPT_CHANGE_PAL\022\013\n\003pal\030\001 \002(\005\022\014\n\004" +
-      "time\030\002 \002(\005B \n\020cg.base.io.protoB\014ScriptPr" +
-      "otos"
+      "\n\014Script.proto\"D\n\025REQUEST_SCRIPT_MUTUAL\022" +
+      "\013\n\003dir\030\001 \002(\005\022\r\n\002op\030\002 \001(\005:\0010\022\017\n\007message\030\003" +
+      " \001(\t\"C\n\017RESPONSE_SCRIPT\022\020\n\010talkType\030\001 \002(" +
+      "\t\022\017\n\007message\030\002 \002(\t\022\r\n\005infos\030\003 \003(\t\":\n\025RES" +
+      "PONSE_SCRIPT_ERROR\022\020\n\010talkType\030\001 \002(\t\022\017\n\007" +
+      "message\030\002 \002(\005\"7\n\032RESPONSE_SCRIPT_CHANGE_" +
+      "PAL\022\013\n\003pal\030\001 \002(\005\022\014\n\004time\030\002 \002(\005B \n\020cg.bas" +
+      "e.io.protoB\014ScriptProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2447,7 +2596,7 @@ public final class ScriptProtos {
     internal_static_REQUEST_SCRIPT_MUTUAL_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_REQUEST_SCRIPT_MUTUAL_descriptor,
-        new java.lang.String[] { "Dir", "Op", });
+        new java.lang.String[] { "Dir", "Op", "Message", });
     internal_static_RESPONSE_SCRIPT_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_RESPONSE_SCRIPT_fieldAccessorTable = new

@@ -33,7 +33,9 @@ public class RequestScriptMutual extends ByteArrayMessage {
 	 * 			<u>do not has any annotate.</u>
 	 */
 	public void setOp(Integer op) {
-		builder.setOp(op);
+		if (op != null) {
+			builder.setOp(op);
+		}
 	}
 
 	/**
@@ -59,6 +61,25 @@ public class RequestScriptMutual extends ByteArrayMessage {
 	 */
 	public int getDir() {
 		return builder.getDir();
+	}
+
+	/**
+	 * 
+	 * @param	message
+	 * 			<u>do not has any annotate.</u>
+	 */
+	public void setMessage(String message) {
+		if (message != null) {
+			builder.setMessage(message);
+		}
+	}
+
+	/**
+	 * 
+	 * @return	<u>do not has any annotate.</u>
+	 */
+	public String getMessage() {
+		return builder.getMessage();
 	}
 
 	public REQUEST_SCRIPT_MUTUAL getRequestScriptMutual() {
