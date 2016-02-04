@@ -6,7 +6,7 @@ import cg.base.util.Values;
 
 public interface Unit extends Serializable, UnitListenerCode {
 	
-	byte UNI_TYPE_BASE = 0;
+	byte UNIT_TYPE_BASE = 0;
 	
 	byte NO_TEMPORARY_ID = -1;
 	

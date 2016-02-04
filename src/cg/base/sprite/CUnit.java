@@ -115,7 +115,7 @@ public class CUnit implements Unit {
 
 	@Override
 	public byte getUnitType() {
-		return UNI_TYPE_BASE;
+		return UNIT_TYPE_BASE;
 	}
 
 	@Override
