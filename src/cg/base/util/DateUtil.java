@@ -39,17 +39,16 @@ public class DateUtil {
 	}
 	
 	public static int getMilliSecondStartOfTheNextDay() {
-		DateTime time = DateTime.now();
-        return DAY_MILLIS - time.getMillisOfDay();
+        return DAY_MILLIS - now().getMillisOfDay();
     }
 	
 	public static long getMilliSecondStartOfThisDay() {
-		DateTime time = DateTime.now();
+		DateTime time = now();
 		return time.toDate().getTime() - time.getMillisOfDay();
 	}
 	
 	public static int getMilliSecondStart(byte clock) {
-		DateTime time = DateTime.now();
+		DateTime time = now();
 		int clockMills = clock * HOUR_MINTUES * MINTUE_SECONDS * SECOND_MILLIS;
 		if (time.getHourOfDay() < clock) {
 			return clockMills - time.getMillisOfDay();
@@ -71,11 +70,23 @@ public class DateUtil {
 	}
 	
 	public static int getDayOfWeek() {
-		return getDayOfWeek(DateTime.now());
+		return getDayOfWeek(now());
 	}
 	
 	public static int getDayOfWeek(DateTime time) {
 		return time.getDayOfWeek();
+	}
+	
+	public static int getHourOfDay() {
+		return now().getHourOfDay();
+	}
+	
+	public static int getMinuteOfHour() {
+		return now().getMinuteOfHour();
+	}
+	
+	public static DateTime now() {
+		return DateTime.now();
 	}
 
 }
